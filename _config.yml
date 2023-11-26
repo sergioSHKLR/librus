@@ -1,0 +1,9 @@
+title: 💧doutrina.org
+description: a one-of-a-kind integrated study platform
+
+repository: sergioSHKLR/en.doutrina.org
+
+markdown: kramdown
+
+kramdown:
+  input: Kramdown
