@@ -11,13 +11,11 @@ Our interface is composed of three columns which are selectively displayed accor
 
 Read the <kbd>📋 Info</kbd> page to familiarize with the standards utilized in our project.
 
-If anything is unclear, please contact us via the chat button (lower right corner) <img src="./framework/crisp-logo.svg" width="30" height="30" alt="crisp chat button" style="all: unset; height: 30px; vertical-align: text-bottom;">
+If anything is unclear, please contact us via the chat button (lower right corner).
 
 We'd be most thankful for your feedback!
 
 🙏🏼 So be it!
-
-<img src="./framework/baldy.webp" width="100" height="100" alt="bitmoji of sergio" style="all: unset; background-color: transparent;  width: 100px; transform: scaleX(-1)">
 
 Sergio
 {:.cursive}

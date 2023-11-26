@@ -1,7 +1,9 @@
 ---
-title: license
+title:  ⚖️ License
 layout: default
 ---
+
+# ⚖️ License
 
 [librus](https://github.com/sergioSHKLR/librus-pwa-template) © 2023 by [sergioSHKLR](https://github.com/sergioSHKLR) is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0)
 

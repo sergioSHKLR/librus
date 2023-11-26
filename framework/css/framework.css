@@ -146,11 +146,11 @@ html, iframe, img {
 #col1-head,
 #col2-head,
 #col3-head {
-    background-color: #4ec1f51a;
+    background-color: #aad3791a;
 }
 
 #col1-body {
-    background-color: #4ec1f51a;
+    background-color: #aad3791a;
 }
 
 #col2-body {
@@ -161,18 +161,6 @@ html, iframe, img {
     border: none;
     height: 100%;
     width: 100%
-}
-
-#israel {
-    border-collapse: collapse;
-    bottom: -10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-sizing: border-box;
-    left: -50px;
-    position: fixed;
-    transform: rotate(45deg);
-    width: 141px;
-    z-index: 99
 }
 
 button {
