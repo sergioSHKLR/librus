@@ -1,6 +1,6 @@
 ---
 title: ⚖️ Disclaimers
-layout: 0-gen
+layout: default
 ---
 
 # ⚖️ Disclaimers

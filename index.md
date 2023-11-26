@@ -1,6 +1,6 @@
 ---
 title: 🏠 Home
-layout: 0-gen
+layout: default
 ---
 
 # 🏠 Home

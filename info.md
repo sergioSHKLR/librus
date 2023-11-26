@@ -1,6 +1,6 @@
 ---
 title: 📋 Information
-layout: 0-gen
+layout: default
 ---
 
 # 📋 Information
