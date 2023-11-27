@@ -1,9 +1,11 @@
 ---
-title: 📔 Book
+title: ⚓ The Naval Treaty
 layout: book
 ---
 
-# 📔 [THE NAVAL TREATY](https://en.m.wikipedia.org/wiki/The_Naval_Treaty)
+# ⚓ [The Naval Treaty](https://en.m.wikipedia.org/wiki/The_Naval_Treaty)  
+
+[Original PDF](https://www.dfw-sherlock.org/uploads/3/7/3/8/37380505/1893_october-november_the_adventure_of_the_naval_treaty.pdf)
 
 ## by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)
 
