@@ -67,9 +67,11 @@ html, iframe, img {
     color: currentColor
 }
 
+/*
 #col2-head {
     box-shadow: 0 5px 3px -3px #00000030;
 }
+*/
 
 #col2-head {
     background-color: transparent;
@@ -108,7 +110,8 @@ html, iframe, img {
     scroll-behavior: smooth;
     top: 50px;
     width: calc((100vw - 273px) * .5);
-    box-shadow: inset 1px 1px 25px 6px rgba(246, 238, 227, 1);
+    /*
+    box-shadow: inset 1px 1px 25px 6px rgba(246, 238, 227, 1); */
 }
 
 #col3-head {
