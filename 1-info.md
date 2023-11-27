@@ -17,9 +17,7 @@ The intended usage is:
 
 4. Fill in or create other pages, as desired. Don't forget the front matter.
 
-[^1]: MD-formatted, mind its copyright license and its fair use.
 
-[^2]: Some builtin services require signup, but all have a free tier.
 
 Warning: Check if the site you are linking to allows it to be loaded into an iframe. Also, since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
 
@@ -33,7 +31,6 @@ Nosso projeto integra ferramentas geralmente achadas em eReaders (dicionário, t
 
 - [Wikipedia](https://en.m.wikipedia.org){:target="ext"}
 - [Wikicionário](https://en.m.wiktionary.org){:target="ext"}
-- [Google Dictionary](https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en-US){:target="_blank"}
 - [Hypothes.is](https://web.hypothes.is/everyone/){:target="ext"}
 - [Whereby](https://whereby.com){:target="ext"}
 - [Crisp](https://crisp.chat/en/){:target="_blank"}
@@ -51,5 +48,8 @@ Nosso projeto integra ferramentas geralmente achadas em eReaders (dicionário, t
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+[^1]: MD-formatted, mind its copyright license and its fair use.
+
+[^2]: Some builtin services require signup, but all have a free tier.<br><br><br>
 
 ---

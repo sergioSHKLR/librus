@@ -77,7 +77,7 @@ of course I knew well that Holmes loved his art, so that he was ever
 as ready to bring his aid as his client could be to receive it. My
 wife agreed with me that not a moment should be lost in laying the
 matter before him, and so within an hour of breakfast-time I found
-myself back once more in the old rooms in [Baker Street]().
+myself back once more in the old rooms in [Baker Street](https://osm.org/go/euu4HwkdU-?m=&node=5568763423).
 
 Holmes was seated at his side-table clad in his dressing-gown, and
 working hard over a chemical investigation. A large curved retort was
