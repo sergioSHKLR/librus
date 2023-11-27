@@ -13,7 +13,7 @@
     box-shadow: none;
 }
 
-.dark-mode #col1-body {background-color: rgba(170, 211, 121, .1);}
+.dark-mode #col1-body {background-color: #30352b; z-index: 2;}
 
 .dark-mode iframe {
     filter: invert(87%)
