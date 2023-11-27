@@ -1,6 +1,6 @@
 ---
 title: 📋 Information
-layout: default
+layout: page
 ---
 
 # 📋 Information

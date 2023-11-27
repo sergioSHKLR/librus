@@ -1,6 +1,6 @@
 ---
 title: 📔 Book
-layout: default
+layout: book
 ---
 
 # 📔 [THE NAVAL TREATY](https://en.m.wikipedia.org/wiki/The_Naval_Treaty)

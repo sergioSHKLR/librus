@@ -1,6 +1,6 @@
 ---
 title:  ⚖️ License
-layout: default
+layout: page
 ---
 
 # ⚖️ License

@@ -1,6 +1,6 @@
 ---
 title: 💬 Reviews
-layout: default
+layout: page
 ---
 
 # 💬 Reviews
