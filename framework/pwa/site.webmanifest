@@ -1,11 +1,11 @@
 {
   "id": "/",
-  "scope": "https://en.doutrina.org/",
-  "name": "doutrina 🇺🇸",
+  "scope": "https://sergioshklr.github.io/librus-pwa-template/",
+  "name": "📗 librus",
   "display": "fullscreen",
-  "start_url": "https://en.doutrina.org/",
-  "short_name": "doutrina",
-  "theme_color": "#4ec1f5",
+  "start_url": "https://sergioshklr.github.io/librus-pwa-template//",
+  "short_name": "librus",
+  "theme_color": "honeydew",
   "description": "a one-of-a-kind integrated study platform",
   "orientation": "any",
   "background_color": "#222222",
@@ -28,23 +28,23 @@
     "enctype": "application/x-www-form-urlencoded",
     "params": {
       "title": "doutrina.org",
-      "url": "https://en.doutrina.org"
+      "url": "https://sergioshklr.github.io/librus-pwa-template/"
     }
   },
   "scope_extensions": [
     {
-      "origin": "en.doutrina.org/*"
+      "origin": "https://sergioshklr.github.io/librus-pwa-template/*"
     }
   ],
   "icons": [
     {
-      "src": "https://en.doutrina.org/framework/pwa/maskable.png",
+      "src": "https://sergioshklr.github.io/librus-pwa-template/framework/pwa/maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://en.doutrina.org/framework/pwa/favicon.png",
+      "src": "https://sergioshklr.github.io/librus-pwa-template/framework/pwa/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
