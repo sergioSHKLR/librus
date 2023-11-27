@@ -22,15 +22,6 @@
     "client_mode": "navigate-existing"
   },
   "iarc_rating_id": "",
-  "share_target": {
-    "action": "/handle-shared-content/",
-    "method": "GET",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "librus",
-      "url": "https://sergioshklr.github.io/librus-pwa-template/"
-    }
-  },
   "scope_extensions": [
     {
       "origin": "https://sergioshklr.github.io/librus-pwa-template/*"
@@ -69,7 +60,7 @@
       "type": "image/png"
     },
     {
-      "src": "screensho42.png",
+      "src": "screenshot4.png",
       "sizes": "2560x1600",
       "type": "image/png"
     }
