@@ -5,6 +5,30 @@ layout: default
 
 # 📋 Information
 
+Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
+
+The intended usage is:
+
+1. Load your **study material** [^1] into <kbd>book.md</kbd>. It displays in second column. Set links with target="ext" which will open in the third column.
+
+2. Hard code book anchor links in TOC section of <kbd>_layouts/default.html</kbd> to navigate study material.
+
+3. Use the buttons in the top bar as is [^2] or reconfigure them as you wish.
+
+4. Fill in or create other pages, as desired. Don't forget the front matter.
+
+[^1]: MD-formatted, mind its copyright license and its fair use.
+
+[^2]: Some builtin services require signup, but all have a free tier.
+
+Warning: Check if the site you are linking to allows it to be loaded into an iframe. Also, since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
+
+Note: We are using Jekyll SSG with Kramdown but you are free to modify it to your liking.
+
+Our Lighthouse report can be viewed [here](./lighthouse.html){:target="ext"} (Hypothes.is turned off and iframe blank)
+
+---
+
 Nosso projeto integra ferramentas geralmente achadas em eReaders (dicionário, tipo de letra, fundo de contraste, espaço entre-linhas, etc)
 
 - [Wikipedia](https://en.m.wikipedia.org){:target="ext"}
@@ -22,3 +46,10 @@ Nosso projeto integra ferramentas geralmente achadas em eReaders (dicionário, t
 <tr><td class="center"><img src="./framework/hypo-b.svg" style="all: unset; width: 30px; vertical-align: middle; padding: 5px"></td><td>Mostras/esconder anotações (grifados em amarelo)</td></tr>
 <tr><td class="center"><img src="./framework/hypo-c.svg" style="all: unset; width: 30px; vertical-align: middle; padding: 5px"></td><td>Criar nova anotação de página</td></tr>
 </table>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+---

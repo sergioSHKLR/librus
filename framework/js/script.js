@@ -147,7 +147,7 @@ function menuOff() {
 
 // SETS COL2 LINKS TO TARGET EXT --------------------------------
 (function () {
-    const links = document.querySelectorAll("a[href^='https://pt.m'], a[href^='http://pt.m'], a[href^='https://www.bible'], a[href^='https://www.bible']")
+    const links = document.querySelectorAll("a[href^='https://en.m'], a[href^='http://en.m']")
     const host = window.location.hostname
 
     const isInternalLink = link => new URL(link).hostname === host
