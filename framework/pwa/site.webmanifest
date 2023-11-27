@@ -64,8 +64,13 @@
       "type": "image/png"
     },
     {
-      "src": "screenshot2.png",
+      "src": "screenshot3.png",
       "sizes": "637x1380",
+      "type": "image/png"
+    },
+    {
+      "src": "screensho42.png",
+      "sizes": "2560x1600",
       "type": "image/png"
     }
 
