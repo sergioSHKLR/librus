@@ -24,18 +24,18 @@
   "iarc_rating_id": "",
   "scope_extensions": [
     {
-      "origin": "https://librus.app*"
+      "origin": "https://librus.app/*"
     }
   ],
   "icons": [
     {
-      "src": "https://librus.appframework/pwa/maskable.png",
+      "src": "https://librus.app/framework/pwa/maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://librus.appframework/pwa/favicon.png",
+      "src": "https://librus.app/framework/pwa/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
