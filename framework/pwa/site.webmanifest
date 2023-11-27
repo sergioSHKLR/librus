@@ -29,6 +29,12 @@
   ],
   "icons": [
     {
+      "src": "https://librus.app/framework/pwa/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg",
+      "purpose": "any"
+    },
+    {
       "src": "https://librus.app/framework/pwa/maskable.png",
       "sizes": "512x512",
       "type": "image/png",
@@ -47,7 +53,6 @@
       "sizes": "2560x1600",
       "type": "image/png",
       "form_factor": "wide"
-
     },
     {
       "src": "screenshot2.png",
@@ -64,7 +69,6 @@
       "sizes": "2560x1600",
       "type": "image/png"
     }
-
   ],
   "features": [
     "Cross Platform",
