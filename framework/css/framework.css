@@ -205,11 +205,6 @@ a:any-link {
     padding: 0 2px;
 }
 
-.icon:hover {
-    outline: 3px solid orange;
-    border-radius: 50%;
-}
-
 .fr {
     float: right
 }
