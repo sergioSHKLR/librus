@@ -11,8 +11,6 @@ Our interface is composed of three columns which are selectively displayed accor
 
 Read the <kbd>📋 Info</kbd> page to familiarize with the standards utilized in our project.
 
-If anything is unclear, please contact us via the chat button (lower right corner).
-
 We'd be most thankful for your feedback!
 
 🙏🏼 So be it!
