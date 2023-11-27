@@ -1,9 +1,9 @@
 {
   "id": "/",
-  "scope": "https://sergioshklr.github.io/librus-pwa-template/",
+  "scope": "https://sergioshklr.github.io/librus/",
   "name": "📗 librus",
   "display": "fullscreen",
-  "start_url": "https://sergioshklr.github.io/librus-pwa-template//",
+  "start_url": "https://sergioshklr.github.io/librus//",
   "short_name": "librus",
   "theme_color": "#f0fff0",
   "description": "a one-of-a-kind integrated study platform",
@@ -24,18 +24,18 @@
   "iarc_rating_id": "",
   "scope_extensions": [
     {
-      "origin": "https://sergioshklr.github.io/librus-pwa-template/*"
+      "origin": "https://sergioshklr.github.io/librus/*"
     }
   ],
   "icons": [
     {
-      "src": "https://sergioshklr.github.io/librus-pwa-template/framework/pwa/maskable.png",
+      "src": "https://sergioshklr.github.io/librus/framework/pwa/maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://sergioshklr.github.io/librus-pwa-template/framework/pwa/favicon.png",
+      "src": "https://sergioshklr.github.io/librus/framework/pwa/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
