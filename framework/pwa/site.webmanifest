@@ -27,7 +27,7 @@
     "method": "GET",
     "enctype": "application/x-www-form-urlencoded",
     "params": {
-      "title": "doutrina.org",
+      "title": "librus",
       "url": "https://sergioshklr.github.io/librus-pwa-template/"
     }
   },
