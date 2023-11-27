@@ -5,7 +5,7 @@
   "display": "fullscreen",
   "start_url": "https://sergioshklr.github.io/librus-pwa-template//",
   "short_name": "librus",
-  "theme_color": "honeydew",
+  "theme_color": "#f0fff0",
   "description": "a one-of-a-kind integrated study platform",
   "orientation": "any",
   "background_color": "#222222",
