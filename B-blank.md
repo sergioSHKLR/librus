@@ -1,6 +1,16 @@
 ---
-title: 📔 Empty Book
+title: 📔 Blank Book
 layout: book
 ---
 
-# 📔 Empty Book
+# 📔 Title
+
+## 🗃️ Part
+
+### 🗂️ Chapter
+
+#### 📑 Sub-Chapter
+
+##### 📃Item
+
+###### #️⃣ Sub-Item

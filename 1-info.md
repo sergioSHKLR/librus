@@ -3,7 +3,7 @@ title: 📋 Information
 layout: page
 ---
 
-# 📋 Information
+# <span style="background-color: dodgerblue; border-radius: 50%; padding: 1px 2px 2px 2px; font-size: 70%; vertical-align: middle; position: relative; top: -3px;">❔</span> Information
 
 Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
 
@@ -50,6 +50,6 @@ Nosso projeto integra ferramentas geralmente achadas em eReaders (dicionário, t
 
 [^1]: MD-formatted, mind its copyright license and its fair use.
 
-[^2]: Some builtin services require signup, but all have a free tier.<br><br><br>
+[^2]: Some builtin services require signup, but all have a free tier.
 
 ---

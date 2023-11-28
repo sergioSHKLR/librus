@@ -71,6 +71,8 @@ a:any-link {
     text-decoration-color: #3366cc99;
 }
 
+.reversefootnote:last-child {padding-bottom: 50px;}
+
 p.cursive {
     font-family: 'Zeyada';
     font-size: 60px;
