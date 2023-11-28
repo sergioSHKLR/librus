@@ -213,7 +213,8 @@ layout: book
 
 <h4 id="tables">Tables</h4>
 
-<div><div class="highlight"><pre class="highlight"><code>|---------+---------+---------|
+<pre>
+|---------+---------+---------|
 | Header1 | Header2 | Header3 |
 |---------|:--------|--------:|
 | 1       | 2       | 3       |
@@ -224,7 +225,7 @@ layout: book
 |=========+=========+=========|
 | Foot1   | Foot2   | Foot3   |
 |---------+---------+---------|
-</code></pre></div></div>
+</pre>
 
 <table>
   <thead>
@@ -267,20 +268,6 @@ layout: book
   </tfoot>
 </table>
 
-<h4 id="math">Math</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Inline</td>
-      <td><code>$$a^2 = b^2 + c^2 - 2bc\cos\alpha$$</code></td>
-    </tr>
-    <tr>
-      <td>Display</td>
-      <td>Same, in its own paragraph</td>
-    </tr>
-  </tbody>
-</table>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
