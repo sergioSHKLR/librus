@@ -7,7 +7,7 @@ layout: page
 
 ## Loosely Integrated Book Reading Unified System (LIBRUS)
 
-Inspired by other initiatives of self and distance learning, we created this platform which combines dispersed sources & tools providing the user with a first-of-its-kind integrated knowledge platform. 
+Inspired by other initiatives of self and [distance education](https://en.m.wikipedia.org/wiki/Distance_education), we created this platform which combines dispersed sources & tools providing the user with a first-of-its-kind integrated knowledge platform. 
 
 While designed for a group setting (i.e. book clubs, bible study, etc) it can also be used by individuals on a self-paced course.
 

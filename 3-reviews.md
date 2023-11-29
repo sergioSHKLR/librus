@@ -1,6 +1,6 @@
 ---
-title: 💬 Reviews
+title: ❤️ Reviews
 layout: page
 ---
 
-# 💬 Reviews
+# ❤️ Reviews

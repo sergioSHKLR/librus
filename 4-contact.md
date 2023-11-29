@@ -1,6 +1,6 @@
 ---
-title: 📬 Contact
+title: 💌 Contact
 layout: page
 ---
 
-# 📬 Contact
+# 💌 Contact
