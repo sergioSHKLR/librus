@@ -11,6 +11,6 @@ layout: book
 
 #### 📑 Sub-Chapter
 
-##### 📃Item
+##### 📃 Item
 
 ###### #️⃣ Sub-Item
