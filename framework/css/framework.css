@@ -236,3 +236,13 @@ p.banner {
     text-align: center;
     border-left: 4px solid gold;
 }
+
+summary {
+    border-bottom: 1px solid #59595980;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 70%
+  }

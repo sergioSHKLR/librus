@@ -64,35 +64,45 @@
   <!-- COL1 BODY -->
   <div id="col1-body">
 
-    <!-- COL1 LINKS -->
-    <p class="sidebar-heading">Library</p>
-    <p><a href="./A-md-cheatsheet.html" title="Book">⌨️ MD Cheatsheet</a></p>
-    <p><a href="./B-blank.html" title="2">📔 Blank Book</a></p>
-    <p><a href="./C-holmes.html" title="3">⚓ The Naval Treaty</a></p>
-
     <!-- COL1 DETAILS -->
-    <p class="sidebar-heading">Project</p>
-    <p><a href="./" title="home">🏠 Home</a></p>
-    <p><a href="./1-info.html" title="info"><span
-          style="background-color: dodgerblue; border-radius: 50%; padding: 3px 2px; font-size: 70%; vertical-align: text-top;">❔</span>
-        Info</a></p>
-    <p><a href="./2-license.html" title="license">⚖️ License</a></p>
-    <p><a href="./3-reviews.html" title="reviews">📝 Reviews</a></p>
-    <p><a href="./4-contact.html" title="contact">💌 Contact</a></p>
+    <details open>
+      <summary class="sidebar-heading">Project</summary>
+      <p><a href="./" title="home">🏠 Home</a></p>
+      <p><a href="./1-info.html" title="info"><span
+            style="background-color: dodgerblue; border-radius: 50%; padding: 3px 2px; font-size: 70%; vertical-align: text-top;">❔</span>
+          Info</a></p>
+      <p><a href="./2-license.html" title="license">⚖️ License</a></p>
+      <p><a href="./3-reviews.html" title="reviews">📝 Reviews</a></p>
+      <p><a href="./4-contact.html" title="contact">💌 Contact</a></p>
+    </details><br>
+
+    <!-- COL1 LINKS -->
+    <details open>
+      <summary class="sidebar-heading">Library</summary>
+      <p><a href="./A-md-cheatsheet.html" title="Book">⌨️ MD Cheatsheet</a></p>
+      <p><a href="./B-blank.html" title="2">📔 Blank Book</a></p>
+      <p><a href="./C-holmes.html" title="3">⚓ The Naval Treaty</a></p>
+    </details><br>
+
+
 
     <!-- COL1 REPO -->
-    <p class="sidebar-heading">Source code</p>
-    <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/wiki" title="wiki">📖 Wiki</a></p>
-    <p><a target="_blank" href="https://github.com/sergioSHKLR/librus" title="repo">📦 Repo</a>
-    </p>
-    <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="issues">🐛 Issues</a></p>
-    <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/discussions" title="discussions">💬
-        Discussions</a></p>
+    <details open>
+      <summary class="sidebar-heading">Source code</summary>
+      <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/wiki" title="wiki">📖 Wiki</a></p>
+      <p><a target="_blank" href="https://github.com/sergioSHKLR/librus" title="repo">📦 Repo</a>
+      </p>
+      <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="issues">🐛 Issues</a></p>
+      <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/discussions" title="discussions">💬
+          Discussions</a></p>
+    </details><br>
 
     <!-- STATS -->
-    <p class="sidebar-heading">Details</p>
-    <p>#️⃣ Version <kbd>11.23a</kbd></p>
-    <p>🗓️ Updated on {{ "today" | date: "%b-%y" }}</p>
+    <details open>
+      <summary class="sidebar-heading">Details</summary>
+      <p>#️⃣ Version <kbd>11.23a</kbd></p>
+      <p>🗓️ Updated on {{ "today" | date: "%b-%y" }}</p>
+    </details>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>

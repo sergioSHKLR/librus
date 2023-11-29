@@ -11,7 +11,7 @@ layout: book
 
 ## by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)
 
- The July which immediately succeeded my marriage was made memorable
+👨‍⚕️🩺 The July which immediately succeeded my marriage was made memorable
 by three cases of interest, in which I had the privilege of being
 associated with [Sherlock Holmes](https://en.m.wikipedia.org/wiki/Sherlock_Holmes) and of studying his methods. I find
 them recorded in my notes under the headings of “[The Adventure of the
@@ -48,7 +48,7 @@ that his abilities and the influences which he commanded had won him
 a good position at the [Foreign Office](https://en.m.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office), and then he passed completely
 out of my mind until the following letter recalled his existence:
 
-Briarbrae, [Woking](https://en.m.wikipedia.org/wiki/Woking).
+📃 Briarbrae, [Woking](https://en.m.wikipedia.org/wiki/Woking).
 
 My dear [Watson](https://en.m.wikipedia.org/wiki/Dr._Watson):
 I have no doubt that you can remember “Tadpole” Phelps, who was in
@@ -96,7 +96,7 @@ his glass pipette, and finally brought a test-tube containing a
 solution over to the table. In his right hand he held a slip of
 [litmus-paper](https://en.m.wikipedia.org/wiki/Litmus).
 
-“You come at a crisis, Watson,” said he. “If this paper remains blue,
+🕵️‍♂️🔎 “You come at a crisis, Watson,” said he. “If this paper remains blue,
 all is well. If it turns red, it means a man’s life.” He dipped it
 into the test-tube and it flushed at once into a dull, dirty crimson.
 “Hum! I thought as much!” he cried. “I will be at your service in an
@@ -106,27 +106,27 @@ handed over to the page-boy. Then he threw himself down into the
 chair opposite, and drew up his knees until his fingers clasped round
 his long, thin shins.
 
-“A very commonplace little murder,” said he. “You’ve got something
+🕵️‍♂️🔎 “A very commonplace little murder,” said he. “You’ve got something
 better, I fancy. You are the stormy petrel of crime, Watson. What is
 it?”
 
 I handed him the letter, which he read with the most concentrated
 attention.
 
-“It does not tell us very much, does it?” he remarked, as he handed
+🕵️‍♂️🔎 “It does not tell us very much, does it?” he remarked, as he handed
 it back to me.
 
-“Hardly anything.”
+👨‍⚕️🩺 “Hardly anything.”
 
-“And yet the writing is of interest.”
+🕵️‍♂️🔎 “And yet the writing is of interest.”
 
-“But the writing is not his own.”
+👨‍⚕️🩺 “But the writing is not his own.”
 
-“Precisely. It is a woman’s.”
+🕵️‍♂️🔎 “Precisely. It is a woman’s.”
 
-“A man’s surely,” I cried.
+👨‍⚕️🩺 “A man’s surely,” I cried.
 
-“No, a woman’s, and a woman of rare character. You see, at the
+🕵️‍♂️🔎 “No, a woman’s, and a woman of rare character. You see, at the
 commencement of an investigation it is something to know that your
 client is in close contact with some one who, for good or evil, has
 an exceptional nature. My interest is already awakened in the case.
@@ -151,7 +151,7 @@ chap, he clings to any straw! His father and his mother asked me to
 see you, for the mere mention of the subject is very painful to
 them.”
 
-“We have had no details yet,” observed Holmes. “I perceive that you
+🕵️‍♂️ “We have had no details yet,” observed Holmes. “I perceive that you
 are not yourself a member of the family.”
 
 Our acquaintance looked surprised, and then, glancing down, he began
@@ -206,8 +206,6 @@ utmost confidence in my ability and tact.
 May--he called me into his private room, and, after complimenting me
 on the good work which I had done, he informed me that he had a new
 commission of trust for me to execute.
-
-![holmes-3](./content/images/3.png)
 
 “‘This,’ said he, taking a gray roll of paper from his bureau, ‘is
 the original of that secret treaty between England and Italy of
@@ -444,8 +442,6 @@ were fastened on the inside. The carpet prevents any possibility of a
 trap-door, and the ceiling is of the ordinary whitewashed kind. I
 will pledge my life that whoever stole my papers could only have come
 through the door.”
-
-![holmes-8](./content/images/8.png)
 
 “How about the fireplace?”
 
@@ -921,8 +917,6 @@ the incident must have a very prejudicial effect upon his career.”
 
 “I had one or two questions which I wished to ask you, Lord
 Holdhurst.”
-
-![holmes-15](./content/images/15.png)
 
 “I shall be happy to give you any information in my power.”
 
