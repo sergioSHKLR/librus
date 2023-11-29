@@ -17,6 +17,15 @@ The intended usage is:
 
 4. Fill in or create other pages, as desired. Don't forget the front matter.
 
+# Credits
+
+Retype - https://retype.com/
+Slate - https://github.com/slatedocs/slate
+LibDoc - https://github.com/olivier3lanc/Jekyll-LibDoc
+
+
+Allejo - https://allejo.io/projects/jekyll/projects/
+
 
 
 Warning: Check if the site you are linking to allows it to be loaded into an iframe. Also, since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).

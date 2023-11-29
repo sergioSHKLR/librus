@@ -64,25 +64,12 @@
 
   <!-- COL1 BODY -->
   <div id="col1-body">
-
-    <!-- COL1 TOC 
-    <p class="sidebar-heading">Table of contents</p>
-    <details style="font-family: monospace;">
-      <summary style="font-family: monospace; margin-left: 0;">1. 🗃️ Part 1</summary>
-      <p><a href="#">1.01. 🗂️ Chapter 01</a></p>
-      <p><a href="#">📃 Sub-Chapter a</a></p>
-      <p><a href="#">📃 Sub-Chapter b</a></p>
-      <p><a href="#">📃 Sub-Chapter c</a></p>
-      <p><a href="#">1.02. 🗂️ Chapter 02</a></p>
-      <p><a href="#">📃 Sub-Chapter a</a></p>
-      <p><a href="#">📃 Sub-Chapter b</a></p>
-      <p><a href="#">📃 Sub-Chapter c</a></p>
-    </details>
-    <br> -->
+    <br>
 
     <!-- ALLEJO JEKYLL TOC -->
-    <p class="sidebar-heading">Table of contents</p>
-    {% include toc.html html=content %}
+    <details open><summary class="sidebar-heading">Table of contents</summary>
+
+    {% include toc.html html=content flat_toc="true" %} </details><br>
 
     <!-- COL1 LINKS -->
     <details><summary class="sidebar-heading">Library</summary>
@@ -94,7 +81,7 @@
     <details><summary class="sidebar-heading">Project</summary>
     <p><a href="./" title="home">🏠 Home</a></p>
     <p><a href="./1-info.html" title="info"><span
-          style="background-color: dodgerblue; border-radius: 50%; padding: 3px 2px; font-size: 70%; vertical-align: text-top;">❔</span>
+          style="background-color: dodgerblue; border-radius: 50%; padding: 2px 3px; font-size: 70%; vertical-align: text-top;">❔</span>
         Info</a></p>
     <p><a href="./license.html" title="license">⚖️ License</a></p>
     <p><a href="./3-reviews.html" title="reviews">❤️ Reviews</a></p>
@@ -184,7 +171,6 @@
             class="icon">looks_4</span></button>
       </div>
     </div>
-
 
     {{ content }}
 

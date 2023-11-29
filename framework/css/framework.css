@@ -39,9 +39,9 @@ html, iframe, img {
     z-index: 1
 }
 
+#col1-body ol {margin: 14px 0; margin-left: -20px;}
 #col1-body ul {list-style-type: none; margin: 14px 0; margin-left: -20px;}
 #col1-body li {list-style-type: none; margin: 14px 0; margin-left: -20px;}
-
 
 #col1-brand,
 #col2-brand {

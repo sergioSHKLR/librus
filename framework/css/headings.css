@@ -18,9 +18,6 @@ h5 {
 
 h6 {
     border-bottom: 1px solid #59595980;
-    margin-bottom: -15px;
-    padding-top: 20px;
-    margin-top: 0;
     font-size: 16px;
     font-family: 'Roboto Slab';
 }
@@ -47,10 +44,34 @@ h4:before {
 
 h5:before {
     content: "h5 ";
-    color: #dddddd99
+    color: #dddddd99;
 }
 
 h6:before {
-    content: "h6 ";
+    content: "h6  ";
     color: #dddddd99
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0 10px -20px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    text-indent: 17px;
+}
+
+h5 {
+    border-bottom: 1px solid #59595980;
+}
+
+h6 {
+    text-indent: 25px;
 }
