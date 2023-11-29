@@ -20,7 +20,9 @@ Read the <kbd><span style="background-color: dodgerblue; border-radius: 50%; pad
 While adhering to our Creative Commons license, feel free to use, translate, modify, and improve it. Submit contributions so we can merge them or add to our showcase.
 
 🙏🏼 So be it!  
-<p>&nbsp;</p>
+
+![baldy](./content/baldy.png){:style="height: 100px; width: 100px; transform: scaleX(-1);"}
+
 Sergio
 {:.cursive}
 

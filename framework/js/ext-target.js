@@ -1,7 +1,7 @@
 
 // SETS COL2 LINKS TO TARGET EXT --------------------------------
 (function () {
-    const links = document.querySelectorAll("a[href^='https://en.m.wikipedia'], a[href^='http://en.m.wikipedia'], a[href^='https://en.m.wiktionary'], a[href^='https://www.openstreetmap.org/export/embed.html']")
+    const links = document.querySelectorAll("a[href^='https://en.m.wikipedia'], a[href^='http://en.m.wikipedia'], a[href^='https://en.m.wiktionary'], a[href^='https://www.google.com/maps/embed']")
     const host = window.location.hostname
 
     const isInternalLink = link => new URL(link).hostname === host
@@ -13,5 +13,3 @@
         link.setAttribute("rel", "noopener")
     })
 })()
-
-

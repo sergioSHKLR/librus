@@ -11,7 +11,7 @@ layout: book
 by three cases of interest, in which I had the privilege of being
 associated with [Sherlock Holmes](https://en.m.wikipedia.org/wiki/Sherlock_Holmes) and of studying his methods. I find
 them recorded in my notes under the headings of “[The Adventure of the
-Second Stain](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Second_Stain),” “[The Adventure of the Naval Treaty](https://en.m.wikipedia.org/wiki/The_Naval_Treaty),” and “The
+Second Stain](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Second_Stain),” “The Adventure of the Naval Treaty,” and “The
 Adventure of the Tired Captain.” The first of these, however, deals
 with interest of such importance and implicates so many of the first
 families in the [kingdom](https://en.m.wikipedia.org/wiki/United_Kingdom_of_Great_Britain_and_Ireland) that for many years it will be impossible to
@@ -20,8 +20,8 @@ ever illustrated the value of his analytical methods so clearly or
 has impressed those who were associated with him so deeply. I still
 retain an almost [verbatim](https://en.m.wiktionary.org/wiki/verbatim) report of the interview in which he
 demonstrated the true facts of the case to Monsieur Dubugue of the
-[Paris](https://www.openstreetmap.org/export/embed.html?bbox=2.1203613281250004%2C48.760715369622815%2C2.5735473632812504%2C48.95700264873709&amp;layer=mapnik&amp;marker=48.858884469956905%2C2.3469411000000946) police, and Fritz von Waldbaum, the well-known specialist of
-[Dantzig](https://www.openstreetmap.org/export/embed.html?bbox=18.21121215820313%2C54.255197251363256%2C19.117584228515625%2C54.60230099191582&amp;layer=mapnik&amp;marker=54.429116657464306%2C18.664398193359375), both of whom had wasted their energies upon what proved to
+[Paris](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.4730241667!2d2.1822296264614343!3d48.85896330358173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1701273282089!5m2!1sen!2sus) police, and Fritz von Waldbaum, the well-known specialist of
+[Dantzig](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595212.5003845971!2d17.50845938607243!3d54.356118130059926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2zR2RhxYRzaywgUG9sYW5k!5e0!3m2!1sen!2sus!4v1701273487471!5m2!1sen!2sus), both of whom had wasted their energies upon what proved to
 be side-issues. The new century will have come, however, before the
 story can be safely told. Meanwhile I pass on to the second on my
 list, which promised also at one time to be of national importance,
@@ -44,7 +44,7 @@ that his abilities and the influences which he commanded had won him
 a good position at the [Foreign Office](https://en.m.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office), and then he passed completely
 out of my mind until the following letter recalled his existence:
 
-📃 Briarbrae, [Woking](https://en.m.wikipedia.org/wiki/Woking).
+📃 Briarbrae, [Woking](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79800.95390225913!2d-0.6329366672156556!3d51.31517523845316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d41816d163b7%3A0x20f9e2ba0648b374!2sWoking%2C%20UK!5e0!3m2!1sen!2sus!4v1701273586768!5m2!1sen!2sus).
 
 My dear [Watson](https://en.m.wikipedia.org/wiki/Dr._Watson):
 I have no doubt that you can remember “Tadpole” Phelps, who was in
@@ -77,7 +77,7 @@ of course I knew well that Holmes loved his art, so that he was ever
 as ready to bring his aid as his client could be to receive it. My
 wife agreed with me that not a moment should be lost in laying the
 matter before him, and so within an hour of breakfast-time I found
-myself back once more in the old rooms in [Baker Street](https://osm.org/go/euu4HwkdU-?m=&node=5568763423).
+myself back once more in the old rooms in [Baker Street](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4246709248064!2d-0.16113062253089092!3d51.523770309506276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sus!4v1701273679984!5m2!1sen!2sus).
 
 ![holmes-2](./content/images/2.png)
 

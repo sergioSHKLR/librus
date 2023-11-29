@@ -53,15 +53,13 @@ Crisp - [https://crisp.chat/en](https://crisp.chat/en){:target="_blank"}
 
 Testimonial - [https://testimonial.to](https://testimonial.to){:target="_blank"}  
 
-Mapbox - [https://www.mapbox.com](https://www.mapbox.com){:target="_blank"}
-
 ## Open source info & services from:  
 
 Wikipedia - [https://en.m.wikipedia.org](https://www.wikipedia.org){:target="_blank"}  
 
 Wikicionário - [https://en.m.wiktionary.org](https://www.wiktionary.org){:target="_blank"}  
 
-OpenStreetMap - [https://www.openstreetmap.org](https://www.openstreetmap.org){:target="_blank"}
+Google Maps - [https://maps.google.com](https://maps.google.com){:target="_blank"}
 
 Warning: Check if the site you are linking to allows it to be loaded into an iframe. Also, since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
 
