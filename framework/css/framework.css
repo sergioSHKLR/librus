@@ -248,3 +248,15 @@ summary {
   }
 
 #col1-body img {height: 18px;}
+
+details, summary {list-style-type: none;}
+
+details summary::before { 
+    content:"＋ ";
+    font-weight: 700;
+  }
+  
+  details[open] summary::before { 
+    content:"－ ";
+    font-weight: 700;
+  }

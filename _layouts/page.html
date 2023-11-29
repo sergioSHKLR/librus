@@ -65,6 +65,13 @@
   <div id="col1-body">
     <br>
 
+    <!-- ALLEJO JEKYLL TOC -->
+    <details open>
+      <summary class="sidebar-heading">On this page</summary>
+
+      {% include toc.html html=content flat_toc="true" %}
+    </details><br>
+
     <!-- COL1 DETAILS -->
     <details open>
       <summary class="sidebar-heading">Project</summary>
@@ -85,8 +92,6 @@
       <p><a href="./C-holmes.html" title="3">⚓ The Naval Treaty</a></p>
     </details><br>
 
-
-
     <!-- COL1 REPO -->
     <details open>
       <summary class="sidebar-heading">Source code</summary>
@@ -103,7 +108,8 @@
       <summary class="sidebar-heading">Details</summary>
       <p>#️⃣ Version <kbd>11.23a</kbd></p>
       <p>🗓️ Updated on {{ "today" | date: "%b-%y" }}</p>
-      <p>🛡️ <a href="./2-license.html">CC BY-NC-SA 4.0</a></p></details>
+      <p>🛡️ <a href="./2-license.html">CC BY-NC-SA 4.0</a></p>
+    </details>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
