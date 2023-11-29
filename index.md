@@ -5,7 +5,7 @@ layout: page
 
 # 🏠 Home
 
-## Loosely Integrated Book Reader Universal Society (LIBRUS)
+## Loosely Integrated Book Reading Unified System (LIBRUS)
 
 Inspired by other initiatives of self and distance learning, we created this platform which combines dispersed sources & tools providing the user with a first-of-its-kind integrated knowledge platform. 
 
@@ -15,7 +15,7 @@ Our interface is composed of three columns which are selectively displayed accor
 
 The split-layout allows for the reading & highlighting ([Hypothes.is annotator](https://web.hypothes.is/everyone/){:target="ext"}) of the main content while also viewing of complementary material (articles, word definitions, maps, videos, audio, video-calls, etc) without wrangling separate tabs or windows. Also, it minimizes distraction and increases topic rentention & recall.
 
-Read the <kbd><span style="background-color: dodgerblue; border-radius: 50%; padding: 2px 2px 3px 2px; font-size: 70%; vertical-align: middle;">❔</span> Info</kbd> page to familiarize with the standards utilized in our project.
+Read the <kbd><span style="background-color: dodgerblue; border-radius: 50%; padding: 3px 2px; font-size: 70%; vertical-align: middle;">❔</span> Info</kbd> page to familiarize with the standards utilized in our project.
 
 While adhering to our Creative Commons license, feel free to use, translate, modify, and improve it. Submit contributions so we can merge them or add to our showcase.
 
