@@ -3,11 +3,7 @@ title: ⚓ The Naval Treaty
 layout: book
 ---
 
-# ⚓ [The Naval Treaty](https://en.m.wikipedia.org/wiki/The_Naval_Treaty)  
-
-[Original PDF](https://www.dfw-sherlock.org/uploads/3/7/3/8/37380505/1893_october-november_the_adventure_of_the_naval_treaty.pdf){:target="ext"}
-
-<a target="ext" href="https://www.youtube.com/embed/J0vRz6R4PBw" title="Jeremy Brett as Sherlock Holmes - The Naval Treaty [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>TV show</a>
+# ⚓ [The Naval Treaty](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Naval_Treaty)  
 
 ## by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)
 
@@ -1615,6 +1611,8 @@ mercy I should be extremely unwilling to trust.”
 <p>&nbsp;</p>
 
 ---
+
+<a target="ext" href="https://www.youtube.com/embed/J0vRz6R4PBw" title="Jeremy Brett as Sherlock Holmes - The Naval Treaty [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>📽️ TV show</a>
 
 This text is provided to you “as-is” without any warranty. No
 warranties of any kind, expressed or implied, are made to you as to
