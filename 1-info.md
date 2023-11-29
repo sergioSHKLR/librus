@@ -7,7 +7,9 @@ layout: page
 
 Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
 
-The intended usage is:
+## Setup
+
+The setup librus for your own usage, follow these steps:
 
 1. Load your **study material** [^1] into <kbd>book.md</kbd>. It displays in second column. 
 
@@ -16,8 +18,6 @@ The intended usage is:
 3. Use the buttons in the top bar as is [^2] or reconfigure them as you wish.
 
 4. Fill in or create other pages, as desired. Don't forget the front matter.
-
-# Credits
 
 ## Design inspiration from:  
 
@@ -61,11 +61,15 @@ Wikicionário - [https://en.m.wiktionary.org](https://www.wiktionary.org){:targe
 
 Google Maps - [https://maps.google.com](https://maps.google.com){:target="_blank"}
 
-Warning: Check if the site you are linking to allows it to be loaded into an iframe. Also, since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
+---
 
-Note: We are using Jekyll SSG with Kramdown but you are free to modify it to your liking.
+🚨 **Warning**: Check if the site you are linking to allows it to be loaded into an iframe.
 
-Our Lighthouse report can be viewed [here](./lighthouse.html){:target="ext"} (Hypothes.is turned off and iframe blank)
+💡 **Hint**: Since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
+
+📝 **Note**: We are using Jekyll SSG with Kramdown but you are free to modify it to your liking.
+
+ Our Lighthouse report can be viewed [here](./lighthouse.html){:target="ext"} (Hypothes.is turned off and iframe empty)
 
 ---
 
