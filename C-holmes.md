@@ -1627,3 +1627,5 @@ Pictures for “The Naval Treaty” were taken from a 1911 edition of
 “The Memoirs of Sherlock Holmes” by Smith, Elder & Co. of London.
 
 This text comes from the collection’s version 3.1.
+
+<br>
