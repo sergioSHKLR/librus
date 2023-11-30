@@ -21,7 +21,7 @@ has impressed those who were associated with him so deeply. I still
 retain an almost [verbatim](https://en.m.wiktionary.org/wiki/verbatim) report of the interview in which he
 demonstrated the true facts of the case to Monsieur Dubugue of the
 [Paris](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.4730241667!2d2.1822296264614343!3d48.85896330358173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1701273282089!5m2!1sen!2sus) police, and Fritz von Waldbaum, the well-known specialist of
-[Dantzig](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595212.5003845971!2d17.50845938607243!3d54.356118130059926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2zR2RhxYRzaywgUG9sYW5k!5e0!3m2!1sen!2sus!4v1701273487471!5m2!1sen!2sus), both of whom had wasted their energies upon what proved to
+[Dantzig](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34712.99163377963!2d2.3137849631648177!3d48.86231772883529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1701310439667!5m2!1sen!2sus), both of whom had wasted their energies upon what proved to
 be side-issues. The new century will have come, however, before the
 story can be safely told. Meanwhile I pass on to the second on my
 list, which promised also at one time to be of national importance,
@@ -79,7 +79,7 @@ of course I knew well that Holmes loved his art, so that he was ever
 as ready to bring his aid as his client could be to receive it. My
 wife agreed with me that not a moment should be lost in laying the
 matter before him, and so within an hour of breakfast-time I found
-myself back once more in the old rooms in [Baker Street](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4246709248064!2d-0.16113062253089092!3d51.523770309506276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sus!4v1701273679984!5m2!1sen!2sus).
+myself back once more in the old rooms in [Baker Street](https://www.google.com/maps/embed?pb=!4v1701310070331!6m8!1m7!1sxcpfEVXzdOSLfJZ8-e78WQ!2m2!1d51.52377182736027!2d-0.1582448794529913!3f271.9495810431267!4f-4.3476454619505205!5f2.4318179095155026).
 
 ![holmes-2](./content/images/2.png)
 
