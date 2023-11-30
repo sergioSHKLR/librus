@@ -7,7 +7,7 @@ layout: book
 
 ## by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)
 
-👨‍⚕️🩺 The July which immediately succeeded my marriage was made memorable
+👨‍⚕️ The July which immediately succeeded my marriage was made memorable
 by three cases of interest, in which I had the privilege of being
 associated with [Sherlock Holmes](https://en.m.wikipedia.org/wiki/Sherlock_Holmes) and of studying his methods. I find
 them recorded in my notes under the headings of “[The Adventure of the
@@ -44,16 +44,17 @@ that his abilities and the influences which he commanded had won him
 a good position at the [Foreign Office](https://en.m.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office), and then he passed completely
 out of my mind until the following letter recalled his existence:
 
-📃 Briarbrae, [Woking](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79800.95390225913!2d-0.6329366672156556!3d51.31517523845316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d41816d163b7%3A0x20f9e2ba0648b374!2sWoking%2C%20UK!5e0!3m2!1sen!2sus!4v1701273586768!5m2!1sen!2sus).
-
-My dear [Watson](https://en.m.wikipedia.org/wiki/Dr._Watson):
+> 📃 Briarbrae, [Woking](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79800.95390225913!2d-0.6329366672156556!3d51.31517523845316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d41816d163b7%3A0x20f9e2ba0648b374!2sWoking%2C%20UK!5e0!3m2!1sen!2sus!4v1701273586768!5m2!1sen!2sus).
+>
+> My dear [Watson](https://en.m.wikipedia.org/wiki/Dr._Watson):
 I have no doubt that you can remember “Tadpole” Phelps, who was in
 the fifth form when you were in the third. It is possible even that
 you may have heard that through my uncle’s influence I obtained a
 good appointment at the Foreign Office, and that I was in a situation
 of trust and honor until a horrible misfortune came suddenly to blast
 my career.
-There is no use writing of the details of that dreadful event. In the
+>
+> There is no use writing of the details of that dreadful event. In the
 event of your acceding to my request it is probable that I shall have
 to narrate them to you. I have only just recovered from nine weeks of
 brain-fever, and am still exceedingly weak. Do you think that you
@@ -67,8 +68,9 @@ because I have been off my head ever since the blow fell. Now I am
 clear again, though I dare not think of it too much for fear of a
 relapse. I am still so weak that I have to write, as you see, by
 dictating. Do try to bring him.
-Your old school-fellow,
-Percy Phelps.
+>
+> Your old school-fellow,  
+> Percy Phelps.
 
 There was something that touched me as I read this letter, something
 pitiable in the reiterated appeals to bring Holmes. So moved was I
@@ -92,7 +94,7 @@ his glass pipette, and finally brought a test-tube containing a
 solution over to the table. In his right hand he held a slip of
 [litmus-paper](https://en.m.wikipedia.org/wiki/Litmus).
 
-🕵️‍♂️🔎 “You come at a crisis, Watson,” said he. “If this paper remains blue,
+🕵️‍♂️ “You come at a crisis, Watson,” said he. “If this paper remains blue,
 all is well. If it turns red, it means a man’s life.” He dipped it
 into the test-tube and it flushed at once into a dull, dirty crimson.
 “Hum! I thought as much!” he cried. “I will be at your service in an
@@ -102,27 +104,27 @@ handed over to the page-boy. Then he threw himself down into the
 chair opposite, and drew up his knees until his fingers clasped round
 his long, thin shins.
 
-🕵️‍♂️🔎 “A very commonplace little murder,” said he. “You’ve got something
+🕵️‍♂️ “A very commonplace little murder,” said he. “You’ve got something
 better, I fancy. You are the stormy petrel of crime, Watson. What is
 it?”
 
 I handed him the letter, which he read with the most concentrated
 attention.
 
-🕵️‍♂️🔎 “It does not tell us very much, does it?” he remarked, as he handed
+🕵️‍♂️ “It does not tell us very much, does it?” he remarked, as he handed
 it back to me.
 
-👨‍⚕️🩺 “Hardly anything.”
+👨‍⚕️ “Hardly anything.”
 
-🕵️‍♂️🔎 “And yet the writing is of interest.”
+🕵️‍♂️ “And yet the writing is of interest.”
 
-👨‍⚕️🩺 “But the writing is not his own.”
+👨‍⚕️ “But the writing is not his own.”
 
-🕵️‍♂️🔎 “Precisely. It is a woman’s.”
+🕵️‍♂️ “Precisely. It is a woman’s.”
 
-👨‍⚕️🩺 “A man’s surely,” I cried.
+👨‍⚕️ “A man’s surely,” I cried.
 
-🕵️‍♂️🔎 “No, a woman’s, and a woman of rare character. You see, at the
+🕵️‍♂️ “No, a woman’s, and a woman of rare character. You see, at the
 commencement of an investigation it is something to know that your
 client is in close contact with some one who, for good or evil, has
 an exceptional nature. My interest is already awakened in the case.
@@ -167,10 +169,14 @@ young man, very pale and worn, was lying upon a sofa near the open
 window, through which came the rich scent of the garden and the balmy
 summer air. A woman was sitting beside him, who rose as we entered.
 
-“Shall I leave, Percy?” she asked.
+👰🏾‍♀️ “Shall I leave, Percy?” she asked.
 
-He clutched her hand to detain her. “How are you, Watson?” said he,
-cordially. “I should never have known you under that moustache, and I
+He clutched her hand to detain her. 
+
+🤵🏻‍♂️ “How are you, Watson?” said he,
+cordially. 
+
+🤵🏻‍♂️ “I should never have known you under that moustache, and I
 dare say you would not be prepared to swear to me. This I presume is
 your celebrated friend, Mr. Sherlock Holmes?”
 
@@ -184,21 +190,22 @@ dark, Italian eyes, and a wealth of deep black hair. Her rich tints
 made the white face of her companion the more worn and haggard by the
 contrast.
 
-“I won’t waste your time,” said he, raising himself upon the sofa.
-“I’ll plunge into the matter without further preamble. I was a happy
+🤵🏻‍♂️ “I won’t waste your time,” said he, raising himself upon the sofa.
+
+🤵🏻‍♂️ “I’ll plunge into the matter without further preamble. I was a happy
 and successful man, Mr. Holmes, and on the eve of being married, when
 a sudden and dreadful misfortune wrecked all my prospects in life.
 
 ![holmes-4](./content/images/4.png)
 
-“I was, as Watson may have told you, in the Foreign Office, and
+🤵🏻‍♂️ “I was, as Watson may have told you, in the Foreign Office, and
 through the influences of my uncle, Lord Holdhurst, I rose rapidly to
 a responsible position. When my uncle became foreign minister in this
 administration he gave me several missions of trust, and as I always
 brought them to a successful conclusion, he came at last to have the
 utmost confidence in my ability and tact.
 
-“Nearly ten weeks ago--to be more accurate, on the twenty-third of
+🤵🏻‍♂️ “Nearly ten weeks ago--to be more accurate, on the twenty-third of
 May--he called me into his private room, and, after complimenting me
 on the good work which I had done, he informed me that he had a new
 commission of trust for me to execute.
@@ -212,7 +219,7 @@ learn the contents of these papers. They should not leave my bureau
 were it not that it is absolutely necessary to have them copied. You
 have a desk in your office?’
 
-“‘Yes, sir.’
+🤵🏻‍♂️ “‘Yes, sir.’
 
 “‘Then take the treaty and lock it up there. I shall give directions
 that you may remain behind when the others go, so that you may copy
@@ -220,28 +227,28 @@ it at your leisure without fear of being overlooked. When you have
 finished, relock both the original and the draft in the desk, and
 hand them over to me personally to-morrow morning.’
 
-“I took the papers and--”
+🤵🏻‍♂️ “I took the papers and--”
 
-“Excuse me an instant,” said Holmes. “Were you alone during this
+🕵️‍♂️ “Excuse me an instant,” said Holmes. “Were you alone during this
 conversation?”
 
-“Absolutely.”
+🤵🏻‍♂️ “Absolutely.”
 
-“In a large room?”
+🕵️‍♂️ “In a large room?”
 
-“Thirty feet each way.”
+🤵🏻‍♂️ “Thirty feet each way.”
 
-“In the centre?”
+🕵️‍♂️ “In the centre?”
 
-“Yes, about it.”
+🤵🏻‍♂️ “Yes, about it.”
 
-“And speaking low?”
+🕵️‍♂️ “And speaking low?”
 
-“My uncle’s voice is always remarkably low. I hardly spoke at all.”
+🤵🏻‍♂️ “My uncle’s voice is always remarkably low. I hardly spoke at all.”
 
-“Thank you,” said Holmes, shutting his eyes; “pray go on.”
+🕵️‍♂️ “Thank you,” said Holmes, shutting his eyes; “pray go on.”
 
-“I did exactly what he indicated, and waited until the other clerks
+🤵🏻‍♂️ “I did exactly what he indicated, and waited until the other clerks
 had departed. One of them in my room, Charles Gorot, had some arrears
 of work to make up, so I left him there and went out to dine. When I
 returned he was gone. I was anxious to hurry my work, for I knew that
@@ -249,7 +256,7 @@ Joseph--the Mr. Harrison whom you saw just now--was in town, and that
 he would travel down to Woking by the eleven-o’clock train, and I
 wanted if possible to catch it.
 
-“When I came to examine the treaty I saw at once that it was of such
+🤵🏻‍♂️ “When I came to examine the treaty I saw at once that it was of such
 importance that my uncle had been guilty of no exaggeration in what
 he had said. Without going into details, I may say that it defined
 the position of Great Britain towards the Triple Alliance, and

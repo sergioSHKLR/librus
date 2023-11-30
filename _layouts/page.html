@@ -111,8 +111,6 @@
  <p>🛡️ <a href="./2-license.html">CC BY-NC-SA 4.0</a></p>
  </details>
 
- <button id="installApp">Install</button>
-
  <p>&nbsp;</p>
  <p>&nbsp;</p>
  <p>&nbsp;</p>
@@ -221,24 +219,6 @@
  {
  "openSidebar": true
  }
- </script>
-
- <script>
-  let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
-        deferredPrompt = e;
-    });
-
-    const installApp = document.getElementById('installApp');
-    installApp.addEventListener('click', async () => {
-        if (deferredPrompt !== null) {
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            if (outcome === 'accepted') {
-                deferredPrompt = null;
-            }
-        }
-    });
  </script>
 
 </body>
