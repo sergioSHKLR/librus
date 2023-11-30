@@ -61,19 +61,24 @@ button.tools {
 }
 
 .b1 {
-    background-color: #ffff001a !important; box-shadow: none !important; 
+    background-color: #ffff001a !important;
+    box-shadow: none !important;
 }
 
 .b2 {
-    background-color: #00ff001a !important; box-shadow: none !important; 
+    background-color: #00ff001a !important;
+    box-shadow: none !important;
 }
 
 .b3 {
-    background-color: #ffc0cb22 !important; box-shadow: none !important; 
+    background-color: #ffc0cb22 !important;
+    box-shadow: none !important;
 }
 
 .b4 {
-    background-color: #fff !important; color: currentColor !important; box-shadow: none !important; 
+    background-color: #fff !important;
+    color: currentColor !important;
+    box-shadow: none !important;
 }
 
 
@@ -102,7 +107,7 @@ button.tools {
     border: 1px solid #59595980;
     border-radius: 20px;
     padding: 3px;
-    background-color:  #aad3791a;
+    background-color: #aad3791a;
 }
 
 .dropdown-content button {

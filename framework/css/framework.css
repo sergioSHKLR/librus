@@ -1,5 +1,7 @@
 /*---------- FRAMEWORK ----------*/
-html, iframe, img {
+html,
+iframe,
+img {
     overflow: clip !important
 }
 
@@ -39,9 +41,22 @@ html, iframe, img {
     z-index: 1
 }
 
-#col1-body ol {margin: 14px 0; margin-left: -20px;}
-#col1-body ul {list-style-type: none; margin: 14px 0; margin-left: -20px;}
-#col1-body li {list-style-type: none; margin: 14px 0; margin-left: -20px;}
+#col1-body ol {
+    margin: 14px 0;
+    margin-left: -20px;
+}
+
+#col1-body ul {
+    list-style-type: none;
+    margin: 14px 0;
+    margin-left: -20px;
+}
+
+#col1-body li {
+    list-style-type: none;
+    margin: 14px 0;
+    margin-left: -20px;
+}
 
 #col1-brand,
 #col2-brand {
@@ -245,18 +260,23 @@ summary {
     font-size: 16px;
     font-weight: 500;
     width: 70%
-  }
+}
 
-#col1-body img {height: 18px;}
+#col1-body img {
+    height: 18px;
+}
 
-details, summary {list-style-type: none;}
+details,
+summary {
+    list-style-type: none;
+}
 
-details summary::before { 
-    content:"＋ ";
+details summary::before {
+    content: "＋ ";
     font-weight: 700;
-  }
-  
-  details[open] summary::before { 
-    content:"－ ";
+}
+
+details[open] summary::before {
+    content: "－ ";
     font-weight: 700;
-  }
+}

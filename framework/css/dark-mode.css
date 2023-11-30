@@ -13,10 +13,15 @@
     box-shadow: none;
 }
 
-.dark-mode #col1-body {background-color:  #30352b; z-index: 2;}
+.dark-mode #col1-body {
+    background-color: #30352b;
+    z-index: 2;
+}
 
 .dark-mode iframe {
     filter: invert(87%)
 }
 
-.dark-mode .dropdown-content {background-color: #30352b;}
+.dark-mode .dropdown-content {
+    background-color: #30352b;
+}
