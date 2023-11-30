@@ -1,7 +1,7 @@
 {
   "id": "/",
   "scope": "https://librus.app",
-  "name": "📗 librus",
+  "name": "librus",
   "display": "fullscreen",
   "start_url": "https://librus.app/",
   "short_name": "librus",
