@@ -267,7 +267,7 @@ At the end were the signatures of the high dignitaries who had signed
 it. I glanced my eyes over it, and then settled down to my task of
 copying.
 
-“It was a long document, written in the French language, and
+🤵🏻‍♂️ “It was a long document, written in the French language, and
 containing twenty-six separate articles. I copied as quickly as I
 could, but at nine o’clock I had only done nine articles, and it
 seemed hopeless for me to attempt to catch my train. I was feeling
@@ -278,12 +278,12 @@ stairs, and is in the habit of making coffee at his spirit-lamp for
 any of the officials who may be working over time. I rang the bell,
 therefore, to summon him.
 
-“To my surprise, it was a woman who answered the summons, a large,
+🤵🏻‍♂️ “To my surprise, it was a woman who answered the summons, a large,
 coarse-faced, elderly woman, in an apron. She explained that she was
 the commissionaire’s wife, who did the charing, and I gave her the
 order for the coffee.
 
-“I wrote two more articles and then, feeling more drowsy than ever, I
+🤵🏻‍♂️ “I wrote two more articles and then, feeling more drowsy than ever, I
 rose and walked up and down the room to stretch my legs. My coffee
 had not yet come, and I wondered what was the cause of the delay
 could be. Opening the door, I started down the corridor to find out.
@@ -298,9 +298,9 @@ Charles Street. Here is a rough chart of the place.”
 
 ![holmes-6](./content/images/6.png)
 
-“Thank you. I think that I quite follow you,” said Sherlock Holmes.
+🕵️‍♂️ “Thank you. I think that I quite follow you,” said Sherlock Holmes.
 
-“It is of the utmost importance that you should notice this point. I
+🤵🏻‍♂️ “It is of the utmost importance that you should notice this point. I
 went down the stairs and into the hall, where I found the
 commissionaire fast asleep in his box, with the kettle boiling
 furiously upon the spirit-lamp. I took off the kettle and blew out
@@ -309,23 +309,23 @@ my hand and was about to shake the man, who was still sleeping
 soundly, when a bell over his head rang loudly, and he woke with a
 start.
 
-“‘Mr. Phelps, sir!’ said he, looking at me in bewilderment.
+👮🏼‍♂️ “‘Mr. Phelps, sir!’ said he, looking at me in bewilderment.
 
-“‘I came down to see if my coffee was ready.’
+🤵🏻‍♂️ “‘I came down to see if my coffee was ready.’
 
-“‘I was boiling the kettle when I fell asleep, sir.’ He looked at me
+👮🏼‍♂️ “‘I was boiling the kettle when I fell asleep, sir.’ He looked at me
 and then up at the still quivering bell with an ever-growing
 astonishment upon his face.
 
-“‘If you was here, sir, then who rang the bell?’ he asked.
+👮🏼‍♂️ “‘If you was here, sir, then who rang the bell?’ he asked.
 
-“‘The bell!’ I cried. ‘What bell is it?’
+🤵🏻‍♂️ “‘The bell!’ I cried. ‘What bell is it?’
 
-“‘It’s the bell of the room you were working in.’
+👮🏼‍♂️ “‘It’s the bell of the room you were working in.’
 
 ![holmes-7](./content/images/7.png)
 
-“A cold hand seemed to close round my heart. Some one, then, was in
+🤵🏻‍♂️ “A cold hand seemed to close round my heart. Some one, then, was in
 that room where my precious treaty lay upon the table. I ran
 frantically up the stair and along the passage. There was no one in
 the corridors, Mr. Holmes. There was no one in the room. All was
@@ -334,91 +334,93 @@ committed to my care had been taken from the desk on which they lay.
 The copy was there, and the original was gone.”
 
 Holmes sat up in his chair and rubbed his hands. I could see that the
-problem was entirely to his heart. “Pray, what did you do then?” he
+problem was entirely to his heart. 
+
+🕵️‍♂️ “Pray, what did you do then?” he
 murmured.
 
-“I recognized in an instant that the thief must have come up the
+🤵🏻‍♂️ “I recognized in an instant that the thief must have come up the
 stairs from the side door. Of course I must have met him if he had
 come the other way.”
 
-“You were satisfied that he could not have been concealed in the room
+🕵️‍♂️ “You were satisfied that he could not have been concealed in the room
 all the time, or in the corridor which you have just described as
 dimly lighted?”
 
-“It is absolutely impossible. A rat could not conceal himself either
+🤵🏻‍♂️ “It is absolutely impossible. A rat could not conceal himself either
 in the room or the corridor. There is no cover at all.”
 
-“Thank you. Pray proceed.”
+🕵️‍♂️ “Thank you. Pray proceed.”
 
-“The commissionaire, seeing by my pale face that something was to be
+🤵🏻‍♂️ “The commissionaire, seeing by my pale face that something was to be
 feared, had followed me upstairs. Now we both rushed along the
 corridor and down the steep steps which led to Charles Street. The
 door at the bottom was closed, but unlocked. We flung it open and
 rushed out. I can distinctly remember that as we did so there came
 three chimes from a neighboring clock. It was quarter to ten.”
 
-“That is of enormous importance,” said Holmes, making a note upon his
+🕵️‍♂️ “That is of enormous importance,” said Holmes, making a note upon his
 shirt-cuff.
 
-“The night was very dark, and a thin, warm rain was falling. There
+🤵🏻‍♂️ “The night was very dark, and a thin, warm rain was falling. There
 was no one in Charles Street, but a great traffic was going on, as
 usual, in Whitehall, at the extremity. We rushed along the pavement,
 bare-headed as we were, and at the far corner we found a policeman
 standing.
 
-“‘A robbery has been committed,’ I gasped. ‘A document of immense
+🤵🏻‍♂️ “‘A robbery has been committed,’ I gasped. ‘A document of immense
 value has been stolen from the Foreign Office. Has any one passed
 this way?’
 
-“‘I have been standing here for a quarter of an hour, sir,’ said he;
+💂🏻 “‘I have been standing here for a quarter of an hour, sir,’ said he;
 ‘only one person has passed during that time--a woman, tall and
 elderly, with a Paisley shawl.’
 
-“‘Ah, that is only my wife,’ cried the commissionaire; ‘has no one
+👮🏼‍♂️ “‘Ah, that is only my wife,’ cried the commissionaire; ‘has no one
 else passed?’
 
 “‘No one.’
 
-“‘Then it must be the other way that the thief took,’ cried the
+👮🏼‍♂️ “‘Then it must be the other way that the thief took,’ cried the
 fellow, tugging at my sleeve.
 
-“But I was not satisfied, and the attempts which he made to draw me
+🤵🏻‍♂️ “But I was not satisfied, and the attempts which he made to draw me
 away increased my suspicions.
 
-“‘Which way did the woman go?’ I cried.
+🤵🏻‍♂️ “‘Which way did the woman go?’ I cried.
 
-“‘I don’t know, sir. I noticed her pass, but I had no special reason
+💂🏻 “‘I don’t know, sir. I noticed her pass, but I had no special reason
 for watching her. She seemed to be in a hurry.’
 
-“‘How long ago was it?’
+🤵🏻‍♂️ “‘How long ago was it?’
 
-“‘Oh, not very many minutes.’
+💂🏻 “‘Oh, not very many minutes.’
 
-“‘Within the last five?’
+🤵🏻‍♂️ “‘Within the last five?’
 
-“‘Well, it could not be more than five.’
+💂🏻 “‘Well, it could not be more than five.’
 
-“‘You’re only wasting your time, sir, and every minute now is of
+👮🏼‍♂️ “‘You’re only wasting your time, sir, and every minute now is of
 importance,’ cried the commissionaire; ‘take my word for it that my
 old woman has nothing to do with it, and come down to the other end
 of the street. Well, if you won’t, I will.’ And with that he rushed
 off in the other direction.
 
-“But I was after him in an instant and caught him by the sleeve.
+🤵🏻‍♂️ “But I was after him in an instant and caught him by the sleeve.
 
-“‘Where do you live?’ said I.
+🤵🏻‍♂️ “‘Where do you live?’ said I.
 
-“‘16 Ivy Lane, Brixton,’ he answered. ‘But don’t let yourself be
+👮🏼‍♂️ “‘16 Ivy Lane, Brixton,’ he answered. ‘But don’t let yourself be
 drawn away upon a false scent, Mr. Phelps. Come to the other end of
 the street and let us see if we can hear of anything.’
 
-“Nothing was to be lost by following his advice. With the policeman
+🤵🏻‍♂️ “Nothing was to be lost by following his advice. With the policeman
 we both hurried down, but only to find the street full of traffic,
 many people coming and going, but all only too eager to get to a
 place of safety upon so wet a night. There was no lounger who could
 tell us who had passed.
 
-“Then we returned to the office, and searched the stairs and the
+🤵🏻‍♂️ “Then we returned to the office, and searched the stairs and the
 passage without result. The corridor which led to the room was laid
 down with a kind of creamy linoleum which shows an impression very
 easily. We examined it very carefully, but found no outline of any
@@ -426,47 +428,47 @@ footmark.”
 
 “Had it been raining all evening?”
 
-“Since about seven.”
+🤵🏻‍♂️ “Since about seven.”
 
-“How is it, then, that the woman who came into the room about nine
+🕵️‍♂️ “How is it, then, that the woman who came into the room about nine
 left no traces with her muddy boots?”
 
 “I am glad you raised the point. It occurred to me at the time. The
 charwomen are in the habit of taking off their boots at the
 commissionaire’s office, and putting on list slippers.”
 
-“That is very clear. There were no marks, then, though the night was
+🕵️‍♂️ “That is very clear. There were no marks, then, though the night was
 a wet one? The chain of events is certainly one of extraordinary
 interest. What did you do next?”
 
-“We examined the room also. There is no possibility of a secret door,
+🤵🏻‍♂️ “We examined the room also. There is no possibility of a secret door,
 and the windows are quite thirty feet from the ground. Both of them
 were fastened on the inside. The carpet prevents any possibility of a
 trap-door, and the ceiling is of the ordinary whitewashed kind. I
 will pledge my life that whoever stole my papers could only have come
 through the door.”
 
-“How about the fireplace?”
+🕵️‍♂️ “How about the fireplace?”
 
-“They use none. There is a stove. The bell-rope hangs from the wire
+🤵🏻‍♂️ “They use none. There is a stove. The bell-rope hangs from the wire
 just to the right of my desk. Whoever rang it must have come right up
 to the desk to do it. But why should any criminal wish to ring the
 bell? It is a most insoluble mystery.”
 
-“Certainly the incident was unusual. What were your next steps? You
+🕵️‍♂️ “Certainly the incident was unusual. What were your next steps? You
 examined the room, I presume, to see if the intruder had left any
 traces--any cigar-end or dropped glove or hairpin or other trifle?”
 
-“There was nothing of the sort.”
+🤵🏻‍♂️ “There was nothing of the sort.”
 
-“No smell?”
+🕵️‍♂️ “No smell?”
 
-“Well, we never thought of that.”
+🤵🏻‍♂️ “Well, we never thought of that.”
 
-“Ah, a scent of tobacco would have been worth a great deal to us in
+🕵️‍♂️ “Ah, a scent of tobacco would have been worth a great deal to us in
 such an investigation.”
 
-“I never smoke myself, so I think I should have observed it if there
+🤵🏻‍♂️ “I never smoke myself, so I think I should have observed it if there
 had been any smell of tobacco. There was absolutely no clue of any
 kind. The only tangible fact was that the commissionaire’s wife--Mrs.
 Tangey was the name--had hurried out of the place. He could give no
@@ -475,14 +477,14 @@ went home. The policeman and I agreed that our best plan would be to
 seize the woman before she could get rid of the papers, presuming
 that she had them.
 
-“The alarm had reached Scotland Yard by this time, and Mr. Forbes,
+🤵🏻‍♂️ “The alarm had reached Scotland Yard by this time, and Mr. Forbes,
 the detective, came round at once and took up the case with a great
 deal of energy. We hired a hansom, and in half an hour we were at the
 address which had been given to us. A young woman opened the door,
 who proved to be Mrs. Tangey’s eldest daughter. Her mother had not
 come back yet, and we were shown into the front room to wait.
 
-“About ten minutes later a knock came at the door, and here we made
+🤵🏻‍♂️ “About ten minutes later a knock came at the door, and here we made
 the one serious mistake for which I blame myself. Instead of opening
 the door ourselves, we allowed the girl to do so. We heard her say,
 ‘Mother, there are two men in the house waiting to see you,’ and an
@@ -505,7 +507,7 @@ believe that you have taken a paper of importance from the Foreign
 Office, and that you ran in here to dispose of it. You must come back
 with us to Scotland Yard to be searched.’
 
-“It was in vain that she protested and resisted. A four-wheeler was
+🤵🏻‍♂️ “It was in vain that she protested and resisted. A four-wheeler was
 brought, and we all three drove back in it. We had first made an
 examination of the kitchen, and especially of the kitchen fire, to
 see whether she might have made away with the papers during the
@@ -516,7 +518,7 @@ she came back with her report. There were no signs of the papers.
 
 ![holmes-10](./content/images/10.png)
 
-“Then for the first time the horror of my situation came in its full
+🤵🏻‍♂️ “Then for the first time the horror of my situation came in its full
 force. Hitherto I had been acting, and action had numbed thought. I
 had been so confident of regaining the treaty at once that I had not
 dared to think of what would be the consequence if I failed to do so.
@@ -537,7 +539,7 @@ going down by that very train. The doctor most kindly took charge of
 me, and it was well he did so, for I had a fit in the station, and
 before we reached home I was practically a raving maniac.
 
-“You can imagine the state of things here when they were roused from
+🤵🏻‍♂️ “You can imagine the state of things here when they were roused from
 their beds by the doctor’s ringing and found me in this condition.
 Poor Annie here and my mother were broken-hearted. Dr. Ferrier had
 just heard enough from the detective at the station to be able to
@@ -573,40 +575,40 @@ medicine. Holmes sat silently, with his head thrown back and his eyes
 closed, in an attitude which might seem listless to a stranger, but
 which I knew betokened the most intense self-absorption.
 
-“You statement has been so explicit,” said he at last, “that you have
+🕵️‍♂️ “You statement has been so explicit,” said he at last, “that you have
 really left me very few questions to ask. There is one of the very
 utmost importance, however. Did you tell any one that you had this
 special task to perform?”
 
-“No one.”
+🤵🏻‍♂️ “No one.”
 
-“Not Miss Harrison here, for example?”
+🕵️‍♂️ “Not Miss Harrison here, for example?”
 
-“No. I had not been back to Woking between getting the order and
+🤵🏻‍♂️ “No. I had not been back to Woking between getting the order and
 executing the commission.”
 
-“And none of your people had by chance been to see you?”
+🕵️‍♂️ “And none of your people had by chance been to see you?”
 
-“None.”
+🤵🏻‍♂️ “None.”
 
-“Did any of them know their way about in the office?”
+🕵️‍♂️ “Did any of them know their way about in the office?”
 
-“Oh, yes, all of them had been shown over it.”
+🤵🏻‍♂️ “Oh, yes, all of them had been shown over it.”
 
-“Still, of course, if you said nothing to any one about the treaty
+🕵️‍♂️ “Still, of course, if you said nothing to any one about the treaty
 these inquiries are irrelevant.”
 
-“I said nothing.”
+🤵🏻‍♂️ “I said nothing.”
 
-“Do you know anything of the commissionaire?”
+🕵️‍♂️ “Do you know anything of the commissionaire?”
 
-“Nothing except that he is an old soldier.”
+🤵🏻‍♂️ “Nothing except that he is an old soldier.”
 
-“What regiment?”
+🕵️‍♂️ “What regiment?”
 
-“Oh, I have heard--Coldstream Guards.”
+🤵🏻‍♂️ “Oh, I have heard--Coldstream Guards.”
 
-“Thank you. I have no doubt I can get details from Forbes. The
+🕵️‍♂️ “Thank you. I have no doubt I can get details from Forbes. The
 authorities are excellent at amassing facts, though they do not
 always use them to advantage. What a lovely thing a rose is!”
 
@@ -617,7 +619,7 @@ before seen him show any keen interest in natural objects.
 
 ![holmes-11](./content/images/11.png)
 
-“There is nothing in which deduction is so necessary as in religion,”
+🕵️‍♂️ “There is nothing in which deduction is so necessary as in religion,”
 said he, leaning with his back against the shutters. “It can be built
 up as an exact science by the reasoner. Our highest assurance of the
 goodness of Providence seems to me to rest in the flowers. All other
@@ -633,45 +635,46 @@ faces. He had fallen into a reverie, with the moss-rose between his
 fingers. It had lasted some minutes before the young lady broke in
 upon it.
 
-“Do you see any prospect of solving this mystery, Mr. Holmes?” she
+🤵🏻‍♂️ “Do you see any prospect of solving this mystery, Mr. Holmes?” she
 asked, with a touch of asperity in her voice.
 
-“Oh, the mystery!” he answered, coming back with a start to the
+🕵️‍♂️ “Oh, the mystery!” he answered, coming back with a start to the
 realities of life. “Well, it would be absurd to deny that the case is
 a very abstruse and complicated one, but I can promise you that I
 will look into the matter and let you know any points which may
 strike me.”
 
-“Do you see any clue?”
+🤵🏻‍♂️ “Do you see any clue?”
 
-“You have furnished me with seven, but, of course, I must test them
+🕵️‍♂️ “You have furnished me with seven, but, of course, I must test them
 before I can pronounce upon their value.”
 
-“You suspect some one?”
+🤵🏻‍♂️ “You suspect some one?”
 
-“I suspect myself.”
+🕵️‍♂️ “I suspect myself.”
 
-“What!”
+🤵🏻‍♂️ “What!”
 
-“Of coming to conclusions too rapidly.”
+🕵️‍♂️ “Of coming to conclusions too rapidly.”
 
 “Then go to London and test your conclusions.”
 
-“Your advice is very excellent, Miss Harrison,” said Holmes, rising.
-“I think, Watson, we cannot do better. Do not allow yourself to
+🕵️‍♂️ “Your advice is very excellent, Miss Harrison,” said Holmes, rising.
+
+🕵️‍♂️ “I think, Watson, we cannot do better. Do not allow yourself to
 indulge in false hopes, Mr. Phelps. The affair is a very tangled
 one.”
 
-“I shall be in a fever until I see you again,” cried the diplomatist.
+🤵🏻‍♂️ “I shall be in a fever until I see you again,” cried the diplomatist.
 
 “Well, I’ll come out by the same train to-morrow, though it’s more
 than likely that my report will be a negative one.”
 
-“God bless you for promising to come,” cried our client. “It gives me
+🤵🏻‍♂️ “God bless you for promising to come,” cried our client. “It gives me
 fresh life to know that something is being done. By the way, I have
 had a letter from Lord Holdhurst.”
 
-“Ha! What did he say?”
+🕵️‍♂️ “Ha! What did he say?”
 
 “He was cold, but not harsh. I dare say my severe illness prevented
 him from being that. He repeated that the matter was of the utmost
@@ -679,7 +682,7 @@ importance, and added that no steps would be taken about my
 future--by which he means, of course, my dismissal--until my health
 was restored and I had an opportunity of repairing my misfortune.”
 
-“Well, that was reasonable and considerate,” said Holmes. “Come,
+🕵️‍♂️ “Well, that was reasonable and considerate,” said Holmes. “Come,
 Watson, for we have a good day’s work before us in town.”
 
 Mr. Joseph Harrison drove us down to the station, and we were soon
@@ -708,14 +711,14 @@ drink?”
 
 “I should not think so.”
 
-“Nor should I, but we are bound to take every possibility into
+🕵️‍♂️ “Nor should I, but we are bound to take every possibility into
 account. The poor devil has certainly got himself into very deep
 water, and it’s a question whether we shall ever be able to get him
 ashore. What did you think of Miss Harrison?”
 
 “A girl of strong character.”
 
-“Yes, but she is a good sort, or I am mistaken. She and her brother
+🕵️‍♂️ “Yes, but she is a good sort, or I am mistaken. She and her brother
 are the only children of an iron-master somewhere up Northumberland
 way. He got engaged to her when traveling last winter, and she came
 down to be introduced to his people, with her brother as escort. Then
@@ -726,20 +729,20 @@ inquiries.”
 
 “My practice--” I began.
 
-“Oh, if you find your own cases more interesting than mine--” said
+🕵️‍♂️ “Oh, if you find your own cases more interesting than mine--” said
 Holmes, with some asperity.
 
 “I was going to say that my practice could get along very well for a
 day or two, since it is the slackest time in the year.”
 
-“Excellent,” said he, recovering his good-humor. “Then we’ll look
+🕵️‍♂️ “Excellent,” said he, recovering his good-humor. “Then we’ll look
 into this matter together. I think that we should begin by seeing
 Forbes. He can probably tell us all the details we want until we know
 from what side the case is to be approached.”
 
 “You said you had a clue?”
 
-“Well, we have several, but we can only test their value by further
+🕵️‍♂️ “Well, we have several, but we can only test their value by further
 inquiry. The most difficult crime to track is the one which is
 purposeless. Now this is not purposeless. Who is it who profits by
 it? There is the French ambassador, there is the Russian, there is
@@ -748,31 +751,31 @@ Holdhurst.”
 
 “Lord Holdhurst!”
 
-“Well, it is just conceivable that a statesman might find himself in
+🕵️‍♂️ “Well, it is just conceivable that a statesman might find himself in
 a position where he was not sorry to have such a document
 accidentally destroyed.”
 
 “Not a statesman with the honorable record of Lord Holdhurst?”
 
-“It is a possibility and we cannot afford to disregard it. We shall
+🕵️‍♂️ “It is a possibility and we cannot afford to disregard it. We shall
 see the noble lord to-day and find out if he can tell us anything.
 Meanwhile I have already set inquiries on foot.”
 
 “Already?”
 
-“Yes, I sent wires from Woking station to every evening paper in
+🕵️‍♂️ “Yes, I sent wires from Woking station to every evening paper in
 London. This advertisement will appear in each of them.”
 
 He handed over a sheet torn from a note-book. On it was scribbled in
 pencil:
 
-“Â£10 reward. The number of the cab which dropped a fare at or about
+“A £10 reward. The number of the cab which dropped a fare at or about
 the door of the Foreign Office in Charles Street at quarter to ten in
-the evening of May 23d. Apply 221b, Baker Street.”
+the evening of May 23rd. Apply 221b, Baker Street.”
 
 “You are confident that the thief came in a cab?”
 
-“If not, there is no harm done. But if Mr. Phelps is correct in
+🕵️‍♂️ “If not, there is no harm done. But if Mr. Phelps is correct in
 stating that there is no hiding-place either in the room or the
 corridors, then the person must have come from outside. If he came
 from outside on so wet a night, and yet left no trace of damp upon
@@ -782,7 +785,7 @@ that we may safely deduce a cab.”
 
 “It sounds plausible.”
 
-“That is one of the clues of which I spoke. It may lead us to
+🕵️‍♂️ “That is one of the clues of which I spoke. It may lead us to
 something. And then, of course, there is the bell--which is the most
 distinctive feature of the case. Why should the bell ring? Was it the
 thief who did it out of bravado? Or was it some one who was with the
@@ -804,90 +807,90 @@ when he heard the errand upon which we had come.
 lay at your disposal, and then you try to finish the case yourself
 and bring discredit on them.”
 
-“On the contrary,” said Holmes, “out of my last fifty-three cases my
+🕵️‍♂️ “On the contrary,” said Holmes, “out of my last fifty-three cases my
 name has only appeared in four, and the police have had all the
 credit in forty-nine. I don’t blame you for not knowing this, for you
 are young and inexperienced, but if you wish to get on in your new
 duties you will work with me and not against me.”
 
-“I’d be very glad of a hint or two,” said the detective, changing his
+👨🏻‍💼 “I’d be very glad of a hint or two,” said the detective, changing his
 manner. “I’ve certainly had no credit from the case so far.”
 
-“What steps have you taken?”
+🕵️‍♂️ “What steps have you taken?”
 
 ![holmes-13](./content/images/13.png)
 
-“Tangey, the commissionaire, has been shadowed. He left the Guards
+👨🏻‍💼 “Tangey, the commissionaire, has been shadowed. He left the Guards
 with a good character and we can find nothing against him. His wife
 is a bad lot, though. I fancy she knows more about this than
 appears.”
 
-“Have you shadowed her?”
+🕵️‍♂️ “Have you shadowed her?”
 
-“We have set one of our women on to her. Mrs. Tangey drinks, and our
+👨🏻‍💼 “We have set one of our women on to her. Mrs. Tangey drinks, and our
 woman has been with her twice when she was well on, but she could get
 nothing out of her.”
 
-“I understand that they have had brokers in the house?”
+🕵️‍♂️ “I understand that they have had brokers in the house?”
 
-“Yes, but they were paid off.”
+👨🏻‍💼 “Yes, but they were paid off.”
 
-“Where did the money come from?”
+🕵️‍♂️ “Where did the money come from?”
 
-“That was all right. His pension was due. They have not shown any
+👨🏻‍💼 “That was all right. His pension was due. They have not shown any
 sign of being in funds.”
 
-“What explanation did she give of having answered the bell when Mr.
+🕵️‍♂️ “What explanation did she give of having answered the bell when Mr.
 Phelps rang for the coffee?”
 
-“She said that he husband was very tired and she wished to relieve
+👨🏻‍💼 “She said that he husband was very tired and she wished to relieve
 him.”
 
-“Well, certainly that would agree with his being found a little later
+🕵️‍♂️ “Well, certainly that would agree with his being found a little later
 asleep in his chair. There is nothing against them then but the
 woman’s character. Did you ask her why she hurried away that night?
 Her haste attracted the attention of the police constable.”
 
-“She was later than usual and wanted to get home.”
+👨🏻‍💼 “She was later than usual and wanted to get home.”
 
-“Did you point out to her that you and Mr. Phelps, who started at
+🕵️‍♂️ “Did you point out to her that you and Mr. Phelps, who started at
 least twenty minutes after he, got home before her?”
 
-“She explains that by the difference between a ’bus and a hansom.”
+👨🏻‍💼 “She explains that by the difference between a ’bus and a hansom.”
 
-“Did she make it clear why, on reaching her house, she ran into the
+🕵️‍♂️ “Did she make it clear why, on reaching her house, she ran into the
 back kitchen?”
 
-“Because she had the money there with which to pay off the brokers.”
+👨🏻‍💼 “Because she had the money there with which to pay off the brokers.”
 
-“She has at least an answer for everything. Did you ask her whether
+🕵️‍♂️ “She has at least an answer for everything. Did you ask her whether
 in leaving she met any one or saw any one loitering about Charles
 Street?”
 
-“She saw no one but the constable.”
+👨🏻‍💼 “She saw no one but the constable.”
 
-“Well, you seem to have cross-examined her pretty thoroughly. What
+🕵️‍♂️ “Well, you seem to have cross-examined her pretty thoroughly. What
 else have you done?”
 
-“The clerk Gorot has been shadowed all these nine weeks, but without
+👨🏻‍💼 “The clerk Gorot has been shadowed all these nine weeks, but without
 result. We can show nothing against him.”
 
-“Anything else?”
+🕵️‍♂️ “Anything else?”
 
-“Well, we have nothing else to go upon--no evidence of any kind.”
+👨🏻‍💼 “Well, we have nothing else to go upon--no evidence of any kind.”
 
-“Have you formed a theory about how that bell rang?”
+🕵️‍♂️ “Have you formed a theory about how that bell rang?”
 
-“Well, I must confess that it beats me. It was a cool hand, whoever
+👨🏻‍💼 “Well, I must confess that it beats me. It was a cool hand, whoever
 it was, to go and give the alarm like that.”
 
-“Yes, it was a queer thing to do. Many thanks to you for what you
+🕵️‍♂️ “Yes, it was a queer thing to do. Many thanks to you for what you
 have told me. If I can put the man into your hands you shall hear
 from me. Come along, Watson.”
 
 “Where are we going to now?” I asked, as we left the office.
 
-“We are now going to interview Lord Holdhurst, the cabinet minister
+🕵️‍♂️ “We are now going to interview Lord Holdhurst, the cabinet minister
 and future premier of England.”
 
 We were fortunate in finding that Lord Holdhurst was still in his
@@ -906,7 +909,7 @@ your visit. There has only been one occurrence in these offices which
 could call for your attention. In whose interest are you acting, may
 I ask?”
 
-“In that of Mr. Percy Phelps,” answered Holmes.
+🕵️‍♂️ “In that of Mr. Percy Phelps,” answered Holmes.
 
 ![holmes-14](./content/images/14.png)
 
@@ -914,41 +917,43 @@ I ask?”
 it the more impossible for me to screen him in any way. I fear that
 the incident must have a very prejudicial effect upon his career.”
 
-“But if the document is found?”
+🕵️‍♂️ “But if the document is found?”
 
 “Ah, that, of course, would be different.”
 
-“I had one or two questions which I wished to ask you, Lord
+🕵️‍♂️ “I had one or two questions which I wished to ask you, Lord
 Holdhurst.”
 
 “I shall be happy to give you any information in my power.”
 
-“Was it in this room that you gave your instructions as to the
+🕵️‍♂️ “Was it in this room that you gave your instructions as to the
 copying of the document?”
 
 “It was.”
 
-“Then you could hardly have been overheard?”
+🕵️‍♂️ “Then you could hardly have been overheard?”
 
 “It is out of the question.”
 
-“Did you ever mention to any one that it was your intention to give
+🕵️‍♂️ “Did you ever mention to any one that it was your intention to give
 any one the treaty to be copied?”
 
 “Never.”
 
-“You are certain of that?”
+🕵️‍♂️ “You are certain of that?”
 
 “Absolutely.”
 
-“Well, since you never said so, and Mr. Phelps never said so, and
+🕵️‍♂️ “Well, since you never said so, and Mr. Phelps never said so, and
 nobody else knew anything of the matter, then the thief’s presence in
 the room was purely accidental. He saw his chance and he took it.”
 
 The statesman smiled. “You take me out of my province there,” said
 he.
 
-Holmes considered for a moment. “There is another very important
+Holmes considered for a moment. 
+
+🕵️‍♂️ “There is another very important
 point which I wish to discuss with you,” said he. “You feared, as I
 understand, that very grave results might follow from the details of
 this treaty becoming known.”
@@ -956,16 +961,16 @@ this treaty becoming known.”
 A shadow passed over the expressive face of the statesman. “Very
 grave results indeed.”
 
-“And have they occurred?”
+🕵️‍♂️ “And have they occurred?”
 
 “Not yet.”
 
-“If the treaty had reached, let us say, the French or Russian Foreign
+🕵️‍♂️ “If the treaty had reached, let us say, the French or Russian Foreign
 Office, you would expect to hear of it?”
 
 “I should,” said Lord Holdhurst, with a wry face.
 
-“Since nearly ten weeks have elapsed, then, and nothing has been
+🕵️‍♂️ “Since nearly ten weeks have elapsed, then, and nothing has been
 heard, it is not unfair to suppose that for some reason the treaty
 has not reached them.”
 
@@ -974,12 +979,12 @@ Lord Holdhurst shrugged his shoulders.
 “We can hardly suppose, Mr. Holmes, that the thief took the treaty in
 order to frame it and hang it up.”
 
-“Perhaps he is waiting for a better price.”
+🕵️‍♂️ “Perhaps he is waiting for a better price.”
 
 “If he waits a little longer he will get no price at all. The treaty
 will cease to be secret in a few months.”
 
-“That is most important,” said Holmes. “Of course, it is a possible
+🕵️‍♂️ “That is most important,” said Holmes. “Of course, it is a possible
 supposition that the thief has had a sudden illness--”
 
 ![holmes-16](./content/images/16.png)
@@ -987,14 +992,14 @@ supposition that the thief has had a sudden illness--”
 “An attack of brain-fever, for example?” asked the statesman,
 flashing a swift glance at him.
 
-“I did not say so,” said Holmes, imperturbably. “And now, Lord
+🕵️‍♂️ “I did not say so,” said Holmes, imperturbably. “And now, Lord
 Holdhurst, we have already taken up too much of your valuable time,
 and we shall wish you good-day.”
 
 “Every success to your investigation, be the criminal who it may,”
 answered the nobleman, as he bowed us out the door.
 
-“He’s a fine fellow,” said Holmes, as we came out into Whitehall.
+🕵️‍♂️ “He’s a fine fellow,” said Holmes, as we came out into Whitehall.
 “But he has a struggle to keep up his position. He is far from rich
 and has many calls. You noticed, of course, that his boots had been
 re-soled? Now, Watson, I won’t detain you from your legitimate work
