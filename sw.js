@@ -1,4 +1,4 @@
-// in pwa folder
+// in root
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 const routing = workbox.routing;
