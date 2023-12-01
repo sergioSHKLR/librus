@@ -23,7 +23,7 @@ The setup librus for your own usage, follow these steps:
 
 4. Fill in or create other pages, as desired. Don't forget the front matter.
 
-While on book pages, you have the option of making the text / background adjustments below (similar to Kindle and variants). These get saved to your browser so you don't have to redo at every reload. If you don't want to have these settings applied, click on Reset All button at the bottom.
+While on book pages, you have the option of making the text / background adjustments by clicking on <kbd>Aa</kbd>. These get saved to your browser so you don't have to redo at every reload. If you don't want to have these settings applied, click on Reset All button at the bottom.
 
 <div class="p-adjust">
 <p><button class="tools"><span class="icon">text_increase</span></button> - Font bigger</p>
