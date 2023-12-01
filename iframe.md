@@ -5,11 +5,11 @@ layout: iframe
 
 # 🌐 Aside Panel
 
-Links from the main column (left) open up here. Those can be:
+Links from the main column (left) open up here. These can be:
 
 - 📰 articles
 - 📔 word definitions
 - 🗺️ maps
 - 📽️ videos
 
-and many others.
+among many others, it is up to you.

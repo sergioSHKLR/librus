@@ -25,3 +25,8 @@
 .dark-mode .dropdown-content {
     background-color: #30352b;
 }
+
+.dark-mode #col2-body a:any-link {
+    color: lightskyblue;
+    text-decoration-color: lightskyblue ;
+}
