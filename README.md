@@ -1,6 +1,4 @@
-# librus
-Loosely Integrated Book Reading Unified System (LIBRUS)
-# 🏠 Home
+# 📗 librus
 
 **Loosely Integrated Book Reading Unified System (LIBRUS)**
 
@@ -34,15 +32,4 @@ Submit contributions so we can merge them or add to our showcase.
 
 🙏🏼 So be it!  
 
-![baldy](./content/baldy.png){:style="height: 100px; width: 100px; transform: scaleX(-1);"}
-
 Sergio
-{:.cursive}
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
----
-
-<br>
