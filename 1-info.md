@@ -3,7 +3,7 @@ title: 📋 Information
 layout: page
 ---
 
-# <span style="background-color: dodgerblue; border-radius: 50%; padding: 1px 2px 2px 2px; font-size: 70%; vertical-align: middle; position: relative; top: -3px;">❔</span> Information
+# 📋 Information
 
 Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
 
