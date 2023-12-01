@@ -1,45 +1,40 @@
 // in root
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
-const routing = workbox.routing;
-const strategies = workbox.strategies;
+const CACHE_NAME = 'cool-cache';
 
-workbox.routing.registerRoute(
-  /.(?:css|js|jsx|json)(?|$)/,
-  new workbox.strategies.StaleWhileRevalidate({
-    "cacheName": "assets",
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxEntries: 1000,
-        maxAgeSeconds: 31536000
-      })
-    ]
-  })
-);
+// Add whichever assets you want to precache here:
+const PRECACHE_ASSETS = [
+    '/assets/',
+    '/src/'
+]
 
-workbox.routing.registerRoute(
-  /.(?:png|jpg|jpeg|gif|woff2)$/,
-  new workbox.strategies.CacheFirst({
-    "cacheName": "images",
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxEntries: 1000,
-        maxAgeSeconds: 31536000
-      })
-    ]
-  })
-);
+// Listener for the install event - precaches our assets list on service worker install.
+self.addEventListener('install', event => {
+    event.waitUntil((async () => {
+        const cache = await caches.open(CACHE_NAME);
+        cache.addAll(PRECACHE_ASSETS);
+    })());
+});
 
-workbox.routing.registerRoute(
-  /(\/)$/,
-  new workbox.strategies.StaleWhileRevalidate({
-    "cacheName": "startPage",
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxEntries: 1000,
-        maxAgeSeconds: 31536000
-      })
-    ]
-  })
-);
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
+self.addEventListener('fetch', event => {
+  event.respondWith(async () => {
+      const cache = await caches.open(CACHE_NAME);
+
+      // match the request to our cache
+      const cachedResponse = await cache.match(event.request);
+
+      // check if we got a valid response
+      if (cachedResponse !== undefined) {
+          // Cache hit, return the resource
+          return cachedResponse;
+      } else {
+        // Otherwise, go to the network
+          return fetch(event.request)
+      };
+  });
+});
