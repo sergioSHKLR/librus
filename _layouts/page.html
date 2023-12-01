@@ -32,18 +32,7 @@
  <!-- PWA -->
  <link rel="manifest" href="./framework/pwa/site.webmanifest">
  <link rel="icon" href="./framework/pwa/favicon.svg" type="image/svg+xml">
- <meta name="theme-color" content="#aad379">
- <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker.register('sw.js').then(function(registration) {
-                console.log('ServiceWorker registered');
-              }).catch(function(err) {
-                console.log('ServiceWorker error: ', err);
-              });
-        })
-    }
-</script>  
+ <meta name="theme-color" content="#aad379">  
 
  <!-- SCRIPTS -->
 
@@ -75,7 +64,7 @@
  <details open>
  <summary class="sidebar-heading">On this page</summary>
 
- {% include toc.html html=content flat_toc="true" %}
+ {% include toc.html html=content flat_toc="true" h_min=2 %}
  </details><br>
 
  <!-- COL1 DETAILS -->

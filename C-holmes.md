@@ -5,7 +5,7 @@ layout: book
 
 # ⚓ [The Naval Treaty](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Naval_Treaty)  
 
-## by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)
+**by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)**
 
 👨‍⚕️ The July which immediately succeeded my marriage was made memorable
 by three cases of interest, in which I had the privilege of being
