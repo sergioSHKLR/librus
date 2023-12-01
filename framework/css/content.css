@@ -170,3 +170,6 @@ strong {
 blockquote em {
     color: crimson
 }
+
+#col2-body {    box-shadow: inset 1px 1px 25px 6px rgba(246, 238, 227, 1);
+}
