@@ -29,6 +29,20 @@
         width: calc(100vw - 23px)
     }
 
+    #col2-body {
+        padding-left: 15px !important;
+        padding-right: 30px !important;
+    }
+
+    .dropdown {
+        left: 15px !important;
+    }
+
+    .dropdown-content {
+        left: 20px !important;
+        background-color: honeydew !important;
+    }
+
     #col3-head {
         padding-right: 30px
     }
@@ -79,6 +93,20 @@
         width: calc(100vw - 23px)
     }
 
+    #col2-body {
+        padding-left: 15px !important;
+        padding-right: 30px !important;
+    }
+
+    .dropdown {
+        left: 15px !important;
+    }
+
+    .dropdown-content {
+        left: 20px !important;
+        background-color: honeydew !important;
+    }
+
     #col3-head {
         padding-right: 30px
     }
@@ -118,6 +146,20 @@
     #col2-body {
         left: 0;
         width: calc(50vw - 12px)
+    }
+
+    #col2-body {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .dropdown {
+        left: 15px !important;
+    }
+
+    .dropdown-content {
+        left: 20px !important;
+        background-color: honeydew !important;
     }
 
     #col3-head {
@@ -172,6 +214,20 @@
         width: calc(50vw - 12px)
     }
 
+    #col2-body {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .dropdown {
+        left: 15px !important;
+    }
+
+    .dropdown-content {
+        left: 20px !important;
+        background-color: honeydew !important;
+    }
+
     #col3-head {
         padding-right: 30px
     }
@@ -199,7 +255,62 @@
     }
 }
 
-@media only screen and (min-width:1401px) and (max-width:1920px) {
+@media only screen and (min-width:1401px) and (max-width:1711px) {
+
+    #col2-brand,
+    #col2-menu-on,
+    #col2-dm-btn,
+    #col1-head,
+    #col2-fs-btn,
+    #col3-fs-btn {
+        display: none
+    }
+
+    #col1-body {
+        background-color: honeydew;
+    }
+
+    #col1-head {
+        display: inline-block
+    }
+
+    #col2-body {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .dropdown {
+        left: 15px !important;
+    }
+
+    .dropdown-content {
+        left: 20px !important;
+        background-color: honeydew !important;
+    }
+
+    #col3-head {
+        padding-right: 30px
+    }
+
+    tr.d {
+        display: table-row
+    }
+
+    iframe#screenshot1 {
+        display: block
+    }
+
+    iframe#screenshot2 {
+        display: block
+    }
+
+    iframe#screenshot3 {
+        display: block
+    }
+
+}
+
+@media only screen and (min-width:1712px) and (max-width:1920px) {
 
     #col2-brand,
     #col2-menu-on,
