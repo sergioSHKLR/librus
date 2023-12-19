@@ -1,5 +1,109 @@
+// VERSION 23.12.17
+
+// DARK MODE START
+
+function darkMode() {
+    var element = document.body;
+    element.classList.add("dark-mode");
+    var element = document.getElementById("col2-dm-btn");
+    element.classList.add("hide");
+    var element = document.getElementById("col2-lm-btn");
+    element.classList.remove("hide");
+    localStorage.setItem("contrast", "dark");
+}
+
+// LIGHT MODE 
+function lightMode() {
+    var element = document.body;
+    element.classList.remove("dark-mode");
+    var element = document.getElementById("col2-lm-btn");
+    element.classList.add("hide");
+    var element = document.getElementById("col2-dm-btn");
+    element.classList.remove("hide");
+    localStorage.setItem("contrast", "light");
+}
+
+// DARK MODE END
+
+// EXT LINKS START
+
+// SETS COL2 LINKS TO TARGET EXT 
+(function () {
+    const links = document.querySelectorAll(
+        "a[href^='https://pt'], a[href^='https://www'")
+    const host = window.location.hostname
+
+    const isInternalLink = link => new URL(link).hostname === host
+
+    links.forEach(link => {
+        if (isInternalLink(link)) return
+
+        link.setAttribute("target", "ext")
+        link.setAttribute("rel", "noopener")
+    })
+})()
+
+// EXT LINKS END
+
+// FULLSCREEN START
+var elem = document.documentElement;
+
+// OPEN FULLSCREEN  
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+    var element = document.getElementById("col2-fs-btn");
+    element.classList.add("hide");
+    var element = document.getElementById("col2-ns-btn");
+    element.classList.add("show");
+}
+
+// CLOSE FULLSCREEN  
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+    }
+    var element = document.getElementById("col2-ns-btn");
+    element.classList.add("show");
+    var element = document.getElementById("col2-fs-btn");
+    element.classList.add("hide");
+}
+
+var elem = document.documentElement;
+
+// FULLSCREEN END
+
+// MENU START
+
+// MENU ON 
+function menuOn() {
+    document.getElementById("col1-body").style.display = 'inline-block';
+    document.getElementById("col2-menu-on").style.display = 'none';
+    document.getElementById("col2-menu-off").style.display = 'inline-block';
+}
+
+// MENU OFF 
+function menuOff() {
+    document.getElementById("col1-body").style.display = 'none';
+    document.getElementById("col2-menu-off").style.display = 'none';
+    document.getElementById("col2-menu-on").style.display = 'inline-block';
+}
+
+// MENU END
+
+// TOOLS START
+
 function menuDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.add("show");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -273,7 +377,6 @@ function checkMode13() {
 
 //---------------------------------------------------
 
-
 function function14() {
     localStorage.setItem("bground", "branco");
     var element = document.getElementById("col2-body");
@@ -292,6 +395,20 @@ function checkMode14() {
 
 //---------------------------------------------------
 
+function function15() {
+    localStorage.setItem("links", "hidden");
+    var element = document.getElementById("col2-body");
+    element.classList.add("lo");
+}
+
+function checkMode15() {
+    let links = localStorage.getItem("links");
+    if (links == "hidden") {
+        function15()
+    }
+}
+
+//---------------------------------------------------
 
 function functionResetAll() {
     localStorage.removeItem("text");
@@ -299,6 +416,7 @@ function functionResetAll() {
     localStorage.removeItem("font");
     localStorage.removeItem("density");
     localStorage.removeItem("bground");
+    localStorage.removeItem("links");
     var element = document.getElementById("col2-body");
     element.classList.remove("td");
     element.classList.remove("tn");
@@ -316,6 +434,7 @@ function functionResetAll() {
     element.classList.remove("b2");
     element.classList.remove("b3");
     element.classList.remove("b4");
+    element.classList.remove("lo");
 }
 
 //---------------------------------------------------
@@ -374,9 +493,23 @@ function checkMode() {
     if (bground == "branco") {
         function14()
     }
+    let links = localStorage.getItem("links");
+    if (links == "hidden") {
+        function15()
+    }
     let mode = localStorage.getItem("contrast");
     if (mode == "dark") {
-        darkMode3()
+        darkMode()
     }
 }
+
+// TOOLS END
+
+// HYPO ALERT START
+
+function hypoAlert() {
+    alert("Caso a aba de anotações não esteja abrindo, clique e arraste o botão do topo.");
+}
+
+// HYPO ALERT END
 

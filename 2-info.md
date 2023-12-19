@@ -26,17 +26,22 @@ The setup librus for your own usage, follow these steps:
 While on book pages, you have the option of making the text / background adjustments by clicking on <kbd>Aa</kbd>. These get saved to your browser so you don't have to redo at every reload. If you don't want to have these settings applied, click on Reset All button at the bottom. Unfortunately the menu is only availble at the top of the page. I haven't been able to fix this. Please let me know if you have a solution. 
 
 <div class="p-adjust">
-<p><button class="tools"><span class="icon">text_increase</span></button> - Font bigger</p>
- <p><button class="tools"><span class="icon">text_decrease</span></button> - Font smaller</p>
+<p><button class="tools"><span class="icon">text_increase</span></button> - Bigger font</p>
+ <p><button class="tools"><span class="icon">text_decrease</span></button> - Smaller font</p>
  <p><button class="tools"><span class="icon">format_align_justify</span></button> - Justified text</p>
- <p><button class="tools"><span class="icon">edit</span></button> - Font Sans Serif</p>
- <p><button class="tools"><span class="icon">ink_pen</span></button> - Font Serif</p>
- <p><button class="tools"><span class="icon">ink_marker</span></button> - Font Monospace</p>
- <p><button class="tools"><span class="icon">density_small</span></button> - Line height narrower</p>
- <p><button class="tools"><span class="icon">density_large</span></button> - Line height wider</p>
- <p><button class="tools"><span class="icon">🟡</span></button> - Yellowish background</p>
- <p><button class="tools"><span class="icon">🟢</span></button> - Greenish background</p>
- <p><button class="tools"><span class="icon">🟣</span></button> - Pinkish background</p>
+ <p><button class="tools"><span
+          style="font-family: 'Inter', serif;">Se</span></button> - Serif font</p>
+ <p><button class="tools"><span
+          style="font-family: 'Georgia', serif;">Sa</span></button> - Sans-serif font</p>
+ <p><button class="tools"><span
+          style="font-family: 'Roboto Mono', serif;">Mo</span></button> - Monospace font</p>
+ <p><button class="tools"><span class="icon">density_small</span></button> - Naarrower line height</p>
+ <p><button class="tools"><span class="icon">density_large</span></button> - Wider height</p>
+ <p><button class="tools"><span class="icon">🟡</span></button> - Yellow background</p>
+ <p><button class="tools"><span class="icon">🟢</span></button> - Green background</p>
+ <p><button class="tools"><span class="icon">🟣</span></button> - Pink background</p>
+  <p><button class="tools"><span class="icon">link_off</span></button> - Hide links</p>
+
  <p><button class="tools"><span class="icon">restart_alt</span></button> - Reset all adjustments</p>
  </div>
 

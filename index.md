@@ -9,13 +9,13 @@ layout: page
 
 ## Inspiration
 
-Inspired by other initiatives of self and [distance education](https://en.m.wikipedia.org/wiki/Distance_education), we created this platform which combines dispersed sources & tools providing the user with a first-of-its-kind integrated knowledge platform. 
+Inspired by other initiatives of self and [distance education](https://en.m.wikipedia.org/wiki/Distance_education){:target="ext"}, we created this platform which combines dispersed sources & tools providing the user with a first-of-its-kind integrated knowledge platform. 
 
 ## Usage
 
 While designed for a group setting (i.e. book clubs, bible study, etc) it can also be used by individuals on a self-paced course.
 
-Read the 📋 [Info](./1-info.md) page to familiarize with the standards utilized in our project.
+Read the 📋 [Info](./2-info.md) page to familiarize with the standards utilized in our project.
 
 ## Main interface
 
@@ -35,9 +35,9 @@ While adhering to our Creative Commons license, feel free to use, translate, mod
 
 Submit contributions so we can merge them or add to our showcase.
 
-🙏🏼 So be it!  
+🙏🏼 Godspeed!  
 
-![baldy](./content/baldy.png){:style="height: 100px; width: 100px; transform: scaleX(-1);"}
+![baldy](./framework/me-dec-2023.jpg){:style="height: 100px; width: 100px;"}
 
 Sergio
 {:.cursive}

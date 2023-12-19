@@ -1,8 +1,8 @@
 {
   "name": "librus",
   "short_name": "librus",
-  "description": "a one-of-a-kind integrated study platform",
-  "theme_color": "#f0fff0",
+  "description": "A one-of-a-kind study & research platform.",
+  "theme_color": "#8cb55b",
   "background_color": "#222222",
   "display": "fullscreen",
   "orientation": "any",

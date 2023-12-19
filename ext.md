@@ -1,6 +1,6 @@
 ---
-title: iframe
-layout: iframe
+title: ext
+layout: ext
 ---
 
 # 🌐 Aside Panel
