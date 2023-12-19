@@ -5,7 +5,7 @@
   "theme_color": "#8cb55b",
   "background_color": "#222222",
   "display": "fullscreen",
-  "orientation": "any",
+  "orientation": "landscape",
   "scope": "https://librus.app",
   "start_url": "https://librus.app/",
   "icons": [
