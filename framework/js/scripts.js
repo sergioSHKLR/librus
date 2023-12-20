@@ -30,7 +30,7 @@ function lightMode() {
 // SETS COL2 LINKS TO TARGET EXT 
 (function () {
     const links = document.querySelectorAll(
-        "a[href^='https://pt'], a[href^='https://www'")
+        "a[href^='https://en'], a[href^='https://www'")
     const host = window.location.hostname
 
     const isInternalLink = link => new URL(link).hostname === host

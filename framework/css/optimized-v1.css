@@ -63,7 +63,7 @@ body {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--border-color-lite);
-    box-shadow: 0 5px 3px -3px #00000080;
+    box-shadow: 0 5px 3px -3px #00000030;
     left: 0;
     padding: 0 0 0 10px;
     width: calc(var(--sidebar-width) + var(--head-height));
