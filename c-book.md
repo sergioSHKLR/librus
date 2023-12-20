@@ -3,25 +3,25 @@ title: ⚓ The Naval Treaty
 layout: book
 ---
 
-# ⚓ [The Naval Treaty](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Naval_Treaty)  
+# ⚓ [The Naval Treaty](The_Adventure_of_the_Naval_Treaty){:.w}  
 
-**by [Sir Arthur Conan Doyle](https://en.m.wikipedia.org/wiki/Arthur_Conan_Doyle)**
+**by [Sir Arthur Conan Doyle](Arthur_Conan_Doyle){:.w}**  
 
 👨‍⚕️ The July which immediately succeeded my marriage was made memorable
 by three cases of interest, in which I had the privilege of being
-associated with [Sherlock Holmes](https://en.m.wikipedia.org/wiki/Sherlock_Holmes) and of studying his methods. I find
+associated with [Sherlock Holmes](Sherlock_Holmes){:.w} and of studying his methods. I find
 them recorded in my notes under the headings of “[The Adventure of the
-Second Stain](https://en.m.wikipedia.org/wiki/The_Adventure_of_the_Second_Stain),” “The Adventure of the Naval Treaty,” and “The
+Second Stain](The_Adventure_of_the_Second_Stain){:.w},” “The Adventure of the Naval Treaty,” and “The
 Adventure of the Tired Captain.” The first of these, however, deals
 with interest of such importance and implicates so many of the first
-families in the [kingdom](https://en.m.wikipedia.org/wiki/United_Kingdom_of_Great_Britain_and_Ireland) that for many years it will be impossible to
+families in the [kingdom](United_Kingdom_of_Great_Britain_and_Ireland){:.w} that for many years it will be impossible to
 make it public. No case, however, in which Holmes was engaged has
 ever illustrated the value of his analytical methods so clearly or
 has impressed those who were associated with him so deeply. I still
-retain an almost [verbatim](https://en.m.wiktionary.org/wiki/verbatim) report of the interview in which he
+retain an almost [verbatim](verbatim){:.d}   report of the interview in which he
 demonstrated the true facts of the case to Monsieur Dubugue of the
-[Paris](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.4730241667!2d2.1822296264614343!3d48.85896330358173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1701273282089!5m2!1sen!2sus) police, and Fritz von Waldbaum, the well-known specialist of
-[Dantzig](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34712.99163377963!2d2.3137849631648177!3d48.86231772883529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1701310439667!5m2!1sen!2sus), both of whom had wasted their energies upon what proved to
+[Paris](paris){:.m} police, and Fritz von Waldbaum, the well-known specialist of
+[Dantzig](gdansk){:.m}, both of whom had wasted their energies upon what proved to
 be side-issues. The new century will have come, however, before the
 story can be safely told. Meanwhile I pass on to the second on my
 list, which promised also at one time to be of national importance,
@@ -33,20 +33,20 @@ named Percy Phelps, who was of much the same age as myself, though he
 was two classes ahead of me. He was a very brilliant boy, and carried
 away every prize which the school had to offer, finishing his
 exploits by winning a scholarship which sent him on to continue his
-triumphant career at [Cambridge](https://en.m.wikipedia.org/wiki/University_of_Cambridge). He was, I remember, extremely well
+triumphant career at [Cambridge](University_of_Cambridge){:.w}. He was, I remember, extremely well
 connected, and even when we were all little boys together we knew
 that his mother’s brother was Lord Holdhurst, the great conservative
-politician. This [gaudy](https://en.m.wiktionary.org/wiki/gaudy) relationship did him little good at school. On
-the contrary, it seemed rather a [piquant](https://en.m.wiktionary.org/wiki/piquant) thing to us to [chevy](https://en.m.wiktionary.org/wiki/chevy) him
+politician. This [gaudy](gaudy){:.d} relationship did him little good at school. On
+the contrary, it seemed rather a [piquant](piquant){:.d} thing to us to [chevy](chevy){:.d} him
 about the playground and hit him over the shins with a wicket. But it
 was another thing when he came out into the world. I heard vaguely
 that his abilities and the influences which he commanded had won him
-a good position at the [Foreign Office](https://en.m.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office), and then he passed completely
+a good position at the [Foreign Office](Foreign,_Commonwealth_and_Development_Office){:.w}, and then he passed completely
 out of my mind until the following letter recalled his existence:
 
-> 📃 Briarbrae, [Woking](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79800.95390225913!2d-0.6329366672156556!3d51.31517523845316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d41816d163b7%3A0x20f9e2ba0648b374!2sWoking%2C%20UK!5e0!3m2!1sen!2sus!4v1701273586768!5m2!1sen!2sus).
+> 📃 Briarbrae, [Woking](woking, uk){:.m}.
 >
-> My dear [Watson](https://en.m.wikipedia.org/wiki/Dr._Watson):
+> My dear [Watson](Dr._Watson){:.w}:
 I have no doubt that you can remember “Tadpole” Phelps, who was in
 the fifth form when you were in the third. It is possible even that
 you may have heard that through my uncle’s influence I obtained a
@@ -86,14 +86,14 @@ myself back once more in the old rooms in [Baker Street](https://www.google.com/
 
 Holmes was seated at his side-table clad in his dressing-gown, and
 working hard over a chemical investigation. A large curved retort was
-boiling furiously in the bluish flame of a [Bunsen burner](https://en.m.wikipedia.org/wiki/Bunsen_burner), and the
+boiling furiously in the bluish flame of a [Bunsen burner](Bunsen_burner){:.w}, and the
 distilled drops were condensing into a two-litre measure. My friend
 hardly glanced up as I entered, and I, seeing that his investigation
 must be of importance, seated myself in an arm-chair and waited. He
 dipped into this bottle or that, drawing out a few drops of each with
 his glass pipette, and finally brought a test-tube containing a
 solution over to the table. In his right hand he held a slip of
-[litmus-paper](https://en.m.wikipedia.org/wiki/Litmus).
+[litmus-paper](Litmus){:.w}.
 
 🕵️‍♂️ “You come at a crisis, Watson,” said he. “If this paper remains blue,
 all is well. If it turns red, it means a man’s life.” He dipped it

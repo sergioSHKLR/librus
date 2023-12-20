@@ -25,28 +25,6 @@ function lightMode() {
 
 // DARK MODE END
 
-// EXT LINKS START
-
-// SETS COL2 LINKS TO TARGET EXT 
-window.onload = function() {
-    /* onload code */
- 
-     var extLinks = document.querySelectorAll(
-         "a[href^='https://en'], a[href^='https://www'");
-     var host = window.location.hostname;
- 
-     var isInternalLink = link => new URL(link).hostname === host;
- 
-     extLinks.forEach(link => {
-         if (isInternalLink(link)) return;
- 
-         link.setAttribute("target", "ext");
-         link.setAttribute("rel", "noopener");
-     });
- };
-
-// EXT LINKS END
-
 // FULLSCREEN START
 var elem = document.documentElement;
 
@@ -528,3 +506,34 @@ for (z = 0, le = links.length; z < le; z++) {
 }
 
 // STRING REPLACE 3 END
+
+// STRING REPLACE 4 START
+
+var links, k, le;
+links = document.getElementsByClassName('m');
+for (k = 0, le = links.length; k < le; k++) {
+    links[k].href = "https://maps.google.com/maps?hl=en&t=k&z=12&ie=UTF8&iwloc=B&output=embed&q=" + (links[k].pathname.slice(1));
+}
+
+// STRING REPLACE 4 END
+
+// EXT LINKS START
+
+window.onload = function() {
+    /* onload code */
+ 
+     var extLinks = document.querySelectorAll(
+         "a[href^='https://en'], a[href^='https://maps']");
+     var host = window.location.hostname;
+ 
+     var isInternalLink = link => new URL(link).hostname === host;
+ 
+     extLinks.forEach(link => {
+         if (isInternalLink(link)) return;
+ 
+         link.setAttribute("target", "ext");
+         link.setAttribute("rel", "noopener");
+     });
+ };
+
+// EXT LINKS END
