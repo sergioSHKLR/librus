@@ -470,7 +470,7 @@ function checkMode() {
 // HYPO ALERT START
 
 function hypoAlert() {
-    alert("Caso a aba de anotações não esteja abrindo, clique e arraste o botão do topo.");
+    alert("In case the annotations tab is not opening with a click, use a click and drag motion instead (on the topmost button).");
 }
 
 // HYPO ALERT END
