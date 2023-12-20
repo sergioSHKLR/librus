@@ -3,7 +3,7 @@ title: ext
 layout: ext
 ---
 
-# 🌐 Aside Panel
+# 🪧 Aside Panel
 
 Links from the main column (left) open up here. These can be:
 

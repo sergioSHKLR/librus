@@ -15,7 +15,7 @@ Inspired by other initiatives of self and [distance education](https://en.m.wiki
 
 While designed for a group setting (i.e. book clubs, bible study, etc) it can also be used by individuals on a self-paced course.
 
-Read the 📋 [Info](./2-info.md) page to familiarize with the standards utilized in our project.
+Read the [📋 Info](./2-info.md) page to familiarize with the standards utilized in our project.
 
 ## Main interface
 
