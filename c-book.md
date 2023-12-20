@@ -7,68 +7,20 @@ layout: book
 
 **by [Sir Arthur Conan Doyle](Arthur_Conan_Doyle){:.w}**  
 
-👨‍⚕️ The July which immediately succeeded my marriage was made memorable
-by three cases of interest, in which I had the privilege of being
-associated with [Sherlock Holmes](Sherlock_Holmes){:.w} and of studying his methods. I find
-them recorded in my notes under the headings of “[The Adventure of the
-Second Stain](The_Adventure_of_the_Second_Stain){:.w},” “The Adventure of the Naval Treaty,” and “The
-Adventure of the Tired Captain.” The first of these, however, deals
-with interest of such importance and implicates so many of the first
-families in the [kingdom](United_Kingdom_of_Great_Britain_and_Ireland){:.w} that for many years it will be impossible to
-make it public. No case, however, in which Holmes was engaged has
-ever illustrated the value of his analytical methods so clearly or
-has impressed those who were associated with him so deeply. I still
-retain an almost [verbatim](verbatim){:.d}   report of the interview in which he
-demonstrated the true facts of the case to Monsieur Dubugue of the
-[Paris](paris){:.m} police, and Fritz von Waldbaum, the well-known specialist of
-[Dantzig](gdansk){:.m}, both of whom had wasted their energies upon what proved to
-be side-issues. The new century will have come, however, before the
-story can be safely told. Meanwhile I pass on to the second on my
-list, which promised also at one time to be of national importance,
-and was marked by several incidents which give it a quite unique
-character.
+👨‍⚕️ The July which immediately succeeded my marriage was made memorable by three cases of interest, in which I had the privilege of being
+associated with [Sherlock Holmes](Sherlock_Holmes){:.w} and of studying his methods. I find them recorded in my notes under the headings of “[The Adventure of the
+Second Stain](The_Adventure_of_the_Second_Stain){:.w},” “The Adventure of the Naval Treaty,” and “The Adventure of the Tired Captain.” The first of these, however, deals
+with interest of such importance and implicates so many of the first families in the [kingdom](United_Kingdom_of_Great_Britain_and_Ireland){:.w} that for many years it will be impossible to make it public. No case, however, in which Holmes was engaged has ever illustrated the value of his analytical methods so clearly or has impressed those who were associated with him so deeply. I still retain an almost [verbatim](verbatim){:.d}   report of the interview in which he demonstrated the true facts of the case to Monsieur Dubugue of the [Paris](paris){:.m} police, and Fritz von Waldbaum, the well-known specialist of [Dantzig](gdansk){:.m}, both of whom had wasted their energies upon what proved to
+be side-issues. The new century will have come, however, before the story can be safely told. Meanwhile I pass on to the second on my list, which promised also at one time to be of national importance, and was marked by several incidents which give it a quite unique character.
 
-During my school-days I had been intimately associated with a lad
-named Percy Phelps, who was of much the same age as myself, though he
-was two classes ahead of me. He was a very brilliant boy, and carried
-away every prize which the school had to offer, finishing his
-exploits by winning a scholarship which sent him on to continue his
-triumphant career at [Cambridge](University_of_Cambridge){:.w}. He was, I remember, extremely well
-connected, and even when we were all little boys together we knew
-that his mother’s brother was Lord Holdhurst, the great conservative
-politician. This [gaudy](gaudy){:.d} relationship did him little good at school. On
-the contrary, it seemed rather a [piquant](piquant){:.d} thing to us to [chevy](chevy){:.d} him
-about the playground and hit him over the shins with a wicket. But it
-was another thing when he came out into the world. I heard vaguely
-that his abilities and the influences which he commanded had won him
-a good position at the [Foreign Office](Foreign,_Commonwealth_and_Development_Office){:.w}, and then he passed completely
-out of my mind until the following letter recalled his existence:
+During my school-days I had been intimately associated with a lad named Percy Phelps, who was of much the same age as myself, though he was two classes ahead of me. He was a very brilliant boy, and carried away every prize which the school had to offer, finishing his exploits by winning a scholarship which sent him on to continue his triumphant career at [Cambridge](University_of_Cambridge){:.w}. He was, I remember, extremely well connected, and even when we were all little boys together we knew that his mother’s brother was Lord Holdhurst, the great conservative politician. This [gaudy](gaudy){:.d} relationship did him little good at school. On the contrary, it seemed rather a [piquant](piquant){:.d} thing to us to [chevy](chevy){:.d} him about the playground and hit him over the shins with a wicket. But it was another thing when he came out into the world. I heard vaguely that his abilities and the influences which he commanded had won him a good position at the [Foreign Office](Foreign,_Commonwealth_and_Development_Office){:.w}, and then he passed completely out of my mind until the following letter recalled his existence:
 
-> 📃 Briarbrae, [Woking](woking, uk){:.m}.
->
-> My dear [Watson](Dr._Watson){:.w}:
-I have no doubt that you can remember “Tadpole” Phelps, who was in
-the fifth form when you were in the third. It is possible even that
-you may have heard that through my uncle’s influence I obtained a
-good appointment at the Foreign Office, and that I was in a situation
-of trust and honor until a horrible misfortune came suddenly to blast
-my career.
->
-> There is no use writing of the details of that dreadful event. In the
-event of your acceding to my request it is probable that I shall have
-to narrate them to you. I have only just recovered from nine weeks of
-brain-fever, and am still exceedingly weak. Do you think that you
-could bring your friend Mr. Holmes down to see me? I should like to
-have his opinion of the case, though the authorities assure me that
-nothing more can be done. Do try to bring him down, and as soon as
-possible. Every minute seems an hour while I live in this state of
-horrible suspense. Assure him that if I have not asked his advice
-sooner it was not because I did not appreciate his talents, but
-because I have been off my head ever since the blow fell. Now I am
-clear again, though I dare not think of it too much for fear of a
-relapse. I am still so weak that I have to write, as you see, by
-dictating. Do try to bring him.
->
+> 📃 Briarbrae, [Woking](woking,%20uk){:.m}. 
+> 
+> My dear [Watson](Dr._Watson){:.w}: I have no doubt that you can remember “Tadpole” Phelps, who was in the fifth form when you were in the third. It is possible even that you may have heard that through my uncle’s influence I obtained a good appointment at the Foreign Office, and that I was in a situation of trust and honor until a horrible misfortune came suddenly to blast my career. 
+> 
+> There is no use writing of the details of that dreadful event. In the event of your acceding to my request it is probable that I shall have to narrate them to you. I have only just recovered from nine weeks of brain-fever, and am still exceedingly weak. Do you think that you could bring your friend Mr. Holmes down to see me? I should like to have his opinion of the case, though the authorities assure me that nothing more can be done. Do try to bring him down, and as soon as possible. Every minute seems an hour while I live in this state of horrible suspense. Assure him that if I have not asked his advice sooner it was not because I did not appreciate his talents, but because I have been off my head ever since the blow fell. Now I am clear again, though I dare not think of it too much for fear of a relapse. I am still so weak that I have to write, as you see, by dictating. Do try to bring him. 
+> 
 > Your old school-fellow,  
 > Percy Phelps.
 {:.grey}
