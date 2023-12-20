@@ -17,7 +17,7 @@ While designed for a group setting (i.e. book clubs, bible study, etc) it can al
 
 Read the [📋 Info](./2-info.md) page to familiarize with the standards utilized in our project.
 
-## Main interface
+## Interface
 
 Our interface is composed of three columns which are selectively displayed according to the width of the device used. This way you'll see three columns in large screens, two in medium screens, and only one on small screens.
 
