@@ -98,27 +98,10 @@
   ],
   "screenshots": [
     {
-      "src": "screenshot1.png",
-      "sizes": "2560x1600",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "screenshot2.png",
-      "sizes": "1277x1380",
+      "src": "mobile.png",
+      "sizes": "618x1181",
       "type": "image/png"
-    },
-    {
-      "src": "screenshot3.png",
-      "sizes": "637x1380",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshot4.png",
-      "sizes": "2560x1600",
-      "type": "image/png"
-    }
-  ],
+    }],
   "features": [
     "Cross Platform",
     "fast",
