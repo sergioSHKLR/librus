@@ -37,7 +37,7 @@ Submit contributions so we can merge them or add to our showcase.
 
 🙏🏼 Godspeed!  
 
-![baldy](./framework/me-dec-2023.jpg){:style="height: 100px; width: 100px;"}
+<img src="./framework/me-dec-2023.jpg" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
 
 Sergio
 {:.cursive}
