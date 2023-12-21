@@ -842,7 +842,7 @@ summary.ff-mono {
 
 /* DARK MODE START */
 .dark-mode {
-    background-color: var(--body-bground-dark);
+    background-color: #111;
     color: currentColor
 }
 
