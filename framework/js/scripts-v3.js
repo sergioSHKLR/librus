@@ -1,30 +1,5 @@
 // VERSION 23.12.20
 
-// DARK MODE START
-
-function darkMode() {
-    var element1 = document.body;
-    element1.classList.add("dark-mode");
-    var element2 = document.getElementById("col2-dm-btn");
-    element2.classList.add("hide");
-    var element3 = document.getElementById("col2-lm-btn");
-    element3.classList.remove("hide");
-    localStorage.setItem("contrast", "dark");
-}
-
-// LIGHT MODE 
-function lightMode() {
-    var element4 = document.body;
-    element4.classList.remove("dark-mode");
-    var element5 = document.getElementById("col2-lm-btn");
-    element5.classList.add("hide");
-    var element6 = document.getElementById("col2-dm-btn");
-    element6.classList.remove("hide");
-    localStorage.setItem("contrast", "light");
-}
-
-// DARK MODE END
-
 // FULLSCREEN START
 var elem = document.documentElement;
 
@@ -466,6 +441,31 @@ function checkMode() {
 }
 
 // TOOLS END
+
+// DARK MODE START
+
+function darkMode() {
+    var element = document.body;
+    element.classList.add("dark-mode");
+    var element = document.getElementById("col2-dm-btn");
+    element.classList.add("hide");
+    var element = document.getElementById("col2-lm-btn");
+    element.classList.remove("hide");
+    localStorage.setItem("contrast", "dark");
+}
+
+// LIGHT MODE 
+function lightMode() {
+    var element4 = document.body;
+    element4.classList.remove("dark-mode");
+    var element5 = document.getElementById("col2-lm-btn");
+    element5.classList.add("hide");
+    var element6 = document.getElementById("col2-dm-btn");
+    element6.classList.remove("hide");
+    localStorage.setItem("contrast", "light");
+}
+
+// DARK MODE END
 
 // HYPO ALERT START
 

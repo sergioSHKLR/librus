@@ -837,12 +837,43 @@ span.label {
 summary.ff-mono {
     width: 90%
 }
+/*
+.w:after {
+    content: " 📰";
+    vertical-align: super;
+    font-size: 70%;
+}
+
+.l:after {
+    content: " 🗞️";
+    vertical-align: super;
+    font-size: 70%;
+}
+
+.d:after {
+    content: " 📔";
+    vertical-align: super;
+    font-size: 70%;
+}
+
+.m:after {
+    content: " 🗺️";
+    vertical-align: super;
+    font-size: 70%;
+}
+
+.v:after {
+    content: " 🎬";
+    vertical-align: super;
+    font-size: 70%;
+}
+*/
 
 /* OTHERS END */
 
 /* DARK MODE START */
 .dark-mode {
-    background-color: #111;
+    background-color: var(--body-bground-dark);
     color: currentColor
 }
 
