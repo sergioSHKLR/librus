@@ -1,7 +1,7 @@
 ---
 title: ⚓ The Naval Treaty
 layout: book
-version: 23.12.20
+version: 23.12.22
 ---
 
 # ⚓ [The Naval Treaty](The_Adventure_of_the_Naval_Treaty){:.w}  
