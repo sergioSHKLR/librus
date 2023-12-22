@@ -1,7 +1,7 @@
 {
-  "name": "librus",
+  "name": "librus.app",
   "short_name": "librus",
-  "description": "A one-of-a-kind platform for research & study.",
+  "description": "version 23.12.22",
   "theme_color": "#f8fff0",
   "background_color": "#222222",
   "display": "fullscreen",

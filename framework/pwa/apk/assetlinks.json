@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "app.librus.twa",
-        "sha256_cert_fingerprints": ["43:44:2C:8C:95:B7:11:73:E9:D0:3A:2E:34:D2:BD:88:40:26:75:FE:C2:9A:E8:AE:C1:1B:CD:00:53:23:5C:6B"]
-      }
-    }]

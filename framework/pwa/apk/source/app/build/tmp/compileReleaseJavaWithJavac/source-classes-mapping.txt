@@ -1,8 +1,0 @@
-app/librus/twa/DelegationService.java
- app.librus.twa.DelegationService
-app/librus/twa/Application.java
- app.librus.twa.Application
-app/librus/twa/BuildConfig.java
- app.librus.twa.BuildConfig
-app/librus/twa/LauncherActivity.java
- app.librus.twa.LauncherActivity
