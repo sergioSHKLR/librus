@@ -2,7 +2,7 @@
   "name": "librus",
   "short_name": "librus",
   "description": "A one-of-a-kind platform for research & study.",
-  "theme_color": "#8cb55b",
+  "theme_color": "#f8fff0",
   "background_color": "#222222",
   "display": "fullscreen",
   "orientation": "landscape",
