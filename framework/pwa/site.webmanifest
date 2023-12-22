@@ -101,7 +101,8 @@
       "src": "mobile.png",
       "sizes": "618x1181",
       "type": "image/png"
-    }],
+    }
+  ],
   "features": [
     "Cross Platform",
     "fast",
