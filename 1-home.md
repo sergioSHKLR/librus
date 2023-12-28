@@ -7,7 +7,7 @@ layout: 0-default
 #col2-body span.icon {position: relative; top: 7px;}
     </style>
 
-# 🏠 Home
+# <span class="emoji">🏠</span> Home
 
 Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
 
