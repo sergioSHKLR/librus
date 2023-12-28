@@ -3,7 +3,7 @@ title:  Legal
 layout: 0-default
 ---
 
-# ⚖️ Legal
+# <span class="emoji">⚖️</span> Legal
 
 [librus](https://librus.app) © 2023 by [sergioSHKLR](https://github.com/sergioSHKLR) is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0)
 
