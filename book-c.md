@@ -4,6 +4,11 @@ layout: 1-book
 version: 23.12.27
 ---
 
+<style>
+#toc-title, li.toc {display: none
+}
+</style>
+
 # <span class="emoji">⚓</span> [The Naval Treaty](The_Adventure_of_the_Naval_Treaty){:.w}  
 
 **by [Sir Arthur Conan Doyle](Arthur_Conan_Doyle){:.w}**  
