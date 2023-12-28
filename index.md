@@ -1,6 +1,6 @@
 ---
 title: 🏠 Home
-layout: page
+layout: 1-book
 ---
 
 # 🏠 Home
