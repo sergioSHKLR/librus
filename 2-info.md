@@ -1,25 +1,16 @@
 ---
-title: Informações
+title: Info
 layout: 0-default
 version: 23.12.27
 ---
 
-# <span class="emoji">📋</span> Informações
+# <span class="emoji">📋</span> Info
 
-*[LDE]: O Livro dos Espíritos
-*[LDM]: O Livro dos Médiuns
-*[ESE]: O Evangelho segundo o Espiritismo
-*[CEU]: O Céu e o Inferno
-*[GEN]: A Gênese
-*[PDF]: Portable Document Format
-*[MD]: Markdown file
-*[LIV]: Abreviatura de livro
-
-## Descrição
+## Overview
 
 Nosso Project integra ferramentas geralmente achadas em eReaders (Dictionary, tipo de letra, fundo de contraste, espaço entre-linhas, etc)
 
-## Ajustes
+## Adjustments
 
 Para realizar ajustes tipográficos (letras, linhas, parágrafos, cor de fundo, e links) clique no botão <kbd>Aa</kbd> e escolha dentre as opções abaixo. Suas preferências ficam gravadas e valem para as outras páginas deste site. Para reverter, clique no botão em vermelho e refresque a página.
 
@@ -40,7 +31,7 @@ Para realizar ajustes tipográficos (letras, linhas, parágrafos, cor de fundo, 
 <tr><td class="center"><span class="icon" style="font-size: 120%; color: red">restart_alt</span></td><td>Reverter tudo</td></tr>
  </table>
 
-## Anotador
+## Annottator
 
 <p>Os botões no canto superior direito pertencem à ferramenta <a target="_blank" href="https://web-hypothes-is.translate.goog/everyone/?_x_tr_sl=es&_x_tr_tl=pt&_x_tr_hl=en&_x_tr_pto=wapp">Hypothes.is</a> e realizam as seguintes funções:</p>
 
@@ -51,250 +42,85 @@ Para realizar ajustes tipográficos (letras, linhas, parágrafos, cor de fundo, 
 <tr><td class="center"><img src="./images//hypo-c.svg" style="all: unset; width: 30px; vertical-align: middle; padding: 5px"></td><td>Criar nova anotação de página</td></tr>
 </table>
 
-## Método
+## Setup
 
-Em primeiro lugar, teríamos que estabelecer padrões de divisão, hierarquia, e formatação de texto que mantivessem a fidelidade ao original, não em forma, mas em conteúdo.
+The setup librus for your own usage, follow these steps:
 
-Analisando a divisão dos livro em partes, decidimos por nomear as seções anteriores ao conteúdo principal de Pré-textual. Similarmente, nomeamos as seções posteriores ao conteúdo principal de Pós-textual. Partes Pré-textuais são numeradas 0 (zero) e as Pós-textuais assumem o número posterior ao último capítulo original.
+1. Load your **study material** [^1] into <kbd>book-(x).md</kbd>. It displays in second column. 
 
-Modificações feitas são uma escolha racional e visam atender ao padrão de formatação melhor disposto ao consumo digital.
+2. Set book links to target="ext" (or modify ext-links.js) which will open in the third column.
 
-### Livros
+3. Use the buttons in the top right as is [^2] or reconfigure them as you wish.
 
-Individualmente, iremos identificar os livros pelos emojis e/ou siglas abaixo.
+4. Fill in or create other pages, as desired. Don't forget the front matter.
 
-<table class="ff-slab fs-3 border">
- <thead class="bg-lg">
- <tr>
- <th style="width: 20%">Emoji</th>
- <th style="width: 30%">Sigla</th>
- <th>Livro</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td class="center">👻<br>(fantasma)</td>
- <td class="center">LDE</td>
- <td>O Livro dos Espíritos</td>
- </tr>
- <tr>
- <td class="center"><span style="transform: scaleX(-1);"><span class="emoji">✒️</span></span><br>(ponta de caneta tinteiro)</td>
- <td class="center">LDM</td>
- <td>O Livro dos Médiuns</td>
- </tr>
- <tr>
- <td class="center"><span class="emoji">🕊️</span><br>(pomba branca)</td>
- <td class="center">ESE</td>
- <td>O Evangelho segundo o Espiritismo</td>
- </tr>
- <tr>
- <td class="center"><span class="emoji">🔥</span><br>(fogo)</td>
- <td class="center">CEU</td>
- <td>O Céu e o Inferno</td>
- </tr>
- <tr>
- <td class="center"><span class="emoji">🌱</span><br>(muda de planta)</td>
- <td class="center">GEN</td>
- <td>A Gênese</td>
- </tr>
- </tbody>
-</table>
+## Free books
 
-### Hierarquia
+Project Gutenberg - [https://www.gutenberg.org](https://www.gutenberg.org/){:target="_blank"}
 
-Dentro deste livro, usaremos os emojis abaixo para identificar elementos individuais ou grupamentos dos mesmos. Note também o correspondente código mestre.
+Sherlock Holmes - [https://sherlock-holm.es/ascii](https://sherlock-holm.es/ascii){:target="_blank"}
 
-<pre class="fs-3 col2-w bg-lg">
-❓ livro (👻, <span class="emoji">✒️</span>, <span class="emoji">🕊️</span>, <span class="emoji">🔥</span> ou <span class="emoji">🌱</span>)
- |
- └── 🗂️ parte
-      |
-      └── 📑 capítulo
-           |
-           └── 📃 seção
-                | 
-                └── #️⃣ questão
-</pre>
+## Design inspiration from: 
 
-Para facilitar a organização hierárquica, localização, correlação de items, e brevidade, um código chave foi criado. Este código alfanúmerico é demonstrado abaixo.
+Retype - [https://retype.com](https://retype.com){:target="_blank"}
 
-### Código chave
+Slate - [https://github.com/slatedocs/slate](https://github.com/slatedocs/slate){:target="_blank"}
 
-<pre class="fs-3 col2-w bg-lg">
-LIV-X-XX-XX
- |  |  |  |
- |  |  |  └── 📃 seção
- |  |  | 
- |  |  └── 📑 capítulo
- |  |
- |  └── 🗂️ parte
- |
- └── 📔 livro (LDE, LDM, ESE, CEU ou GEN)
-</pre>
+LibDoc - [https://github.com/olivier3lanc/Jekyll-LibDoc](https://github.com/olivier3lanc/Jekyll-LibDoc){:target="_blank"}
 
-E em especial no LDE, o código para questões é modificado da sequência lógica de LDE-X-XX-XX-XXXX para:
+## Code hosting & wrangling from: 
 
-<pre class="fs-3 col2-w bg-lg">
-LIV-qXXXXa
- |  |    |
- |  |    └── sub-questão
- |  |
- |  └── questão
- |
- └── livro (LDE, LDM, ESE, CEU ou GEN)
-</pre>
+Github Pages - [https://pages.github.com](https://pages.github.com){:target="_blank"} 
 
-Como ilustrado acima, usamos três letras para o livro, um dígito para partes, e dois dígitos para capítulos e itens. Em especial, no LDE, usamos a letra <kbd>q</kbd>, de um a quatro dígitos, e uma letra minúscula para sub-questões de modo a designar uma pergunta específica (ex. `LDE-q909a`). Nos outros livros, usamos a letra <kbd>p</kbd>, de um a quatro dígitos, para identificar parágrafos numericamente.
+Jekyll - [https://jekyllrb.com/docs/github-pages](https://jekyllrb.com/docs/github-pages){:target="_blank"} 
 
-Em suma, temos esta tabela descritiva abaixo:
+Kramdown - [https://kramdown.gettalong.org/syntax.html](https://kramdown.gettalong.org/syntax.html){:target="_blank"}
 
-<table class="ff-slab fs-3 border">
- <thead class="bg-lg">
- <tr>
- <th style="width: 20%">Emoji</th>
- <th style="width: 30%">Descrição</th>
- <th>Código chave</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td class="center">📔</td>
- <td class="center">livro</td>
- <td class="center">LIV</td>
- </tr>
- <tr>
- <td class="center">🗂️</td>
- <td class="center">parte</td>
- <td class="center">LIV-X</td>
- </tr>
- <tr>
- <td class="center">📑</td>
- <td class="center">capítulo</td>
- <td class="center">LIV-X-XX</td>
- </tr>
- <tr>
- <td class="center">📃</td>
- <td class="center">seção</td>
- <td class="center">LIV-X-XX-XX</td>
- </tr>
- <tr>
- <td class="center">#️⃣</td>
- <td class="center">questão</td>
- <td class="center">LIV-(q)(p)X</td>
- </tr>
- </tbody>
-</table>
+## Free code advice from: 
 
-Aonde LIV é substituído por LDE, LDM, ESE, CEU ou GEN.
+W3 Schools - [https://www.w3schools.com/howto/howto_js_add_class.asp](https://www.w3schools.com/howto/howto_js_add_class.asp){:target="_blank"} 
 
-**Adicionais**
+Stack Overflow - [https://stackoverflow.com](https://stackoverflow.com){:target="_blank"} 
 
-<table class="ff-slab fs-3 border">
- <thead class="bg-lg">
- <tr>
- <th style="width: 20%">Emoji</th>
- <th style="width: 30%">Descrição</th>
- <th>Conteúdo</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td class="center">👉</td>
- <td class="center">segmento relacionado</td>
- <td class="center">indicação para leitura complementar</td>
- </tr>
- </tbody>
-</table>
+Allejo - [https://allejo.io/projects/jekyll/projects](https://allejo.io/projects/jekyll/projects){:target="_blank"}
 
-Usaremos o _blockquote_ para identificar visualmente as comunicações mediúnicas. Destacaremos trechos bíblicos usando o mesmo método e atribuindo o livro, capítulo, e versículo, assim realçando a concordância entre as duas obras.
+## Third party free-tier services from: 
 
-De modo a realçar certos trechos, usaremos o seguinte formato para as mensagens de origem mediúnica
+Hypothes.is - [https://web.hypothes.is/everyone](https://web.hypothes.is/everyone){:target="_blank"} 
 
-> 👻 ▸ Mensagem
->
-> Espírito
-{:.spirit-multi}
+Whereby - [https://whereby.com](https://whereby.com){:target="_blank"} 
 
-e este outro formato para mensagesn bíblicas
+Crisp - [https://crisp.chat/en](https://crisp.chat/en){:target="_blank"} 
 
-> ✝️ ▸ Mensagem (*Jesus*)
->
-> Livro, cap. X, vers. Y, ARC
-{:.bible-multi}
+Testimonial - [https://testimonial.to](https://testimonial.to){:target="_blank"} 
 
-Nas passagens acima, trechos atribuídos à Jesus serão indicados por letras avermelhadas.
+## Open source info & services from: 
 
-<!--
-| 🗃️ | Índice Geral | coleção de 🏷️ _tags_ |
-| 🏷️ | _tag_ | agrupa #️⃣ questões e/ou 📃 seções por assunto |
-| ⚜️ | fim | término de um elemento | 
--->
+Wikipedia - [https://en.m.wikipedia.org](https://www.wikipedia.org){:target="_blank"} 
 
-## Tipografia
+Wikicionário - [https://en.m.wiktionary.org](https://www.wiktionary.org){:target="_blank"} 
 
-Decidimos utilizar um tipo *serif* moderno, mais apropriado para o consumo digital e formatar todo o texto em estilo normal com as seguinte exceções: comunicações mediúnicas e trechos bíblicos serão em *itálico* e trechos originalmente realçados em _itálico_ serão mudados para **negrito**.
-
-Adicionalmente, numerais romanos foram substituídos por seus equivalentes arábicos (exceção para títulos, tais como São Luís, IX da França, e séculos).
- 
-Ao invés do tradicional livro, exclusivamente em preto e branco, utilizaremos de emojis, painéis coloridos, e ilustrações.
+Google Maps - [https://maps.google.com](https://maps.google.com){:target="_blank"}
 
 ---
 
-## Adicionais
+🚨 **Warning**: Check if the site you are linking to allows it to be loaded into an iframe.
 
-<details class="links"><summary>🔗</summary><br>
-🏷️ Alma, conceito espírita de  <a href="#alma">↩️</a><br>
-🏷️ Alma, conceitos de  <a href="#alma">↩️</a>
-</details>
+💡 **Hint**: Since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
 
-Nota de rodapé [^1]
+📝 **Note**: We are using Jekyll SSG with Kramdown but you are free to modify it to your liking.
 
-[^1]: Texto da nota de rodapé. Clique na seta para voltar ao local original da nota.
-
-Nos inspiramos nos esforços de:
-
-- [Portal Luz Espírita](https://www.luzespirita.org.br){:target="ext"}
-- [Kardecpedia](https://kardecpedia.com/pt){:target="ext"}
-
-Agregamos ferramentas externas de:
-
-- [Hypothes.is](https://web.hypothes.is/everyone/){:target="ext"}
-- [Whereby](https://whereby.com/){:target="ext"}
-
-Mostramos conteúdo proveniente de:
-
-- [Wikipédia](https://pt.m.wikipedia.org){:target="ext"}
-- [Wikicionário](https://pt.m.wiktionary.org){:target="ext"}
-- [Bible.com](https://www.bible.com/pt){:target="ext"}
-- [A Igreja de Jesus Cristo dos Santos dos Últimos Dias](https://www.churchofjesuschrist.org/?lang=por){:target="ext"}
-- [O Escolhido, Série](https://osescolhidos.tv/){:target="ext"}
-
-## Etapas de desenvolvimento
-
-|---|:---:|
-| **Fase** | **Estado** |
-| Estabelecer um padrão hierárquico, de diagramação, e de tipografia que permita seu uso através dos cinco livros distintos | 🟢 |
-| Copiar e colar cada parágrafo da obra original, utilizando-se do PDF livremente disponível no site da FEB (veja [Avisos legais](./legal.md)) | 🟢 |
-| Desenvolver uma interface que permita a leitura e consulta de fontes complementares sem que saia da janela original | 🟢 |
-| Combinar ferramentas de EAD, leitor eBook, e outros numa plataforma integrada | 🟢 |
-| Estabelecer um padrão programático para facilitar a inclusão de links no arquivo MD | 🟢 |
-| Criar um repositório de nosso código fonte para acesso de programadores afins | 🟢 |
-| Verificar que cada termo grifado em itálico no original está também grifado em nosso Project | 🟡 |
-| Substituir numerais romanos por seus equivalentes | 🟡 |
-| Substituir Bíblia de Sacy por Almeida Revista e Corrigida | 🟡 |
-| Assinalar cada comunicação mediúnica com o padrão determinado em fase anterior | 🟡 |
-| Assinalar cada trecho bíblico com o padrão determinado em fase anterior, adicionar livro, capítulo, versículos e versão | 🟡 |
-| Adicionar links de artigos, definicões, mapas, vídeos e etc | 🟡 |
-| Estabelecer links entre partes do mesmo livro e entre livros | 🟡 |
-| Digitalizar o indíce geral de cada livro e estabelecer links | 🟡 |
-| Implementar uma licensa que permita a utilização, modificação, e tradução de nosso Project para o mesmo sirva outras obras originais, em línguas diversas | 🟡 |
-| Criar um indíce combinado de todos os cinco livros | 🔴 |
+📋 **Report**: Our Lighthouse report can be viewed [here](./lighthouse.html){:target="ext"} (Hypothes.is turned off and iframe empty)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-
 <hr>
+
+[^1]: MD-formatted, mind its copyright license and its fair use.
+
+[^2]: Some builtin services require signup, but all have a free tier.
+
 
 <script type="application/json" class="js-hypothesis-config">
 {

@@ -3,118 +3,43 @@ title: Home
 layout: 0-default
 ---
 
-<style>
-#col2-body span.icon {position: relative; top: 7px;}
-    </style>
 
 # <span class="emoji">🏠</span> Home
 
-Keep in mind, this is not the work of a trained programmer, just a retired self-learner.
+## Inspiration
 
-## Setup
+Inspired by other initiatives of self and [distance education](https://en.m.wikipedia.org/wiki/Distance_education){:target="ext"}, I've created a **Loosely Integrated Book Reading Unified System (LIBRUS)** [^0] which combines dispersed sources & tools providing the user with a first-of-its-kind integrated study & research platform. 
 
-The setup librus for your own usage, follow these steps:
+## Usage
 
-1. Load your **study material** [^1] into <kbd>book-(x).md</kbd>. It displays in second column. 
+While designed for a group setting (i.e. book clubs, bible study, etc) it can also be used by individuals on a self-paced course.
 
-2. Set book links to target="ext" (or modify ext-links.js) which will open in the third column.
+Read the <span class="emoji">📋</span> [Info](./2-info.md) page to familiarize with the standards utilized in our project.
 
-3. Use the buttons in the top right as is [^2] or reconfigure them as you wish.
+## Interface
 
-4. Fill in or create other pages, as desired. Don't forget the front matter.
+The interface is composed of three columns which are selectively displayed according to the width of the device used. This way you'll see three columns in large screens, two in medium screens, and only one on small screens.
 
-While on book pages, you have the option of making the text / background adjustments. These get saved to your browser so you don't have to redo at every reload. If you don't want to have these settings applied, click on Reset All button at the bottom. Unfortunately the menu is only availble at the top of the page. I haven't been able to fix this. Please let me know if you have a solution. 
+The split-layout allows for the reading & [highlighting](https://web.hypothes.is/everyone/){:target="ext"} of the main content while also viewing of complementary material (articles, word definitions, maps, videos, audio, video-calls, etc) without wrangling separate tabs or windows. Also, it minimizes distraction and increases topic rentention & recall.
 
-<div class="p-adjust">
-<p><button class="tools"><span class="icon">text_increase</span></button>Bigger font</p>
- <p><button class="tools"><span class="icon">text_decrease</span></button>Smaller font</p>
- <p><button class="tools"><span class="icon">format_align_justify</span></button>Justified text</p>
- <p><button class="tools"><span
-          style="font-family: 'Inter', serif;">Se</span></button>Serif font</p>
- <p><button class="tools"><span
-          style="font-family: 'Georgia', serif;">Sa</span></button>Sans-serif font</p>
- <p><button class="tools"><span
-          style="font-family: 'Roboto Mono', serif;">Mo</span></button>Monospace font</p>
- <p><button class="tools"><span class="icon">density_small</span></button>Narrower line height</p>
- <p><button class="tools"><span class="icon">density_large</span></button>Wider height</p>
- <p> <button class="tools" title="Yellow background"><span class="icon"
-          style="border-radius: 50%; background-color: #fffce4; border: 1px solid #59595980;">&nbsp;</span></button>Yellow background</p>
-  <p>    <button class="tools" title="Green background"><span class="icon"
-          style="border-radius: 50%; background-color: #e8fce4; border: 1px solid #59595980;">&nbsp;</span></button>Green background</p>
-   <p>   <button class="tools" title="Pink background"><span class="icon"
-          style="border-radius: 50%; background-color: #fff4fc; border: 1px solid #59595980;">&nbsp;</span></button>Pink background</p>
-  <p><button class="tools"><span class="icon">link_off</span></button>Hide links</p>
+## Reader enhancements
 
- <p><button class="tools"><span class="icon">restart_alt</span></button>Reset all adjustments</p>
- </div>
+Additionally, I have been able to implement a few of the text adjustments usually restricted to eBook readers. While in a book, click the three dots menu to view options.
 
-## Free books
+## License
 
-Project Gutenberg - [https://www.gutenberg.org](https://www.gutenberg.org/){:target="_blank"}
+While adhering to my Creative Commons license, feel free to use, translate, modify, and improve it.
 
-Sherlock Holmes - [https://sherlock-holm.es/ascii](https://sherlock-holm.es/ascii){:target="_blank"}
+## Contributions
 
-## Design inspiration from: 
+Submit contributions so I can merge them or add to the Showcase.
 
-Retype - [https://retype.com](https://retype.com){:target="_blank"}
+<span class="emoji">🙏🏼</span> Godspeed!  
 
-Slate - [https://github.com/slatedocs/slate](https://github.com/slatedocs/slate){:target="_blank"}
+<img src="./images/me-dec-2023.jpg" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
 
-LibDoc - [https://github.com/olivier3lanc/Jekyll-LibDoc](https://github.com/olivier3lanc/Jekyll-LibDoc){:target="_blank"}
+Sergio
+{:.cursive}
 
-## Code hosting & wrangling from: 
-
-Github Pages - [https://pages.github.com](https://pages.github.com){:target="_blank"} 
-
-Jekyll - [https://jekyllrb.com/docs/github-pages](https://jekyllrb.com/docs/github-pages){:target="_blank"} 
-
-Kramdown - [https://kramdown.gettalong.org/syntax.html](https://kramdown.gettalong.org/syntax.html){:target="_blank"}
-
-## Free code advice from: 
-
-W3 Schools - [https://www.w3schools.com/howto/howto_js_add_class.asp](https://www.w3schools.com/howto/howto_js_add_class.asp){:target="_blank"} 
-
-Stack Overflow - [https://stackoverflow.com](https://stackoverflow.com){:target="_blank"} 
-
-Allejo - [https://allejo.io/projects/jekyll/projects](https://allejo.io/projects/jekyll/projects){:target="_blank"}
-
-## Third party free-tier services from: 
-
-Hypothes.is - [https://web.hypothes.is/everyone](https://web.hypothes.is/everyone){:target="_blank"} 
-
-Whereby - [https://whereby.com](https://whereby.com){:target="_blank"} 
-
-Crisp - [https://crisp.chat/en](https://crisp.chat/en){:target="_blank"} 
-
-Testimonial - [https://testimonial.to](https://testimonial.to){:target="_blank"} 
-
-## Open source info & services from: 
-
-Wikipedia - [https://en.m.wikipedia.org](https://www.wikipedia.org){:target="_blank"} 
-
-Wikicionário - [https://en.m.wiktionary.org](https://www.wiktionary.org){:target="_blank"} 
-
-Google Maps - [https://maps.google.com](https://maps.google.com){:target="_blank"}
-
----
-
-🚨 **Warning**: Check if the site you are linking to allows it to be loaded into an iframe.
-
-💡 **Hint**: Since this platform is responsive, use the mobile URL, if one exists (i.e. m.wikipedia.org instead of wikipedia.org).
-
-📝 **Note**: We are using Jekyll SSG with Kramdown but you are free to modify it to your liking.
-
-📋 **Report**: Our Lighthouse report can be viewed [here](./lighthouse.html){:target="ext"} (Hypothes.is turned off and iframe empty)
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
----
-
-[^1]: MD-formatted, mind its copyright license and its fair use.
-
-[^2]: Some builtin services require signup, but all have a free tier.
-
-<br>
+[^0]: Not the work of a trained programmer, just a retired self-learner.
 
