@@ -20,8 +20,7 @@ version: 23.12.22
 ><br>
 ><br>
 ><br>
-><br>
-> A one-of-a-kind study and research platform.
+> A one-of-a-kind<br>study & research<br>platform.
 ><br>
 ><br>
 ><br>
