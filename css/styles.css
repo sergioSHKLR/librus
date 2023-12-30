@@ -26,16 +26,13 @@
   --bquote-spirit-bground-lite: hsl(208, 100%, 97%);
   --bquote-spirit-border: hsl(208, 100%, 65%);
   --button-width: 50px;
-  --column-width-desktop: calc((100vw - 374px) * .5);
-  --column-width-tablet: calc((100vw - 24px) * .5);
-  --column-width-mobile: calc(100vw - 24px);
   --head-height: 50px;
   --hypo-offset: 24px;
   --jesus-color-dark: #FF9E9E;
   --jesus-color-lite: #B30000;
   --link-color-dark: #1E90FF;
   --link-color-lite: #1E90FF;
-  --sidebar-width: 300px
+  --sidebar-width: 300px;
 }
 
 /* VARIABLES END */
@@ -123,7 +120,7 @@ body {
   left: calc(var(--sidebar-width) + var(--head-height));
   overflow: hidden;
   padding: 0 17px 0 0;
-  width: var(--column-width-desktop);
+  width: var(--column-width);
   z-index: 3
 }
 
@@ -142,7 +139,7 @@ body {
   position: fixed;
   scroll-behavior: smooth;
   top: var(--head-height);
-  width: var(--column-width-desktop)
+  width: var(--column-width)
 }
 
 #col3-head {
@@ -152,7 +149,7 @@ body {
   box-shadow: 0 5px 3px -3px #00000030;
   padding: 0 20px 0 10px;
   right: 24px;
-  width: var(--column-width-desktop);
+  width: var(--column-width);
   z-index: 3
 }
 
@@ -165,7 +162,7 @@ body {
   position: fixed;
   right: 24px;
   top: var(--head-height);
-  width: var(--column-width-desktop)
+  width: var(--column-width)
 }
 
 /* FRAMEWORK DIVS END */
@@ -215,7 +212,7 @@ body {
   overscroll-behavior: contain;
   padding: 0 55px;
   scroll-behavior: smooth;
-  width: var(--column-width-desktop)
+  width: var(--column-width)
 }
 
 a#col3-link1-a,
@@ -719,6 +716,10 @@ button.tools:hover {
 /* MEDIA QUERY START */
 @media only screen and (max-width: 450px) {
 
+  :root {
+  --column-width: calc(100vw - 24px);
+  }
+
   #col1-head,
   #col1-body,
   #col3-head,
@@ -754,7 +755,7 @@ button.tools:hover {
   #col2-head,
   #col2-body {
     left: 0;
-    width: var(--column-width-mobile)
+    width: var(--column-width)
   }
 
   #col3-head {
@@ -763,6 +764,10 @@ button.tools:hover {
 }
 
 @media only screen and (min-width:450px) and (max-width:750px) {
+
+  :root {
+    --column-width: calc(100vw - 24px);
+    }
 
   #col1-head,
   #col1-body,
@@ -783,13 +788,17 @@ button.tools:hover {
   #col2-head,
   #col2-body {
     left: 0;
-    width: var(--column-width-mobile)
+    width: var(--column-width)
   }
 
 }
 
 @media only screen and (min-width:750px) and (max-width:1005px) {
 
+  :root {
+    --column-width: calc((100vw - 24px) * .5);
+    }
+
   #col1-head,
   #col1-body,
   #webshare {
@@ -810,15 +819,19 @@ button.tools:hover {
   #col2-body,
   #col3-head,
   #col3-body {
-    width: var(--column-width-tablet)
+    width: var(--column-width)
   }
 
   #col4-head {
-    left: var(--column-width-tablet);
+    left: var(--column-width);
   }
 }
 
 @media only screen and (min-width:1005px) and (max-width:1463px) {
+
+  :root {
+    --column-width: calc((100vw - 24px) * .5);
+    }
 
   #col1-head,
   #col1-body,
@@ -841,13 +854,17 @@ button.tools:hover {
   #col2-body,
   #col3-head,
   #col3-body {
-    width: var(--column-width-tablet)
+    width: var(--column-width)
   }
 
 }
 
 @media only screen and (min-width:1463px) and (max-width:1890px) {
 
+  :root {
+    --column-width: calc((100vw - var(--hypo-offset)) * .5);
+    }
+
   #col1-head,
   #col1-body,
   #col2-fs-btn,
@@ -864,12 +881,16 @@ button.tools:hover {
   #col2-body,
   #col3-head,
   #col3-body {
-    width: var(--column-width-tablet)
+    width: var(--column-width)
   }
 
 }
 
 @media only screen and (min-width:1890px) {
+
+  :root {
+    --column-width: calc((100vw - (var(--sidebar-width) + var(--hypo-offset) + var(--button-width))) * .5);
+    }
 
   #col2-brand,
   #col2-menu-on,
