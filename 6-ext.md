@@ -17,7 +17,6 @@ layout: ext
          border-top: 1px solid #66666680;
          width: 90%;
       }
-  body {var(--body-bground); color: currentColor;}
   </style>
 
 # <span class="emoji">🪧</span> Aside Panel
