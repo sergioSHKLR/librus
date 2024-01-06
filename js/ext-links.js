@@ -4,7 +4,7 @@ window.onload = function () {
   /* onload code */
 
   var extLinks = document.querySelectorAll(
-      "a[href^='https://pt'], a[href^='https://maps'], a[href^='https://www']");
+      "a[href^='https://en'], a[href^='https://maps'], a[href^='https://www']");
   var host = window.location.hostname;
 
   var isInternalLink = link => new URL(link).hostname === host;

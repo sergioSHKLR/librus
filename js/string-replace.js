@@ -3,7 +3,7 @@
 var links, x, le;
 links = document.getElementsByClassName('w');
 for (x = 0, le = links.length; x < le; x++) {
-    links[x].href = "https://pt.m.wikipedia.org/wiki" + (links[x].pathname);
+    links[x].href = "https://en.m.wikipedia.org/wiki" + (links[x].pathname);
 }
 
 // STRING REPLACE 1 END
@@ -13,7 +13,7 @@ for (x = 0, le = links.length; x < le; x++) {
 var links, y, le;
 links = document.getElementsByClassName('d');
 for (y = 0, le = links.length; y < le; y++) {
-    links[y].href = "https://pt.m.wiktionary.org/wiki" + (links[y].pathname);
+    links[y].href = "https://en.m.wiktionary.org/wiki" + (links[y].pathname);
 }
 
 // STRING REPLACE 2 END
