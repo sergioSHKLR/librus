@@ -4,7 +4,7 @@ layout: 1-book
 version: 24.1.5
 ---
 
-# ⌨️ Markdown Cheatsheet
+# <span class="emoji">⌨️</span> Markdown Cheatsheet
 
 <table>
   <tbody>

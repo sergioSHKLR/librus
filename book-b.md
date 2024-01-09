@@ -4,14 +4,14 @@ layout: 1-book
 version: 24.1.5
 ---
 
-# 📔 Title
+# <span class="emoji">📔</span> Title
 
-## 🗃️ Part
+## <span class="emoji">🗃️</span> Part
 
-### 🗂️ Chapter
+### <span class="emoji">🗂️</span> Chapter
 
-#### 📑 Sub-Chapter
+#### <span class="emoji">📑</span> Sub-Chapter
 
-##### 📃 Item
+##### <span class="emoji">📃</span> Item
 
-###### #️⃣ Sub-Item
+###### <span class="emoji">#️⃣</span> Sub-Item

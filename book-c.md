@@ -21,7 +21,7 @@ be side-issues. The new century will have come, however, before the story can be
 
 During my school-days I had been intimately associated with a lad named Percy Phelps, who was of much the same age as myself, though he was two classes ahead of me. He was a very brilliant boy, and carried away every prize which the school had to offer, finishing his exploits by winning a scholarship which sent him on to continue his triumphant career at [Cambridge](University_of_Cambridge){:.w}. He was, I remember, extremely well connected, and even when we were all little boys together we knew that his mother’s brother was Lord Holdhurst, the great conservative politician. This [gaudy](gaudy){:.d} relationship did him little good at school. On the contrary, it seemed rather a [piquant](piquant){:.d} thing to us to [chevy](chevy){:.d} him about the playground and hit him over the shins with a wicket. But it was another thing when he came out into the world. I heard vaguely that his abilities and the influences which he commanded had won him a good position at the [Foreign Office](Foreign,_Commonwealth_and_Development_Office){:.w}, and then he passed completely out of my mind until the following letter recalled his existence:
 
-> 📃 Briarbrae, [Woking](woking,%20uk){:.m}. 
+> <span class="emoji">📃 Briarbrae, [Woking](woking,%20uk){:.m}. 
 > 
 > My dear [Watson](Dr._Watson){:.w}: I have no doubt that you can remember “Tadpole” Phelps, who was in the fifth form when you were in the third. It is possible even that you may have heard that through my uncle’s influence I obtained a good appointment at the Foreign Office, and that I was in a situation of trust and honor until a horrible misfortune came suddenly to blast my career. 
 > 
