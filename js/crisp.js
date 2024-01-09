@@ -1,3 +1,1 @@
-// VERSION 24.1.5
-
-window.$crisp = []; window.CRISP_WEBSITE_ID = "3008a719-1db4-494b-bb64-ec74931a394d"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();
+window.$crisp = []; window.CRISP_WEBSITE_ID = "2b6ddc10-1cd6-4af5-9f89-4b0f4e9af5a1"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();

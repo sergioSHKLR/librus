@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- VERSION 24.1.5 -->
+<!-- VERSION 24.1.8 -->
 
 <!-- HEAD -->
 <head>
@@ -8,7 +8,6 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>{{ page.title }} | librus.app</title>
  <meta name="description" content="A one-of-a-kind study & research platform.">
- <meta name="author" content="sergioSHKLR, librus@shklr.org">
 
  <!-- OPEN GRAPH / FACEBOOK -->
  <meta property="og:type" content="website">
@@ -29,37 +28,36 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Homemade+Apple&family=Inter:wght@200;300;400;500;600;700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&family=Russo+One&family=Zeyada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Homemade+Apple&family=Inter:wght@200;300;400;500;600;700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&family=Russo+One&family=Zeyada&display=swap"
+ rel="stylesheet">
 
 <!-- GOOGLE ICONS -->
 <link rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..300,0..1,-50..200">
+ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..300,0..1,-50..200">
 
- <!-- GOOGLE EMOJI -->
- <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+<!-- GOOGLE EMOJI -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
 
- <!-- CSS -->
- <link rel="stylesheet" href="./css/styles-v1.css">
+<!-- CSS -->
+<link rel="stylesheet" href="./css/styles.css">
 
  <!-- PWA -->
- <link rel="manifest" href="./pwa/site.webmanifest">
  <link rel="icon" href="./pwa/favicon.svg" type="image/svg+xml">
- <meta name="theme-color" content="#f8fff0">
+ <meta name="theme-color" content="#f0fff0">
 
  <!-- STYLES -->
  <style>
-#col3-link3-a {
+#col3-link3-a, #col3-link4-a {
  display: none;
 }
  </style>
 </head>
 
 <!-- BODY -->
-
 <body>
 
  <!-- COL1 HEAD -->
- <div id="col1-head" class="head"><a href="./1-home.html" id="col1-brand"><span class="emoji">📗</span> librus.app</a>
+ <div id="col1-head" class="head"><a href="./1-home.html" id="col1-brand" tabindex="1" title="Return to Home"><span class="emoji">📗</span><span class="label2">&nbsp;librus.app</span></a>
  </div>
 
  <!-- COL1 BODY -->
@@ -84,111 +82,81 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wg
  <p><a href="./1-home.html" title="Home"><span class="emoji">🏠</span> Home</a></p>
  <p><a href="./2-info.html" title="Info"><span class="emoji">📋</span> Info</a></p>
  <p><a href="./3-legal.html" title="Legal"><span class="emoji">⚖️</span> Legal</a></p>
- <p><a href="./4-comments.html" title="Comments"><span class="emoji">❤️</span> Comments</a></p>
-
- <!-- COL1 REPO -->
- <p class="sidebar-heading"><span class="emoji">🖥️</span> Source code</p>
- <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Wiki"><span
-class="emoji">📖</span> Wiki</a></p>
- <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Forum"><span
-class="emoji">👥</span> Forum</a></p>
- <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Bugs"><span
-class="emoji">🐛</span> Bugs</a></p>
- <p><a target="_blank" href="https://github.com/sergioSHKLR/librus" title="Repo"><span class="emoji">📦</span>
- Repo</a></p>
-
- <!-- COL1 DETAILS -->
- <div style="cursor: default !important">
+ <p><a href="./4-contact.html" title="Contact"><span class="emoji">❤️</span> Contact</a></p>
+ <p><a target="_blank" href="https://shklr.org" title="Parent Org"><span class="emoji">⭕</span> shklr.org</a></p>
+ <hr>
+ <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Wiki"><span class="emoji">📖</span> Wiki</a></p>
+ <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Forum"><span class="emoji">👥</span> Forum</a></p>
+ <p><a target="_blank" href="https://github.com/sergioSHKLR/librus/issues" title="Bugs"><span class="emoji">🐛</span> Bugs</a></p>
+ <p><a target="_blank" href="https://github.com/sergioSHKLR/librus" title="Repo"><span class="emoji">📦</span> Repo</a></p>
+<hr>
 <p class="sidebar-heading"><span class="emoji">⌨️</span> Details</p>
-<p><span class="emoji">💾</span> Version <kbd>24.1.5</kbd></p>
+<p><span class="emoji">💾</span> Version <kbd>24.1.8</kbd></p>
 <p><span class="emoji">🗓️</span> Updated on {{ "today" | date: "%b-%Y" }}</p>
 <p><span class="emoji">🛡️</span><a href="./3-legal.html">CC BY-NC-SA 4.0</a></p>
- </div>
+</details>
 
- <!-- COL1 PART OF -->
- <p class="sidebar-heading"><span class="emoji">💼</span> Part of</p>
- <p><a target="_blank" href="https://shklr.org" title="Parent Org"><span class="emoji">⭕</span> shklr.org</a></p>
-
-</details><br>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-      <!-- COL1 VERT TOOLS -->
-      <div id="vert-tools"> 
-      </div> 
-   </div>
+<!-- COL1 VERT TOOLS-->
+<div id="vert-tools">
+  <button id="tools-menu" onclick="function00()" title="Font size, line height, font type, background color, or paragraph alignment">Aa<br><span class="label">typo</span></button>
+  <div id="vert-tools-buttons" class="hide">
+  <button class="tools fontSize" id="decreasetext" type="button" value="-1" title="Smaller font"><span class="icon">text_decrease</span><br><span class="label">letter</span></button>
+  <button class="tools fontSize" id="increasetext" type="button" value="+1" title="Larger font"><span class="icon">text_increase</span><br><span class="label">letter</span></button>
+  <button class="tools lineHeight" id="decreaselineheight" type="button" value="-1"><span class="icon">density_small</span><br><span class="label">lines</span></button>
+  <button class="tools lineHeight" id="increaselineheight" type="button" value="+1"><span class="icon">density_large</span><br><span class="label">lines</span></button>
+  <button class="tools" id="ff-se-btn" onclick="function02()" title="Serif font"><span style="font-family: 'Georgia', serif;">Se</span><br><span class="label">serif</span></button>
+  <button class="tools" id="ff-sa-btn" onclick="function03()" title="Sans font"><span style="font-family: 'Inter', sans;">Sa</span><br><span class="label">sans</span></button>
+  <button class="tools" id="ff-mo-btn" onclick="function04()" title="Mono font"><span style="font-family: 'Roboto Mono', monospace;">Mo</span><br><span class="label">mono</span></button>
+  <button class="tools" id="bc-ye-btn" onclick="function07()" title="Yellow background"><span class="icon tools-round" style="background-color: #fffce4;">&nbsp;</span><br><span class="label">yellow</span></button>
+  <button class="tools" id="bc-gr-btn" onclick="function08()" title="Green background"><span class="icon tools-round" style="background-color: #e8fce4;">&nbsp;</span><br><span class="label">green</span></button>
+  <button class="tools" id="bc-pi-btn" onclick="function09()" title="Pink background"><span class="icon tools-round" style="background-color: #fff0f5;">&nbsp;</span><br><span class="label">pink</span></button>
+  <button class="tools" id="ta-ju-btn" onclick="function01()" title="Justified"><span class="icon">format_align_justify</span><br><span class="label">justif.</span></button>
+  <button class="tools" id="ra-btn" onclick="functionReset()" title="Reset all (needs reload)"><span class="icon" style="color: crimson;">restart_alt</span><br><span class="label">reset</span></button>
+  </div>
+  </div>
+  </div>
 
  <!-- COL2 HEAD -->
- <div id="col2-head" class="head">
-   <button id="col2-menu-on" onclick="menuOn()" title="Open menu"><span class="icon">menu</span><br><span class="label">menu</span></button>
-   <button id="col2-menu-off" hidden onclick="menuOff()" title="Close menu"><span class="icon">close</span><br><span class="label">close</span></button>
-   <a href="./1-home.html" id="col2-brand"><span class="emoji">📗</span> librus.app</a>
-   <button id="webshare" class="fr" title="Share" onclick="webShare()"><span class="icon">share</span><br><span class="label">share</span></button>
-   <button id="col2-fs-btn" class="fr" onclick="openFullscreen()" title="Tela cheia"><span class="icon">fullscreen</span><br><span class="label">full</span></button>
-   <button id="col2-ns-btn" class="fr hide" onclick="closeFullscreen()" title="Normal screen"><span class="icon">fullscreen_exit</span><br><span class="label">normal</span></button>
-   <button id="col2-dm-btn" class="fr" onclick="darkMode()" title="Dark mode"><span class="icon">contrast</span><br><span class="label">dark</span></button>
-   <button id="col2-lm-btn" class="fr hide" onclick="lightMode()" title="Lite mode"><span class="icon">contrast_rtl_off</span><br><span class="label">lite</span></button>
-   </div>
+<div id="col2-head" class="head">
+  <button id="col2-menu-on" onclick="menuOn()" title="Open menu" tabindex="1"><span class="icon">menu</span><br><span class="label">menu</span></button>
+  <button id="col2-menu-off" hidden onclick="menuOff()" title="Close menu" tabindex="2"><span class="icon">close</span><br><span class="label">close</span></button>
+  <a href="./1-home.html" id="col2-brand" tabindex="3"><span class="emoji" title="Return to Home">📗</span><span class="label2">&nbsp;librus.app</span></a>
+  <button id="webshare" class="fr" title="Share" onclick="webShare()" tabindex="12"><span class="icon">share</span><br><span class="label">share</span></button>
+  <button id="col2-fs-btn" class="fr" onclick="openFullscreen()" title="Fullscreen" tabindex="5"><span class="icon">fullscreen</span><br><span class="label">full</span></button>
+  <button id="col2-ns-btn" class="fr hide" onclick="closeFullscreen()" title="Normal screen" tabindex="10"><span class="icon">fullscreen_exit</span><br><span class="label">normal</span></button>
+  <button id="col2-dm-btn" class="fr" onclick="darkMode()" title="Dark mode" tabindex="4"><span class="icon">contrast</span><br><span class="label">dark</span></button>
+  <button id="col2-lm-btn" class="fr hide" onclick="lightMode()" title="Lite mode" tabindex="0"><span class="icon">contrast_rtl_off</span><br><span class="label">lite</span></button>
+  <button id="col2-loff-btn" class="fr" onclick="labelOff()" title="Hide labels"><span class="icon">label_off</span><br><span class="label">hide</span></button>
+  <button id="col2-lon-btn" class="fr hide" onclick="labelOn()" title="Show labels"><span class="icon">label</span></button>
+  </div>
 
  <!-- COL2 BODY -->
  <div id="col2-body">
 {{ content }}
  </div>
 
-  <!-- COL3 HEAD -->
-  <div id="col3-head" class="head">
-   <a id="col3-link3-a" class="fr" target="ext" href="./content/maps/paris.html" title="Atlas"><span class="icon">location_on</span><br><span class="label">maps</span></a>
-   <a id="col3-link2-a" class="fr" target="ext" href="https://en.m.wiktionary.org" title="Dicionário"><span class="icon">book_2</span><br><span class="label">dict</span></a>
-   <a id="col3-link1-a" class="fr" target="ext" href="https://en.m.wikipedia.org/" title="Enciclopédia"><span class="icon">language</span><br><span class="label">wiki</span></a>
-   </div>
+<!-- COL3 HEAD -->
+<div id="col3-head" class="head">
+  <button id="col3-link4-a" class="fr" onclick="window.open('https://doutrina.whereby.com/estudos41936e66-2cc4-470a-aa9e-727a361496d0', '_blank');return false;" title="Vídeo chamada" tabindex="9"><span class="icon">video_call</span><br><span class="label">vídeo</span></button> 
+  <button id="col3-link3-a" class="fr" onclick="window.open('./content/maps/map-ese.html', 'ext');return false;" title="Atlas" tabindex="8"><span class="icon">location_on</span><br><span class="label">atlas</span></button>
+  <button id="col3-link2-a" class="fr" onclick="window.open('https://en.m.wiktionary.org', 'ext');return false;" title="Dictionary" tabindex="7"><span class="icon">book_2</span><br><span class="label">dict.</span></button>
+  <button id="col3-link1-a" class="fr" onclick="window.open('https://en.m.wikipedia.org/', 'ext');return false;" title="Encyclopedia" tabindex="6"><span class="icon">language</span><br><span class="label">wiki</span></button>
+  </div>
+  
+  <!-- COL3 BODY -->
+  <div id="col3-body">
+  <iframe id="ext-iframe" loading="lazy" name="ext" title="complementary panel" src="./6-ext.html"
+   allowfullscreen></iframe>
+  </div>
 
- <!-- COL3 BODY -->
- <div id="col3-body">
-<iframe id="ext-iframe" loading="lazy" name="ext" title="Complementary panel" src="./6-ext.html"
- allowfullscreen></iframe>
- </div>
+<!-- ALERTS -->
+<div id="hypo" onclick="hypoAlert()" title="Problems?"><span class="material-symbols-outlined">help</span></div>
+<div id="alert" class="hide">On your mobile? Use it on landscape mode.</div>
 
- <!-- ALERTS -->
- <div id="hypo" onclick="hypoAlert()" title="Problems?"><span class="material-symbols-outlined">help</span></div>
- <div id="alert" class="hide">On your mobile? Use it on landscape mode.</div>
-
- <!-- SCRIPTS -->
- <script src="./js/check-align.js"></script>
- <script src="./js/check-line.js"></script>
- <script src="./js/check-family-sans.js"></script>
- <script src="./js/check-bground.js"></script>
- <script src="./js/dark-mode.js"></script>
- <script src="./js/check-contrast.js"></script>
- <script src="./js/ext-links.js"></script>
- <script src="./js/check-size.js"></script>
- <script src="./js/fullscreen.js"></script>
- <script src="./js/hypo-alert.js"></script>
- <script src="./js/menu.js"></script>
- <script src="./js/string-replace.js"></script>
- <script src="./js/tools.js"></script>
-
- <script async src="https://hypothes.is/embed.js"></script>
- <script class="js-hypothesis-config">
-window.hypothesisConfig = function () {
- return {
-branding: {
- appBackgroundColor: '#f8fff0',
- ctaBackgroundColor: '#BD1C2B',
- ctaTextColor: 'white',
- selectionFontFamily: 'helvetica, arial, sans serif',
- annotationFontFamily: 'monospace',
- height: '90'
-}
- };
-};
- </script>
- <script type="application/json" class="js-hypothesis-config">
-{
-"showHighlights": true,
-}
-</script>
+<!-- SCRIPTS -->
+<script src="./js/combined.js"></script>
+<script src="./js/crisp.js"></script>
+<script async src="https://hypothes.is/embed.js"></script>
 
 </body>
-
 </html>
