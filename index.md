@@ -1,13 +1,15 @@
 ---
 title: librus.app
 layout: splash
-version: 23.12.22
+version: 24.1.11
 ---
 
 ><br>
 ><br>
 ><br>
+><br>
 > A one-of-a-kind<br>study & research<br>platform.
+><br>
 ><br>
 ><br>
 ><br>
