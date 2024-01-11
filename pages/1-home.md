@@ -14,7 +14,7 @@ Inspired by other initiatives of self and [distance education](https://en.m.wiki
 
 While designed for a group setting (i.e. book clubs, bible study, etc) it can also be used by individuals on a self-paced course.
 
-Read the <span class="emoji">📋</span> [Info](./2-info.md) page to familiarize with the standards utilized in our project.
+Read the <span class="emoji">📋</span> [Info](../pages/2-info.html) page to familiarize with the standards utilized in our project.
 
 ## Interface
 
@@ -36,7 +36,7 @@ Submit contributions so I can merge them or add to the Showcase.
 
 <span class="emoji">🙏🏼</span> Godspeed!  
 
-<img src="../assets/images/me-dec-2023.jpg" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
+<img src="../assets/images/me-dec-2023.png" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
 
 Sergio
 {:.cursive}

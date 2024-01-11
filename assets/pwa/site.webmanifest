@@ -2,12 +2,12 @@
   "name": "librus.app",
   "short_name": "librus",
   "description": "version 24.1.5",
-  "theme_color": "#f8fff0",
+  "theme_color": "#9CCC64",
   "background_color": "#222222",
   "display": "fullscreen",
   "orientation": "landscape",
-  "scope": "https://librus.app",
-  "start_url": "https://librus.app/",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "maskable.png",

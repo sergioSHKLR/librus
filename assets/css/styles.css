@@ -18,7 +18,7 @@
   --bquote-spirit-bground: hsl(120, 100%, 97%);
   --bquote-spirit-border: hsl(120, 100%, 65%);
   --button-width: 50px;
-  --focus-bground: hsla(208, 65%, 95%, .25);
+  --focus-bground: hsla(120, 65%, 95%, .25);
   --head-height: 50px;
   --hypo-offset: 24px;
   --jesus-color: #B30000;
@@ -213,10 +213,10 @@ iframe {
   display: none
 }
 
-a#col3-link1-a,
-a#col3-link2-a,
-a#col3-link3-a,
-a#col3-link4-a {
+a#col3-wiki-lnk,
+a#col3-dict-lnk,
+a#col3-maps-lnk,
+a#col3-vid-lnk {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   text-align: center;
@@ -811,10 +811,10 @@ button.tools {
   #col1-body,
   #col3-head,
   #col3-body,
-  #col3-link1,
-  #col3-link2,
-  #col3-link3,
-  #col3-link4 {
+  #col3-wiki,
+  #col3-dict,
+  #col3-maps,
+  #col3-vid {
       display: none
   }
 
@@ -862,10 +862,10 @@ button.tools {
   #col1-body,
   #col3-head,
   #col3-body,
-  #col3-link1,
-  #col3-link2,
-  #col3-link3,
-  #col3-link4 {
+  #col3-wiki,
+  #col3-dict,
+  #col3-maps,
+  #col3-vid {
       display: none
   }
 
@@ -890,7 +890,7 @@ button.tools {
 
   #col1-head,
   #col1-body,
-  #webshare {
+  #col2-sha-btn {
       display: none
   }
 
@@ -925,7 +925,7 @@ button.tools {
   #col1-head,
   #col1-body,
   #col2-fs-btn,
-  #webshare {
+  #col2-sha-btn {
       display: none
   }
 
@@ -957,7 +957,7 @@ button.tools {
   #col1-head,
   #col1-body,
   #col2-fs-btn,
-  #webshare {
+  #col2-sha-btn {
       display: none
   }
 
@@ -984,7 +984,7 @@ button.tools {
   #col2-brand,
   #col2-menu-on,
   #col2-fs-btn,
-  #webshare {
+  #col2-sha-btn {
       display: none
   }
 
@@ -1173,8 +1173,6 @@ kbd {
 }
 
 p.banner {
-  background-color: #ff06;
-  border-left: 4px solid #ffd700;
   color: currentColor;
   font-family: 'Inter';
   padding: 10px;
@@ -1229,9 +1227,18 @@ button:focus {
   outline: none;
 }
 
-.original {text-indent: 4px;
+.original {
+  text-indent: 4px;
   margin: 10px;
-  padding: 10px 20px; background-color: floralwhite;}
+  padding: 10px 20px;
+  background-color: floralwhite;
+}
+
+
+#my-awesome-nav li.active a {
+  font-weight: bold !important;
+  outline: 3px solid orange;
+}
 
 /* OTHERS END */
 
