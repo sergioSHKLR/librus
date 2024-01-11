@@ -36,7 +36,7 @@ Submit contributions so I can merge them or add to the Showcase.
 
 <span class="emoji">🙏🏼</span> Godspeed!  
 
-<img src="./images/me-dec-2023.jpg" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
+<img src="../assets/images/me-dec-2023.jpg" width="100" height="100" alt="bitmoji de sergio" style="all: unset; background-color: transparent;  width: 100px; overflow:clip !important">
 
 Sergio
 {:.cursive}
