@@ -40,7 +40,7 @@ wife agreed with me that not a moment should be lost in laying the
 matter before him, and so within an hour of breakfast-time I found
 myself back once more in the old rooms in [Baker Street](https://www.google.com/maps/embed?pb=!4v1701310070331!6m8!1m7!1sxcpfEVXzdOSLfJZ8-e78WQ!2m2!1d51.52377182736027!2d-0.1582448794529913!3f271.9495810431267!4f-4.3476454619505205!5f2.4318179095155026).
 
-![holmes-2](./images/2.png)
+![holmes-2](../assets/images/2.png)
 
 Holmes was seated at his side-table clad in his dressing-gown, and
 working hard over a chemical investigation. A large curved retort was
@@ -139,7 +139,7 @@ cordially.
 dare say you would not be prepared to swear to me. This I presume is
 your celebrated friend, Mr. Sherlock Holmes?”
 
-![holmes-5](./images/5.png)
+![holmes-5](../assets/images/5.png)
 
 I introduced him in a few words, and we both sat down. The stout
 young man had left us, but his sister still remained with her hand in
@@ -155,7 +155,7 @@ contrast.
 and successful man, Mr. Holmes, and on the eve of being married, when
 a sudden and dreadful misfortune wrecked all my prospects in life.
 
-![holmes-4](./images/4.png)
+![holmes-4](../assets/images/4.png)
 
 🤵🏻‍♂️ “I was, as Watson may have told you, in the Foreign Office, and
 through the influences of my uncle, Lord Holdhurst, I rose rapidly to
@@ -255,7 +255,7 @@ second one leads by means of a second small stair to a side door,
 used by servants, and also as a short cut by clerks when coming from
 Charles Street. Here is a rough chart of the place.”
 
-![holmes-6](./images/6.png)
+![holmes-6](../assets/images/6.png)
 
 🕵️‍♂️ “Thank you. I think that I quite follow you,” said Sherlock Holmes.
 
@@ -282,7 +282,7 @@ astonishment upon his face.
 
 👮🏼‍♂️ “‘It’s the bell of the room you were working in.’
 
-![holmes-7](./images/7.png)
+![holmes-7](../assets/images/7.png)
 
 🤵🏻‍♂️ “A cold hand seemed to close round my heart. Some one, then, was in
 that room where my precious treaty lay upon the table. I ran
@@ -475,7 +475,7 @@ ashes or scraps. When we reached Scotland Yard she was handed over at
 once to the female searcher. I waited in an agony of suspense until
 she came back with her report. There were no signs of the papers.
 
-![holmes-10](./images/10.png)
+![holmes-10](../assets/images/10.png)
 
 🤵🏻‍♂️ “Then for the first time the horror of my situation came in its full
 force. Hitherto I had been acting, and action had numbed thought. I
@@ -576,7 +576,7 @@ stalk of a moss-rose, looking down at the dainty blend of crimson and
 green. It was a new phase of his character to me, for I had never
 before seen him show any keen interest in natural objects.
 
-![holmes-11](./images/11.png)
+![holmes-11](../assets/images/11.png)
 
 🕵️‍♂️ “There is nothing in which deduction is so necessary as in religion,”
 said he, leaning with his back against the shutters. “It can be built
@@ -653,7 +653,7 @@ Junction.
 which run high, and allow you to look down upon the houses like
 this.”
 
-![holmes-12](./images/12.png)
+![holmes-12](../assets/images/12.png)
 
 I thought he was joking, for the view was sordid enough, but he soon
 explained himself.
@@ -777,7 +777,7 @@ manner. “I’ve certainly had no credit from the case so far.”
 
 🕵️‍♂️ “What steps have you taken?”
 
-![holmes-13](./images/13.png)
+![holmes-13](../assets/images/13.png)
 
 👨🏻‍💼 “Tangey, the commissionaire, has been shadowed. He left the Guards
 with a good character and we can find nothing against him. His wife
@@ -870,7 +870,7 @@ I ask?”
 
 🕵️‍♂️ “In that of Mr. Percy Phelps,” answered Holmes.
 
-![holmes-14](./images/14.png)
+![holmes-14](../assets/images/14.png)
 
 “Ah, my unfortunate nephew! You can understand that our kinship makes
 it the more impossible for me to screen him in any way. I fear that
@@ -946,7 +946,7 @@ will cease to be secret in a few months.”
 🕵️‍♂️ “That is most important,” said Holmes. “Of course, it is a possible
 supposition that the thief has had a sudden illness--”
 
-![holmes-16](./images/16.png)
+![holmes-16](../assets/images/16.png)
 
 “An attack of brain-fever, for example?” asked the statesman,
 flashing a swift glance at him.
@@ -1104,7 +1104,7 @@ negligent air which was unusual with him.
 understand, where the fellow scaled the fence. Let us have a look at
 that!”
 
-![holmes-17](./images/17.png)
+![holmes-17](../assets/images/17.png)
 
 The plump young man led us to a spot where the top of one of the
 wooden rails had been cracked. A small fragment of the wood was
@@ -1197,7 +1197,7 @@ Phelps can have the spare bedroom to-night, and I will be with you in
 time for breakfast, for there is a train which will take me into
 Waterloo at eight.”
 
-![holmes-18](./images/18.png)
+![holmes-18](../assets/images/18.png)
 
 “But how about our investigation in London?” asked Phelps, ruefully.
 
@@ -1391,7 +1391,7 @@ his coat.
 “I have not the heart to interrupt your breakfast any further, and
 yet I am dying to know how you got it and where it was.”
 
-![holmes-19](./images/19.png)
+![holmes-19](../assets/images/19.png)
 
 Sherlock Holmes swallowed a cup of coffee, and turned his attention
 to the ham and eggs. Then he rose, lit his pipe, and settled himself
@@ -1449,7 +1449,7 @@ sound of a bolt being pushed back and the creaking of a key. A moment
 later the servant’s door was opened, and Mr. Joseph Harrison stepped
 out into the moonlight.”
 
-![holmes-20](./images/20.png)
+![holmes-20](../assets/images/20.png)
 
 “Joseph!” ejaculated Phelps.
 
@@ -1561,7 +1561,7 @@ and skirting in search of them. I let him take them, therefore, from
 the hiding-place, and so saved myself an infinity of trouble. Is
 there any other point which I can make clear?”
 
-![holmes-21](./images/21.png)
+![holmes-21](../assets/images/21.png)
 
 “Why did he try the window on the first occasion,” I asked, “when he
 might have entered by the door?”

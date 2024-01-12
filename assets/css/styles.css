@@ -792,9 +792,9 @@ button.tools {
       display: none;
   }
 
-  iframe {
-      filter: var(--iframe-filter)
-  }
+  .dark-mode iframe {
+    filter: var(--iframe-filter)
+}
 }
 
 /*------------------------------------------------*/

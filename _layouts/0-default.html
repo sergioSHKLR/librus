@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- VERSION 24.1.11 -->
+<!-- VERSION 24.1.12 -->
 
 <!-- HEAD -->
 {% include 0-head.html %}
 
- <!-- STYLES -->
- <style>
- #col3-link3-a,
- #col3-link4-a {
- display: none;
- }
- </style>
+<!-- STYLES -->
+<style>
+    #col3-vid-lnk,
+    #col3-maps-lnk {
+        display: none;
+    }
+</style>
 </head>
 
 <!-- BODY -->
 <body>
 
-<!-- COL1 HEAD & BODY-->
-{% include 1-col1-head-body.html %}
+    <!-- COL1 HEAD & BODY-->
+    {% include 1-col1-head-body.html %}
 
- <!-- COL1 TOC -->
- <p id="toc-title" class="sidebar-heading"><span class="emoji">📄</span> On this page</p>
- {% include toc.html html=content h_min=1 h_max=3 item_class="toc" %}
- <br>
+    <!-- COL1 TOC -->
+    <p id="toc-title" class="sidebar-heading">
+        <span class="emoji">📄</span> On this page
+    </p>
+    {% include toc.html html=content h_min=1 h_max=3 item_class="toc" %}
+    <br>
 
-<!-- COL1 LINKS -->
-{% include 2-col1-links.html %}
- 
-<!-- COL1 PROJECT -->
-{% include 3-col1-project.html %}
+    <!-- COL1 LINKS -->
+    {% include 2-col1-links.html %}
 
-<!-- COL1 VERT TOOLS -->
-{% include 4-col1-tools.html %}
-    
-<!-- COL2 HEAD -->
-{% include 5-col2-head.html %}
- 
-<!-- COL2 BODY -->
-<div id="col2-body">
- {{ content }}
-</div>
- 
-<!-- COL3 HEAD -->
-{% include 6-col3-head.html %}
- 
-<!-- COL3 BODY -->
-{% include 7-col3-body.html %}
- 
-<!-- ALERTS -->
-{% include 8-hypo-alert.html %}
+    <!-- COL1 PROJECT -->
+    {% include 3-col1-project.html %}
 
- <!-- SCRIPTS -->
- <script src="../assets/js/combined.js"></script>
- <script async src="../assets/js/crisp.js"></script>
- <script async src="https://hypothes.is/embed.js"></script>
+    <!-- COL1 VERT TOOLS -->
+    {% include 4-col1-tools.html %}
+
+    <!-- COL2 HEAD -->
+    {% include 5-col2-head.html %}
+
+    <!-- COL2 BODY -->
+    <div id="col2-body">
+        {{ content }}
+    </div>
+
+    <!-- COL3 HEAD -->
+    {% include 6-col3-head.html %}
+
+    <!-- COL3 BODY -->
+    {% include 7-col3-body.html %}
+
+    <!-- ALERTS -->
+    {% include 8-hypo-alert.html %}
+
+    <!-- SCRIPTS -->
+    <script src="../assets/js/combined.js"></script>
+    <script async src="../assets/js/crisp.js"></script>
+    <script async src="https://hypothes.is/embed.js"></script>
 
 </body>
+
 </html>
