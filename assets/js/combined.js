@@ -1,4 +1,4 @@
-// ver 24.1.12
+// VER 23.1.8
 
 // MENU -----------------------------------------------------------------------
 
@@ -300,6 +300,7 @@ function functionReset() {
     element10.classList.remove("bg-green");
     element10.classList.remove("bg-pink");
     element10.classList.remove("none");
+    location.reload();
 }
 
 // Align ------------------------------
@@ -369,7 +370,7 @@ changeSize();
 
 window.onload = function () {
     var extLinks = document.querySelectorAll(
-        "a[href^='https://en'], a[href^='https://maps'], a[href^='https://www']");
+        "a[href^='https://pt'], a[href^='https://maps'], a[href^='https://www']");
     var host = window.location.hostname;
     var isInternalLink = link => new URL(link).hostname === host;
     extLinks.forEach(link => {
@@ -384,13 +385,13 @@ window.onload = function () {
 var links, x, le;
 links = document.getElementsByClassName('w');
 for (x = 0, le = links.length; x < le; x++) {
-    links[x].href = "https://en.m.wikipedia.org/wiki" + (links[x].pathname.slice(6));
+    links[x].href = "https://pt.m.wikipedia.org/wiki" + (links[x].pathname.slice(6));
 }
 
 var links, y, le;
 links = document.getElementsByClassName('d');
 for (y = 0, le = links.length; y < le; y++) {
-    links[y].href = "https://en.m.wiktionary.org/wiki" + (links[y].pathname.slice(6));
+    links[y].href = "https://pt.m.wiktionary.org/wiki" + (links[y].pathname.slice(6));
 }
 
 var links, z, le;
@@ -402,7 +403,7 @@ for (z = 0, le = links.length; z < le; z++) {
 var links, k, le;
 links = document.getElementsByClassName('m');
 for (k = 0, le = links.length; k < le; k++) {
-    links[k].href = "https://maps.google.com/maps?hl=en&t=k&z=12&ie=UTF8&iwloc=B&output=embed&q=" + (links[k].pathname.slice(1));
+    links[k].href = "https://maps.google.com/maps?hl=en&t=k&z=12&ie=UTF8&iwloc=B&output=embed&q=" + (links[k].pathname.slice(7));
 }
 
 var links, u, le;
