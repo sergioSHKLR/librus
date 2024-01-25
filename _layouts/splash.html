@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<!-- VERSION 24.1.12 -->
+<html lang="en-US">
+<!-- VERSION 24.1.17 -->
 
 <!-- HEAD -->
 {% include 0-head.html %}
@@ -9,7 +9,7 @@
 <style>
   .note {
     box-shadow: 2px 2px 20px #aaa, 0 0 125px floralwhite inset;
-    background: #fffef0;
+	background: #fffef0;
     color: #555;
     font-family: 'Homemade Apple', cursive;
     font-size: 20px;
@@ -36,26 +36,8 @@
     margin-right: auto;
   }
 
-  button>a:any-link {
-    text-decoration: none;
-    color: #000;
-  }
-
-  #col2-dm-btn,
-  #col2-lm-btn {
-    display: none;
-  }
-
-  iframe {
-    filter: var(--iframe-filter)
-  }
-
-  /*------------------------------------------------*/
-
-  .dark-mode button>a:any-link {
-    text-decoration: none;
-    color: #000 !important;
-  }
+  button > a:any-link {text-decoration: none; color: #000 !important;
+}
 
   @media (orientation:landscape) {
     .note {
@@ -86,6 +68,7 @@
   }
 
   .banner {
+    color: white;
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +77,7 @@
 
   .enter {
     bottom: 0;
-    color: transparent;
+    color: #000;
     position: absolute;
     right: 0
   }
@@ -127,7 +110,7 @@
 
   {{ content }}
 
-  <button class="center-button"  onclick="window.open('../pages/1-home.html', '_top');return false;">enter</button>
+  <button class="center-button" onclick="window.open('../pages/1-home.html', '_top');return false;" style="color: black;">enter</button>
 
   <p style="font-family: 'Inter', sans-serif; text-align: center; color: #666"><small>Not optimized for
       Apple/IOS</small></p>
