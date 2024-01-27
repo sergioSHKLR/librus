@@ -1,7 +1,7 @@
 ---
 title: Blank Book
 layout: 1-book
-version: 24.1.5
+version: 24.1.27
 ---
 
 # <span class="emoji">📔</span> Title

@@ -1,7 +1,7 @@
 ---
 title: librus.app
 layout: splash
-version: 24.1.12
+version: 24.1.27
 ---
 
 ><br>
