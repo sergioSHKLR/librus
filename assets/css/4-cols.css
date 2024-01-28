@@ -2,7 +2,7 @@
 
 /* VARIABLES START */
 :root {
-    --accent-color: hsl(120 65%, 95%);
+    --accent-color: hsl(120, 65%, 95%);
     --bground-color-grey: gray;
     --body-bground: white;
     --body-color: #222;
@@ -668,7 +668,7 @@ button.tools {
 /* DARK MODE START */
 
 .dark-mode {
-    --accent-color: hsl(120 65%, 15%);
+    --accent-color: hsl(120, 35%, 9%);
     --body-bground: #222;
     --body-color: #eee;
     --border-color: #ADADAD80;
@@ -771,7 +771,7 @@ button.tools {
 @media (prefers-color-scheme: dark) {
 
     :root {
-        --accent-color: hsl(120 65%, 15%);
+        --accent-color: hsl(120, 35%, 9%);
         --body-bground: #222;
         --body-color: #eee;
         --border-color: #ADADAD80;
