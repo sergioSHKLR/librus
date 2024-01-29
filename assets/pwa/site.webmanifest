@@ -5,22 +5,56 @@
   "theme_color": "#9CCC64",
   "background_color": "#222222",
   "display": "fullscreen",
-  "orientation": "landscape",
+  "orientation": "any",
   "scope": "/",
   "start_url": "/",
+  "id": "/",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://librus.app/",
+      "id": "24.1.27"
+    }
+  ],
+  "display_override": [
+    "window-controls-overlay",
+    "fullscreen"
+  ],
+  "lang": "en-US",
+  "dir": "ltr",
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "iarc_rating_id": "",
+  "scope_extensions": [
+    {
+      "origin": "/"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "opengraph.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "twitter.png",
+      "sizes": "1536x1536",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "cross platform",
+    "rápido",
+    "simples"
+  ],
+  "categories": [
+    "education"
+  ],
   "icons": [
-    {
-      "src": "maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -469,49 +503,5 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "id": "/",
-  "related_applications": [],
-  "prefer_related_applications": false,
-  "display_override": [
-    "window-controls-overlay",
-    "fullscreen"
-  ],
-  "lang": "en-US",
-  "dir": "ltr",
-  "handle_links": "preferred",
-  "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
-  "iarc_rating_id": "",
-  "scope_extensions": [
-    {
-      "origin": "https://librus.app/*"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "desktop.png",
-      "sizes": "1919x943",
-      "type": "image/png"
-    },
-    {
-      "src": "tablet.png",
-      "sizes": "956x943",
-      "type": "image/png"
-    },
-    {
-      "src": "mobile.png",
-      "sizes": "497x943",
-      "type": "image/png"
-    }
-  ],
-  "features": [
-    "Cross Platform",
-    "fast",
-    "simple"
-  ],
-  "categories": [
-    "education"
   ]
 }
