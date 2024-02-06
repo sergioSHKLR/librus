@@ -23,7 +23,7 @@ The split-layout allows for the reading & [highlighting](https://web.hypothes.is
 
 ## Reader enhancements
 
-Additionally, I have been able to implement a few of the text adjustments usually restricted to eBook readers. While in a book, click the three dots menu to view options.
+Additionally, I have been able to implement a few of the text adjustments usually restricted to eBook readers. While in a book, click the <kbd>Aa</kbd> button to view options.
 
 ## License
 

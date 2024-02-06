@@ -28,7 +28,5 @@ Links from the main column (left) open up here. These can be:
 - <span class="emoji">🗺️</span> maps
 - <span class="emoji">🎬</span> videos
 
-among many others, the choice is yours [^1].
-
-[^1]: Be mindful of the technological (iframe), legal & ethical restrictions of the content owner.
+among many others, the choice is up to you.
 
