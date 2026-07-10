@@ -1,0 +1,1468 @@
+{
+  "provider": "wikipedia",
+  "language": "pt",
+  "source": "pt.wikipedia.org",
+  "priority": "secondary",
+  "version": "0.3",
+  "description": "Artigos da Wikipédia em português — figuras, obras e conceitos para corpora em PT.",
+  "entries": [
+    {
+      "term": "Abraão",
+      "aliases": [
+        "Abraham"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Abra%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Adão",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Ad%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Aarão",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Aar%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Alexandre Aksakof",
+      "aliases": [
+        "Aksakof"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Alexandre_Aksakof",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Alexis de Tocqueville",
+      "aliases": [
+        "Tocqueville"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Alexis_de_Tocqueville",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Alfred Russel Wallace",
+      "aliases": [
+        "Wallace"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Alfred_Russel_Wallace",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Allan Kardec",
+      "aliases": [
+        "Kardec",
+        "Hippolyte Léon Denizard Rivail"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Allan_Kardec",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "André",
+      "aliases": [
+        "São André",
+        "André, o Apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Andr%C3%A9_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Andrew Jackson Davis",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Andrew_Jackson_Davis",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "André-Marie Ampère",
+      "aliases": [
+        "Ampère"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Andr%C3%A9-Marie_Amp%C3%A8re",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Anás",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/An%C3%A1s",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Arthur Conan Doyle",
+      "aliases": [
+        "Conan Doyle"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Arthur_Conan_Doyle",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Arthur Schopenhauer",
+      "aliases": [
+        "Schopenhauer"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Arthur_Schopenhauer",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Auguste Comte",
+      "aliases": [
+        "Comte"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Auguste_Comte",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Augusto",
+      "aliases": [
+        "César Augusto",
+        "Octávio Augusto"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Augusto",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Bartolomeu",
+      "aliases": [
+        "São Bartolomeu",
+        "Bartolomeu, o Apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Bartolomeu_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Bezerra de Menezes",
+      "aliases": [
+        "José Bezerra de Menezes"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Bezerra_de_Menezes",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Bíblia",
+      "aliases": [
+        "Sagrada Escritura",
+        "Sagradas Escrituras"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/B%C3%ADblia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Brigham Young",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Brigham_Young",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Caifás",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Caif%C3%A1s",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cairbar Schutel",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Cairbar_Schutel",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Camille Flammarion",
+      "aliases": [
+        "Flammarion"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Camille_Flammarion",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Carl Friedrich Gauss",
+      "aliases": [
+        "Gauss"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Carlos Magno",
+      "aliases": [
+        "Charlemagne"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Carlos_Magno",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cesare Lombroso",
+      "aliases": [
+        "Lombroso"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Cesare_Lombroso",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Charles Darwin",
+      "aliases": [
+        "Darwin"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Charles_Darwin",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Charles Lyell",
+      "aliases": [
+        "Lyell"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Charles_Lyell",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Charles Taze Russell",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Charles_Taze_Russell",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Chico Xavier",
+      "aliases": [
+        "Francisco Cândido Xavier"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Chico_Xavier",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cláudio",
+      "aliases": [
+        "Cláudio, o imperador"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Cl%C3%A1udio",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Codificação Espírita",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Codifica%C3%A7%C3%A3o_Esp%C3%ADrita",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Daniel",
+      "aliases": [
+        "Daniel, o profeta"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Daniel_(profeta)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Daniel Dunglas Home",
+      "aliases": [
+        "Dunglas Home"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Daniel_Dunglas_Home",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Davi",
+      "aliases": [
+        "Rei Davi",
+        "David"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Davi",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Deus",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Deus",
+      "domain": "general",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Divaldo Franco",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Divaldo_Franco",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Dmitri Mendeleiev",
+      "aliases": [
+        "Mendeleiev",
+        "Mendeleev"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Dmitri_Mendeleiev",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Elias",
+      "aliases": [
+        "Elijah"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Elias",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Eliseu",
+      "aliases": [
+        "Elisha"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Eliseu",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Emanuel Swedenborg",
+      "aliases": [
+        "Swedenborg"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Emanuel_Swedenborg",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Ernesto Bozzano",
+      "aliases": [
+        "Bozzano"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ernesto_Bozzano",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Escrivães",
+      "aliases": [
+        "escribas"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Escriba",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Espírito da Verdade",
+      "aliases": [
+        "O Espírito da Verdade",
+        "Espírito de Verdade"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Esp%C3%ADrito_da_verdade",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "spiritism",
+      "lang": "pt"
+    },
+    {
+      "term": "Espírito Santo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Espiritualismo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Espiritualismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Estados Unidos",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Estados_Unidos",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Estêvão",
+      "aliases": [
+        "Santo Estêvão"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Est%C3%AAv%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Europa",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Europa",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Eva",
+      "aliases": [
+        "Eve"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Eva",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Ezequiel",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Ezequiel",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fariseus",
+      "aliases": [
+        "fariseu"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Fariseus",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Félix",
+      "aliases": [
+        "Antônio Félix"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ant%C3%B4nio_F%C3%A9lix",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fénelon",
+      "aliases": [
+        "François Fénelon",
+        "Francisco Fénelon"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Fran%C3%A7ois_F%C3%A9nelon",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Festus",
+      "aliases": [
+        "Festo",
+        "Pôrcio Festo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/P%C3%B4rcio_Festo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Filipe",
+      "aliases": [
+        "São Filipe",
+        "Filipe, o Apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Filipe_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Filosofia",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Filosofia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "França",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Fran%C3%A7a",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Franz Mesmer",
+      "aliases": [
+        "Mesmer"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Franz_Mesmer",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Franklin",
+      "aliases": [
+        "Benjamin Franklin"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Benjamin_Franklin",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Friedrich Nietzsche",
+      "aliases": [
+        "Nietzsche"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Friedrich_Nietzsche",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Gabriel Delanne",
+      "aliases": [
+        "Delanne"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gabriel_Delanne",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Gamaliel",
+      "aliases": [
+        "Gamaliel I"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gamaliel_I",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "George Washington",
+      "aliases": [
+        "Washington"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/George_Washington",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Georg Wilhelm Friedrich Hegel",
+      "aliases": [
+        "Hegel"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Gregor Mendel",
+      "aliases": [
+        "Mendel"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gregor_Mendel",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Gustave Geley",
+      "aliases": [
+        "Geley"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gustave_Geley",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Henry David Thoreau",
+      "aliases": [
+        "Thoreau"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Henry_David_Thoreau",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Herbert Spencer",
+      "aliases": [
+        "Spencer"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Herbert_Spencer",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Herodes",
+      "aliases": [
+        "Herodes, o Grande"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Herodes,_o_Grande",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Herodes Antipas",
+      "aliases": [
+        "Antipas"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Herodes_Antipas",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Hipnose",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Hipnose",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Humphry Davy",
+      "aliases": [
+        "Davy"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Humphry_Davy",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Iluminismo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Iluminismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Immanuel Kant",
+      "aliases": [
+        "Kant"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Immanuel_Kant",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Imortalidade da alma",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Imortalidade_da_alma",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Isaías",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Isa%C3%ADas",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Isabel",
+      "aliases": [
+        "Elizabeth",
+        "Santa Isabel"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Isabel_(m%C3%A3e_de_Jo%C3%A3o_Batista)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jacó",
+      "aliases": [
+        "Jacob",
+        "Israel"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jac%C3%B3",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "James Clerk Maxwell",
+      "aliases": [
+        "Maxwell"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/James_Clerk_Maxwell",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jean-Jacques Rousseau",
+      "aliases": [
+        "Rousseau"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jeremias",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Jeremias",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jesus",
+      "aliases": [
+        "Cristo",
+        "Jesus Cristo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jesus",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "João Batista",
+      "aliases": [
+        "São João Batista",
+        "João, o Batista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Batista",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "João Evangelista",
+      "aliases": [
+        "São João Evangelista",
+        "João, o Apóstolo",
+        "João, o Evangelista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o,_o_Apostolo",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "John Henry Newman",
+      "aliases": [
+        "João Henrique Newman",
+        "Cardeal Newman"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/John_Henry_Newman",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "John Stuart Mill",
+      "aliases": [
+        "Mill"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/John_Stuart_Mill",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "José",
+      "aliases": [
+        "São José",
+        "José, esposo de Maria"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jos%C3%A9_(pai_de_Jesus)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Joseph Smith",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Joseph_Smith",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Josué",
+      "aliases": [
+        "Joshua"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Josu%C3%A9",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Judas Iscariotes",
+      "aliases": [
+        "Judas",
+        "Iscariotes"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Judas_Iscariotes",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Judas Tadeu",
+      "aliases": [
+        "São Judas Tadeu",
+        "Tadeu",
+        "Judas, filho de Tiago"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Judas_Tadeu",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Júlio César",
+      "aliases": [
+        "César",
+        "Gaius Julius Caesar"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/J%C3%BAlio_C%C3%A9sar",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Justus von Liebig",
+      "aliases": [
+        "Liebig"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Justus_von_Liebig",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Karl Marx",
+      "aliases": [
+        "Marx"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Karl_Marx",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Léon Denis",
+      "aliases": [
+        "Leon Denis"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/L%C3%A9on_Denis",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Louis Pasteur",
+      "aliases": [
+        "Pasteur"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Louis_Pasteur",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Lyon",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Lyon",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Maria",
+      "aliases": [
+        "Virgem Maria",
+        "Nossa Senhora",
+        "Santa Maria"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Maria_(m%C3%A3e_de_Jesus)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mary Baker Eddy",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Mary_Baker_Eddy",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mateus",
+      "aliases": [
+        "São Mateus",
+        "Mateus, o Apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Mateus_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mediunidade",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Mediunidade",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mesmerismo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Mesmerismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mesas Girantes",
+      "aliases": [
+        "mesa girante"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Mesas_girantes",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Michael Faraday",
+      "aliases": [
+        "Faraday"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Michael_Faraday",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Moisés",
+      "aliases": [
+        "Moses"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Mois%C3%A9s",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Napoleão Bonaparte",
+      "aliases": [
+        "Napoleão",
+        "Bonaparte"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Napole%C3%A3o_Bonaparte",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Nero",
+      "aliases": [
+        "Nero, o imperador"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Nero",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Nicodemos",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Nicodemos",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Noé",
+      "aliases": [
+        "Noah"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/No%C3%A9",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Oliver Lodge",
+      "aliases": [
+        "Lodge"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Oliver_Lodge",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Palais Royal",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Palais_Royal",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Papa Leão XIII",
+      "aliases": [
+        "Leão XIII"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Papa_Le%C3%A3o_XIII",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Papa Pio IX",
+      "aliases": [
+        "Pio IX"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Papa_Pio_IX",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Paris",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Paris",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Paulo",
+      "aliases": [
+        "Paulo de Tarso",
+        "São Paulo",
+        "Paulo, apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Paulo_de_Tarso",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Pedro",
+      "aliases": [
+        "São Pedro",
+        "Simão Pedro",
+        "Pedro, o Apóstolo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Pedro_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Pierre-Simon Laplace",
+      "aliases": [
+        "Laplace"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Pierre-Simon_Laplace",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Platão",
+      "aliases": [
+        "Plato"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Plat%C3%A3o",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Positivismo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Positivismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Pôncio Pilatos",
+      "aliases": [
+        "Pilatos",
+        "Pôncio Pilato"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/P%C3%B4ncio_Pilatos",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Psicografia",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Psicografia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Psicofonia",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Psicofonia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Ralph Waldo Emerson",
+      "aliases": [
+        "Emerson"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ralph_Waldo_Emerson",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Reencarnação",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Reencarna%C3%A7%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Revolução Francesa",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Revolu%C3%A7%C3%A3o_Francesa",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Robert Koch",
+      "aliases": [
+        "Koch"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Robert_Koch",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Rudolf Virchow",
+      "aliases": [
+        "Virchow"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Rudolf_Virchow",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Saduceus",
+      "aliases": [
+        "saduceu"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Saduceus",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Salomão",
+      "aliases": [
+        "Solomon"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Salom%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Samuel",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Samuel_(profeta)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Santo Agostinho",
+      "aliases": [
+        "São Agostinho",
+        "Agostinho de Hipona",
+        "Agostinho"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Santo_Agostinho",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "São Luís IX de França",
+      "aliases": [
+        "São Luís",
+        "Luís IX de França",
+        "Luís IX",
+        "São Luís, IX de França"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_IX_de_Fran%C3%A7a",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "São Vicente de Paulo",
+      "aliases": [
+        "Vicente de Paulo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Vicente_de_Paulo",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Saul",
+      "aliases": [
+        "Saul, rei de Israel"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Saul",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Século XIX",
+      "aliases": [
+        "século dezenove",
+        "1800s",
+        "século XIX"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/S%C3%A9culo_XIX",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Simão, o Zelote",
+      "aliases": [
+        "São Simão",
+        "Simão, o Cananeu",
+        "Simão Zelote"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Sim%C3%A3o,_o_Zelote",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Sócrates",
+      "aliases": [
+        "Socrates"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/S%C3%B3crates",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general",
+      "lang": "pt"
+    },
+    {
+      "term": "Søren Kierkegaard",
+      "aliases": [
+        "Kierkegaard"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Tibério",
+      "aliases": [
+        "Tibério, o imperador"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Tib%C3%A9rio",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Tiago, o Maior",
+      "aliases": [
+        "São Tiago, o Maior",
+        "Tiago, filho de Zebedeu",
+        "Tiago, o Grande"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Tiago,_filho_de_Zebedeu",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Tiago, o Menor",
+      "aliases": [
+        "São Tiago, o Menor",
+        "Tiago, filho de Alfeu"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Tiago,_filho_de_Alfeu",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Tomé",
+      "aliases": [
+        "São Tomé",
+        "Tomé, o Apóstolo",
+        "Dídimo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Tom%C3%A9_(ap%C3%B3stolo)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Victor Hugo",
+      "aliases": [
+        "Hugo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Victor_Hugo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Victorien Sardou",
+      "aliases": [
+        "Sardou"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Victorien_Sardou",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Voltaire",
+      "aliases": [
+        "Volter"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Voltaire",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "William Crookes",
+      "aliases": [
+        "Crookes"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/William_Crookes",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Zacarias",
+      "aliases": [
+        "Zacarias, pai de João Batista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Zacarias_(pai_de_Jo%C3%A3o_Batista)",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med"
+    }
+  ],
+  "interest_scheme": {
+    "hi": "notable / core article — visible at density lo+",
+    "med": "standard entry — visible at density med+",
+    "lo": "thin or low-priority — visible only at density hi"
+  }
+}

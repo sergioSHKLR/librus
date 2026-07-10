@@ -1,0 +1,612 @@
+{
+  "provider": "maps",
+  "language": "pt",
+  "source": "openstreetmap",
+  "baseUrl": "https://www.openstreetmap.org/",
+  "version": "0.3",
+  "description": "Topônimos (rótulos em português) → pinos OpenStreetMap.",
+  "entries": [
+    {
+      "term": "221B Baker Street",
+      "aliases": [
+        "221B",
+        "221b Baker Street"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5238&mlon=-0.1585#map=18/51.5238/-0.1585",
+      "lat": 51.5238,
+      "lon": -0.1585,
+      "type": "address",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Baker Street",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5225&mlon=-0.1570#map=16/51.5225/-0.1570",
+      "lat": 51.5225,
+      "lon": -0.157,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Londres",
+      "aliases": [
+        "Londres",
+        "London"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5074&mlon=-0.1278#map=11/51.5074/-0.1278",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "type": "city",
+      "region": "UK",
+      "lang": "pt",
+      "slug": "Londres",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Westminster",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.4975&mlon=-0.1357#map=14/51.4975/-0.1357",
+      "lat": 51.4975,
+      "lon": -0.1357,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Whitehall",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5040&mlon=-0.1260#map=16/51.5040/-0.1260",
+      "lat": 51.504,
+      "lon": -0.126,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Scotland Yard",
+      "aliases": [
+        "New Scotland Yard"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5030&mlon=-0.1240#map=17/51.5030/-0.1240",
+      "lat": 51.503,
+      "lon": -0.124,
+      "type": "landmark",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "The Strand",
+      "aliases": [
+        "Strand"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5115&mlon=-0.1195#map=16/51.5115/-0.1195",
+      "lat": 51.5115,
+      "lon": -0.1195,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Piccadilly",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5070&mlon=-0.1410#map=16/51.5070/-0.1410",
+      "lat": 51.507,
+      "lon": -0.141,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Regent Street",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5120&mlon=-0.1400#map=16/51.5120/-0.1400",
+      "lat": 51.512,
+      "lon": -0.14,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Oxford Street",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5152&mlon=-0.1426#map=16/51.5152/-0.1426",
+      "lat": 51.5152,
+      "lon": -0.1426,
+      "type": "street",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Hyde Park",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5073&mlon=-0.1657#map=14/51.5073/-0.1657",
+      "lat": 51.5073,
+      "lon": -0.1657,
+      "type": "park",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "St. James's Hall",
+      "aliases": [
+        "St James's Hall",
+        "St. James Hall"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5085&mlon=-0.1370#map=17/51.5085/-0.1370",
+      "lat": 51.5085,
+      "lon": -0.137,
+      "type": "landmark",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Paddington",
+      "aliases": [
+        "Paddington Station"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5154&mlon=-0.1755#map=16/51.5154/-0.1755",
+      "lat": 51.5154,
+      "lon": -0.1755,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Waterloo Station",
+      "aliases": [
+        "Waterloo"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.5033&mlon=-0.1132#map=16/51.5033/-0.1132",
+      "lat": 51.5033,
+      "lon": -0.1132,
+      "type": "station",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Charing Cross",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5081&mlon=-0.1248#map=16/51.5081/-0.1248",
+      "lat": 51.5081,
+      "lon": -0.1248,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Aldersgate",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5205&mlon=-0.0975#map=16/51.5205/-0.0975",
+      "lat": 51.5205,
+      "lon": -0.0975,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Holborn",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.5172&mlon=-0.1180#map=15/51.5172/-0.1180",
+      "lat": 51.5172,
+      "lon": -0.118,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Brixton",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.4613&mlon=-0.1156#map=14/51.4613/-0.1156",
+      "lat": 51.4613,
+      "lon": -0.1156,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Camberwell",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=51.4740&mlon=-0.0930#map=14/51.4740/-0.0930",
+      "lat": 51.474,
+      "lon": -0.093,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Norwood",
+      "aliases": [
+        "South Norwood",
+        "Upper Norwood"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=51.3980&mlon=-0.0760#map=13/51.3980/-0.0760",
+      "lat": 51.398,
+      "lon": -0.076,
+      "type": "district",
+      "region": "London, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Dartmoor",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=50.5700&mlon=-3.9500#map=11/50.5700/-3.9500",
+      "lat": 50.57,
+      "lon": -3.95,
+      "type": "region",
+      "region": "Devon, UK",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Baskerville Hall",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=50.5700&mlon=-3.9200#map=12/50.5700/-3.9200",
+      "lat": 50.57,
+      "lon": -3.92,
+      "type": "fictional",
+      "region": "Dartmoor, UK (literary)",
+      "note": "Literary location; pin is approximate Dartmoor context",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Lyon",
+      "aliases": [
+        "Lyon",
+        "Lyons, France",
+        "Lyons"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=45.7640&mlon=4.8357#map=12/45.7640/4.8357",
+      "lat": 45.764,
+      "lon": 4.8357,
+      "type": "city",
+      "region": "France",
+      "lang": "pt",
+      "slug": "Lyon",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Paris",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=48.8566&mlon=2.3522#map=12/48.8566/2.3522",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "type": "city",
+      "region": "France",
+      "lang": "pt",
+      "slug": "Paris",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Montmartre",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=48.8867&mlon=2.3431#map=15/48.8867/2.3431",
+      "lat": 48.8867,
+      "lon": 2.3431,
+      "type": "district",
+      "region": "Paris, France",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Bordeaux",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=44.8378&mlon=-0.5792#map=12/44.8378/-0.5792",
+      "lat": 44.8378,
+      "lon": -0.5792,
+      "type": "city",
+      "region": "France",
+      "lang": "pt",
+      "slug": "Bordeaux",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Marselha",
+      "aliases": [
+        "Marseilles",
+        "Marseille"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=43.2965&mlon=5.3698#map=12/43.2965/5.3698",
+      "lat": 43.2965,
+      "lon": 5.3698,
+      "type": "city",
+      "region": "France",
+      "lang": "pt",
+      "slug": "Marselha",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Genebra",
+      "aliases": [
+        "Genève",
+        "Genebra",
+        "Geneva"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=46.2044&mlon=6.1432#map=12/46.2044/6.1432",
+      "lat": 46.2044,
+      "lon": 6.1432,
+      "type": "city",
+      "region": "Switzerland",
+      "lang": "pt",
+      "slug": "Genebra",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Roma",
+      "aliases": [
+        "Roma",
+        "Rome"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=41.9028&mlon=12.4964#map=12/41.9028/12.4964",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "type": "city",
+      "region": "Italy",
+      "lang": "pt",
+      "slug": "Roma",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jerusalém",
+      "aliases": [
+        "Jerusalém",
+        "Jerusalem"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=31.7683&mlon=35.2137#map=12/31.7683/35.2137",
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "type": "city",
+      "region": "Israel / Palestine",
+      "lang": "pt",
+      "slug": "Jerusalém",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Egito",
+      "aliases": [
+        "Egito",
+        "Égypte",
+        "Egypt"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=26.8206&mlon=30.8025#map=6/26.8206/30.8025",
+      "lat": 26.8206,
+      "lon": 30.8025,
+      "type": "country",
+      "region": "Africa",
+      "lang": "pt",
+      "slug": "Egito",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Índia",
+      "aliases": [
+        "Índia",
+        "India"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=20.5937&mlon=78.9629#map=5/20.5937/78.9629",
+      "lat": 20.5937,
+      "lon": 78.9629,
+      "type": "country",
+      "region": "Asia",
+      "lang": "pt",
+      "slug": "Índia",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Rio de Janeiro",
+      "aliases": [
+        "Rio"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=-22.9068&mlon=-43.1729#map=11/-22.9068/-43.1729",
+      "lat": -22.9068,
+      "lon": -43.1729,
+      "type": "city",
+      "region": "Brazil",
+      "note": "Alias 'Rio' is ambiguous; prefer full term when possible",
+      "lang": "pt",
+      "slug": "Rio de Janeiro",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "São Paulo",
+      "aliases": [
+        "Sao Paulo"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=-23.5505&mlon=-46.6333#map=11/-23.5505/-46.6333",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "type": "city",
+      "region": "Brazil",
+      "lang": "pt",
+      "slug": "São Paulo",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Lisboa",
+      "aliases": [
+        "Lisboa",
+        "Lisbon"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=38.7223&mlon=-9.1393#map=12/38.7223/-9.1393",
+      "lat": 38.7223,
+      "lon": -9.1393,
+      "type": "city",
+      "region": "Portugal",
+      "lang": "pt",
+      "slug": "Lisboa",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Porto",
+      "aliases": [
+        "Oporto"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=41.1579&mlon=-8.6291#map=12/41.1579/-8.6291",
+      "lat": 41.1579,
+      "lon": -8.6291,
+      "type": "city",
+      "region": "Portugal",
+      "lang": "pt",
+      "slug": "Porto",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Madrid",
+      "aliases": [],
+      "url": "https://www.openstreetmap.org/?mlat=40.4168&mlon=-3.7038#map=12/40.4168/-3.7038",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "type": "city",
+      "region": "Spain",
+      "lang": "pt",
+      "slug": "Madrid",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Viena",
+      "aliases": [
+        "Viena",
+        "Wien",
+        "Vienna"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=48.2082&mlon=16.3738#map=12/48.2082/16.3738",
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "type": "city",
+      "region": "Austria",
+      "lang": "pt",
+      "slug": "Viena",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Berlim",
+      "aliases": [
+        "Berlim",
+        "Berlin"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=52.5200&mlon=13.4050#map=12/52.5200/13.4050",
+      "lat": 52.52,
+      "lon": 13.405,
+      "type": "city",
+      "region": "Germany",
+      "lang": "pt",
+      "slug": "Berlim",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Nova Iorque",
+      "aliases": [
+        "New York City",
+        "NYC",
+        "New York"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=40.7128&mlon=-74.0060#map=11/40.7128/-74.0060",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "type": "city",
+      "region": "USA",
+      "lang": "pt",
+      "slug": "Nova Iorque",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Oceano Atlântico",
+      "aliases": [
+        "Atlântico",
+        "the Atlantic",
+        "Atlantic Ocean"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=30.0000&mlon=-40.0000#map=3/30.0000/-40.0000",
+      "lat": 30.0,
+      "lon": -40.0,
+      "type": "ocean",
+      "region": "global",
+      "lang": "pt",
+      "slug": "Oceano Atlântico",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "França",
+      "aliases": [
+        "France"
+      ],
+      "url": "https://www.openstreetmap.org/?mlat=46.2276&mlon=2.2137#map=6/46.23/2.21",
+      "lat": 46.2276,
+      "lon": 2.2137,
+      "type": "country",
+      "region": "Europe",
+      "domain": "place",
+      "interest": "med",
+      "lang": "pt",
+      "slug": "França",
+      "completeness": "med"
+    }
+  ],
+  "interest_scheme": {
+    "hi": "notable / core article — visible at density lo+",
+    "med": "standard entry — visible at density med+",
+    "lo": "thin or low-priority — visible only at density hi"
+  }
+}

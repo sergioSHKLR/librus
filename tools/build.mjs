@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/build.mjs
- * Description: check → mirror → compile MD books → stamp library + readers
- * Version: 1.d
- * Revised: 260710 17:30
+ * Description: check → link (cache) → compile MD → stamp library + readers
+ * Version: 1.e
+ * Revised: 260710 18:00
  */
 
 import { spawnSync } from 'node:child_process';
@@ -70,6 +70,60 @@ function resolveMdPath(entry) {
   return path.join(SRC, 'content', 'books', entry.slug, 'book.md');
 }
 
+function pythonBin() {
+  const venv = path.join(ROOT, '.venv', 'bin', 'python');
+  if (fs.existsSync(venv)) return venv;
+  return 'python3';
+}
+
+/** Cache-only linker: source MD stays clean; output → .cache/linked/{slug}.md */
+function linkBook(entry, mdPath) {
+  if (entry.link === false) return mdPath;
+
+  const lang = entry.lang || 'pt';
+  const dicts = path.join(SRC, 'data', 'dictionaries', lang);
+  if (!fs.existsSync(dicts)) {
+    console.warn(`  WARN  no dictionaries at ${path.relative(ROOT, dicts)} — skip link`);
+    return mdPath;
+  }
+
+  const cacheDir = path.join(ROOT, '.cache', 'linked');
+  ensureDir(cacheDir);
+  const outMd = path.join(cacheDir, entry.slug + '.md');
+  const report = path.join(cacheDir, entry.slug + '-report.json');
+  const script = path.join(ROOT, 'tools', 'run-linker.py');
+
+  console.log(`→ link ${entry.slug}`);
+  const r = spawnSync(
+    pythonBin(),
+    [
+      script,
+      '--input',
+      mdPath,
+      '--output',
+      outMd,
+      '--report',
+      report,
+      '--dicts',
+      dicts,
+      '--lang',
+      lang,
+      '--density',
+      'hi'
+    ],
+    { cwd: ROOT, encoding: 'utf8' }
+  );
+
+  if (r.stdout) process.stdout.write(r.stdout);
+  if (r.stderr) process.stderr.write(r.stderr);
+
+  if (r.status !== 0 || !fs.existsSync(outMd)) {
+    console.warn(`  WARN  linker failed for ${entry.slug} — compiling unlinked source`);
+    return mdPath;
+  }
+  return outMd;
+}
+
 /**
  * Compile all catalog books that have source MD.
  * @returns {{ libraryBooks: object[], errors: number }}
@@ -106,8 +160,10 @@ function compileBooks(catalog) {
       continue;
     }
 
+    const compileFrom = linkBook(entry, mdPath);
+
     console.log(`→ compile ${entry.slug}`);
-    const result = compileBookFile(mdPath, { folderSlug: entry.slug });
+    const result = compileBookFile(compileFrom, { folderSlug: entry.slug });
     for (const w of result.warnings) console.warn(`  WARN  ${entry.slug}: ${w}`);
     if (!result.ok) {
       console.error(`  FAIL  ${entry.slug}: ${result.fatal.join('; ')}`);
@@ -191,7 +247,7 @@ function writeIntegrity() {
     status: 'pass',
     brand: 'L.I.B.R.U.S',
     tagline: 'annotate / read / consult',
-    phase: 'pr3-md-compile'
+    phase: 'pr4-linker'
   };
   fs.writeFileSync(path.join(PUBLIC, 'integrity.json'), JSON.stringify(payload, null, 2) + '\n');
 }

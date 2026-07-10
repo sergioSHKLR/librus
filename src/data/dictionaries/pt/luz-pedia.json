@@ -1,0 +1,1578 @@
+{
+  "encyclopedia": "Enciclopédia do Espiritismo",
+  "source": "luzespirita.org.br",
+  "baseUrl": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=",
+  "language": "pt",
+  "version": "1.0",
+  "description": "Lista de entradas para identificação automática de termos candidatos a links em textos Spiritistas. Cada entrada inclui term (principal), aliases (variações para matching flexível) e url gerada.",
+  "entries": [
+    {
+      "term": "A Gênese, os Milagres e as Predições segundo o Espiritismo",
+      "aliases": [
+        "A Gênese",
+        "Gênese segundo o Espiritismo"
+      ],
+      "slug": "A%20G%C3%AAnese%2C%20os%20Milagres%20e%20as%20Predi%C3%A7%C3%B5es%20segundo%20o%20Espiritismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=A%20G%C3%AAnese%2C%20os%20Milagres%20e%20as%20Predi%C3%A7%C3%B5es%20segundo%20o%20Espiritismo",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Abreu, Canuto",
+      "aliases": [
+        "Canuto Abreu",
+        "Silvino Canuto Abreu"
+      ],
+      "slug": "Abreu%2C%20Canuto",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=encyclopedia&item=Abreu%2C%20Canuto",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Adolphe Laurent de Faget",
+      "aliases": [
+        "Faget, Laurent de",
+        "Laurent de Faget"
+      ],
+      "slug": "Adolphe%20Laurent%20de%20Faget",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Adolphe%20Laurent%20de%20Faget",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Agênere",
+      "aliases": [],
+      "slug": "Ag%C3%AAnere",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ag%C3%AAnere",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "AKOL, Museu",
+      "aliases": [
+        "Museu AKOL"
+      ],
+      "slug": "AKOL%2C%20Museu",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=AKOL%2C%20Museu",
+      "category": "Instituições",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Alexandre Aksakof",
+      "aliases": [],
+      "slug": "Alexandre%20Aksakof",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Alexandre%20Aksakof",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Allan Kardec",
+      "aliases": [
+        "Kardec, Allan",
+        "Hippolyte-Léon Denizard Rivail",
+        "Rivail, Hypolite-Léon Denizard",
+        "Codificador Espírita",
+        "Kardecismo",
+        "Kardecista"
+      ],
+      "slug": "Allan%20Kardec",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Allan%20Kardec",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Alma",
+      "aliases": [
+        "Alma gêmea"
+      ],
+      "slug": "Alma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Alma",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Amélie Gabrielle Boudet",
+      "aliases": [
+        "Boudet, Amélie Gabrielle",
+        "Madame Kardec"
+      ],
+      "slug": "Am%C3%A9lie%20Gabrielle%20Boudet",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Am%C3%A9lie%20Gabrielle%20Boudet",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Amuleto",
+      "aliases": [
+        "Talismã"
+      ],
+      "slug": "Amuleto",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Amuleto",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Anália Franco",
+      "aliases": [
+        "Franco, Anália"
+      ],
+      "slug": "An%C3%A1lia%20Franco",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=An%C3%A1lia%20Franco",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Anastasio García López",
+      "aliases": [],
+      "slug": "Anastasio%20Garc%C3%ADa%20L%C3%B3pez",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Anastasio%20Garc%C3%ADa%20L%C3%B3pez",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Andrew Jackson Davis",
+      "aliases": [
+        "Davis, Andrew Jackson",
+        "Jackson Davis, Andrew"
+      ],
+      "slug": "Andrew%20Jackson%20Davis",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Andrew%20Jackson%20Davis",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Anna Blackwell",
+      "aliases": [
+        "Blackwell, Anna"
+      ],
+      "slug": "Anna%20Blackwell",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Anna%20Blackwell",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Arigó, Zé",
+      "aliases": [
+        "Zé Arigó",
+        "José Arigó",
+        "José Pedro de Freitas (Zé Arigó)"
+      ],
+      "slug": "Arig%C3%B3%2C%20Z%C3%A9",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Arig%C3%B3%2C%20Z%C3%A9",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Arthur Conan Doyle",
+      "aliases": [
+        "Conan Doyle, Arthur",
+        "Doyle, Arthur Conan"
+      ],
+      "slug": "Arthur%20Conan%20Doyle",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Arthur%20Conan%20Doyle",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Auto de Fé de Barcelona",
+      "aliases": [],
+      "slug": "Auto%20de%20F%C3%A9%20de%20Barcelona",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Auto%20de%20F%C3%A9%20de%20Barcelona",
+      "category": "História",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Auto-obsessão",
+      "aliases": [
+        "Autoobsessão"
+      ],
+      "slug": "Auto-obsess%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Auto-obsess%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Banner of Light",
+      "aliases": [],
+      "slug": "Banner%20of%20Light",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Banner%20of%20Light",
+      "category": "Publicações",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Baudin, Irmãs",
+      "aliases": [
+        "Irmãs Baudin",
+        "Caroline Baudin",
+        "Julie Baudin",
+        "Pélagie Baudin"
+      ],
+      "slug": "Baudin%2C%20Irm%C3%A3s",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Baudin%2C%20Irm%C3%A3s",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Bem",
+      "aliases": [],
+      "slug": "Bem",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Bem",
+      "category": "Moral",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Berthe Fropo",
+      "aliases": [
+        "Fropo, Berthe"
+      ],
+      "slug": "Berthe%20Fropo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Berthe%20Fropo",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Boa Nova",
+      "aliases": [],
+      "slug": "Boa%20Nova",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Boa%20Nova",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cairbar Schutel",
+      "aliases": [
+        "Schutel, Cairbar"
+      ],
+      "slug": "Cairbar%20Schutel",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Cairbar%20Schutel",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Caridade",
+      "aliases": [
+        "Fora da Caridade não há salvação"
+      ],
+      "slug": "Caridade",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Caridade",
+      "category": "Moral",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Carma",
+      "aliases": [
+        "Karma (Carma)"
+      ],
+      "slug": "Carma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Carma",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Castigo",
+      "aliases": [],
+      "slug": "Castigo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Castigo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Célina Japhet",
+      "aliases": [
+        "Japhet, Célina"
+      ],
+      "slug": "C%C3%A9lina%20Japhet",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=C%C3%A9lina%20Japhet",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Cepa Espírita",
+      "aliases": [],
+      "slug": "Cepa%20Esp%C3%ADrita",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Cepa%20Esp%C3%ADrita",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Charlatanismo",
+      "aliases": [
+        "Charlatão"
+      ],
+      "slug": "Charlatanismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Charlatanismo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Chevreuil, Léon",
+      "aliases": [
+        "Léon Chevreuil"
+      ],
+      "slug": "Chevreuil%2C%20L%C3%A9on",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Chevreuil%2C%20L%C3%A9on",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Chico Xavier",
+      "aliases": [
+        "Francisco Cândido Xavier",
+        "Xavier, Chico"
+      ],
+      "slug": "Chico%20Xavier",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Chico%20Xavier",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cirne, Leopoldo",
+      "aliases": [
+        "Leopoldo Cirne"
+      ],
+      "slug": "Cirne%2C%20Leopoldo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Cirne%2C%20Leopoldo",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Comunicabilidade Espiritual",
+      "aliases": [],
+      "slug": "Comunicabilidade%20Espiritual",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Comunicabilidade%20Espiritual",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Consolador",
+      "aliases": [
+        "Paráclito",
+        "Espírito da Verdade",
+        "Espírito de Verdade",
+        "Espírito Verdade",
+        "O Espírito da Verdade"
+      ],
+      "slug": "Consolador",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Consolador",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Cordão de Prata",
+      "aliases": [
+        "Cordão Fluídico",
+        "Fio de Prata"
+      ],
+      "slug": "Cord%C3%A3o%20de%20Prata",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Cord%C3%A3o%20de%20Prata",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Cristo",
+      "aliases": [
+        "Jesus",
+        "Messias"
+      ],
+      "slug": "Cristo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Cristo",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Crookes, William",
+      "aliases": [
+        "William Crookes"
+      ],
+      "slug": "Crookes%2C%20William",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Crookes%2C%20William",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Daniel Dunglas Home",
+      "aliases": [
+        "Home, Daniel Dunglas"
+      ],
+      "slug": "Daniel%20Dunglas%20Home",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Daniel%20Dunglas%20Home",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Delanne, Gabriel",
+      "aliases": [
+        "Gabriel Delanne"
+      ],
+      "slug": "Delanne%2C%20Gabriel",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Delanne%2C%20Gabriel",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Denis, Léon",
+      "aliases": [
+        "Léon Denis"
+      ],
+      "slug": "Denis%2C%20L%C3%A9on",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Denis%2C%20L%C3%A9on",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Dentu, Editora",
+      "aliases": [
+        "Editora Dentu",
+        "Livraria Dentu",
+        "Édouard Dentu",
+        "Dentu, Édouard"
+      ],
+      "slug": "Dentu%2C%20Editora",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Dentu%2C%20Editora",
+      "category": "Editoras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Desencarnado",
+      "aliases": [
+        "Encarnado"
+      ],
+      "slug": "Desencarnado",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Desencarnado",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Deus",
+      "aliases": [],
+      "slug": "Deus",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Deus",
+      "category": "Fundamentos",
+      "domain": "spiritism",
+      "interest": "hi",
+      "lang": "pt",
+      "completeness": "hi"
+    },
+    {
+      "term": "Didier, Pierre-Paul",
+      "aliases": [
+        "Pierre-Paul Didier"
+      ],
+      "slug": "Didier%2C%20Pierre-Paul",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Didier%2C%20Pierre-Paul",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Divaldo Franco",
+      "aliases": [
+        "Franco, Divaldo"
+      ],
+      "slug": "Divaldo%20Franco",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Divaldo%20Franco",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Dogma",
+      "aliases": [
+        "Dogmatismo"
+      ],
+      "slug": "Dogma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Dogma",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Doutrina Espírita",
+      "aliases": [
+        "Espiritismo",
+        "Espiritismo Kardecista"
+      ],
+      "slug": "Doutrina%20Esp%C3%ADrita",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Doutrina%20Esp%C3%ADrita",
+      "category": "Fundamentos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Dufaux, Ermance",
+      "aliases": [
+        "Ermance Dufaux"
+      ],
+      "slug": "Dufaux%2C%20Ermance",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Dufaux%2C%20Ermance",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Ectoplasma",
+      "aliases": [
+        "Ectoplasmia"
+      ],
+      "slug": "Ectoplasma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ectoplasma",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Ecumenismo",
+      "aliases": [],
+      "slug": "Ecumenismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ecumenismo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Elementos Gerais do Universo",
+      "aliases": [],
+      "slug": "Elementos%20Gerais%20do%20Universo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Elementos%20Gerais%20do%20Universo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Emancipação da Alma",
+      "aliases": [],
+      "slug": "Emancipa%C3%A7%C3%A3o%20da%20Alma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Emancipa%C3%A7%C3%A3o%20da%20Alma",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Encarnação",
+      "aliases": [
+        "Reencarnação",
+        "Metempsicose"
+      ],
+      "slug": "Encarna%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Encarna%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Epífise",
+      "aliases": [
+        "Glândula Pineal",
+        "Pineal, Glândula"
+      ],
+      "slug": "Ep%C3%ADfise",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ep%C3%ADfise",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Erasto",
+      "aliases": [],
+      "slug": "Erasto",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Erasto",
+      "category": "Espíritos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Errante",
+      "aliases": [
+        "Erraticidade",
+        "Errático"
+      ],
+      "slug": "Errante",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Errante",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Escala dos Mundos",
+      "aliases": [
+        "Escala Espírita",
+        "Mundos Celestes ou Divinos",
+        "Mundos de Expiações e de Provas",
+        "Mundos Felizes",
+        "Mundos Primitivos",
+        "Mundos Regeneradores"
+      ],
+      "slug": "Escala%20dos%20Mundos",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Escala%20dos%20Mundos",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Escrita Direta",
+      "aliases": [
+        "Pneumatografia"
+      ],
+      "slug": "Escrita%20Direta",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Escrita%20Direta",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Espírita",
+      "aliases": [
+        "Espiritista",
+        "Espiritual"
+      ],
+      "slug": "Esp%C3%ADrita",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Esp%C3%ADrita",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Espiritismo",
+      "aliases": [
+        "Espiritismo à Francesa: a derrocada do movimento espírita francês pós-Kardec",
+        "Espiritualismo",
+        "Espiritualismo Moderno",
+        "Moderno Espiritualismo",
+        "Terceira Revelação"
+      ],
+      "slug": "Espiritismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Espiritismo",
+      "category": "Fundamentos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Espírito Santo",
+      "aliases": [],
+      "slug": "Esp%C3%ADrito%20Santo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Esp%C3%ADrito%20Santo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Espiritualidade",
+      "aliases": [],
+      "slug": "Espiritualidade",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Espiritualidade",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Evangelho",
+      "aliases": [
+        "O Evangelho segundo o Espiritismo",
+        "Evangelho no Lar"
+      ],
+      "slug": "Evangelho",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Evangelho",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Expiação",
+      "aliases": [],
+      "slug": "Expia%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Expia%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fascinação",
+      "aliases": [],
+      "slug": "Fascina%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Fascina%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fé",
+      "aliases": [],
+      "slug": "F%C3%A9",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=F%C3%A9",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fluido",
+      "aliases": [],
+      "slug": "Fluido",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Fluido",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Fox, Irmãs",
+      "aliases": [
+        "Irmãs Fox"
+      ],
+      "slug": "Fox%2C%20Irm%C3%A3s",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Fox%2C%20Irm%C3%A3s",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Gabriel Delanne",
+      "aliases": [
+        "Delanne, Gabriel"
+      ],
+      "slug": "Gabriel%20Delanne",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Gabriel%20Delanne",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Galeria d’Orleans",
+      "aliases": [
+        "Palais-Royal"
+      ],
+      "slug": "Galeria%20d%E2%80%99Orleans",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Galeria%20d%E2%80%99Orleans",
+      "category": "História",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Gama, Zilda",
+      "aliases": [
+        "Zilda Gama"
+      ],
+      "slug": "Gama%2C%20Zilda",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Gama%2C%20Zilda",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Gazzera, Linda",
+      "aliases": [
+        "Linda Gazzera"
+      ],
+      "slug": "Gazzera%2C%20Linda",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Gazzera%2C%20Linda",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Henri Sausse",
+      "aliases": [
+        "Sausse, Henri"
+      ],
+      "slug": "Henri%20Sausse",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Henri%20Sausse",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Herculano Pires, José",
+      "aliases": [
+        "José Herculano Pires",
+        "Pires, José Herculano"
+      ],
+      "slug": "Herculano%20Pires%2C%20Jos%C3%A9",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Herculano%20Pires%2C%20Jos%C3%A9",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Herege",
+      "aliases": [
+        "Heresia"
+      ],
+      "slug": "Herege",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Herege",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Humberto de Campos",
+      "aliases": [
+        "Irmão X"
+      ],
+      "slug": "Humberto%20de%20Campos",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Humberto%20de%20Campos",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Imortalidade da Alma",
+      "aliases": [],
+      "slug": "Imortalidade%20da%20Alma",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Imortalidade%20da%20Alma",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Inquisição",
+      "aliases": [
+        "Santo Ofício (Inquisição)",
+        "Tribunal do Santo Ofício (Inquisição)"
+      ],
+      "slug": "Inquisi%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Inquisi%C3%A7%C3%A3o",
+      "category": "História",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Jean Meyer",
+      "aliases": [
+        "Meyer, Jean"
+      ],
+      "slug": "Jean%20Meyer",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Jean%20Meyer",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Jean-Baptiste Roustaing",
+      "aliases": [
+        "Roustaing, Jean-Baptiste"
+      ],
+      "slug": "Jean-Baptiste%20Roustaing",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Jean-Baptiste%20Roustaing",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Joanna de Ângelis",
+      "aliases": [],
+      "slug": "Joanna%20de%20%C3%82ngelis",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Joanna%20de%20%C3%82ngelis",
+      "category": "Espíritos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Johann Heinrich Pestalozzi",
+      "aliases": [
+        "Pestalozzi, Johann Heinrich"
+      ],
+      "slug": "Johann%20Heinrich%20Pestalozzi",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Johann%20Heinrich%20Pestalozzi",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Lachâtre, Maurice",
+      "aliases": [
+        "Maurice Lachâtre"
+      ],
+      "slug": "Lach%C3%A2tre%2C%20Maurice",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Lach%C3%A2tre%2C%20Maurice",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Lacordaire",
+      "aliases": [],
+      "slug": "Lacordaire",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Lacordaire",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Lamennais",
+      "aliases": [],
+      "slug": "Lamennais",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Lamennais",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Leymarie, Pierre-Gaëtan",
+      "aliases": [
+        "Pierre-Gaëtan Leymarie"
+      ],
+      "slug": "Leymarie%2C%20Pierre-Ga%C3%ABtan",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Leymarie%2C%20Pierre-Ga%C3%ABtan",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "London Dialectical Society",
+      "aliases": [
+        "Sociedade Dialética de Londres"
+      ],
+      "slug": "London%20Dialectical%20Society",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=London%20Dialectical%20Society",
+      "category": "Instituições",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Madame Kardec",
+      "aliases": [
+        "Amélie Gabrielle Boudet"
+      ],
+      "slug": "Madame%20Kardec",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Madame%20Kardec",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mal",
+      "aliases": [],
+      "slug": "Mal",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Mal",
+      "category": "Moral",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mediatriz",
+      "aliases": [],
+      "slug": "Mediatriz",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Mediatriz",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Médium",
+      "aliases": [
+        "Mediunato",
+        "Mediunidade",
+        "Mediunismo"
+      ],
+      "slug": "M%C3%A9dium",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=M%C3%A9dium",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Mesas Girantes",
+      "aliases": [
+        "Tiptologia"
+      ],
+      "slug": "Mesas%20Girantes",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Mesas%20Girantes",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Misticismo",
+      "aliases": [
+        "Místico"
+      ],
+      "slug": "Misticismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Misticismo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Monoteísmo",
+      "aliases": [
+        "Panteísmo"
+      ],
+      "slug": "Monote%C3%ADsmo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Monote%C3%ADsmo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Necromancia",
+      "aliases": [],
+      "slug": "Necromancia",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Necromancia",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "O Evangelho segundo o Espiritismo",
+      "aliases": [
+        "Evangelho segundo o Espiritismo"
+      ],
+      "slug": "O%20Evangelho%20segundo%20o%20Espiritismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=O%20Evangelho%20segundo%20o%20Espiritismo",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "O Livro dos Espíritos",
+      "aliases": [],
+      "slug": "O%20Livro%20dos%20Esp%C3%ADritos",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=O%20Livro%20dos%20Esp%C3%ADritos",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "O Livro dos Médiuns",
+      "aliases": [],
+      "slug": "O%20Livro%20dos%20M%C3%A9diuns",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=O%20Livro%20dos%20M%C3%A9diuns",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Obras Básicas do Espiritismo",
+      "aliases": [],
+      "slug": "Obras%20B%C3%A1sicas%20do%20Espiritismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Obras%20B%C3%A1sicas%20do%20Espiritismo",
+      "category": "Obras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Obsessão",
+      "aliases": [
+        "Obsediado",
+        "Obsessor",
+        "Subjugação",
+        "Parasitismo Psíquico",
+        "Auto-obsessão"
+      ],
+      "slug": "Obsess%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Obsess%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Onipresença",
+      "aliases": [
+        "Ubiquidade"
+      ],
+      "slug": "Onipresen%C3%A7a",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Onipresen%C3%A7a",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Oração",
+      "aliases": [
+        "Prece"
+      ],
+      "slug": "Ora%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ora%C3%A7%C3%A3o",
+      "category": "Práticas",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Percepção Extrassensorial",
+      "aliases": [
+        "Sexto Sentido",
+        "Pressentimento",
+        "Sentido Espiritual"
+      ],
+      "slug": "Percep%C3%A7%C3%A3o%20Extrassensorial",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Percep%C3%A7%C3%A3o%20Extrassensorial",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Pereira, Yvonne A.",
+      "aliases": [
+        "Yvonne A. Pereira"
+      ],
+      "slug": "Pereira%2C%20Yvonne%20A.",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Pereira%2C%20Yvonne%20A.",
+      "category": "Figuras",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Perispírito",
+      "aliases": [],
+      "slug": "Perisp%C3%ADrito",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Perisp%C3%ADrito",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Possessão",
+      "aliases": [],
+      "slug": "Possess%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Possess%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Projeto Allan Kardec",
+      "aliases": [],
+      "slug": "Projeto%20Allan%20Kardec",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Projeto%20Allan%20Kardec",
+      "category": "Projetos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Psicografia",
+      "aliases": [],
+      "slug": "Psicografia",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Psicografia",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Quiromancia",
+      "aliases": [],
+      "slug": "Quiromancia",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Quiromancia",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Reencarnação",
+      "aliases": [
+        "Encarnação"
+      ],
+      "slug": "Reencarna%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Reencarna%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Religião",
+      "aliases": [],
+      "slug": "Religi%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Religi%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Ressurreição",
+      "aliases": [],
+      "slug": "Ressurrei%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Ressurrei%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Revelação Espírita",
+      "aliases": [
+        "Revelação Espiritual"
+      ],
+      "slug": "Revela%C3%A7%C3%A3o%20Esp%C3%ADrita",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Revela%C3%A7%C3%A3o%20Esp%C3%ADrita",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Santíssima Trindade",
+      "aliases": [
+        "Trindade Universal"
+      ],
+      "slug": "Sant%C3%ADssima%20Trindade",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Sant%C3%ADssima%20Trindade",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Sematologia",
+      "aliases": [],
+      "slug": "Sematologia",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Sematologia",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Sociedade Parisiense de Estudos Espíritas",
+      "aliases": [
+        "SPEE"
+      ],
+      "slug": "Sociedade%20Parisiense%20de%20Estudos%20Esp%C3%ADritas",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Sociedade%20Parisiense%20de%20Estudos%20Esp%C3%ADritas",
+      "category": "Instituições",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Suicídio",
+      "aliases": [],
+      "slug": "Suic%C3%ADdio",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Suic%C3%ADdio",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Superstição",
+      "aliases": [],
+      "slug": "Supersti%C3%A7%C3%A3o",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Supersti%C3%A7%C3%A3o",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "UEF",
+      "aliases": [
+        "União Espírita Francesa"
+      ],
+      "slug": "UEF",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=UEF",
+      "category": "Instituições",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Vampirismo",
+      "aliases": [],
+      "slug": "Vampirismo",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Vampirismo",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "Videira Espírita",
+      "aliases": [],
+      "slug": "Videira%20Esp%C3%ADrita",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Videira%20Esp%C3%ADrita",
+      "category": "Conceitos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "Xenoglossia",
+      "aliases": [],
+      "slug": "Xenoglossia",
+      "url": "https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=Xenoglossia",
+      "category": "Fenômenos",
+      "lang": "pt",
+      "domain": "spiritism",
+      "interest": "med",
+      "completeness": "med"
+    }
+  ],
+  "provider": "luz",
+  "interest_scheme": {
+    "hi": "notable / core article — visible at density lo+",
+    "med": "standard entry — visible at density med+",
+    "lo": "thin or low-priority — visible only at density hi"
+  }
+}

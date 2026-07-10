@@ -14,6 +14,7 @@ import { loadBookBody, applyDeepLink } from './book.js';
 import { wireContext } from './context.js';
 import { wireSearch } from './search.js';
 import { wireToc } from './toc.js';
+import { wireLinkFilters } from './links.js';
 import { assetBase } from '../shared/paths.js';
 
 function setHypoInvert(theme) {
@@ -81,6 +82,7 @@ async function boot() {
   wireContext();
 
   await loadBookBody();
+  wireLinkFilters();
   applyDeepLink();
   window.addEventListener('hashchange', applyDeepLink);
 

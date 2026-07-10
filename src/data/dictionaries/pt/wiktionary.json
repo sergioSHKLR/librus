@@ -1,0 +1,401 @@
+{
+  "provider": "wiktionary",
+  "language": "pt",
+  "source": "pt.wiktionary.org",
+  "baseUrl": "https://pt.wiktionary.org/wiki/",
+  "version": "0.3",
+  "description": "Definições em português (provedor de primeira classe). Vocabulário que merece definição, não artigo de enciclopédia.",
+  "entries": [
+    {
+      "term": "agênere",
+      "aliases": [
+        "agenere"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ag%C3%AAnere",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "perispírito",
+      "aliases": [
+        "perispirito",
+        "perispíritos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/perisp%C3%ADrito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "pneumatologia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/pneumatologia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "metempsicose",
+      "aliases": [
+        "metempsychose"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/metempsicose",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "teodiceia",
+      "aliases": [
+        "teodicéia",
+        "theodicy"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/teodiceia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "hipótese",
+      "aliases": [
+        "hipoteses",
+        "hipóteses"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/hip%C3%B3tese",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "conjectura",
+      "aliases": [
+        "conjecturas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/conjectura",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "axiomático",
+      "aliases": [
+        "axiomatico",
+        "axiomática"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/axiom%C3%A1tico",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fútil",
+      "aliases": [
+        "futil",
+        "fúteis"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/f%C3%BAtil",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "prolixo",
+      "aliases": [
+        "prolixa",
+        "prolixidade"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/prolixo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "solícito",
+      "aliases": [
+        "solicito",
+        "solícita"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sol%C3%ADcito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "veemente",
+      "aliases": [
+        "veementemente"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/veemente",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "lábaro",
+      "aliases": [
+        "labaro"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/l%C3%A1baro",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ímpeto",
+      "aliases": [
+        "impeto",
+        "ímpetos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/%C3%ADmpeto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ófeso",
+      "aliases": [
+        "ofeso"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/%C3%B3feso",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "Deus",
+      "aliases": [
+        "deus"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/Deus",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "sobrenatural",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/sobrenatural",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "repositório",
+      "aliases": [
+        "repositorio"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/reposit%C3%B3rio",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "perseverança",
+      "aliases": [
+        "perseveranca"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/perseveran%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "desinteresse",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/desinteresse",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "invólucro",
+      "aliases": [
+        "involucro"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/inv%C3%B3lucro",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "quintessência",
+      "aliases": [
+        "quintessencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/quintess%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "encarniçado",
+      "aliases": [
+        "encarniçados",
+        "encarnicado"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/encarni%C3%A7ado",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "desmaterializado",
+      "aliases": [
+        "desmaterializados"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/desmaterializado",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "preconceito",
+      "aliases": [
+        "preconceitos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/preconceito",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "regeneração",
+      "aliases": [
+        "regeneracao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/regenera%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fundamento",
+      "aliases": [
+        "fundamentos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/fundamento",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "dissidente",
+      "aliases": [
+        "dissidentes"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/dissidente",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "humildade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/humildade",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "zelo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/zelo",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "vaidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/vaidade",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ambição",
+      "aliases": [
+        "ambicao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ambi%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "orgulho",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/orgulho",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "caridade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/caridade",
+      "lang": "pt",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    }
+  ],
+  "interest_scheme": {
+    "hi": "notable / core article — visible at density lo+",
+    "med": "standard entry — visible at density med+",
+    "lo": "thin or low-priority — visible only at density hi"
+  }
+}

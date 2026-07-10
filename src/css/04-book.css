@@ -57,6 +57,34 @@ html[data-layout='wide'] .book a[data-link-provider] {
   cursor: pointer;
 }
 
+/* Density / provider filters (wide only; narrow uses layout zero-link rules) */
+html[data-layout='wide'] .book a[data-link-provider].is-link-hidden {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: text !important;
+  font-weight: inherit !important;
+}
+
+html[data-layout='wide'][data-link-l='0'] .book a[data-link-provider='l'],
+html[data-layout='wide'][data-link-w='0'] .book a[data-link-provider='w'],
+html[data-layout='wide'][data-link-d='0'] .book a[data-link-provider='d'],
+html[data-layout='wide'][data-link-m='0'] .book a[data-link-provider='m'] {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: text !important;
+}
+
+html[data-layout='wide'][data-link-density='lo'] .book a[data-link-interest='med'],
+html[data-layout='wide'][data-link-density='lo'] .book a[data-link-interest='lo'],
+html[data-layout='wide'][data-link-density='med'] .book a[data-link-interest='lo'] {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: text !important;
+}
+
 mark.search-hit {
   background: var(--mark-bg);
   color: inherit;

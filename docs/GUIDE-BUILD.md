@@ -34,17 +34,25 @@ npm run build   # check + write public/
 npm start       # serve public/
 ```
 
-## Build steps (target)
+## Build steps
 
-0. `check-blocks` (+ later front-matter hard checks)  
-1. Link MD → `.cache/linked/` (cache-only)  
-2. Compile → `body.html`, `toc.json`, mirror `images/`  
+0. `check-blocks`  
+1. **Link** MD → `.cache/linked/{slug}.md` (Python linker; source MD stays clean)  
+2. **Compile** linked MD → `body.html`, `toc.json`, mirror `images/`  
 3. Library stamp + `library.json`  
 4. Reader stamp per book  
 5. Mirror static `css` `js` `locales` …  
 6. Write `integrity.json`  
 
-PR 0 implements 0 + static mirror + library stub only.
+### Linker setup
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Dictionaries: `src/data/dictionaries/pt/`. Package: `tools/linker/`.  
+If the linker fails, build continues with unlinked source (WARN).
 
 ## Output
 

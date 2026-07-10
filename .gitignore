@@ -9,6 +9,7 @@ __pycache__/
 # Build output (never commit — build locally / CI)
 public/
 .cache/
+*.bak.*
 
 # Env / editor
 .env
