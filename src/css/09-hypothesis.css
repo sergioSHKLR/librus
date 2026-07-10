@@ -1,9 +1,15 @@
 /* ==========================================================================
  * Block 1 of 1 — Hypothesis host (wide notes pane)
- * Description: External container fill + dark invert for classic theme client
- * Version: 1.a
- * Revised: 260710 17:00
+ * Description: Full-bleed iframe in left pane (no inset / max-width cap)
+ * Version: 1.b
+ * Revised: 260710 19:30
  * ========================================================================== */
+
+:root {
+  --toolbar-chrome: var(--bg);
+  --left-width: 360px;
+  --hypothesis-dark-invert: 0.9;
+}
 
 .hypothesis-host {
   flex: 1 1 auto;
@@ -14,30 +20,41 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--toolbar-chrome);
+  position: relative;
 }
 
+/*
+ * Hypothesis injects into #hypothesis-container.
+ * Force full pane — client often caps sidebar ~460px with inset chrome.
+ */
 #hypothesis-container .hypothesis-container,
 #hypothesis-container iframe,
-.hypothesis-host .h-sidebar-frame {
+#hypothesis-container > iframe,
+.hypothesis-host .h-sidebar-frame,
+.h-sidebar-frame {
+  display: block !important;
   width: 100% !important;
-  max-width: none !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
   height: 100% !important;
+  min-height: 100% !important;
   flex: 1 1 auto;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: transparent;
+  position: absolute;
+  inset: 0;
 }
 
 .hypothesis-host.hypothesis-theme-invert {
-  background: #1a1a1a;
+  background: var(--toolbar-chrome);
 }
 
 .hypothesis-host.hypothesis-theme-invert iframe,
 .hypothesis-host.hypothesis-theme-invert .hypothesis-container,
 .hypothesis-host.hypothesis-theme-invert .h-sidebar-frame {
-  filter: invert(0.9) hue-rotate(180deg);
-}
-
-:root {
-  --toolbar-chrome: var(--bg);
-  --left-width: min(360px, 28vw);
-  --hypothesis-dark-invert: 0.9;
+  filter: invert(var(--hypothesis-dark-invert)) hue-rotate(180deg);
 }

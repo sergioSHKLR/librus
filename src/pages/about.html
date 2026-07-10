@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Block 1 of 1 — About page
+    Description: Project overview site page
+    Version: 1.a
+    Revised: 260710 19:30
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About · L.I.B.R.U.S</title>
+  <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/00-tokens.css" />
+  <link rel="stylesheet" href="../css/01-reset.css" />
+  <link rel="stylesheet" href="../css/03-toolbar.css" />
+  <link rel="stylesheet" href="../css/07-library.css" />
+  <link rel="stylesheet" href="../css/08-theme-dark.css" />
+</head>
+<body class="page-site" data-app-base="../">
+  <header class="site-header">
+    <p class="site-back"><a href="../">← Library</a></p>
+    <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
+      <img src="../icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
+    </button>
+  </header>
+  <main class="site-page">
+    <h1>About</h1>
+    <p>
+      <strong>L.I.B.R.U.S</strong> is a three-pane study reader:
+      <em>annotate</em> · <em>read</em> · <em>consult</em>.
+    </p>
+    <p>
+      Notes and highlights use <strong>Hypothes.is</strong> (their account and servers).
+      Research links open in the consult pane on wide screens; mobile is read + annotate only.
+    </p>
+    <p>
+      Built as a static site (<code>nano-ssg</code>): Markdown in, HTML library out.
+    </p>
+    <nav class="site-footer-nav" aria-label="More pages">
+      <a href="help.html">Help</a>
+      <span aria-hidden="true">·</span>
+      <a href="legal.html">Legal</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank">Code</a>
+    </nav>
+  </main>
+  <script type="module" src="../js/library/site.js"></script>
+</body>
+</html>

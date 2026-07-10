@@ -31,18 +31,17 @@
   min-width: 0;
 }
 
-.library-brand-mark {
+.library-brand-icon {
   flex-shrink: 0;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(135deg, #1a4a7a, #2d6a9f);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-size: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--text);
+}
+
+.lang-chip {
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .library-title {
@@ -131,8 +130,17 @@
 }
 
 .cover-emoji {
+  /* legacy class unused when Lucide book icon is shown */
   font-size: 2.5rem;
   line-height: 1;
+}
+
+.cover-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  /* Lucide stroke SVGs as <img>: force light glyph on cover gradient */
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
 }
 
 .cover-meta {
@@ -165,6 +173,97 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: 0 1.25rem 2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+.library-footer-rule {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0 0 1rem;
+}
+
+.library-footer-links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  align-items: center;
+}
+
+.library-footer-links a {
+  color: var(--text-muted);
+}
+
+.library-footer-links a:hover {
+  color: var(--accent);
+}
+
+/* Site pages (about / help / legal) */
+.page-site {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-back {
+  margin: 0;
+}
+
+.site-back a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.site-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  line-height: 1.55;
+}
+
+.site-page h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.site-page h2 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.site-lead {
+  color: var(--text-muted);
+  margin-top: 0;
+}
+
+.site-steps {
+  padding-left: 1.25rem;
+}
+
+.site-footer-nav {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.site-footer-nav a {
+  color: var(--text-muted);
+}
+
+.site-footer-nav a:hover {
+  color: var(--accent);
 }

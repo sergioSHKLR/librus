@@ -26,6 +26,13 @@ body {
   color: var(--text);
 }
 
+/* Reader overrides min-height via 02-layout (fixed viewport, per-pane scroll) */
+
+img.toolbar-icon {
+  /* Lucide SVGs use currentColor stroke — inherit from button */
+  color: inherit;
+}
+
 img,
 svg {
   display: block;

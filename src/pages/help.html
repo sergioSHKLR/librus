@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Block 1 of 1 — Help page
+    Description: How to use L.I.B.R.U.S
+    Version: 1.a
+    Revised: 260710 19:30
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help · L.I.B.R.U.S</title>
+  <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/00-tokens.css" />
+  <link rel="stylesheet" href="../css/01-reset.css" />
+  <link rel="stylesheet" href="../css/03-toolbar.css" />
+  <link rel="stylesheet" href="../css/07-library.css" />
+  <link rel="stylesheet" href="../css/08-theme-dark.css" />
+</head>
+<body class="page-site" data-app-base="../">
+  <header class="site-header">
+    <p class="site-back"><a href="../">← Library</a></p>
+    <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
+      <img src="../icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
+    </button>
+  </header>
+  <main class="site-page">
+    <h1>Help</h1>
+    <p class="site-lead">Quick start for the three-pane reader.</p>
+
+    <h2>Start</h2>
+    <ol class="site-steps">
+      <li>Open a book from the library.</li>
+      <li>Read in the center; annotate with Hypothesis on the left (wide) or standard sidebar (narrow).</li>
+      <li>On a wide screen, select a term or click a link to consult on the right.</li>
+      <li>Use Contents (list icon) to jump sections; search in the main toolbar.</li>
+      <li>Second toolbar row: link density (LO/MED/HI) and provider toggles L/W/D/M.</li>
+    </ol>
+
+    <h2>Panes</h2>
+    <ul>
+      <li><strong>Annotate</strong> — Hypothesis notes and highlights.</li>
+      <li><strong>Read</strong> — book text, search, contents.</li>
+      <li><strong>Consult</strong> — Luz Espírita, Wikipedia, Wiktionary, maps (wide only).</li>
+    </ul>
+
+    <h2>Mobile</h2>
+    <p>
+      Narrow screens show the book and notes only — no research links.
+      Prefer landscape desktop for the full experience.
+    </p>
+
+    <h2>Notes</h2>
+    <p>
+      Log in via Hypothes.is. Export notes from your Hypothesis account.
+      App settings export only preferences (not annotations).
+    </p>
+
+    <nav class="site-footer-nav" aria-label="More pages">
+      <a href="about.html">About</a>
+      <span aria-hidden="true">·</span>
+      <a href="legal.html">Legal</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank">Code</a>
+    </nav>
+  </main>
+  <script type="module" src="../js/library/site.js"></script>
+</body>
+</html>

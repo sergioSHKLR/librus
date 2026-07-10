@@ -29,4 +29,15 @@
 .toolbar-icon {
   width: 20px;
   height: 20px;
+  /* For Lucide: prefer mask if fill missing — stroke SVGs need currentColor */
+  color: var(--text);
+}
+
+.toolbar-btn img.toolbar-icon {
+  filter: none;
+}
+
+/* Invert monochrome icons in dark mode if SVG stroke is black-only */
+:root[data-theme='dark'] .toolbar-btn img.toolbar-icon:not([src*='brand']) {
+  /* stroke currentColor in SVG files — no invert needed when icons use currentColor */
 }

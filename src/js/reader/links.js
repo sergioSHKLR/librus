@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — reader/links.js
- * Description: Wide-mode density + provider visibility for baked research links
- * Version: 1.a
- * Revised: 260710 18:00
+ * Description: Density + provider toggles (second toolbar row) for baked links
+ * Version: 1.b
+ * Revised: 260710 19:30
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';
@@ -14,7 +14,7 @@ function interestVisible(density, interest) {
   const i = interest || 'med';
   if (density === 'hi') return true;
   if (density === 'med') return i === 'hi' || i === 'med';
-  return i === 'hi'; // lo
+  return i === 'hi';
 }
 
 /** @param {ReturnType<typeof loadSettings>} settings */
@@ -30,22 +30,28 @@ export function applyLinkFilters(settings) {
   root.setAttribute('data-link-m', providers.m !== false ? '1' : '0');
 
   const book = document.getElementById('book-root');
-  if (!book) return;
-
-  /* Narrow: CSS zeroes all; still mark for clarity */
   const wide = computeIsWide();
-  book.querySelectorAll('a[data-link-provider]').forEach((a) => {
-    const code = a.getAttribute('data-link-provider');
-    const interest = a.getAttribute('data-link-interest') || 'med';
-    const providerOn = providers[code] !== false;
-    const densOk = interestVisible(density, interest);
-    const show = wide && providerOn && densOk;
-    a.classList.toggle('is-link-hidden', !show);
-    if (!wide) a.classList.add('is-link-hidden');
-  });
+
+  if (book) {
+    book.querySelectorAll('a[data-link-provider]').forEach((a) => {
+      const code = a.getAttribute('data-link-provider');
+      const interest = a.getAttribute('data-link-interest') || 'med';
+      const providerOn = providers[code] !== false;
+      const densOk = interestVisible(density, interest);
+      const show = wide && providerOn && densOk;
+      a.classList.toggle('is-link-hidden', !show);
+    });
+  }
 
   const label = document.getElementById('density-toggle-label');
   if (label) label.textContent = density.toUpperCase();
+
+  document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
+    const code = btn.getAttribute('data-provider-code');
+    const on = providers[code] !== false;
+    btn.classList.toggle('is-off', !on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
 }
 
 export function wireLinkFilters() {
@@ -60,6 +66,19 @@ export function wireLinkFilters() {
     settings.linkDensity = DENSITY_ORDER[(idx + 1) % DENSITY_ORDER.length];
     settings = saveSettings(settings);
     applyLinkFilters(settings);
+  });
+
+  document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (!computeIsWide()) return;
+      const code = btn.getAttribute('data-provider-code');
+      if (!code) return;
+      settings = loadSettings();
+      if (!settings.linkProviders) settings.linkProviders = { l: true, w: true, d: true, m: true };
+      settings.linkProviders[code] = settings.linkProviders[code] === false;
+      settings = saveSettings(settings);
+      applyLinkFilters(settings);
+    });
   });
 
   document.addEventListener('nano:layout-change', () => {

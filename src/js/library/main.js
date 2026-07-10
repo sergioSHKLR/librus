@@ -46,10 +46,13 @@ function renderBooks(listEl, emptyEl, books, strings) {
     face.className = 'cover-face';
     face.setAttribute('aria-hidden', 'true');
     face.style.background = coverBackground(book);
-    const emoji = document.createElement('span');
-    emoji.className = 'cover-emoji';
-    emoji.textContent = book.emoji || '📖';
-    face.appendChild(emoji);
+    const icon = document.createElement('img');
+    icon.className = 'cover-icon';
+    icon.src = 'icons/book.svg';
+    icon.alt = '';
+    icon.width = 44;
+    icon.height = 44;
+    face.appendChild(icon);
 
     const meta = document.createElement('div');
     meta.className = 'cover-meta';

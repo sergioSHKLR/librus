@@ -4,8 +4,8 @@
   <!--
     Block 1 of 2 — library document head
     Description: Meta, CSS modules, brand for L.I.B.R.U.S library home
-    Version: 1.a
-    Revised: 260710 16:30
+    Version: 1.b
+    Revised: 260710 19:30
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,25 +25,25 @@
 <body class="page-library app-shell">
   <!--
     Block 2 of 2 — library body
-    Description: Header, cover grid mount, theme/lang controls
-    Version: 1.a
-    Revised: 260710 16:30
+    Description: Header, cover grid, footer site links
+    Version: 1.b
+    Revised: 260710 19:30
   -->
   <header class="library-header">
     <div class="library-header-inner">
       <div class="library-brand">
-        <div class="library-brand-mark" aria-hidden="true">L</div>
+        <img src="icons/brand.svg" class="library-brand-icon" alt="" width="32" height="32" />
         <div>
           <h1 class="library-title" data-i18n="brand">L.I.B.R.U.S</h1>
           <p class="library-panes" id="library-tagline" data-i18n="tagline">annotate / read / consult</p>
         </div>
       </div>
       <div class="library-header-actions">
-        <button type="button" class="toolbar-btn" id="btn-lang-toggle" title="Language" aria-label="Language" data-i18n-aria="settings.language">
-          <span id="lang-toggle-label" style="font-size:0.75rem;font-weight:700;">EN</span>
+        <button type="button" class="toolbar-btn" id="btn-lang-toggle" title="Language" aria-label="Language">
+          <span id="lang-toggle-label" class="lang-chip">EN</span>
         </button>
-        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings" data-i18n-aria="library.settings">
-          <span style="font-size:1rem;line-height:1;">⚙</span>
+        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
+          <img src="icons/settings.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
         <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
           <img src="icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
@@ -63,7 +63,16 @@
   </main>
 
   <footer class="library-footer">
-    <span data-i18n="library.footerNote">Notes via Hypothes.is · research links on desktop only</span>
+    <hr class="library-footer-rule" />
+    <p class="library-footer-links">
+      <a href="pages/about.html" data-i18n="nav.about">About</a>
+      <span aria-hidden="true">·</span>
+      <a href="pages/help.html" data-i18n="nav.help">Help</a>
+      <span aria-hidden="true">·</span>
+      <a href="pages/legal.html" data-i18n="nav.legal">Legal</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank" data-i18n="nav.code">Code</a>
+    </p>
   </footer>
 
   <script type="module" src="js/library/main.js"></script>

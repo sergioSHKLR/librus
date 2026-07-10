@@ -4,8 +4,8 @@
   <!--
     Block 1 of 2 — reader document head
     Description: Meta, CSS modules, Hypothesis boot for book shell
-    Version: 1.a
-    Revised: 260710 17:00
+    Version: 1.b
+    Revised: 260710 19:30
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -34,9 +34,9 @@
 >
   <!--
     Block 2 of 2 — reader body panes
-    Description: notes | main | consult + narrow limited-experience alert
-    Version: 1.a
-    Revised: 260710 17:00
+    Description: notes | main (2 toolbars) | consult; per-pane scroll
+    Version: 1.b
+    Revised: 260710 19:30
   -->
   <div class="reader-container" id="app">
     <aside class="left-panel" id="left-panel" aria-label="Notes">
@@ -45,11 +45,11 @@
 
     <section class="middle-panel" id="middle-panel" aria-label="Read">
       <div class="panel-toolbar" id="main-toolbar">
-        <a href="{{ASSET_PREFIX}}index.html" class="toolbar-btn" id="btn-library" title="Library" aria-label="Library" data-i18n-aria="library.title">
+        <a href="{{ASSET_PREFIX}}" class="toolbar-btn" id="btn-library" title="Library" aria-label="Library">
           <img src="{{ASSET_PREFIX}}icons/book-open.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </a>
         <span class="toolbar-book-title" id="book-title-label" title="{{BOOK_TITLE}}">{{BOOK_TITLE}}</span>
-        <input type="search" id="search-input" class="toolbar-search" placeholder="Search…" aria-label="Search" autocomplete="off" data-i18n-placeholder="reader.search" />
+        <input type="search" id="search-input" class="toolbar-search" placeholder="Search…" aria-label="Search" autocomplete="off" />
         <span class="search-counter" id="search-counter" aria-live="polite">0 / 0</span>
         <button type="button" class="toolbar-btn" id="btn-search-prev" title="Previous" aria-label="Previous" disabled>
           <img src="{{ASSET_PREFIX}}icons/up.svg" class="toolbar-icon" alt="" width="20" height="20" />
@@ -60,13 +60,22 @@
         <button type="button" class="toolbar-btn" id="btn-toc" title="Contents" aria-label="Contents" aria-expanded="false" aria-controls="toc-panel" disabled>
           <img src="{{ASSET_PREFIX}}icons/toc.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
-        <button type="button" class="toolbar-btn" id="btn-density-cycle" title="Link density" aria-label="Link density">
-          <span id="density-toggle-label" style="font-size:0.7rem;font-weight:700;">MED</span>
-        </button>
-        <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size" data-i18n-aria="reader.fontSize">
+        <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size">
           <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
       </div>
+
+      <div class="panel-toolbar panel-toolbar-row2" id="link-toolbar" aria-label="Link controls">
+        <span class="link-toolbar-label" data-i18n="reader.links">Links</span>
+        <button type="button" class="toolbar-btn" id="btn-density-cycle" title="Link density" aria-label="Link density">
+          <span id="density-toggle-label" class="density-chip">MED</span>
+        </button>
+        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" title="Luz" aria-pressed="true">L</button>
+        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" title="Wikipedia" aria-pressed="true">W</button>
+        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" title="Wiktionary" aria-pressed="true">D</button>
+        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-m" data-provider-code="m" title="Maps" aria-pressed="true">M</button>
+      </div>
+
       <div id="toc-panel" class="toc-panel is-hidden" role="navigation" aria-label="Contents" hidden>
         <div class="toc-panel-header">
           <span class="toc-panel-title" data-i18n="reader.toc">Contents</span>
@@ -78,7 +87,8 @@
           <p class="toc-panel-empty">…</p>
         </div>
       </div>
-      <div class="middle-content" id="middle-content">
+
+      <div class="middle-content scroll-track" id="middle-content">
         <div class="book-root" id="book-root"></div>
       </div>
     </section>
@@ -98,7 +108,7 @@
           <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">D</button>
         </div>
         <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
-          <span style="font-size:1rem;line-height:1;">⚙</span>
+          <img src="{{ASSET_PREFIX}}icons/settings.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
         <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
           <img src="{{ASSET_PREFIX}}icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
