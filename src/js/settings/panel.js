@@ -34,6 +34,7 @@ export function openSettings() {
     backdrop.classList.remove('is-hidden');
     backdrop.removeAttribute('hidden');
   }
+  if (strings && Object.keys(strings).length) applyI18n(panel, strings);
   syncForm(loadSettings());
 }
 
