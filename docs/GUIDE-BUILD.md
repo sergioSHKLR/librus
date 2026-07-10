@@ -23,7 +23,7 @@ Node 20+, npm, Python 3.10+, Git.
 
 ### Third-party (not installed)
 
-Hypothes.is embed; Wikipedia / Luz / Wiktionary / maps at runtime (wide consult).
+Hypothes.is embed; Wikipedia / Luz / Wiktionary at runtime (wide consult).
 
 ## Commands
 

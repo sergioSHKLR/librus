@@ -10,7 +10,7 @@ Three panes (librus-nano model):
 
 1. **Annotate** — Hypothesis (notes host)  
 2. **Read** — book, TOC, search  
-3. **Consult** — context iframe (Luz, Wiki, Wiktionary, maps)  
+3. **Consult** — context iframe (Luz, Wiki, Wiktionary; places via Wiki)  
 
 Provider links in the text open the consult pane.
 
