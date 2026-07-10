@@ -1,14 +1,15 @@
 /**
  * Block 1 of 1 — tools/build.mjs
- * Description: check → mirror static → library.json → stamp library + readers
- * Version: 1.c
- * Revised: 260710 17:00
+ * Description: check → mirror → compile MD books → stamp library + readers
+ * Version: 1.d
+ * Revised: 260710 17:30
  */
 
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { compileBookFile, mirrorBookImages } from './compile-md.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -64,59 +65,78 @@ function titleFromSlug(slug) {
   return map[slug] || slug;
 }
 
-function defaultEmoji(slug) {
-  const map = { lde: '✨', ldm: '✒️', ese: '🕊️', ceu: '⚖️', gen: '🌌' };
-  return map[slug] || '📖';
+function resolveMdPath(entry) {
+  if (entry.path) return path.join(SRC, entry.path);
+  return path.join(SRC, 'content', 'books', entry.slug, 'book.md');
 }
 
-function defaultCover(slug) {
-  const map = {
-    lde: { colors: ['#1a4a7a', '#2d6a9f'], angle: 135 },
-    ldm: { colors: ['#3d2914', '#8b6914'], angle: 135 },
-    ese: { colors: ['#1b4332', '#40916c'], angle: 135 },
-    ceu: { colors: ['#240046', '#7b2cbf'], angle: 135 },
-    gen: { colors: ['#370617', '#9d0208'], angle: 135 }
-  };
-  return map[slug] || { colors: ['#4a5568'] };
-}
+/**
+ * Compile all catalog books that have source MD.
+ * @returns {{ libraryBooks: object[], errors: number }}
+ */
+function compileBooks(catalog) {
+  const libraryBooks = [];
+  let errors = 0;
 
-function writeLibraryJson(catalog) {
-  const books = (catalog.books || []).map((b) => ({
-    slug: b.slug,
-    title: b.title || titleFromSlug(b.slug),
-    author: b.author || 'Allan Kardec',
-    emoji: b.emoji || defaultEmoji(b.slug),
-    cover: b.cover || defaultCover(b.slug),
-    enabled: b.enabled !== false,
-    lang: b.lang || 'pt',
-    license: b.license || 'unknown'
-  }));
+  for (const entry of catalog.books || []) {
+    if (!entry.slug) continue;
+    const mdPath = resolveMdPath(entry);
+    const srcBookDir = path.dirname(mdPath);
+    const outDir = path.join(PUBLIC, 'books', entry.slug);
+    ensureDir(outDir);
 
-  const payload = {
-    brand: catalog.brand || 'L.I.B.R.U.S',
-    tagline: catalog.tagline || 'annotate / read / consult',
-    books
-  };
-  fs.writeFileSync(path.join(PUBLIC, 'library.json'), JSON.stringify(payload, null, 2) + '\n');
-  console.log(`→ library.json (${books.length} book(s))`);
-}
+    if (!fs.existsSync(mdPath)) {
+      console.warn(`  WARN  missing ${path.relative(ROOT, mdPath)} — stub body`);
+      const title = entry.title || titleFromSlug(entry.slug);
+      fs.writeFileSync(
+        path.join(outDir, 'body.html'),
+        `<article class="book"><h1>${escapeHtml(title)}</h1><p class="book-meta">Content missing.</p></article>\n`
+      );
+      fs.writeFileSync(path.join(outDir, 'toc.json'), '[]\n');
+      libraryBooks.push({
+        slug: entry.slug,
+        title,
+        author: entry.author || 'Unknown',
+        emoji: entry.emoji || '📖',
+        cover: entry.cover || { colors: ['#4a5568'] },
+        enabled: entry.enabled !== false,
+        lang: entry.lang || 'pt',
+        license: entry.license || 'unknown'
+      });
+      continue;
+    }
 
-function stubBodyHtml(title) {
-  return (
-    '<article class="book">\n' +
-    '<header>\n' +
-    '<h1 id="top">' +
-    escapeHtml(title) +
-    '</h1>\n' +
-    '<p class="book-meta">Reader shell (PR 2). Full Markdown compile lands in PR 3.</p>\n' +
-    '</header>\n' +
-    '<p>Sample provider links (visible on <strong>wide</strong> layout only; hidden on mobile):</p>\n' +
-    '<p>Search <a href="https://pt.wikipedia.org/wiki/Deus" data-link-provider="w" data-link-interest="hi">Deus</a> ' +
-    'or <a href="https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&amp;item=Esp%C3%ADrito" data-link-provider="l" data-link-interest="hi">Espírito</a> ' +
-    'in the consult pane.</p>\n' +
-    '<p id="s-2">Deep link target <code>#s-2</code>.</p>\n' +
-    '</article>\n'
-  );
+    console.log(`→ compile ${entry.slug}`);
+    const result = compileBookFile(mdPath, { folderSlug: entry.slug });
+    for (const w of result.warnings) console.warn(`  WARN  ${entry.slug}: ${w}`);
+    if (!result.ok) {
+      console.error(`  FAIL  ${entry.slug}: ${result.fatal.join('; ')}`);
+      errors++;
+      continue;
+    }
+
+    fs.writeFileSync(path.join(outDir, 'body.html'), result.html);
+    fs.writeFileSync(path.join(outDir, 'toc.json'), JSON.stringify(result.toc, null, 2) + '\n');
+    const imgs = mirrorBookImages(srcBookDir, outDir);
+    if (imgs) console.log(`  images: ${imgs}`);
+
+    const m = result.meta;
+    libraryBooks.push({
+      slug: m.slug,
+      title: m.title,
+      author: m.author,
+      emoji: m.emoji,
+      cover: m.cover,
+      enabled: entry.enabled !== false,
+      lang: m.lang,
+      license: m.license,
+      copyright: m.copyright || '',
+      subtitle: m.subtitle || '',
+      order: m.order != null ? m.order : libraryBooks.length
+    });
+  }
+
+  return { libraryBooks, errors };
 }
 
 function escapeHtml(s) {
@@ -127,37 +147,40 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
-function stampReaders(catalog) {
+function writeLibraryJson(catalog, libraryBooks) {
+  libraryBooks.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const payload = {
+    brand: catalog.brand || 'L.I.B.R.U.S',
+    tagline: catalog.tagline || 'annotate / read / consult',
+    books: libraryBooks
+  };
+  fs.writeFileSync(path.join(PUBLIC, 'library.json'), JSON.stringify(payload, null, 2) + '\n');
+  console.log(`→ library.json (${libraryBooks.length} book(s))`);
+}
+
+function stampReaders(libraryBooks) {
   const tplPath = path.join(SRC, 'templates', 'reader.html');
   if (!fs.existsSync(tplPath)) {
     console.warn('→ skip readers (no templates/reader.html)');
     return;
   }
   const template = fs.readFileSync(tplPath, 'utf8');
-  const books = catalog.books || [];
   let n = 0;
 
-  for (const b of books) {
+  for (const b of libraryBooks) {
     if (!b.slug) continue;
-    const slug = b.slug;
-    const title = b.title || titleFromSlug(slug);
-    const dir = path.join(PUBLIC, 'books', slug);
+    const dir = path.join(PUBLIC, 'books', b.slug);
     ensureDir(dir);
-
     const html = template
       .replaceAll('{{ASSET_PREFIX}}', '../../')
-      .replaceAll('{{BOOK_TITLE}}', title)
+      .replaceAll('{{BOOK_TITLE}}', b.title || b.slug)
       .replaceAll('{{BOOK_FILE}}', 'body.html')
-      .replaceAll('{{BOOK_SLUG}}', slug)
+      .replaceAll('{{BOOK_SLUG}}', b.slug)
       .replaceAll('{{BOOK_BODY}}', '');
-
     fs.writeFileSync(path.join(dir, 'index.html'), html);
-    fs.writeFileSync(path.join(dir, 'body.html'), stubBodyHtml(title));
-    fs.writeFileSync(path.join(dir, 'toc.json'), '[]\n');
     n++;
-    console.log(`→ books/${slug}/`);
   }
-  console.log(`→ stamped ${n} reader(s)`);
+  console.log(`→ stamped ${n} reader shell(s)`);
 }
 
 function writeIntegrity() {
@@ -168,7 +191,7 @@ function writeIntegrity() {
     status: 'pass',
     brand: 'L.I.B.R.U.S',
     tagline: 'annotate / read / consult',
-    phase: 'pr2-reader-panes'
+    phase: 'pr3-md-compile'
   };
   fs.writeFileSync(path.join(PUBLIC, 'integrity.json'), JSON.stringify(payload, null, 2) + '\n');
 }
@@ -189,14 +212,20 @@ function main() {
   }
 
   const catalog = readCatalog();
-  writeLibraryJson(catalog);
+  const { libraryBooks, errors } = compileBooks(catalog);
+  if (errors) {
+    console.error(`\nBuild aborted: ${errors} book(s) failed front matter / compile`);
+    process.exit(1);
+  }
+
+  writeLibraryJson(catalog, libraryBooks);
 
   const libTpl = path.join(SRC, 'templates', 'library.html');
   if (fs.existsSync(libTpl)) {
     fs.copyFileSync(libTpl, path.join(PUBLIC, 'index.html'));
   }
 
-  stampReaders(catalog);
+  stampReaders(libraryBooks);
   writeIntegrity();
   console.log('\n→ public/ ready');
   console.log('  npm start  → http://localhost:3000');

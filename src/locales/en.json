@@ -17,5 +17,6 @@
   "common.loading": "Loading…",
   "reader.search": "Search…",
   "reader.fontSize": "Text size",
-  "reader.selectedTerm": "selected_term"
+  "reader.selectedTerm": "selected_term",
+  "reader.toc": "Contents"
 }

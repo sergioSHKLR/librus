@@ -13,6 +13,7 @@ import { wireLayout, computeIsWide } from './layout.js';
 import { loadBookBody, applyDeepLink } from './book.js';
 import { wireContext } from './context.js';
 import { wireSearch } from './search.js';
+import { wireToc } from './toc.js';
 import { assetBase } from '../shared/paths.js';
 
 function setHypoInvert(theme) {
@@ -76,11 +77,8 @@ async function boot() {
 
   wireLayout();
   wireSearch();
-  if (computeIsWide()) wireContext();
-  else {
-    /* still wire for resize-to-wide later */
-    wireContext();
-  }
+  wireToc();
+  wireContext();
 
   await loadBookBody();
   applyDeepLink();

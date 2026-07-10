@@ -8,3 +8,4 @@
 - Brand **L.I.B.R.U.S** — annotate / read / consult  
 - PR 1 library shell: modular CSS (00–09), cover grid from `library.json`, theme + EN/PT toggle  
 - PR 2 reader: wide 3-pane (notes/main/consult), narrow main+Hypo standard + zero research links, viewport alert, search, stub LDE  
+- PR 3: MD compile + front matter (hard/soft), LDE full text, images mirror, TOC panel, short-link attrs  

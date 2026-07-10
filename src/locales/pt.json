@@ -17,5 +17,6 @@
   "common.loading": "Carregando…",
   "reader.search": "Buscar…",
   "reader.fontSize": "Tamanho do texto",
-  "reader.selectedTerm": "termo_selecionado"
+  "reader.selectedTerm": "termo_selecionado",
+  "reader.toc": "Sumário"
 }

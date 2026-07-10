@@ -55,9 +55,23 @@
         <button type="button" class="toolbar-btn" id="btn-search-next" title="Next" aria-label="Next" disabled>
           <img src="{{ASSET_PREFIX}}icons/down.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
+        <button type="button" class="toolbar-btn" id="btn-toc" title="Contents" aria-label="Contents" aria-expanded="false" aria-controls="toc-panel" disabled>
+          <img src="{{ASSET_PREFIX}}icons/toc.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
         <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size" data-i18n-aria="reader.fontSize">
           <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
+      </div>
+      <div id="toc-panel" class="toc-panel is-hidden" role="navigation" aria-label="Contents" hidden>
+        <div class="toc-panel-header">
+          <span class="toc-panel-title" data-i18n="reader.toc">Contents</span>
+          <button type="button" class="toolbar-btn" id="btn-toc-close" title="Close" aria-label="Close">
+            <img src="{{ASSET_PREFIX}}icons/close.svg" class="toolbar-icon" alt="" width="20" height="20" />
+          </button>
+        </div>
+        <div class="toc-panel-body" id="toc-panel-body">
+          <p class="toc-panel-empty">…</p>
+        </div>
       </div>
       <div class="middle-content" id="middle-content">
         <div class="book-root" id="book-root"></div>
