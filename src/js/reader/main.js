@@ -14,8 +14,11 @@ import { loadBookBody, applyDeepLink } from './book.js';
 import { wireContext } from './context.js';
 import { wireSearch } from './search.js';
 import { wireToc } from './toc.js';
-import { wireLinkFilters } from './links.js';
+import { wireLinkFilters, applyLinkFilters } from './links.js';
 import { assetBase } from '../shared/paths.js';
+import { wireSettingsPanel } from '../settings/panel.js';
+import { wirePwaUpdates } from '../settings/update.js';
+import { loadSettings as reloadSettings } from '../shared/storage.js';
 
 function setHypoInvert(theme) {
   const host = document.getElementById('hypothesis-container');
@@ -85,6 +88,20 @@ async function boot() {
   wireLinkFilters();
   applyDeepLink();
   window.addEventListener('hashchange', applyDeepLink);
+
+  wireSettingsPanel({
+    strings,
+    themeUi: {
+      iconEl: document.getElementById('theme-toggle-icon'),
+      btnEl: document.getElementById('btn-theme-toggle'),
+      assetBase: base,
+      labels: themeLabels
+    }
+  });
+  document.addEventListener('nano:settings-changed', () => {
+    applyLinkFilters(reloadSettings());
+  });
+  wirePwaUpdates();
 
   runIntegrityDebug();
   console.info('L.I.B.R.U.S reader', computeIsWide() ? 'wide' : 'narrow');

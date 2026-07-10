@@ -19,8 +19,10 @@
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/03-toolbar.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/04-book.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/05-context.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/06-settings.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/08-theme-dark.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/09-hypothesis.css" />
+  <link rel="manifest" href="{{ASSET_PREFIX}}manifest.webmanifest" />
   <script src="{{ASSET_PREFIX}}hypothesis-boot.js"></script>
 </head>
 <body
@@ -95,6 +97,9 @@
           <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" title="Wikipedia" aria-label="Wikipedia">W</button>
           <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">D</button>
         </div>
+        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
+          <span style="font-size:1rem;line-height:1;">⚙</span>
+        </button>
         <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
           <img src="{{ASSET_PREFIX}}icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
         </button>

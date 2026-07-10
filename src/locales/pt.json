@@ -18,5 +18,19 @@
   "reader.search": "Buscar…",
   "reader.fontSize": "Tamanho do texto",
   "reader.selectedTerm": "termo_selecionado",
-  "reader.toc": "Sumário"
+  "reader.toc": "Sumário",
+  "settings.title": "Configurações",
+  "settings.fontSize": "Tamanho do texto",
+  "settings.lineHeight": "Altura da linha",
+  "settings.density": "Densidade de links",
+  "settings.providers": "Provedores",
+  "settings.notesNote": "As notas ficam na sua conta Hypothes.is (não exportadas aqui).",
+  "settings.export": "Exportar pacote da biblioteca",
+  "settings.import": "Importar pacote da biblioteca",
+  "settings.forceUpdate": "Forçar atualização",
+  "settings.clear": "Limpar dados do site",
+  "settings.clearConfirm": "Limpar dados do site e recarregar?",
+  "settings.apply": "Aplicar",
+  "update.available": "Atualização disponível",
+  "update.reload": "Atualizar agora"
 }

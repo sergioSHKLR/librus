@@ -10,6 +10,8 @@ import { loadSettings, saveSettings } from '../shared/storage.js';
 import { applyTheme, applyTypography, nextTheme } from '../shared/theme.js';
 import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { runIntegrityDebug } from '../shared/integrity.js';
+import { wireSettingsPanel } from '../settings/panel.js';
+import { wirePwaUpdates } from '../settings/update.js';
 
 function coverBackground(book) {
   const colors = (book.cover && book.cover.colors) || ['#4a5568'];
@@ -141,6 +143,16 @@ async function boot() {
   const tag = document.getElementById('library-tagline');
   if (tag && !tag.dataset.i18n) tag.textContent = t(strings, 'tagline', TAGLINE);
 
+  wireSettingsPanel({
+    strings,
+    themeUi: {
+      iconEl: document.getElementById('theme-toggle-icon'),
+      btnEl: document.getElementById('btn-theme-toggle'),
+      assetBase: '',
+      labels: themeLabels
+    }
+  });
+  wirePwaUpdates();
   runIntegrityDebug();
 }
 

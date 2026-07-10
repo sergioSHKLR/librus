@@ -17,6 +17,7 @@ function interestVisible(density, interest) {
   return i === 'hi'; // lo
 }
 
+/** @param {ReturnType<typeof loadSettings>} settings */
 export function applyLinkFilters(settings) {
   const root = document.documentElement;
   const density = settings.linkDensity || 'med';

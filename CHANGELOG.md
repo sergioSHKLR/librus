@@ -10,3 +10,4 @@
 - PR 2 reader: wide 3-pane (notes/main/consult), narrow main+Hypo standard + zero research links, viewport alert, search, stub LDE  
 - PR 3: MD compile + front matter (hard/soft), LDE full text, images mirror, TOC panel, short-link attrs  
 - PR 4: vendored doutrina-linker, PT dictionaries, cache-only link step, density toggle (LO/MED/HI)  
+- PR 5: settings panel, library pack export/import, PWA SW + force update, version badge  

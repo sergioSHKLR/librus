@@ -17,8 +17,10 @@
   <link rel="stylesheet" href="css/01-reset.css" />
   <link rel="stylesheet" href="css/02-layout.css" />
   <link rel="stylesheet" href="css/03-toolbar.css" />
+  <link rel="stylesheet" href="css/06-settings.css" />
   <link rel="stylesheet" href="css/07-library.css" />
   <link rel="stylesheet" href="css/08-theme-dark.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body class="page-library app-shell">
   <!--
@@ -39,6 +41,9 @@
       <div class="library-header-actions">
         <button type="button" class="toolbar-btn" id="btn-lang-toggle" title="Language" aria-label="Language" data-i18n-aria="settings.language">
           <span id="lang-toggle-label" style="font-size:0.75rem;font-weight:700;">EN</span>
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings" data-i18n-aria="library.settings">
+          <span style="font-size:1rem;line-height:1;">⚙</span>
         </button>
         <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
           <img src="icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
