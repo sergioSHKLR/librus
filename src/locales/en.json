@@ -2,12 +2,17 @@
   "brand": "L.I.B.R.U.S",
   "tagline": "annotate / read / consult",
   "library.title": "Library",
-  "library.empty": "No books yet. Build will add LDE first.",
+  "library.lead": "Open, read, annotate. Research on a wide screen.",
+  "library.empty": "No books published yet. LDE arrives in the next build step.",
   "library.settings": "Settings",
+  "library.footerNote": "Notes via Hypothes.is · research links on desktop only",
   "viewport.limitedTitle": "Limited experience",
   "viewport.limitedBody": "This library is designed for a wide screen: annotate, read, and consult side by side. On this device you get the book and notes only — no research links.",
   "viewport.dismiss": "Dismiss",
   "settings.language": "Language",
   "settings.theme": "Theme",
+  "theme.tipLight": "Theme: light — click for dark",
+  "theme.tipDark": "Theme: dark — click for system",
+  "theme.tipSystem": "Theme: system — click for light",
   "common.loading": "Loading…"
 }

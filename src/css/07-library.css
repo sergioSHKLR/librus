@@ -1,0 +1,170 @@
+/* ==========================================================================
+ * Block 1 of 2 — Library header
+ * Description: Brand row, tagline panes, theme control for library home
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+.page-library {
+  min-height: 100dvh;
+}
+
+.library-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.library-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.library-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.library-brand-mark {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #1a4a7a, #2d6a9f);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.library-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+.library-panes {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.library-panes-sep {
+  margin: 0 0.35rem;
+  opacity: 0.55;
+}
+
+.library-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* ==========================================================================
+ * Block 2 of 2 — Library main + cover grid
+ * Description: Intro copy and book cover cards from library.json
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+.library-main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.library-heading {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.library-lead {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+  max-width: 36rem;
+}
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.cover-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cover-card:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cover-card.is-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.cover-face {
+  aspect-ratio: 3 / 4;
+  display: grid;
+  place-items: center;
+  background: var(--cover-bg, #4a5568);
+  color: #fff;
+}
+
+.cover-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.cover-meta {
+  padding: 0.75rem 0.85rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cover-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.cover-author {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.library-empty {
+  padding: 1.25rem;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.library-footer {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

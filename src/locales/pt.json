@@ -2,12 +2,17 @@
   "brand": "L.I.B.R.U.S",
   "tagline": "anotar / ler / consultar",
   "library.title": "Biblioteca",
-  "library.empty": "Ainda sem livros. O build incluirá o LDE primeiro.",
+  "library.lead": "Abra, leia, anote. Pesquise em tela larga.",
+  "library.empty": "Ainda sem livros publicados. O LDE entra no próximo passo de build.",
   "library.settings": "Configurações",
+  "library.footerNote": "Notas via Hypothes.is · links de pesquisa só no desktop",
   "viewport.limitedTitle": "Experiência limitada",
   "viewport.limitedBody": "Esta biblioteca foi feita para tela larga: anotar, ler e consultar lado a lado. Neste dispositivo você tem o livro e as notas — sem links de pesquisa.",
   "viewport.dismiss": "Dispensar",
   "settings.language": "Idioma",
   "settings.theme": "Tema",
+  "theme.tipLight": "Tema: claro — clique para escuro",
+  "theme.tipDark": "Tema: escuro — clique para sistema",
+  "theme.tipSystem": "Tema: sistema — clique para claro",
   "common.loading": "Carregando…"
 }

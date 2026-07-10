@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/build.mjs
- * Description: Orchestrate check → mirror static → stamp stubs (PR 0 scaffold)
- * Version: 1.a
- * Revised: 260710 16:00
+ * Description: Orchestrate check → mirror static → library.json → stamp library
+ * Version: 1.b
+ * Revised: 260710 16:30
  */
 
 import { spawnSync } from 'node:child_process';
@@ -47,6 +47,61 @@ function copyRecursive(from, to) {
   }
 }
 
+function readCatalog() {
+  const p = path.join(SRC, 'config', 'catalog.json');
+  if (!fs.existsSync(p)) return { brand: 'L.I.B.R.U.S', tagline: 'annotate / read / consult', books: [] };
+  return JSON.parse(fs.readFileSync(p, 'utf8'));
+}
+
+/** Placeholder library entries until PR 3 front-matter compile. */
+function writeLibraryJson(catalog) {
+  const books = (catalog.books || []).map((b) => ({
+    slug: b.slug,
+    title: b.title || titleFromSlug(b.slug),
+    author: b.author || 'Allan Kardec',
+    emoji: b.emoji || defaultEmoji(b.slug),
+    cover: b.cover || defaultCover(b.slug),
+    enabled: b.enabled === true,
+    lang: b.lang || 'pt',
+    license: b.license || 'unknown'
+  }));
+
+  const payload = {
+    brand: catalog.brand || 'L.I.B.R.U.S',
+    tagline: catalog.tagline || 'annotate / read / consult',
+    books
+  };
+  fs.writeFileSync(path.join(PUBLIC, 'library.json'), JSON.stringify(payload, null, 2) + '\n');
+  console.log(`→ library.json (${books.length} book(s))`);
+}
+
+function titleFromSlug(slug) {
+  const map = {
+    lde: 'O Livro dos Espíritos',
+    ldm: 'O Livro dos Médiuns',
+    ese: 'O Evangelho segundo o Espiritismo',
+    ceu: 'O Céu e o Inferno',
+    gen: 'A Gênese'
+  };
+  return map[slug] || slug;
+}
+
+function defaultEmoji(slug) {
+  const map = { lde: '✨', ldm: '✒️', ese: '🕊️', ceu: '⚖️', gen: '🌌' };
+  return map[slug] || '📖';
+}
+
+function defaultCover(slug) {
+  const map = {
+    lde: { colors: ['#1a4a7a', '#2d6a9f'], angle: 135 },
+    ldm: { colors: ['#3d2914', '#8b6914'], angle: 135 },
+    ese: { colors: ['#1b4332', '#40916c'], angle: 135 },
+    ceu: { colors: ['#240046', '#7b2cbf'], angle: 135 },
+    gen: { colors: ['#370617', '#9d0208'], angle: 135 }
+  };
+  return map[slug] || { colors: ['#4a5568'] };
+}
+
 function writeIntegrity() {
   const payload = {
     version: 1,
@@ -55,7 +110,7 @@ function writeIntegrity() {
     status: 'pass',
     brand: 'L.I.B.R.U.S',
     tagline: 'annotate / read / consult',
-    note: 'PR 0 scaffold — full file list filled in later builds'
+    phase: 'pr1-library-shell'
   };
   fs.writeFileSync(path.join(PUBLIC, 'integrity.json'), JSON.stringify(payload, null, 2) + '\n');
 }
@@ -67,7 +122,6 @@ function main() {
   rimraf(PUBLIC);
   ensureDir(PUBLIC);
 
-  // Mirror static trees (path parity)
   for (const dir of ['css', 'js', 'locales', 'icons', 'images', 'pages']) {
     copyRecursive(path.join(SRC, dir), path.join(PUBLIC, dir));
   }
@@ -76,7 +130,9 @@ function main() {
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(PUBLIC, f));
   }
 
-  // Stamp library from template if present
+  const catalog = readCatalog();
+  writeLibraryJson(catalog);
+
   const libTpl = path.join(SRC, 'templates', 'library.html');
   if (fs.existsSync(libTpl)) {
     fs.copyFileSync(libTpl, path.join(PUBLIC, 'index.html'));
@@ -88,8 +144,8 @@ function main() {
   }
 
   writeIntegrity();
-  console.log('\n→ public/ ready (scaffold)');
-  console.log('  npm start  → serve public on :3000\n');
+  console.log('\n→ public/ ready');
+  console.log('  npm start  → http://localhost:3000\n');
 }
 
 main();

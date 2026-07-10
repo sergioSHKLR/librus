@@ -1,0 +1,12 @@
+/* ==========================================================================
+ * Block 1 of 1 — Hypothesis host (stub)
+ * Description: Notes pane host styles; full wiring in PR 2
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+.hypothesis-host {
+  min-height: 0;
+  height: 100%;
+  overflow: auto;
+}

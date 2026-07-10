@@ -3,71 +3,64 @@
 <head>
   <!--
     Block 1 of 2 — library document head
-    Description: Meta, brand title, tokens CSS for library shell
+    Description: Meta, CSS modules, brand for L.I.B.R.U.S library home
     Version: 1.a
-    Revised: 260710 16:00
+    Revised: 260710 16:30
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>L.I.B.R.U.S — Library</title>
   <meta name="description" content="L.I.B.R.U.S — annotate / read / consult" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/00-tokens.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: var(--font-ui);
-      background: var(--bg);
-      color: var(--text);
-      line-height: var(--line-height);
-    }
-    header {
-      padding: 1.5rem 1.25rem;
-      border-bottom: 1px solid var(--border);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      letter-spacing: 0.06em;
-    }
-    header p {
-      margin: 0.35rem 0 0;
-      color: var(--text-muted);
-    }
-    main {
-      padding: 1.25rem;
-      max-width: 48rem;
-    }
-    .scaffold-note {
-      padding: 1rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/01-reset.css" />
+  <link rel="stylesheet" href="css/02-layout.css" />
+  <link rel="stylesheet" href="css/03-toolbar.css" />
+  <link rel="stylesheet" href="css/07-library.css" />
+  <link rel="stylesheet" href="css/08-theme-dark.css" />
 </head>
-<body>
+<body class="page-library app-shell">
   <!--
     Block 2 of 2 — library body
-    Description: Scaffold library chrome; books arrive in later PRs
+    Description: Header, cover grid mount, theme/lang controls
     Version: 1.a
-    Revised: 260710 16:00
+    Revised: 260710 16:30
   -->
-  <header>
-    <h1 data-i18n="brand">L.I.B.R.U.S</h1>
-    <p data-i18n="tagline">annotate / read / consult</p>
-  </header>
-  <main>
-    <div class="scaffold-note">
-      <p data-i18n="library.empty">No books yet. Build will add LDE first.</p>
-      <p><small>PR 0 scaffold · <code>npm run check</code> · <code>npm run build</code></small></p>
+  <header class="library-header">
+    <div class="library-header-inner">
+      <div class="library-brand">
+        <div class="library-brand-mark" aria-hidden="true">L</div>
+        <div>
+          <h1 class="library-title" data-i18n="brand">L.I.B.R.U.S</h1>
+          <p class="library-panes" id="library-tagline" data-i18n="tagline">annotate / read / consult</p>
+        </div>
+      </div>
+      <div class="library-header-actions">
+        <button type="button" class="toolbar-btn" id="btn-lang-toggle" title="Language" aria-label="Language" data-i18n-aria="settings.language">
+          <span id="lang-toggle-label" style="font-size:0.75rem;font-weight:700;">EN</span>
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
+          <img src="icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
+        </button>
+      </div>
     </div>
+  </header>
+
+  <main class="library-main app-main">
+    <section class="library-intro" aria-labelledby="library-heading">
+      <h2 id="library-heading" class="library-heading" data-i18n="library.title">Library</h2>
+      <p class="library-lead" data-i18n="library.lead">Open, read, annotate. Research on a wide screen.</p>
+    </section>
+
+    <div id="library-empty" class="library-empty" hidden></div>
+    <ul class="cover-grid" id="cover-grid" role="list"></ul>
   </main>
-  <script type="module">
-    import { runIntegrityDebug } from './js/shared/integrity.js';
-    import { BRAND, TAGLINE } from './js/shared/constants.js';
-    document.title = BRAND + ' — Library';
-    runIntegrityDebug();
-    console.info(BRAND, TAGLINE, 'scaffold ready');
-  </script>
+
+  <footer class="library-footer">
+    <span data-i18n="library.footerNote">Notes via Hypothes.is · research links on desktop only</span>
+  </footer>
+
+  <script type="module" src="js/library/main.js"></script>
 </body>
 </html>

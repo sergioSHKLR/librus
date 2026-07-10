@@ -5,6 +5,15 @@
     {
       "slug": "lde",
       "path": "content/books/lde/book.md",
+      "title": "O Livro dos Espíritos",
+      "author": "Allan Kardec",
+      "emoji": "✨",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": ["#1a4a7a", "#2d6a9f"],
+        "angle": 135
+      },
       "enabled": false,
       "note": "Enabled in PR 3 when LDE content and compile land"
     }

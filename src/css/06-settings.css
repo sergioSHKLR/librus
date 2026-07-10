@@ -1,0 +1,10 @@
+/* ==========================================================================
+ * Block 1 of 1 — Settings overlay (stub)
+ * Description: Panel chrome placeholders; full panel in PR 5
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+.settings-panel {
+  display: none;
+}

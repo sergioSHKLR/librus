@@ -1,0 +1,16 @@
+/* ==========================================================================
+ * Block 1 of 1 — Dark theme extras
+ * Description: Dark-mode tweaks beyond token swaps in 00-tokens
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+:root[data-theme='dark'] .cover-card:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cover-card:hover {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  }
+}

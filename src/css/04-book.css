@@ -1,0 +1,21 @@
+/* ==========================================================================
+ * Block 1 of 1 — Book body typography (stub)
+ * Description: Reader article styles; expanded when body.html lands (PR 3)
+ * Version: 1.a
+ * Revised: 260710 16:30
+ * ========================================================================== */
+
+.book {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+  font-size: calc(1rem * var(--font-scale));
+  line-height: var(--line-height);
+}
+
+.book h1,
+.book h2,
+.book h3 {
+  line-height: 1.25;
+  font-weight: 600;
+}
