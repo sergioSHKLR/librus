@@ -53,6 +53,7 @@ npm start        # http://localhost:3000
 | [docs/GUIDE-I18N.md](docs/GUIDE-I18N.md) | UI strings EN/PT |
 | [docs/GUIDE-COMMENT-HEADERS.md](docs/GUIDE-COMMENT-HEADERS.md) | Block headers + checks |
 | [docs/GUIDE-CONTRIBUTING.md](docs/GUIDE-CONTRIBUTING.md) | **PRs, hygiene, commits** |
+| [docs/SESSION.md](docs/SESSION.md) | **Session handoff / resume state** |
 
 ## Dependencies (summary)
 
