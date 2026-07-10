@@ -14,8 +14,8 @@
         "colors": ["#1a4a7a", "#2d6a9f"],
         "angle": 135
       },
-      "enabled": false,
-      "note": "Enabled in PR 3 when LDE content and compile land"
+      "enabled": true,
+      "note": "Stub body until PR 3 MD compile"
     }
   ]
 }

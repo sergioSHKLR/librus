@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Block 1 of 2 — reader document head
+    Description: Meta, CSS modules, Hypothesis boot for book shell
+    Version: 1.a
+    Revised: 260710 17:00
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{{BOOK_TITLE}} · L.I.B.R.U.S</title>
+  <meta name="description" content="L.I.B.R.U.S — annotate / read / consult" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="{{ASSET_PREFIX}}icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/00-tokens.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/01-reset.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/02-layout.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/03-toolbar.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/04-book.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/05-context.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/08-theme-dark.css" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}css/09-hypothesis.css" />
+  <script src="{{ASSET_PREFIX}}hypothesis-boot.js"></script>
+</head>
+<body
+  class="page-reader"
+  data-app-base="{{ASSET_PREFIX}}"
+  data-book-file="{{BOOK_FILE}}"
+  data-book-title="{{BOOK_TITLE}}"
+  data-book-slug="{{BOOK_SLUG}}"
+>
+  <!--
+    Block 2 of 2 — reader body panes
+    Description: notes | main | consult + narrow limited-experience alert
+    Version: 1.a
+    Revised: 260710 17:00
+  -->
+  <div class="reader-container" id="app">
+    <aside class="left-panel" id="left-panel" aria-label="Notes">
+      <div id="hypothesis-container" class="hypothesis-host"></div>
+    </aside>
+
+    <section class="middle-panel" id="middle-panel" aria-label="Read">
+      <div class="panel-toolbar" id="main-toolbar">
+        <a href="{{ASSET_PREFIX}}index.html" class="toolbar-btn" id="btn-library" title="Library" aria-label="Library" data-i18n-aria="library.title">
+          <img src="{{ASSET_PREFIX}}icons/book-open.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </a>
+        <span class="toolbar-book-title" id="book-title-label" title="{{BOOK_TITLE}}">{{BOOK_TITLE}}</span>
+        <input type="search" id="search-input" class="toolbar-search" placeholder="Search…" aria-label="Search" autocomplete="off" data-i18n-placeholder="reader.search" />
+        <span class="search-counter" id="search-counter" aria-live="polite">0 / 0</span>
+        <button type="button" class="toolbar-btn" id="btn-search-prev" title="Previous" aria-label="Previous" disabled>
+          <img src="{{ASSET_PREFIX}}icons/up.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-search-next" title="Next" aria-label="Next" disabled>
+          <img src="{{ASSET_PREFIX}}icons/down.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size" data-i18n-aria="reader.fontSize">
+          <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+      </div>
+      <div class="middle-content" id="middle-content">
+        <div class="book-root" id="book-root"></div>
+      </div>
+    </section>
+
+    <aside class="right-panel" id="right-panel" aria-label="Consult">
+      <div class="panel-toolbar" id="context-toolbar">
+        <button type="button" class="toolbar-btn" id="btn-context-back" title="Back" aria-label="Back" disabled>
+          <img src="{{ASSET_PREFIX}}icons/back.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-context-reload" title="Reload" aria-label="Reload">
+          <img src="{{ASSET_PREFIX}}icons/reload.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+        <span id="context-selection" class="context-selection is-placeholder" data-placeholder="selected_term" data-i18n="reader.selectedTerm">selected_term</span>
+        <div class="context-provider-buttons" role="group" aria-label="Providers">
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="luzespirita" title="Luz Espírita" aria-label="Luz Espírita">L</button>
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" title="Wikipedia" aria-label="Wikipedia">W</button>
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">D</button>
+        </div>
+        <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
+          <img src="{{ASSET_PREFIX}}icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
+        </button>
+      </div>
+      <div class="context-iframe-container">
+        <div class="context-loading-overlay is-hidden" id="context-loading-overlay" aria-hidden="true">
+          <div class="context-loading-spinner" aria-hidden="true"></div>
+        </div>
+        <iframe id="context-iframe" class="context-iframe" title="Consult" src="{{ASSET_PREFIX}}pages/blank.html"></iframe>
+      </div>
+    </aside>
+  </div>
+
+  <div id="viewport-alert" class="viewport-alert is-hidden" role="alertdialog" aria-modal="true" aria-labelledby="viewport-alert-title" hidden>
+    <div class="viewport-card">
+      <h2 id="viewport-alert-title" data-i18n="viewport.limitedTitle">Limited experience</h2>
+      <p id="viewport-alert-desc" data-i18n="viewport.limitedBody">
+        This library is designed for a wide screen: annotate, read, and consult side by side. On this device you get the book and notes only — no research links.
+      </p>
+      <button type="button" class="viewport-dismiss" id="viewport-alert-dismiss" data-i18n="viewport.dismiss">Dismiss</button>
+    </div>
+  </div>
+
+  <script async src="https://hypothes.is/embed.js"></script>
+  <script type="module" src="{{ASSET_PREFIX}}js/reader/main.js"></script>
+</body>
+</html>

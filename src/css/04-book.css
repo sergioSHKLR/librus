@@ -1,21 +1,69 @@
 /* ==========================================================================
- * Block 1 of 1 — Book body typography (stub)
- * Description: Reader article styles; expanded when body.html lands (PR 3)
+ * Block 1 of 1 — Book body typography + provider link chrome
+ * Description: Article reading styles and wide-mode research link colors
  * Version: 1.a
- * Revised: 260710 16:30
+ * Revised: 260710 17:00
  * ========================================================================== */
+
+.book-root {
+  min-height: 100%;
+}
 
 .book {
   max-width: 42rem;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 4rem;
+  font-family: var(--font-book);
   font-size: calc(1rem * var(--font-scale));
   line-height: var(--line-height);
+  color: var(--text);
 }
 
 .book h1,
 .book h2,
-.book h3 {
+.book h3,
+.book h4 {
   line-height: 1.25;
   font-weight: 600;
+}
+
+.book-meta {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.book-stub {
+  padding: 2rem 1.25rem;
+  color: var(--text-muted);
+}
+
+/* Wide: colored provider links */
+html[data-layout='wide'] .book a[data-link-provider='l'] {
+  color: var(--provider-luz);
+}
+html[data-layout='wide'] .book a[data-link-provider='w'] {
+  color: var(--provider-wiki);
+}
+html[data-layout='wide'] .book a[data-link-provider='d'] {
+  color: var(--provider-dict);
+}
+html[data-layout='wide'] .book a[data-link-provider='m'] {
+  color: var(--provider-map);
+}
+
+html[data-layout='wide'] .book a[data-link-provider] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+mark.search-hit {
+  background: var(--mark-bg);
+  color: inherit;
+  padding: 0 0.1em;
+  border-radius: 2px;
+}
+
+mark.search-hit.is-active {
+  outline: 2px solid var(--accent);
 }

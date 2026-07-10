@@ -14,5 +14,8 @@
   "theme.tipLight": "Tema: claro — clique para escuro",
   "theme.tipDark": "Tema: escuro — clique para sistema",
   "theme.tipSystem": "Tema: sistema — clique para claro",
-  "common.loading": "Carregando…"
+  "common.loading": "Carregando…",
+  "reader.search": "Buscar…",
+  "reader.fontSize": "Tamanho do texto",
+  "reader.selectedTerm": "termo_selecionado"
 }

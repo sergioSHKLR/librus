@@ -14,5 +14,8 @@
   "theme.tipLight": "Theme: light — click for dark",
   "theme.tipDark": "Theme: dark — click for system",
   "theme.tipSystem": "Theme: system — click for light",
-  "common.loading": "Loading…"
+  "common.loading": "Loading…",
+  "reader.search": "Search…",
+  "reader.fontSize": "Text size",
+  "reader.selectedTerm": "selected_term"
 }
