@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 2 — Reader three-pane shell (wide)
- * Description: Fixed viewport; per-pane scroll (librus-nano pattern)
- * Version: 1.b
- * Revised: 260710 19:30
+ * Description: Fixed viewport; per-pane scroll; Links dropdown on main toolbar
+ * Version: 1.c
+ * Revised: 260710 21:00
  * ========================================================================== */
 
 /* Lock document scroll — only panel interiors scroll */
@@ -88,11 +88,45 @@ body.page-reader {
   box-sizing: border-box;
 }
 
-.panel-toolbar-row2 {
-  height: auto;
-  min-height: var(--toolbar-height);
-  flex-wrap: wrap;
-  row-gap: 4px;
+.toolbar-menu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.toolbar-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 40;
+  min-width: 11.5rem;
+  padding: 0.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.toolbar-dropdown.is-hidden {
+  display: none;
+}
+
+.toolbar-dropdown-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.toolbar-dropdown-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .toolbar-book-title {
@@ -161,7 +195,7 @@ html[data-layout='narrow'] .middle-panel {
   max-width: 100%;
 }
 
-html[data-layout='narrow'] .panel-toolbar-row2 {
+html[data-layout='narrow'] #links-menu {
   display: none !important;
 }
 
@@ -246,14 +280,6 @@ html[data-layout='narrow'] .book-root a[href^='m:'] {
   border: 0;
 }
 
-.link-toolbar-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin-right: 0.25rem;
-  flex-shrink: 0;
-}
-
 .provider-toggle.is-off {
   opacity: 0.4;
 }
@@ -263,4 +289,5 @@ html[data-layout='narrow'] .book-root a[href^='m:'] {
   font-weight: 700;
   letter-spacing: 0.04em;
   min-width: 2.25rem;
+  text-align: center;
 }

@@ -4,8 +4,8 @@
   <!--
     Block 1 of 2 — reader document head
     Description: Meta, CSS modules, Hypothesis boot for book shell
-    Version: 1.b
-    Revised: 260710 19:30
+    Version: 1.c
+    Revised: 260710 21:00
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -34,9 +34,9 @@
 >
   <!--
     Block 2 of 2 — reader body panes
-    Description: notes | main (2 toolbars) | consult; per-pane scroll
-    Version: 1.b
-    Revised: 260710 19:30
+    Description: notes | main (toolbar + Links menu) | consult; library home; font only
+    Version: 1.c
+    Revised: 260710 21:00
   -->
   <div class="reader-container" id="app">
     <aside class="left-panel" id="left-panel" aria-label="Notes">
@@ -63,16 +63,40 @@
         <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size">
           <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
-      </div>
-
-      <div class="panel-toolbar panel-toolbar-row2" id="link-toolbar" aria-label="Link controls">
-        <span class="link-toolbar-label" data-i18n="reader.links">Links</span>
-        <button type="button" class="toolbar-btn" id="btn-density-cycle" title="Link density" aria-label="Link density">
-          <span id="density-toggle-label" class="density-chip">MED</span>
-        </button>
-        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" title="Luz" aria-pressed="true">L</button>
-        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" title="Wikipedia" aria-pressed="true">W</button>
-        <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" title="Wiktionary" aria-pressed="true">D</button>
+        <div class="toolbar-menu" id="links-menu">
+          <button
+            type="button"
+            class="toolbar-btn"
+            id="btn-links-menu"
+            title="Links"
+            aria-label="Links"
+            aria-expanded="false"
+            aria-controls="links-menu-panel"
+            data-i18n-title="reader.links"
+          >
+            <span id="links-menu-chip" class="density-chip">MED</span>
+          </button>
+          <div
+            id="links-menu-panel"
+            class="toolbar-dropdown is-hidden"
+            role="menu"
+            aria-label="Link controls"
+            hidden
+          >
+            <div class="toolbar-dropdown-row">
+              <span class="toolbar-dropdown-label" data-i18n="settings.density">Link density</span>
+              <button type="button" class="toolbar-btn" id="btn-density-cycle" title="Link density" aria-label="Link density">
+                <span id="density-toggle-label" class="density-chip">MED</span>
+              </button>
+            </div>
+            <div class="toolbar-dropdown-row" role="group" aria-label="Providers">
+              <span class="toolbar-dropdown-label" data-i18n="settings.providers">Providers</span>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" title="Luz" aria-pressed="true" role="menuitemcheckbox">L</button>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" title="Wikipedia" aria-pressed="true" role="menuitemcheckbox">W</button>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" title="Wiktionary" aria-pressed="true" role="menuitemcheckbox">D</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="toc-panel" class="toc-panel is-hidden" role="navigation" aria-label="Contents" hidden>
@@ -106,12 +130,6 @@
           <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" title="Wikipedia" aria-label="Wikipedia">W</button>
           <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">D</button>
         </div>
-        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
-          <img src="{{ASSET_PREFIX}}icons/settings.svg" class="toolbar-icon" alt="" width="20" height="20" />
-        </button>
-        <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
-          <img src="{{ASSET_PREFIX}}icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
-        </button>
       </div>
       <div class="context-iframe-container">
         <div class="context-loading-overlay is-hidden" id="context-loading-overlay" aria-hidden="true">

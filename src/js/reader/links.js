@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — reader/links.js
- * Description: Density + provider toggles (second toolbar row) for baked links
- * Version: 1.b
- * Revised: 260710 19:30
+ * Description: Density + provider toggles in Links dropdown (wide only)
+ * Version: 1.c
+ * Revised: 260710 21:00
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';
@@ -15,6 +15,21 @@ function interestVisible(density, interest) {
   if (density === 'hi') return true;
   if (density === 'med') return i === 'hi' || i === 'med';
   return i === 'hi';
+}
+
+function setMenuOpen(open) {
+  const btn = document.getElementById('btn-links-menu');
+  const panel = document.getElementById('links-menu-panel');
+  if (!btn || !panel) return;
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  panel.classList.toggle('is-hidden', !open);
+  if (open) panel.removeAttribute('hidden');
+  else panel.setAttribute('hidden', '');
+}
+
+function isMenuOpen() {
+  const btn = document.getElementById('btn-links-menu');
+  return btn?.getAttribute('aria-expanded') === 'true';
 }
 
 /** @param {ReturnType<typeof loadSettings>} settings */
@@ -44,22 +59,37 @@ export function applyLinkFilters(settings) {
     });
   }
 
+  const densText = density.toUpperCase();
   const label = document.getElementById('density-toggle-label');
-  if (label) label.textContent = density.toUpperCase();
+  if (label) label.textContent = densText;
+  const chip = document.getElementById('links-menu-chip');
+  if (chip) chip.textContent = densText;
 
   document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
     const code = btn.getAttribute('data-provider-code');
     const on = providers[code] !== false;
     btn.classList.toggle('is-off', !on);
     btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.setAttribute('aria-checked', on ? 'true' : 'false');
   });
+
+  const menu = document.getElementById('links-menu');
+  if (menu) menu.hidden = !wide;
+  if (!wide) setMenuOpen(false);
 }
 
 export function wireLinkFilters() {
   let settings = loadSettings();
   applyLinkFilters(settings);
 
-  document.getElementById('btn-density-cycle')?.addEventListener('click', () => {
+  document.getElementById('btn-links-menu')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!computeIsWide()) return;
+    setMenuOpen(!isMenuOpen());
+  });
+
+  document.getElementById('btn-density-cycle')?.addEventListener('click', (e) => {
+    e.stopPropagation();
     if (!computeIsWide()) return;
     settings = loadSettings();
     let idx = DENSITY_ORDER.indexOf(settings.linkDensity || 'med');
@@ -70,7 +100,8 @@ export function wireLinkFilters() {
   });
 
   document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
       if (!computeIsWide()) return;
       const code = btn.getAttribute('data-provider-code');
       if (!code) return;
@@ -80,6 +111,20 @@ export function wireLinkFilters() {
       settings = saveSettings(settings);
       applyLinkFilters(settings);
     });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!isMenuOpen()) return;
+    const menu = document.getElementById('links-menu');
+    if (menu && e.target instanceof Node && menu.contains(e.target)) return;
+    setMenuOpen(false);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isMenuOpen()) {
+      setMenuOpen(false);
+      document.getElementById('btn-links-menu')?.focus();
+    }
   });
 
   document.addEventListener('nano:layout-change', () => {

@@ -14,11 +14,24 @@ Three panes (librus-nano model):
 
 Provider links in the text open the consult pane.
 
+### Main toolbar chrome
+
+| Control | Role |
+|---------|------|
+| Library | Home (cover grid) |
+| Search + prev/next | In-book find |
+| Contents | TOC panel |
+| Text size | Cycle font scale (saved) |
+| **Links** (density chip) | Dropdown: density LO/MED/HI + providers L/W/D |
+
+Theme and the full settings panel are **library-only**. Reader does not host them.
+
 ## Narrow (tablet / phone)
 
 - **Main book only** + **Hypothesis standard sidebar** (no custom container)  
 - **No consult pane**  
 - **Zero provider links** in the text (research is desktop-only)  
+- **Links** menu hidden  
 - Fullscreen notice: limited experience; **Dismiss** stored in `localStorage`
 
 Mobile is for consulting your notes and reading — not for research.

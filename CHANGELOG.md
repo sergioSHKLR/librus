@@ -13,3 +13,4 @@
 - PR 5: settings panel, library pack export/import, PWA SW + force update, version badge  
 - Fix: About/Help/Legal/Code pages; Lucide brand (columns-3); reader per-pane scroll; Hypo full-bleed; library home link; second link toolbar  
 - Fix: dark-mode icon invert; settings without theme; maps pack folded into wikipedia  
+- Fix: reader chrome — drop theme/settings from reader; keep font size; Links dropdown (density + L/W/D); library stays home  
