@@ -1,0 +1,53 @@
+/* ==========================================================================
+ * Block 1 of 1 — Design tokens
+ * Description: :root CSS variables for theme, type, panes (L.I.B.R.U.S)
+ * Version: 1.a
+ * Revised: 260710 16:00
+ * ========================================================================== */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8f8f8;
+  --text: #333333;
+  --text-muted: #666666;
+  --border: #dddddd;
+  --accent: #0066cc;
+  --mark-bg: #fff3a8;
+  --toolbar-height: 40px;
+  --pane-min: 500px;
+  --layout-wide-min: 1200px;
+  --font-scale: 1;
+  --line-height: 1.6;
+  --provider-luz: #804200;
+  --provider-wiki: #0047ab;
+  --provider-dict: #0d5c0d;
+  --provider-map: #9b1b30;
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-book: var(--font-ui);
+}
+
+:root[data-theme='dark'] {
+  --bg: #1a1a1a;
+  --surface: #242424;
+  --text: #eeeeee;
+  --text-muted: #aaaaaa;
+  --border: #333333;
+  --accent: #4da6ff;
+  --mark-bg: #5c4d00;
+  --provider-luz: #ffab40;
+  --provider-wiki: #7ec8ff;
+  --provider-dict: #7bd88f;
+  --provider-map: #ffa8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #1a1a1a;
+    --surface: #242424;
+    --text: #eeeeee;
+    --text-muted: #aaaaaa;
+    --border: #333333;
+    --accent: #4da6ff;
+    --mark-bg: #5c4d00;
+  }
+}

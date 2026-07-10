@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Block 1 of 2 — library document head
+    Description: Meta, brand title, tokens CSS for library shell
+    Version: 1.a
+    Revised: 260710 16:00
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L.I.B.R.U.S — Library</title>
+  <meta name="description" content="L.I.B.R.U.S — annotate / read / consult" />
+  <link rel="stylesheet" href="css/00-tokens.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      line-height: var(--line-height);
+    }
+    header {
+      padding: 1.5rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      letter-spacing: 0.06em;
+    }
+    header p {
+      margin: 0.35rem 0 0;
+      color: var(--text-muted);
+    }
+    main {
+      padding: 1.25rem;
+      max-width: 48rem;
+    }
+    .scaffold-note {
+      padding: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Block 2 of 2 — library body
+    Description: Scaffold library chrome; books arrive in later PRs
+    Version: 1.a
+    Revised: 260710 16:00
+  -->
+  <header>
+    <h1 data-i18n="brand">L.I.B.R.U.S</h1>
+    <p data-i18n="tagline">annotate / read / consult</p>
+  </header>
+  <main>
+    <div class="scaffold-note">
+      <p data-i18n="library.empty">No books yet. Build will add LDE first.</p>
+      <p><small>PR 0 scaffold · <code>npm run check</code> · <code>npm run build</code></small></p>
+    </div>
+  </main>
+  <script type="module">
+    import { runIntegrityDebug } from './js/shared/integrity.js';
+    import { BRAND, TAGLINE } from './js/shared/constants.js';
+    document.title = BRAND + ' — Library';
+    runIntegrityDebug();
+    console.info(BRAND, TAGLINE, 'scaffold ready');
+  </script>
+</body>
+</html>

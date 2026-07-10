@@ -1,0 +1,13 @@
+{
+  "brand": "L.I.B.R.U.S",
+  "tagline": "annotate / read / consult",
+  "library.title": "Library",
+  "library.empty": "No books yet. Build will add LDE first.",
+  "library.settings": "Settings",
+  "viewport.limitedTitle": "Limited experience",
+  "viewport.limitedBody": "This library is designed for a wide screen: annotate, read, and consult side by side. On this device you get the book and notes only — no research links.",
+  "viewport.dismiss": "Dismiss",
+  "settings.language": "Language",
+  "settings.theme": "Theme",
+  "common.loading": "Loading…"
+}

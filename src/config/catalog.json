@@ -1,0 +1,12 @@
+{
+  "brand": "L.I.B.R.U.S",
+  "tagline": "annotate / read / consult",
+  "books": [
+    {
+      "slug": "lde",
+      "path": "content/books/lde/book.md",
+      "enabled": false,
+      "note": "Enabled in PR 3 when LDE content and compile land"
+    }
+  ]
+}

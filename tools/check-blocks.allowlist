@@ -1,0 +1,6 @@
+# Paths relative to repo root (one per line). Exempt from block-header checks.
+# Tiny glue, generated, or third-party dumps only.
+package.json
+package-lock.json
+requirements.txt
+.gitignore

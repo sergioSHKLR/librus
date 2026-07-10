@@ -1,0 +1,13 @@
+{
+  "brand": "L.I.B.R.U.S",
+  "tagline": "anotar / ler / consultar",
+  "library.title": "Biblioteca",
+  "library.empty": "Ainda sem livros. O build incluirá o LDE primeiro.",
+  "library.settings": "Configurações",
+  "viewport.limitedTitle": "Experiência limitada",
+  "viewport.limitedBody": "Esta biblioteca foi feita para tela larga: anotar, ler e consultar lado a lado. Neste dispositivo você tem o livro e as notas — sem links de pesquisa.",
+  "viewport.dismiss": "Dispensar",
+  "settings.language": "Idioma",
+  "settings.theme": "Tema",
+  "common.loading": "Carregando…"
+}

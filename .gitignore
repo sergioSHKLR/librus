@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.Python
+
+# Build output (never commit — build locally / CI)
+public/
+.cache/
+
+# Env / editor
+.env
+.env.*
+.DS_Store
+*.swp
+.idea/
+.vscode/
+*.log
+
+# Python
+*.egg-info/
+dist/
+build/
