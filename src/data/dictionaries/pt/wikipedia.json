@@ -4,7 +4,7 @@
   "source": "pt.wikipedia.org",
   "priority": "secondary",
   "version": "0.3",
-  "description": "Artigos da Wikipédia em português — figuras, obras e conceitos para corpora em PT.",
+  "description": "Artigos da Wikipédia em português — figuras, obras e conceitos para corpora em PT. Place names folded from maps.json (OpenStreetMap pack) as Wikipedia targets.",
   "entries": [
     {
       "term": "Abraão",
@@ -549,11 +549,14 @@
     },
     {
       "term": "França",
-      "aliases": [],
+      "aliases": [
+        "France"
+      ],
       "url": "https://pt.wikipedia.org/wiki/Fran%C3%A7a",
       "lang": "pt",
       "interest": "med",
-      "completeness": "med"
+      "completeness": "med",
+      "domain": "place"
     },
     {
       "term": "Franz Mesmer",
@@ -949,11 +952,16 @@
     },
     {
       "term": "Lyon",
-      "aliases": [],
+      "aliases": [
+        "Lyon",
+        "Lyons, France",
+        "Lyons"
+      ],
       "url": "https://pt.wikipedia.org/wiki/Lyon",
       "lang": "pt",
       "interest": "med",
-      "completeness": "med"
+      "completeness": "med",
+      "domain": "place"
     },
     {
       "term": "Maria",
@@ -1115,7 +1123,8 @@
       "url": "https://pt.wikipedia.org/wiki/Paris",
       "lang": "pt",
       "interest": "med",
-      "completeness": "med"
+      "completeness": "med",
+      "domain": "place"
     },
     {
       "term": "Paulo",
@@ -1458,6 +1467,460 @@
       "lang": "pt",
       "interest": "med",
       "completeness": "med"
+    },
+    {
+      "term": "221B Baker Street",
+      "aliases": [
+        "221B",
+        "221b Baker Street"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/221B_Baker_Street",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Baker Street",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Baker_Street",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Londres",
+      "aliases": [
+        "Londres",
+        "London"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Londres",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Westminster",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Westminster",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Whitehall",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Whitehall",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Scotland Yard",
+      "aliases": [
+        "New Scotland Yard"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Scotland_Yard",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "The Strand",
+      "aliases": [
+        "Strand"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/The_Strand",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Piccadilly",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Piccadilly",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Regent Street",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Regent_Street",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Oxford Street",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Oxford_Street",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Hyde Park",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Hyde_Park",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "St. James's Hall",
+      "aliases": [
+        "St James's Hall",
+        "St. James Hall"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/St._James%27s_Hall",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Paddington",
+      "aliases": [
+        "Paddington Station"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Paddington",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Waterloo Station",
+      "aliases": [
+        "Waterloo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Waterloo_Station",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Charing Cross",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Charing_Cross",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Aldersgate",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Aldersgate",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Holborn",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Holborn",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Brixton",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Brixton",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Camberwell",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Camberwell",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Norwood",
+      "aliases": [
+        "South Norwood",
+        "Upper Norwood"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Norwood",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Dartmoor",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Dartmoor",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Baskerville Hall",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Baskerville_Hall",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Montmartre",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Montmartre",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Bordeaux",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Bordeaux",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Marselha",
+      "aliases": [
+        "Marseilles",
+        "Marseille"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Marselha",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Genebra",
+      "aliases": [
+        "Genève",
+        "Genebra",
+        "Geneva"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Genebra",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Roma",
+      "aliases": [
+        "Roma",
+        "Rome"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Roma",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Jerusalém",
+      "aliases": [
+        "Jerusalém",
+        "Jerusalem"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jerusal%C3%A9m",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Egito",
+      "aliases": [
+        "Egito",
+        "Égypte",
+        "Egypt"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Egito",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Índia",
+      "aliases": [
+        "Índia",
+        "India"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%8Dndia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Rio de Janeiro",
+      "aliases": [
+        "Rio"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Rio_de_Janeiro",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "São Paulo",
+      "aliases": [
+        "Sao Paulo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Lisboa",
+      "aliases": [
+        "Lisboa",
+        "Lisbon"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Lisboa",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Porto",
+      "aliases": [
+        "Oporto"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Porto",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Madrid",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Madrid",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Viena",
+      "aliases": [
+        "Viena",
+        "Wien",
+        "Vienna"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Viena",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Berlim",
+      "aliases": [
+        "Berlim",
+        "Berlin"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Berlim",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Nova Iorque",
+      "aliases": [
+        "New York City",
+        "NYC",
+        "New York"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Nova_Iorque",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Oceano Atlântico",
+      "aliases": [
+        "Atlântico",
+        "the Atlantic",
+        "Atlantic Ocean"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Oceano_Atl%C3%A2ntico",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place",
+      "source_note": "folded from maps.json"
     }
   ],
   "interest_scheme": {

@@ -11,7 +11,7 @@ PROVIDER_CODES: dict[str, str] = {
 }
 
 # Fallback list order when domain is unknown
-PROVIDER_PRIORITY: list[str] = ["luz", "wikipedia", "wiktionary", "maps"]
+PROVIDER_PRIORITY: list[str] = ["luz", "wikipedia", "wiktionary"]
 
 # Term kind → preferred provider order when several providers hit the same span
 DOMAIN_PROVIDER_ORDER: dict[str, list[str]] = {
@@ -21,8 +21,8 @@ DOMAIN_PROVIDER_ORDER: dict[str, list[str]] = {
     "general": ["wikipedia", "luz", "wiktionary"],
     # Word only merits a definition
     "definition": ["wiktionary"],
-    # Place, region, country, city
-    "place": ["maps", "wikipedia", "luz", "wiktionary"],
+    # Place, region, country, city (maps folded into wikipedia pack)
+    "place": ["wikipedia", "luz", "wiktionary"],
 }
 
 DOMAIN_ALIASES: dict[str, str] = {
@@ -51,7 +51,7 @@ PROVIDER_DEFAULT_DOMAIN: dict[str, str] = {
     "luz": "spiritism",
     "wikipedia": "general",
     "wiktionary": "definition",
-    "maps": "place",
+    "maps": "place",  # legacy code still recognized if old MD has m: links
 }
 
 INTEREST_ORDER = {"hi": 0, "med": 1, "lo": 2}

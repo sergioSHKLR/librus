@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Toolbar controls
- * Description: Shared header buttons and icon chrome for library/reader
- * Version: 1.a
- * Revised: 260710 16:30
+ * Description: Shared header buttons; dark-mode invert for Lucide <img> icons
+ * Version: 1.b
+ * Revised: 260710 20:00
  * ========================================================================== */
 
 .toolbar-btn {
@@ -29,15 +29,35 @@
 .toolbar-icon {
   width: 20px;
   height: 20px;
-  /* For Lucide: prefer mask if fill missing — stroke SVGs need currentColor */
   color: var(--text);
 }
 
-.toolbar-btn img.toolbar-icon {
-  filter: none;
+.library-brand-icon {
+  color: var(--text);
 }
 
-/* Invert monochrome icons in dark mode if SVG stroke is black-only */
-:root[data-theme='dark'] .toolbar-btn img.toolbar-icon:not([src*='brand']) {
-  /* stroke currentColor in SVG files — no invert needed when icons use currentColor */
+/*
+ * Lucide icons are loaded as <img> with black strokes — they do not inherit
+ * CSS color. Invert in dark theme (explicit + system).
+ */
+html[data-theme='dark'] .toolbar-icon,
+html[data-theme='dark'] .library-brand-icon,
+html[data-theme='dark'] img.toolbar-icon,
+html[data-theme='dark'] img.library-brand-icon {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme='light']) .toolbar-icon,
+  html:not([data-theme='light']) .library-brand-icon,
+  html:not([data-theme='light']) img.toolbar-icon,
+  html:not([data-theme='light']) img.library-brand-icon {
+    filter: invert(1);
+  }
+}
+
+/* Cover icons already inverted for light-on-gradient — don't double-invert */
+html[data-theme='dark'] .cover-icon,
+html:not([data-theme='light']) .cover-icon {
+  filter: brightness(0) invert(1);
 }

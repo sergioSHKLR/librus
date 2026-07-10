@@ -23,11 +23,12 @@ export function applyLinkFilters(settings) {
   const density = settings.linkDensity || 'med';
   root.setAttribute('data-link-density', density);
 
-  const providers = settings.linkProviders || { l: true, w: true, d: true, m: true };
+  const providers = settings.linkProviders || { l: true, w: true, d: true };
   root.setAttribute('data-link-l', providers.l !== false ? '1' : '0');
   root.setAttribute('data-link-w', providers.w !== false ? '1' : '0');
   root.setAttribute('data-link-d', providers.d !== false ? '1' : '0');
-  root.setAttribute('data-link-m', providers.m !== false ? '1' : '0');
+  /* maps folded into wikipedia — hide legacy m: links with density/provider off */
+  root.setAttribute('data-link-m', '0');
 
   const book = document.getElementById('book-root');
   const wide = computeIsWide();
@@ -74,7 +75,7 @@ export function wireLinkFilters() {
       const code = btn.getAttribute('data-provider-code');
       if (!code) return;
       settings = loadSettings();
-      if (!settings.linkProviders) settings.linkProviders = { l: true, w: true, d: true, m: true };
+      if (!settings.linkProviders) settings.linkProviders = { l: true, w: true, d: true };
       settings.linkProviders[code] = settings.linkProviders[code] === false;
       settings = saveSettings(settings);
       applyLinkFilters(settings);

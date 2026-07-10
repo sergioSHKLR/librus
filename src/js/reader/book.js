@@ -44,7 +44,8 @@ function resolveProviderHref(a) {
       l: 'https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=',
       w: 'https://pt.wikipedia.org/wiki/',
       d: 'https://pt.wiktionary.org/wiki/',
-      m: 'https://www.openstreetmap.org/search?query='
+      /* legacy m: → Wikipedia (maps pack folded) */
+      m: 'https://pt.wikipedia.org/wiki/'
     };
     return (bases[code] || '') + slug;
   }

@@ -42,15 +42,14 @@ def main() -> int:
         print(f"error: input not found: {input_path}", file=sys.stderr)
         return 1
 
-    providers = ["wikipedia", "wiktionary", "maps"]
+    providers = ["wikipedia", "wiktionary"]
     dictionaries: dict[str, str] = {
         "wikipedia": str(dicts / "wikipedia.json"),
         "wiktionary": str(dicts / "wiktionary.json"),
-        "maps": str(dicts / "maps.json"),
     }
     luz = dicts / "luz-pedia.json"
     if args.lang == "pt" and luz.is_file():
-        providers = ["luz", "wikipedia", "wiktionary", "maps"]
+        providers = ["luz", "wikipedia", "wiktionary"]
         dictionaries["luz"] = str(luz)
 
     for name, path in list(dictionaries.items()):

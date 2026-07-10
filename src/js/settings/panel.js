@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — settings/panel.js
- * Description: Settings overlay — theme, type, density, export/import, updates
- * Version: 1.a
- * Revised: 260710 18:30
+ * Description: Settings overlay — lang, type, density, export/import (theme via toolbar only)
+ * Version: 1.b
+ * Revised: 260710 20:00
  */
 
 import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from '../shared/storage.js';
@@ -54,8 +54,6 @@ export function closeSettings() {
 function syncForm(settings) {
   const lang = $('settings-lang');
   if (lang) lang.value = settings.lang || 'en';
-  const theme = $('settings-theme');
-  if (theme) theme.value = settings.theme || 'system';
   const font = $('settings-font');
   if (font) font.value = String(settings.fontScale ?? 1);
   const lh = $('settings-line-height');
@@ -63,7 +61,7 @@ function syncForm(settings) {
   const dens = $('settings-density');
   if (dens) dens.value = settings.linkDensity || 'med';
   const prov = settings.linkProviders || {};
-  ['l', 'w', 'd', 'm'].forEach((code) => {
+  ['l', 'w', 'd'].forEach((code) => {
     const el = $('settings-prov-' + code);
     if (el) el.checked = prov[code] !== false;
   });
@@ -74,8 +72,7 @@ function syncForm(settings) {
 function readForm() {
   const settings = loadSettings();
   settings.lang = $('settings-lang')?.value === 'pt' ? 'pt' : 'en';
-  const th = $('settings-theme')?.value;
-  settings.theme = th === 'light' || th === 'dark' ? th : 'system';
+  /* theme stays toolbar-only; preserve existing */
   const fs = Number($('settings-font')?.value);
   settings.fontScale = FONT_SCALES.includes(fs) ? fs : 1;
   const line = Number($('settings-line-height')?.value);
@@ -85,8 +82,7 @@ function readForm() {
   settings.linkProviders = {
     l: !!$('settings-prov-l')?.checked,
     w: !!$('settings-prov-w')?.checked,
-    d: !!$('settings-prov-d')?.checked,
-    m: !!$('settings-prov-m')?.checked
+    d: !!$('settings-prov-d')?.checked
   };
   return settings;
 }
@@ -176,13 +172,6 @@ export function ensureSettingsDom() {
       <label class="settings-row"><span data-i18n="settings.language">Language</span>
         <select id="settings-lang"><option value="en">English</option><option value="pt">Português</option></select>
       </label>
-      <label class="settings-row"><span data-i18n="settings.theme">Theme</span>
-        <select id="settings-theme">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </label>
       <label class="settings-row"><span data-i18n="settings.fontSize">Font size</span>
         <select id="settings-font">
           <option value="0.875">S</option>
@@ -210,7 +199,6 @@ export function ensureSettingsDom() {
         <label><input type="checkbox" id="settings-prov-l" checked /> Luz (l)</label>
         <label><input type="checkbox" id="settings-prov-w" checked /> Wiki (w)</label>
         <label><input type="checkbox" id="settings-prov-d" checked /> Dict (d)</label>
-        <label><input type="checkbox" id="settings-prov-m" checked /> Map (m)</label>
       </fieldset>
       <p class="settings-note" data-i18n="settings.notesNote">Notes live in your Hypothes.is account (not exported here).</p>
       <div class="settings-actions">

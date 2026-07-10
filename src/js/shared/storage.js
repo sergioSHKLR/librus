@@ -18,7 +18,7 @@ export function defaultSettings() {
     fontScale: 1,
     lineHeight: 1.6,
     linkDensity: 'med',
-    linkProviders: { l: true, w: true, d: true, m: true }
+    linkProviders: { l: true, w: true, d: true }
   };
 }
 

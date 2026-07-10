@@ -47,8 +47,9 @@ html[data-layout='wide'] .book a[data-link-provider='w'] {
 html[data-layout='wide'] .book a[data-link-provider='d'] {
   color: var(--provider-dict);
 }
+/* maps (m) folded into wikipedia — style legacy m links as wiki */
 html[data-layout='wide'] .book a[data-link-provider='m'] {
-  color: var(--provider-map);
+  color: var(--provider-wiki);
 }
 
 html[data-layout='wide'] .book a[data-link-provider] {

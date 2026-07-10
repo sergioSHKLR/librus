@@ -51,8 +51,9 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Dictionaries: `src/data/dictionaries/pt/`. Package: `tools/linker/`.  
-If the linker fails, build continues with unlinked source (WARN).
+Dictionaries: `src/data/dictionaries/pt/` (`luz-pedia`, `wikipedia`, `wiktionary`).  
+Place names from the old maps pack are folded into `wikipedia.json`.  
+Package: `tools/linker/`. If the linker fails, build continues with unlinked source (WARN).
 
 ## Output
 

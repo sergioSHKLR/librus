@@ -12,3 +12,4 @@
 - PR 4: vendored doutrina-linker, PT dictionaries, cache-only link step, density toggle (LO/MED/HI)  
 - PR 5: settings panel, library pack export/import, PWA SW + force update, version badge  
 - Fix: About/Help/Legal/Code pages; Lucide brand (columns-3); reader per-pane scroll; Hypo full-bleed; library home link; second link toolbar  
+- Fix: dark-mode icon invert; settings without theme; maps pack folded into wikipedia  
