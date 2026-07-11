@@ -243,8 +243,28 @@ No git remote yet in early local history; add `origin` when ready to publish.
 
 - Display: **L∙I∙B∙R∙U∙S** (Unicode DOT OPERATOR U+2219)  
 - Short / app: **LIBRUS** (`manifest.short_name`)  
-- Favicon: Lucide **columns-3**, transparent; black stroke (light) / white stroke (dark via `prefers-color-scheme`)  
-- Theme icon on library only  
+- **All UI icons are [Lucide](https://lucide.dev)** (ISC), 24×24 stroke, under `src/icons/`  
+
+| File | Lucide name | Used for |
+|------|-------------|----------|
+| `brand.svg` / `favicon.svg` | `columns-3` | Brand + tab icon |
+| `book.svg` | `book` | Cover cards |
+| `book-open.svg` | `book-open` | Library home (reader) |
+| `book-a.svg` | `book-a` | Wiktionary provider |
+| `lightbulb.svg` | `lightbulb` | Luz provider |
+| `globe.svg` | `globe` | Wikipedia provider |
+| `link.svg` | `link` | Links menu |
+| `settings.svg` | `settings` | Settings |
+| `device.svg` | `smartphone` | Theme: system |
+| `sun.svg` / `moon.svg` | `sun` / `moon` | Theme: light / dark |
+| `text-size.svg` | `type` | Font size |
+| `toc.svg` | `list` | Contents |
+| `up.svg` / `down.svg` | `chevron-up` / `chevron-down` | Search prev/next |
+| `back.svg` | `arrow-left` | Context back |
+| `reload.svg` | `refresh-cw` | Context reload |
+| `close.svg` | `x` | Close panels |
+
+Theme control: **library toolbar only**.
 
 ---
 
