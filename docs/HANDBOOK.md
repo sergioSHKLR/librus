@@ -112,6 +112,19 @@ Build prints a checklist (never interactive):
 
 End of build reports **`public/` total size in MB** (plus major subfolders).
 
+### Link stats (per book)
+
+After link + compile, build prints **total** and **unique** provider links:
+
+| Line | Meaning |
+|------|---------|
+| `report candidates` | Unique dictionary targets chosen in phase 1 (by `l`/`w`/`d`) |
+| `report phase-1 match hits` | All scan positions (if multi-hit) |
+| `links {slug} (linked MD)` | Short links baked into cache MD — total vs unique targets |
+| `links {slug} (body.html)` | Final HTML `data-link-provider` anchors — **what the reader sees** |
+
+**Policy today:** the linker bakes **at most one link per concept×provider** in the whole book (`max_same_article_per_document: 1`). So **total ≈ unique** (no thousands of repeated “Deus” / “Espírito” anchors). Raising repeats is a density/insert config change, not a counting bug.
+
 ### Maps / providers
 
 Place names from the old maps pack are folded into `wikipedia.json`. UI providers: **L / W / D** only.

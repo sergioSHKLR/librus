@@ -26,11 +26,19 @@ def render_link_md(
     term_label: str,
     interest: str = "med",
 ) -> str:
-    """[text](l:Espírito "l:lo") — UTF-8 slug, no full URL in source."""
+    """[text](l:Espírito "l:lo") — UTF-8 slug, no full URL in source.
+
+    Destinations with spaces/parens use CommonMark <...> form so markdown-it
+    does not truncate multi-word Luz/Wiki titles.
+    """
     label = _escape_md_label(matched)
     title = _meta_title(provider, interest)
     href = short_href(provider, slug)
-    return f'[{label}]({href} "{title}")'
+    if re.search(r"[\s()]", href):
+        dest = f"<{href}>"
+    else:
+        dest = href
+    return f'[{label}]({dest} "{title}")'
 
 
 def render_link_html(

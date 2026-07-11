@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/markdown-to-html.mjs
  * Description: MD → HTML + TOC; short links l/w/d/m; containers; footnotes
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.b
+ * Revised: 11Jul26
  */
 
 import MarkdownIt from 'markdown-it';
@@ -98,12 +98,14 @@ function applyLinkAttrs(md, lang) {
     const hrefIdx = token.attrIndex('href');
     if (hrefIdx >= 0) {
       const href = token.attrs[hrefIdx][1] || '';
-      const short = href.match(/^([lwdm]):(.+)$/);
+      /* markdown-it may keep angle-bracket dest as l:… or strip <> */
+      const short = href.match(/^<?([lwdm]):(.+?)>?$/);
       if (short) {
         const code = short[1];
         const slug = short[2];
         const base = bases[code] || '';
-        token.attrs[hrefIdx][1] = base + slug;
+        /* Encode path/query segment; spaces in Luz item= titles must not break */
+        token.attrs[hrefIdx][1] = base + encodeURIComponent(slug);
         token.attrSet('data-link-provider', code);
         token.attrSet('data-doutrina-link', '1');
       }

@@ -1,7 +1,7 @@
 /**
  * Block 1 of 1 — tools/build.mjs
- * Description: check → preflight → link → compile → stamp; public size summary
- * Version: 1.f
+ * Description: check → preflight → link → compile → link stats → stamp
+ * Version: 1.g
  * Revised: 11Jul26
  */
 
@@ -167,7 +167,119 @@ function linkBook(entry, mdPath) {
     console.warn(`  WARN  linker failed for ${entry.slug} — compiling unlinked source`);
     return mdPath;
   }
+  logLinkerReportStats(entry.slug, report);
+  logMarkdownLinkStats(entry.slug, outMd);
   return outMd;
+}
+
+const PROVIDER_LABELS = { l: 'luz', w: 'wiki', d: 'dict', m: 'maps' };
+
+/** Format "l:12 w:8 d:3 (total 23)" */
+function formatByCode(map) {
+  const parts = ['l', 'w', 'd', 'm']
+    .filter((c) => (map[c] || 0) > 0)
+    .map((c) => `${c}:${map[c]}`);
+  const total = ['l', 'w', 'd', 'm'].reduce((s, c) => s + (map[c] || 0), 0);
+  return `${parts.join(' ') || '—'}  (total ${total})`;
+}
+
+/**
+ * Count baked provider links in compiled body.html.
+ * total = every <a data-link-provider>; unique = distinct href per code.
+ */
+function countHtmlProviderLinks(html) {
+  const totals = { l: 0, w: 0, d: 0, m: 0 };
+  const uniques = { l: new Set(), w: new Set(), d: new Set(), m: new Set() };
+  const re = /<a\b[^>]*\bdata-link-provider="([lwdm])"[^>]*>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const code = m[1];
+    const tag = m[0];
+    const hrefM = /\bhref="([^"]*)"/i.exec(tag);
+    const href = hrefM ? hrefM[1] : `#${totals[code]}`;
+    totals[code] += 1;
+    uniques[code].add(href);
+  }
+  return {
+    total: totals,
+    unique: {
+      l: uniques.l.size,
+      w: uniques.w.size,
+      d: uniques.d.size,
+      m: uniques.m.size
+    }
+  };
+}
+
+/** Short-link form in linked MD: ](l:Target "l:med") etc. */
+function countMarkdownProviderLinks(md) {
+  const totals = { l: 0, w: 0, d: 0, m: 0 };
+  const uniques = { l: new Set(), w: new Set(), d: new Set(), m: new Set() };
+  /* [text](l:slug) or [text](<l:slug with spaces> "l:med") */
+  const re = /\]\(\s*<?([lwdm]):([^>"\)]+?)>?(?:\s+"[^"]*")?\s*\)/g;
+  let m;
+  while ((m = re.exec(md)) !== null) {
+    const code = m[1];
+    const target = m[2].trim();
+    totals[code] += 1;
+    uniques[code].add(target);
+  }
+  return {
+    total: totals,
+    unique: {
+      l: uniques.l.size,
+      w: uniques.w.size,
+      d: uniques.d.size,
+      m: uniques.m.size
+    }
+  };
+}
+
+function sumCodes(map) {
+  return ['l', 'w', 'd', 'm'].reduce((s, c) => s + (map[c] || 0), 0);
+}
+
+function logLinkStatsBlock(title, stats) {
+  console.log(`  ${title}`);
+  console.log(`    total   ${formatByCode(stats.total)}`);
+  console.log(`    unique  ${formatByCode(stats.unique)}`);
+}
+
+function logLinkerReportStats(slug, reportPath) {
+  if (!fs.existsSync(reportPath)) return;
+  try {
+    const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+    const meta = report.meta || {};
+    const byProv = (report.stats && report.stats.candidates_by_provider) || {};
+    const codes = { l: 0, w: 0, d: 0, m: 0 };
+    const nameToCode = { luz: 'l', wikipedia: 'w', wiktionary: 'd', maps: 'm' };
+    for (const [name, n] of Object.entries(byProv)) {
+      const c = nameToCode[name] || name[0];
+      if (codes[c] != null) codes[c] += Number(n) || 0;
+    }
+    /* match_count = sum of occurrence hits in phase-1 scan; candidate_count = unique targets */
+    const cand = meta.candidate_count ?? Object.values(codes).reduce((a, b) => a + b, 0);
+    const matches = meta.match_count ?? cand;
+    console.log(`  report  candidates (unique targets) ${formatByCode(codes)}`);
+    console.log(`  report  phase-1 match hits (all positions) total ${matches} · unique targets ${cand}`);
+    if (matches <= cand) {
+      console.log(
+        `  note    linker scans/bakes ≤1 use per concept×provider (no repeated links for same term)`
+      );
+    }
+  } catch (err) {
+    console.warn(`  WARN  could not read link report: ${err.message || err}`);
+  }
+}
+
+function logMarkdownLinkStats(slug, mdPath) {
+  if (!fs.existsSync(mdPath)) return;
+  const md = fs.readFileSync(mdPath, 'utf8');
+  logLinkStatsBlock(`links ${slug} (linked MD)`, countMarkdownProviderLinks(md));
+}
+
+function logHtmlLinkStats(slug, html) {
+  logLinkStatsBlock(`links ${slug} (body.html)`, countHtmlProviderLinks(html));
 }
 
 /**
@@ -223,6 +335,18 @@ function compileBooks(catalog) {
     fs.writeFileSync(path.join(outDir, 'toc.json'), JSON.stringify(result.toc, null, 2) + '\n');
     const imgs = mirrorBookImages(srcBookDir, outDir);
     if (imgs) console.log(`  images: ${imgs}`);
+    const htmlStats = countHtmlProviderLinks(result.html);
+    logLinkStatsBlock(`links ${entry.slug} (body.html)`, htmlStats);
+    if (compileFrom !== mdPath && fs.existsSync(compileFrom)) {
+      const mdStats = countMarkdownProviderLinks(fs.readFileSync(compileFrom, 'utf8'));
+      const mdN = sumCodes(mdStats.total);
+      const htmlN = sumCodes(htmlStats.total);
+      if (mdN !== htmlN) {
+        console.warn(
+          `  WARN  ${entry.slug}: linked MD has ${mdN} provider links but body.html has ${htmlN} (MD→HTML drop)`
+        );
+      }
+    }
 
     const m = result.meta;
     libraryBooks.push({
