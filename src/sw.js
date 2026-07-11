@@ -2,7 +2,7 @@
  * Block 1 of 1 — sw.js
  * Description: Shell cache + SKIP_WAITING for force update
  * Version: 1.a
- * Revised: 260710 18:30
+ * Revised: 10Jul26
  */
 
 const CACHE = 'nano-ssg-shell-260711a';

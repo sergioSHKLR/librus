@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/context.js
  * Description: Consult pane iframe navigation and provider buttons (wide only)
  * Version: 1.a
- * Revised: 260710 17:00
+ * Revised: 10Jul26
  */
 
 import { assetBase } from '../shared/paths.js';

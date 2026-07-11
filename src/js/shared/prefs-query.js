@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/prefs-query.js
  * Description: URL query → settings (write-through localStorage)
  * Version: 1.a
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from './storage.js';

@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/toc.js
  * Description: Load toc.json and render sumário overlay (H1–H2)
  * Version: 1.a
- * Revised: 260710 17:30
+ * Revised: 10Jul26
  */
 
 let open = false;

@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/integrity.js
  * Description: Debug-only console summary of public/integrity.json
  * Version: 1.a
- * Revised: 260710 16:00
+ * Revised: 10Jul26
  */
 
 export async function runIntegrityDebug() {

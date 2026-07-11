@@ -2,7 +2,7 @@
  * Block 1 of 1 — settings/panel.js
  * Description: App settings — language + pack I/O (type/links live on reader)
  * Version: 1.c
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';

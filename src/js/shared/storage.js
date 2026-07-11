@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/storage.js
  * Description: Load/save nano-ssg-settings with safe defaults
  * Version: 1.a
- * Revised: 260710 16:30
+ * Revised: 10Jul26
  */
 
 import { STORAGE_KEY } from './constants.js';

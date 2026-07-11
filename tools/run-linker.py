@@ -2,7 +2,7 @@
 """Block 1 of 1 — tools/run-linker.py
 Description: Run report+insert for one book into .cache/linked (source untouched)
 Version: 1.a
-Revised: 260710 18:00
+Revised: 10Jul26
 """
 
 from __future__ import annotations

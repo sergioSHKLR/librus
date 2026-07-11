@@ -219,7 +219,7 @@ Only chrome strings. Book text is not translated by this system. Content `lang` 
 Every major CSS / HTML / JS block uses a numbered header.
 
 **Version:** major = number, minor = letter(s) → `1.a`, `1.b`  
-**Revised:** `YYMMDD HH:MM`
+**Revised:** `DDMMMYY` (e.g. `11Jul26`)
 
 `npm run check` enforces headers under `src/` and `tools/`.
 

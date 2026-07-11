@@ -2,7 +2,7 @@
  * Block 1 of 1 — settings/update.js
  * Description: Service worker update banner + force update
  * Version: 1.a
- * Revised: 260710 18:30
+ * Revised: 10Jul26
  */
 
 import { assetBase } from '../shared/paths.js';

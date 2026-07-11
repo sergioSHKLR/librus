@@ -2,7 +2,7 @@
  * Block 1 of 1 — tools/build.mjs
  * Description: check → preflight → link → compile → stamp; public size summary
  * Version: 1.f
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { spawnSync } from 'node:child_process';

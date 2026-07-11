@@ -2,7 +2,7 @@
  * Block 1 of 1 — library/site.js
  * Description: Apply stored theme on About / Help / Legal (no theme control)
  * Version: 1.b
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { loadSettings } from '../shared/storage.js';

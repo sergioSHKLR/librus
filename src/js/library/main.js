@@ -2,7 +2,7 @@
  * Block 1 of 1 — library/main.js
  * Description: Library home — i18n, theme button, settings, cover grid
  * Version: 1.b
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { BRAND, TAGLINE } from '../shared/constants.js';

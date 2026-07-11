@@ -2,7 +2,7 @@
  * Block 1 of 1 — tools/compile-md.mjs
  * Description: Front matter normalize + MD compile + image mirror per book
  * Version: 1.b
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import fs from 'node:fs';

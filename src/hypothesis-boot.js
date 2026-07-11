@@ -2,7 +2,7 @@
  * Block 1 of 1 — hypothesis-boot.js
  * Description: Early theme + hypothesisConfig (wide: external pane; narrow: standard)
  * Version: 1.a
- * Revised: 260710 17:00
+ * Revised: 10Jul26
  */
 (function () {
   'use strict';

@@ -2,7 +2,7 @@
  * Block 1 of 1 — settings/export-import.js
  * Description: Library + settings JSON export/import (no Hypothesis notes)
  * Version: 1.a
- * Revised: 260710 18:30
+ * Revised: 10Jul26
  */
 
 import { STORAGE_KEY, VIEWPORT_ALERT_KEY } from '../shared/constants.js';

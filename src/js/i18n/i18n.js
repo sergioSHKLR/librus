@@ -2,7 +2,7 @@
  * Block 1 of 1 — i18n/i18n.js
  * Description: Load EN/PT UI strings and apply data-i18n attributes
  * Version: 1.a
- * Revised: 260710 16:00
+ * Revised: 10Jul26
  */
 
 const cache = new Map();

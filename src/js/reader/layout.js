@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/layout.js
  * Description: Wide/narrow layout mode + limited-experience viewport alert
  * Version: 1.a
- * Revised: 260710 17:00
+ * Revised: 10Jul26
  */
 
 import { LAYOUT_WIDE_MIN, VIEWPORT_ALERT_KEY } from '../shared/constants.js';

@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/constants.js
  * Description: Storage keys, brand, layout thresholds for L∙I∙B∙R∙U∙S
  * Version: 1.b
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 /** Display brand (DOT OPERATOR U+2219). Short name: LIBRUS */

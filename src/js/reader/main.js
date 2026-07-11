@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/main.js
  * Description: Boot reader — layout, type controls, Links; no settings/theme chrome
  * Version: 1.c
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from '../shared/storage.js';

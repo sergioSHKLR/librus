@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/search.js
  * Description: In-book text search with mark highlights
  * Version: 1.a
- * Revised: 260710 17:00
+ * Revised: 10Jul26
  */
 
 let hits = [];

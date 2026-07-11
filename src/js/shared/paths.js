@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/paths.js
  * Description: Asset base + robust library-home URL (avoid relative 404s)
  * Version: 1.b
- * Revised: 260711 12:00
+ * Revised: 11Jul26
  */
 
 export function assetBase() {

@@ -2,7 +2,7 @@
  * Block 1 of 2 — Reader three-pane shell (wide)
  * Description: Fixed viewport; per-pane scroll; Links dropdown on main toolbar
  * Version: 1.c
- * Revised: 260710 21:00
+ * Revised: 10Jul26
  * ========================================================================== */
 
 /* Lock document scroll — only panel interiors scroll */
@@ -177,7 +177,7 @@ body.page-reader {
  * Block 2 of 2 — Narrow mode + viewport alert
  * Description: Main fills viewport; zero research links; limited-experience overlay
  * Version: 1.b
- * Revised: 260710 19:30
+ * Revised: 10Jul26
  * ========================================================================== */
 
 html[data-layout='narrow'] .right-panel {

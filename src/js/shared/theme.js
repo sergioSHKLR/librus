@@ -2,7 +2,7 @@
  * Block 1 of 1 — shared/theme.js
  * Description: Apply light/dark/system theme and cycle helper
  * Version: 1.a
- * Revised: 260710 16:30
+ * Revised: 10Jul26
  */
 
 export function isEffectivelyDark(theme) {

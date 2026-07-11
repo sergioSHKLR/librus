@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/links.js
  * Description: Density + provider toggles in Links dropdown (wide only)
  * Version: 1.c
- * Revised: 260710 21:00
+ * Revised: 10Jul26
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';

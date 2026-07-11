@@ -2,7 +2,7 @@
  * Block 1 of 1 — reader/book.js
  * Description: Fetch body.html into book-root; wire in-book links (wide consult)
  * Version: 1.a
- * Revised: 260710 17:00
+ * Revised: 10Jul26
  */
 
 import { computeIsWide } from './layout.js';

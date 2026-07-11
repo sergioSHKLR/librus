@@ -2,7 +2,7 @@
  * Block 1 of 1 — tools/check-blocks.mjs
  * Description: PASS/FAIL scanner for sequential block headers in CSS/JS/HTML
  * Version: 1.a
- * Revised: 260710 16:00
+ * Revised: 11Jul26
  */
 
 import fs from 'node:fs';
@@ -16,7 +16,9 @@ const HEADER_RE =
   /(?:\/\*[\s\S]*?Block\s+(\d+)\s+of\s+(\d+)\s*[—\-–]\s*([^\n*]+)[\s\S]*?Description:\s*([^\n*]+)[\s\S]*?Version:\s*([^\n*]+)[\s\S]*?Revised:\s*([^\n*]+)[\s\S]*?\*\/)|(?:<!--[\s\S]*?Block\s+(\d+)\s+of\s+(\d+)\s*[—\-–]\s*([^\n]+)[\s\S]*?Description:\s*([^\n]+)[\s\S]*?Version:\s*([^\n]+)[\s\S]*?Revised:\s*([^\n]+)[\s\S]*?-->)|(?:\/\*\*[\s\S]*?Block\s+(\d+)\s+of\s+(\d+)\s*[—\-–]\s*([^\n*]+)[\s\S]*?Description:\s*([^\n*]+)[\s\S]*?Version:\s*([^\n*]+)[\s\S]*?Revised:\s*([^\n*]+)[\s\S]*?\*\/)/gi;
 
 const VERSION_RE = /^[0-9]+\.[a-z]+$/;
-const REVISED_RE = /^\d{6}\s+\d{2}:\d{2}$/;
+/** DDMMMYY e.g. 11Jul26 (day 01–31, English month abbr, 2-digit year) */
+const REVISED_RE =
+  /^(0[1-9]|[12]\d|3[01])(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\d{2}$/;
 
 const SCAN_EXTS = new Set(['.css', '.js', '.mjs', '.html']);
 const SKIP_DIRS = new Set([
@@ -89,7 +91,7 @@ function checkFile(rel, content) {
       fails.push(`block ${b.n}: Version "${b.version}" (want number.letter e.g. 1.a)`);
     }
     if (!REVISED_RE.test(b.revised)) {
-      fails.push(`block ${b.n}: Revised "${b.revised}" (want YYMMDD HH:MM)`);
+      fails.push(`block ${b.n}: Revised "${b.revised}" (want DDMMMYY e.g. 11Jul26)`);
     }
   }
 

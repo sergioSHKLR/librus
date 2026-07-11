@@ -2,7 +2,7 @@
  * Block 1 of 1 — tools/markdown-to-html.mjs
  * Description: MD → HTML + TOC; short links l/w/d/m; containers; footnotes
  * Version: 1.a
- * Revised: 260710 17:30
+ * Revised: 10Jul26
  */
 
 import MarkdownIt from 'markdown-it';
