@@ -244,6 +244,7 @@ No git remote yet in early local history; add `origin` when ready to publish.
 - Display: **L∙I∙B∙R∙U∙S** (Unicode DOT OPERATOR U+2219)  
 - Short / app: **LIBRUS** (`manifest.short_name`)  
 - **All UI icons are [Lucide](https://lucide.dev)** (ISC), 24×24 stroke, under `src/icons/`  
+- **No inline SVGs** in HTML/JS — always external files via `<img src="…/icons/….svg">` (or `href` for favicon). Do not paste Lucide markup into templates.  
 
 | File | Lucide name | Used for |
 |------|-------------|----------|

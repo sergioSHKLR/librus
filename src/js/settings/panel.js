@@ -1,7 +1,7 @@
 /**
  * Block 1 of 1 — settings/panel.js
  * Description: App settings — language + pack I/O (type/links live on reader)
- * Version: 1.c
+ * Version: 1.d
  * Revised: 11Jul26
  */
 
@@ -11,6 +11,7 @@ import { downloadExportPack, importExportPack, clearSiteData } from './export-im
 import { forceUpdate } from './update.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
 import { t, applyI18n } from '../i18n/i18n.js';
+import { assetBase } from '../shared/paths.js';
 
 let strings = {};
 let themeUi = {};
@@ -139,11 +140,14 @@ export function ensureSettingsDom() {
   panel.hidden = true;
   panel.setAttribute('role', 'dialog');
   panel.setAttribute('aria-modal', 'true');
+  const closeIcon = assetBase() + 'icons/close.svg';
   panel.innerHTML = `
   <div class="settings-card">
     <header class="settings-header">
       <h2 id="settings-title" data-i18n="settings.title">Settings</h2>
-      <button type="button" class="toolbar-btn" id="btn-settings-close" aria-label="Close">×</button>
+      <button type="button" class="toolbar-btn" id="btn-settings-close" aria-label="Close">
+        <img src="${closeIcon}" class="toolbar-icon" alt="" width="20" height="20" />
+      </button>
     </header>
     <div class="settings-body">
       <label class="settings-row"><span data-i18n="settings.language">Language</span>
