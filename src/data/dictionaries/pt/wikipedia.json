@@ -3,8 +3,8 @@
   "language": "pt",
   "source": "pt.wikipedia.org",
   "priority": "secondary",
-  "version": "0.3",
-  "description": "Artigos da Wikipédia em português — figuras, obras e conceitos para corpora em PT. Place names folded from maps.json (OpenStreetMap pack) as Wikipedia targets.",
+  "version": "0.4",
+  "description": "Artigos da Wikipédia em português — figuras, obras e conceitos para corpora em PT. Place names folded from maps.json (OpenStreetMap pack) as Wikipedia targets. Expanded ideologies and places (Kardec/biblical/Europe-Americas).",
   "entries": [
     {
       "term": "Abraão",
@@ -1921,6 +1921,1358 @@
       "completeness": "med",
       "domain": "place",
       "source_note": "folded from maps.json"
+    },
+    {
+      "term": "Materialismo",
+      "aliases": [
+        "materialismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Materialismo",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Espiritismo",
+      "aliases": [
+        "espiritismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Espiritismo",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "spiritism"
+    },
+    {
+      "term": "Cristianismo",
+      "aliases": [
+        "cristianismo",
+        "cristão",
+        "cristãos"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Cristianismo",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Catolicismo",
+      "aliases": [
+        "catolicismo",
+        "católico",
+        "católicos"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Catolicismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Protestantismo",
+      "aliases": [
+        "protestantismo",
+        "protestante"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Protestantismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Judaísmo",
+      "aliases": [
+        "judaismo",
+        "judeu",
+        "judeus"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Juda%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Islão",
+      "aliases": [
+        "Islamismo",
+        "islã",
+        "muçulmano",
+        "muçulmanos"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Isl%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Budismo",
+      "aliases": [
+        "budismo",
+        "budista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Budismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Hinduísmo",
+      "aliases": [
+        "hinduismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Hindu%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Panteísmo",
+      "aliases": [
+        "panteismo",
+        "panteísta"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Pante%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Deísmo",
+      "aliases": [
+        "deismo",
+        "deísta"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/De%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Ateísmo",
+      "aliases": [
+        "ateismo",
+        "ateu",
+        "ateus"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ate%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Agnosticismo",
+      "aliases": [
+        "agnosticismo",
+        "agnóstico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Agnosticismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Dualismo",
+      "aliases": [
+        "dualismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Dualismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Monismo",
+      "aliases": [
+        "monismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Monismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Idealismo",
+      "aliases": [
+        "idealismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Idealismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Empirismo",
+      "aliases": [
+        "empirismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Empirismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Racionalismo",
+      "aliases": [
+        "racionalismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Racionalismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Romantismo",
+      "aliases": [
+        "romantismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Romantismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Escolástica",
+      "aliases": [
+        "escolastica"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Escol%C3%A1stica",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Estoicismo",
+      "aliases": [
+        "estoicismo",
+        "estoico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Estoicismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Epicurismo",
+      "aliases": [
+        "epicurismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Epicurismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Platonismo",
+      "aliases": [
+        "platonismo",
+        "platônico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Platonismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Gnosticismo",
+      "aliases": [
+        "gnosticismo",
+        "gnóstico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gnosticismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Misticismo",
+      "aliases": [
+        "misticismo",
+        "místico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Misticismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Ocultismo",
+      "aliases": [
+        "ocultismo",
+        "ocultista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ocultismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Teosofia",
+      "aliases": [
+        "teosofia",
+        "teosófico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Teosofia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Magnetismo animal",
+      "aliases": [
+        "magnetismo animal",
+        "Mesmerismo",
+        "mesmerismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Magnetismo_animal",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Socialismo",
+      "aliases": [
+        "socialismo",
+        "socialista"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Socialismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Comunismo",
+      "aliases": [
+        "comunismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Comunismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Liberalismo",
+      "aliases": [
+        "liberalismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Liberalismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Humanismo",
+      "aliases": [
+        "humanismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Humanismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Determinismo",
+      "aliases": [
+        "determinismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Determinismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Fatalismo",
+      "aliases": [
+        "fatalismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Fatalismo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Livre-arbítrio",
+      "aliases": [
+        "livre arbítrio",
+        "livre-arbitrio"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Livre-arb%C3%ADtrio",
+      "lang": "pt",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Julgamento final",
+      "aliases": [
+        "juízo final",
+        "Juízo Final"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Julgamento_final",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Ressurreição",
+      "aliases": [
+        "ressurreicao"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ressurrei%C3%A7%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Trindade",
+      "aliases": [
+        "Santíssima Trindade",
+        "trindade"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Trindade",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Monoteísmo",
+      "aliases": [
+        "monoteismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Monote%C3%ADsmo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Politeísmo",
+      "aliases": [
+        "politeismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Polite%C3%ADsmo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Animismo",
+      "aliases": [
+        "animismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Animismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Fetichismo",
+      "aliases": [
+        "fetichismo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Fetichismo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Idolatria",
+      "aliases": [
+        "idolatria"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Idolatria",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Superstição",
+      "aliases": [
+        "supersticao",
+        "superstições"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Supersti%C3%A7%C3%A3o",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Milagre",
+      "aliases": [
+        "milagres"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Milagre",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Profecia",
+      "aliases": [
+        "profecias"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Profecia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Apocalipse",
+      "aliases": [
+        "apocalipse"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Apocalipse",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Éden",
+      "aliases": [
+        "Eden",
+        "Paraíso terrestre"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%89den",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Dilúvio",
+      "aliases": [
+        "diluvio",
+        "Dilúvio universal"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Dil%C3%BAvio",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Êxodo",
+      "aliases": [
+        "Exodo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%8Axodo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Sermão da Montanha",
+      "aliases": [
+        "sermao da montanha"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Serm%C3%A3o_da_Montanha",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Decálogo",
+      "aliases": [
+        "decalogo",
+        "Dez Mandamentos"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Dec%C3%A1logo",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Essênios",
+      "aliases": [
+        "essênio",
+        "essenios"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Ess%C3%AAnios",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Ásia",
+      "aliases": [
+        "Asia"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%81sia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "África",
+      "aliases": [
+        "Africa"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%81frica",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "América",
+      "aliases": [
+        "America",
+        "Américas"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Am%C3%A9rica",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "América do Norte",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Am%C3%A9rica_do_Norte",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "América do Sul",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Am%C3%A9rica_do_Sul",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Oceania",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Oceania",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Oriente",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Oriente",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Ocidente",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Ocidente",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Oriente Médio",
+      "aliases": [
+        "Oriente Medio",
+        "Médio Oriente"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Oriente_M%C3%A9dio",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Inglaterra",
+      "aliases": [
+        "England"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Inglaterra",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Escócia",
+      "aliases": [
+        "Escocia",
+        "Scotland"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Esc%C3%B3cia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Irlanda",
+      "aliases": [
+        "Ireland"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Irlanda",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Alemanha",
+      "aliases": [
+        "Germany"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Alemanha",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Munique",
+      "aliases": [
+        "Munich"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Munique",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Áustria",
+      "aliases": [
+        "Austria"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/%C3%81ustria",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Suíça",
+      "aliases": [
+        "Suica",
+        "Switzerland"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Su%C3%AD%C3%A7a",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Itália",
+      "aliases": [
+        "Italia",
+        "Italy"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/It%C3%A1lia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Veneza",
+      "aliases": [
+        "Venice"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Veneza",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Florença",
+      "aliases": [
+        "Florence"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Floren%C3%A7a",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Nápoles",
+      "aliases": [
+        "Naples"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/N%C3%A1poles",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Espanha",
+      "aliases": [
+        "Spain"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Espanha",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Barcelona",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Barcelona",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Portugal",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Portugal",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Brasil",
+      "aliases": [
+        "Brazil"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Brasil",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Boston",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Boston",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Filadélfia",
+      "aliases": [
+        "Filadelfia",
+        "Philadelphia"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Filad%C3%A9lfia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Canadá",
+      "aliases": [
+        "Canada"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Canad%C3%A1",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "México",
+      "aliases": [
+        "Mexico"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/M%C3%A9xico",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Argentina",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Argentina",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Chile",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Chile",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Peru",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Peru",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Rússia",
+      "aliases": [
+        "Russia"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/R%C3%BAssia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Moscou",
+      "aliases": [
+        "Moscow",
+        "Moscovo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Moscou",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "São Petersburgo",
+      "aliases": [
+        "Sao Petersburgo",
+        "Petersburgo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/S%C3%A3o_Petersburgo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "China",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/China",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Japão",
+      "aliases": [
+        "Japao",
+        "Japan"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jap%C3%A3o",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Cairo",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Cairo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Palestina",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Palestina",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Judeia",
+      "aliases": [
+        "Judea"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Judeia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Galileia",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Galileia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Nazaré",
+      "aliases": [
+        "Nazare"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Nazar%C3%A9",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Belém",
+      "aliases": [
+        "Bethlehem"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Bel%C3%A9m",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Jericó",
+      "aliases": [
+        "Jericho"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Jeric%C3%B3",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Babilônia",
+      "aliases": [
+        "Babilonia",
+        "Babilónia"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Babil%C3%B4nia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Pérsia",
+      "aliases": [
+        "Persia"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/P%C3%A9rsia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Grécia",
+      "aliases": [
+        "Grecia",
+        "Greece"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Gr%C3%A9cia",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Atenas",
+      "aliases": [
+        "Athens"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Atenas",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Esparta",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Esparta",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Turquia",
+      "aliases": [
+        "Turkey"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Turquia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Constantinopla",
+      "aliases": [
+        "Istambul",
+        "Istanbul",
+        "Bizâncio"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Constantinopla",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Mar Mediterrâneo",
+      "aliases": [
+        "Mediterrâneo",
+        "Mediterraneo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Mar_Mediterr%C3%A2neo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Mar Morto",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Mar_Morto",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Mar Vermelho",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Mar_Vermelho",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Rio Jordão",
+      "aliases": [
+        "Jordão"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Rio_Jord%C3%A3o",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Rio Nilo",
+      "aliases": [
+        "Nilo"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Rio_Nilo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Rio Sena",
+      "aliases": [
+        "Sena",
+        "Seine"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Rio_Sena",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Alpes",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Alpes",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Polônia",
+      "aliases": [
+        "Polonia",
+        "Poland"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Pol%C3%B4nia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Bélgica",
+      "aliases": [
+        "Belgica",
+        "Belgium"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/B%C3%A9lgica",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Holanda",
+      "aliases": [
+        "Países Baixos",
+        "Netherlands"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Holanda",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Suécia",
+      "aliases": [
+        "Suecia",
+        "Sweden"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Su%C3%A9cia",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Noruega",
+      "aliases": [
+        "Norway"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Noruega",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Dinamarca",
+      "aliases": [
+        "Denmark"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Dinamarca",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Hungria",
+      "aliases": [
+        "Hungary"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Hungria",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Império Romano",
+      "aliases": [
+        "Imperio Romano"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Romano",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Império Otomano",
+      "aliases": [
+        "Imperio Otomano"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Otomano",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Terra Santa",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Terra_Santa",
+      "lang": "pt",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "place"
+    },
+    {
+      "term": "Estrasburgo",
+      "aliases": [
+        "Strasbourg"
+      ],
+      "url": "https://pt.wikipedia.org/wiki/Estrasburgo",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
+    },
+    {
+      "term": "Toulouse",
+      "aliases": [],
+      "url": "https://pt.wikipedia.org/wiki/Toulouse",
+      "lang": "pt",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "place"
     }
   ],
   "interest_scheme": {

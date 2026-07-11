@@ -127,7 +127,11 @@ After link + compile, build prints **total** and **unique** provider links:
 
 ### Maps / providers
 
-Place names from the old maps pack are folded into `wikipedia.json`. UI providers: **L / W / D** only.
+Place names from the old maps pack are folded into `wikipedia.json` (plus expanded ideologies/places). Wiktionary holds literary/coloquial PT lemmas. UI providers: **L / W / D** only.
+
+### Related terms (`::: expand`)
+
+LDE sections end with `::: expand 📑 Termos relacionados` blocks. Build renders them as **native `<details>` collapsibles** (closed by default). Class `related-terms-block` for styling.
 
 ---
 

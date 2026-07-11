@@ -3,8 +3,8 @@
   "language": "pt",
   "source": "pt.wiktionary.org",
   "baseUrl": "https://pt.wiktionary.org/wiki/",
-  "version": "0.3",
-  "description": "Definições em português (provedor de primeira classe). Vocabulário que merece definição, não artigo de enciclopédia.",
+  "version": "0.4",
+  "description": "Definições em português (provedor de primeira classe). Vocabulário que merece definição, não artigo de enciclopédia. Expanded literary/coloquial PT lemmas for LDE-era prose.",
   "entries": [
     {
       "term": "agênere",
@@ -389,6 +389,1986 @@
       "lang": "pt",
       "type": "definition",
       "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "porquanto",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/porquanto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "anfibologia",
+      "aliases": [
+        "anfibologias"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/anfibologia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "centelha",
+      "aliases": [
+        "centelhas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/centelha",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "anímico",
+      "aliases": [
+        "anímica",
+        "animico",
+        "animica"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/an%C3%ADmico",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "arbítrio",
+      "aliases": [
+        "arbitrio"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/arb%C3%ADtrio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "livre-arbítrio",
+      "aliases": [
+        "livre arbítrio",
+        "livre-arbitrio"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/livre-arb%C3%ADtrio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "faculdade",
+      "aliases": [
+        "faculdades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/faculdade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "órgão",
+      "aliases": [
+        "órgãos",
+        "orgao",
+        "orgaos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/%C3%B3rg%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "entretanto",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/entretanto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "conquanto",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/conquanto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "outrossim",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/outrossim",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "destarte",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/destarte",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "demasia",
+      "aliases": [
+        "demasias"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/demasia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "futilidade",
+      "aliases": [
+        "futilidades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/futilidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "veemência",
+      "aliases": [
+        "veemencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/veem%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "materialismo",
+      "aliases": [
+        "materialista",
+        "materialistas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/materialismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "espiritualismo",
+      "aliases": [
+        "espiritualista",
+        "espiritualistas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/espiritualismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "espírita",
+      "aliases": [
+        "espirita",
+        "espiritista",
+        "espiritistas",
+        "espíritas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/esp%C3%ADrita",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "espiritismo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/espiritismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "reencarnação",
+      "aliases": [
+        "reencarnacao",
+        "reencarnações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/reencarna%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "encarnação",
+      "aliases": [
+        "encarnacao",
+        "encarnações",
+        "encarnado",
+        "encarnada"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/encarna%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "desencarnação",
+      "aliases": [
+        "desencarnacao",
+        "desencarnado",
+        "desencarnada"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/desencarna%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "perfeição",
+      "aliases": [
+        "perfeicao",
+        "perfeições"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/perfei%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "imperfeição",
+      "aliases": [
+        "imperfeicao",
+        "imperfeições"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/imperfei%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "expiar",
+      "aliases": [
+        "expiação",
+        "expiacao",
+        "expiações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/expiar",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "provação",
+      "aliases": [
+        "provacao",
+        "provações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/prova%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "sofrimento",
+      "aliases": [
+        "sofrimentos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sofrimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "felicidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/felicidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "miséria",
+      "aliases": [
+        "miseria",
+        "misérias"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/mis%C3%A9ria",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "paixão",
+      "aliases": [
+        "paixao",
+        "paixões",
+        "paixoes"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/paix%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fluido",
+      "aliases": [
+        "fluidos",
+        "fluídico",
+        "fluidico"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/fluido",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "médium",
+      "aliases": [
+        "medium",
+        "médiuns",
+        "mediuns"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/m%C3%A9dium",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "mediunidade",
+      "aliases": [
+        "mediunidades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/mediunidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "evocação",
+      "aliases": [
+        "evocacao",
+        "evocações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/evoca%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "aparição",
+      "aliases": [
+        "aparicao",
+        "aparições"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/apari%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "manifestação",
+      "aliases": [
+        "manifestacao",
+        "manifestações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/manifesta%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "comunicação",
+      "aliases": [
+        "comunicacao",
+        "comunicações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/comunica%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "intuição",
+      "aliases": [
+        "intuicao",
+        "intuições"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/intui%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "instinto",
+      "aliases": [
+        "instintos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/instinto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "consciência",
+      "aliases": [
+        "consciencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/consci%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "inteligência",
+      "aliases": [
+        "inteligencia",
+        "inteligências"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/intelig%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "vontade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/vontade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fatalidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/fatalidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "destino",
+      "aliases": [
+        "destinos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/destino",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "providência",
+      "aliases": [
+        "providencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/provid%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "infinito",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/infinito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "absoluto",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/absoluto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "relativo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/relativo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "essência",
+      "aliases": [
+        "essencia",
+        "essências"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ess%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "substância",
+      "aliases": [
+        "substancia",
+        "substâncias"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/subst%C3%A2ncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "matéria",
+      "aliases": [
+        "materia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/mat%C3%A9ria",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "imaterial",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/imaterial",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "invisível",
+      "aliases": [
+        "invisivel"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/invis%C3%ADvel",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "visível",
+      "aliases": [
+        "visivel"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/vis%C3%ADvel",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "corpóreo",
+      "aliases": [
+        "corporeo",
+        "corpórea",
+        "corporea"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/corp%C3%B3reo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "incorpóreo",
+      "aliases": [
+        "incorporeo",
+        "incorpórea"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/incorp%C3%B3reo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "imortal",
+      "aliases": [
+        "imortalidade"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/imortal",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "erraticidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/erraticidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "errante",
+      "aliases": [
+        "errantes"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/errante",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "obsessão",
+      "aliases": [
+        "obsessao",
+        "obsessões"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/obsess%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "possessão",
+      "aliases": [
+        "possessao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/possess%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "remorso",
+      "aliases": [
+        "remorsos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/remorso",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "arrependimento",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/arrependimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "perdão",
+      "aliases": [
+        "perdao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/perd%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "justiça",
+      "aliases": [
+        "justica"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/justi%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "injustiça",
+      "aliases": [
+        "injustica"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/injusti%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "equidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/equidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fraternidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/fraternidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "solidariedade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/solidariedade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "altruísmo",
+      "aliases": [
+        "altruismo"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/altru%C3%ADsmo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "egoísta",
+      "aliases": [
+        "egoista"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ego%C3%ADsta",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "avareza",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/avareza",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "cobiça",
+      "aliases": [
+        "cobica"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/cobi%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "luxúria",
+      "aliases": [
+        "luxuria"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/lux%C3%BAria",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "preguiça",
+      "aliases": [
+        "preguica"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/pregui%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "inveja",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/inveja",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "cólera",
+      "aliases": [
+        "colera"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/c%C3%B3lera",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ódio",
+      "aliases": [
+        "odio"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/%C3%B3dio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "afeição",
+      "aliases": [
+        "afeicao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/afei%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ternura",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/ternura",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "compaixão",
+      "aliases": [
+        "compaixao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/compaix%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "piedade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/piedade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "devoção",
+      "aliases": [
+        "devocao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/devo%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "esperança",
+      "aliases": [
+        "esperanca"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/esperan%C3%A7a",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "dúvida",
+      "aliases": [
+        "duvida",
+        "dúvidas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/d%C3%BAvida",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "certeza",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/certeza",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "evidência",
+      "aliases": [
+        "evidencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/evid%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "testemunho",
+      "aliases": [
+        "testemunhos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/testemunho",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "milagre",
+      "aliases": [
+        "milagres"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/milagre",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "prodígio",
+      "aliases": [
+        "prodigio",
+        "prodígios"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/prod%C3%ADgio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fenômeno",
+      "aliases": [
+        "fenomeno",
+        "fenômenos",
+        "fenomenos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/fen%C3%B4meno",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "preceito",
+      "aliases": [
+        "preceitos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/preceito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "virtude",
+      "aliases": [
+        "virtudes"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/virtude",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "vício",
+      "aliases": [
+        "vicio",
+        "vícios"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/v%C3%ADcio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "mérito",
+      "aliases": [
+        "merito"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/m%C3%A9rito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "castigo",
+      "aliases": [
+        "castigos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/castigo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "recompensa",
+      "aliases": [
+        "recompensas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/recompensa",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "paraíso",
+      "aliases": [
+        "paraiso"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/para%C3%ADso",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "inferno",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/inferno",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "purgatório",
+      "aliases": [
+        "purgatorio"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/purgat%C3%B3rio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "demônio",
+      "aliases": [
+        "demonio",
+        "demônios",
+        "demonios"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/dem%C3%B4nio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "satã",
+      "aliases": [
+        "satan",
+        "Satanás",
+        "satanas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sat%C3%A3",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "messias",
+      "aliases": [
+        "Messias"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/messias",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "profeta",
+      "aliases": [
+        "profetas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/profeta",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "apóstolo",
+      "aliases": [
+        "apostolo",
+        "apóstolos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ap%C3%B3stolo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "evangelho",
+      "aliases": [
+        "Evangelho",
+        "evangelhos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/evangelho",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "escritura",
+      "aliases": [
+        "escrituras",
+        "Escrituras"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/escritura",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "religião",
+      "aliases": [
+        "religiao",
+        "religiões"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/religi%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "seita",
+      "aliases": [
+        "seitas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/seita",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "dogma",
+      "aliases": [
+        "dogmas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/dogma",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "rito",
+      "aliases": [
+        "ritos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/rito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "culto",
+      "aliases": [
+        "cultos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/culto",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sacerdote",
+      "aliases": [
+        "sacerdotes"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sacerdote",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "clero",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/clero",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "profano",
+      "aliases": [
+        "profana"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/profano",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sagrado",
+      "aliases": [
+        "sagrada"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sagrado",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "divino",
+      "aliases": [
+        "divina"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/divino",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "criatura",
+      "aliases": [
+        "criaturas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/criatura",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "criador",
+      "aliases": [
+        "Criador"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/criador",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "criação",
+      "aliases": [
+        "criacao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/cria%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "universo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/universo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "planeta",
+      "aliases": [
+        "planetas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/planeta",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "astro",
+      "aliases": [
+        "astros"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/astro",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "eternidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/eternidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "mortalidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/mortalidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "nascimento",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/nascimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "túmulo",
+      "aliases": [
+        "tumulo",
+        "túmulos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/t%C3%BAmulo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "cadáver",
+      "aliases": [
+        "cadaver",
+        "cadáveres"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/cad%C3%A1ver",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "alma",
+      "aliases": [
+        "almas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/alma",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "espírito",
+      "aliases": [
+        "espirito",
+        "espíritos",
+        "espiritos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/esp%C3%ADrito",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "cérebro",
+      "aliases": [
+        "cerebro"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/c%C3%A9rebro",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sensação",
+      "aliases": [
+        "sensacao",
+        "sensações"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sensa%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "percepção",
+      "aliases": [
+        "percepcao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/percep%C3%A7%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "memória",
+      "aliases": [
+        "memoria"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/mem%C3%B3ria",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "esquecimento",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/esquecimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sonho",
+      "aliases": [
+        "sonhos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sonho",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "vigília",
+      "aliases": [
+        "vigilia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/vig%C3%ADlia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "êxtase",
+      "aliases": [
+        "extase"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/%C3%AAxtase",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "transe",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/transe",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "magnetismo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/magnetismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "hipnotismo",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/hipnotismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "sonambulismo",
+      "aliases": [
+        "sonâmbulo",
+        "sonambulo"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sonambulismo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "clarividência",
+      "aliases": [
+        "clarividencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/clarivid%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "clariaudiência",
+      "aliases": [
+        "clariaudiencia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/clariaudi%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "psicografia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/psicografia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "psicofonia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/psicofonia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "tiptologia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/tiptologia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "progresso",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/progresso",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "natureza",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/natureza",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "existência",
+      "aliases": [
+        "existencia",
+        "existências"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/exist%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "doutrina",
+      "aliases": [
+        "doutrinas"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/doutrina",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "princípio",
+      "aliases": [
+        "principio",
+        "princípios"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/princ%C3%ADpio",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "pensamento",
+      "aliases": [
+        "pensamentos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/pensamento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "humanidade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/humanidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "liberdade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/liberdade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "influência",
+      "aliases": [
+        "influencia",
+        "influências"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/influ%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "missão",
+      "aliases": [
+        "missao",
+        "missões"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/miss%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "egoísmo",
+      "aliases": [
+        "egoismo"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ego%C3%ADsmo",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "necessidade",
+      "aliases": [
+        "necessidades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/necessidade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "conclusão",
+      "aliases": [
+        "conclusao"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/conclus%C3%A3o",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "linguagem",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/linguagem",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sentimento",
+      "aliases": [
+        "sentimentos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sentimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "conhecimento",
+      "aliases": [
+        "conhecimentos"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/conhecimento",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ciência",
+      "aliases": [
+        "ciencia",
+        "ciências"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ci%C3%AAncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "filosofia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/filosofia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "moral",
+      "aliases": [
+        "morais"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/moral",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sociedade",
+      "aliases": [
+        "sociedades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/sociedade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "trabalho",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/trabalho",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "repouso",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/repouso",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "velhice",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/velhice",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "infância",
+      "aliases": [
+        "infancia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/inf%C3%A2ncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "juventude",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/juventude",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "madureza",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/madureza",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ignorância",
+      "aliases": [
+        "ignorancia"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/ignor%C3%A2ncia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sabedoria",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/sabedoria",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "verdade",
+      "aliases": [
+        "verdades"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/verdade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "erro",
+      "aliases": [
+        "erros"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/erro",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "mentira",
+      "aliases": [
+        "mentiras"
+      ],
+      "url": "https://pt.wiktionary.org/wiki/mentira",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "hipocrisia",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/hipocrisia",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sinceridade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/sinceridade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "bondade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/bondade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "maldade",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/maldade",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "bem",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/bem",
+      "lang": "pt",
+      "type": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "mal",
+      "aliases": [],
+      "url": "https://pt.wiktionary.org/wiki/mal",
+      "lang": "pt",
+      "type": "definition",
       "interest": "lo",
       "completeness": "lo"
     }

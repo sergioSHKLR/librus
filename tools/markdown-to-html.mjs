@@ -1,7 +1,7 @@
 /**
  * Block 1 of 1 — tools/markdown-to-html.mjs
  * Description: MD → HTML + TOC; short links l/w/d/m; containers; footnotes
- * Version: 1.b
+ * Version: 1.c
  * Revised: 11Jul26
  */
 
@@ -56,10 +56,29 @@ function createMd() {
       render(tokens, idx) {
         if (tokens[idx].nesting === 1) {
           const title = tokens[idx].info.trim().substring(name.length).trim();
+          /* expand / Termos relacionados → native collapsible (closed by default) */
+          if (name === 'expand') {
+            const label = title || 'Expand';
+            const isRelated = /termos\s+relacionados/i.test(label);
+            const cls =
+              'expand-block' + (isRelated ? ' related-terms-block' : '');
+            return (
+              '<details class="' +
+              cls +
+              '">\n' +
+              '<summary class="expand-summary">' +
+              md.utils.escapeHtml(label) +
+              '</summary>\n' +
+              '<div class="expand-body">\n'
+            );
+          }
           const header = title
             ? '<div class="' + name + '-header">' + md.utils.escapeHtml(title) + '</div>'
             : '';
           return '<div class="' + name + '-block">' + header + '<div class="' + name + '-body">\n';
+        }
+        if (name === 'expand') {
+          return '</div></details>\n';
         }
         return '</div></div>\n';
       }

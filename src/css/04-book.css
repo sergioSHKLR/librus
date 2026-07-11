@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Book body typography + provider link chrome
  * Description: Article reading styles and wide-mode research link colors
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.b
+ * Revised: 11Jul26
  * ========================================================================== */
 
 .book-root {
@@ -120,6 +120,61 @@ mark.search-hit.is-active {
 .expand-header {
   font-weight: 600;
   margin-bottom: 0.35rem;
+}
+
+/* Collapsible related-terms / expand containers (::: expand …) */
+details.expand-block {
+  margin: 0.85rem 0 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+details.expand-block > summary.expand-summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 0.85rem;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+details.expand-block > summary.expand-summary::-webkit-details-marker {
+  display: none;
+}
+
+details.expand-block > summary.expand-summary::before {
+  content: '▸';
+  display: inline-block;
+  width: 1rem;
+  color: var(--text-muted);
+  transition: transform 0.12s ease;
+}
+
+details.expand-block[open] > summary.expand-summary::before {
+  transform: rotate(90deg);
+}
+
+details.expand-block > summary.expand-summary:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--surface) 70%, var(--border));
+}
+
+details.expand-block .expand-body {
+  padding: 0.15rem 0.85rem 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+details.related-terms-block .expand-body ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+}
+
+details.related-terms-block .expand-body li {
+  margin: 0.2rem 0;
 }
 .chapter-toc-block,
 .toc-block {
