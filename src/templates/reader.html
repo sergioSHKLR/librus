@@ -35,7 +35,7 @@
   <!--
     Block 2 of 2 — reader body panes
     Description: notes | main (toolbar + Links + font) | consult; library home always
-    Version: 1.e
+    Version: 1.f
     Revised: 11Jul26
   -->
   <div class="reader-container" id="app">
@@ -91,9 +91,15 @@
             </div>
             <div class="toolbar-dropdown-row" role="group" aria-label="Providers">
               <span class="toolbar-dropdown-label" data-i18n="settings.providers">Providers</span>
-              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" title="Luz" aria-pressed="true" role="menuitemcheckbox">L</button>
-              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" title="Wikipedia" aria-pressed="true" role="menuitemcheckbox">W</button>
-              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" title="Wiktionary" aria-pressed="true" role="menuitemcheckbox">D</button>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" title="Luz" aria-label="Luz" aria-pressed="true" role="menuitemcheckbox">
+                <img src="{{ASSET_PREFIX}}icons/lightbulb.svg" class="toolbar-icon" alt="" width="20" height="20" />
+              </button>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" title="Wikipedia" aria-label="Wikipedia" aria-pressed="true" role="menuitemcheckbox">
+                <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
+              </button>
+              <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" title="Wiktionary" aria-label="Wiktionary" aria-pressed="true" role="menuitemcheckbox">
+                <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
+              </button>
             </div>
           </div>
         </div>
@@ -126,9 +132,15 @@
         </button>
         <span id="context-selection" class="context-selection is-placeholder" data-placeholder="selected_term" data-i18n="reader.selectedTerm">selected_term</span>
         <div class="context-provider-buttons" role="group" aria-label="Providers">
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="luzespirita" title="Luz Espírita" aria-label="Luz Espírita">L</button>
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" title="Wikipedia" aria-label="Wikipedia">W</button>
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">D</button>
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="luzespirita" title="Luz Espírita" aria-label="Luz Espírita">
+            <img src="{{ASSET_PREFIX}}icons/lightbulb.svg" class="toolbar-icon" alt="" width="20" height="20" />
+          </button>
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" title="Wikipedia" aria-label="Wikipedia">
+            <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
+          </button>
+          <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" title="Wiktionary" aria-label="Wiktionary">
+            <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
+          </button>
         </div>
       </div>
       <div class="context-iframe-container">

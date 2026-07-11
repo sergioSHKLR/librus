@@ -167,7 +167,7 @@ categories:
 | Search + prev/next | In-book find |
 | Contents | TOC panel |
 | Text size | Cycle font scale → `localStorage` |
-| **Links** (link icon) | Wide only: LO/MED/HI + L/W/D |
+| **Links** (link icon) | Wide only: LO/MED/HI + providers (lightbulb Luz, globe Wiki, book-a Dict) |
 
 No theme or settings on the reader.
 
