@@ -1,29 +1,21 @@
 /**
  * Block 1 of 1 — library/site.js
- * Description: Theme toggle for About / Help / Legal pages
- * Version: 1.a
- * Revised: 260710 19:30
+ * Description: Apply stored theme on About / Help / Legal (no theme control)
+ * Version: 1.b
+ * Revised: 260711 12:00
  */
 
-import { loadSettings, saveSettings } from '../shared/storage.js';
-import { applyTheme, nextTheme } from '../shared/theme.js';
+import { loadSettings } from '../shared/storage.js';
+import { applyTheme } from '../shared/theme.js';
+import { applyQueryToSettings } from '../shared/prefs-query.js';
+import { libraryHomeUrl } from '../shared/paths.js';
 
 function boot() {
-  let settings = loadSettings();
-  const base = document.body.dataset.appBase || '../';
-  applyTheme(settings.theme, {
-    iconEl: document.getElementById('theme-toggle-icon'),
-    btnEl: document.getElementById('btn-theme-toggle'),
-    assetBase: base
-  });
-  document.getElementById('btn-theme-toggle')?.addEventListener('click', () => {
-    settings.theme = nextTheme(settings.theme);
-    settings = saveSettings(settings);
-    applyTheme(settings.theme, {
-      iconEl: document.getElementById('theme-toggle-icon'),
-      btnEl: document.getElementById('btn-theme-toggle'),
-      assetBase: base
-    });
+  const settings = applyQueryToSettings();
+  applyTheme(settings.theme);
+
+  document.querySelectorAll('a[data-library-home], .site-back a').forEach((a) => {
+    a.setAttribute('href', libraryHomeUrl());
   });
 }
 

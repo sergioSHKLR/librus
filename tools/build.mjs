@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/build.mjs
- * Description: check → link (cache) → compile MD → stamp library + readers
- * Version: 1.e
- * Revised: 260710 18:00
+ * Description: check → preflight → link → compile → stamp; public size summary
+ * Version: 1.f
+ * Revised: 260711 12:00
  */
 
 import { spawnSync } from 'node:child_process';
@@ -15,6 +15,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'src');
 const PUBLIC = path.join(ROOT, 'public');
+const BRAND = 'L∙I∙B∙R∙U∙S';
+const TAGLINE = 'annotate to assimilate';
 
 function runCheck() {
   console.log('→ check-blocks');
@@ -50,7 +52,7 @@ function copyRecursive(from, to) {
 
 function readCatalog() {
   const p = path.join(SRC, 'config', 'catalog.json');
-  if (!fs.existsSync(p)) return { brand: 'L.I.B.R.U.S', tagline: 'annotate / read / consult', books: [] };
+  if (!fs.existsSync(p)) return { brand: BRAND, tagline: TAGLINE, books: [] };
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
@@ -74,6 +76,50 @@ function pythonBin() {
   const venv = path.join(ROOT, '.venv', 'bin', 'python');
   if (fs.existsSync(venv)) return venv;
   return 'python3';
+}
+
+/** Log-only authoring checklist (never interactive). */
+function preflight(catalog) {
+  console.log('\n→ preflight (log-only)');
+  console.log('  Have you placed all books as MD at src/content/books/{slug}/book.md?');
+  console.log('  Is front matter valid and complete (title, slug, abstract, categories…)?');
+  console.log('  Catalog entries must match folders; enabled books need readable MD.\n');
+
+  const booksDir = path.join(SRC, 'content', 'books');
+  const diskSlugs = fs.existsSync(booksDir)
+    ? fs
+        .readdirSync(booksDir, { withFileTypes: true })
+        .filter((d) => d.isDirectory())
+        .map((d) => d.name)
+        .sort()
+    : [];
+
+  const catalogSlugs = (catalog.books || []).map((b) => b.slug).filter(Boolean);
+  console.log(`  catalog books: ${catalogSlugs.length} [${catalogSlugs.join(', ') || '—'}]`);
+  console.log(`  disk folders:  ${diskSlugs.length} [${diskSlugs.join(', ') || '—'}]`);
+
+  for (const slug of diskSlugs) {
+    if (!catalogSlugs.includes(slug)) {
+      console.warn(`  WARN  folder books/${slug}/ not listed in catalog.json`);
+    }
+  }
+
+  for (const entry of catalog.books || []) {
+    if (!entry.slug) {
+      console.warn('  WARN  catalog entry missing slug');
+      continue;
+    }
+    const mdPath = resolveMdPath(entry);
+    const rel = path.relative(ROOT, mdPath);
+    if (!fs.existsSync(mdPath)) {
+      console.warn(`  WARN  missing MD: ${rel}`);
+      continue;
+    }
+    const raw = fs.readFileSync(mdPath, 'utf8');
+    const hasFm = raw.startsWith('---');
+    console.log(`  OK    ${entry.slug} → ${rel}${hasFm ? '' : ' (no front matter delimiter)'}`);
+  }
+  console.log('');
 }
 
 /** Cache-only linker: source MD stays clean; output → .cache/linked/{slug}.md */
@@ -155,7 +201,9 @@ function compileBooks(catalog) {
         cover: entry.cover || { colors: ['#4a5568'] },
         enabled: entry.enabled !== false,
         lang: entry.lang || 'pt',
-        license: entry.license || 'unknown'
+        license: entry.license || 'unknown',
+        abstract: entry.abstract || '',
+        categories: entry.categories || []
       });
       continue;
     }
@@ -188,6 +236,8 @@ function compileBooks(catalog) {
       license: m.license,
       copyright: m.copyright || '',
       subtitle: m.subtitle || '',
+      abstract: m.abstract || '',
+      categories: m.categories || [],
       order: m.order != null ? m.order : libraryBooks.length
     });
   }
@@ -206,8 +256,8 @@ function escapeHtml(s) {
 function writeLibraryJson(catalog, libraryBooks) {
   libraryBooks.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   const payload = {
-    brand: catalog.brand || 'L.I.B.R.U.S',
-    tagline: catalog.tagline || 'annotate / read / consult',
+    brand: catalog.brand || BRAND,
+    tagline: catalog.tagline || TAGLINE,
     books: libraryBooks
   };
   fs.writeFileSync(path.join(PUBLIC, 'library.json'), JSON.stringify(payload, null, 2) + '\n');
@@ -245,16 +295,49 @@ function writeIntegrity() {
     buildId: '0.1.0-dev',
     checkedAt: new Date().toISOString(),
     status: 'pass',
-    brand: 'L.I.B.R.U.S',
-    tagline: 'annotate / read / consult',
-    phase: 'pr4-linker'
+    brand: BRAND,
+    tagline: TAGLINE,
+    phase: 'polish-batch'
   };
   fs.writeFileSync(path.join(PUBLIC, 'integrity.json'), JSON.stringify(payload, null, 2) + '\n');
 }
 
+function dirSizeBytes(dir) {
+  let total = 0;
+  if (!fs.existsSync(dir)) return 0;
+  const walk = (p) => {
+    for (const name of fs.readdirSync(p)) {
+      const full = path.join(p, name);
+      const st = fs.statSync(full);
+      if (st.isDirectory()) walk(full);
+      else total += st.size;
+    }
+  };
+  walk(dir);
+  return total;
+}
+
+function formatMb(bytes) {
+  return (bytes / (1024 * 1024)).toFixed(2);
+}
+
+function summarizePublic() {
+  const bytes = dirSizeBytes(PUBLIC);
+  console.log(`\n→ public/ total size: ${formatMb(bytes)} MB (${bytes.toLocaleString()} bytes)`);
+  for (const name of ['books', 'css', 'js', 'icons', 'locales', 'pages'].sort()) {
+    const p = path.join(PUBLIC, name);
+    if (!fs.existsSync(p)) continue;
+    const b = dirSizeBytes(p);
+    console.log(`    ${name}/  ${formatMb(b)} MB`);
+  }
+}
+
 function main() {
-  console.log('L.I.B.R.U.S nano-ssg — build\n');
+  console.log(`${BRAND} nano-ssg — build\n`);
   runCheck();
+
+  const catalog = readCatalog();
+  preflight(catalog);
 
   rimraf(PUBLIC);
   ensureDir(PUBLIC);
@@ -267,7 +350,6 @@ function main() {
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(PUBLIC, f));
   }
 
-  const catalog = readCatalog();
   const { libraryBooks, errors } = compileBooks(catalog);
   if (errors) {
     console.error(`\nBuild aborted: ${errors} book(s) failed front matter / compile`);
@@ -283,7 +365,9 @@ function main() {
 
   stampReaders(libraryBooks);
   writeIntegrity();
+  summarizePublic();
   console.log('\n→ public/ ready');
+  console.log('  Serve document root: public/  (not the repo root)');
   console.log('  npm start  → http://localhost:3000');
   console.log('  reader     → http://localhost:3000/books/lde/\n');
 }

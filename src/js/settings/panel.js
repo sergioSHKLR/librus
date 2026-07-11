@@ -1,12 +1,12 @@
 /**
  * Block 1 of 1 — settings/panel.js
- * Description: Settings overlay — lang, type, density, export/import (theme via toolbar only)
- * Version: 1.b
- * Revised: 260710 20:00
+ * Description: App settings — language + pack I/O (type/links live on reader)
+ * Version: 1.c
+ * Revised: 260711 12:00
  */
 
-import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from '../shared/storage.js';
-import { applyTheme, applyTypography } from '../shared/theme.js';
+import { loadSettings, saveSettings } from '../shared/storage.js';
+import { applyTheme } from '../shared/theme.js';
 import { downloadExportPack, importExportPack, clearSiteData } from './export-import.js';
 import { forceUpdate } from './update.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
@@ -54,17 +54,6 @@ export function closeSettings() {
 function syncForm(settings) {
   const lang = $('settings-lang');
   if (lang) lang.value = settings.lang || 'en';
-  const font = $('settings-font');
-  if (font) font.value = String(settings.fontScale ?? 1);
-  const lh = $('settings-line-height');
-  if (lh) lh.value = String(settings.lineHeight ?? 1.6);
-  const dens = $('settings-density');
-  if (dens) dens.value = settings.linkDensity || 'med';
-  const prov = settings.linkProviders || {};
-  ['l', 'w', 'd'].forEach((code) => {
-    const el = $('settings-prov-' + code);
-    if (el) el.checked = prov[code] !== false;
-  });
   const ver = $('settings-version');
   if (ver) ver.textContent = APP_VERSION + ' · ' + BUILD_ID;
 }
@@ -72,18 +61,7 @@ function syncForm(settings) {
 function readForm() {
   const settings = loadSettings();
   settings.lang = $('settings-lang')?.value === 'pt' ? 'pt' : 'en';
-  /* theme stays toolbar-only; preserve existing */
-  const fs = Number($('settings-font')?.value);
-  settings.fontScale = FONT_SCALES.includes(fs) ? fs : 1;
-  const line = Number($('settings-line-height')?.value);
-  settings.lineHeight = LINE_HEIGHTS.includes(line) ? line : 1.6;
-  const dens = $('settings-density')?.value;
-  settings.linkDensity = ['lo', 'med', 'hi'].includes(dens) ? dens : 'med';
-  settings.linkProviders = {
-    l: !!$('settings-prov-l')?.checked,
-    w: !!$('settings-prov-w')?.checked,
-    d: !!$('settings-prov-d')?.checked
-  };
+  /* theme / type / density stay outside this panel */
   return settings;
 }
 
@@ -98,20 +76,19 @@ export function wireSettingsPanel(opts = {}) {
   wired = true;
 
   document.addEventListener('click', (e) => {
-    const t = e.target;
-    if (!(t instanceof Element)) return;
-    if (t.closest('#btn-settings')) {
+    const tEl = e.target;
+    if (!(tEl instanceof Element)) return;
+    if (tEl.closest('#btn-settings')) {
       e.preventDefault();
       openSettings();
     }
-    if (t.closest('#btn-settings-close') || t.id === 'settings-backdrop') {
+    if (tEl.closest('#btn-settings-close') || tEl.id === 'settings-backdrop') {
       closeSettings();
     }
-    if (t.closest('#settings-apply')) {
+    if (tEl.closest('#settings-apply')) {
       let settings = readForm();
       const prevLang = loadSettings().lang;
       settings = saveSettings(settings);
-      applyTypography(settings);
       applyTheme(settings.theme, themeUi);
       document.dispatchEvent(new CustomEvent('nano:settings-changed', { detail: settings }));
       if (settings.lang !== prevLang) {
@@ -120,10 +97,10 @@ export function wireSettingsPanel(opts = {}) {
       }
       closeSettings();
     }
-    if (t.closest('#settings-export')) downloadExportPack();
-    if (t.closest('#settings-import')) $('settings-import-file')?.click();
-    if (t.closest('#btn-settings-force-update') || t.closest('#btn-force-update')) forceUpdate();
-    if (t.closest('#settings-clear')) {
+    if (tEl.closest('#settings-export')) downloadExportPack();
+    if (tEl.closest('#settings-import')) $('settings-import-file')?.click();
+    if (tEl.closest('#btn-settings-force-update') || tEl.closest('#btn-force-update')) forceUpdate();
+    if (tEl.closest('#settings-clear')) {
       const ok = confirm(t(strings, 'settings.clearConfirm', 'Clear site data and reload?'));
       if (!ok) return;
       clearSiteData().then(() => location.reload());
@@ -131,9 +108,9 @@ export function wireSettingsPanel(opts = {}) {
   });
 
   document.addEventListener('change', async (e) => {
-    const t = e.target;
-    if (!(t instanceof HTMLInputElement) || t.id !== 'settings-import-file') return;
-    const file = t.files && t.files[0];
+    const tEl = e.target;
+    if (!(tEl instanceof HTMLInputElement) || tEl.id !== 'settings-import-file') return;
+    const file = tEl.files && tEl.files[0];
     if (!file) return;
     try {
       const pack = JSON.parse(await file.text());
@@ -145,7 +122,7 @@ export function wireSettingsPanel(opts = {}) {
       const status = $('settings-status');
       if (status) status.textContent = String(err.message || err);
     }
-    t.value = '';
+    tEl.value = '';
   });
 }
 
@@ -172,35 +149,8 @@ export function ensureSettingsDom() {
       <label class="settings-row"><span data-i18n="settings.language">Language</span>
         <select id="settings-lang"><option value="en">English</option><option value="pt">Português</option></select>
       </label>
-      <label class="settings-row"><span data-i18n="settings.fontSize">Font size</span>
-        <select id="settings-font">
-          <option value="0.875">S</option>
-          <option value="1">M</option>
-          <option value="1.125">L</option>
-          <option value="1.25">XL</option>
-        </select>
-      </label>
-      <label class="settings-row"><span data-i18n="settings.lineHeight">Line height</span>
-        <select id="settings-line-height">
-          <option value="1.45">Tight</option>
-          <option value="1.6">Normal</option>
-          <option value="1.75">Relaxed</option>
-        </select>
-      </label>
-      <label class="settings-row"><span data-i18n="settings.density">Link density</span>
-        <select id="settings-density">
-          <option value="lo">LO</option>
-          <option value="med">MED</option>
-          <option value="hi">HI</option>
-        </select>
-      </label>
-      <fieldset class="settings-fieldset">
-        <legend data-i18n="settings.providers">Providers</legend>
-        <label><input type="checkbox" id="settings-prov-l" checked /> Luz (l)</label>
-        <label><input type="checkbox" id="settings-prov-w" checked /> Wiki (w)</label>
-        <label><input type="checkbox" id="settings-prov-d" checked /> Dict (d)</label>
-      </fieldset>
       <p class="settings-note" data-i18n="settings.notesNote">Notes live in your Hypothes.is account (not exported here).</p>
+      <p class="settings-note">Typography and research links are controlled in the reader. Theme cycles on the library toolbar.</p>
       <div class="settings-actions">
         <button type="button" class="settings-btn" id="settings-export" data-i18n="settings.export">Export library pack</button>
         <button type="button" class="settings-btn" id="settings-import" data-i18n="settings.import">Import library pack</button>

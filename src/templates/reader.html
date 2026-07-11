@@ -4,13 +4,13 @@
   <!--
     Block 1 of 2 — reader document head
     Description: Meta, CSS modules, Hypothesis boot for book shell
-    Version: 1.c
-    Revised: 260710 21:00
+    Version: 1.d
+    Revised: 260711 12:00
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>{{BOOK_TITLE}} · L.I.B.R.U.S</title>
-  <meta name="description" content="L.I.B.R.U.S — annotate / read / consult" />
+  <title>{{BOOK_TITLE}} · L∙I∙B∙R∙U∙S</title>
+  <meta name="description" content="L∙I∙B∙R∙U∙S — annotate to assimilate" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="{{ASSET_PREFIX}}icons/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/00-tokens.css" />
@@ -34,9 +34,9 @@
 >
   <!--
     Block 2 of 2 — reader body panes
-    Description: notes | main (toolbar + Links menu) | consult; library home; font only
-    Version: 1.c
-    Revised: 260710 21:00
+    Description: notes | main (toolbar + Links + type) | consult; library home always
+    Version: 1.d
+    Revised: 260711 12:00
   -->
   <div class="reader-container" id="app">
     <aside class="left-panel" id="left-panel" aria-label="Notes">
@@ -45,7 +45,7 @@
 
     <section class="middle-panel" id="middle-panel" aria-label="Read">
       <div class="panel-toolbar" id="main-toolbar">
-        <a href="{{ASSET_PREFIX}}" class="toolbar-btn" id="btn-library" title="Library" aria-label="Library">
+        <a href="/" class="toolbar-btn" id="btn-library" title="Library" aria-label="Library">
           <img src="{{ASSET_PREFIX}}icons/book-open.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </a>
         <span class="toolbar-book-title" id="book-title-label" title="{{BOOK_TITLE}}">{{BOOK_TITLE}}</span>
@@ -62,6 +62,9 @@
         </button>
         <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size">
           <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
+        </button>
+        <button type="button" class="toolbar-btn" id="btn-line-cycle" title="Line height" aria-label="Line height">
+          <span id="line-height-chip" class="density-chip">1.6</span>
         </button>
         <div class="toolbar-menu" id="links-menu">
           <button

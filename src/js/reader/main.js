@@ -1,11 +1,11 @@
 /**
  * Block 1 of 1 — reader/main.js
- * Description: Boot reader — layout, theme apply, book, context (no settings/theme chrome)
- * Version: 1.b
- * Revised: 260710 21:00
+ * Description: Boot reader — layout, type controls, Links; no settings/theme chrome
+ * Version: 1.c
+ * Revised: 260711 12:00
  */
 
-import { loadSettings, saveSettings, FONT_SCALES } from '../shared/storage.js';
+import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from '../shared/storage.js';
 import { applyTheme, applyTypography, isEffectivelyDark } from '../shared/theme.js';
 import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { runIntegrityDebug } from '../shared/integrity.js';
@@ -16,6 +16,9 @@ import { wireSearch } from './search.js';
 import { wireToc } from './toc.js';
 import { wireLinkFilters } from './links.js';
 import { wirePwaUpdates } from '../settings/update.js';
+import { applyQueryToSettings } from '../shared/prefs-query.js';
+import { libraryHomeUrl } from '../shared/paths.js';
+import { BRAND } from '../shared/constants.js';
 
 function setHypoInvert(theme) {
   const host = document.getElementById('hypothesis-container');
@@ -32,23 +35,46 @@ function cycleFont(settings) {
   return saveSettings(settings);
 }
 
+function cycleLineHeight(settings) {
+  let idx = LINE_HEIGHTS.indexOf(settings.lineHeight);
+  if (idx < 0) idx = 1;
+  idx = (idx + 1) % LINE_HEIGHTS.length;
+  settings.lineHeight = LINE_HEIGHTS[idx];
+  applyTypography(settings);
+  const chip = document.getElementById('line-height-chip');
+  if (chip) chip.textContent = String(settings.lineHeight);
+  return saveSettings(settings);
+}
+
+function syncLineChip(settings) {
+  const chip = document.getElementById('line-height-chip');
+  if (chip) chip.textContent = String(settings.lineHeight ?? 1.6);
+}
+
 async function boot() {
-  let settings = loadSettings();
+  let settings = applyQueryToSettings();
   applyTypography(settings);
   applyTheme(settings.theme);
   setHypoInvert(settings.theme);
+  syncLineChip(settings);
+
+  const lib = document.getElementById('btn-library');
+  if (lib) lib.setAttribute('href', libraryHomeUrl());
 
   const strings = await loadLocale(settings.lang);
   document.documentElement.lang = settings.lang === 'pt' ? 'pt-BR' : 'en';
   applyI18n(document, strings);
 
-  const title = document.body.dataset.bookTitle || t(strings, 'brand', 'L.I.B.R.U.S');
-  document.title = title + ' · L.I.B.R.U.S';
+  const title = document.body.dataset.bookTitle || t(strings, 'brand', BRAND);
+  document.title = title + ' · ' + t(strings, 'brand', BRAND);
   const label = document.getElementById('book-title-label');
   if (label) label.textContent = title;
 
   document.getElementById('btn-font-cycle')?.addEventListener('click', () => {
     settings = cycleFont(settings);
+  });
+  document.getElementById('btn-line-cycle')?.addEventListener('click', () => {
+    settings = cycleLineHeight(settings);
   });
 
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
@@ -72,7 +98,7 @@ async function boot() {
   wirePwaUpdates();
 
   runIntegrityDebug();
-  console.info('L.I.B.R.U.S reader', computeIsWide() ? 'wide' : 'narrow');
+  console.info(BRAND + ' reader', computeIsWide() ? 'wide' : 'narrow');
 }
 
 if (document.readyState === 'loading') {

@@ -12,6 +12,11 @@ copyright: "Study edition; Guillon Ribeiro translation historically public domai
 translator: Guillon Ribeiro
 order: 1
 subtitle: Filosofia Espiritualista
+abstract: "Fundamentos da Doutrina Espírita — imortalidade, natureza dos Espíritos, leis morais."
+categories:
+  - kardec
+  - doutrina
+  - fundamentos
 ---
 
 # ✨ *O Livro dos Espíritos* {#lde}
@@ -55,7 +60,7 @@ Baseada no ISBN 978-85-7328-728-8
 ### 0.02. 📄 Prefácio {#0-02}
 
 ::: center
-![Cepa Espírita](../images/vine.webp)
+![Cepa Espírita](images/vine.webp)
 Interpretação artística do desenho original (mediúnico).
 :::
 

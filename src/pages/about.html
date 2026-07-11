@@ -4,12 +4,12 @@
   <!--
     Block 1 of 1 — About page
     Description: Project overview site page
-    Version: 1.a
-    Revised: 260710 19:30
+    Version: 1.b
+    Revised: 260711 12:00
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About · L.I.B.R.U.S</title>
+  <title>About · L∙I∙B∙R∙U∙S</title>
   <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/00-tokens.css" />
   <link rel="stylesheet" href="../css/01-reset.css" />
@@ -19,18 +19,17 @@
 </head>
 <body class="page-site" data-app-base="../">
   <header class="site-header">
-    <p class="site-back"><a href="../">← Library</a></p>
-    <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
-      <img src="../icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
-    </button>
+    <p class="site-back"><a href="/" data-library-home>← Library</a></p>
   </header>
   <main class="site-page">
     <h1>About</h1>
     <p>
-      <strong>L.I.B.R.U.S</strong> is a three-pane study reader:
-      <em>annotate</em> · <em>read</em> · <em>consult</em>.
+      <strong>L∙I∙B∙R∙U∙S</strong> (short: <strong>LIBRUS</strong>) is a study library:
+      <em>annotate to assimilate</em>.
     </p>
     <p>
+      Three panes on a wide screen: <strong>annotate</strong> (Hypothes.is),
+      <strong>read</strong> (book), <strong>consult</strong> (research).
       Notes and highlights use <strong>Hypothes.is</strong> (their account and servers).
       Research links open in the consult pane on wide screens; mobile is read + annotate only.
     </p>
@@ -38,9 +37,9 @@
       Built as a static site (<code>nano-ssg</code>): Markdown in, HTML library out.
     </p>
     <nav class="site-footer-nav" aria-label="More pages">
-      <a href="help.html">Help</a>
+      <a href="help">Help</a>
       <span aria-hidden="true">·</span>
-      <a href="legal.html">Legal</a>
+      <a href="legal">Legal</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank">Code</a>
     </nav>

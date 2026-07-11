@@ -3,13 +3,13 @@
 <head>
   <!--
     Block 1 of 1 — Help page
-    Description: How to use L.I.B.R.U.S
-    Version: 1.b
-    Revised: 260710 21:00
+    Description: How to use L∙I∙B∙R∙U∙S
+    Version: 1.c
+    Revised: 260711 12:00
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help · L.I.B.R.U.S</title>
+  <title>Help · L∙I∙B∙R∙U∙S</title>
   <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/00-tokens.css" />
   <link rel="stylesheet" href="../css/01-reset.css" />
@@ -19,10 +19,7 @@
 </head>
 <body class="page-site" data-app-base="../">
   <header class="site-header">
-    <p class="site-back"><a href="../">← Library</a></p>
-    <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
-      <img src="../icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
-    </button>
+    <p class="site-back"><a href="/" data-library-home>← Library</a></p>
   </header>
   <main class="site-page">
     <h1>Help</h1>
@@ -30,20 +27,28 @@
 
     <h2>Start</h2>
     <ol class="site-steps">
+      <li>Serve the <code>public/</code> folder (<code>npm start</code>), not the repo root.</li>
       <li>Open a book from the library.</li>
       <li>Read in the center; annotate with Hypothesis on the left (wide) or standard sidebar (narrow).</li>
       <li>On a wide screen, select a term or click a link to consult on the right.</li>
-      <li>Use Contents (list icon) to jump sections; search in the main toolbar.</li>
+      <li>Use Contents to jump sections; search in the main toolbar.</li>
+      <li>Cycle <strong>text size</strong> and <strong>line height</strong> on the reader toolbar.</li>
       <li>On wide screens, open <strong>Links</strong> (density chip) for LO/MED/HI and providers L/W/D.</li>
-      <li>Theme and full settings live on the library home — reader keeps text size only.</li>
+      <li>Theme and settings live on the library home. Library button always returns home.</li>
     </ol>
 
     <h2>Panes</h2>
     <ul>
       <li><strong>Annotate</strong> — Hypothesis notes and highlights.</li>
-      <li><strong>Read</strong> — book text, search, contents.</li>
+      <li><strong>Read</strong> — book text, search, contents, typography.</li>
       <li><strong>Consult</strong> — Luz Espírita, Wikipedia, Wiktionary (wide only).</li>
     </ul>
+
+    <h2>URL preferences</h2>
+    <p>
+      Query strings write through to <code>localStorage</code>, for example
+      <code>?lang=pt&amp;theme=dark&amp;density=hi&amp;font=1.125&amp;line=1.75&amp;prov=l,w</code>.
+    </p>
 
     <h2>Mobile</h2>
     <p>
@@ -58,9 +63,9 @@
     </p>
 
     <nav class="site-footer-nav" aria-label="More pages">
-      <a href="about.html">About</a>
+      <a href="about">About</a>
       <span aria-hidden="true">·</span>
-      <a href="legal.html">Legal</a>
+      <a href="legal">Legal</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank">Code</a>
     </nav>

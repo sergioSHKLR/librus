@@ -1,12 +1,14 @@
 /**
  * Block 1 of 1 — shared/constants.js
- * Description: Storage keys, brand, layout thresholds for L.I.B.R.U.S
- * Version: 1.a
- * Revised: 260710 16:00
+ * Description: Storage keys, brand, layout thresholds for L∙I∙B∙R∙U∙S
+ * Version: 1.b
+ * Revised: 260711 12:00
  */
 
-export const BRAND = 'L.I.B.R.U.S';
-export const TAGLINE = 'annotate / read / consult';
+/** Display brand (DOT OPERATOR U+2219). Short name: LIBRUS */
+export const BRAND = 'L∙I∙B∙R∙U∙S';
+export const BRAND_SHORT = 'LIBRUS';
+export const TAGLINE = 'annotate to assimilate';
 export const STORAGE_KEY = 'nano-ssg-settings';
 export const VIEWPORT_ALERT_KEY = 'nano-ssg-viewport-alert-dismissed';
 /** Min width (px) for wide three-pane mode */

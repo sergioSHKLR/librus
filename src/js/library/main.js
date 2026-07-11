@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — library/main.js
- * Description: Library home — i18n, theme, cover grid from library.json
- * Version: 1.a
- * Revised: 260710 16:30
+ * Description: Library home — i18n, theme button, settings, cover grid
+ * Version: 1.b
+ * Revised: 260711 12:00
  */
 
 import { BRAND, TAGLINE } from '../shared/constants.js';
@@ -12,6 +12,8 @@ import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { runIntegrityDebug } from '../shared/integrity.js';
 import { wireSettingsPanel } from '../settings/panel.js';
 import { wirePwaUpdates } from '../settings/update.js';
+import { applyQueryToSettings } from '../shared/prefs-query.js';
+import { bookReaderUrl } from '../shared/paths.js';
 
 function coverBackground(book) {
   const colors = (book.cover && book.cover.colors) || ['#4a5568'];
@@ -38,7 +40,8 @@ function renderBooks(listEl, emptyEl, books, strings) {
     const a = document.createElement(book.enabled === false ? 'div' : 'a');
     a.className = 'cover-card' + (book.enabled === false ? ' is-disabled' : '');
     if (book.enabled !== false) {
-      a.href = 'books/' + encodeURIComponent(book.slug) + '/';
+      /* Root-absolute so covers work regardless of current path */
+      a.href = bookReaderUrl(book.slug);
     }
     a.setAttribute('data-title', book.title || book.slug);
 
@@ -83,7 +86,7 @@ async function fetchLibrary() {
 }
 
 async function boot() {
-  let settings = loadSettings();
+  let settings = applyQueryToSettings();
   applyTypography(settings);
 
   const strings = await loadLocale(settings.lang);
@@ -115,16 +118,8 @@ async function boot() {
     });
   });
 
-  const langBtn = document.getElementById('btn-lang-toggle');
-  const langLabel = document.getElementById('lang-toggle-label');
-  if (langLabel) langLabel.textContent = settings.lang === 'pt' ? 'PT' : 'EN';
-  langBtn?.addEventListener('click', () => {
-    settings.lang = settings.lang === 'en' ? 'pt' : 'en';
-    settings = saveSettings(settings);
-    location.reload();
-  });
-
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    settings = loadSettings();
     if (settings.theme === 'system') {
       applyTheme('system', {
         iconEl: document.getElementById('theme-toggle-icon'),

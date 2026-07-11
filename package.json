@@ -1,7 +1,7 @@
 {
   "name": "nano-ssg",
   "version": "0.1.0",
-  "description": "L.I.B.R.U.S — annotate / read / consult. Minimal SSG: content + linker + library reader.",
+  "description": "L∙I∙B∙R∙U∙S — annotate to assimilate. Minimal SSG: content + linker + library reader.",
   "private": true,
   "type": "module",
   "scripts": {

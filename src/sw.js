@@ -5,7 +5,7 @@
  * Revised: 260710 18:30
  */
 
-const CACHE = 'nano-ssg-shell-260710a';
+const CACHE = 'nano-ssg-shell-260711a';
 const SHELL = [
   '/',
   '/index.html',

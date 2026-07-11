@@ -1,68 +1,35 @@
-# nano-ssg → **L.I.B.R.U.S**
+# nano-ssg → **L∙I∙B∙R∙U∙S**
 
-**annotate / read / consult**
+**annotate to assimilate** · short name **LIBRUS**
 
-Minimal static site generator + library reader for long-form study texts (Kardec first: *O Livro dos Espíritos*). Combines content, offline linking, and a three-pane desktop reader. Notes live in **[Hypothes.is](https://web.hypothes.is/)** (no custom notes server).
-
-| Layer | Role |
-|-------|------|
-| `src/content` | Book Markdown (source of truth) |
-| `tools/linker` | Dictionary → MD links (PR 4) |
-| `tools/build` | Link → HTML → `public/` |
-| Browser | Library + reader (wide: 3 panes; narrow: main + notes only, **zero research links**) |
-
-Repo name: **nano-ssg**. Product brand: **L.I.B.R.U.S**.
-
-## Requirements
-
-- **Node.js 20+**
-- **Python 3.10+** (linker, later)
-- Git
+Minimal static site generator + library reader for long-form study texts (Kardec first: *O Livro dos Espíritos*). Notes live in **[Hypothes.is](https://web.hypothes.is/)** (no custom notes server).
 
 ## Quick start
 
 ```bash
-cd nano-ssg
 npm install
-python3 -m venv .venv && source .venv/bin/activate   # when linker lands
-pip install -r requirements.txt                      # when linker lands
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 
-npm run check    # block-header PASS/FAIL
-npm run build    # fails if check fails; writes public/ (gitignored)
-npm start        # http://localhost:3000
+npm run check
+npm run build    # emits public/ (gitignored)
+npm start        # http://localhost:3000 — serves public/ only
 ```
 
-## Scripts
+Serve **`public/`** as the document root (not the repo root), or library/reader navigation will 404.
 
 | Command | Purpose |
 |---------|---------|
-| `npm run check` | Scan CSS/JS/HTML block headers |
-| `npm run build` | check → emit `public/` |
-| `npm start` | Serve `public/` |
+| `npm run check` | Block-header lint |
+| `npm run build` | check → link → compile → `public/` |
+| `npm start` | Serve `public/` on port 3000 |
 
 ## Documentation
 
-| Doc | Topic |
-|-----|--------|
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Pipeline, layout modes, storage |
-| [docs/TREE.md](docs/TREE.md) | `src` ↔ `public` map |
-| [docs/GUIDE-AUTHOR.md](docs/GUIDE-AUTHOR.md) | MD + front matter |
-| [docs/GUIDE-BUILD.md](docs/GUIDE-BUILD.md) | Build & deps |
-| [docs/GUIDE-READER.md](docs/GUIDE-READER.md) | Panes, Hypothesis, mobile |
-| [docs/GUIDE-SETTINGS.md](docs/GUIDE-SETTINGS.md) | Settings (library export only) |
-| [docs/GUIDE-I18N.md](docs/GUIDE-I18N.md) | UI strings EN/PT |
-| [docs/GUIDE-COMMENT-HEADERS.md](docs/GUIDE-COMMENT-HEADERS.md) | Block headers + checks |
-| [docs/GUIDE-CONTRIBUTING.md](docs/GUIDE-CONTRIBUTING.md) | **PRs, hygiene, commits** |
-| [docs/SESSION.md](docs/SESSION.md) | **Session handoff / resume state** |
+**[docs/HANDBOOK.md](docs/HANDBOOK.md)** — architecture, authoring, reader, settings, query prefs, build, contributing.
 
-## Dependencies (summary)
-
-**Node:** `markdown-it`, `markdown-it-container`, `markdown-it-footnote`, `gray-matter`  
-**Python:** `PyYAML` (linker)  
-**Browser:** evergreen + Hypothes.is embed (no npm UI framework)
-
-See [docs/GUIDE-BUILD.md](docs/GUIDE-BUILD.md).
+**[CHANGELOG.md](CHANGELOG.md)** — release history.
 
 ## License
 
-Code: ISC (see package.json). Book texts: see each book’s `license` / `copyright` front matter and legal page.
+Code: ISC. Book texts: see each book’s front matter and the Legal page.

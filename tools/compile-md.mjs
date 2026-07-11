@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/compile-md.mjs
  * Description: Front matter normalize + MD compile + image mirror per book
- * Version: 1.a
- * Revised: 260710 17:30
+ * Version: 1.b
+ * Revised: 260711 12:00
  */
 
 import fs from 'node:fs';
@@ -81,6 +81,25 @@ export function normalizeFrontMatter(data, folderSlug) {
   }
 
   if (meta.copyright == null) meta.copyright = FALLBACKS.copyright;
+
+  if (meta.abstract == null || meta.abstract === '') {
+    if (meta.description) meta.abstract = String(meta.description);
+    else {
+      warnings.push('abstract → ""');
+      meta.abstract = '';
+    }
+  } else {
+    meta.abstract = String(meta.abstract);
+  }
+
+  let categories = meta.categories;
+  if (categories == null && Array.isArray(meta.tags)) categories = meta.tags;
+  if (!Array.isArray(categories)) {
+    warnings.push('categories → []');
+    meta.categories = [];
+  } else {
+    meta.categories = categories.map((c) => String(c)).filter(Boolean);
+  }
 
   return { meta, warnings, fatal };
 }

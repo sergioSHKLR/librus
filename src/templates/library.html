@@ -3,14 +3,14 @@
 <head>
   <!--
     Block 1 of 2 — library document head
-    Description: Meta, CSS modules, brand for L.I.B.R.U.S library home
-    Version: 1.b
-    Revised: 260710 19:30
+    Description: Meta, CSS modules, brand for L∙I∙B∙R∙U∙S library home
+    Version: 1.c
+    Revised: 260711 12:00
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>L.I.B.R.U.S — Library</title>
-  <meta name="description" content="L.I.B.R.U.S — annotate / read / consult" />
+  <title>L∙I∙B∙R∙U∙S — Library</title>
+  <meta name="description" content="L∙I∙B∙R∙U∙S — annotate to assimilate" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/00-tokens.css" />
@@ -22,26 +22,23 @@
   <link rel="stylesheet" href="css/08-theme-dark.css" />
   <link rel="manifest" href="manifest.webmanifest" />
 </head>
-<body class="page-library app-shell">
+<body class="page-library app-shell" data-app-base="./">
   <!--
     Block 2 of 2 — library body
-    Description: Header, cover grid, footer site links
-    Version: 1.b
-    Revised: 260710 19:30
+    Description: Header (settings + theme), cover grid, footer site links
+    Version: 1.c
+    Revised: 260711 12:00
   -->
   <header class="library-header">
     <div class="library-header-inner">
       <div class="library-brand">
         <img src="icons/brand.svg" class="library-brand-icon" alt="" width="32" height="32" />
         <div>
-          <h1 class="library-title" data-i18n="brand">L.I.B.R.U.S</h1>
-          <p class="library-panes" id="library-tagline" data-i18n="tagline">annotate / read / consult</p>
+          <h1 class="library-title" data-i18n="brand">L∙I∙B∙R∙U∙S</h1>
+          <p class="library-panes" id="library-tagline" data-i18n="tagline">annotate to assimilate</p>
         </div>
       </div>
       <div class="library-header-actions">
-        <button type="button" class="toolbar-btn" id="btn-lang-toggle" title="Language" aria-label="Language">
-          <span id="lang-toggle-label" class="lang-chip">EN</span>
-        </button>
         <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
           <img src="icons/settings.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
@@ -65,11 +62,11 @@
   <footer class="library-footer">
     <hr class="library-footer-rule" />
     <p class="library-footer-links">
-      <a href="pages/about.html" data-i18n="nav.about">About</a>
+      <a href="/pages/about" data-i18n="nav.about">About</a>
       <span aria-hidden="true">·</span>
-      <a href="pages/help.html" data-i18n="nav.help">Help</a>
+      <a href="/pages/help" data-i18n="nav.help">Help</a>
       <span aria-hidden="true">·</span>
-      <a href="pages/legal.html" data-i18n="nav.legal">Legal</a>
+      <a href="/pages/legal" data-i18n="nav.legal">Legal</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank" data-i18n="nav.code">Code</a>
     </p>
