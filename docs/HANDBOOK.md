@@ -289,3 +289,7 @@ Theme control: **library toolbar only**.
 ## License
 
 Code: ISC (`package.json`). Book texts: each book’s `license` / `copyright` and Legal page.
+
+## Session handoff
+
+Active work queue and branch tip: see [SESSION.md](./SESSION.md) (updated when pausing multi-day work).

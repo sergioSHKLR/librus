@@ -14,4 +14,8 @@
 - Fix: About/Help/Legal; Lucide chrome; reader per-pane scroll; library home  
 - Fix: dark-mode icon invert; maps pack folded into wikipedia  
 - Fix: reader chrome — drop theme/settings from reader; Links dropdown (density + L/W/D)  
-- Polish: vine image path; root-absolute library/book URLs (fix 404 from wrong doc root); theme library-only; settings slim (lang + pack I/O); reader line-height; query→localStorage; build preflight + public MB; abstract/categories; single `docs/HANDBOOK.md`  
+- Polish: vine image path; theme library-only; settings slim; query→localStorage; build preflight + public MB; abstract/categories; single `docs/HANDBOOK.md`  
+- Linker: per-heading L/W/D rotation; multi-word short links; build total/unique link stats  
+- Collapsible Termos relacionados; expanded wiki/wiktionary dicts; Lucide-only icons  
+- Next (queued): reload→stop while loading; WebAIM contrast for provider colors; reader i18n parity  
+
