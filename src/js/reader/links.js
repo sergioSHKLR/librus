@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — reader/links.js
  * Description: Density + provider toggles in Links dropdown (wide only)
- * Version: 1.c
- * Revised: 10Jul26
+ * Version: 1.d
+ * Revised: 11Jul26
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';
@@ -62,8 +62,6 @@ export function applyLinkFilters(settings) {
   const densText = density.toUpperCase();
   const label = document.getElementById('density-toggle-label');
   if (label) label.textContent = densText;
-  const chip = document.getElementById('links-menu-chip');
-  if (chip) chip.textContent = densText;
 
   document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
     const code = btn.getAttribute('data-provider-code');

@@ -34,8 +34,8 @@
 >
   <!--
     Block 2 of 2 — reader body panes
-    Description: notes | main (toolbar + Links + type) | consult; library home always
-    Version: 1.d
+    Description: notes | main (toolbar + Links + font) | consult; library home always
+    Version: 1.e
     Revised: 11Jul26
   -->
   <div class="reader-container" id="app">
@@ -63,9 +63,6 @@
         <button type="button" class="toolbar-btn" id="btn-font-cycle" title="Text size" aria-label="Text size">
           <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
-        <button type="button" class="toolbar-btn" id="btn-line-cycle" title="Line height" aria-label="Line height">
-          <span id="line-height-chip" class="density-chip">1.6</span>
-        </button>
         <div class="toolbar-menu" id="links-menu">
           <button
             type="button"
@@ -77,7 +74,7 @@
             aria-controls="links-menu-panel"
             data-i18n-title="reader.links"
           >
-            <span id="links-menu-chip" class="density-chip">MED</span>
+            <img src="{{ASSET_PREFIX}}icons/link.svg" class="toolbar-icon" alt="" width="20" height="20" />
           </button>
           <div
             id="links-menu-panel"

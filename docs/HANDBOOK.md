@@ -167,8 +167,7 @@ categories:
 | Search + prev/next | In-book find |
 | Contents | TOC panel |
 | Text size | Cycle font scale → `localStorage` |
-| Line height | Cycle line height → `localStorage` |
-| **Links** (density chip) | Wide only: LO/MED/HI + L/W/D |
+| **Links** (link icon) | Wide only: LO/MED/HI + L/W/D |
 
 No theme or settings on the reader.
 
@@ -197,7 +196,7 @@ Query strings are applied and **saved**:
 | `theme` | `light` \| `dark` \| `system` |
 | `density` | `lo` \| `med` \| `hi` |
 | `font` | `0.875` \| `1` \| `1.125` \| `1.25` |
-| `line` | `1.45` \| `1.6` \| `1.75` |
+| `line` | `1.45` \| `1.6` \| `1.75` (stored; no reader control) |
 | `l` `w` `d` | `0` \| `1` |
 | `prov` | `l,w` or `l,w,d` |
 

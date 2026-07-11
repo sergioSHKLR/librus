@@ -1,11 +1,11 @@
 /**
  * Block 1 of 1 — reader/main.js
- * Description: Boot reader — layout, type controls, Links; no settings/theme chrome
- * Version: 1.c
+ * Description: Boot reader — layout, font size, Links; no settings/theme chrome
+ * Version: 1.d
  * Revised: 11Jul26
  */
 
-import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from '../shared/storage.js';
+import { loadSettings, saveSettings, FONT_SCALES } from '../shared/storage.js';
 import { applyTheme, applyTypography, isEffectivelyDark } from '../shared/theme.js';
 import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { runIntegrityDebug } from '../shared/integrity.js';
@@ -35,28 +35,11 @@ function cycleFont(settings) {
   return saveSettings(settings);
 }
 
-function cycleLineHeight(settings) {
-  let idx = LINE_HEIGHTS.indexOf(settings.lineHeight);
-  if (idx < 0) idx = 1;
-  idx = (idx + 1) % LINE_HEIGHTS.length;
-  settings.lineHeight = LINE_HEIGHTS[idx];
-  applyTypography(settings);
-  const chip = document.getElementById('line-height-chip');
-  if (chip) chip.textContent = String(settings.lineHeight);
-  return saveSettings(settings);
-}
-
-function syncLineChip(settings) {
-  const chip = document.getElementById('line-height-chip');
-  if (chip) chip.textContent = String(settings.lineHeight ?? 1.6);
-}
-
 async function boot() {
   let settings = applyQueryToSettings();
   applyTypography(settings);
   applyTheme(settings.theme);
   setHypoInvert(settings.theme);
-  syncLineChip(settings);
 
   const lib = document.getElementById('btn-library');
   if (lib) lib.setAttribute('href', libraryHomeUrl());
@@ -72,9 +55,6 @@ async function boot() {
 
   document.getElementById('btn-font-cycle')?.addEventListener('click', () => {
     settings = cycleFont(settings);
-  });
-  document.getElementById('btn-line-cycle')?.addEventListener('click', () => {
-    settings = cycleLineHeight(settings);
   });
 
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
