@@ -1,9 +1,8 @@
 """Phase 2 — insert links from report + density config.
 
-Provider rotation (Luz → Wiki → Dic for spiritism, etc.) is already resolved
-in Phase 1: each assigned hit is a distinct provider for that concept.
-Insert only needs paragraph density caps — do not collapse multi-provider
-cycles for the same term.
+Provider rotation is resolved in Phase 1 (per heading). Insert applies
+paragraph caps and enforces: at most one link of the same article by the
+same provider within the same heading (no document-wide max).
 """
 
 from __future__ import annotations
@@ -21,12 +20,20 @@ from .md_regions import RegionKind, build_document_map
 from .providers import normalize_interest, provider_code, tiers_for_density
 
 
+def _heading_key(pos_or_item: dict) -> str:
+    return "\x1f".join(
+        [
+            str(pos_or_item.get("h2_section") or ""),
+            str(pos_or_item.get("h4_section") or ""),
+            str(pos_or_item.get("h6_section") or ""),
+        ]
+    )
+
+
 def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
     density = density_settings(cfg)
     min_len = int(density.get("min_term_length", 3))
     max_per_para = int(density.get("max_links_per_paragraph", 40))
-    # Same *provider* for same concept: once (rotation already unique per provider)
-    max_same_article = int(density.get("max_same_article_per_document", 1))
     min_chars = int(density.get("min_chars_between_links", 0))
 
     enabled = set(cfg.get("providers") or [])
@@ -68,6 +75,7 @@ def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
                     "end_col": int(pos["end_col"]),
                     "matched_text": pos.get("matched_text") or term,
                     "h2_section": pos.get("h2_section") or "",
+                    "h4_section": pos.get("h4_section") or "",
                     "h6_section": pos.get("h6_section") or "",
                     "paragraph_id": int(pos.get("paragraph_id") or 0),
                 }
@@ -78,21 +86,17 @@ def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
     chosen: list[dict] = []
     links_in_para: dict[int, int] = defaultdict(int)
     last_end_in_para: dict[int, int] = {}
-    # Each provider+url once; each concept+provider once (keeps Luz/Wiki/Dic rotation)
-    article_uses: dict[tuple[str, str], int] = defaultdict(int)
-    concept_provider_uses: dict[tuple[str, str], int] = defaultdict(int)
+    # Same article + provider at most once per heading (document-wide free)
+    article_in_heading: set[tuple[str, str, str]] = set()
 
     for item in flat:
         para = item["paragraph_id"]
-        concept = item["concept_norm"]
-        article_key = (item["provider_code"], item["url"])
-        cp_key = (concept, item["provider"])
+        heading = _heading_key(item)
+        article_key = (heading, item["provider_code"], item["url"])
 
         if links_in_para[para] >= max_per_para:
             continue
-        if article_uses[article_key] >= max_same_article:
-            continue
-        if concept_provider_uses[cp_key] >= max_same_article:
+        if article_key in article_in_heading:
             continue
         if min_chars > 0 and para in last_end_in_para:
             prev = last_end_in_para[para]
@@ -102,8 +106,7 @@ def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
 
         chosen.append(item)
         links_in_para[para] += 1
-        article_uses[article_key] += 1
-        concept_provider_uses[cp_key] += 1
+        article_in_heading.add(article_key)
         last_end_in_para[para] = item["line"] * 1_000_000 + item["end_col"]
 
     return chosen

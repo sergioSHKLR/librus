@@ -123,7 +123,7 @@ After link + compile, build prints **total** and **unique** provider links:
 | `links {slug} (linked MD)` | Short links baked into cache MD — total vs unique targets |
 | `links {slug} (body.html)` | Final HTML `data-link-provider` anchors — **what the reader sees** |
 
-**Policy today:** the linker bakes **at most one link per concept×provider** in the whole book (`max_same_article_per_document: 1`). So **total ≈ unique** (no thousands of repeated “Deus” / “Espírito” anchors). Raising repeats is a density/insert config change, not a counting bug.
+**Policy today:** within each **heading** (h2/h4/h6 path), a concept rotates providers once (e.g. spiritism: Luz → Wiki → Dict); further mentions in that heading are plain text. The **same article×provider** may appear again under a **different** heading. There is **no** document-wide `max_same_article` / `max_occurrences` cap — so **total can exceed unique** when terms recur across sections.
 
 ### Maps / providers
 

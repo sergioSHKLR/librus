@@ -10,29 +10,24 @@ import yaml
 # Insert-time density: how many links to *bake into* the MD.
 # UI density (lo/med/hi) later filters by interest tags — insert at "hi" (max)
 # so the reader can dial down without re-running the pipeline.
+#
+# No max_same_article_per_document / max_occurrences_per_term:
+# same article+provider is limited to once **per heading** (see matcher + insert).
 DEFAULT_DENSITIES = {
     "low": {
         "min_term_length": 3,
         "max_links_per_paragraph": 8,
         "min_chars_between_links": 40,
-        "max_occurrences_per_term": 1,
-        "max_same_article_per_document": 1,
     },
     "med": {
         "min_term_length": 3,
         "max_links_per_paragraph": 16,
         "min_chars_between_links": 12,
-        "max_occurrences_per_term": 1,
-        "max_same_article_per_document": 1,
     },
     "hi": {
-        # Max useful density without overwhelm: once per term/paragraph,
-        # same article/provider only once in the whole document.
         "min_term_length": 2,
         "max_links_per_paragraph": 40,
         "min_chars_between_links": 0,
-        "max_occurrences_per_term": 1,
-        "max_same_article_per_document": 1,
     },
 }
 
@@ -50,7 +45,17 @@ def load_config(path: str | Path) -> dict[str, Any]:
     densities = dict(DEFAULT_DENSITIES)
     for tier, defaults in DEFAULT_DENSITIES.items():
         user = (cfg.get("densities") or {}).get(tier) or {}
-        densities[tier] = {**defaults, **user}
+        # Drop obsolete keys if present in user YAML
+        cleaned = {
+            k: v
+            for k, v in user.items()
+            if k
+            not in (
+                "max_occurrences_per_term",
+                "max_same_article_per_document",
+            )
+        }
+        densities[tier] = {**defaults, **cleaned}
     for tier, user in (cfg.get("densities") or {}).items():
         if tier not in densities and isinstance(user, dict):
             densities[tier] = {**DEFAULT_DENSITIES.get("med", {}), **user}

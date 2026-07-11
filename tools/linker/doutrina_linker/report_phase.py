@@ -43,6 +43,7 @@ def aggregate_hits(hits) -> list[Candidate]:
                 "end_col": hit.end_col,
                 "matched_text": hit.matched_text,
                 "h2_section": hit.h2_section,
+                "h4_section": getattr(hit, "h4_section", "") or "",
                 "h6_section": hit.h6_section,
                 "paragraph_id": hit.paragraph_id,
             }
@@ -63,12 +64,10 @@ def build_report(cfg: dict[str, Any]) -> dict[str, Any]:
     active = [p for p in providers if dictionaries.get(p)]
 
     indexes_by_provider = build_indexes(dictionaries, active)
-    max_uses = int(cfg.get("max_uses_per_provider", 1))
     hits = scan_document(
         doc,
         indexes_by_provider,
         provider_order=active,
-        max_uses_per_provider=max_uses,
     )
     candidates = aggregate_hits(hits)
     candidates.sort(key=lambda c: (c.count, c.term.lower()))
@@ -107,9 +106,16 @@ def build_report(cfg: dict[str, Any]) -> dict[str, Any]:
                 "note": "Interest is completeness of that provider's article, not a Wiki-vs-Luz rank",
             },
             "linking_rules": {
-                "provider_rotation": "domain_order_once_each_per_concept",
-                "spiritism_example": "1st Luz, 2nd Wiki, 3rd Dic; further mentions unlinked",
-                "same_provider_url": "once_per_document",
+                "provider_rotation": "domain_order_once_each_per_concept_per_heading",
+                "spiritism_example": (
+                    "Within one heading: 1st Luz, 2nd Wiki, 3rd Dic; "
+                    "further mentions unlinked. Cycle resets next heading."
+                ),
+                "same_provider_url": "once_per_heading",
+                "no_document_caps": [
+                    "max_same_article_per_document",
+                    "max_occurrences_per_term",
+                ],
             },
         },
         "stats": {
@@ -117,6 +123,7 @@ def build_report(cfg: dict[str, Any]) -> dict[str, Any]:
             "candidates_by_interest": by_interest,
             "candidates_by_domain": by_domain,
             "h2_sections": len(doc.h2_sections),
+            "assigned_hits": sum(c.count for c in candidates),
         },
         "candidates": [c.to_dict() for c in candidates],
     }

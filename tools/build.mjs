@@ -262,11 +262,9 @@ function logLinkerReportStats(slug, reportPath) {
     const matches = meta.match_count ?? cand;
     console.log(`  report  candidates (unique targets) ${formatByCode(codes)}`);
     console.log(`  report  phase-1 match hits (all positions) total ${matches} · unique targets ${cand}`);
-    if (matches <= cand) {
-      console.log(
-        `  note    linker scans/bakes ≤1 use per concept×provider (no repeated links for same term)`
-      );
-    }
+    console.log(
+      `  note    same article×provider once per heading; L→W→D rotation resets each heading`
+    );
   } catch (err) {
     console.warn(`  WARN  could not read link report: ${err.message || err}`);
   }
