@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Toolbar controls
  * Description: Shared header buttons; dark-mode invert for Lucide <img> icons
- * Version: 1.b
- * Revised: 10Jul26
+ * Version: 1.c
+ * Revised: 11Jul26
  * ========================================================================== */
 
 .toolbar-btn {
@@ -16,7 +16,7 @@
   color: var(--text);
 }
 
-.toolbar-btn:hover {
+.toolbar-btn:hover:not(:disabled) {
   background: var(--surface);
   border-color: var(--border);
 }
@@ -24,6 +24,12 @@
 .toolbar-btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .toolbar-icon {
