@@ -1,7 +1,7 @@
 /**
  * Block 1 of 1 — shared/paths.js
- * Description: Asset base + robust library-home URL (avoid relative 404s)
- * Version: 1.b
+ * Description: Asset base + library/book URLs relative to data-app-base
+ * Version: 1.c
  * Revised: 11Jul26
  */
 
@@ -15,27 +15,27 @@ export function assetUrl(rel) {
 }
 
 /**
- * Absolute path to library home for the current deployment root.
- * Prefer root `/` when appBase points at site root; else resolve relative base.
- * Fixes 404s when relative `../` is resolved against the wrong directory or
- * when the static server is not serving `public/` as document root.
+ * Library home href relative to current page (via data-app-base).
+ * Avoid root-absolute `/` — that 404s when public/ is not the host root
+ * (e.g. Live Preview under …/public/).
  */
 export function libraryHomeUrl() {
   try {
     const base = assetBase();
-    if (!base || base === '/' || base === './') return '/';
-    const resolved = new URL(base, window.location.href);
-    let p = resolved.pathname;
-    if (!p.endsWith('/')) p += '/';
-    /* Collapse to site root when base is ../../ from /books/slug/ */
-    if (p === '//' || p === '') return '/';
-    return p;
+    if (!base || base === './' || base === '') return './';
+    const resolved = new URL(base.endsWith('/') ? base : base + '/', window.location.href);
+    /* Prefer path ending with / so directory index is used */
+    let href = resolved.pathname;
+    if (!href.endsWith('/')) href += '/';
+    return href + (resolved.search || '');
   } catch {
-    return '/';
+    return assetBase() || './';
   }
 }
 
-/** Root-absolute book reader URL */
+/**
+ * Book reader URL from the library home (relative — never host-root absolute).
+ */
 export function bookReaderUrl(slug) {
-  return '/books/' + encodeURIComponent(slug) + '/';
+  return 'books/' + encodeURIComponent(slug) + '/';
 }

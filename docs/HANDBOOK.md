@@ -163,7 +163,7 @@ categories:
 
 | Control | Role |
 |---------|------|
-| **Library** | Always home (`/`) |
+| **Library** | Always home (relative via `data-app-base`) |
 | Search + prev/next | In-book find |
 | Contents | TOC panel |
 | Text size | Cycle font scale → `localStorage` |

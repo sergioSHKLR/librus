@@ -40,7 +40,7 @@ function renderBooks(listEl, emptyEl, books, strings) {
     const a = document.createElement(book.enabled === false ? 'div' : 'a');
     a.className = 'cover-card' + (book.enabled === false ? ' is-disabled' : '');
     if (book.enabled !== false) {
-      /* Root-absolute so covers work regardless of current path */
+      /* Relative to library (data-app-base ./) → books/{slug}/ */
       a.href = bookReaderUrl(book.slug);
     }
     a.setAttribute('data-title', book.title || book.slug);

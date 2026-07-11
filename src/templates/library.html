@@ -4,7 +4,7 @@
   <!--
     Block 1 of 2 — library document head
     Description: Meta, CSS modules, brand for L∙I∙B∙R∙U∙S library home
-    Version: 1.c
+    Version: 1.d
     Revised: 11Jul26
   -->
   <meta charset="utf-8" />
@@ -26,7 +26,7 @@
   <!--
     Block 2 of 2 — library body
     Description: Header (settings + theme), cover grid, footer site links
-    Version: 1.c
+    Version: 1.d
     Revised: 11Jul26
   -->
   <header class="library-header">
@@ -62,11 +62,12 @@
   <footer class="library-footer">
     <hr class="library-footer-rule" />
     <p class="library-footer-links">
-      <a href="/pages/about" data-i18n="nav.about">About</a>
+      <!-- Relative + .html: works with serve cleanUrls and non-root / simple servers -->
+      <a href="pages/about.html" data-i18n="nav.about">About</a>
       <span aria-hidden="true">·</span>
-      <a href="/pages/help" data-i18n="nav.help">Help</a>
+      <a href="pages/help.html" data-i18n="nav.help">Help</a>
       <span aria-hidden="true">·</span>
-      <a href="/pages/legal" data-i18n="nav.legal">Legal</a>
+      <a href="pages/legal.html" data-i18n="nav.legal">Legal</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank" data-i18n="nav.code">Code</a>
     </p>
