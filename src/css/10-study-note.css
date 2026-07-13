@@ -1,7 +1,7 @@
 /* ==========================================================================
- * Block 1 of 1 — First-load study note (post-it modal)
- * Description: Full-page pale yellow handwritten note, dismiss → localStorage
- * Version: 1.a
+ * Block 1 of 1 — First-load study splash
+ * Description: Embossed brand + green gradient + bilingual post-it + polaroid
+ * Version: 1.i
  * Revised: 13Jul26
  * ========================================================================== */
 
@@ -10,10 +10,15 @@
   inset: 0;
   z-index: 12000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem;
   box-sizing: border-box;
+  /* Safe areas on notched phones */
+  padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
 }
 
 .study-note-modal.is-hidden,
@@ -21,101 +26,404 @@
   display: none;
 }
 
+/* Full-bleed green radial vignette (from green-top reference) */
 .study-note-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(40, 36, 28, 0.42);
-  cursor: pointer;
+  z-index: 0;
+  background-color: #274e13;
+  background-image: radial-gradient(
+    ellipse 78% 72% at 50% 46%,
+    #557a61 0%,
+    #4a6e52 22%,
+    #3d6238 48%,
+    #315522 72%,
+    #274e13 100%
+  );
 }
 
-.study-note-sheet {
+/* —— Embossed brand (library layout: icon + L∙I∙B∙R∙U∙S + tagline) —— */
+.study-note-brand {
   position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  margin: 0 0 0.15rem;
+  max-width: min(26rem, calc(100vw - 2rem));
+  pointer-events: none;
+  user-select: none;
+}
+
+.study-note-brand-icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  /* Emboss stroke icon into the green field */
+  opacity: 0.72;
+  filter:
+    brightness(0) invert(0.82)
+    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.28))
+    drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.4));
+}
+
+.study-note-brand-text {
+  min-width: 0;
+  text-align: left;
+}
+
+.study-note-brand-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  /* Embossed lettering on green */
+  color: rgba(214, 232, 200, 0.42);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.22),
+    0 -1px 0 rgba(0, 0, 0, 0.38),
+    0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.study-note-brand-name {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.study-note-brand-beta {
+  display: inline-block;
+  margin-left: 0.2em;
+  font-size: 0.48em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  vertical-align: super;
+  line-height: 1;
+  color: rgba(214, 232, 200, 0.36);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18),
+    0 -1px 0 rgba(0, 0, 0, 0.32);
+  opacity: 0.95;
+}
+
+.study-note-brand-tagline {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  color: rgba(214, 232, 200, 0.34);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.16),
+    0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* —— Locale pill (under brand) —— */
+.study-note-lang-pill {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.study-note-lang-btn {
+  appearance: none;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: #f4f7ef;
+  font-size: 1.45rem;
+  line-height: 1;
+  padding: 0.42rem 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.study-note-lang-btn + .study-note-lang-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.study-note-lang-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.study-note-lang-btn.is-active,
+.study-note-lang-btn[aria-pressed='true'] {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.study-note-lang-btn:focus-visible {
+  outline: 2px solid #c8e6a0;
+  outline-offset: -2px;
   z-index: 1;
-  /* Always square: fit within the smaller viewport edge (any aspect ratio) */
-  --study-note-size: min(22rem, calc(100vw - 2.5rem), calc(100dvh - 2.5rem), 100%);
-  width: var(--study-note-size);
-  height: var(--study-note-size);
-  max-width: 100%;
-  max-height: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 1.75rem 1.5rem 1.25rem;
-  background: #fff8b0;
-  color: #2a2418;
-  border-radius: 2px;
-  box-shadow:
-    2px 3px 0 rgba(0, 0, 0, 0.06),
-    4px 10px 28px rgba(0, 0, 0, 0.22);
-  transform: rotate(-1.2deg);
-  box-sizing: border-box;
+}
+
+/* —— Composition: mobile baseline (readable, compact) —— */
+.study-note-stage {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-}
-
-/* Tape / pin strip at top */
-.study-note-sheet::before {
-  content: '';
-  position: absolute;
-  top: -0.45rem;
-  left: 50%;
-  transform: translateX(-50%) rotate(-2deg);
-  width: 3.5rem;
-  height: 1.1rem;
-  background: rgba(255, 255, 255, 0.45);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-}
-
-.study-note-text {
-  margin: 0;
-  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  width: min(26rem, calc(100vw - 1.5rem));
   min-height: 0;
-  overflow: auto;
-  font-family:
-    'Segoe Print',
-    'Bradley Hand',
-    'Apple Chancery',
-    'Comic Sans MS',
-    'Chalkboard SE',
-    cursive;
-  font-size: clamp(0.95rem, 2.4vmin, 1.2rem);
-  line-height: 1.55;
-  letter-spacing: 0.01em;
-  font-weight: 500;
+  max-height: calc(100dvh - 7rem);
+  /* visible so polaroid drop-shadow is not clipped by the stage box */
+  overflow: visible;
+  pointer-events: none;
+  margin: 0;
+  /* room under polaroid for its drop-shadow so Enter does not sit on it */
+  padding-bottom: 1.25rem;
 }
 
-.study-note-attr {
-  margin: 0.75rem 0 0;
-  flex-shrink: 0;
-  font-family:
-    'Segoe Print',
-    'Bradley Hand',
-    'Apple Chancery',
-    'Comic Sans MS',
-    cursive;
-  font-size: 0.95rem;
-  text-align: right;
-  opacity: 0.75;
-}
-
-.study-note-dismiss {
+.study-note-postit {
   display: block;
+  width: min(20.5rem, 94%);
+  height: auto;
   flex-shrink: 0;
-  margin: 1rem auto 0;
-  min-width: 5.5rem;
-  padding: 0.4rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.55);
-  color: #2a2418;
-  font: inherit;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
+  transform: rotate(1.6deg);
+  filter: drop-shadow(2px 8px 18px rgba(0, 0, 0, 0.38));
+  z-index: 2;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-.study-note-dismiss:focus-visible {
-  outline: 2px solid #0066cc;
-  outline-offset: 2px;
+/* Polaroid stack: blank (0) develops into portrait (1) */
+.study-note-polaroid-wrap {
+  position: relative;
+  width: min(18.5rem, 86%);
+  aspect-ratio: 353 / 420;
+  flex-shrink: 0;
+  margin-top: -1.35rem;
+  transform: rotate(-1.3deg);
+  filter: drop-shadow(3px 12px 22px rgba(0, 0, 0, 0.42));
+  z-index: 1;
+}
+
+.study-note-polaroid {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.study-note-polaroid--blank {
+  opacity: 1;
+  z-index: 1;
+}
+
+.study-note-polaroid--photo {
+  opacity: 0;
+  z-index: 2;
+  filter: brightness(1.55) contrast(0.55) saturate(0.15);
+}
+
+.study-note-modal.is-developed .study-note-polaroid--photo {
+  opacity: 1;
+  filter: brightness(1) contrast(1) saturate(1);
+  /* Chemical-style develop: 10s (doubled) */
+  transition:
+    opacity 10s ease,
+    filter 10s ease;
+}
+
+.study-note-modal.is-developed .study-note-polaroid--blank {
+  opacity: 0.35;
+  transition: opacity 10s ease;
+}
+
+/* —— Enter bar: fully transparent container (must not mask polaroid shadow) —— */
+.study-note-enter-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: min(26rem, calc(100vw - 1.5rem));
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* Enter / Entrar: frosted pill stays on the button itself */
+.study-note-enter {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 7.25rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #f4f7ef;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+}
+
+.study-note-enter:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.study-note-enter:focus-visible {
+  outline: 2px solid #c8e6a0;
+  outline-offset: 3px;
+}
+
+/* Short mobile heights */
+@media (max-height: 700px) {
+  .study-note-postit {
+    width: min(17.5rem, 88%);
+  }
+  .study-note-polaroid-wrap {
+    width: min(15.75rem, 80%);
+    margin-top: -1.1rem;
+  }
+}
+
+@media (max-height: 580px) {
+  .study-note-postit {
+    width: min(14.5rem, 78%);
+  }
+  .study-note-polaroid-wrap {
+    width: min(13rem, 70%);
+    margin-top: -0.85rem;
+  }
+  .study-note-lang-btn {
+    font-size: 1.25rem;
+    padding: 0.36rem 0.8rem;
+  }
+  .study-note-enter {
+    min-width: 6.5rem;
+    padding: 0.42rem 1.15rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Wide short: side-by-side composition */
+@media (max-height: 560px) and (min-width: 640px) {
+  .study-note-stage {
+    width: min(42rem, calc(100vw - 2rem));
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .study-note-postit {
+    width: min(16rem, 42vw);
+  }
+
+  .study-note-polaroid-wrap {
+    width: min(14.5rem, 38vw);
+    margin-top: 0;
+  }
+}
+
+/* —— Desktop / large screens: bigger art —— */
+@media (min-width: 768px) and (min-height: 700px) {
+  .study-note-modal {
+    gap: 0.55rem;
+    padding: 1rem 1.5rem;
+    padding-top: max(1rem, env(safe-area-inset-top, 0px));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  .study-note-brand {
+    max-width: min(34rem, calc(100vw - 3rem));
+    gap: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .study-note-brand-icon {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .study-note-brand-title {
+    font-size: 1.55rem;
+  }
+
+  .study-note-brand-tagline {
+    font-size: 0.95rem;
+  }
+
+  .study-note-stage {
+    width: min(34rem, calc(100vw - 3rem));
+    max-height: calc(100dvh - 10rem);
+  }
+
+  .study-note-postit {
+    width: min(26rem, 72%);
+  }
+
+  .study-note-polaroid-wrap {
+    width: min(23.5rem, 66%);
+    margin-top: -1.75rem;
+  }
+
+  .study-note-lang-btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 1.15rem;
+  }
+
+  .study-note-enter {
+    min-width: 8.5rem;
+    padding: 0.55rem 1.75rem;
+    font-size: 1.1rem;
+  }
+
+  .study-note-enter-wrap {
+    width: min(34rem, calc(100vw - 3rem));
+  }
+}
+
+@media (min-width: 1100px) and (min-height: 820px) {
+  .study-note-stage {
+    width: min(40rem, calc(100vw - 4rem));
+  }
+
+  .study-note-postit {
+    width: min(30rem, 68%);
+  }
+
+  .study-note-polaroid-wrap {
+    width: min(27rem, 62%);
+    margin-top: -2rem;
+  }
 }
 
 body.study-note-open {

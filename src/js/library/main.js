@@ -199,9 +199,7 @@ async function boot() {
     }
   });
   wirePwaUpdates();
-  wireStudyNote({
-    dismissLabel: t(strings, 'studyNote.dismiss', settings.lang === 'pt' ? 'Entendi' : 'OK')
-  });
+  wireStudyNote({ lang: settings.lang === 'pt' ? 'pt' : 'en' });
   runIntegrityDebug();
 }
 

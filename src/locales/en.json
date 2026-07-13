@@ -75,6 +75,11 @@
   "update.available": "Update available",
   "update.reload": "Update",
   "studyNote.dismiss": "OK",
+  "studyNote.enter": "Enter",
+  "studyNote.lang": "Language",
+  "studyNote.langPt": "Português",
+  "studyNote.langEn": "English",
+
 
   "page.backLibrary": "← Library",
   "page.morePages": "More pages",

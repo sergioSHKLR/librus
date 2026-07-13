@@ -99,9 +99,7 @@ async function boot() {
   window.addEventListener('hashchange', applyDeepLink);
 
   wirePwaUpdates();
-  wireStudyNote({
-    dismissLabel: t(strings, 'studyNote.dismiss', settings.lang === 'pt' ? 'Entendi' : 'OK')
-  });
+  wireStudyNote({ lang: settings.lang === 'pt' ? 'pt' : 'en' });
 
   runIntegrityDebug();
   console.info(BRAND + ' reader', computeIsWide() ? 'wide' : 'narrow');
