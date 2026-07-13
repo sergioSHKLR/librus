@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Design tokens
  * Description: :root CSS variables for theme, type, panes (L∙I∙B∙R∙U∙S)
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.c
+ * Revised: 12Jul26
  * ========================================================================== */
 
 :root {
@@ -13,15 +13,17 @@
   --border: #dddddd;
   --accent: #0066cc;
   --mark-bg: #fff3a8;
-  --toolbar-height: 40px;
+  --toolbar-height: 39px;
+  --toolbar-stack-height: 78px; /* two main-toolbar rows */
   --pane-min: 500px;
   --layout-wide-min: 1200px;
   --font-scale: 1;
   --line-height: 1.6;
-  --provider-luz: #804200;
-  --provider-wiki: #0047ab;
-  --provider-dict: #0d5c0d;
-  --provider-map: #9b1b30;
+  /* All research links: blue underline */
+  --provider-luz: #3d5cff;
+  --provider-wiki: #3d5cff;
+  --provider-dict: #3d5cff;
+  --provider-map: #3d5cff;
   --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-book: var(--font-ui);
 }
@@ -34,10 +36,10 @@
   --border: #333333;
   --accent: #4da6ff;
   --mark-bg: #5c4d00;
-  --provider-luz: #ffab40;
-  --provider-wiki: #7ec8ff;
-  --provider-dict: #7bd88f;
-  --provider-map: #ffa8a8;
+  --provider-luz: #7aacff;
+  --provider-wiki: #7aacff;
+  --provider-dict: #7aacff;
+  --provider-map: #7aacff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,5 +51,9 @@
     --border: #333333;
     --accent: #4da6ff;
     --mark-bg: #5c4d00;
+    --provider-luz: #7aacff;
+    --provider-wiki: #7aacff;
+    --provider-dict: #7aacff;
+    --provider-map: #7aacff;
   }
 }

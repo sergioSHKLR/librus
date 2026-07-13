@@ -1,0 +1,123 @@
+/* ==========================================================================
+ * Block 1 of 1 — First-load study note (post-it modal)
+ * Description: Full-page pale yellow handwritten note, dismiss → localStorage
+ * Version: 1.a
+ * Revised: 13Jul26
+ * ========================================================================== */
+
+.study-note-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+.study-note-modal.is-hidden,
+.study-note-modal[hidden] {
+  display: none;
+}
+
+.study-note-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 36, 28, 0.42);
+  cursor: pointer;
+}
+
+.study-note-sheet {
+  position: relative;
+  z-index: 1;
+  /* Always square: fit within the smaller viewport edge (any aspect ratio) */
+  --study-note-size: min(22rem, calc(100vw - 2.5rem), calc(100dvh - 2.5rem), 100%);
+  width: var(--study-note-size);
+  height: var(--study-note-size);
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 1.75rem 1.5rem 1.25rem;
+  background: #fff8b0;
+  color: #2a2418;
+  border-radius: 2px;
+  box-shadow:
+    2px 3px 0 rgba(0, 0, 0, 0.06),
+    4px 10px 28px rgba(0, 0, 0, 0.22);
+  transform: rotate(-1.2deg);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tape / pin strip at top */
+.study-note-sheet::before {
+  content: '';
+  position: absolute;
+  top: -0.45rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 3.5rem;
+  height: 1.1rem;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.study-note-text {
+  margin: 0;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  font-family:
+    'Segoe Print',
+    'Bradley Hand',
+    'Apple Chancery',
+    'Comic Sans MS',
+    'Chalkboard SE',
+    cursive;
+  font-size: clamp(0.95rem, 2.4vmin, 1.2rem);
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.study-note-attr {
+  margin: 0.75rem 0 0;
+  flex-shrink: 0;
+  font-family:
+    'Segoe Print',
+    'Bradley Hand',
+    'Apple Chancery',
+    'Comic Sans MS',
+    cursive;
+  font-size: 0.95rem;
+  text-align: right;
+  opacity: 0.75;
+}
+
+.study-note-dismiss {
+  display: block;
+  flex-shrink: 0;
+  margin: 1rem auto 0;
+  min-width: 5.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.55);
+  color: #2a2418;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.study-note-dismiss:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+body.study-note-open {
+  overflow: hidden;
+}

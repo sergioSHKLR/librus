@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Book body typography + provider link chrome
  * Description: Article reading styles and wide-mode research link colors
- * Version: 1.b
- * Revised: 11Jul26
+ * Version: 1.f
+ * Revised: 12Jul26
  * ========================================================================== */
 
 .book-root {
@@ -10,8 +10,8 @@
 }
 
 .book {
-  max-width: 42rem;
-  margin: 0 auto;
+  max-width: none; /* width set by .reader-main-col */
+  margin: 0;
   padding: 1.5rem 1.25rem 4rem;
   font-family: var(--font-book);
   font-size: calc(1rem * var(--font-scale));
@@ -37,25 +37,26 @@
   color: var(--text-muted);
 }
 
-/* Wide: colored provider links */
+/* Wide: body-colored text + 2px colored underlines (L red / W blue / D green) */
+html[data-layout='wide'] .book a[data-link-provider] {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
 html[data-layout='wide'] .book a[data-link-provider='l'] {
-  color: var(--provider-luz);
+  text-decoration-color: var(--provider-luz);
 }
 html[data-layout='wide'] .book a[data-link-provider='w'] {
-  color: var(--provider-wiki);
+  text-decoration-color: var(--provider-wiki);
 }
 html[data-layout='wide'] .book a[data-link-provider='d'] {
-  color: var(--provider-dict);
+  text-decoration-color: var(--provider-dict);
 }
 /* maps (m) folded into wikipedia — style legacy m links as wiki */
 html[data-layout='wide'] .book a[data-link-provider='m'] {
-  color: var(--provider-wiki);
-}
-
-html[data-layout='wide'] .book a[data-link-provider] {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  cursor: pointer;
+  text-decoration-color: var(--provider-wiki);
 }
 
 /* Density / provider filters (wide only; narrow uses layout zero-link rules) */
@@ -191,62 +192,154 @@ details.related-terms-block .expand-body li {
   margin: 1rem auto;
 }
 
-/* TOC overlay */
+/* Reading column — single centered book (no floating TOC rail) */
 .middle-panel {
   position: relative;
 }
-.toc-panel {
-  position: absolute;
-  top: var(--toolbar-height);
-  left: 0;
-  right: 0;
-  max-height: min(70vh, 28rem);
-  z-index: 40;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: column;
+.reader-main-col {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
 }
-.toc-panel.is-hidden {
+.book-root {
+  min-width: 0;
+}
+
+/* Off-screen cascading TOC sidebar */
+.toc-sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.35);
+}
+.toc-sidebar-backdrop.is-hidden {
   display: none;
 }
-.toc-panel-header {
+.toc-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 55;
+  width: min(18rem, 88vw);
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+  transform: translateX(-100%);
+  transition: transform 0.18s ease;
+}
+.toc-sidebar.is-open {
+  transform: translateX(0);
+}
+.toc-sidebar.is-hidden:not(.is-open) {
+  pointer-events: none;
+}
+.toc-cascade-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.35rem 0.5rem;
+  gap: 2px;
+  padding: 0.35rem 0.4rem;
   border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  min-width: 0;
+  height: var(--toolbar-height);
+  box-sizing: border-box;
+}
+.toc-cascade-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.85rem;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 0.25rem;
 }
-.toc-panel-body {
+.toc-filter-wrap {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.toc-filter {
+  width: 100%;
+  height: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 0.5rem;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+.toc-filter:focus {
+  outline: none;
+}
+.toc-filter:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.toc-cascade-body {
   overflow: auto;
-  padding: 0.5rem 0.75rem 1rem;
+  padding: 0.35rem 0.4rem 0.75rem;
+  flex: 1 1 auto;
+  min-height: 0;
 }
-.toc-list {
+.toc-cascade-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.toc-item {
-  margin: 0.15rem 0;
+.toc-cascade-item {
+  margin: 0;
 }
-.toc-item a {
+.toc-cascade-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  border: none;
+  background: transparent;
   color: var(--text);
-  text-decoration: none;
-  display: block;
-  padding: 0.2rem 0.25rem;
-  border-radius: 4px;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  padding: 0.4rem 0.35rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
-.toc-item a:hover {
-  background: var(--surface);
-  color: var(--accent);
+.toc-cascade-row:hover {
+  background: transparent;
 }
-.toc-level-2 {
-  padding-left: 0.85rem;
-  font-size: 0.92rem;
+.toc-cascade-row:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.toc-cascade-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.toc-cascade-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding-right: 0.15rem;
 }
 .toc-panel-empty {
   color: var(--text-muted);
   margin: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+/* Bible citation research links (same underline treatment as provider links) */
+.bible-cite a[data-bible-cite] {
+  font-weight: inherit;
 }

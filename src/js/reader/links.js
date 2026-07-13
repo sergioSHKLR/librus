@@ -1,14 +1,33 @@
 /**
  * Block 1 of 1 — reader/links.js
  * Description: Density + provider toggles in Links dropdown (wide only)
- * Version: 1.d
- * Revised: 11Jul26
+ * Version: 1.e
+ * Revised: 12Jul26
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';
 import { computeIsWide } from './layout.js';
 
 const DENSITY_ORDER = ['lo', 'med', 'hi'];
+
+/** @type {Record<string, string>} */
+let strings = {};
+
+/**
+ * Locale strings for density chips and re-applied menu labels.
+ * @param {Record<string, string>} s
+ */
+export function setLinksStrings(s) {
+  strings = s || {};
+  applyLinkFilters(loadSettings());
+}
+
+function densityLabel(density) {
+  const d = density || 'med';
+  const key = 'settings.density.' + d;
+  if (strings[key]) return strings[key];
+  return String(d).toUpperCase();
+}
 
 function interestVisible(density, interest) {
   const i = interest || 'med';
@@ -59,9 +78,8 @@ export function applyLinkFilters(settings) {
     });
   }
 
-  const densText = density.toUpperCase();
   const label = document.getElementById('density-toggle-label');
-  if (label) label.textContent = densText;
+  if (label) label.textContent = densityLabel(density);
 
   document.querySelectorAll('.provider-toggle[data-provider-code]').forEach((btn) => {
     const code = btn.getAttribute('data-provider-code');
@@ -118,14 +136,8 @@ export function wireLinkFilters() {
     setMenuOpen(false);
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && isMenuOpen()) {
-      setMenuOpen(false);
-      document.getElementById('btn-links-menu')?.focus();
-    }
-  });
-
-  document.addEventListener('nano:layout-change', () => {
-    applyLinkFilters(loadSettings());
+  window.addEventListener('resize', () => {
+    settings = loadSettings();
+    applyLinkFilters(settings);
   });
 }

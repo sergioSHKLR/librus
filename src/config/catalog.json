@@ -11,11 +11,86 @@
       "lang": "pt",
       "license": "public-domain",
       "cover": {
-        "colors": ["#1a4a7a", "#2d6a9f"],
-        "angle": 135
+        "colors": ["#0d3d6e", "#2b7bbf"],
+        "angle": 135,
+        "icon": "wind"
       },
       "enabled": true,
+      "categories": ["codificação", "kardec"],
+      "order": 1,
       "note": "Compiled from content/books/lde/book.md"
+    },
+    {
+      "slug": "ldm",
+      "path": "content/books/ldm/book.md",
+      "title": "O Livro dos Médiuns",
+      "author": "Allan Kardec",
+      "emoji": "📖",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": ["#3b1f5c", "#7b4fb0"],
+        "angle": 135,
+        "icon": "pen-tool"
+      },
+      "enabled": true,
+      "categories": ["codificação", "kardec", "mediunidade"],
+      "order": 2,
+      "note": "Stub — content forthcoming"
+    },
+    {
+      "slug": "ese",
+      "path": "content/books/ese/book.md",
+      "title": "O Evangelho Segundo o Espiritismo",
+      "author": "Allan Kardec",
+      "emoji": "✝️",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": ["#8a6b00", "#d4a017"],
+        "angle": 135,
+        "icon": "book-marked"
+      },
+      "enabled": true,
+      "categories": ["codificação", "kardec", "evangelho"],
+      "order": 3,
+      "note": "Stub — content forthcoming"
+    },
+    {
+      "slug": "ceu",
+      "path": "content/books/ceu/book.md",
+      "title": "O Céu e o Inferno",
+      "author": "Allan Kardec",
+      "emoji": "☁️",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": ["#6b1515", "#c0392b"],
+        "angle": 135,
+        "icon": "flame"
+      },
+      "enabled": true,
+      "categories": ["codificação", "kardec"],
+      "order": 4,
+      "note": "Stub — content forthcoming"
+    },
+    {
+      "slug": "gen",
+      "path": "content/books/gen/book.md",
+      "title": "A Gênese",
+      "author": "Allan Kardec",
+      "emoji": "🌍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": ["#1a4d2e", "#3d8b55"],
+        "angle": 135,
+        "icon": "sprout"
+      },
+      "enabled": true,
+      "categories": ["codificação", "kardec"],
+      "order": 5,
+      "note": "Stub — content forthcoming"
     }
   ]
 }

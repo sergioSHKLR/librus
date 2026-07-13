@@ -5,7 +5,7 @@
  * Revised: 10Jul26
  */
 
-import { STORAGE_KEY, VIEWPORT_ALERT_KEY } from '../shared/constants.js';
+import { STORAGE_KEY, VIEWPORT_ALERT_KEY, STUDY_NOTE_KEY } from '../shared/constants.js';
 import { loadSettings, saveSettings, defaultSettings } from '../shared/storage.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
 
@@ -82,6 +82,7 @@ export async function clearSiteData() {
   try {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(VIEWPORT_ALERT_KEY);
+    localStorage.removeItem(STUDY_NOTE_KEY);
     localStorage.removeItem('nano-ssg-reading');
     localStorage.removeItem('nano-ssg-debug');
   } catch {

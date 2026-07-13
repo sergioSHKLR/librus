@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/06-settings.css" />
   <link rel="stylesheet" href="css/07-library.css" />
   <link rel="stylesheet" href="css/08-theme-dark.css" />
+  <link rel="stylesheet" href="css/10-study-note.css" />
   <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body class="page-library app-shell" data-app-base="./">
@@ -34,15 +35,17 @@
       <div class="library-brand">
         <img src="icons/brand.svg" class="library-brand-icon" alt="" width="32" height="32" />
         <div>
-          <h1 class="library-title" data-i18n="brand">L∙I∙B∙R∙U∙S</h1>
+          <h1 class="library-title">
+            <span data-i18n="brand">L∙I∙B∙R∙U∙S</span><sup class="brand-beta" data-i18n="brand.beta">beta</sup>
+          </h1>
           <p class="library-panes" id="library-tagline" data-i18n="tagline">annotate to assimilate</p>
         </div>
       </div>
       <div class="library-header-actions">
-        <button type="button" class="toolbar-btn" id="btn-settings" title="Settings" aria-label="Settings">
+        <button type="button" class="toolbar-btn" id="btn-settings" data-i18n-label="library.settings" title="Settings" aria-label="Settings">
           <img src="icons/settings.svg" class="toolbar-icon" alt="" width="20" height="20" />
         </button>
-        <button type="button" class="toolbar-btn" id="btn-theme-toggle" title="Theme" aria-label="Theme">
+        <button type="button" class="toolbar-btn" id="btn-theme-toggle" data-i18n-label="settings.theme" title="Theme" aria-label="Theme">
           <img src="icons/device.svg" class="toolbar-icon" id="theme-toggle-icon" alt="" width="20" height="20" />
         </button>
       </div>
@@ -53,6 +56,18 @@
     <section class="library-intro" aria-labelledby="library-heading">
       <h2 id="library-heading" class="library-heading" data-i18n="library.title">Library</h2>
       <p class="library-lead" data-i18n="library.lead">Open, read, annotate. Research on a wide screen.</p>
+      <div class="library-filter-wrap">
+        <input
+          type="search"
+          id="library-filter"
+          class="library-filter"
+          data-i18n-placeholder="library.filter"
+          data-i18n-aria="library.filter"
+          placeholder="Filter books…"
+          aria-label="Filter books"
+          autocomplete="off"
+        />
+      </div>
     </section>
 
     <div id="library-empty" class="library-empty" hidden></div>
@@ -68,6 +83,8 @@
       <a href="pages/help.html" data-i18n="nav.help">Help</a>
       <span aria-hidden="true">·</span>
       <a href="pages/legal.html" data-i18n="nav.legal">Legal</a>
+      <span aria-hidden="true">·</span>
+      <a href="pages/contact.html" data-i18n="nav.contact">Contact</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/sergioSHKLR/nano-ssg" rel="noopener noreferrer" target="_blank" data-i18n="nav.code">Code</a>
     </p>

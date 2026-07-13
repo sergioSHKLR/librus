@@ -3,32 +3,93 @@
 <head>
   <!--
     Block 1 of 1 — blank context page
-    Description: Default consult iframe placeholder
-    Version: 1.a
-    Revised: 10Jul26
+    Description: Default consult iframe placeholder (EN/PT from settings)
+    Version: 1.b
+    Revised: 12Jul26
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Consult</title>
   <style>
+    :root {
+      --blank-bg: #f8f8f8;
+      --blank-text: #666666;
+    }
+    html[data-theme='dark'] {
+      --blank-bg: #1a1a1a;
+      --blank-text: #aaaaaa;
+    }
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme='light']) {
+        --blank-bg: #1a1a1a;
+        --blank-text: #aaaaaa;
+      }
+    }
     body {
       margin: 0;
       min-height: 100dvh;
       display: grid;
       place-items: center;
-      font-family: system-ui, sans-serif;
-      color: #666;
-      background: #f8f8f8;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--blank-text);
+      background: var(--blank-bg);
     }
     p {
       max-width: 16rem;
       text-align: center;
       line-height: 1.45;
       font-size: 0.95rem;
+      margin: 1rem;
     }
   </style>
 </head>
 <body>
-  <p data-i18n-ignore>Select a term or open a link to consult.</p>
+  <p id="blank-msg">Select a term or open a link to consult.</p>
+  <script>
+    (function () {
+      var MSG = {
+        en: 'Select a term or open a link to consult.',
+        pt: 'Selecione um termo ou abra um link para consultar.'
+      };
+
+      function readSettings() {
+        try {
+          var raw = localStorage.getItem('nano-ssg-settings');
+          if (!raw) return {};
+          return JSON.parse(raw) || {};
+        } catch (e) {
+          return {};
+        }
+      }
+
+      function resolveLang() {
+        try {
+          var q = new URLSearchParams(window.location.search || '').get('lang');
+          if (q === 'pt' || q === 'en') return q;
+        } catch (e) {}
+        var s = readSettings();
+        if (s.lang === 'pt' || s.lang === 'en') return s.lang;
+        return 'en';
+      }
+
+      function resolveTheme() {
+        var s = readSettings();
+        if (s.theme === 'light' || s.theme === 'dark') return s.theme;
+        return 'system';
+      }
+
+      var lang = resolveLang();
+      var theme = resolveTheme();
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+      if (theme === 'light' || theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+      }
+      var el = document.getElementById('blank-msg');
+      if (el) el.textContent = MSG[lang] || MSG.en;
+      document.title = lang === 'pt' ? 'Consultar' : 'Consult';
+    })();
+  </script>
 </body>
 </html>

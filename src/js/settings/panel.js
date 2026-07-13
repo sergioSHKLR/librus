@@ -1,14 +1,14 @@
 /**
  * Block 1 of 1 — settings/panel.js
  * Description: App settings — language + pack I/O (type/links live on reader)
- * Version: 1.d
- * Revised: 11Jul26
+ * Version: 1.e
+ * Revised: 12Jul26
  */
 
 import { loadSettings, saveSettings } from '../shared/storage.js';
 import { applyTheme } from '../shared/theme.js';
 import { downloadExportPack, importExportPack, clearSiteData } from './export-import.js';
-import { forceUpdate } from './update.js';
+import { forceUpdate, refreshUpdateButton, isUpdateAvailable } from './update.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
 import { t, applyI18n } from '../i18n/i18n.js';
 import { assetBase } from '../shared/paths.js';
@@ -37,6 +37,7 @@ export function openSettings() {
   }
   if (strings && Object.keys(strings).length) applyI18n(panel, strings);
   syncForm(loadSettings());
+  refreshUpdateButton();
 }
 
 export function closeSettings() {
@@ -52,11 +53,25 @@ export function closeSettings() {
   }
 }
 
+function formatPrefsSummary(settings) {
+  const p = settings.linkProviders || {};
+  const prov = ['l', 'w', 'd'].filter((c) => p[c] !== false).join(',') || '—';
+  return [
+    'lang=' + (settings.lang || 'en'),
+    'theme=' + (settings.theme || 'system'),
+    'density=' + (settings.linkDensity || 'med'),
+    'font=' + (settings.fontScale != null ? settings.fontScale : 1),
+    'prov=' + prov
+  ].join(' · ');
+}
+
 function syncForm(settings) {
   const lang = $('settings-lang');
   if (lang) lang.value = settings.lang || 'en';
   const ver = $('settings-version');
   if (ver) ver.textContent = APP_VERSION + ' · ' + BUILD_ID;
+  const cur = $('settings-prefs-current');
+  if (cur) cur.textContent = formatPrefsSummary(settings);
 }
 
 function readForm() {
@@ -100,7 +115,11 @@ export function wireSettingsPanel(opts = {}) {
     }
     if (tEl.closest('#settings-export')) downloadExportPack();
     if (tEl.closest('#settings-import')) $('settings-import-file')?.click();
-    if (tEl.closest('#btn-settings-force-update') || tEl.closest('#btn-force-update')) forceUpdate();
+    if (tEl.closest('#btn-settings-update')) {
+      if (!isUpdateAvailable()) return;
+      forceUpdate();
+    }
+    if (tEl.closest('#btn-force-update')) forceUpdate();
     if (tEl.closest('#settings-clear')) {
       const ok = confirm(t(strings, 'settings.clearConfirm', 'Clear site data and reload?'));
       if (!ok) return;
@@ -145,7 +164,7 @@ export function ensureSettingsDom() {
   <div class="settings-card">
     <header class="settings-header">
       <h2 id="settings-title" data-i18n="settings.title">Settings</h2>
-      <button type="button" class="toolbar-btn" id="btn-settings-close" aria-label="Close">
+      <button type="button" class="toolbar-btn" id="btn-settings-close" data-i18n-label="common.close" title="Close" aria-label="Close">
         <img src="${closeIcon}" class="toolbar-icon" alt="" width="20" height="20" />
       </button>
     </header>
@@ -154,12 +173,19 @@ export function ensureSettingsDom() {
         <select id="settings-lang"><option value="en">English</option><option value="pt">Português</option></select>
       </label>
       <p class="settings-note" data-i18n="settings.notesNote">Notes live in your Hypothes.is account (not exported here).</p>
-      <p class="settings-note">Typography and research links are controlled in the reader. Theme cycles on the library toolbar.</p>
+      <p class="settings-note" data-i18n="settings.readerNote">Typography and research links are controlled in the reader. Theme cycles on the library toolbar.</p>
+      <div class="settings-url-prefs">
+        <h3 class="settings-subtitle" data-i18n="settings.urlPrefs">URL preferences</h3>
+        <p class="settings-note" data-i18n="settings.urlPrefsHint">
+          Query strings write through to localStorage, e.g. ?lang=pt&amp;theme=dark&amp;density=hi&amp;font=1.125&amp;prov=l,w. Clear site data restores defaults.
+        </p>
+        <p class="settings-note"><span data-i18n="settings.currentPrefs">Current</span>: <code id="settings-prefs-current">…</code></p>
+      </div>
       <div class="settings-actions">
         <button type="button" class="settings-btn" id="settings-export" data-i18n="settings.export">Export library pack</button>
         <button type="button" class="settings-btn" id="settings-import" data-i18n="settings.import">Import library pack</button>
         <input type="file" id="settings-import-file" accept="application/json,.json" hidden />
-        <button type="button" class="settings-btn" id="btn-settings-force-update" data-i18n="settings.forceUpdate">Force update</button>
+        <button type="button" class="settings-btn" id="btn-settings-update" data-i18n="settings.update" disabled>Update</button>
         <button type="button" class="settings-btn settings-btn-danger" id="settings-clear" data-i18n="settings.clear">Clear site data</button>
       </div>
       <p id="settings-status" class="settings-status" role="status"></p>
@@ -172,4 +198,6 @@ export function ensureSettingsDom() {
 
   document.body.appendChild(backdrop);
   document.body.appendChild(panel);
+  document.dispatchEvent(new CustomEvent('nano:settings-dom'));
+  refreshUpdateButton();
 }

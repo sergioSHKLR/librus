@@ -54,6 +54,8 @@ export function normalizeFrontMatter(data, folderSlug) {
     meta.emoji = FALLBACKS.emoji;
   }
 
+  const prevIcon =
+    meta.cover && meta.cover.icon != null ? String(meta.cover.icon).replace(/[^a-z0-9-]/gi, '') : '';
   let colors = meta.cover && Array.isArray(meta.cover.colors) ? meta.cover.colors : null;
   if (!colors || colors.length < 1 || colors.length > 2 || colors.some((c) => !HEX.test(String(c)))) {
     warnings.push(`cover.colors → ${JSON.stringify(FALLBACKS.coverColors)}`);
@@ -67,6 +69,7 @@ export function normalizeFrontMatter(data, folderSlug) {
           : FALLBACKS.coverAngle
     };
   }
+  if (prevIcon) meta.cover.icon = prevIcon;
 
   const allowedLicenses = [
     'public-domain',

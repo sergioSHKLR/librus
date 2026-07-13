@@ -1,17 +1,15 @@
 /**
  * Block 1 of 1 — reader/layout.js
- * Description: Wide/narrow layout mode + limited-experience viewport alert
- * Version: 1.a
- * Revised: 10Jul26
+ * Description: Wide/narrow by width only; limited-experience + Hypo tip
+ * Version: 1.b
+ * Revised: 12Jul26
  */
 
 import { LAYOUT_WIDE_MIN, VIEWPORT_ALERT_KEY } from '../shared/constants.js';
 
 export function computeIsWide() {
   const w = window.innerWidth || document.documentElement.clientWidth || 0;
-  const landscape =
-    !window.matchMedia || window.matchMedia('(orientation: landscape)').matches;
-  return w >= LAYOUT_WIDE_MIN && landscape;
+  return w >= LAYOUT_WIDE_MIN;
 }
 
 export function applyLayoutMode() {
@@ -70,11 +68,4 @@ export function wireLayout() {
       document.dispatchEvent(new CustomEvent('nano:layout-change', { detail: { wide: computeIsWide() } }));
     }, 120);
   });
-
-  if (window.matchMedia) {
-    window.matchMedia('(orientation: portrait)').addEventListener('change', () => {
-      applyLayoutMode();
-      maybeShowViewportAlert();
-    });
-  }
 }

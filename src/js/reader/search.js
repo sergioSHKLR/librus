@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — reader/search.js
- * Description: In-book text search with mark highlights
- * Version: 1.a
- * Revised: 10Jul26
+ * Description: In-book text search with mark highlights + clear
+ * Version: 1.b
+ * Revised: 12Jul26
  */
 
 let hits = [];
@@ -25,6 +25,13 @@ function walkTextNodes(root, fn) {
   nodes.forEach(fn);
 }
 
+function syncClearButton(query) {
+  const btn = document.getElementById('btn-search-clear');
+  if (!btn) return;
+  const has = String(query || '').length > 0;
+  btn.classList.toggle('is-hidden', !has);
+}
+
 export function runSearch(query) {
   const root = document.getElementById('book-root');
   const counter = document.getElementById('search-counter');
@@ -37,6 +44,8 @@ export function runSearch(query) {
   hitIndex = -1;
 
   const q = String(query || '').trim();
+  syncClearButton(query);
+
   if (q.length < 2) {
     if (counter) counter.textContent = '0 / 0';
     if (prev) prev.disabled = true;
@@ -75,6 +84,13 @@ export function runSearch(query) {
   if (next) next.disabled = hits.length < 2;
 }
 
+export function clearSearch() {
+  const input = document.getElementById('search-input');
+  if (input) input.value = '';
+  runSearch('');
+  input?.focus();
+}
+
 export function goSearchHit(delta) {
   if (!hits.length) return;
   hits[hitIndex]?.classList.remove('is-active');
@@ -97,7 +113,13 @@ export function wireSearch() {
       e.preventDefault();
       goSearchHit(e.shiftKey ? -1 : 1);
     }
+    if (e.key === 'Escape' && input.value) {
+      e.preventDefault();
+      clearSearch();
+    }
   });
   document.getElementById('btn-search-prev')?.addEventListener('click', () => goSearchHit(-1));
   document.getElementById('btn-search-next')?.addEventListener('click', () => goSearchHit(1));
+  document.getElementById('btn-search-clear')?.addEventListener('click', () => clearSearch());
+  syncClearButton(input?.value || '');
 }

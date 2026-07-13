@@ -57,5 +57,5 @@ export function applyTheme(theme, ui = {}) {
 export function applyTypography(settings) {
   const root = document.documentElement;
   if (settings.fontScale) root.style.setProperty('--font-scale', String(settings.fontScale));
-  if (settings.lineHeight) root.style.setProperty('--line-height', String(settings.lineHeight));
+  /* line-height is CSS token only — not persisted in localStorage */
 }

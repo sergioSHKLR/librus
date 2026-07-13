@@ -1,15 +1,15 @@
 /**
  * Block 1 of 1 — shared/prefs-query.js
  * Description: URL query → settings (write-through localStorage)
- * Version: 1.a
- * Revised: 11Jul26
+ * Version: 1.b
+ * Revised: 13Jul26
  */
 
-import { loadSettings, saveSettings, FONT_SCALES, LINE_HEIGHTS } from './storage.js';
+import { loadSettings, saveSettings, FONT_SCALES } from './storage.js';
 
 /**
  * Read known query params, merge into settings, save when any applied.
- * Supported: lang, theme, density, font, line (lineHeight), l, w, d (0|1), prov=l,w,d
+ * Supported: lang, theme, density, font, l, w, d (0|1), prov=l,w,d
  * @returns {ReturnType<typeof loadSettings>}
  */
 export function applyQueryToSettings() {
@@ -47,14 +47,6 @@ export function applyQueryToSettings() {
     const fs = Number(params.get('font'));
     if (FONT_SCALES.includes(fs)) {
       settings.fontScale = fs;
-      changed = true;
-    }
-  }
-
-  if (params.has('line')) {
-    const lh = Number(params.get('line'));
-    if (LINE_HEIGHTS.includes(lh)) {
-      settings.lineHeight = lh;
       changed = true;
     }
   }

@@ -300,7 +300,7 @@ function compileBooks(catalog) {
       const title = entry.title || titleFromSlug(entry.slug);
       fs.writeFileSync(
         path.join(outDir, 'body.html'),
-        `<article class="book"><h1>${escapeHtml(title)}</h1><p class="book-meta">Content missing.</p></article>\n`
+        `<article class="book"><h1>${escapeHtml(title)}</h1><p class="book-meta">Stub — conteúdo em breve / content forthcoming.</p></article>\n`
       );
       fs.writeFileSync(path.join(outDir, 'toc.json'), '[]\n');
       libraryBooks.push({
@@ -308,12 +308,13 @@ function compileBooks(catalog) {
         title,
         author: entry.author || 'Unknown',
         emoji: entry.emoji || '📖',
-        cover: entry.cover || { colors: ['#4a5568'] },
+        cover: mergeCover(entry.cover),
         enabled: entry.enabled !== false,
         lang: entry.lang || 'pt',
         license: entry.license || 'unknown',
         abstract: entry.abstract || '',
-        categories: entry.categories || []
+        categories: entry.categories || [],
+        order: entry.order != null ? entry.order : libraryBooks.length
       });
       continue;
     }
@@ -352,7 +353,7 @@ function compileBooks(catalog) {
       title: m.title,
       author: m.author,
       emoji: m.emoji,
-      cover: m.cover,
+      cover: mergeCover(m.cover, entry.cover),
       enabled: entry.enabled !== false,
       lang: m.lang,
       license: m.license,
@@ -365,6 +366,30 @@ function compileBooks(catalog) {
   }
 
   return { libraryBooks, errors };
+}
+
+/** Merge cover colors/icon from front matter + catalog (catalog fills icon). */
+function mergeCover(metaCover, catalogCover) {
+  const base = {
+    colors: ['#4a5568'],
+    angle: 135,
+    icon: 'book'
+  };
+  const a = metaCover && typeof metaCover === 'object' ? metaCover : {};
+  const b = catalogCover && typeof catalogCover === 'object' ? catalogCover : {};
+  const colors =
+    Array.isArray(a.colors) && a.colors.length
+      ? a.colors
+      : Array.isArray(b.colors) && b.colors.length
+        ? b.colors
+        : base.colors;
+  const angle = Number.isFinite(Number(a.angle))
+    ? Number(a.angle)
+    : Number.isFinite(Number(b.angle))
+      ? Number(b.angle)
+      : base.angle;
+  const icon = a.icon || b.icon || base.icon;
+  return { colors, angle, icon: String(icon).replace(/[^a-z0-9-]/gi, '') || 'book' };
 }
 
 function escapeHtml(s) {

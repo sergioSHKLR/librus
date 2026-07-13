@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — library/main.js
- * Description: Library home — i18n, theme button, settings, cover grid
- * Version: 1.b
- * Revised: 11Jul26
+ * Description: Library home — i18n, theme, settings, cover grid + filter
+ * Version: 1.c
+ * Revised: 12Jul26
  */
 
 import { BRAND, TAGLINE } from '../shared/constants.js';
@@ -14,6 +14,12 @@ import { wireSettingsPanel } from '../settings/panel.js';
 import { wirePwaUpdates } from '../settings/update.js';
 import { applyQueryToSettings } from '../shared/prefs-query.js';
 import { bookReaderUrl } from '../shared/paths.js';
+import { wireStudyNote } from '../shared/study-note.js';
+
+/** @type {object[]} */
+let allBooks = [];
+/** @type {Record<string, string>} */
+let uiStrings = {};
 
 function coverBackground(book) {
   const colors = (book.cover && book.cover.colors) || ['#4a5568'];
@@ -22,6 +28,22 @@ function coverBackground(book) {
     return `linear-gradient(${angle}deg, ${colors[0]}, ${colors[1]})`;
   }
   return colors[0] || '#4a5568';
+}
+
+function bookMatches(book, q) {
+  if (!q) return true;
+  const hay = [
+    book.title,
+    book.author,
+    book.slug,
+    book.abstract,
+    book.subtitle,
+    ...(book.categories || [])
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  return hay.includes(q);
 }
 
 function renderBooks(listEl, emptyEl, books, strings) {
@@ -40,10 +62,10 @@ function renderBooks(listEl, emptyEl, books, strings) {
     const a = document.createElement(book.enabled === false ? 'div' : 'a');
     a.className = 'cover-card' + (book.enabled === false ? ' is-disabled' : '');
     if (book.enabled !== false) {
-      /* Relative to library (data-app-base ./) → books/{slug}/ */
       a.href = bookReaderUrl(book.slug);
     }
     a.setAttribute('data-title', book.title || book.slug);
+    a.setAttribute('data-slug', book.slug || '');
 
     const face = document.createElement('div');
     face.className = 'cover-face';
@@ -51,7 +73,11 @@ function renderBooks(listEl, emptyEl, books, strings) {
     face.style.background = coverBackground(book);
     const icon = document.createElement('img');
     icon.className = 'cover-icon';
-    icon.src = 'icons/book.svg';
+    const iconName =
+      (book.cover && book.cover.icon) ||
+      book.icon ||
+      'book';
+    icon.src = 'icons/' + String(iconName).replace(/[^a-z0-9-]/gi, '') + '.svg';
     icon.alt = '';
     icon.width = 44;
     icon.height = 44;
@@ -75,6 +101,25 @@ function renderBooks(listEl, emptyEl, books, strings) {
   }
 }
 
+function applyLibraryFilter() {
+  const input = document.getElementById('library-filter');
+  const q = String(input?.value || '')
+    .trim()
+    .toLowerCase();
+  const filtered = allBooks.filter((b) => bookMatches(b, q));
+  renderBooks(
+    document.getElementById('cover-grid'),
+    document.getElementById('library-empty'),
+    filtered,
+    uiStrings
+  );
+  const empty = document.getElementById('library-empty');
+  if (empty && !filtered.length && allBooks.length) {
+    empty.hidden = false;
+    empty.textContent = t(uiStrings, 'library.filterEmpty', 'No books match.');
+  }
+}
+
 async function fetchLibrary() {
   try {
     const res = await fetch('library.json', { cache: 'no-cache' });
@@ -90,6 +135,7 @@ async function boot() {
   applyTypography(settings);
 
   const strings = await loadLocale(settings.lang);
+  uiStrings = strings;
   document.documentElement.lang = settings.lang === 'pt' ? 'pt-BR' : 'en';
   applyI18n(document, strings);
   document.title = t(strings, 'brand', BRAND) + ' — ' + t(strings, 'library.title', 'Library');
@@ -131,12 +177,14 @@ async function boot() {
   });
 
   const data = await fetchLibrary();
-  renderBooks(
-    document.getElementById('cover-grid'),
-    document.getElementById('library-empty'),
-    data.books || [],
-    strings
-  );
+  allBooks = data.books || [];
+  applyLibraryFilter();
+
+  let fTimer = null;
+  document.getElementById('library-filter')?.addEventListener('input', () => {
+    clearTimeout(fTimer);
+    fTimer = setTimeout(applyLibraryFilter, 100);
+  });
 
   const tag = document.getElementById('library-tagline');
   if (tag && !tag.dataset.i18n) tag.textContent = t(strings, 'tagline', TAGLINE);
@@ -151,6 +199,9 @@ async function boot() {
     }
   });
   wirePwaUpdates();
+  wireStudyNote({
+    dismissLabel: t(strings, 'studyNote.dismiss', settings.lang === 'pt' ? 'Entendi' : 'OK')
+  });
   runIntegrityDebug();
 }
 

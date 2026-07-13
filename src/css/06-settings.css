@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Settings overlay + update banner
  * Description: Modal panel for preferences, export/import, force update
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.b
+ * Revised: 12Jul26
  * ========================================================================== */
 
 .settings-backdrop {
@@ -34,8 +34,8 @@
 .settings-card {
   pointer-events: auto;
   width: min(28rem, 100%);
-  max-height: min(90dvh, 40rem);
-  overflow: auto;
+  max-height: min(92dvh, calc(40rem + 50px));
+  overflow: hidden;
   background: var(--bg);
   color: var(--text);
   border: 1px solid var(--border);
@@ -51,6 +51,7 @@
   justify-content: space-between;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .settings-header h2 {
@@ -63,6 +64,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
 }
 
 .settings-row {
@@ -99,6 +103,17 @@
   font-weight: 600;
 }
 
+.settings-subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.settings-url-prefs code {
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
 .settings-note {
   margin: 0;
   font-size: 0.85rem;
@@ -123,7 +138,15 @@
 }
 
 .settings-btn:hover {
-  border-color: var(--accent);
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.settings-btn:disabled,
+.settings-btn.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .settings-btn-primary {
@@ -154,6 +177,8 @@
 .settings-footer {
   padding: 0.75rem 1rem 1rem;
   border-top: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--bg);
 }
 
 /* Update banner */

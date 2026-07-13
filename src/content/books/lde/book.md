@@ -5,8 +5,9 @@ lang: pt
 author: Allan Kardec
 emoji: "✨"
 cover:
-  colors: ["#1a4a7a", "#2d6a9f"]
+  colors: ["#0d3d6e", "#2b7bbf"]
   angle: 135
+  icon: wind
 license: public-domain
 copyright: "Study edition; Guillon Ribeiro translation historically public domain in Brazil"
 translator: Guillon Ribeiro

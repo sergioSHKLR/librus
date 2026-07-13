@@ -9,16 +9,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   border-radius: 8px;
   border: 1px solid transparent;
   color: var(--text);
+  background: transparent;
 }
 
+/* No hover fill — keep chrome quiet */
 .toolbar-btn:hover:not(:disabled) {
-  background: var(--surface);
-  border-color: var(--border);
+  background: transparent;
+  border-color: transparent;
 }
 
 .toolbar-btn:focus-visible {
