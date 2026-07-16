@@ -5,7 +5,7 @@ Status after local split (2026-07-15).
 ## Done
 - Sibling repo `/home/user/doutrina-ssg` (copy with git history)
 - **DOUTRINA**: brand DOUTRINA, droplet (deepskyblue), `doutrina-*` keys, green splash + CSS post-it + polaroid, Kardec books, CNAME `doutrina.org`, powered by librus.app + Grok Build, GH-ready `public/`
-- **LIBRUS** (`librus-ssg` workspace): `librus-*` keys, charcoal splash + CSS post-it only, 12 Adventures EN+PT catalog entries, locale filters books, EN linker JSON, CNAME `librus.app`, Grok Build credit, GH-ready `public/`
+- **LIBRUS** (`librus-ssg` workspace): `librus-*` keys, charcoal splash + CSS post-it + Watson polaroid (*The game is afoot!*), 12 Adventures EN+PT catalog entries, locale filters books, EN linker JSON, CNAME `librus.app`, Grok Build credit, GH-ready `public/`
 - Linker uses front matter / catalog `lang` → `src/data/dictionaries/{lang}/`
 - Workspace renamed: `nano-ssg` → `librus-ssg`
 
