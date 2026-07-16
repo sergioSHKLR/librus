@@ -1,13 +1,17 @@
 /**
  * Block 1 of 1 — settings/panel.js
- * Description: App settings — language + pack I/O (type/links live on reader)
- * Version: 1.e
- * Revised: 12Jul26
+ * Description: Language, custom search URLs, clear data, update
+ * Version: 1.f
+ * Revised: 16Jul26
  */
 
-import { loadSettings, saveSettings } from '../shared/storage.js';
+import {
+  loadSettings,
+  saveSettings,
+  defaultSearchTemplates
+} from '../shared/storage.js';
 import { applyTheme } from '../shared/theme.js';
-import { downloadExportPack, importExportPack, clearSiteData } from './export-import.js';
+import { clearSiteData } from './export-import.js';
 import { forceUpdate, refreshUpdateButton, isUpdateAvailable } from './update.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
 import { t, applyI18n } from '../i18n/i18n.js';
@@ -53,31 +57,45 @@ export function closeSettings() {
   }
 }
 
-function formatPrefsSummary(settings) {
-  const p = settings.linkProviders || {};
-  const prov = ['l', 'w', 'd'].filter((c) => p[c] !== false).join(',') || '—';
-  return [
-    'lang=' + (settings.lang || 'en'),
-    'theme=' + (settings.theme || 'system'),
-    'density=' + (settings.linkDensity || 'med'),
-    'font=' + (settings.fontScale != null ? settings.fontScale : 1),
-    'prov=' + prov
-  ].join(' · ');
-}
-
 function syncForm(settings) {
   const lang = $('settings-lang');
-  if (lang) lang.value = settings.lang || 'en';
+  if (lang) lang.value = 'en';
   const ver = $('settings-version');
   if (ver) ver.textContent = APP_VERSION + ' · ' + BUILD_ID;
-  const cur = $('settings-prefs-current');
-  if (cur) cur.textContent = formatPrefsSummary(settings);
+
+  const defaults = defaultSearchTemplates('en');
+  const st = settings.searchTemplates || {};
+  const wiki = $('settings-url-wiki');
+  const dict = $('settings-url-dict');
+  if (wiki) {
+    wiki.placeholder = defaults.wiki;
+    wiki.value = st.wiki || '';
+  }
+  if (dict) {
+    dict.placeholder = defaults.dictionary;
+    dict.value = st.dictionary || '';
+  }
+  const cp = settings.customProvider || {};
+  const cLabel = $('settings-custom-label');
+  const cUrl = $('settings-custom-url');
+  const cIcon = $('settings-custom-icon');
+  if (cLabel) cLabel.value = cp.label || 'Custom';
+  if (cUrl) cUrl.value = cp.searchUrl || '';
+  if (cIcon) cIcon.value = cp.icon || 'link';
 }
 
 function readForm() {
   const settings = loadSettings();
-  settings.lang = $('settings-lang')?.value === 'pt' ? 'pt' : 'en';
-  /* theme / type / density stay outside this panel */
+  settings.lang = 'en';
+  settings.searchTemplates = {
+    wiki: ($('settings-url-wiki')?.value || '').trim(),
+    dictionary: ($('settings-url-dict')?.value || '').trim()
+  };
+  settings.customProvider = {
+    label: ($('settings-custom-label')?.value || 'Custom').trim() || 'Custom',
+    searchUrl: ($('settings-custom-url')?.value || '').trim(),
+    icon: ($('settings-custom-icon')?.value || 'link').trim() || 'link'
+  };
   return settings;
 }
 
@@ -106,15 +124,13 @@ export function wireSettingsPanel(opts = {}) {
       const prevLang = loadSettings().lang;
       settings = saveSettings(settings);
       applyTheme(settings.theme, themeUi);
-      document.dispatchEvent(new CustomEvent('nano:settings-changed', { detail: settings }));
+      document.dispatchEvent(new CustomEvent('librus:settings-changed', { detail: settings }));
       if (settings.lang !== prevLang) {
         location.reload();
         return;
       }
       closeSettings();
     }
-    if (tEl.closest('#settings-export')) downloadExportPack();
-    if (tEl.closest('#settings-import')) $('settings-import-file')?.click();
     if (tEl.closest('#btn-settings-update')) {
       if (!isUpdateAvailable()) return;
       forceUpdate();
@@ -125,24 +141,6 @@ export function wireSettingsPanel(opts = {}) {
       if (!ok) return;
       clearSiteData().then(() => location.reload());
     }
-  });
-
-  document.addEventListener('change', async (e) => {
-    const tEl = e.target;
-    if (!(tEl instanceof HTMLInputElement) || tEl.id !== 'settings-import-file') return;
-    const file = tEl.files && tEl.files[0];
-    if (!file) return;
-    try {
-      const pack = JSON.parse(await file.text());
-      const result = importExportPack(pack);
-      const status = $('settings-status');
-      if (status) status.textContent = result.message;
-      if (result.ok) setTimeout(() => location.reload(), 400);
-    } catch (err) {
-      const status = $('settings-status');
-      if (status) status.textContent = String(err.message || err);
-    }
-    tEl.value = '';
   });
 }
 
@@ -161,7 +159,7 @@ export function ensureSettingsDom() {
   panel.setAttribute('aria-modal', 'true');
   const closeIcon = assetBase() + 'icons/close.svg';
   panel.innerHTML = `
-  <div class="settings-card">
+  <div class="settings-card settings-card--wide">
     <header class="settings-header">
       <h2 id="settings-title" data-i18n="settings.title">Settings</h2>
       <button type="button" class="toolbar-btn" id="btn-settings-close" data-i18n-label="common.close" title="Close" aria-label="Close">
@@ -170,25 +168,44 @@ export function ensureSettingsDom() {
     </header>
     <div class="settings-body">
       <label class="settings-row"><span data-i18n="settings.language">Language</span>
-        <select id="settings-lang"><option value="en">English</option><option value="pt">Português</option></select>
+        <select id="settings-lang">
+          <option value="en">English</option>
+          <option value="pt" disabled title="Soon">Português — Soon</option>
+        </select>
       </label>
-      <p class="settings-note" data-i18n="settings.notesNote">Notes live in your Hypothes.is account (not exported here).</p>
-      <p class="settings-note" data-i18n="settings.readerNote">Typography and research links are controlled in the reader. Theme cycles on the library toolbar.</p>
-      <div class="settings-url-prefs">
-        <h3 class="settings-subtitle" data-i18n="settings.urlPrefs">URL preferences</h3>
-        <p class="settings-note" data-i18n="settings.urlPrefsHint">
-          Query strings write through to localStorage, e.g. ?lang=pt&amp;theme=dark&amp;density=hi&amp;font=1.125&amp;prov=l,w. Clear site data restores defaults.
-        </p>
-        <p class="settings-note"><span data-i18n="settings.currentPrefs">Current</span>: <code id="settings-prefs-current">…</code></p>
-      </div>
+      <h3 class="settings-subtitle" data-i18n="settings.searchUrls">Search URLs</h3>
+      <p class="settings-note" data-i18n="settings.searchUrlsHint">Use {query} for the selected term. Leave blank for the built-in default.</p>
+      <label class="settings-field">
+        <span data-i18n="reader.providerWiki">Wikipedia</span>
+        <input type="url" id="settings-url-wiki" class="settings-input" autocomplete="off" spellcheck="false" />
+      </label>
+      <label class="settings-field">
+        <span data-i18n="reader.providerDict">Wiktionary</span>
+        <input type="url" id="settings-url-dict" class="settings-input" autocomplete="off" spellcheck="false" />
+      </label>
+      <h3 class="settings-subtitle" data-i18n="settings.customProvider">Extra provider</h3>
+      <p class="settings-note" data-i18n="settings.customProviderHint">Optional third consult source (link icon). Needs a search URL with {query}.</p>
+      <label class="settings-field">
+        <span data-i18n="settings.customLabel">Label</span>
+        <input type="text" id="settings-custom-label" class="settings-input" maxlength="40" autocomplete="off" />
+      </label>
+      <label class="settings-field">
+        <span data-i18n="settings.customIcon">Icon (Lucide name)</span>
+        <input type="text" id="settings-custom-icon" class="settings-input" maxlength="48" autocomplete="off" placeholder="link" spellcheck="false" />
+      </label>
+      <p class="settings-note" data-i18n="settings.customIconHint">Must match a Lucide icon name (e.g. search, book, sparkles).</p>
+      <label class="settings-field">
+        <span data-i18n="settings.customUrl">Search URL</span>
+        <input type="url" id="settings-custom-url" class="settings-input" autocomplete="off" spellcheck="false" placeholder="https://example.com/search?q={query}" />
+      </label>
       <div class="settings-actions">
-        <button type="button" class="settings-btn" id="settings-export" data-i18n="settings.export">Export library pack</button>
-        <button type="button" class="settings-btn" id="settings-import" data-i18n="settings.import">Import library pack</button>
-        <input type="file" id="settings-import-file" accept="application/json,.json" hidden />
         <button type="button" class="settings-btn" id="btn-settings-update" data-i18n="settings.update" disabled>Update</button>
         <button type="button" class="settings-btn settings-btn-danger" id="settings-clear" data-i18n="settings.clear">Clear site data</button>
       </div>
       <p id="settings-status" class="settings-status" role="status"></p>
+      <div class="settings-credits">
+        <p class="settings-note" data-i18n-html="settings.builtWith">Built with <strong>Grok Build</strong>.</p>
+      </div>
       <p class="settings-version">v<span id="settings-version">…</span></p>
     </div>
     <footer class="settings-footer">
@@ -198,6 +215,6 @@ export function ensureSettingsDom() {
 
   document.body.appendChild(backdrop);
   document.body.appendChild(panel);
-  document.dispatchEvent(new CustomEvent('nano:settings-dom'));
+  document.dispatchEvent(new CustomEvent('librus:settings-dom'));
   refreshUpdateButton();
 }

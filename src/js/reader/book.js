@@ -1,10 +1,11 @@
 /**
  * Block 1 of 1 — reader/book.js
  * Description: Fetch body.html into book-root; wire in-book links (wide consult)
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.c
+ * Revised: 16Jul26
  */
 
+import { loadSettings } from '../shared/storage.js';
 import { computeIsWide } from './layout.js';
 import { openContextUrl } from './context.js';
 
@@ -40,16 +41,60 @@ function resolveProviderHref(a) {
   if (m) {
     const code = m[1];
     const slug = m[2];
+    /* LIBRUS: wiki/dict follow UI locale (EN default; PT when unlocked) */
+    const lang = loadSettings().lang === 'pt' ? 'pt' : 'en';
+    const wiki = 'https://' + lang + '.wikipedia.org/wiki/';
+    const dict = 'https://' + lang + '.wiktionary.org/wiki/';
     const bases = {
-      l: 'https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=',
-      w: 'https://pt.wikipedia.org/wiki/',
-      d: 'https://pt.wiktionary.org/wiki/',
+      /* Luz removed from LIBRUS — map legacy l: to wiki */
+      l: wiki,
+      w: wiki,
+      d: dict,
       /* legacy m: → Wikipedia (maps pack folded) */
-      m: 'https://pt.wikipedia.org/wiki/'
+      m: wiki
     };
     return (bases[code] || '') + slug;
   }
   return href;
+}
+
+/**
+ * Open closed <details> ancestors so in-page anchors (e.g. index terms) are visible.
+ * @param {Element} el
+ */
+function openDetailsAncestors(el) {
+  let p = el.parentElement;
+  while (p) {
+    if (p instanceof HTMLDetailsElement) p.open = true;
+    p = p.parentElement;
+  }
+}
+
+/**
+ * Scroll to an in-book id, expanding collapsible blocks if needed.
+ * @param {string} id
+ * @param {ParentNode} [scope]
+ * @param {{ smooth?: boolean }} [opts]
+ * @returns {boolean}
+ */
+export function scrollToBookId(id, scope, opts = {}) {
+  if (!id) return false;
+  const root = scope || document.getElementById('book-root') || document;
+  let target = null;
+  try {
+    target =
+      (root instanceof Element ? root.ownerDocument : document).getElementById(id) ||
+      root.querySelector('[id="' + CSS.escape(id) + '"]');
+  } catch {
+    target = root.querySelector('[id="' + String(id).replace(/"/g, '') + '"]');
+  }
+  if (!target) return false;
+  openDetailsAncestors(target);
+  target.scrollIntoView({
+    behavior: opts.smooth === false ? 'auto' : 'smooth',
+    block: 'start'
+  });
+  return true;
 }
 
 export function wireBookLinks(root) {
@@ -61,10 +106,8 @@ export function wireBookLinks(root) {
       const href = a.getAttribute('href') || '';
       if (href.startsWith('#')) {
         e.preventDefault();
-        const id = href.slice(1);
-        const target = document.getElementById(id) || el.querySelector('[id="' + CSS.escape(id) + '"]');
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const id = decodeURIComponent(href.slice(1));
+        if (scrollToBookId(id, el, { smooth: true })) {
           history.replaceState(null, '', '#' + id);
         }
         return;
@@ -93,8 +136,5 @@ export function applyDeepLink() {
   const hash = location.hash.replace(/^#/, '');
   if (!hash) return;
   const root = document.getElementById('book-root');
-  const target =
-    document.getElementById(hash) ||
-    (root && root.querySelector('[id="' + CSS.escape(hash) + '"]'));
-  if (target) target.scrollIntoView({ block: 'start' });
+  scrollToBookId(decodeURIComponent(hash), root || document, { smooth: false });
 }

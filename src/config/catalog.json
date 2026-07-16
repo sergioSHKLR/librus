@@ -3,94 +3,580 @@
   "tagline": "annotate to assimilate",
   "books": [
     {
-      "slug": "lde",
-      "path": "content/books/lde/book.md",
-      "title": "O Livro dos Espíritos",
-      "author": "Allan Kardec",
-      "emoji": "✨",
-      "lang": "pt",
+      "slug": "adv-01-scandal-en",
+      "path": "content/books/adv-01-scandal-en/book.md",
+      "title": "A Scandal in Bohemia",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
       "license": "public-domain",
       "cover": {
-        "colors": ["#0d3d6e", "#2b7bbf"],
+        "colors": [
+          "#1a2744",
+          "#3d5a80"
+        ],
         "angle": 135,
-        "icon": "wind"
+        "icon": "holmes"
       },
       "enabled": true,
-      "categories": ["codificação", "kardec"],
-      "order": 1,
-      "note": "Compiled from content/books/lde/book.md"
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 1
     },
     {
-      "slug": "ldm",
-      "path": "content/books/ldm/book.md",
-      "title": "O Livro dos Médiuns",
-      "author": "Allan Kardec",
-      "emoji": "📖",
+      "slug": "adv-01-scandal-pt",
+      "path": "content/books/adv-01-scandal-pt/book.md",
+      "title": "Um Escândalo na Boêmia",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
       "lang": "pt",
       "license": "public-domain",
       "cover": {
-        "colors": ["#3b1f5c", "#7b4fb0"],
+        "colors": [
+          "#1a2744",
+          "#3d5a80"
+        ],
         "angle": 135,
-        "icon": "pen-tool"
+        "icon": "holmes"
       },
       "enabled": true,
-      "categories": ["codificação", "kardec", "mediunidade"],
-      "order": 2,
-      "note": "Stub — content forthcoming"
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 1
     },
     {
-      "slug": "ese",
-      "path": "content/books/ese/book.md",
-      "title": "O Evangelho Segundo o Espiritismo",
-      "author": "Allan Kardec",
-      "emoji": "✝️",
-      "lang": "pt",
+      "slug": "adv-02-red-headed-league-en",
+      "path": "content/books/adv-02-red-headed-league-en/book.md",
+      "title": "The Red-Headed League",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
       "license": "public-domain",
       "cover": {
-        "colors": ["#8a6b00", "#d4a017"],
+        "colors": [
+          "#5c1a1a",
+          "#c0392b"
+        ],
         "angle": 135,
-        "icon": "book-marked"
+        "icon": "holmes"
       },
       "enabled": true,
-      "categories": ["codificação", "kardec", "evangelho"],
-      "order": 3,
-      "note": "Stub — content forthcoming"
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 2
     },
     {
-      "slug": "ceu",
-      "path": "content/books/ceu/book.md",
-      "title": "O Céu e o Inferno",
-      "author": "Allan Kardec",
-      "emoji": "☁️",
+      "slug": "adv-02-red-headed-league-pt",
+      "path": "content/books/adv-02-red-headed-league-pt/book.md",
+      "title": "A Liga dos Ruivos",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
       "lang": "pt",
       "license": "public-domain",
       "cover": {
-        "colors": ["#6b1515", "#c0392b"],
+        "colors": [
+          "#5c1a1a",
+          "#c0392b"
+        ],
         "angle": 135,
-        "icon": "flame"
+        "icon": "holmes"
       },
       "enabled": true,
-      "categories": ["codificação", "kardec"],
-      "order": 4,
-      "note": "Stub — content forthcoming"
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 2
     },
     {
-      "slug": "gen",
-      "path": "content/books/gen/book.md",
-      "title": "A Gênese",
-      "author": "Allan Kardec",
-      "emoji": "🌍",
+      "slug": "adv-03-case-of-identity-en",
+      "path": "content/books/adv-03-case-of-identity-en/book.md",
+      "title": "A Case of Identity",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#2c3e50",
+          "#7f8c8d"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 3
+    },
+    {
+      "slug": "adv-03-case-of-identity-pt",
+      "path": "content/books/adv-03-case-of-identity-pt/book.md",
+      "title": "Um Caso de Identidade",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
       "lang": "pt",
       "license": "public-domain",
       "cover": {
-        "colors": ["#1a4d2e", "#3d8b55"],
+        "colors": [
+          "#2c3e50",
+          "#7f8c8d"
+        ],
         "angle": 135,
-        "icon": "sprout"
+        "icon": "holmes"
       },
       "enabled": true,
-      "categories": ["codificação", "kardec"],
-      "order": 5,
-      "note": "Stub — content forthcoming"
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 3
+    },
+    {
+      "slug": "adv-04-boscombe-valley-en",
+      "path": "content/books/adv-04-boscombe-valley-en/book.md",
+      "title": "The Boscombe Valley Mystery",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#1e3d2f",
+          "#3d7a5c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 4
+    },
+    {
+      "slug": "adv-04-boscombe-valley-pt",
+      "path": "content/books/adv-04-boscombe-valley-pt/book.md",
+      "title": "O Mistério do Vale de Boscombe",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#1e3d2f",
+          "#3d7a5c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 4
+    },
+    {
+      "slug": "adv-05-five-orange-pips-en",
+      "path": "content/books/adv-05-five-orange-pips-en/book.md",
+      "title": "The Five Orange Pips",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#7a3e00",
+          "#e67e22"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 5
+    },
+    {
+      "slug": "adv-05-five-orange-pips-pt",
+      "path": "content/books/adv-05-five-orange-pips-pt/book.md",
+      "title": "As Cinco Sementes de Laranja",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#7a3e00",
+          "#e67e22"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 5
+    },
+    {
+      "slug": "adv-06-twisted-lip-en",
+      "path": "content/books/adv-06-twisted-lip-en/book.md",
+      "title": "The Man with the Twisted Lip",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#2d1b4e",
+          "#6c5ce7"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 6
+    },
+    {
+      "slug": "adv-06-twisted-lip-pt",
+      "path": "content/books/adv-06-twisted-lip-pt/book.md",
+      "title": "O Homem do Lábio Torcido",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#2d1b4e",
+          "#6c5ce7"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 6
+    },
+    {
+      "slug": "adv-07-blue-carbuncle-en",
+      "path": "content/books/adv-07-blue-carbuncle-en/book.md",
+      "title": "The Adventure of the Blue Carbuncle",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#0c2d48",
+          "#1b6ca8"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 7
+    },
+    {
+      "slug": "adv-07-blue-carbuncle-pt",
+      "path": "content/books/adv-07-blue-carbuncle-pt/book.md",
+      "title": "A Aventura do Carbúnculo Azul",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#0c2d48",
+          "#1b6ca8"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 7
+    },
+    {
+      "slug": "adv-08-speckled-band-en",
+      "path": "content/books/adv-08-speckled-band-en/book.md",
+      "title": "The Adventure of the Speckled Band",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#1b4332",
+          "#40916c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 8
+    },
+    {
+      "slug": "adv-08-speckled-band-pt",
+      "path": "content/books/adv-08-speckled-band-pt/book.md",
+      "title": "A Aventura da Banda Malhada",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#1b4332",
+          "#40916c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 8
+    },
+    {
+      "slug": "adv-09-engineers-thumb-en",
+      "path": "content/books/adv-09-engineers-thumb-en/book.md",
+      "title": "The Adventure of the Engineer's Thumb",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#3d2914",
+          "#a67c52"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 9
+    },
+    {
+      "slug": "adv-09-engineers-thumb-pt",
+      "path": "content/books/adv-09-engineers-thumb-pt/book.md",
+      "title": "A Aventura do Polegar do Engenheiro",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#3d2914",
+          "#a67c52"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 9
+    },
+    {
+      "slug": "adv-10-noble-bachelor-en",
+      "path": "content/books/adv-10-noble-bachelor-en/book.md",
+      "title": "The Adventure of the Noble Bachelor",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#3b1f4a",
+          "#9b59b6"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 10
+    },
+    {
+      "slug": "adv-10-noble-bachelor-pt",
+      "path": "content/books/adv-10-noble-bachelor-pt/book.md",
+      "title": "A Aventura do Nobre Solteiro",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#3b1f4a",
+          "#9b59b6"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 10
+    },
+    {
+      "slug": "adv-11-beryl-coronet-en",
+      "path": "content/books/adv-11-beryl-coronet-en/book.md",
+      "title": "The Adventure of the Beryl Coronet",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#0b3d2e",
+          "#1abc9c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 11
+    },
+    {
+      "slug": "adv-11-beryl-coronet-pt",
+      "path": "content/books/adv-11-beryl-coronet-pt/book.md",
+      "title": "A Aventura da Coroa de Berilo",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#0b3d2e",
+          "#1abc9c"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 11
+    },
+    {
+      "slug": "adv-12-copper-beeches-en",
+      "path": "content/books/adv-12-copper-beeches-en/book.md",
+      "title": "The Adventure of the Copper Beeches",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#4a3728",
+          "#b08968"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 12
+    },
+    {
+      "slug": "adv-12-copper-beeches-pt",
+      "path": "content/books/adv-12-copper-beeches-pt/book.md",
+      "title": "A Aventura das Faias de Cobre",
+      "author": "Arthur Conan Doyle",
+      "emoji": "🔍",
+      "lang": "pt",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#4a3728",
+          "#b08968"
+        ],
+        "angle": 135,
+        "icon": "holmes"
+      },
+      "enabled": true,
+      "categories": [
+        "holmes",
+        "adventures",
+        "doyle"
+      ],
+      "order": 12
     }
   ]
 }

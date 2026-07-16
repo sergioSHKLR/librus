@@ -7,7 +7,7 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'nano-ssg-settings';
+  var STORAGE_KEY = 'librus-settings';
   var WIDE_MIN = 1200;
   var FONT_STACK = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 

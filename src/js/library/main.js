@@ -46,6 +46,14 @@ function bookMatches(book, q) {
   return hay.includes(q);
 }
 
+/** Show only books for the active UI locale (en|pt). */
+function booksForLocale(books, lang) {
+  const code = lang === 'pt' ? 'pt' : 'en';
+  const matched = (books || []).filter((b) => (b.lang || 'en') === code);
+  /* Fallback: if catalog has no books for this lang, show all */
+  return matched.length ? matched : books || [];
+}
+
 function renderBooks(listEl, emptyEl, books, strings) {
   listEl.innerHTML = '';
   const enabled = (books || []).filter((b) => b && b.slug);
@@ -106,7 +114,9 @@ function applyLibraryFilter() {
   const q = String(input?.value || '')
     .trim()
     .toLowerCase();
-  const filtered = allBooks.filter((b) => bookMatches(b, q));
+  const settings = loadSettings();
+  const localeBooks = booksForLocale(allBooks, settings.lang);
+  const filtered = localeBooks.filter((b) => bookMatches(b, q));
   renderBooks(
     document.getElementById('cover-grid'),
     document.getElementById('library-empty'),
@@ -114,7 +124,7 @@ function applyLibraryFilter() {
     uiStrings
   );
   const empty = document.getElementById('library-empty');
-  if (empty && !filtered.length && allBooks.length) {
+  if (empty && !filtered.length && localeBooks.length) {
     empty.hidden = false;
     empty.textContent = t(uiStrings, 'library.filterEmpty', 'No books match.');
   }

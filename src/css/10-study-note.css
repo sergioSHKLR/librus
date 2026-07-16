@@ -1,7 +1,7 @@
 /* ==========================================================================
- * Block 1 of 1 — First-load study splash
- * Description: Embossed brand + green gradient + bilingual post-it + polaroid
- * Version: 1.i
+ * Block 1 of 1 — First-load study splash (LIBRUS)
+ * Description: Charcoal gradient, embossed brand, CSS post-it only
+ * Version: 2.a
  * Revised: 13Jul26
  * ========================================================================== */
 
@@ -13,10 +13,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
+  gap: 0.9rem;
   padding: 0.75rem 1rem;
   box-sizing: border-box;
-  /* Safe areas on notched phones */
   padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
   padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
 }
@@ -26,23 +25,24 @@
   display: none;
 }
 
-/* Full-bleed green radial vignette (from green-top reference) */
 .study-note-backdrop {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-color: #274e13;
+}
+
+/* Modern charcoal vignette */
+.study-note-modal--charcoal .study-note-backdrop {
+  background-color: #1a1c1e;
   background-image: radial-gradient(
     ellipse 78% 72% at 50% 46%,
-    #557a61 0%,
-    #4a6e52 22%,
-    #3d6238 48%,
-    #315522 72%,
-    #274e13 100%
+    #3a3f46 0%,
+    #2c3036 28%,
+    #23262b 55%,
+    #1a1c1e 100%
   );
 }
 
-/* —— Embossed brand (library layout: icon + L∙I∙B∙R∙U∙S + tagline) —— */
 .study-note-brand {
   position: relative;
   z-index: 2;
@@ -50,7 +50,7 @@
   align-items: center;
   gap: 0.75rem;
   flex-shrink: 0;
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.35rem;
   max-width: min(26rem, calc(100vw - 2rem));
   pointer-events: none;
   user-select: none;
@@ -60,12 +60,11 @@
   flex-shrink: 0;
   width: 2rem;
   height: 2rem;
-  /* Emboss stroke icon into the green field */
-  opacity: 0.72;
+  opacity: 0.85;
   filter:
-    brightness(0) invert(0.82)
-    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.28))
-    drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.4));
+    brightness(0) invert(0.88)
+    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.2))
+    drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.5));
 }
 
 .study-note-brand-text {
@@ -79,17 +78,11 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.2;
-  /* Embossed lettering on green */
-  color: rgba(214, 232, 200, 0.42);
+  color: rgba(230, 234, 240, 0.4);
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.22),
-    0 -1px 0 rgba(0, 0, 0, 0.38),
-    0 2px 4px rgba(0, 0, 0, 0.12);
-}
-
-.study-note-brand-name {
-  font: inherit;
-  letter-spacing: inherit;
+    0 1px 0 rgba(255, 255, 255, 0.16),
+    0 -1px 0 rgba(0, 0, 0, 0.45),
+    0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .study-note-brand-beta {
@@ -101,11 +94,10 @@
   text-transform: lowercase;
   vertical-align: super;
   line-height: 1;
-  color: rgba(214, 232, 200, 0.36);
+  color: rgba(230, 234, 240, 0.34);
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.18),
-    0 -1px 0 rgba(0, 0, 0, 0.32);
-  opacity: 0.95;
+    0 1px 0 rgba(255, 255, 255, 0.12),
+    0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .study-note-brand-tagline {
@@ -113,14 +105,12 @@
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.25;
-  color: rgba(214, 232, 200, 0.34);
+  color: rgba(230, 234, 240, 0.32);
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.16),
-    0 -1px 0 rgba(0, 0, 0, 0.3);
+    0 1px 0 rgba(255, 255, 255, 0.1),
+    0 -1px 0 rgba(0, 0, 0, 0.35);
 }
 
-/* —— Locale pill (under brand) —— */
 .study-note-lang-pill {
   position: relative;
   z-index: 2;
@@ -129,10 +119,10 @@
   align-items: stretch;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(5px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
   overflow: hidden;
 }
 
@@ -141,34 +131,46 @@
   margin: 0;
   border: 0;
   background: transparent;
-  color: #f4f7ef;
+  color: #eef1f5;
   font-size: 1.45rem;
   line-height: 1;
   padding: 0.42rem 0.95rem;
   cursor: pointer;
-  transition: background 0.15s ease;
 }
 
 .study-note-lang-btn + .study-note-lang-btn {
-  border-left: 1px solid rgba(255, 255, 255, 0.28);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .study-note-lang-btn:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .study-note-lang-btn.is-active,
 .study-note-lang-btn[aria-pressed='true'] {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .study-note-lang-btn:focus-visible {
-  outline: 2px solid #c8e6a0;
+  outline: 2px solid #8ab4f8;
   outline-offset: -2px;
   z-index: 1;
 }
 
-/* —— Composition: mobile baseline (readable, compact) —— */
+.study-note-lang-btn:disabled,
+.study-note-lang-btn.is-soon,
+.study-note-lang-btn[aria-disabled='true'] {
+  opacity: 0.42;
+  cursor: not-allowed;
+  filter: grayscale(0.35);
+}
+
+.study-note-lang-btn:disabled:hover,
+.study-note-lang-btn.is-soon:hover,
+.study-note-lang-btn[aria-disabled='true']:hover {
+  background: transparent;
+}
+
 .study-note-stage {
   position: relative;
   z-index: 2;
@@ -176,99 +178,135 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Matches librus.html container gap */
+  gap: 30px;
   flex: 0 1 auto;
-  width: min(26rem, calc(100vw - 1.5rem));
+  width: min(3.6in, calc(100vw - 1.5rem));
   min-height: 0;
-  max-height: calc(100dvh - 7rem);
-  /* visible so polaroid drop-shadow is not clipped by the stage box */
-  overflow: visible;
+  max-height: calc(100dvh - 12rem);
+  overflow: auto;
   pointer-events: none;
-  margin: 0;
-  /* room under polaroid for its drop-shadow so Enter does not sit on it */
+  margin: 0.35rem 0;
   padding-bottom: 1.25rem;
+  padding-top: 0.35rem;
 }
 
-.study-note-postit {
-  display: block;
-  width: min(20.5rem, 94%);
-  height: auto;
-  flex-shrink: 0;
-  transform: rotate(1.6deg);
-  filter: drop-shadow(2px 8px 18px rgba(0, 0, 0, 0.38));
-  z-index: 2;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-/* Polaroid stack: blank (0) develops into portrait (1) */
-.study-note-polaroid-wrap {
+/* Post-it: 3in × 3in (from librus.html) */
+.study-note-sheet {
   position: relative;
-  width: min(18.5rem, 86%);
-  aspect-ratio: 353 / 420;
+  z-index: 2;
+  width: min(3in, 94vw);
+  height: min(3in, 94vw);
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  padding: 20px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  background: #fbf9aa;
+  color: #313d42;
+  border-radius: 0;
+  box-shadow: 3px 12px 18px rgba(0, 0, 0, 0.4);
+  transform: rotate(-3deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-shrink: 0;
-  margin-top: -1.35rem;
-  transform: rotate(-1.3deg);
-  filter: drop-shadow(3px 12px 22px rgba(0, 0, 0, 0.42));
-  z-index: 1;
 }
 
+.study-note-sheet-text {
+  margin: 0;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  overflow: auto;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 27px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* HTML/CSS polaroid — 3.48in × 4.23in; photo is PNG (watson) */
 .study-note-polaroid {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 1;
+  width: min(3.48in, 94vw);
+  height: auto;
+  aspect-ratio: 3.48 / 4.23;
+  flex-shrink: 0;
+  margin-top: 0;
+  transform: rotate(3deg);
+  background: #fbfbfb;
+  box-shadow: 3px 12px 18px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0.15in;
+}
+
+.study-note-polaroid-photo {
+  width: min(3.1in, 89%);
+  height: min(3.1in, 89%);
+  aspect-ratio: 1 / 1;
+  background: #111;
+  margin-top: 0.2in;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.study-note-polaroid-img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   user-select: none;
   -webkit-user-drag: none;
-}
-
-.study-note-polaroid--blank {
-  opacity: 1;
-  z-index: 1;
-}
-
-.study-note-polaroid--photo {
   opacity: 0;
-  z-index: 2;
   filter: brightness(1.55) contrast(0.55) saturate(0.15);
 }
 
-.study-note-modal.is-developed .study-note-polaroid--photo {
+.study-note-modal.is-developed .study-note-polaroid-img {
   opacity: 1;
   filter: brightness(1) contrast(1) saturate(1);
-  /* Chemical-style develop: 10s (doubled) */
   transition:
     opacity 10s ease,
     filter 10s ease;
 }
 
-.study-note-modal.is-developed .study-note-polaroid--blank {
-  opacity: 0.35;
-  transition: opacity 10s ease;
+.study-note-polaroid-caption {
+  margin: 0.2in 0.15in 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
 }
 
-/* —— Enter bar: fully transparent container (must not mask polaroid shadow) —— */
 .study-note-enter-wrap {
   position: relative;
   z-index: 1;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: min(26rem, calc(100vw - 1.5rem));
-  margin: 0;
-  padding: 0;
-  border: 0;
   background: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
   overflow: visible;
   pointer-events: none;
 }
 
-/* Enter / Entrar: frosted pill stays on the button itself */
 .study-note-enter {
   position: relative;
   z-index: 1;
@@ -277,152 +315,44 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   min-width: 7.25rem;
   padding: 0.5rem 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
-  color: #f4f7ef;
+  background: rgba(255, 255, 255, 0.12);
+  color: #eef1f5;
   font: inherit;
   font-size: 1rem;
   font-weight: 650;
   letter-spacing: 0.03em;
   cursor: pointer;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .study-note-enter:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .study-note-enter:focus-visible {
-  outline: 2px solid #c8e6a0;
+  outline: 2px solid #8ab4f8;
   outline-offset: 3px;
 }
 
-/* Short mobile heights */
-@media (max-height: 700px) {
-  .study-note-postit {
-    width: min(17.5rem, 88%);
-  }
-  .study-note-polaroid-wrap {
-    width: min(15.75rem, 80%);
-    margin-top: -1.1rem;
-  }
-}
-
-@media (max-height: 580px) {
-  .study-note-postit {
-    width: min(14.5rem, 78%);
-  }
-  .study-note-polaroid-wrap {
-    width: min(13rem, 70%);
-    margin-top: -0.85rem;
-  }
-  .study-note-lang-btn {
-    font-size: 1.25rem;
-    padding: 0.36rem 0.8rem;
-  }
-  .study-note-enter {
-    min-width: 6.5rem;
-    padding: 0.42rem 1.15rem;
-    font-size: 0.95rem;
-  }
-}
-
-/* Wide short: side-by-side composition */
-@media (max-height: 560px) and (min-width: 640px) {
-  .study-note-stage {
-    width: min(42rem, calc(100vw - 2rem));
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
-  }
-
-  .study-note-postit {
-    width: min(16rem, 42vw);
-  }
-
-  .study-note-polaroid-wrap {
-    width: min(14.5rem, 38vw);
-    margin-top: 0;
-  }
-}
-
-/* —— Desktop / large screens: bigger art —— */
 @media (min-width: 768px) and (min-height: 700px) {
-  .study-note-modal {
-    gap: 0.55rem;
-    padding: 1rem 1.5rem;
-    padding-top: max(1rem, env(safe-area-inset-top, 0px));
-    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
-  }
-
-  .study-note-brand {
-    max-width: min(34rem, calc(100vw - 3rem));
-    gap: 0.85rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .study-note-brand-icon {
-    width: 2.35rem;
-    height: 2.35rem;
-  }
-
   .study-note-brand-title {
     font-size: 1.55rem;
   }
-
-  .study-note-brand-tagline {
-    font-size: 0.95rem;
+  /* Keep physical inch sizes from the HTML mockups on desktop */
+  .study-note-sheet {
+    width: 3in;
+    height: 3in;
   }
-
+  .study-note-polaroid {
+    width: 3.48in;
+  }
   .study-note-stage {
-    width: min(34rem, calc(100vw - 3rem));
-    max-height: calc(100dvh - 10rem);
-  }
-
-  .study-note-postit {
-    width: min(26rem, 72%);
-  }
-
-  .study-note-polaroid-wrap {
-    width: min(23.5rem, 66%);
-    margin-top: -1.75rem;
-  }
-
-  .study-note-lang-btn {
-    font-size: 1.6rem;
-    padding: 0.5rem 1.15rem;
-  }
-
-  .study-note-enter {
-    min-width: 8.5rem;
-    padding: 0.55rem 1.75rem;
-    font-size: 1.1rem;
-  }
-
-  .study-note-enter-wrap {
-    width: min(34rem, calc(100vw - 3rem));
-  }
-}
-
-@media (min-width: 1100px) and (min-height: 820px) {
-  .study-note-stage {
-    width: min(40rem, calc(100vw - 4rem));
-  }
-
-  .study-note-postit {
-    width: min(30rem, 68%);
-  }
-
-  .study-note-polaroid-wrap {
-    width: min(27rem, 62%);
-    margin-top: -2rem;
+    width: min(4in, calc(100vw - 3rem));
   }
 }
 

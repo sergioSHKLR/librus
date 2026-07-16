@@ -57,8 +57,9 @@ export function applyLinkFilters(settings) {
   const density = settings.linkDensity || 'med';
   root.setAttribute('data-link-density', density);
 
-  const providers = settings.linkProviders || { l: true, w: true, d: true };
-  root.setAttribute('data-link-l', providers.l !== false ? '1' : '0');
+  const providers = settings.linkProviders || { w: true, d: true };
+  /* LIBRUS: no Luz — always hide l: links */
+  root.setAttribute('data-link-l', '0');
   root.setAttribute('data-link-w', providers.w !== false ? '1' : '0');
   root.setAttribute('data-link-d', providers.d !== false ? '1' : '0');
   /* maps folded into wikipedia — hide legacy m: links with density/provider off */
@@ -70,6 +71,11 @@ export function applyLinkFilters(settings) {
   if (book) {
     book.querySelectorAll('a[data-link-provider]').forEach((a) => {
       const code = a.getAttribute('data-link-provider');
+      /* Drop Luz (l) entirely — not a LIBRUS provider */
+      if (code === 'l') {
+        a.classList.add('is-link-hidden');
+        return;
+      }
       const interest = a.getAttribute('data-link-interest') || 'med';
       const providerOn = providers[code] !== false;
       const densOk = interestVisible(density, interest);
@@ -122,19 +128,27 @@ export function wireLinkFilters() {
       const code = btn.getAttribute('data-provider-code');
       if (!code) return;
       settings = loadSettings();
-      if (!settings.linkProviders) settings.linkProviders = { l: true, w: true, d: true };
+      if (!settings.linkProviders) settings.linkProviders = { w: true, d: true };
+      if (code === 'l') return;
       settings.linkProviders[code] = settings.linkProviders[code] === false;
       settings = saveSettings(settings);
       applyLinkFilters(settings);
     });
   });
 
+  /* Close only when clicking outside the whole Links control (menu + trigger) */
   document.addEventListener('click', (e) => {
     if (!isMenuOpen()) return;
     const menu = document.getElementById('links-menu');
     if (menu && e.target instanceof Node && menu.contains(e.target)) return;
     setMenuOpen(false);
   });
+  /* Density chip is inside menu — stopPropagation already; re-apply after save */
+  document.getElementById('btn-density-cycle')?.addEventListener(
+    'pointerdown',
+    (e) => e.stopPropagation(),
+    true
+  );
 
   window.addEventListener('resize', () => {
     settings = loadSettings();

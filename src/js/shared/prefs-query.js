@@ -1,15 +1,16 @@
 /**
  * Block 1 of 1 — shared/prefs-query.js
  * Description: URL query → settings (write-through localStorage)
- * Version: 1.b
- * Revised: 13Jul26
+ * Version: 1.c
+ * Revised: 16Jul26
  */
 
 import { loadSettings, saveSettings, FONT_SCALES } from './storage.js';
 
 /**
  * Read known query params, merge into settings, save when any applied.
- * Supported: lang, theme, density, font, l, w, d (0|1), prov=l,w,d
+ * Supported: lang, theme, density, font, w, d (0|1), prov=w,d
+ * (Luz / l is not a LIBRUS provider.)
  * @returns {ReturnType<typeof loadSettings>}
  */
 export function applyQueryToSettings() {
@@ -51,9 +52,9 @@ export function applyQueryToSettings() {
     }
   }
 
-  if (!settings.linkProviders) settings.linkProviders = { l: true, w: true, d: true };
+  if (!settings.linkProviders) settings.linkProviders = { w: true, d: true };
 
-  for (const code of ['l', 'w', 'd']) {
+  for (const code of ['w', 'd']) {
     if (!params.has(code)) continue;
     const v = params.get(code);
     settings.linkProviders[code] = v === '1' || v === 'true' || v === 'on';
@@ -64,7 +65,6 @@ export function applyQueryToSettings() {
     const raw = (params.get('prov') || '').toLowerCase();
     const set = new Set(raw.split(/[,+\s]+/).filter(Boolean));
     settings.linkProviders = {
-      l: set.has('l'),
       w: set.has('w'),
       d: set.has('d')
     };

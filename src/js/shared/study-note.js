@@ -1,26 +1,27 @@
 /**
  * Block 1 of 1 — shared/study-note.js
- * Description: First-load splash — embossed brand, green gradient, bilingual post-it, polaroid
- * Version: 1.e
- * Revised: 13Jul26
+ * Description: First-load splash — embossed LIBRUS, charcoal, post-it + polaroid
+ * Version: 2.b
+ * Revised: 16Jul26
  */
 
-import { BRAND, STUDY_NOTE_KEY } from './constants.js';
+import { BRAND, STUDY_NOTE_KEY, SPLASH_MODE } from './constants.js';
 import { assetUrl } from './paths.js';
 import { loadSettings, saveSettings } from './storage.js';
 
-const QUOTE_PT =
-  'O estudo de uma doutrina só pode ser feito com utilidade por pessoas sérias, perseverantes, livres de prevenções e animadas de firme e sincera vontade de chegar a um resultado quando imprimem a seus estudos a continuidade, a regularidade e o recolhimento indispensáveis.';
-
+/** Holmes-themed study quotes (public domain spirit, original phrasing for splash) */
 const QUOTE_EN =
-  'The study of a doctrine can only be fruitfully undertaken by serious, persevering individuals, free from bias, and animated by a firm and sincere desire to reach a result, when they bring to their studies the indispensable continuity, regularity, and concentration.';
+  'It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.';
+
+const QUOTE_PT =
+  'É um erro capital teorizar antes de ter dados. Insensivelmente começa-se a torcer os factos para os adaptar às teorias, em vez de adaptar as teorias aos factos.';
 
 const TAGLINE_EN = 'annotate to assimilate';
 const TAGLINE_PT = 'anotar para assimilar';
 const BETA_EN = 'beta';
 const BETA_PT = 'beta';
+const POLAROID_CAPTION = 'The game is afoot!';
 
-/** Lang applied when the page booted (before splash choices). */
 let pageLang = 'en';
 
 export function isStudyNoteDismissed() {
@@ -48,10 +49,7 @@ export function dismissStudyNote() {
 function enterApp() {
   const chosen = loadSettings().lang === 'pt' ? 'pt' : 'en';
   dismissStudyNote();
-  /* Settings panel reloads on language change — same contract after splash pick. */
-  if (chosen !== pageLang) {
-    location.reload();
-  }
+  if (chosen !== pageLang) location.reload();
 }
 
 /**
@@ -59,34 +57,33 @@ function enterApp() {
  * @param {HTMLElement} root
  */
 function applySplashLang(lang, root) {
-  const code = lang === 'pt' ? 'pt' : 'en';
+  /* LIBRUS: EN only (PT button disabled / Soon) */
+  const code = 'en';
   const settings = loadSettings();
   if (settings.lang !== code) {
     saveSettings(Object.assign({}, settings, { lang: code }));
   }
 
   root.dataset.lang = code;
-  document.documentElement.lang = code === 'pt' ? 'pt-BR' : 'en';
-
-  const post = root.querySelector('.study-note-postit');
-  if (post instanceof HTMLImageElement) {
-    post.src = assetUrl(code === 'pt' ? 'images/splash/post-it-pt.png' : 'images/splash/post-it-en.png');
-  }
+  document.documentElement.lang = 'en';
 
   const text = root.querySelector('#study-note-text');
-  if (text) text.textContent = code === 'pt' ? QUOTE_PT : QUOTE_EN;
+  if (text) text.textContent = QUOTE_EN;
 
   const enter = root.querySelector('.study-note-enter');
-  if (enter) enter.textContent = code === 'pt' ? 'Entrar' : 'Enter';
+  if (enter) enter.textContent = 'Enter';
 
   const brandName = root.querySelector('.study-note-brand-name');
   if (brandName) brandName.textContent = BRAND;
 
   const brandBeta = root.querySelector('.study-note-brand-beta');
-  if (brandBeta) brandBeta.textContent = code === 'pt' ? BETA_PT : BETA_EN;
+  if (brandBeta) brandBeta.textContent = BETA_EN;
 
   const tagline = root.querySelector('.study-note-brand-tagline');
-  if (tagline) tagline.textContent = code === 'pt' ? TAGLINE_PT : TAGLINE_EN;
+  if (tagline) tagline.textContent = TAGLINE_EN;
+
+  const cap = root.querySelector('.study-note-polaroid-caption');
+  if (cap) cap.textContent = POLAROID_CAPTION;
 
   root.querySelectorAll('[data-splash-lang]').forEach((btn) => {
     if (!(btn instanceof HTMLElement)) return;
@@ -99,26 +96,37 @@ function applySplashLang(lang, root) {
 function ensureDom(initialLang) {
   if (document.getElementById('study-note-modal')) return;
 
-  const postSrc = assetUrl(
-    initialLang === 'pt' ? 'images/splash/post-it-pt.png' : 'images/splash/post-it-en.png'
-  );
-  const pol0 = assetUrl('images/splash/polaroid-0.png');
-  const pol1 = assetUrl('images/splash/polaroid-1.png');
+  const brandIcon = assetUrl('icons/brand.svg');
+  const photo = assetUrl('images/splash/watson.png');
+  const withPolaroid = SPLASH_MODE === 'note+polaroid';
 
   const root = document.createElement('div');
   root.id = 'study-note-modal';
-  root.className = 'study-note-modal';
+  root.className =
+    'study-note-modal study-note-modal--charcoal' +
+    (withPolaroid ? ' study-note-modal--polaroid' : ' study-note-modal--note-only');
   root.setAttribute('role', 'dialog');
   root.setAttribute('aria-modal', 'true');
   root.setAttribute('aria-labelledby', 'study-note-text');
   root.dataset.lang = initialLang === 'pt' ? 'pt' : 'en';
+  root.dataset.splashMode = SPLASH_MODE || 'note+polaroid';
 
-  const brandIcon = assetUrl('icons/brand.svg');
+  let polaroidHtml = '';
+  if (withPolaroid) {
+    polaroidHtml =
+      '<div class="study-note-polaroid" aria-hidden="false">' +
+      '<div class="study-note-polaroid-photo">' +
+      '<img class="study-note-polaroid-img" src="' +
+      photo +
+      '" alt="Watson" width="400" height="400" decoding="async" />' +
+      '</div>' +
+      '<p class="study-note-polaroid-caption"></p>' +
+      '</div>';
+  }
 
-  /* Layout: embossed brand · lang pill · composition · Enter */
   root.innerHTML =
     '<div class="study-note-backdrop" aria-hidden="true"></div>' +
-    '<div class="study-note-brand" aria-hidden="false">' +
+    '<div class="study-note-brand">' +
     '<img class="study-note-brand-icon" src="' +
     brandIcon +
     '" alt="" width="32" height="32" decoding="async" />' +
@@ -131,47 +139,39 @@ function ensureDom(initialLang) {
     '</div>' +
     '</div>' +
     '<div class="study-note-lang-pill" role="group" aria-label="Language / Idioma">' +
-    '<button type="button" class="study-note-lang-btn" data-splash-lang="pt" aria-label="Português" title="Português">🇧🇷</button>' +
     '<button type="button" class="study-note-lang-btn" data-splash-lang="en" aria-label="English" title="English">🇺🇸</button>' +
+    '<button type="button" class="study-note-lang-btn is-soon" data-splash-lang="pt" disabled aria-disabled="true" aria-label="Português — Soon" title="Soon">🇧🇷</button>' +
     '</div>' +
     '<div class="study-note-stage">' +
-    '<p id="study-note-text" class="visually-hidden"></p>' +
-    '<img class="study-note-postit" src="' +
-    postSrc +
-    '" alt="" width="287" height="287" decoding="async" />' +
-    '<div class="study-note-polaroid-wrap" aria-hidden="true">' +
-    '<img class="study-note-polaroid study-note-polaroid--blank" src="' +
-    pol0 +
-    '" alt="" width="353" height="420" decoding="async" />' +
-    '<img class="study-note-polaroid study-note-polaroid--photo" src="' +
-    pol1 +
-    '" alt="" width="353" height="420" decoding="async" />' +
+    '<div class="study-note-sheet">' +
+    '<p id="study-note-text" class="study-note-sheet-text"></p>' +
     '</div>' +
+    polaroidHtml +
     '</div>' +
     '<div class="study-note-enter-wrap">' +
     '<button type="button" class="study-note-enter" data-study-enter></button>' +
     '</div>';
 
   document.body.appendChild(root);
-  applySplashLang(initialLang === 'pt' ? 'pt' : 'en', root);
+  applySplashLang('en', root);
 
   root.addEventListener('click', (e) => {
     const t = e.target;
     if (!(t instanceof Element)) return;
     const langBtn = t.closest('[data-splash-lang]');
     if (langBtn instanceof HTMLElement) {
-      const lang = langBtn.getAttribute('data-splash-lang') === 'pt' ? 'pt' : 'en';
-      applySplashLang(lang, root);
+      if (langBtn.hasAttribute('disabled') || langBtn.getAttribute('aria-disabled') === 'true') {
+        return;
+      }
+      applySplashLang(langBtn.getAttribute('data-splash-lang') === 'pt' ? 'pt' : 'en', root);
       return;
     }
-    if (t.closest('[data-study-enter]')) {
-      enterApp();
-    }
+    if (t.closest('[data-study-enter]')) enterApp();
   });
 }
 
 function startPolaroidDevelop(root) {
-  /* Blank frame first; then develop the portrait (polaroid-0 → polaroid-1). */
+  if (!root.classList.contains('study-note-modal--polaroid')) return;
   root.classList.remove('is-developed');
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
@@ -181,24 +181,18 @@ function startPolaroidDevelop(root) {
 }
 
 /**
- * Show first-load splash unless already dismissed.
- * Sets locale from the flag pill; Enter/Entrar dismisses (reloads if lang changed).
  * @param {{ lang?: string }} [opts]
  */
 export function wireStudyNote(opts = {}) {
   if (isStudyNoteDismissed()) return;
-
-  const settings = loadSettings();
-  pageLang = opts.lang === 'pt' || opts.lang === 'en' ? opts.lang : settings.lang === 'pt' ? 'pt' : 'en';
-
-  ensureDom(pageLang);
+  pageLang = 'en';
+  ensureDom('en');
   const el = document.getElementById('study-note-modal');
   if (!el) return;
   el.classList.remove('is-hidden');
   el.removeAttribute('hidden');
   document.body.classList.add('study-note-open');
   startPolaroidDevelop(el);
-
   document.addEventListener(
     'keydown',
     (e) => {

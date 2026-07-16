@@ -1,11 +1,19 @@
 /**
  * Block 1 of 1 — reader/context.js
- * Description: Consult pane iframe; reload↔stop while loading
- * Version: 1.d
- * Revised: 12Jul26
+ * Description: Consult pane iframe; reload↔stop while loading; Wiki night mode
+ * Version: 1.e
+ * Revised: 16Jul26
  */
 
 import { assetBase } from '../shared/paths.js';
+import {
+  loadSettings,
+  resolveSearchTemplate,
+  homeFromTemplate,
+  defaultSearchTemplates,
+  lucideIconUrl
+} from '../shared/storage.js';
+import { isEffectivelyDark } from '../shared/theme.js';
 import { computeIsWide } from './layout.js';
 
 const historyStack = [];
@@ -19,31 +27,180 @@ let pageReady = false;
 let placeholderLabel = 'selected_term';
 /** UI strings for reload/stop */
 let labels = { reload: 'Reload', stop: 'Stop' };
-
-const PROVIDER_TEMPLATES = {
-  luzespirita: 'https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item={query}',
-  wiki: 'https://pt.wikipedia.org/wiki/{query}',
-  dictionary: 'https://pt.wiktionary.org/wiki/{query}',
-  map: 'https://www.openstreetmap.org/search?query={query}'
-};
-
-/** Homepages when provider is clicked with no selected term */
-const PROVIDER_HOMES = {
-  luzespirita: 'https://www.luzespirita.org.br/',
-  wiki: 'https://pt.wikipedia.org/',
-  dictionary: 'https://pt.wiktionary.org/',
-  map: 'https://www.openstreetmap.org/'
-};
-
-const PROVIDER_HOME_LABELS = {
-  luzespirita: 'Luz Espírita',
-  wiki: 'Wikipedia',
-  dictionary: 'Wiktionary',
-  map: 'OpenStreetMap'
+/** Overlay spinner copy (locale-filled) */
+let loadingLabels = {
+  searching: 'Searching for "{term}" on {provider}',
+  opening: 'Opening {provider}…',
+  loading: 'Loading…',
+  providers: {
+    wiki: 'Wikipedia',
+    dictionary: 'Wiktionary',
+    map: 'OpenStreetMap'
+  }
 };
 
 /** @type {'en'|'pt'} */
 let blankLang = 'en';
+
+/**
+ * Wiki/Wiktionary hosts use Vector night mode via URL — cross-origin localStorage
+ * cannot be written from this app. `vectornightmode=1` is the public share link.
+ * @param {string} url
+ * @returns {string}
+ */
+export function withWikiNightMode(url) {
+  if (!url) return url;
+  try {
+    const u = new URL(url, window.location.href);
+    const host = u.hostname || '';
+    if (!/(^|\.)wikipedia\.org$|(^|\.)wiktionary\.org$/i.test(host)) return url;
+    const theme = loadSettings().theme || 'system';
+    if (isEffectivelyDark(theme)) {
+      u.searchParams.set('vectornightmode', '1');
+    } else {
+      u.searchParams.delete('vectornightmode');
+    }
+    return u.toString();
+  } catch {
+    return url;
+  }
+}
+
+/** @returns {'en'|'pt'} */
+function wikiLang() {
+  return blankLang === 'pt' ? 'pt' : 'en';
+}
+
+function providerTemplates() {
+  const s = loadSettings();
+  const builtins = defaultSearchTemplates(wikiLang());
+  return {
+    wiki: resolveSearchTemplate(s, 'wiki') || builtins.wiki,
+    dictionary: resolveSearchTemplate(s, 'dictionary') || builtins.dictionary,
+    custom: resolveSearchTemplate(s, 'custom'),
+    map: 'https://www.openstreetmap.org/search?query={query}'
+  };
+}
+
+function providerHomes() {
+  const s = loadSettings();
+  const lang = wikiLang();
+  const builtins = defaultSearchTemplates(lang);
+  const wikiTpl = resolveSearchTemplate(s, 'wiki') || builtins.wiki;
+  const dictTpl = resolveSearchTemplate(s, 'dictionary') || builtins.dictionary;
+  const customTpl = resolveSearchTemplate(s, 'custom');
+  return {
+    wiki: homeFromTemplate(wikiTpl) || 'https://' + lang + '.wikipedia.org/',
+    dictionary: homeFromTemplate(dictTpl) || 'https://' + lang + '.wiktionary.org/',
+    custom: homeFromTemplate(customTpl) || '',
+    map: 'https://www.openstreetmap.org/'
+  };
+}
+
+const PROVIDER_HOME_LABELS = {
+  wiki: 'Wikipedia',
+  dictionary: 'Wiktionary',
+  custom: 'Custom',
+  map: 'OpenStreetMap'
+};
+
+/** Inject/remove optional custom provider button from settings. */
+export function syncCustomProviderButton() {
+  const group = document.querySelector('.context-provider-buttons');
+  if (!group) return;
+  const s = loadSettings();
+  const tpl = resolveSearchTemplate(s, 'custom');
+  const label = (s.customProvider && s.customProvider.label) || 'Custom';
+  let btn = group.querySelector('[data-provider="custom"]');
+  if (!tpl) {
+    btn?.remove();
+    return;
+  }
+  const iconName = (s.customProvider && s.customProvider.icon) || 'link';
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'toolbar-btn context-provider-btn';
+    btn.setAttribute('data-provider', 'custom');
+    const img = document.createElement('img');
+    img.className = 'toolbar-icon';
+    img.alt = '';
+    img.width = 20;
+    img.height = 20;
+    btn.appendChild(img);
+    group.appendChild(btn);
+    btn.addEventListener('click', onProviderBtnClick);
+  }
+  const img = btn.querySelector('img.toolbar-icon');
+  if (img) img.src = lucideIconUrl(iconName, assetBase());
+  btn.title = label;
+  btn.setAttribute('aria-label', label);
+  if (loadingLabels.providers) loadingLabels.providers.custom = label;
+  PROVIDER_HOME_LABELS.custom = label;
+}
+
+function onProviderBtnClick(ev) {
+  if (!computeIsWide()) return;
+  const btn = ev.currentTarget;
+  if (!(btn instanceof HTMLElement)) return;
+  const provider = btn.getAttribute('data-provider');
+  if (!provider) return;
+  const templates = providerTemplates();
+  const homes = providerHomes();
+  const term = activeTerm();
+  if (term) {
+    const tpl = templates[provider];
+    if (!tpl) return;
+    openContextUrl(tpl.replace(/\{query\}/gi, encodeURIComponent(term)), term, provider);
+    return;
+  }
+  const home = homes[provider];
+  if (home) openContextUrl(home, '', provider);
+}
+
+/**
+ * @param {string} url
+ * @returns {string} provider key
+ */
+function providerFromUrl(url) {
+  if (!url) return '';
+  try {
+    const h = new URL(url, window.location.href).hostname || '';
+    if (/wiktionary\.org$/i.test(h) || h.includes('wiktionary')) return 'dictionary';
+    if (/wikipedia\.org$/i.test(h) || h.includes('wikipedia')) return 'wiki';
+    if (/openstreetmap\.org$/i.test(h) || h.includes('openstreetmap')) return 'map';
+    if (/luzespirita/i.test(h) || /luzespirita/i.test(url)) return 'luzespirita';
+  } catch {
+    if (/wiktionary/i.test(url)) return 'dictionary';
+    if (/wikipedia/i.test(url)) return 'wiki';
+  }
+  return '';
+}
+
+/**
+ * @param {string} [term]
+ * @param {string} [providerKey]
+ * @param {string} [url]
+ */
+function formatLoadingMessage(term, providerKey, url) {
+  const key = providerKey || providerFromUrl(url || currentUrl);
+  const provider =
+    (loadingLabels.providers && loadingLabels.providers[key]) ||
+    PROVIDER_HOME_LABELS[key] ||
+    key ||
+    '…';
+  const t = String(term || '').trim();
+  const ph = placeholderLabel || 'selected_term';
+  if (t && t !== ph) {
+    return String(loadingLabels.searching || '')
+      .replace(/\{term\}/g, t)
+      .replace(/\{provider\}/g, provider);
+  }
+  if (key) {
+    return String(loadingLabels.opening || '').replace(/\{provider\}/g, provider);
+  }
+  return loadingLabels.loading || 'Loading…';
+}
 
 /**
  * Default consult iframe URL; lang query keeps blank.html in sync with locale.
@@ -99,16 +256,27 @@ export function setSelectionPlaceholder(label) {
   syncTermClear();
 }
 
-export function openContextUrl(url, selectionLabel) {
+/**
+ * @param {string} url
+ * @param {string} [selectionLabel]
+ * @param {string} [providerKey] wiki | dictionary | map | …
+ */
+export function openContextUrl(url, selectionLabel, providerKey) {
   if (!computeIsWide()) return;
   const iframe = document.getElementById('context-iframe');
   if (!iframe || !url) return;
 
+  const finalUrl = withWikiNightMode(url);
+
   if (currentUrl && !isBlankUrl(currentUrl)) historyStack.push(currentUrl);
-  currentUrl = url;
+  currentUrl = finalUrl;
   pageReady = false;
-  showLoading(true);
-  iframe.src = url;
+  showLoading(true, {
+    term: selectionLabel,
+    provider: providerKey || providerFromUrl(finalUrl),
+    url: finalUrl
+  });
+  iframe.src = finalUrl;
   updateSelection(selectionLabel || '');
   updateNavButtons();
 }
@@ -180,15 +348,27 @@ function setReloadIcon(btn, mode) {
   const img = btn.querySelector('img.toolbar-icon');
   if (!img) return;
   const base = assetBase() + 'icons/';
-  img.src = base + (mode === 'stop' ? 'square.svg' : 'reload.svg');
+  img.src = base + (mode === 'stop' ? 'circle-stop.svg' : 'reload.svg');
 }
 
-function showLoading(on) {
+/**
+ * @param {boolean} on
+ * @param {{ term?: string, provider?: string, url?: string }} [opts]
+ */
+function showLoading(on, opts = {}) {
   isLoading = !!on;
   const overlay = document.getElementById('context-loading-overlay');
   if (overlay) {
     overlay.classList.toggle('is-hidden', !on);
     overlay.setAttribute('aria-hidden', on ? 'false' : 'true');
+  }
+  const msg = document.getElementById('context-loading-msg');
+  if (msg) {
+    if (on) {
+      msg.textContent = formatLoadingMessage(opts.term, opts.provider, opts.url);
+    } else {
+      msg.textContent = '';
+    }
   }
   updateNavButtons();
 }
@@ -205,7 +385,8 @@ export function contextBack() {
   if (!iframe || !historyStack.length || isLoading) return;
   currentUrl = historyStack.pop() || '';
   pageReady = false;
-  showLoading(true);
+  const term = activeTerm();
+  showLoading(true, { term, provider: providerFromUrl(currentUrl), url: currentUrl });
   iframe.src = currentUrl || blankUrl();
   if (isBlankUrl(currentUrl)) updateSelection('');
   updateNavButtons();
@@ -227,8 +408,9 @@ export function contextReload() {
   const iframe = document.getElementById('context-iframe');
   if (!iframe || isLoading || !pageReady || isBlankUrl(currentUrl)) return;
   pageReady = false;
-  showLoading(true);
-  const src = currentUrl || iframe.src;
+  const src = withWikiNightMode(currentUrl || iframe.src);
+  currentUrl = src;
+  showLoading(true, { term: activeTerm(), provider: providerFromUrl(src), url: src });
   iframe.src = 'about:blank';
   requestAnimationFrame(() => {
     iframe.src = src;
@@ -246,12 +428,25 @@ function onReloadOrStopClick() {
 }
 
 /**
- * Optional i18n labels for reload/stop.
- * @param {{ reload?: string, stop?: string }} next
+ * Optional i18n labels for reload/stop + loading overlay.
+ * @param {{
+ *   reload?: string,
+ *   stop?: string,
+ *   searching?: string,
+ *   opening?: string,
+ *   loading?: string,
+ *   providers?: Record<string, string>
+ * }} next
  */
 export function setContextNavLabels(next) {
   if (next?.reload) labels.reload = next.reload;
   if (next?.stop) labels.stop = next.stop;
+  if (next?.searching) loadingLabels.searching = next.searching;
+  if (next?.opening) loadingLabels.opening = next.opening;
+  if (next?.loading) loadingLabels.loading = next.loading;
+  if (next?.providers && typeof next.providers === 'object') {
+    loadingLabels.providers = Object.assign({}, loadingLabels.providers, next.providers);
+  }
   updateNavButtons();
 }
 
@@ -293,32 +488,17 @@ export function wireContext() {
   document.getElementById('btn-term-clear')?.addEventListener('click', () => clearSelectedTerm());
 
   document.querySelectorAll('.context-provider-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      if (!computeIsWide()) return;
-      const provider = btn.getAttribute('data-provider');
-      if (!provider) return;
-
-      const term = activeTerm();
-      if (term) {
-        const tpl = PROVIDER_TEMPLATES[provider];
-        if (!tpl) return;
-        const url = tpl.replace('{query}', encodeURIComponent(term));
-        openContextUrl(url, term);
-        return;
-      }
-
-      const home = PROVIDER_HOMES[provider];
-      if (!home) return;
-      openContextUrl(home, PROVIDER_HOME_LABELS[provider] || provider);
-    });
+    btn.addEventListener('click', onProviderBtnClick);
   });
+  syncCustomProviderButton();
+  document.addEventListener('librus:settings-changed', () => syncCustomProviderButton());
 
   document.addEventListener('selectionchange', () => {
     const t = selectedText();
     if (t && t.length < 80) updateSelection(t);
   });
 
-  /* Provider search: Alt+1/L Luz · Alt+2/W Wiki · Alt+3/D Dict */
+  /* Alt+1/W Wiki · Alt+2/D Dict · Alt+3/C Custom */
   document.addEventListener('keydown', (e) => {
     if (!computeIsWide()) return;
     const tag = (e.target && e.target.tagName) || '';
@@ -328,21 +508,24 @@ export function wireContext() {
 
     const key = e.key.toLowerCase();
     let provider = '';
-    if (key === '1' || key === 'l') provider = 'luzespirita';
-    else if (key === '2' || key === 'w') provider = 'wiki';
-    else if (key === '3' || key === 'd') provider = 'dictionary';
+    if (key === '1' || key === 'w') provider = 'wiki';
+    else if (key === '2' || key === 'd') provider = 'dictionary';
+    else if (key === '3' || key === 'c') provider = 'custom';
     if (!provider) return;
 
     e.preventDefault();
+    const templates = providerTemplates();
+    const homes = providerHomes();
+    if (provider === 'custom' && !templates.custom) return;
     const term = activeTerm();
     if (term) {
-      const tpl = PROVIDER_TEMPLATES[provider];
+      const tpl = templates[provider];
       if (!tpl) return;
-      openContextUrl(tpl.replace('{query}', encodeURIComponent(term)), term);
+      openContextUrl(tpl.replace(/\{query\}/gi, encodeURIComponent(term)), term, provider);
       return;
     }
-    const home = PROVIDER_HOMES[provider];
-    if (home) openContextUrl(home, PROVIDER_HOME_LABELS[provider] || provider);
+    const home = homes[provider];
+    if (home) openContextUrl(home, '', provider);
   });
 
   syncTermClear();

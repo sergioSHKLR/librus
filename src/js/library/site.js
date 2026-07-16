@@ -8,13 +8,19 @@
 import { loadSettings } from '../shared/storage.js';
 import { applyTheme } from '../shared/theme.js';
 import { applyQueryToSettings } from '../shared/prefs-query.js';
-import { libraryHomeUrl } from '../shared/paths.js';
+import { libraryHomeUrl, assetBase } from '../shared/paths.js';
 import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { BRAND } from '../shared/constants.js';
 
 async function boot() {
-  const settings = applyQueryToSettings();
-  applyTheme(settings.theme);
+  let settings = applyQueryToSettings();
+  const base = assetBase();
+  applyTheme(settings.theme, { assetBase: base });
+
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    settings = loadSettings();
+    if (settings.theme === 'system') applyTheme('system', { assetBase: base });
+  });
 
   document.querySelectorAll('a[data-library-home], .site-back a').forEach((a) => {
     a.setAttribute('href', libraryHomeUrl());

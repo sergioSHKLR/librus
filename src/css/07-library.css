@@ -48,8 +48,10 @@
   margin: 0;
   font-size: 1.35rem;
   font-weight: 700;
+  /* Match splash brand rhythm (docs/BRAND.md) */
   letter-spacing: 0.08em;
   line-height: 1.2;
+  text-transform: none;
 }
 
 /* Upper-script beta badge next to brand */
@@ -173,7 +175,7 @@
 .cover-icon {
   width: 2.75rem;
   height: 2.75rem;
-  /* Lucide stroke SVGs as <img>: force light glyph on cover gradient */
+  /* Lucide stroke SVGs as <img>: white glyph on cover (solid or gradient) */
   filter: brightness(0) invert(1);
   opacity: 0.95;
 }

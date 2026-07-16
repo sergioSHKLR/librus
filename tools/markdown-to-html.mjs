@@ -9,15 +9,16 @@ import MarkdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownItContainer from 'markdown-it-container';
 
+/* LIBRUS: no Luz Espírita — legacy l: maps to Wikipedia */
 const LINK_BASES = {
   pt: {
-    l: 'https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=',
+    l: 'https://pt.wikipedia.org/wiki/',
     w: 'https://pt.wikipedia.org/wiki/',
     d: 'https://pt.wiktionary.org/wiki/',
     m: 'https://www.openstreetmap.org/search?query='
   },
   en: {
-    l: 'https://www.luzespirita.org.br/index.php?lisPage=enciclopedia&item=',
+    l: 'https://en.wikipedia.org/wiki/',
     w: 'https://en.wikipedia.org/wiki/',
     d: 'https://en.wiktionary.org/wiki/',
     m: 'https://www.openstreetmap.org/search?query='

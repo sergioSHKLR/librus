@@ -1,0 +1,398 @@
+{
+  "provider": "wikipedia",
+  "language": "en",
+  "source": "en.wikipedia.org",
+  "corpus": "holmes",
+  "version": "0.1",
+  "description": "English Wikipedia entries for Sherlock Holmes novels.",
+  "entries": [
+    {
+      "term": "Sherlock Holmes",
+      "aliases": [
+        "Holmes",
+        "Mr. Sherlock Holmes",
+        "Mr. Holmes"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Sherlock_Holmes",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Dr. Watson",
+      "aliases": [
+        "Watson",
+        "John Watson",
+        "Dr. John Watson",
+        "John H. Watson"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Dr._Watson",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Arthur Conan Doyle",
+      "aliases": [
+        "Conan Doyle",
+        "Doyle",
+        "A. Conan Doyle"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Arthur_Conan_Doyle",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Mycroft Holmes",
+      "aliases": [
+        "Mycroft"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Mycroft_Holmes",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Professor Moriarty",
+      "aliases": [
+        "Moriarty",
+        "James Moriarty"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Professor_Moriarty",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Irene Adler",
+      "aliases": [
+        "the woman"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Irene_Adler",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Inspector Lestrade",
+      "aliases": [
+        "Lestrade"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Inspector_Lestrade",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Mrs. Hudson",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Mrs_Hudson",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Baker Street",
+      "aliases": [
+        "221B Baker Street",
+        "221B"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Baker_Street",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Scotland Yard",
+      "aliases": [
+        "the Yard"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Scotland_Yard",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "London",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/London",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Dartmoor",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Dartmoor",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Victorian era",
+      "aliases": [
+        "Victorian"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Victorian_era",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Cocaine",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Cocaine",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "India",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/India",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Afghanistan",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Afghanistan",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Paris",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Paris",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "France",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/France",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "England",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/England",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Thames",
+      "aliases": [
+        "the Thames"
+      ],
+      "url": "https://en.wikipedia.org/wiki/River_Thames",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Strand",
+      "aliases": [
+        "the Strand"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Strand,_London",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Westminster",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Westminster",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Liverpool",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Liverpool",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Edinburgh",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Edinburgh",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Oxford",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Oxford",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Cambridge",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Cambridge",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "New York",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/New_York_City",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "America",
+      "aliases": [
+        "the United States",
+        "United States"
+      ],
+      "url": "https://en.wikipedia.org/wiki/United_States",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Bohemia",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Bohemia",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Agra",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Agra",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Andaman Islands",
+      "aliases": [
+        "Andaman"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Andaman_Islands",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Baskerville",
+      "aliases": [
+        "Baskervilles",
+        "Sir Henry Baskerville",
+        "Sir Charles Baskerville"
+      ],
+      "url": "https://en.wikipedia.org/wiki/The_Hound_of_the_Baskervilles",
+      "lang": "en",
+      "interest": "hi",
+      "completeness": "hi",
+      "domain": "general"
+    },
+    {
+      "term": "Grimpen",
+      "aliases": [
+        "Grimpen Mire"
+      ],
+      "url": "https://en.wikipedia.org/wiki/The_Hound_of_the_Baskervilles",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    },
+    {
+      "term": "Scotland",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Scotland",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Ireland",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Ireland",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Germany",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Germany",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Switzerland",
+      "aliases": [],
+      "url": "https://en.wikipedia.org/wiki/Switzerland",
+      "lang": "en",
+      "interest": "lo",
+      "completeness": "lo",
+      "domain": "general"
+    },
+    {
+      "term": "Reichenbach",
+      "aliases": [
+        "Reichenbach Falls"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Reichenbach_Falls",
+      "lang": "en",
+      "interest": "med",
+      "completeness": "med",
+      "domain": "general"
+    }
+  ]
+}

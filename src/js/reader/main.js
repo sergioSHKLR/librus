@@ -23,7 +23,7 @@ import { wireBreadcrumb, setBreadcrumbPartLabel } from './breadcrumb.js';
 import { wireLinkFilters, setLinksStrings } from './links.js';
 import { wirePwaUpdates } from '../settings/update.js';
 import { applyQueryToSettings } from '../shared/prefs-query.js';
-import { libraryHomeUrl } from '../shared/paths.js';
+import { libraryHomeUrl, assetBase } from '../shared/paths.js';
 import { BRAND } from '../shared/constants.js';
 import { wireStudyNote } from '../shared/study-note.js';
 
@@ -35,7 +35,7 @@ function setHypoInvert(theme) {
 
 function cycleFont(settings) {
   let idx = FONT_SCALES.indexOf(settings.fontScale);
-  if (idx < 0) idx = 1;
+  if (idx < 0) idx = 0;
   idx = (idx + 1) % FONT_SCALES.length;
   settings.fontScale = FONT_SCALES[idx];
   applyTypography(settings);
@@ -45,7 +45,7 @@ function cycleFont(settings) {
 async function boot() {
   let settings = applyQueryToSettings();
   applyTypography(settings);
-  applyTheme(settings.theme);
+  applyTheme(settings.theme, { assetBase: assetBase() });
   setHypoInvert(settings.theme);
 
   const lib = document.getElementById('btn-library');
@@ -64,15 +64,29 @@ async function boot() {
   setBreadcrumbPartLabel(t(strings, 'reader.part', settings.lang === 'pt' ? 'Parte' : 'Part'));
   setContextNavLabels({
     reload: t(strings, 'reader.reload', 'Reload'),
-    stop: t(strings, 'reader.stop', 'Stop')
+    stop: t(strings, 'reader.stop', 'Stop'),
+    searching: t(strings, 'reader.searchingOn', 'Searching for "{term}" on {provider}'),
+    opening: t(strings, 'reader.openingProvider', 'Opening {provider}…'),
+    loading: t(strings, 'reader.loading', 'Loading…'),
+    providers: {
+      wiki: t(strings, 'reader.providerWiki', 'Wikipedia'),
+      dictionary: t(strings, 'reader.providerDict', 'Wiktionary')
+    }
   });
   setBlankLang(settings.lang === 'pt' ? 'pt' : 'en');
 
+  /* Search / TOC filter placeholders follow loaded locale (EN/PT) */
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
-    const searchPh = t(strings, 'reader.search', 'Search…');
+    const searchPh = t(strings, 'reader.search', settings.lang === 'pt' ? 'Procurar…' : 'Search…');
     searchInput.placeholder = searchPh;
-    searchInput.setAttribute('aria-label', searchPh);
+    searchInput.setAttribute('aria-label', t(strings, 'pane.search', searchPh));
+  }
+  const tocFilter = document.getElementById('toc-filter');
+  if (tocFilter) {
+    const tocPh = t(strings, 'reader.tocFilter', settings.lang === 'pt' ? 'Filtrar…' : 'Filter…');
+    tocFilter.placeholder = tocPh;
+    tocFilter.setAttribute('aria-label', tocPh);
   }
 
   document.getElementById('btn-font-cycle')?.addEventListener('click', () => {
@@ -82,7 +96,7 @@ async function boot() {
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     settings = loadSettings();
     if (settings.theme === 'system') {
-      applyTheme('system');
+      applyTheme('system', { assetBase: assetBase() });
       setHypoInvert('system');
     }
   });

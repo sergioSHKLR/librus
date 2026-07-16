@@ -1,4 +1,4 @@
-# L∙I∙B∙R∙U∙S handbook (nano-ssg)
+# L∙I∙B∙R∙U∙S handbook (librus-ssg)
 
 **Short name:** LIBRUS · **Tagline:** *annotate to assimilate* (PT: *anotar para assimilar*)
 
@@ -23,7 +23,7 @@ Minimal static site generator + library reader for long-form study texts (Kardec
 ## 2. Quick start
 
 ```bash
-cd nano-ssg
+cd librus-ssg
 npm install
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -61,9 +61,9 @@ public/books/{slug}/  public/css|js|…  public/index.html
 
 | Key | Purpose |
 |-----|---------|
-| `nano-ssg-settings` | Theme, lang, typography, density, providers |
-| `nano-ssg-viewport-alert-dismissed` | Narrow notice dismissed |
-| `nano-ssg-debug` | Integrity console when `1` |
+| `librus-settings` | Theme, lang, typography, density, providers |
+| `librus-viewport-alert-dismissed` | Narrow notice dismissed |
+| `librus-debug` | Integrity console when `1` |
 
 ### Integrity
 

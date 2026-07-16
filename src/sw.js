@@ -5,7 +5,7 @@
  * Revised: 10Jul26
  */
 
-const CACHE = 'nano-ssg-shell-260713f';
+const CACHE = 'librus-shell-260713l';
 const SHELL = [
   '/',
   '/index.html',

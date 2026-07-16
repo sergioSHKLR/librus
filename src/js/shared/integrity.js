@@ -9,7 +9,7 @@ export async function runIntegrityDebug() {
   const params = new URLSearchParams(location.search);
   let debugLs = false;
   try {
-    debugLs = localStorage.getItem('nano-ssg-debug') === '1';
+    debugLs = localStorage.getItem('librus-debug') === '1';
   } catch {
     /* private mode */
   }
@@ -25,10 +25,10 @@ export async function runIntegrityDebug() {
       }
     }
     if (!data) throw new Error('integrity.json not found');
-    console.groupCollapsed('[nano-ssg] integrity');
+    console.groupCollapsed('[librus] integrity');
     console.log(data);
     console.groupEnd();
   } catch (err) {
-    console.warn('[nano-ssg] integrity fetch failed', err);
+    console.warn('[librus] integrity fetch failed', err);
   }
 }

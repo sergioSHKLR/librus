@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — shared/theme.js
  * Description: Apply light/dark/system theme and cycle helper
- * Version: 1.a
- * Revised: 10Jul26
+ * Version: 1.b
+ * Revised: 16Jul26
  */
 
 export function isEffectivelyDark(theme) {
@@ -18,6 +18,31 @@ export function nextTheme(theme) {
   if (theme === 'light') return 'dark';
   if (theme === 'dark') return 'system';
   return 'light';
+}
+
+/**
+ * Swap favicon when effective dark mode changes (SVG media queries
+ * often fail to refresh on OS theme switch).
+ * @param {'light'|'dark'|'system'} theme
+ * @param {string} [base] asset base e.g. '' or '../'
+ */
+export function syncFavicon(theme, base = '') {
+  const dark = isEffectivelyDark(theme);
+  const href = base + 'icons/' + (dark ? 'favicon-dark.svg' : 'favicon.svg');
+  let link = document.querySelector('link[rel="icon"][data-app-favicon]');
+  if (!link) {
+    link = document.querySelector('link[rel="icon"]');
+  }
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/svg+xml';
+    document.head.appendChild(link);
+  }
+  link.setAttribute('data-app-favicon', '1');
+  link.type = 'image/svg+xml';
+  /* cache-bust so browsers re-fetch on scheme change */
+  link.href = href + (href.includes('?') ? '&' : '?') + 't=' + (dark ? 'd' : 'l');
 }
 
 /**
@@ -52,6 +77,8 @@ export function applyTheme(theme, ui = {}) {
     ui.btnEl.setAttribute('aria-label', tip);
     ui.btnEl.setAttribute('data-theme-mode', theme);
   }
+
+  syncFavicon(theme, base);
 }
 
 export function applyTypography(settings) {

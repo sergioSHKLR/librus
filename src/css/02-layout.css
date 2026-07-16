@@ -81,28 +81,35 @@ body.page-reader {
   min-width: 0;
   width: 100%;
   background: var(--toolbar-chrome, var(--bg));
-  border-bottom: 1px solid var(--border);
+  /* Borders live on each .panel-toolbar so height matches context + hypo */
+  border-bottom: none;
 }
 
+/*
+ * Single standard for main, context, and alignment with Hypothesis top bar:
+ * fixed 40px border-box including 1px bottom edge (same total as hypo chrome).
+ */
 .panel-toolbar {
   height: var(--toolbar-height);
+  min-height: var(--toolbar-height);
+  max-height: var(--toolbar-height);
   background: var(--toolbar-chrome, var(--bg));
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   padding: 0 8px;
-  gap: 6px;
+  gap: 4px;
   flex-shrink: 0;
   min-width: 0;
   width: 100%;
   box-sizing: border-box;
+  /* visible so Links dropdown is not clipped */
+  overflow: visible;
 }
 
-.main-toolbar-stack > .panel-toolbar {
-  border-bottom: none;
-}
 .main-toolbar-stack > .panel-toolbar + .panel-toolbar {
-  border-top: 1px solid var(--border);
+  /* Second row: top hairline only if needed — bottom border already present */
+  border-top: none;
 }
 
 .toolbar-breadcrumb {
@@ -201,16 +208,43 @@ body.page-reader {
   display: none;
 }
 
+/* term grows · clear next to term · providers after · no overflow */
 .context-selection-wrap {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 2px;
   min-width: 0;
   flex: 1 1 auto;
+  overflow: hidden;
 }
 .context-selection-wrap .context-selection {
   flex: 1 1 auto;
   min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.context-selection-wrap .toolbar-btn-clear {
+  flex: 0 0 auto;
+  order: 0;
+}
+.context-selection-wrap .context-provider-buttons {
+  flex: 0 0 auto;
+  gap: 0;
+}
+
+/* Keep Links dropdown above content */
+.main-toolbar-stack {
+  position: relative;
+  z-index: 30;
+  overflow: visible;
+}
+#main-toolbar-row2 {
+  overflow: visible;
+  z-index: 40;
+}
+#context-toolbar {
+  overflow: hidden;
 }
 
 .toolbar-menu {

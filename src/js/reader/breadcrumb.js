@@ -203,6 +203,12 @@ function renderBreadcrumb(id) {
 export function scrollToHeading(id) {
   const target = document.getElementById(id);
   if (!target) return;
+  /* Open closed details so expand targets are visible */
+  let p = target.parentElement;
+  while (p) {
+    if (p instanceof HTMLDetailsElement) p.open = true;
+    p = p.parentElement;
+  }
   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   history.replaceState(null, '', '#' + id);
   setActiveHeading(id);

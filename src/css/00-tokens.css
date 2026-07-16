@@ -13,14 +13,14 @@
   --border: #dddddd;
   --accent: #0066cc;
   --mark-bg: #fff3a8;
-  --toolbar-height: 39px;
-  --toolbar-stack-height: 78px; /* two main-toolbar rows */
+  /* Match Hypothesis client top bar */
+  --toolbar-height: 40px;
+  --toolbar-stack-height: 80px; /* two main-toolbar rows */
   --pane-min: 500px;
   --layout-wide-min: 1200px;
   --font-scale: 1;
   --line-height: 1.6;
-  /* All research links: blue underline */
-  --provider-luz: #3d5cff;
+  /* Research links: blue underline (wiki + dict only — no Luz) */
   --provider-wiki: #3d5cff;
   --provider-dict: #3d5cff;
   --provider-map: #3d5cff;
@@ -36,7 +36,6 @@
   --border: #333333;
   --accent: #4da6ff;
   --mark-bg: #5c4d00;
-  --provider-luz: #7aacff;
   --provider-wiki: #7aacff;
   --provider-dict: #7aacff;
   --provider-map: #7aacff;
@@ -51,7 +50,6 @@
     --border: #333333;
     --accent: #4da6ff;
     --mark-bg: #5c4d00;
-    --provider-luz: #7aacff;
     --provider-wiki: #7aacff;
     --provider-dict: #7aacff;
     --provider-map: #7aacff;

@@ -1,7 +1,7 @@
 {
-  "name": "nano-ssg",
+  "name": "librus",
   "version": "0.2.0-beta",
-  "description": "L∙I∙B∙R∙U∙S — annotate to assimilate. Minimal SSG: content + linker + library reader.",
+  "description": "L∙I∙B∙R∙U∙S — annotate to assimilate. Study library at librus.app.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "keywords": [
     "librus",
-    "ssg",
-    "kardec",
+    "holmes",
+    "sherlock",
     "hypothesis",
     "markdown"
   ],

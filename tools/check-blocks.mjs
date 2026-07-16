@@ -125,7 +125,7 @@ function main() {
   let fail = 0;
   const lines = [];
 
-  console.log('nano-ssg check-blocks\n');
+  console.log('librus-ssg check-blocks\n');
 
   for (const full of files.sort()) {
     const rel = path.relative(ROOT, full).split(path.sep).join('/');

@@ -9,7 +9,7 @@ import { STORAGE_KEY, VIEWPORT_ALERT_KEY, STUDY_NOTE_KEY } from '../shared/const
 import { loadSettings, saveSettings, defaultSettings } from '../shared/storage.js';
 import { APP_VERSION, BUILD_ID } from '../shared/version.js';
 
-const PACK_KIND = 'nano-ssg-library-v1';
+const PACK_KIND = 'librus-library-v1';
 
 export function buildExportPack() {
   return {
@@ -33,7 +33,7 @@ export function buildExportPack() {
 
 function loadReadingMap() {
   try {
-    const raw = localStorage.getItem('nano-ssg-reading');
+    const raw = localStorage.getItem('librus-reading');
     return raw ? JSON.parse(raw) : {};
   } catch {
     return {};
@@ -45,7 +45,7 @@ export function downloadExportPack() {
   const blob = new Blob([JSON.stringify(pack, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'nano-ssg-library-v1.json';
+  a.download = 'librus-library-v1.json';
   a.click();
   URL.revokeObjectURL(a.href);
 }
@@ -56,14 +56,14 @@ export function downloadExportPack() {
  */
 export function importExportPack(pack) {
   if (!pack || pack.kind !== PACK_KIND) {
-    return { ok: false, message: 'Invalid pack (expected nano-ssg-library-v1)' };
+    return { ok: false, message: 'Invalid pack (expected librus-library-v1)' };
   }
   const base = defaultSettings();
   const incoming = pack.settings || {};
   saveSettings(Object.assign({}, base, incoming, { version: 1 }));
   if (pack.reading && typeof pack.reading === 'object') {
     try {
-      localStorage.setItem('nano-ssg-reading', JSON.stringify(pack.reading));
+      localStorage.setItem('librus-reading', JSON.stringify(pack.reading));
     } catch {
       /* ignore */
     }
@@ -83,8 +83,8 @@ export async function clearSiteData() {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(VIEWPORT_ALERT_KEY);
     localStorage.removeItem(STUDY_NOTE_KEY);
-    localStorage.removeItem('nano-ssg-reading');
-    localStorage.removeItem('nano-ssg-debug');
+    localStorage.removeItem('librus-reading');
+    localStorage.removeItem('librus-debug');
   } catch {
     /* ignore */
   }

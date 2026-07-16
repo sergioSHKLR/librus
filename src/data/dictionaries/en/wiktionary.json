@@ -1,0 +1,471 @@
+{
+  "provider": "wiktionary",
+  "language": "en",
+  "source": "en.wiktionary.org",
+  "corpus": "holmes",
+  "version": "0.1",
+  "description": "English definitions for Victorian/Holmes vocabulary.",
+  "entries": [
+    {
+      "term": "hansom",
+      "aliases": [
+        "hansom cab",
+        "hansoms"
+      ],
+      "url": "https://en.wiktionary.org/wiki/hansom",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "gasogene",
+      "aliases": [
+        "gazogene"
+      ],
+      "url": "https://en.wiktionary.org/wiki/gasogene",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "hi",
+      "completeness": "hi"
+    },
+    {
+      "term": "ulster",
+      "aliases": [
+        "ulsters"
+      ],
+      "url": "https://en.wiktionary.org/wiki/ulster",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "portmanteau",
+      "aliases": [
+        "portmanteaus",
+        "portmanteaux"
+      ],
+      "url": "https://en.wiktionary.org/wiki/portmanteau",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "brougham",
+      "aliases": [
+        "broughams"
+      ],
+      "url": "https://en.wiktionary.org/wiki/brougham",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "dog-cart",
+      "aliases": [
+        "dogcart",
+        "dog-carts"
+      ],
+      "url": "https://en.wiktionary.org/wiki/dogcart",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "landau",
+      "aliases": [
+        "landaus"
+      ],
+      "url": "https://en.wiktionary.org/wiki/landau",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "four-wheeler",
+      "aliases": [
+        "four-wheelers"
+      ],
+      "url": "https://en.wiktionary.org/wiki/four-wheeler",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "commissionaire",
+      "aliases": [
+        "commissionaires"
+      ],
+      "url": "https://en.wiktionary.org/wiki/commissionaire",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "locum tenens",
+      "aliases": [
+        "locum"
+      ],
+      "url": "https://en.wiktionary.org/wiki/locum_tenens",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "outré",
+      "aliases": [
+        "outre"
+      ],
+      "url": "https://en.wiktionary.org/wiki/outr%C3%A9",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "hitherto",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/hitherto",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "thence",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/thence",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "whence",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/whence",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "ere",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/ere",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "fain",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/fain",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "peremptory",
+      "aliases": [
+        "peremptorily"
+      ],
+      "url": "https://en.wiktionary.org/wiki/peremptory",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "stolid",
+      "aliases": [
+        "stolidly",
+        "stolidity"
+      ],
+      "url": "https://en.wiktionary.org/wiki/stolid",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "languid",
+      "aliases": [
+        "languidly"
+      ],
+      "url": "https://en.wiktionary.org/wiki/languid",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "sanguine",
+      "aliases": [
+        "sanguinely"
+      ],
+      "url": "https://en.wiktionary.org/wiki/sanguine",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "abstruse",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/abstruse",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "asperity",
+      "aliases": [
+        "asperities"
+      ],
+      "url": "https://en.wiktionary.org/wiki/asperity",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "consternation",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/consternation",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "countenance",
+      "aliases": [
+        "countenances"
+      ],
+      "url": "https://en.wiktionary.org/wiki/countenance",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "solicitor",
+      "aliases": [
+        "solicitors"
+      ],
+      "url": "https://en.wiktionary.org/wiki/solicitor",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "footman",
+      "aliases": [
+        "footmen"
+      ],
+      "url": "https://en.wiktionary.org/wiki/footman",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "mews",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/mews",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "trap",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/trap",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "deuce",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/deuce",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "chaff",
+      "aliases": [
+        "chaffed",
+        "chaffing"
+      ],
+      "url": "https://en.wiktionary.org/wiki/chaff",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "billet",
+      "aliases": [
+        "billets"
+      ],
+      "url": "https://en.wiktionary.org/wiki/billet",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "inquest",
+      "aliases": [
+        "inquests"
+      ],
+      "url": "https://en.wiktionary.org/wiki/inquest",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "antechamber",
+      "aliases": [
+        "antechambers"
+      ],
+      "url": "https://en.wiktionary.org/wiki/antechamber",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "prosaic",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/prosaic",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "contrive",
+      "aliases": [
+        "contrived",
+        "contriving"
+      ],
+      "url": "https://en.wiktionary.org/wiki/contrive",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "sough",
+      "aliases": [
+        "soughed",
+        "soughing"
+      ],
+      "url": "https://en.wiktionary.org/wiki/sough",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "besought",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/besought",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "cabman",
+      "aliases": [
+        "cabmen"
+      ],
+      "url": "https://en.wiktionary.org/wiki/cabman",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "lo",
+      "completeness": "lo"
+    },
+    {
+      "term": "bow-window",
+      "aliases": [
+        "bow window"
+      ],
+      "url": "https://en.wiktionary.org/wiki/bow_window",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    },
+    {
+      "term": "a fortiori",
+      "aliases": [],
+      "url": "https://en.wiktionary.org/wiki/a_fortiori",
+      "lang": "en",
+      "type": "definition",
+      "domain": "definition",
+      "interest": "med",
+      "completeness": "med"
+    }
+  ]
+}

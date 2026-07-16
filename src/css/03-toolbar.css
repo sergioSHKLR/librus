@@ -9,12 +9,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 39px;
-  height: 39px;
+  /* Fit inside 40px border-box toolbar (1px bottom border → 39px content) */
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid transparent;
   color: var(--text);
   background: transparent;
+  box-sizing: border-box;
 }
 
 /* No hover fill — keep chrome quiet */
@@ -64,7 +67,7 @@ html[data-theme='dark'] img.library-brand-icon {
   }
 }
 
-/* Cover icons already inverted for light-on-gradient — don't double-invert */
+/* Cover icons already inverted for light-on-gradient — keep white in dark theme */
 html[data-theme='dark'] .cover-icon,
 html:not([data-theme='light']) .cover-icon {
   filter: brightness(0) invert(1);

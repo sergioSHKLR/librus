@@ -13,6 +13,9 @@
   <meta name="description" content="L∙I∙B∙R∙U∙S — annotate to assimilate" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="{{ASSET_PREFIX}}icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/00-tokens.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/01-reset.css" />
   <link rel="stylesheet" href="{{ASSET_PREFIX}}css/02-layout.css" />
@@ -117,9 +120,6 @@
               </div>
               <div class="toolbar-dropdown-row" role="group" data-i18n-aria="settings.providers" aria-label="Providers">
                 <span class="toolbar-dropdown-label" data-i18n="settings.providers">Providers</span>
-                <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-l" data-provider-code="l" data-i18n-label="reader.providerLuz" title="Luz Espírita" aria-label="Luz Espírita" aria-pressed="true" role="menuitemcheckbox">
-                  <img src="{{ASSET_PREFIX}}icons/lightbulb.svg" class="toolbar-icon" alt="" width="20" height="20" />
-                </button>
                 <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" data-i18n-label="reader.providerWiki" title="Wikipedia" aria-label="Wikipedia" aria-pressed="true" role="menuitemcheckbox">
                   <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
                 </button>
@@ -152,22 +152,22 @@
           <button type="button" class="toolbar-btn toolbar-btn-clear is-hidden" id="btn-term-clear" data-i18n-label="reader.clearTerm" title="Clear term" aria-label="Clear term">
             <img src="{{ASSET_PREFIX}}icons/close.svg" class="toolbar-icon" alt="" width="16" height="16" />
           </button>
-        </div>
-        <div class="context-provider-buttons" role="group" data-i18n-aria="settings.providers" aria-label="Providers">
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="luzespirita" data-i18n-label="reader.providerLuz" title="Luz Espírita" aria-label="Luz Espírita">
-            <img src="{{ASSET_PREFIX}}icons/lightbulb.svg" class="toolbar-icon" alt="" width="20" height="20" />
-          </button>
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" data-i18n-label="reader.providerWiki" title="Wikipedia" aria-label="Wikipedia">
-            <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
-          </button>
-          <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" data-i18n-label="reader.providerDict" title="Wiktionary" aria-label="Wiktionary">
-            <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
-          </button>
+          <div class="context-provider-buttons" role="group" data-i18n-aria="settings.providers" aria-label="Providers">
+            <button type="button" class="toolbar-btn context-provider-btn" data-provider="wiki" data-i18n-label="reader.providerWiki" title="Wikipedia" aria-label="Wikipedia">
+              <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
+            </button>
+            <button type="button" class="toolbar-btn context-provider-btn" data-provider="dictionary" data-i18n-label="reader.providerDict" title="Wiktionary" aria-label="Wiktionary">
+              <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
+            </button>
+          </div>
         </div>
       </div>
       <div class="context-iframe-container">
         <div class="context-loading-overlay is-hidden" id="context-loading-overlay" aria-hidden="true">
-          <div class="context-loading-spinner" aria-hidden="true"></div>
+          <div class="context-loading-inner">
+            <div class="context-loading-spinner" aria-hidden="true"></div>
+            <p id="context-loading-msg" class="context-loading-msg"></p>
+          </div>
         </div>
         <iframe id="context-iframe" class="context-iframe" data-i18n-title="pane.consult" title="Consult" src="{{ASSET_PREFIX}}pages/blank.html"></iframe>
       </div>

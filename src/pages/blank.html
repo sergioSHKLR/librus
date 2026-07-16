@@ -54,7 +54,7 @@
 
       function readSettings() {
         try {
-          var raw = localStorage.getItem('nano-ssg-settings');
+          var raw = localStorage.getItem('librus-settings');
           if (!raw) return {};
           return JSON.parse(raw) || {};
         } catch (e) {
@@ -69,6 +69,7 @@
         } catch (e) {}
         var s = readSettings();
         if (s.lang === 'pt' || s.lang === 'en') return s.lang;
+        /* LIBRUS product default (EN until PT unlocked) */
         return 'en';
       }
 

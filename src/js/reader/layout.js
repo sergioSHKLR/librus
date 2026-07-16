@@ -65,7 +65,7 @@ export function wireLayout() {
     timer = setTimeout(() => {
       applyLayoutMode();
       maybeShowViewportAlert();
-      document.dispatchEvent(new CustomEvent('nano:layout-change', { detail: { wide: computeIsWide() } }));
+      document.dispatchEvent(new CustomEvent('librus:layout-change', { detail: { wide: computeIsWide() } }));
     }, 120);
   });
 }

@@ -480,7 +480,7 @@ function summarizePublic() {
 }
 
 function main() {
-  console.log(`${BRAND} nano-ssg — build\n`);
+  console.log(`${BRAND} librus-ssg — build\n`);
   runCheck();
 
   const catalog = readCatalog();
@@ -492,6 +492,9 @@ function main() {
   for (const dir of ['css', 'js', 'locales', 'icons', 'images', 'pages']) {
     copyRecursive(path.join(SRC, dir), path.join(PUBLIC, dir));
   }
+  const cname = path.join(SRC, 'CNAME');
+  if (fs.existsSync(cname)) fs.copyFileSync(cname, path.join(PUBLIC, 'CNAME'));
+
   for (const f of ['manifest.webmanifest', 'sw.js', 'hypothesis-boot.js']) {
     const src = path.join(SRC, f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(PUBLIC, f));

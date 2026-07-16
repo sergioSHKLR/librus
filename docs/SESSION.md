@@ -1,4 +1,4 @@
-# Session handoff — L∙I∙B∙R∙U∙S / nano-ssg
+# Session handoff — L∙I∙B∙R∙U∙S / librus-ssg
 
 **Saved:** 2026-07-13  
 **Version:** 0.2.0-beta (BUILD_ID 260713a)

@@ -47,7 +47,7 @@ function markUpdateAvailable(worker) {
   updateAvailable = true;
   showBanner(true);
   syncUpdateButtons();
-  document.dispatchEvent(new CustomEvent('nano:update-available'));
+  document.dispatchEvent(new CustomEvent('librus:update-available'));
 }
 
 export function wirePwaUpdates() {
@@ -81,7 +81,7 @@ export function wirePwaUpdates() {
     .catch(() => {});
 
   document.getElementById('btn-force-update')?.addEventListener('click', () => forceUpdate());
-  document.addEventListener('nano:settings-dom', () => syncUpdateButtons());
+  document.addEventListener('librus:settings-dom', () => syncUpdateButtons());
 }
 
 export function forceUpdate() {

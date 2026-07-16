@@ -24,7 +24,7 @@ from doutrina_linker.report_phase import run_report  # noqa: E402
 
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="nano-ssg linker: dictionary → linked MD (cache)")
+    p = argparse.ArgumentParser(description="librus linker: dictionary → linked MD (cache)")
     p.add_argument("--input", required=True, help="Source book.md (unlinked)")
     p.add_argument("--output", required=True, help="Linked MD output path")
     p.add_argument("--report", required=True, help="Report JSON path")
@@ -42,15 +42,12 @@ def main() -> int:
         print(f"error: input not found: {input_path}", file=sys.stderr)
         return 1
 
+    # LIBRUS: wiki + dict only — no Luz Espírita provider
     providers = ["wikipedia", "wiktionary"]
     dictionaries: dict[str, str] = {
         "wikipedia": str(dicts / "wikipedia.json"),
         "wiktionary": str(dicts / "wiktionary.json"),
     }
-    luz = dicts / "luz-pedia.json"
-    if args.lang == "pt" and luz.is_file():
-        providers = ["luz", "wikipedia", "wiktionary"]
-        dictionaries["luz"] = str(luz)
 
     for name, path in list(dictionaries.items()):
         if not Path(path).is_file():
