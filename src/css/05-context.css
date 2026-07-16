@@ -20,7 +20,7 @@
   font-weight: 400;
 }
 
-/* Immediately after selected_term — no extra gap */
+/* Immediately after selected_term + clear — no extra gap, never shrink away */
 .context-provider-buttons {
   display: flex;
   align-items: center;

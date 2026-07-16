@@ -208,25 +208,31 @@ body.page-reader {
   display: none;
 }
 
-/* term grows · clear next to term · providers after · no overflow */
+/*
+ * Consult selection cluster (left-aligned, tight):
+ *   selected_term · clear (×) · provider icons
+ * Term sizes to content and may grow/shrink; long terms ellipsize.
+ * Providers sit immediately after the term (not pushed to the far right).
+ */
 .context-selection-wrap {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 2px;
   min-width: 0;
   flex: 1 1 auto;
   overflow: hidden;
 }
 .context-selection-wrap .context-selection {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
+  max-width: calc(100% - 10rem); /* room for clear + provider icons */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .context-selection-wrap .toolbar-btn-clear {
   flex: 0 0 auto;
-  order: 0;
 }
 .context-selection-wrap .context-provider-buttons {
   flex: 0 0 auto;
