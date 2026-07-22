@@ -16,7 +16,7 @@ export const VIEWPORT_ALERT_KEY = 'librus-viewport-alert-dismissed';
 export const STUDY_NOTE_KEY = 'librus-study-note-dismissed';
 /** Min width (px) for wide three-pane mode */
 export const LAYOUT_WIDE_MIN = 1200;
-export const APP_VERSION = '0.2.0-beta';
-export const BUILD_ID = '260713l';
+export const APP_VERSION = '0.2.1-beta';
+export const BUILD_ID = '260721l';
 /** Splash mode: note + polaroid (Watson photo) */
 export const SPLASH_MODE = 'note+polaroid';

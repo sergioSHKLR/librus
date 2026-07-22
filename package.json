@@ -1,13 +1,13 @@
 {
   "name": "librus",
-  "version": "0.2.0-beta",
+  "version": "0.2.1-beta",
   "description": "L∙I∙B∙R∙U∙S — annotate to assimilate. Study library at librus.app.",
   "private": true,
   "type": "module",
   "scripts": {
     "check": "node tools/check-blocks.mjs",
     "build": "node tools/build.mjs",
-    "start": "npx --yes serve public -l 3000"
+    "start": "node tools/serve-public.mjs"
   },
   "keywords": [
     "librus",

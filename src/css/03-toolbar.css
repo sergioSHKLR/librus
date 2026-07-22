@@ -1,8 +1,8 @@
 /* ==========================================================================
  * Block 1 of 1 — Toolbar controls
  * Description: Shared header buttons; dark-mode invert for Lucide <img> icons
- * Version: 1.c
- * Revised: 11Jul26
+ * Version: 1.d
+ * Revised: 20Jul26
  * ========================================================================== */
 
 .toolbar-btn {
@@ -45,29 +45,35 @@
 
 .library-brand-icon {
   color: var(--text);
+  /* brand.svg is filled deepskyblue — never invert (invert → red) */
+  filter: none;
 }
 
 /*
  * Lucide icons are loaded as <img> with black strokes — they do not inherit
  * CSS color. Invert in dark theme (explicit + system).
+ * Exclude brand droplet: keep #00bfff in both themes.
  */
 html[data-theme='dark'] .toolbar-icon,
-html[data-theme='dark'] .library-brand-icon,
-html[data-theme='dark'] img.toolbar-icon,
-html[data-theme='dark'] img.library-brand-icon {
+html[data-theme='dark'] img.toolbar-icon {
   filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme='light']) .toolbar-icon,
-  html:not([data-theme='light']) .library-brand-icon,
-  html:not([data-theme='light']) img.toolbar-icon,
-  html:not([data-theme='light']) img.library-brand-icon {
+  html:not([data-theme='light']) img.toolbar-icon {
     filter: invert(1);
   }
 }
 
-/* Cover icons already inverted for light-on-gradient — keep white in dark theme */
+html[data-theme='dark'] .library-brand-icon,
+html[data-theme='dark'] img.library-brand-icon,
+html:not([data-theme='light']) .library-brand-icon,
+html:not([data-theme='light']) img.library-brand-icon {
+  filter: none;
+}
+
+/* Cover icons already inverted for light-on-gradient — don't double-invert */
 html[data-theme='dark'] .cover-icon,
 html:not([data-theme='light']) .cover-icon {
   filter: brightness(0) invert(1);

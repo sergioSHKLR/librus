@@ -33,6 +33,7 @@ let loadingLabels = {
   opening: 'Opening {provider}…',
   loading: 'Loading…',
   providers: {
+    luzespirita: 'Luz Espírita',
     wiki: 'Wikipedia',
     dictionary: 'Wiktionary',
     map: 'OpenStreetMap'
@@ -40,7 +41,7 @@ let loadingLabels = {
 };
 
 /** @type {'en'|'pt'} */
-let blankLang = 'en';
+let blankLang = 'pt';
 
 /**
  * Wiki/Wiktionary hosts use Vector night mode via URL — cross-origin localStorage
@@ -68,13 +69,14 @@ export function withWikiNightMode(url) {
 
 /** @returns {'en'|'pt'} */
 function wikiLang() {
-  return blankLang === 'pt' ? 'pt' : 'en';
+  return blankLang === 'en' ? 'en' : 'pt';
 }
 
 function providerTemplates() {
   const s = loadSettings();
   const builtins = defaultSearchTemplates(wikiLang());
   return {
+    luzespirita: resolveSearchTemplate(s, 'luzespirita') || builtins.luzespirita,
     wiki: resolveSearchTemplate(s, 'wiki') || builtins.wiki,
     dictionary: resolveSearchTemplate(s, 'dictionary') || builtins.dictionary,
     custom: resolveSearchTemplate(s, 'custom'),
@@ -86,22 +88,28 @@ function providerHomes() {
   const s = loadSettings();
   const lang = wikiLang();
   const builtins = defaultSearchTemplates(lang);
-  const wikiTpl = resolveSearchTemplate(s, 'wiki') || builtins.wiki;
-  const dictTpl = resolveSearchTemplate(s, 'dictionary') || builtins.dictionary;
-  const customTpl = resolveSearchTemplate(s, 'custom');
   return {
-    wiki: homeFromTemplate(wikiTpl) || 'https://' + lang + '.wikipedia.org/',
-    dictionary: homeFromTemplate(dictTpl) || 'https://' + lang + '.wiktionary.org/',
-    custom: homeFromTemplate(customTpl) || '',
+    luzespirita:
+      homeFromTemplate(resolveSearchTemplate(s, 'luzespirita') || builtins.luzespirita) ||
+      'https://www.luzespirita.org.br/',
+    wiki:
+      homeFromTemplate(resolveSearchTemplate(s, 'wiki') || builtins.wiki) ||
+      'https://' + lang + '.wikipedia.org/',
+    dictionary:
+      homeFromTemplate(resolveSearchTemplate(s, 'dictionary') || builtins.dictionary) ||
+      'https://' + lang + '.wiktionary.org/',
+    custom: homeFromTemplate(resolveSearchTemplate(s, 'custom')) || '',
     map: 'https://www.openstreetmap.org/'
   };
 }
 
 const PROVIDER_HOME_LABELS = {
+  luzespirita: 'Luz Espírita',
   wiki: 'Wikipedia',
   dictionary: 'Wiktionary',
   custom: 'Custom',
-  map: 'OpenStreetMap'
+  map: 'OpenStreetMap',
+  youtube: 'YouTube'
 };
 
 /** Inject/remove optional custom provider button from settings. */
@@ -166,13 +174,16 @@ function providerFromUrl(url) {
   if (!url) return '';
   try {
     const h = new URL(url, window.location.href).hostname || '';
+    if (/luzespirita/i.test(h) || /luzespirita/i.test(url)) return 'luzespirita';
     if (/wiktionary\.org$/i.test(h) || h.includes('wiktionary')) return 'dictionary';
     if (/wikipedia\.org$/i.test(h) || h.includes('wikipedia')) return 'wiki';
     if (/openstreetmap\.org$/i.test(h) || h.includes('openstreetmap')) return 'map';
-    if (/luzespirita/i.test(h) || /luzespirita/i.test(url)) return 'luzespirita';
+    if (/youtube\.com$|youtube-nocookie\.com$|youtu\.be$/i.test(h)) return 'youtube';
   } catch {
+    if (/luzespirita/i.test(url)) return 'luzespirita';
     if (/wiktionary/i.test(url)) return 'dictionary';
     if (/wikipedia/i.test(url)) return 'wiki';
+    if (/youtube|youtu\.be/i.test(url)) return 'youtube';
   }
   return '';
 }
@@ -259,7 +270,7 @@ export function setSelectionPlaceholder(label) {
 /**
  * @param {string} url
  * @param {string} [selectionLabel]
- * @param {string} [providerKey] wiki | dictionary | map | …
+ * @param {string} [providerKey] luzespirita | wiki | dictionary | map | …
  */
 export function openContextUrl(url, selectionLabel, providerKey) {
   if (!computeIsWide()) return;
@@ -498,7 +509,7 @@ export function wireContext() {
     if (t && t.length < 80) updateSelection(t);
   });
 
-  /* Alt+1/W Wiki · Alt+2/D Dict · Alt+3/C Custom */
+  /* Alt+1/W Wiki · Alt+2/D Dict · Alt+3/C Custom (no Luz in LIBRUS) */
   document.addEventListener('keydown', (e) => {
     if (!computeIsWide()) return;
     const tag = (e.target && e.target.tagName) || '';

@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.2.1-beta (2026-07-21)
+
+### Added
+
+- **Display** menu (sliders): link density + providers, then typography (size, line height, justify, width)
+- Book-only typography CSS vars (chrome stays fixed size)
+- PDF page jump control when `pages.json` is present
+- YouTube / external links open in consult pane (wide); fullscreen-friendly embeds
+- Generic **Reader Demo** book (non-religious sample walkthrough)
+- `serve-public.mjs` fixed ports (LIBRUS :3000)
+
+### Changed
+
+- Link density **None** (lo) = **zero** research links
+- Range sliders: dark track, black handle (light theme)
+- Consult `selected_term` min-width 25%; opaque loading overlay
+- Providers stay next to selected term + clear
+
+### Fixed
+
+- Template token fallback when book body stamp is partial
+
+---
+
 ## 0.2.0-beta (2026-07-13)
 
 ### Added

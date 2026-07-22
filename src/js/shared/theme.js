@@ -1,9 +1,13 @@
 /**
  * Block 1 of 1 — shared/theme.js
- * Description: Apply light/dark/system theme and cycle helper
- * Version: 1.b
- * Revised: 16Jul26
+ * Description: Apply light/dark/system theme and book typography
+ * Version: 1.c
+ * Revised: 21Jul26
  */
+
+/** PWA / browser chrome colors (status bar, title bar) */
+const THEME_COLOR_DARK = '#000000';
+const THEME_COLOR_LIGHT = '#ffffff';
 
 export function isEffectivelyDark(theme) {
   return (
@@ -18,6 +22,22 @@ export function nextTheme(theme) {
   if (theme === 'light') return 'dark';
   if (theme === 'dark') return 'system';
   return 'light';
+}
+
+/**
+ * Keep <meta name="theme-color"> in sync so PWA window chrome matches theme.
+ * @param {'light'|'dark'|'system'} theme
+ */
+function applyThemeColor(theme) {
+  if (typeof document === 'undefined') return;
+  const color = isEffectivelyDark(theme) ? THEME_COLOR_DARK : THEME_COLOR_LIGHT;
+  let meta = document.querySelector('meta[name="theme-color"]');
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute('name', 'theme-color');
+    document.head.appendChild(meta);
+  }
+  meta.setAttribute('content', color);
 }
 
 /**
@@ -59,6 +79,8 @@ export function applyTheme(theme, ui = {}) {
     root.style.colorScheme = theme;
   }
 
+  applyThemeColor(theme);
+
   const base = ui.assetBase || '';
   const labels = ui.labels || {
     light: 'Theme: light — click for dark',
@@ -78,11 +100,24 @@ export function applyTheme(theme, ui = {}) {
     ui.btnEl.setAttribute('data-theme-mode', theme);
   }
 
-  syncFavicon(theme, base);
+  if (base !== undefined) syncFavicon(theme, base);
 }
 
-export function applyTypography(settings) {
+/**
+ * Apply **book** typography only (--book-*). Chrome UI stays fixed size.
+ * @param {{ fontScale?: number, lineHeight?: number, textJustify?: boolean, measure?: string }} settings
+ */
+export function applyTypography(settings = {}) {
   const root = document.documentElement;
-  if (settings.fontScale) root.style.setProperty('--font-scale', String(settings.fontScale));
-  /* line-height is CSS token only — not persisted in localStorage */
+  const font = settings.fontScale != null ? settings.fontScale : 1;
+  const lh = settings.lineHeight != null ? settings.lineHeight : 1.6;
+  const measure = settings.measure || 'md';
+  const measureRem = { sm: 32, md: 42, lg: 56 }[measure] || 42;
+
+  root.style.setProperty('--book-font-scale', String(font));
+  root.style.setProperty('--book-line-height', String(lh));
+  root.style.setProperty('--reader-measure', measureRem + 'rem');
+  root.style.setProperty('--book-text-align', settings.textJustify ? 'justify' : 'start');
+  root.setAttribute('data-text-justify', settings.textJustify ? '1' : '0');
+  root.setAttribute('data-measure', measure);
 }

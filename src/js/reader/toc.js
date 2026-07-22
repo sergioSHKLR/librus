@@ -1,13 +1,22 @@
 /**
  * Block 1 of 1 — reader/toc.js
  * Description: Off-screen cascading TOC sidebar with filter
- * Version: 2.b
- * Revised: 12Jul26
+ * Version: 2.c
+ * Revised: 16Jul26
  */
 
 import { scrollToHeading, getHeadings } from './breadcrumb.js';
 
-/** @typedef {{ id: string, level: number, text: string, index: number }} TocItem */
+/**
+ * @typedef {{
+ *   id: string,
+ *   level: number,
+ *   text: string,
+ *   index: number,
+ *   synthetic?: boolean,
+ *   childIds?: string[]
+ * }} TocItem
+ */
 
 let open = false;
 /** @type {TocItem[]} */
@@ -26,6 +35,85 @@ function cleanText(raw) {
     .replace(/\s+/g, ' ')
     .replace(/^\*+|\*+$/g, '')
     .trim();
+}
+
+/**
+ * First A–Z letter of a glossary heading (strips emoji / punctuation).
+ * Diacritics collapse for grouping: É/Ê → E, Ó → O, etc.
+ * @param {string} text
+ */
+function glossaryLetter(text) {
+  const t = cleanText(text)
+    .replace(/^🔖\s*/u, '')
+    .replace(/^[^\p{L}]+/u, '');
+  const ch = t.charAt(0);
+  if (!ch) return '#';
+  /* NFD + strip combining marks so accented initials share one bucket */
+  const base = ch.normalize('NFD').replace(/\p{M}/gu, '');
+  const letter = (base || ch).toLocaleUpperCase('en-US');
+  if (/^[A-Z]$/.test(letter)) return letter;
+  /* Fallback: first ASCII letter if any */
+  const m = letter.match(/[A-Z]/);
+  return m ? m[0] : '#';
+}
+
+/**
+ * Under 6.02 “Termos relacionados”, inject synthetic letter groups so the
+ * cascade shows A, B, C… instead of hundreds of term leaves.
+ * @param {TocItem[]} items
+ * @returns {TocItem[]}
+ */
+function injectGlossaryLetterGroups(items) {
+  const out = [];
+  let i = 0;
+  while (i < items.length) {
+    const item = items[i];
+    const isGlossaryParent =
+      item.id === '6-02-01' ||
+      (item.level === 4 && /termos\s+relacionados/i.test(item.text || ''));
+
+    if (!isGlossaryParent) {
+      out.push({ ...item, index: out.length });
+      i++;
+      continue;
+    }
+
+    out.push({ ...item, index: out.length });
+    const parentLevel = item.level;
+    i++;
+    /** @type {Map<string, TocItem[]>} */
+    const byLetter = new Map();
+    while (i < items.length && items[i].level > parentLevel) {
+      const term = items[i];
+      if (term.level === parentLevel + 1) {
+        const L = glossaryLetter(term.text);
+        if (!byLetter.has(L)) byLetter.set(L, []);
+        byLetter.get(L).push({ ...term, level: parentLevel + 2 });
+      }
+      i++;
+    }
+
+    const letters = [...byLetter.keys()].sort((a, b) => a.localeCompare(b, 'pt'));
+    for (const L of letters) {
+      const terms = byLetter.get(L) || [];
+      const letterItem = {
+        id: '6-02-letter-' + L.toLowerCase(),
+        level: parentLevel + 1,
+        text: L,
+        index: out.length,
+        synthetic: true,
+        childIds: terms.map((t) => t.id)
+      };
+      out.push(letterItem);
+      for (const term of terms) {
+        out.push({ ...term, index: out.length });
+      }
+    }
+  }
+  out.forEach((t, idx) => {
+    t.index = idx;
+  });
+  return out;
 }
 
 function setOpen(next) {
@@ -62,6 +150,10 @@ function setOpen(next) {
  * @returns {TocItem[]}
  */
 function childrenOf(item) {
+  if (item.synthetic && item.childIds && item.childIds.length) {
+    const idSet = new Set(item.childIds);
+    return flat.filter((n) => idSet.has(n.id));
+  }
   const out = [];
   for (let i = item.index + 1; i < flat.length; i++) {
     const n = flat[i];
@@ -155,7 +247,10 @@ function renderView() {
     const kids = filtering ? [] : childrenOf(item);
     const hasKids = kids.length > 0;
     const li = document.createElement('li');
-    li.className = 'toc-cascade-item' + (hasKids ? ' has-children' : '');
+    li.className =
+      'toc-cascade-item' +
+      (hasKids ? ' has-children' : '') +
+      (item.synthetic ? ' is-letter-group' : '');
 
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -214,7 +309,7 @@ function goBack() {
 }
 
 function normalizeToc(raw) {
-  return (raw || [])
+  const base = (raw || [])
     .filter((t) => t && t.id && t.level >= 1)
     .map((t, index) => ({
       id: t.id,
@@ -222,6 +317,7 @@ function normalizeToc(raw) {
       text: cleanText(t.text || t.id),
       index
     }));
+  return injectGlossaryLetterGroups(base);
 }
 
 export async function loadToc() {
@@ -234,12 +330,14 @@ export async function loadToc() {
     flatAll = normalizeToc(await res.json());
     if (!flatAll.length) {
       const live = getHeadings();
-      flatAll = live.map((h, index) => ({
-        id: h.id,
-        level: h.level,
-        text: cleanText(h.text),
-        index
-      }));
+      flatAll = injectGlossaryLetterGroups(
+        live.map((h, index) => ({
+          id: h.id,
+          level: h.level,
+          text: cleanText(h.text),
+          index
+        }))
+      );
     }
     flat = flatAll.slice();
     if (!flat.length) {

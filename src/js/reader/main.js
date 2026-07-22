@@ -1,11 +1,11 @@
 /**
  * Block 1 of 1 — reader/main.js
- * Description: Boot reader — layout, font size, Links; two-row toolbar
- * Version: 1.e
- * Revised: 12Jul26
+ * Description: Boot reader — layout, typography menu, Links; two-row toolbar
+ * Version: 1.f
+ * Revised: 21Jul26
  */
 
-import { loadSettings, saveSettings, FONT_SCALES } from '../shared/storage.js';
+import { loadSettings } from '../shared/storage.js';
 import { applyTheme, applyTypography, isEffectivelyDark } from '../shared/theme.js';
 import { loadLocale, applyI18n, t } from '../i18n/i18n.js';
 import { runIntegrityDebug } from '../shared/integrity.js';
@@ -21,6 +21,8 @@ import { wireSearch } from './search.js';
 import { wireToc } from './toc.js';
 import { wireBreadcrumb, setBreadcrumbPartLabel } from './breadcrumb.js';
 import { wireLinkFilters, setLinksStrings } from './links.js';
+import { wireTypography, setTypographyStrings } from './typography.js';
+import { wirePageNav } from './page-nav.js';
 import { wirePwaUpdates } from '../settings/update.js';
 import { applyQueryToSettings } from '../shared/prefs-query.js';
 import { libraryHomeUrl, assetBase } from '../shared/paths.js';
@@ -31,15 +33,6 @@ function setHypoInvert(theme) {
   const host = document.getElementById('hypothesis-container');
   if (!host) return;
   host.classList.toggle('hypothesis-theme-invert', isEffectivelyDark(theme));
-}
-
-function cycleFont(settings) {
-  let idx = FONT_SCALES.indexOf(settings.fontScale);
-  if (idx < 0) idx = 0;
-  idx = (idx + 1) % FONT_SCALES.length;
-  settings.fontScale = FONT_SCALES[idx];
-  applyTypography(settings);
-  return saveSettings(settings);
 }
 
 async function boot() {
@@ -55,6 +48,7 @@ async function boot() {
   document.documentElement.lang = settings.lang === 'pt' ? 'pt-BR' : 'en';
   applyI18n(document, strings);
   setLinksStrings(strings);
+  setTypographyStrings(strings);
 
   const title = document.body.dataset.bookTitle || t(strings, 'brand', BRAND);
   document.title = title + ' · ' + t(strings, 'brand', BRAND);
@@ -75,7 +69,6 @@ async function boot() {
   });
   setBlankLang(settings.lang === 'pt' ? 'pt' : 'en');
 
-  /* Search / TOC filter placeholders follow loaded locale (EN/PT) */
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
     const searchPh = t(strings, 'reader.search', settings.lang === 'pt' ? 'Procurar…' : 'Search…');
@@ -89,10 +82,6 @@ async function boot() {
     tocFilter.setAttribute('aria-label', tocPh);
   }
 
-  document.getElementById('btn-font-cycle')?.addEventListener('click', () => {
-    settings = cycleFont(settings);
-  });
-
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     settings = loadSettings();
     if (settings.theme === 'system') {
@@ -104,11 +93,13 @@ async function boot() {
   wireLayout();
   wireSearch();
   wireContext();
+  wireTypography();
 
   await loadBookBody();
   wireBreadcrumb();
   wireToc();
   wireLinkFilters();
+  await wirePageNav();
   applyDeepLink();
   window.addEventListener('hashchange', applyDeepLink);
 

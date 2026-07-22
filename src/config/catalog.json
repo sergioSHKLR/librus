@@ -3,6 +3,29 @@
   "tagline": "annotate to assimilate",
   "books": [
     {
+      "slug": "demo",
+      "path": "content/books/demo/book.md",
+      "title": "Reader Demo",
+      "author": "L∙I∙B∙R∙U∙S",
+      "emoji": "▶️",
+      "lang": "en",
+      "license": "public-domain",
+      "cover": {
+        "colors": [
+          "#1a1a2e",
+          "#4a90d9"
+        ],
+        "angle": 145,
+        "icon": "play"
+      },
+      "enabled": true,
+      "categories": [
+        "demo",
+        "tutorial"
+      ],
+      "order": 0
+    },
+    {
       "slug": "adv-01-scandal-en",
       "path": "content/books/adv-01-scandal-en/book.md",
       "title": "A Scandal in Bohemia",

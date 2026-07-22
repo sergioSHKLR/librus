@@ -115,8 +115,8 @@ export function compileBookFile(mdPath, { folderSlug } = {}) {
     return { ok: false, fatal, warnings, meta, html: '', toc: [] };
   }
 
-  const { html, toc } = markdownToHtml(parsed.content || '', { lang: meta.lang });
-  return { ok: true, fatal, warnings, meta, html, toc };
+  const { html, toc, pages } = markdownToHtml(parsed.content || '', { lang: meta.lang });
+  return { ok: true, fatal, warnings, meta, html, toc, pages: pages || [] };
 }
 
 export function mirrorBookImages(srcBookDir, destBookDir) {

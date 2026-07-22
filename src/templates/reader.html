@@ -4,14 +4,14 @@
   <!--
     Block 1 of 2 — reader document head
     Description: Meta, CSS modules, Hypothesis boot for book shell
-    Version: 1.f
-    Revised: 12Jul26
+    Version: 1.g
+    Revised: 21Jul26
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>{{BOOK_TITLE}} · L∙I∙B∙R∙U∙S</title>
   <meta name="description" content="L∙I∙B∙R∙U∙S — annotate to assimilate" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#000000" />
   <link rel="icon" href="{{ASSET_PREFIX}}icons/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,9 +38,9 @@
 >
   <!--
     Block 2 of 2 — reader body panes
-    Description: notes | main (grouped search cluster, font, links on row2) | consult
-    Version: 1.i
-    Revised: 12Jul26
+    Description: notes | main (display menu: links + typography) | consult
+    Version: 1.j
+    Revised: 21Jul26
   -->
   <div class="reader-container" id="app">
     <aside class="left-panel" id="left-panel" data-i18n-aria="pane.notes" aria-label="Notes">
@@ -53,19 +53,6 @@
           <a href="{{ASSET_PREFIX}}" class="toolbar-btn" id="btn-library" data-i18n-label="reader.home" title="Library" aria-label="Library">
             <img src="{{ASSET_PREFIX}}icons/home.svg" class="toolbar-icon" alt="" width="20" height="20" />
           </a>
-          <button
-            type="button"
-            class="toolbar-btn"
-            id="btn-toc"
-            data-i18n-label="reader.toc"
-            title="Contents"
-            aria-label="Contents"
-            aria-expanded="false"
-            aria-controls="toc-sidebar"
-            disabled
-          >
-            <img src="{{ASSET_PREFIX}}icons/toc.svg" class="toolbar-icon" alt="" width="20" height="20" />
-          </button>
           <span class="toolbar-divider" aria-hidden="true"></span>
           <div class="toolbar-search-group" role="search" data-i18n-aria="pane.search" aria-label="Search">
             <div class="toolbar-search-wrap">
@@ -82,52 +69,128 @@
               <img src="{{ASSET_PREFIX}}icons/down.svg" class="toolbar-icon" alt="" width="20" height="20" />
             </button>
           </div>
-          <span class="toolbar-divider" aria-hidden="true"></span>
-          <button type="button" class="toolbar-btn" id="btn-font-cycle" data-i18n-label="reader.fontSize" title="Text size" aria-label="Text size">
-            <img src="{{ASSET_PREFIX}}icons/text-size.svg" class="toolbar-icon" alt="" width="20" height="20" />
-          </button>
-        </div>
-        <div class="panel-toolbar" id="main-toolbar-row2" data-i18n-aria="pane.location" aria-label="Location">
-          <nav class="toolbar-breadcrumb" id="reader-breadcrumb" data-i18n-aria="pane.breadcrumb" aria-label="Breadcrumb">
-            <span class="toolbar-breadcrumb-empty" id="breadcrumb-empty">{{BOOK_SLUG}}</span>
-          </nav>
-          <div class="toolbar-menu" id="links-menu">
+          <!-- Row 1 right: display / text controls (sliders) -->
+          <div class="toolbar-menu toolbar-menu-end" id="reader-menu">
             <button
               type="button"
               class="toolbar-btn"
-              id="btn-links-menu"
-              title="Links"
-              aria-label="Links"
+              id="btn-reader-menu"
+              title="Display"
+              aria-label="Display"
               aria-expanded="false"
-              aria-controls="links-menu-panel"
-              data-i18n-label="reader.links"
+              aria-controls="reader-menu-panel"
+              data-i18n-label="reader.display"
             >
-              <img src="{{ASSET_PREFIX}}icons/link.svg" class="toolbar-icon" alt="" width="20" height="20" />
+              <img src="{{ASSET_PREFIX}}icons/sliders-horizontal.svg" class="toolbar-icon" alt="" width="20" height="20" />
             </button>
             <div
-              id="links-menu-panel"
-              class="toolbar-dropdown is-hidden"
+              id="reader-menu-panel"
+              class="toolbar-dropdown toolbar-dropdown--reader is-hidden"
               role="menu"
-              data-i18n-aria="pane.linkControls"
-              aria-label="Link controls"
+              data-i18n-aria="pane.displayControls"
+              aria-label="Display controls"
               hidden
             >
-              <div class="toolbar-dropdown-row">
+              <div class="toolbar-dropdown-section reader-menu-links-only" data-i18n="reader.linksSection">Links</div>
+              <div class="toolbar-dropdown-row toolbar-dropdown-row--slider reader-menu-links-only">
                 <span class="toolbar-dropdown-label" data-i18n="settings.density">Link density</span>
-                <button type="button" class="toolbar-btn" id="btn-density-cycle" data-i18n-label="settings.density" title="Link density" aria-label="Link density">
-                  <span id="density-toggle-label" class="density-chip">MED</span>
+                <div class="typo-slider-wrap">
+                  <input
+                    type="range"
+                    class="typo-slider"
+                    id="density-slider"
+                    min="0"
+                    max="2"
+                    step="1"
+                    value="1"
+                    data-i18n-aria="settings.density"
+                    aria-label="Link density"
+                  />
+                  <span id="density-toggle-label" class="typo-slider-value">Some</span>
+                </div>
+              </div>
+              <div class="toolbar-dropdown-row reader-menu-links-only" role="group" data-i18n-aria="settings.providers" aria-label="Providers">
+                <span class="toolbar-dropdown-label" data-i18n="settings.providers">Providers</span>
+                <div class="provider-toggle-group">
+                  <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" data-i18n-label="reader.providerWiki" title="Wikipedia" aria-label="Wikipedia" aria-pressed="true" role="menuitemcheckbox">
+                    <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
+                  </button>
+                  <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" data-i18n-label="reader.providerDict" title="Wiktionary" aria-label="Wiktionary" aria-pressed="true" role="menuitemcheckbox">
+                    <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
+                  </button>
+                  <!-- Optional custom provider injected when configured in Settings -->
+                </div>
+              </div>
+              <div class="toolbar-dropdown-section" data-i18n="reader.typography">Typography</div>
+              <div class="toolbar-dropdown-row toolbar-dropdown-row--slider">
+                <span class="toolbar-dropdown-label" data-i18n="reader.fontSize">Text size</span>
+                <div class="typo-slider-wrap">
+                  <input type="range" class="typo-slider" id="font-scale-slider" min="0" max="6" step="1" value="2" data-i18n-aria="reader.fontSize" aria-label="Text size" />
+                  <span id="font-scale-label" class="typo-slider-value">M</span>
+                </div>
+              </div>
+              <div class="toolbar-dropdown-row toolbar-dropdown-row--slider">
+                <span class="toolbar-dropdown-label" data-i18n="reader.lineHeight">Line height</span>
+                <div class="typo-slider-wrap">
+                  <input type="range" class="typo-slider" id="line-height-slider" min="0" max="4" step="1" value="1" data-i18n-aria="reader.lineHeight" aria-label="Line height" />
+                  <span id="line-height-label" class="typo-slider-value">Normal</span>
+                </div>
+              </div>
+              <div class="toolbar-dropdown-row">
+                <span class="toolbar-dropdown-label" data-i18n="reader.justify">Justify</span>
+                <button type="button" class="toolbar-btn" id="btn-justify-toggle" data-i18n-label="reader.justify" title="Justify" aria-label="Justify" aria-pressed="false">
+                  <img id="justify-toggle-icon" src="{{ASSET_PREFIX}}icons/align-left.svg" class="toolbar-icon" alt="" width="20" height="20" />
                 </button>
               </div>
-              <div class="toolbar-dropdown-row" role="group" data-i18n-aria="settings.providers" aria-label="Providers">
-                <span class="toolbar-dropdown-label" data-i18n="settings.providers">Providers</span>
-                <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-w" data-provider-code="w" data-i18n-label="reader.providerWiki" title="Wikipedia" aria-label="Wikipedia" aria-pressed="true" role="menuitemcheckbox">
-                  <img src="{{ASSET_PREFIX}}icons/globe.svg" class="toolbar-icon" alt="" width="20" height="20" />
-                </button>
-                <button type="button" class="toolbar-btn provider-toggle" id="btn-prov-d" data-provider-code="d" data-i18n-label="reader.providerDict" title="Wiktionary" aria-label="Wiktionary" aria-pressed="true" role="menuitemcheckbox">
-                  <img src="{{ASSET_PREFIX}}icons/book-a.svg" class="toolbar-icon" alt="" width="20" height="20" />
-                </button>
+              <div class="toolbar-dropdown-row toolbar-dropdown-row--slider">
+                <span class="toolbar-dropdown-label" data-i18n="reader.measure">Width</span>
+                <div class="typo-slider-wrap">
+                  <input type="range" class="typo-slider" id="measure-slider" min="0" max="2" step="1" value="1" data-i18n-aria="reader.measure" aria-label="Column width" />
+                  <span id="measure-label" class="typo-slider-value">Normal</span>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="panel-toolbar" id="main-toolbar-row2" data-i18n-aria="pane.location" aria-label="Location">
+          <button
+            type="button"
+            class="toolbar-btn"
+            id="btn-toc"
+            data-i18n-label="reader.toc"
+            title="Contents"
+            aria-label="Contents"
+            aria-expanded="false"
+            aria-controls="toc-sidebar"
+            disabled
+          >
+            <img src="{{ASSET_PREFIX}}icons/toc.svg" class="toolbar-icon" alt="" width="20" height="20" />
+          </button>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <nav class="toolbar-breadcrumb" id="reader-breadcrumb" data-i18n-aria="pane.breadcrumb" aria-label="Breadcrumb">
+            <span class="toolbar-breadcrumb-empty" id="breadcrumb-empty">{{BOOK_SLUG}}</span>
+          </nav>
+          <div class="pdf-page-nav is-hidden" id="pdf-page-nav" hidden>
+            <form class="pdf-page-form" id="pdf-page-form" action="#" autocomplete="off">
+              <label class="pdf-page-form-label" for="pdf-page-input" data-i18n="reader.pdfPage">Pg.</label>
+              <button type="button" class="toolbar-btn" id="btn-pdf-page-prev" data-i18n-label="common.previous" title="Previous page" aria-label="Previous page" disabled>
+                <img src="{{ASSET_PREFIX}}icons/up.svg" class="toolbar-icon" alt="" width="16" height="16" style="transform:rotate(-90deg)" />
+              </button>
+              <input
+                type="number"
+                class="pdf-page-input"
+                id="pdf-page-input"
+                inputmode="numeric"
+                min="1"
+                step="1"
+                data-i18n-aria="reader.pdfPage"
+                aria-label="PDF page"
+              />
+              <button type="button" class="toolbar-btn" id="btn-pdf-page-next" data-i18n-label="common.next" title="Next page" aria-label="Next page" disabled>
+                <img src="{{ASSET_PREFIX}}icons/down.svg" class="toolbar-icon" alt="" width="16" height="16" style="transform:rotate(-90deg)" />
+              </button>
+              <span class="pdf-page-range" id="pdf-page-label" aria-live="polite"></span>
+            </form>
           </div>
         </div>
       </div>
@@ -169,7 +232,16 @@
             <p id="context-loading-msg" class="context-loading-msg"></p>
           </div>
         </div>
-        <iframe id="context-iframe" class="context-iframe" data-i18n-title="pane.consult" title="Consult" src="{{ASSET_PREFIX}}pages/blank.html"></iframe>
+        <iframe
+          id="context-iframe"
+          class="context-iframe"
+          data-i18n-title="pane.consult"
+          title="Consult"
+          src="{{ASSET_PREFIX}}pages/blank.html"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen *"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
       </div>
     </aside>
   </div>

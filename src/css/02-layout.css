@@ -145,6 +145,62 @@ body.page-reader {
   user-select: none;
   padding: 0 0.1rem;
 }
+/* PDF page jump (visible when pages.json has entries) */
+.pdf-page-nav {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 0.35rem;
+}
+.pdf-page-nav.is-hidden,
+.pdf-page-nav[hidden] {
+  display: none !important;
+}
+.pdf-page-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0;
+}
+.pdf-page-form-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  margin-right: 0.15rem;
+}
+.pdf-page-input {
+  width: 3.25rem;
+  height: 28px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 0.25rem;
+}
+.pdf-page-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.pdf-page-range {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  min-width: 2.5rem;
+  margin-left: 0.15rem;
+  white-space: nowrap;
+}
+
+/* Zero-height anchors for PDF page starts */
+.pdf-page-start {
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--toolbar-stack-height, 80px) + 0.5rem);
+}
+
 .toolbar-breadcrumb-empty {
   color: var(--text-muted);
   overflow: hidden;
@@ -224,8 +280,8 @@ body.page-reader {
   overflow: hidden;
 }
 .context-selection-wrap .context-selection {
-  flex: 0 1 auto;
-  min-width: 0;
+  flex: 1 1 25%;
+  min-width: 25%;
   max-width: calc(100% - 10rem); /* room for clear + provider icons */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -258,6 +314,11 @@ body.page-reader {
   flex-shrink: 0;
 }
 
+/* Push display menu to the trailing edge of row 1 */
+.toolbar-menu-end {
+  margin-left: auto;
+}
+
 .toolbar-dropdown {
   position: absolute;
   top: calc(100% + 4px);
@@ -274,6 +335,170 @@ body.page-reader {
   gap: 0.35rem;
 }
 
+/* Larger panel: clear both toolbar rows (~80px stack) */
+.toolbar-dropdown--reader {
+  /* Button sits in row 1; place panel below full stack (>80px from stack top) */
+  top: calc(var(--toolbar-stack-height, 80px) + 4px);
+  min-width: 16rem;
+  padding: 0.65rem 0.75rem;
+  gap: 0.45rem;
+}
+
+.toolbar-dropdown-section {
+  margin: 0.25rem 0 0;
+  padding: 0.35rem 0 0.1rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.toolbar-dropdown-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+#btn-justify-toggle.is-on {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.toolbar-dropdown-row--slider {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+}
+.toolbar-dropdown-row--slider .toolbar-dropdown-label {
+  flex: 0 0 auto;
+  min-width: 5.5rem;
+}
+
+.typo-slider-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/*
+ * Lucide-like range: 2px track + vertical pill thumb
+ * (mirrors sliders-horizontal icon geometry)
+ */
+.typo-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1 1 auto;
+  min-width: 5.5rem;
+  max-width: 9rem;
+  height: 1.35rem;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.typo-slider:focus {
+  outline: none;
+}
+.typo-slider:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* WebKit track — single dark stroke; black pill thumb */
+.typo-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border: none;
+  border-radius: 1px;
+  background: #333333;
+}
+:root[data-theme='dark'] .typo-slider::-webkit-slider-runnable-track,
+html:not([data-theme='light']) .typo-slider::-webkit-slider-runnable-track {
+  background: #aaaaaa;
+}
+@media (prefers-color-scheme: light) {
+  html:not([data-theme='dark']) .typo-slider::-webkit-slider-runnable-track {
+    background: #333333;
+  }
+}
+.typo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 16px;
+  margin-top: -7px; /* center on 2px track */
+  border: none;
+  border-radius: 999px;
+  background: #000000;
+  box-shadow: 0 0 0 1px var(--bg);
+  cursor: grab;
+}
+:root[data-theme='dark'] .typo-slider::-webkit-slider-thumb,
+html:not([data-theme='light']) .typo-slider::-webkit-slider-thumb {
+  background: #eeeeee;
+}
+.typo-slider:active::-webkit-slider-thumb {
+  cursor: grabbing;
+  background: var(--accent);
+}
+
+/* Firefox */
+.typo-slider::-moz-range-track {
+  height: 2px;
+  border: none;
+  border-radius: 1px;
+  background: #333333;
+}
+:root[data-theme='dark'] .typo-slider::-moz-range-track,
+html:not([data-theme='light']) .typo-slider::-moz-range-track {
+  background: #aaaaaa;
+}
+.typo-slider::-moz-range-thumb {
+  width: 6px;
+  height: 16px;
+  border: none;
+  border-radius: 999px;
+  background: #000000;
+  box-shadow: 0 0 0 1px var(--bg);
+  cursor: grab;
+}
+:root[data-theme='dark'] .typo-slider::-moz-range-thumb,
+html:not([data-theme='light']) .typo-slider::-moz-range-thumb {
+  background: #eeeeee;
+}
+.typo-slider:active::-moz-range-thumb {
+  cursor: grabbing;
+  background: var(--accent);
+}
+/* Avoid dual fill styling fighting the single-line look */
+.typo-slider::-moz-range-progress {
+  background: transparent;
+  height: 2px;
+}
+
+.typo-slider-value {
+  flex: 0 0 3.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.provider-toggle-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.provider-toggle.is-off {
+  opacity: 0.35;
+}
+
 .toolbar-dropdown.is-hidden {
   display: none;
 }
@@ -281,7 +506,7 @@ body.page-reader {
 .toolbar-dropdown-row {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   min-width: 0;
 }
 
@@ -316,13 +541,10 @@ body.page-reader {
   box-sizing: border-box;
 }
 
-/* Keep text-size clear of Hypothesis chrome on narrow layouts (extra right pad) */
+/* Keep display menu clear of Hypothesis chrome on narrow layouts */
 html[data-layout='narrow'] #main-toolbar {
   padding-left: 8px;
   padding-right: 48px; /* 8px base + 40px */
-}
-html[data-layout='narrow'] #btn-font-cycle {
-  margin-left: 0;
 }
 .toolbar-search:focus {
   outline: none;
@@ -332,13 +554,10 @@ html[data-layout='narrow'] #btn-font-cycle {
   outline-offset: 1px;
 }
 
-/* Keep font control on the trailing edge of row 1 */
-#main-toolbar > .toolbar-divider + #btn-font-cycle {
-  margin-left: 0;
-  flex-shrink: 0;
-}
-#main-toolbar > .toolbar-search-group + .toolbar-divider {
-  margin-left: auto;
+/* Search group fills space; sliders menu stays right */
+#main-toolbar > .toolbar-search-group {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .search-counter {
@@ -384,7 +603,8 @@ html[data-layout='narrow'] .middle-panel {
   max-width: 100%;
 }
 
-html[data-layout='narrow'] #links-menu {
+/* Narrow: keep display menu (font size); hide link density / providers */
+html[data-layout='narrow'] .reader-menu-links-only {
   display: none !important;
 }
 

@@ -14,9 +14,27 @@
   margin: 0;
   padding: 1.5rem 1.25rem 4rem;
   font-family: var(--font-book);
-  font-size: calc(1rem * var(--font-scale));
-  line-height: var(--line-height);
+  font-size: calc(1rem * var(--book-font-scale, 1));
+  line-height: var(--book-line-height, 1.6);
   color: var(--text);
+  text-align: var(--book-text-align, start);
+  hyphens: auto;
+}
+
+/* Keep headings / centered blocks left-or-center regardless of justify */
+.book h1,
+.book h2,
+.book h3,
+.book h4,
+.book h5,
+.book h6,
+.book .center-block,
+.book .center-body {
+  text-align: initial;
+}
+.book .center-block,
+.book .center-body {
+  text-align: center;
 }
 
 .book h1,
@@ -197,10 +215,11 @@ details.related-terms-block .expand-body li {
   position: relative;
 }
 .reader-main-col {
-  max-width: 42rem;
+  max-width: var(--reader-measure, 42rem);
   margin: 0 auto;
   padding: 0 0.5rem;
   box-sizing: border-box;
+  transition: max-width 0.15s ease;
 }
 .book-root {
   min-width: 0;
@@ -325,6 +344,15 @@ details.related-terms-block .expand-body li {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+/* Synthetic A–Z groups under 6.02 index */
+.toc-cascade-item.is-letter-group .toc-cascade-label {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 0.95rem;
+}
+.toc-cascade-item.is-letter-group .toc-cascade-row {
+  color: var(--text);
 }
 .toc-cascade-chevron {
   flex-shrink: 0;

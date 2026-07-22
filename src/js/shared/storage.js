@@ -1,17 +1,34 @@
 /**
  * Block 1 of 1 — shared/storage.js
  * Description: Load/save librus-settings with safe defaults
- * Version: 1.d
- * Revised: 16Jul26
+ * Version: 1.e
+ * Revised: 21Jul26
  */
 
 import { STORAGE_KEY } from './constants.js';
 
 /**
- * Text size cycle order:
- * normal → 4 larger → 2 smaller → loop
+ * Book text size steps (slider index order: small → large).
+ * Semantic: XS S M L XL 2XL 3XL
  */
-export const FONT_SCALES = [1, 1.125, 1.25, 1.375, 1.5, 0.875, 0.75];
+export const FONT_SCALES = [0.75, 0.875, 1, 1.125, 1.25, 1.375, 1.5];
+export const FONT_SCALE_LABELS = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'];
+
+/** Line-height steps (slider): tight → airy */
+export const LINE_HEIGHTS = [1.45, 1.6, 1.75, 1.9, 2.1];
+export const LINE_HEIGHT_LABELS = ['Tight', 'Snug', 'Normal', 'Relaxed', 'Airy'];
+
+/** Reading column width: compact · normal · wide */
+export const MEASURES = ['sm', 'md', 'lg'];
+export const MEASURE_LABELS = ['Narrow', 'Normal', 'Wide'];
+export const MEASURE_REM = { sm: 32, md: 42, lg: 56 };
+
+/**
+ * Link density steps (slider):
+ * lo = zero research links · med = some · hi = all
+ */
+export const DENSITY_ORDER = ['lo', 'med', 'hi'];
+export const DENSITY_LABELS = ['None', 'Some', 'All'];
 
 /** Built-in search templates (override in settings with {query}). */
 export function defaultSearchTemplates(lang) {
@@ -43,9 +60,11 @@ export function defaultSettings() {
     lang: 'en',
     theme: 'system',
     fontScale: 1,
+    lineHeight: 1.6,
+    textJustify: false,
+    measure: 'md',
     linkDensity: 'med',
     linkProviders: { w: true, d: true },
-    /* Empty string = built-in default */
     searchTemplates: {
       wiki: '',
       dictionary: ''
@@ -69,13 +88,15 @@ export function normalizeLucideIcon(raw) {
 }
 
 /**
- * URL for a Lucide icon: local ship first, else lucide-static CDN.
  * @param {string} name
  * @param {string} [assetBase]
  */
 export function lucideIconUrl(name, assetBase = '') {
   const n = normalizeLucideIcon(name);
   const local = new Set([
+    'align-justify',
+    'align-left',
+    'arrow-down-a-z',
     'back',
     'book',
     'book-a',
@@ -85,6 +106,7 @@ export function lucideIconUrl(name, assetBase = '') {
     'close',
     'device',
     'down',
+    'droplet',
     'flame',
     'globe',
     'holmes',
@@ -92,9 +114,12 @@ export function lucideIconUrl(name, assetBase = '') {
     'lightbulb',
     'link',
     'moon',
+    'move-horizontal',
     'pen-tool',
+    'play',
     'reload',
     'settings',
+    'sliders-horizontal',
     'sprout',
     'square',
     'sun',
@@ -113,19 +138,19 @@ export function loadSettings() {
     if (!raw) return defaultSettings();
     const data = JSON.parse(raw);
     const base = defaultSettings();
-    const incoming = data.linkProviders || {};
     const st = data.searchTemplates || {};
     const cp = data.customProvider || {};
+    const lh = Number(data.lineHeight);
     return {
       version: 1,
       lang: 'en',
       theme: data.theme === 'light' || data.theme === 'dark' ? data.theme : 'system',
       fontScale: FONT_SCALES.includes(data.fontScale) ? data.fontScale : base.fontScale,
+      lineHeight: LINE_HEIGHTS.includes(lh) ? lh : base.lineHeight,
+      textJustify: data.textJustify === true,
+      measure: MEASURES.includes(data.measure) ? data.measure : base.measure,
       linkDensity: ['lo', 'med', 'hi'].includes(data.linkDensity) ? data.linkDensity : base.linkDensity,
-      linkProviders: {
-        w: incoming.w !== false,
-        d: incoming.d !== false
-      },
+      linkProviders: Object.assign({}, base.linkProviders, data.linkProviders || {}),
       searchTemplates: {
         wiki: normalizeSearchTemplate(st.wiki),
         dictionary: normalizeSearchTemplate(st.dictionary)
@@ -142,8 +167,14 @@ export function loadSettings() {
 }
 
 export function saveSettings(settings) {
-  const merged = Object.assign(defaultSettings(), settings, { version: 1 });
+  const base = defaultSettings();
+  const merged = Object.assign({}, base, settings, { version: 1 });
   merged.lang = 'en';
+  const lh = Number(merged.lineHeight);
+  merged.lineHeight = LINE_HEIGHTS.includes(lh) ? lh : base.lineHeight;
+  merged.fontScale = FONT_SCALES.includes(merged.fontScale) ? merged.fontScale : base.fontScale;
+  merged.textJustify = merged.textJustify === true;
+  merged.measure = MEASURES.includes(merged.measure) ? merged.measure : base.measure;
   const p = merged.linkProviders || {};
   merged.linkProviders = { w: p.w !== false, d: p.d !== false };
   const st = merged.searchTemplates || {};
@@ -157,7 +188,6 @@ export function saveSettings(settings) {
     searchUrl: normalizeSearchTemplate(cp.searchUrl),
     icon: normalizeLucideIcon(cp.icon || 'link')
   };
-  delete merged.lineHeight;
   try {
     localStorage.setItem(
       STORAGE_KEY,
@@ -166,6 +196,9 @@ export function saveSettings(settings) {
         lang: merged.lang,
         theme: merged.theme,
         fontScale: merged.fontScale,
+        lineHeight: merged.lineHeight,
+        textJustify: merged.textJustify,
+        measure: merged.measure,
         linkDensity: merged.linkDensity,
         linkProviders: merged.linkProviders,
         searchTemplates: merged.searchTemplates,
@@ -179,7 +212,6 @@ export function saveSettings(settings) {
 }
 
 /**
- * Resolved search URL template for a provider key.
  * @param {ReturnType<typeof loadSettings>} settings
  * @param {string} provider wiki | dictionary | custom
  */
@@ -195,7 +227,6 @@ export function resolveSearchTemplate(settings, provider) {
 }
 
 /**
- * Home URL derived from a search template (origin + first path segment if any).
  * @param {string} template
  */
 export function homeFromTemplate(template) {

@@ -1,13 +1,62 @@
 /**
  * Block 1 of 1 — reader/book.js
  * Description: Fetch body.html into book-root; wire in-book links (wide consult)
- * Version: 1.c
- * Revised: 16Jul26
+ * Version: 1.e
+ * Revised: 21Jul26
  */
 
 import { loadSettings } from '../shared/storage.js';
 import { computeIsWide } from './layout.js';
 import { openContextUrl } from './context.js';
+
+/**
+ * Build a youtube-nocookie embed URL that keeps fullscreen enabled.
+ * @param {string} id
+ * @returns {string}
+ */
+function youtubeEmbedUrl(id) {
+  const u = new URL('https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id));
+  u.searchParams.set('fs', '1');
+  u.searchParams.set('playsinline', '1');
+  return u.toString();
+}
+
+/**
+ * Rewrite YouTube watch / youtu.be / shorts → embeddable nocookie embed URL.
+ * Other http(s) URLs pass through unchanged.
+ * @param {string} url
+ * @returns {string}
+ */
+export function toContextEmbedUrl(url) {
+  if (!url) return url;
+  try {
+    const u = new URL(url, window.location.href);
+    const host = (u.hostname || '').replace(/^www\./i, '').toLowerCase();
+
+    if (host === 'youtu.be') {
+      const id = u.pathname.replace(/^\//, '').split('/')[0];
+      if (id) return youtubeEmbedUrl(id);
+    }
+
+    if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+      if (/\/embed\//i.test(u.pathname)) {
+        const parts = u.pathname.split('/').filter(Boolean);
+        const emb = parts[parts.length - 1];
+        if (emb) return youtubeEmbedUrl(emb);
+        u.hostname = 'www.youtube-nocookie.com';
+        u.searchParams.set('fs', '1');
+        return u.toString();
+      }
+      const v = u.searchParams.get('v');
+      if (v) return youtubeEmbedUrl(v);
+      const shorts = u.pathname.match(/\/shorts\/([^/?#]+)/i);
+      if (shorts) return youtubeEmbedUrl(shorts[1]);
+    }
+  } catch {
+    /* ignore */
+  }
+  return url;
+}
 
 export async function loadBookBody() {
   const root = document.getElementById('book-root');
@@ -19,7 +68,9 @@ export async function loadBookBody() {
     return;
   }
 
-  const file = document.body.dataset.bookFile || 'body.html';
+  /* Ignore unreplaced template tokens from a partial stamp */
+  let file = (document.body.dataset.bookFile || 'body.html').trim();
+  if (!file || file.includes('{{') || file.includes('}}')) file = 'body.html';
   try {
     const res = await fetch(file, { cache: 'no-cache' });
     if (!res.ok) throw new Error(String(res.status));
@@ -41,7 +92,7 @@ function resolveProviderHref(a) {
   if (m) {
     const code = m[1];
     const slug = m[2];
-    /* LIBRUS: wiki/dict follow UI locale (EN default; PT when unlocked) */
+    /* LIBRUS: wiki/dict follow UI locale (EN default) */
     const lang = loadSettings().lang === 'pt' ? 'pt' : 'en';
     const wiki = 'https://' + lang + '.wikipedia.org/wiki/';
     const dict = 'https://' + lang + '.wiktionary.org/wiki/';
@@ -115,10 +166,26 @@ export function wireBookLinks(root) {
 
       const isProvider =
         a.hasAttribute('data-link-provider') || /^[lwdm]:/.test(href);
+      const isHttp = /^https?:\/\//i.test(href);
+
+      /* External http(s) — consult pane when wide; new tab when narrow */
+      if (isHttp && !isProvider) {
+        const label = (a.textContent || '').trim();
+        const url = toContextEmbedUrl(href);
+        if (!computeIsWide()) {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+          if (url !== href) a.setAttribute('href', url);
+          return;
+        }
+        e.preventDefault();
+        openContextUrl(url, label, /youtube/i.test(url) ? 'youtube' : '');
+        return;
+      }
 
       if (!isProvider) return;
 
-      /* Narrow: zero links — CSS already disables; belt-and-suspenders */
+      /* Narrow: zero research links — CSS already disables; belt-and-suspenders */
       if (!computeIsWide()) {
         e.preventDefault();
         return;

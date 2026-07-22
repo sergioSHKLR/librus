@@ -303,6 +303,10 @@ function compileBooks(catalog) {
         `<article class="book"><h1>${escapeHtml(title)}</h1><p class="book-meta">Stub — conteúdo em breve / content forthcoming.</p></article>\n`
       );
       fs.writeFileSync(path.join(outDir, 'toc.json'), '[]\n');
+      fs.writeFileSync(
+        path.join(outDir, 'pages.json'),
+        JSON.stringify({ pages: [], min: null, max: null, count: 0 }, null, 2) + '\n'
+      );
       libraryBooks.push({
         slug: entry.slug,
         title,
@@ -332,6 +336,15 @@ function compileBooks(catalog) {
 
     fs.writeFileSync(path.join(outDir, 'body.html'), result.html);
     fs.writeFileSync(path.join(outDir, 'toc.json'), JSON.stringify(result.toc, null, 2) + '\n');
+    const pages = Array.isArray(result.pages) ? result.pages : [];
+    const pagesMeta = {
+      pages,
+      min: pages.length ? pages[0] : null,
+      max: pages.length ? pages[pages.length - 1] : null,
+      count: pages.length
+    };
+    fs.writeFileSync(path.join(outDir, 'pages.json'), JSON.stringify(pagesMeta, null, 2) + '\n');
+    if (pages.length) console.log(`  pdf pages: ${pagesMeta.count} (${pagesMeta.min}–${pagesMeta.max})`);
     const imgs = mirrorBookImages(srcBookDir, outDir);
     if (imgs) console.log(`  images: ${imgs}`);
     const htmlStats = countHtmlProviderLinks(result.html);
@@ -519,7 +532,7 @@ function main() {
   console.log('\n→ public/ ready');
   console.log('  Serve document root: public/  (not the repo root)');
   console.log('  npm start  → http://localhost:3000');
-  console.log('  reader     → http://localhost:3000/books/lde/\n');
+  console.log('  reader     → http://localhost:3000/books/demo/\n');
 }
 
 main();

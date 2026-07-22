@@ -18,8 +18,14 @@
   --toolbar-stack-height: 80px; /* two main-toolbar rows */
   --pane-min: 500px;
   --layout-wide-min: 1200px;
+  /* Book-only type (never applied to chrome / toolbars) */
+  --book-font-scale: 1;
+  --book-line-height: 1.6;
+  --reader-measure: 42rem;
+  --book-text-align: start;
+  /* Legacy aliases unused by UI chrome */
   --font-scale: 1;
-  --line-height: 1.6;
+  --line-height: 1.45;
   /* Research links: blue underline (wiki + dict only — no Luz) */
   --provider-wiki: #3d5cff;
   --provider-dict: #3d5cff;

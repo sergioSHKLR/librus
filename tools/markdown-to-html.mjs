@@ -1,8 +1,8 @@
 /**
  * Block 1 of 1 — tools/markdown-to-html.mjs
  * Description: MD → HTML + TOC; short links l/w/d/m; containers; footnotes
- * Version: 1.g
- * Revised: 12Jul26
+ * Version: 1.h
+ * Revised: 20Jul26
  */
 
 import MarkdownIt from 'markdown-it';
@@ -26,6 +26,67 @@ const LINK_BASES = {
 };
 
 const ANCHOR_REGEX = /\{\#([a-zA-Z0-9-_:.]+)\}$/;
+
+/**
+ * Drop inline chapter/local TOC containers before parse.
+ * Detached sidebar TOC (toc.json from headings) remains the navigation UI.
+ * Source may still author ::: chapter-toc / ::: toc for export tooling.
+ * @param {string} src
+ * @returns {string}
+ */
+export function stripInlineTocContainers(src) {
+  return String(src || '').replace(
+    /^::: *(?:chapter-toc|toc)[^\n]*\r?\n[\s\S]*?^:::\s*(?:\r?\n|$)/gm,
+    ''
+  );
+}
+
+/**
+ * Convert Pandoc-style PDF page markers to real HTML anchors.
+ * Semantics: []{#page-N} = start of canonical PDF page N (1-based book page).
+ * markdown-it leaves these as plain text without this pass.
+ * @param {string} src
+ * @returns {string}
+ */
+export function injectPdfPageAnchors(src) {
+  return String(src || '').replace(/\[\]\{#page-(\d+)\}/g, (_, n) => {
+    const num = String(parseInt(n, 10));
+    return (
+      '<span id="page-' +
+      num +
+      '" class="pdf-page-start" data-page="' +
+      num +
+      '" aria-label="Página PDF ' +
+      num +
+      '"></span>'
+    );
+  });
+}
+
+/**
+ * @param {string} src
+ * @returns {number[]} sorted unique page numbers present as []{#page-N}
+ */
+export function collectPdfPageNumbers(src) {
+  const set = new Set();
+  const re = /\[\]\{#page-(\d+)\}/g;
+  let m;
+  const s = String(src || '');
+  while ((m = re.exec(s)) !== null) {
+    const n = parseInt(m[1], 10);
+    if (Number.isFinite(n) && n > 0) set.add(n);
+  }
+  return [...set].sort((a, b) => a - b);
+}
+
+/**
+ * doutrina-content sometimes indents ATX headings (` ### Title`).
+ * CommonMark only treats unindented # as headings — de-indent 1–3 spaces.
+ * @param {string} src
+ */
+export function normalizeHeadingIndent(src) {
+  return String(src || '').replace(/^[ \t]{1,3}(#{1,6}[ \t]+)/gm, '$1');
+}
 
 /**
  * Fully unquote a short-link slug. markdown-it often percent-encodes before
@@ -435,13 +496,18 @@ function enrichBibleBlocks(html) {
 /**
  * @param {string} bodyContent
  * @param {{ lang?: string }} opts
+ * @returns {{ html: string, toc: object[], pages: number[] }}
  */
 export function markdownToHtml(bodyContent, opts = {}) {
   const lang = opts.lang === 'en' ? 'en' : 'pt';
   const md = createMd();
   applyLinkAttrs(md, lang);
 
-  const safeContent = typeof bodyContent === 'string' ? bodyContent : '';
+  const raw = typeof bodyContent === 'string' ? bodyContent : '';
+  const pages = collectPdfPageNumbers(raw);
+  const safeContent = injectPdfPageAnchors(
+    stripInlineTocContainers(normalizeHeadingIndent(raw))
+  );
   const tokens = md.parse(safeContent, {});
   const tableOfContents = [];
 
@@ -466,6 +532,7 @@ export function markdownToHtml(bodyContent, opts = {}) {
   const inner = enrichBibleBlocks(md.renderer.render(tokens, md.options, {}));
   return {
     html: '<article class="book">\n' + inner + '\n</article>\n',
-    toc: tableOfContents
+    toc: tableOfContents,
+    pages
   };
 }

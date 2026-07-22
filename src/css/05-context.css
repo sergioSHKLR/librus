@@ -7,12 +7,19 @@
 
 .context-selection {
   flex: 1 1 auto;
-  min-width: 0;
+  /* At least ~1/4 of the consult toolbar for the term label */
+  min-width: 25%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.85rem;
   font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: var(--surface);
+  box-sizing: border-box;
+  cursor: not-allowed;
+  user-select: none;
 }
 
 .context-selection.is-placeholder {
@@ -34,6 +41,9 @@
   height: 36px;
 }
 
+.context-provider-btn[data-provider='luzespirita'] {
+  color: var(--provider-luz);
+}
 .context-provider-btn[data-provider='wiki'] {
   color: var(--provider-wiki);
 }
@@ -63,8 +73,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
-  z-index: 2;
+  /* Opaque so blank.html placeholder never shows through while loading */
+  background: var(--surface);
+  z-index: 5;
+  pointer-events: none;
 }
 
 .context-loading-overlay.is-hidden {
