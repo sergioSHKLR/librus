@@ -408,20 +408,20 @@ body.page-reader {
   border-radius: 4px;
 }
 
-/* WebKit track — single dark stroke; black pill thumb */
+/* WebKit — grey track + black pill thumb */
 .typo-slider::-webkit-slider-runnable-track {
   height: 2px;
   border: none;
   border-radius: 1px;
-  background: #333333;
+  background: #999999;
 }
 :root[data-theme='dark'] .typo-slider::-webkit-slider-runnable-track,
 html:not([data-theme='light']) .typo-slider::-webkit-slider-runnable-track {
-  background: #aaaaaa;
+  background: #888888;
 }
 @media (prefers-color-scheme: light) {
   html:not([data-theme='dark']) .typo-slider::-webkit-slider-runnable-track {
-    background: #333333;
+    background: #999999;
   }
 }
 .typo-slider::-webkit-slider-thumb {
@@ -438,7 +438,9 @@ html:not([data-theme='light']) .typo-slider::-webkit-slider-runnable-track {
 }
 :root[data-theme='dark'] .typo-slider::-webkit-slider-thumb,
 html:not([data-theme='light']) .typo-slider::-webkit-slider-thumb {
-  background: #eeeeee;
+  /* keep contrast on dark chrome; still reads as solid handle */
+  background: #000000;
+  box-shadow: 0 0 0 1px #eeeeee;
 }
 .typo-slider:active::-webkit-slider-thumb {
   cursor: grabbing;
@@ -450,11 +452,11 @@ html:not([data-theme='light']) .typo-slider::-webkit-slider-thumb {
   height: 2px;
   border: none;
   border-radius: 1px;
-  background: #333333;
+  background: #999999;
 }
 :root[data-theme='dark'] .typo-slider::-moz-range-track,
 html:not([data-theme='light']) .typo-slider::-moz-range-track {
-  background: #aaaaaa;
+  background: #888888;
 }
 .typo-slider::-moz-range-thumb {
   width: 6px;
@@ -467,7 +469,8 @@ html:not([data-theme='light']) .typo-slider::-moz-range-track {
 }
 :root[data-theme='dark'] .typo-slider::-moz-range-thumb,
 html:not([data-theme='light']) .typo-slider::-moz-range-thumb {
-  background: #eeeeee;
+  background: #000000;
+  box-shadow: 0 0 0 1px #eeeeee;
 }
 .typo-slider:active::-moz-range-thumb {
   cursor: grabbing;
