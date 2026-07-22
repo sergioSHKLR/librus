@@ -21,6 +21,7 @@
 ### Fixed
 
 - Template token fallback when book body stamp is partial
+- Service worker stuck on old shell CSS/HTML (cache-first) — bump cache + network-first for reader chrome
 
 ---
 
