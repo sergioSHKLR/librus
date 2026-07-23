@@ -1,14 +1,13 @@
 /**
  * Block 1 of 1 — settings/panel.js
- * Description: Language, custom search URLs, clear data, update
- * Version: 1.f
- * Revised: 16Jul26
+ * Description: Language, clear data, update (provider URLs use built-ins)
+ * Version: 1.g
+ * Revised: 23Jul26
  */
 
 import {
   loadSettings,
-  saveSettings,
-  defaultSearchTemplates
+  saveSettings
 } from '../shared/storage.js';
 import { applyTheme } from '../shared/theme.js';
 import { clearSiteData } from './export-import.js';
@@ -62,40 +61,12 @@ function syncForm(settings) {
   if (lang) lang.value = 'en';
   const ver = $('settings-version');
   if (ver) ver.textContent = APP_VERSION + ' · ' + BUILD_ID;
-
-  const defaults = defaultSearchTemplates('en');
-  const st = settings.searchTemplates || {};
-  const wiki = $('settings-url-wiki');
-  const dict = $('settings-url-dict');
-  if (wiki) {
-    wiki.placeholder = defaults.wiki;
-    wiki.value = st.wiki || '';
-  }
-  if (dict) {
-    dict.placeholder = defaults.dictionary;
-    dict.value = st.dictionary || '';
-  }
-  const cp = settings.customProvider || {};
-  const cLabel = $('settings-custom-label');
-  const cUrl = $('settings-custom-url');
-  const cIcon = $('settings-custom-icon');
-  if (cLabel) cLabel.value = cp.label || 'Custom';
-  if (cUrl) cUrl.value = cp.searchUrl || '';
-  if (cIcon) cIcon.value = cp.icon || 'link';
 }
 
 function readForm() {
   const settings = loadSettings();
   settings.lang = 'en';
-  settings.searchTemplates = {
-    wiki: ($('settings-url-wiki')?.value || '').trim(),
-    dictionary: ($('settings-url-dict')?.value || '').trim()
-  };
-  settings.customProvider = {
-    label: ($('settings-custom-label')?.value || 'Custom').trim() || 'Custom',
-    searchUrl: ($('settings-custom-url')?.value || '').trim(),
-    icon: ($('settings-custom-icon')?.value || 'link').trim() || 'link'
-  };
+  /* Provider URLs / custom provider: built-ins only (UI hidden) */
   return settings;
 }
 
@@ -172,31 +143,6 @@ export function ensureSettingsDom() {
           <option value="en">English</option>
           <option value="pt" disabled title="Soon">Português — Soon</option>
         </select>
-      </label>
-      <h3 class="settings-subtitle" data-i18n="settings.searchUrls">Search URLs</h3>
-      <p class="settings-note" data-i18n="settings.searchUrlsHint">Use {query} for the selected term. Leave blank for the built-in default.</p>
-      <label class="settings-field">
-        <span data-i18n="reader.providerWiki">Wikipedia</span>
-        <input type="url" id="settings-url-wiki" class="settings-input" autocomplete="off" spellcheck="false" />
-      </label>
-      <label class="settings-field">
-        <span data-i18n="reader.providerDict">Wiktionary</span>
-        <input type="url" id="settings-url-dict" class="settings-input" autocomplete="off" spellcheck="false" />
-      </label>
-      <h3 class="settings-subtitle" data-i18n="settings.customProvider">Extra provider</h3>
-      <p class="settings-note" data-i18n="settings.customProviderHint">Optional third consult source (link icon). Needs a search URL with {query}.</p>
-      <label class="settings-field">
-        <span data-i18n="settings.customLabel">Label</span>
-        <input type="text" id="settings-custom-label" class="settings-input" maxlength="40" autocomplete="off" />
-      </label>
-      <label class="settings-field">
-        <span data-i18n="settings.customIcon">Icon (Lucide name)</span>
-        <input type="text" id="settings-custom-icon" class="settings-input" maxlength="48" autocomplete="off" placeholder="link" spellcheck="false" />
-      </label>
-      <p class="settings-note" data-i18n="settings.customIconHint">Must match a Lucide icon name (e.g. search, book, sparkles).</p>
-      <label class="settings-field">
-        <span data-i18n="settings.customUrl">Search URL</span>
-        <input type="url" id="settings-custom-url" class="settings-input" autocomplete="off" spellcheck="false" placeholder="https://example.com/search?q={query}" />
       </label>
       <div class="settings-actions">
         <button type="button" class="settings-btn" id="btn-settings-update" data-i18n="settings.update" disabled>Update</button>

@@ -1,14 +1,15 @@
 /* ==========================================================================
- * Block 1 of 1 — Hypothesis host (wide notes pane)
- * Description: Full-bleed iframe in left pane (no inset / max-width cap)
- * Version: 1.b
- * Revised: 10Jul26
+ * Block 1 of 1 — Hypothesis host (wide notes pane + mobile sidebar theme)
+ * Description: Full-bleed iframe in left pane; dark/light on floating sidebar
+ * Version: 1.d
+ * Revised: 23Jul26
  * ========================================================================== */
 
 :root {
   --toolbar-chrome: var(--bg);
   --left-width: 360px;
   --hypothesis-dark-invert: 0.9;
+  --hypothesis-dark-filter: invert(var(--hypothesis-dark-invert)) hue-rotate(180deg);
 }
 
 .hypothesis-host {
@@ -49,6 +50,7 @@
   inset: 0;
 }
 
+/* Wide left-pane host: invert when reader applies .hypothesis-theme-invert */
 .hypothesis-host.hypothesis-theme-invert {
   background: var(--toolbar-chrome);
 }
@@ -56,5 +58,36 @@
 .hypothesis-host.hypothesis-theme-invert iframe,
 .hypothesis-host.hypothesis-theme-invert .hypothesis-container,
 .hypothesis-host.hypothesis-theme-invert .h-sidebar-frame {
-  filter: invert(var(--hypothesis-dark-invert)) hue-rotate(180deg);
+  filter: var(--hypothesis-dark-filter);
+}
+
+/*
+ * Narrow / mobile: Hypothesis floating sidebar + toolbar (not external container).
+ * html.hypothesis-app-dark is set from theme (boot + reader main).
+ */
+html.hypothesis-app-dark iframe.hypothesis-sidebar,
+html.hypothesis-app-dark iframe.h-sidebar-iframe,
+html.hypothesis-app-dark iframe[name='hypothesis'],
+html.hypothesis-app-dark iframe[src*='hypothes'],
+html.hypothesis-app-dark iframe[src*='hypothesis'],
+html.hypothesis-app-dark .hypothesis-adder,
+html.hypothesis-app-dark .annotator-frame,
+html.hypothesis-app-dark .hypothesis-frame,
+html.hypothesis-app-dark hypothesis-sidebar,
+html.hypothesis-app-dark [data-hypothesis-sidebar],
+html.hypothesis-app-dark #sidebar-container iframe,
+html.hypothesis-app-dark body > iframe[src*='hypothes'],
+html.hypothesis-app-dark body > div[class*='hypothesis'] iframe,
+html.hypothesis-app-dark iframe.hypothesis-theme-invert-frame {
+  filter: var(--hypothesis-dark-filter) !important;
+}
+
+/* Light preference: never leave a dark invert stuck on Hypo chrome */
+html:not(.hypothesis-app-dark) iframe.hypothesis-sidebar,
+html:not(.hypothesis-app-dark) iframe.h-sidebar-iframe,
+html:not(.hypothesis-app-dark) iframe[name='hypothesis'],
+html:not(.hypothesis-app-dark) iframe[src*='hypothes'],
+html:not(.hypothesis-app-dark) iframe[src*='hypothesis'],
+html:not(.hypothesis-app-dark) iframe.hypothesis-theme-invert-frame {
+  filter: none !important;
 }

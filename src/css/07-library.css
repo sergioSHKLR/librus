@@ -304,3 +304,40 @@
 .site-footer-nav a:hover {
   color: var(--accent);
 }
+
+
+/* Current page in footer — present but not clickable */
+.site-footer-nav .site-footer-current {
+  color: var(--text-muted);
+  opacity: 0.55;
+  font-weight: 500;
+  cursor: default;
+  user-select: none;
+}
+
+/* External Code / Source-code link with Lucide external-link icon */
+.site-footer-external,
+.library-footer-links .site-footer-external {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-footer-external-icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+  opacity: 0.85;
+  vertical-align: -0.1em;
+}
+
+html[data-theme='dark'] .site-footer-external-icon,
+html:not([data-theme='light']) .site-footer-external-icon {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme='dark']) .site-footer-external-icon {
+    filter: none;
+  }
+}

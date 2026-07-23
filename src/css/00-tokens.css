@@ -12,6 +12,9 @@
   --text-muted: #666666;
   --border: #dddddd;
   --accent: #0066cc;
+  /* Brand bar — LIBRUS solid black */
+  --brand-bar: #000000;
+  --brand-bar-height: 5px;
   --mark-bg: #fff3a8;
   /* Match Hypothesis client top bar */
   --toolbar-height: 40px;

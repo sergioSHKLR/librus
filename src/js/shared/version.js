@@ -5,5 +5,5 @@
  * Revised: 13Jul26
  */
 
-export const APP_VERSION = '0.2.1-beta';
-export const BUILD_ID = '260722m';
+export const APP_VERSION = '0.2.2-beta';
+export const BUILD_ID = '260723c';

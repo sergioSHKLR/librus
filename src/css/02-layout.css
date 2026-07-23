@@ -544,10 +544,14 @@ html:not([data-theme='light']) .typo-slider::-moz-range-thumb {
   box-sizing: border-box;
 }
 
-/* Keep display menu clear of Hypothesis chrome on narrow layouts */
-html[data-layout='narrow'] #main-toolbar {
+/*
+ * Keep toolbar rows clear of Hypothesis bucket (top-right) on narrow layouts.
+ * Same right inset on row 1 (search/display) and row 2 (TOC/breadcrumb).
+ */
+html[data-layout='narrow'] #main-toolbar,
+html[data-layout='narrow'] #main-toolbar-row2 {
   padding-left: 8px;
-  padding-right: 48px; /* 8px base + 40px */
+  padding-right: 48px; /* 8px base + ~40px Hypo chrome */
 }
 .toolbar-search:focus {
   outline: none;

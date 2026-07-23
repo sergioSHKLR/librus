@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.2-beta (2026-07-23)
+
+### Changed
+
+- Settings: hide provider URL / custom-provider fields (built-in providers only)
+- 5px top brand bar — **black**
+
+---
+
 ## 0.2.1-beta (2026-07-21)
 
 ### Added

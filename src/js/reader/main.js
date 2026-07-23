@@ -29,10 +29,43 @@ import { libraryHomeUrl, assetBase } from '../shared/paths.js';
 import { BRAND } from '../shared/constants.js';
 import { wireStudyNote } from '../shared/study-note.js';
 
+function isHypothesisFrame(el) {
+  if (!(el instanceof HTMLIFrameElement)) return false;
+  const src = el.getAttribute('src') || '';
+  const name = el.getAttribute('name') || '';
+  const cls = el.className || '';
+  return (
+    /hypothes/i.test(src) ||
+    /hypothesis/i.test(src) ||
+    /hypothesis/i.test(name) ||
+    /hypothesis|h-sidebar/i.test(String(cls))
+  );
+}
+
+/** Paint floating Hypo iframes when they appear (narrow sidebar). */
+function syncHypothesisFrames(dark) {
+  document.querySelectorAll('iframe').forEach((frame) => {
+    if (!isHypothesisFrame(frame)) return;
+    frame.classList.toggle('hypothesis-theme-invert-frame', dark);
+    frame.style.filter = dark ? 'invert(0.9) hue-rotate(180deg)' : '';
+  });
+}
+
 function setHypoInvert(theme) {
+  const dark = isEffectivelyDark(theme);
   const host = document.getElementById('hypothesis-container');
-  if (!host) return;
-  host.classList.toggle('hypothesis-theme-invert', isEffectivelyDark(theme));
+  if (host) host.classList.toggle('hypothesis-theme-invert', dark);
+  document.documentElement.classList.toggle('hypothesis-app-dark', dark);
+  syncHypothesisFrames(dark);
+}
+
+function wireHypothesisThemeWatch() {
+  if (typeof MutationObserver !== 'function') return;
+  const obs = new MutationObserver(() => {
+    const dark = document.documentElement.classList.contains('hypothesis-app-dark');
+    syncHypothesisFrames(dark);
+  });
+  obs.observe(document.documentElement, { childList: true, subtree: true });
 }
 
 async function boot() {
@@ -94,6 +127,7 @@ async function boot() {
   wireSearch();
   wireContext();
   wireTypography();
+  wireHypothesisThemeWatch();
 
   await loadBookBody();
   wireBreadcrumb();

@@ -24,6 +24,8 @@ body {
   line-height: var(--line-height);
   background: var(--bg);
   color: var(--text);
+  /* 5px brand accent bar (LIBRUS: black) */
+  border-top: var(--brand-bar-height, 5px) solid var(--brand-bar, #000000);
 }
 
 /* Reader overrides min-height via 02-layout (fixed viewport, per-pane scroll) */
