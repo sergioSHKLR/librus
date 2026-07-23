@@ -1,9 +1,12 @@
 # L∙I∙B∙R∙U∙S — Brand guidelines
 
-**Product:** L∙I∙B∙R∙U∙S · **Short:** LIBRUS · **Domain:** [librus.app](https://librus.app)  
+**Product lockup:** `L∙I∙B∙R∙U∙S` (U+2219 dots) — **logo only**, not running prose  
+**Prose name:** **LIBRUS** · **Domain / URLs:** **librus.app** (lowercase)  
 **Brand slogan (splash):** *annotate to assimilate* (PT: *anotar para assimilar*)  
-**Library tagline:** *Read. Consult. Annotate.* (PT: *Leia. Consulte. Anote.*)  
-**Locale default:** English (PT “Soon” until unlocked)
+**Library CTA (under wordmark):** *Read. Consult. Annotate.* (PT: *Leia. Consulte. Anote.*)  
+**Mark:** Lucide **columns-3** · colors **black / white** (invert in dark)  
+**Locale default:** English (PT “Soon” until unlocked)  
+**Espírita product on this engine:** [DOUTRINA](https://doutrina.org) (content + packaging; CTA *Hidrate seu espírito*)
 
 This document is the source of truth for splash, library, reader chrome, and marketing. When splash and library disagree, **change code to match this file**.
 
