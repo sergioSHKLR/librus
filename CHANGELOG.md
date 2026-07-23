@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Library brand icon (columns-3): invert in dark mode for visibility
 - Settings: hide provider URL / custom-provider fields (built-in providers only)
 - 5px top brand bar — **black**
 

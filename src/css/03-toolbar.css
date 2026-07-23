@@ -45,32 +45,41 @@
 
 .library-brand-icon {
   color: var(--text);
-  /* brand.svg is filled deepskyblue — never invert (invert → red) */
+  /* columns-3 stroke icon (black in SVG) — invert with dark chrome */
   filter: none;
 }
 
 /*
  * Lucide icons are loaded as <img> with black strokes — they do not inherit
- * CSS color. Invert in dark theme (explicit + system).
- * Exclude brand droplet: keep #00bfff in both themes.
+ * CSS color. Invert in dark theme (explicit + system), including brand mark.
  */
 html[data-theme='dark'] .toolbar-icon,
-html[data-theme='dark'] img.toolbar-icon {
+html[data-theme='dark'] img.toolbar-icon,
+html[data-theme='dark'] .library-brand-icon,
+html[data-theme='dark'] img.library-brand-icon {
   filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme='light']) .toolbar-icon,
-  html:not([data-theme='light']) img.toolbar-icon {
+  html:not([data-theme='light']) img.toolbar-icon,
+  html:not([data-theme='light']) .library-brand-icon,
+  html:not([data-theme='light']) img.library-brand-icon {
     filter: invert(1);
   }
 }
 
-html[data-theme='dark'] .library-brand-icon,
-html[data-theme='dark'] img.library-brand-icon,
-html:not([data-theme='light']) .library-brand-icon,
-html:not([data-theme='light']) img.library-brand-icon {
+/* Light theme / explicit light: keep brand black */
+html[data-theme='light'] .library-brand-icon,
+html[data-theme='light'] img.library-brand-icon {
   filter: none;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme='dark']) .library-brand-icon,
+  html:not([data-theme='dark']) img.library-brand-icon {
+    filter: none;
+  }
 }
 
 /* Cover icons already inverted for light-on-gradient — don't double-invert */

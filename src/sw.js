@@ -8,7 +8,7 @@
  * stale CSS/HTML. Keep in sync with BUILD_ID.
  */
 
-const CACHE = 'librus-shell-260723c';
+const CACHE = 'librus-shell-260723d';
 const SHELL = [
   '/',
   '/index.html',

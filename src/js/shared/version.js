@@ -6,4 +6,4 @@
  */
 
 export const APP_VERSION = '0.2.2-beta';
-export const BUILD_ID = '260723c';
+export const BUILD_ID = '260723d';
