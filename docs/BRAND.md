@@ -12,6 +12,23 @@ This document is the source of truth for splash, library, reader chrome, and mar
 
 ---
 
+## 0. Name origin
+
+| Layer | Meaning |
+|-------|---------|
+| **Echo** | Close to Latin **librīs** / *liber* — **books** (the feel of a library, not a news portal) |
+| **Backronym** | **L**oosely **I**ntegrated **B**ook **R**eading **U**niversal **S**ystem |
+
+**How to use in copy**
+
+- Prefer the **Latin echo** in human-facing prose (“a system for books”).  
+- The **backronym** is fine in About, docs, and talks — not required in every sentence.  
+- **Loosely integrated** = notes, book, and consult are coordinated panes, not one monolith CMS; **universal** = any long-form corpus (Holmes, codificação, center house book), not one religion or publisher only.
+
+Do **not** invent alternate expansions (e.g. random words for each letter) in official materials.
+
+---
+
 ## 1. Positioning
 
 | | |
