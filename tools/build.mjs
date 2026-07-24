@@ -9,6 +9,7 @@ import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import matter from 'gray-matter';
 import { compileBookFile, mirrorBookImages } from './compile-md.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -122,9 +123,32 @@ function preflight(catalog) {
   console.log('');
 }
 
+/**
+ * Skip dictionary linker for guides/docs/public pages.
+ * Catalog: `"link": false` (also `linker` / `auto_link`).
+ * Front matter: `link: false` | `linker: false` | `auto_link: false`
+ */
+function isLinkerDisabled(entry, mdPath) {
+  const falsy = (v) => v === false || v === 0 || v === 'false' || v === 'no' || v === 'off';
+  if (falsy(entry?.link) || falsy(entry?.linker) || falsy(entry?.auto_link)) return true;
+  try {
+    if (!fs.existsSync(mdPath)) return false;
+    const raw = fs.readFileSync(mdPath, 'utf8');
+    if (!raw.startsWith('---')) return false;
+    const data = matter(raw).data || {};
+    if (falsy(data.link) || falsy(data.linker) || falsy(data.auto_link)) return true;
+  } catch {
+    /* ignore */
+  }
+  return false;
+}
+
 /** Cache-only linker: source MD stays clean; output → .cache/linked/{slug}.md */
 function linkBook(entry, mdPath) {
-  if (entry.link === false) return mdPath;
+  if (isLinkerDisabled(entry, mdPath)) {
+    console.log(`→ link ${entry.slug || path.basename(path.dirname(mdPath))} (skipped — link: false)`);
+    return mdPath;
+  }
 
   const lang = entry.lang || 'pt';
   const dicts = path.join(SRC, 'data', 'dictionaries', lang);

@@ -11,23 +11,27 @@ import yaml
 # UI density (lo/med/hi) later filters by interest tags — insert at "hi" (max)
 # so the reader can dial down without re-running the pipeline.
 #
-# No max_same_article_per_document / max_occurrences_per_term:
-# same article+provider is limited to once **per heading** (see matcher + insert).
+# min_chars_between_same_concept: re-link the same concept (rotating providers)
+# only after this approximate source distance — stops short-section spam without
+# starving long chapters (e.g. "Deus" can reappear every ~few paragraphs).
 DEFAULT_DENSITIES = {
     "low": {
         "min_term_length": 3,
         "max_links_per_paragraph": 8,
         "min_chars_between_links": 40,
+        "min_chars_between_same_concept": 900,
     },
     "med": {
         "min_term_length": 3,
         "max_links_per_paragraph": 16,
         "min_chars_between_links": 12,
+        "min_chars_between_same_concept": 550,
     },
     "hi": {
         "min_term_length": 2,
         "max_links_per_paragraph": 40,
         "min_chars_between_links": 0,
+        "min_chars_between_same_concept": 400,
     },
 }
 
@@ -46,6 +50,7 @@ def load_config(path: str | Path) -> dict[str, Any]:
     for tier, defaults in DEFAULT_DENSITIES.items():
         user = (cfg.get("densities") or {}).get(tier) or {}
         # Drop obsolete keys if present in user YAML
+        # Obsolete once-per-heading caps removed; distance policy supersedes them.
         cleaned = {
             k: v
             for k, v in user.items()

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.4-beta (2026-07-24)
+
+### Added
+
+- Front matter / catalog `link: false` skips dictionary linker (guides / public pages)
+
+### Changed
+
+- Linker policy: same-concept distance + rotating providers (shared package with DOUTRINA)
+
+---
+
 ## 0.2.3-beta (2026-07-24)
 
 ### Changed

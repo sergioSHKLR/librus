@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .config import load_config
+from .config import density_settings, load_config
 from .dictionaries import load_all
 from .matcher import Candidate, build_indexes, scan_document
 from .md_regions import build_document_map
@@ -64,10 +64,13 @@ def build_report(cfg: dict[str, Any]) -> dict[str, Any]:
     active = [p for p in providers if dictionaries.get(p)]
 
     indexes_by_provider = build_indexes(dictionaries, active)
+    dens = density_settings(cfg)
+    min_same = int(dens.get("min_chars_between_same_concept", 400))
     hits = scan_document(
         doc,
         indexes_by_provider,
         provider_order=active,
+        min_chars_between_same_concept=min_same,
     )
     candidates = aggregate_hits(hits)
     candidates.sort(key=lambda c: (c.count, c.term.lower()))

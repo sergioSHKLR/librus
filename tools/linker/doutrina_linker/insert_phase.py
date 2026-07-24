@@ -1,8 +1,8 @@
 """Phase 2 — insert links from report + density config.
 
-Provider rotation is resolved in Phase 1 (per heading). Insert applies
-paragraph caps and enforces: at most one link of the same article by the
-same provider within the same heading (no document-wide max).
+Provider rotation and same-concept distance are resolved in Phase 1.
+Insert re-applies paragraph caps, optional min gap between any links,
+and the same-concept distance gate (safety if report is stale).
 """
 
 from __future__ import annotations
@@ -18,16 +18,6 @@ from .config import density_settings, load_config
 from .link_markup import render_link
 from .md_regions import RegionKind, build_document_map
 from .providers import normalize_interest, provider_code, tiers_for_density
-
-
-def _heading_key(pos_or_item: dict) -> str:
-    return "\x1f".join(
-        [
-            str(pos_or_item.get("h2_section") or ""),
-            str(pos_or_item.get("h4_section") or ""),
-            str(pos_or_item.get("h6_section") or ""),
-        ]
-    )
 
 
 def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
@@ -83,20 +73,31 @@ def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
 
     flat.sort(key=lambda c: (c["line"], c["col"]))
 
+    min_same = int(density.get("min_chars_between_same_concept", 400))
+    line_width = 80
+
+    def approx_pos(line: int, col: int) -> int:
+        return max(0, line - 1) * line_width + max(0, col)
+
     chosen: list[dict] = []
     links_in_para: dict[int, int] = defaultdict(int)
     last_end_in_para: dict[int, int] = {}
-    # Same article + provider at most once per heading (document-wide free)
-    article_in_heading: set[tuple[str, str, str]] = set()
+    # concept_norm → last linked approximate position
+    last_concept_pos: dict[str, int] = {}
 
     for item in flat:
         para = item["paragraph_id"]
-        heading = _heading_key(item)
-        article_key = (heading, item["provider_code"], item["url"])
+        concept = str(item.get("concept_norm") or item.get("term") or "").casefold()
+        pos = approx_pos(item["line"], item["col"])
 
         if links_in_para[para] >= max_per_para:
             continue
-        if article_key in article_in_heading:
+        if (
+            min_same > 0
+            and concept
+            and concept in last_concept_pos
+            and pos - last_concept_pos[concept] < min_same
+        ):
             continue
         if min_chars > 0 and para in last_end_in_para:
             prev = last_end_in_para[para]
@@ -106,7 +107,8 @@ def select_candidates(report: dict, cfg: dict[str, Any]) -> list[dict]:
 
         chosen.append(item)
         links_in_para[para] += 1
-        article_in_heading.add(article_key)
+        if concept:
+            last_concept_pos[concept] = pos
         last_end_in_para[para] = item["line"] * 1_000_000 + item["end_col"]
 
     return chosen

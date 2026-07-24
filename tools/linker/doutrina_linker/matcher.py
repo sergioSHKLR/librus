@@ -2,16 +2,19 @@
 
 Matching direction: dictionary → text (smaller curated set).
 
-Within each **heading** (h2/h4/h6 path), for a given concept, providers
-rotate in domain order — each provider+article at most once per heading:
+For each concept, providers rotate in domain order at each **allowed** hit:
 
-  spiritism  → 1st Luz, 2nd Wiki, 3rd Dic
-  general    → 1st Wiki, 2nd Luz, 3rd Dic
+  spiritism  → Luz → Wiki → Dic → Luz → …
+  general    → Wiki → Luz → Dic → …
   definition → Dic only
   place      → Wiki first (maps folded), then Luz/Dic
 
-Further mentions of the same term in that heading stay unlinked once the
-rotation is spent. The cycle **resets** in the next heading.
+**Distance policy (anti-pollution without underserving):**
+same concept is linked again only after ``min_chars_between_same_concept``
+(approximate source distance). Nearby repeats of common words stay plain;
+core terms like "Deus" re-link every reasonable gap, still rotating providers.
+
+Heading boundaries do **not** hard-stop rotation (no once-per-heading cap).
 """
 
 from __future__ import annotations
@@ -208,43 +211,53 @@ def _drop_overlapping_concepts(candidates: list[MatchHit]) -> list[MatchHit]:
     return flat
 
 
-def _assign_provider_rotation(hits: list[MatchHit]) -> list[MatchHit]:
-    """Per (concept, heading): walk occurrences in order and assign domain
-    provider rotation once each (L→W→D for spiritism, etc.). No document-wide cap.
+def _approx_pos(line: int, col: int, *, line_width: int = 80) -> int:
+    """Rough linear position for distance checks (line-major)."""
+    return max(0, line - 1) * line_width + max(0, col)
+
+
+def _assign_provider_rotation(
+    hits: list[MatchHit],
+    *,
+    min_chars_between_same_concept: int = 400,
+) -> list[MatchHit]:
+    """Walk occurrences in document order; rotate providers with a distance gate.
+
+    Same concept may re-link (and re-use a provider after a full cycle) once
+    ``min_chars_between_same_concept`` has elapsed since the last *linked*
+    occurrence of that concept. Closer repeats stay unlinked (pollution control).
     """
     by_span: dict[tuple[int, int, int, str], list[MatchHit]] = defaultdict(list)
     for h in hits:
         by_span[(h.line, h.col, h.end_col, h.concept_norm)].append(h)
 
-    # concept + heading → ordered unique spans
-    group_spans: dict[tuple[str, str], list[tuple[int, int, int]]] = defaultdict(list)
-    seen_span: set[tuple[str, str, int, int, int]] = set()
+    # concept → ordered unique spans (document order; heading does not segment)
+    group_spans: dict[str, list[tuple[int, int, int]]] = defaultdict(list)
+    seen_span: set[tuple[str, int, int, int]] = set()
     for h in sorted(hits, key=lambda x: (x.line, x.col)):
-        heading = h.heading_key()
-        key = (h.concept_norm, heading, h.line, h.col, h.end_col)
+        key = (h.concept_norm, h.line, h.col, h.end_col)
         if key in seen_span:
             continue
         seen_span.add(key)
-        group_spans[(h.concept_norm, heading)].append((h.line, h.col, h.end_col))
+        group_spans[h.concept_norm].append((h.line, h.col, h.end_col))
 
     assigned: list[MatchHit] = []
-    for (concept, _heading), spans in group_spans.items():
-        all_hits = [
-            h
-            for h in hits
-            if h.concept_norm == concept and h.heading_key() == _heading
-        ]
+    for concept, spans in group_spans.items():
+        all_hits = [h for h in hits if h.concept_norm == concept]
         domain = classify_hit_group_domain(
             [h.domain for h in all_hits],
             [h.provider for h in all_hits],
         )
         order = provider_order_for_domain(domain)
-        # Once per provider (and thus once per article for that provider) in this heading
-        used_providers: set[str] = set()
-        used_article: set[tuple[str, str]] = set()  # (provider, url)
         rr = 0
+        last_linked_pos: int | None = None
 
         for line, col, end in spans:
+            pos = _approx_pos(line, col)
+            if last_linked_pos is not None and min_chars_between_same_concept > 0:
+                if pos - last_linked_pos < min_chars_between_same_concept:
+                    continue
+
             group = by_span.get((line, col, end, concept), [])
             if not group:
                 continue
@@ -254,18 +267,18 @@ def _assign_provider_rotation(hits: list[MatchHit]) -> list[MatchHit]:
                 prov = order[(rr + offset) % len(order)]
                 if prov not in available:
                     continue
-                hit = available[prov]
-                article_key = (prov, hit.url)
-                if prov in used_providers or article_key in used_article:
-                    continue
-                chosen = hit
+                chosen = available[prov]
                 rr = (rr + offset + 1) % len(order)
                 break
             if chosen is None:
+                # No preferred provider at this span — take any available (stable order)
+                for prov in sorted(available):
+                    chosen = available[prov]
+                    break
+            if chosen is None:
                 continue
-            used_providers.add(chosen.provider)
-            used_article.add((chosen.provider, chosen.url))
             assigned.append(chosen)
+            last_linked_pos = pos
 
     assigned.sort(key=lambda h: (h.line, h.col))
     return assigned
@@ -275,6 +288,8 @@ def scan_document(
     doc: DocumentMap,
     indexes_by_provider: dict[str, list[TermIndex]],
     provider_order: list[str] | None = None,
+    *,
+    min_chars_between_same_concept: int = 400,
 ) -> list[MatchHit]:
     active = provider_order or [
         p for p in PROVIDER_PRIORITY if p in indexes_by_provider
@@ -300,7 +315,10 @@ def scan_document(
             )
 
     multi = _drop_overlapping_concepts(raw)
-    return _assign_provider_rotation(multi)
+    return _assign_provider_rotation(
+        multi,
+        min_chars_between_same_concept=min_chars_between_same_concept,
+    )
 
 
 @dataclass

@@ -104,6 +104,14 @@ export function normalizeFrontMatter(data, folderSlug) {
     meta.categories = categories.map((c) => String(c)).filter(Boolean);
   }
 
+  /** Opt out of build-time dictionary linking (guides, legal, public pages). */
+  const linkRaw = meta.link ?? meta.linker ?? meta.auto_link;
+  if (linkRaw === false || linkRaw === 0 || linkRaw === 'false' || linkRaw === 'no' || linkRaw === 'off') {
+    meta.link = false;
+  } else if (linkRaw === true || linkRaw === 'true' || linkRaw === 'on' || linkRaw === 'yes') {
+    meta.link = true;
+  }
+
   return { meta, warnings, fatal };
 }
 

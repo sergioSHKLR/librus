@@ -46,7 +46,18 @@ Do not reintroduce Luz into LIBRUS UI, linker, or copy.
 
 ## Matching (summary)
 
-Dictionary → text; per-heading provider rotation; same target may recur under other headings. Code is authority if this summary drifts.
+Dictionary → text (curated terms into the book).
+
+**Same-concept distance:** re-link only after `min_chars_between_same_concept` since last linked hit.  
+**Provider rotation:** Luz (if any) / Wiki / Dict cycle at each allowed hit — no once-per-heading hard stop.
+
+| Density bake | `min_chars_between_same_concept` (default) |
+|--------------|--------------------------------------------|
+| low | 900 |
+| med | 550 |
+| hi | 400 |
+
+See `tools/linker/doutrina_linker/config.py` + `matcher.py`. Rebuild to re-bake.
 
 ## Failure mode
 

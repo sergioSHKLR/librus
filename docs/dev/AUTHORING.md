@@ -50,7 +50,14 @@ Headings → TOC; footnotes; containers via `markdown-it-container` (`::: expand
 
 ## Linker opt-out
 
-Catalog `"link": false` skips dictionary linking for that book.
+Use for guides / legal / public pages that must not receive dictionary links.
+
+| Where | How |
+|-------|-----|
+| Catalog | `"link": false` (also `linker` / `auto_link`) |
+| Front matter | `link: false` · `linker: false` · `auto_link: false` |
+
+Aliases: `false`, `no`, `off`, `0`.
 
 ## Covers
 
