@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.3-beta (2026-07-24)
+
+### Changed
+
+- **Developer docs rewrite** under `docs/dev/` (architecture, build, authoring, linker, runtime, product deltas, contributing)
+- Root README points at `docs/dev/`; stale handoff handbook moved to `docs/archive/`
+- Product framing: Holmes / `demo` are **demo corpus only**; no external content monorepo; no Luz
+
+---
+
 ## 0.2.2-beta (2026-07-23)
 
 ### Changed

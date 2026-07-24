@@ -1,6 +1,6 @@
 {
   "name": "librus",
-  "version": "0.2.2-beta",
+  "version": "0.2.3-beta",
   "description": "L∙I∙B∙R∙U∙S — annotate to assimilate. Study library at librus.app.",
   "private": true,
   "type": "module",

@@ -37,7 +37,9 @@ Language (splash flags or Settings) filters the library to books with matching `
 
 ## Documentation
 
-**[docs/HANDBOOK.md](docs/HANDBOOK.md)** — architecture, authoring, reader, settings, build.
+**Developers:** **[docs/dev/](docs/dev/)** — architecture, build, authoring (demo corpus), linker, runtime, product deltas.
+
+Holmes texts in-repo are **demo only**; there is no external content monorepo for LIBRUS.
 
 **[CHANGELOG.md](CHANGELOG.md)** — release history.
 
