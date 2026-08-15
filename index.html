@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="light" data-guide="full">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -26,6 +26,17 @@
     />
     <script>
       (function () {
+        /* Color guide FOUC: full | soft | min */
+        try {
+          var g = localStorage.getItem("librus-color-guide");
+          if (g === "soft" || g === "min" || g === "full") {
+            document.documentElement.dataset.guide = g;
+          } else {
+            document.documentElement.dataset.guide = "full";
+          }
+        } catch (e) {
+          document.documentElement.dataset.guide = "full";
+        }
         var k = "librus-theme";
         var pref = null;
         try {
@@ -45,8 +56,8 @@
         document.documentElement.style.colorScheme = resolved;
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-C6F_PIUz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CAD6EjPL.css">
+    <script type="module" crossorigin src="/assets/index-JONkOLfx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BgELhGIr.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -410,6 +421,25 @@
         <p data-i18n="set.hint" class="modal-hint">
           Idioma e tema: botões na barra inferior.
         </p>
+        <fieldset>
+          <legend data-i18n="set.guide">Guia de cor</legend>
+          <p data-i18n="set.guideHint" class="modal-hint">
+            Cores do chrome do leitor (abas e barras). O tema claro/escuro fica
+            na barra inferior.
+          </p>
+          <label
+            ><input type="radio" name="color-guide" value="full" checked />
+            <span data-i18n="set.guideFull">Completo</span></label
+          >
+          <label
+            ><input type="radio" name="color-guide" value="soft" />
+            <span data-i18n="set.guideSoft">Suave</span></label
+          >
+          <label
+            ><input type="radio" name="color-guide" value="min" />
+            <span data-i18n="set.guideMin">Mínimo</span></label
+          >
+        </fieldset>
         <fieldset data-feat="jaas">
           <legend data-i18n="set.jitsi">Videoconferência (JaaS)</legend>
           <label class="stack"
