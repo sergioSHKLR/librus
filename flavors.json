@@ -53,7 +53,6 @@
         "mark": "/brand/doutrina-favicon.svg",
         "favicon": "/brand/doutrina-favicon.svg",
         "faviconDark": "/brand/doutrina-favicon-dark.svg",
-        "themeColor": "#1e90ff",
         "accent": "#1e90ff"
       },
       "catalog": "/books/catalog.json",
@@ -81,13 +80,12 @@
         "mark": "/brand/centro-favicon.svg",
         "favicon": "/brand/centro-favicon.svg",
         "faviconDark": "/brand/centro-favicon-dark.svg",
-        "themeColor": "#da2f2f",
         "accent": "#da2f2f"
       },
       "catalog": "/books/catalog.json",
       "profile": "centro",
       "features": {
-        "providers": ["luz", "encyc", "dict", "bible", "kardec"],
+        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
         "jaas": true,
         "jaasRoom": "centro-reuniao",
         "pinFirst": ["centro"]
