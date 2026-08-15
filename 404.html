@@ -69,10 +69,25 @@
         document.documentElement.dataset.themePref = pref;
         document.documentElement.dataset.theme = resolved;
         document.documentElement.style.colorScheme = resolved;
+        /* Neutral top chrome ASAP (before brand JS) */
+        var tc = document.getElementById("meta-theme-color");
+        if (tc) tc.content = resolved === "dark" ? "#000000" : "#ffffff";
+        var tcl = document.getElementById("meta-theme-color-light");
+        var tcd = document.getElementById("meta-theme-color-dark");
+        if (pref === "light") {
+          if (tcl) tcl.content = "#ffffff";
+          if (tcd) tcd.content = "#ffffff";
+        } else if (pref === "dark") {
+          if (tcl) tcl.content = "#000000";
+          if (tcd) tcd.content = "#000000";
+        } else {
+          if (tcl) tcl.content = "#ffffff";
+          if (tcd) tcd.content = "#000000";
+        }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-923esf2z.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BJh4jXUv.css">
+    <script type="module" crossorigin src="/assets/index-DcQ3-i58.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-krUaCqez.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -231,7 +246,7 @@
         <section id="p3" data-pane="consult">
           <div data-tabs>
             <button type="button" data-mode="consult:web" class="on">
-              <i data-icon="globe"></i
+              <i data-icon="search-slash"></i
               ><span data-i18n="tab.context">Contexto</span>
             </button>
             <button type="button" data-mode="consult:pdf">
