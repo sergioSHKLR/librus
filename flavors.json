@@ -33,7 +33,7 @@
       "profile": "librus",
       "features": {
         "providers": ["encyc", "dict", "map"],
-        "jaasRoom": "librus-estudo"
+        "jaas": false
       }
     },
     "doutrina": {
@@ -61,7 +61,7 @@
       "profile": "doutrina",
       "features": {
         "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
-        "jaasRoom": "doutrina-estudo"
+        "jaas": false
       }
     },
     "centro": {
@@ -89,6 +89,7 @@
       "profile": "centro",
       "features": {
         "providers": ["luz", "encyc", "dict", "bible", "kardec"],
+        "jaas": true,
         "jaasRoom": "centro-reuniao",
         "pinFirst": ["centro"]
       }
