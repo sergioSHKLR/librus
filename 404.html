@@ -8,20 +8,20 @@
     />
     <title>LIBRUS</title>
     <meta name="description" content="LIBRUS" />
-    <!-- Top browser / PWA chrome: neutral only (never brand green/blue/red) -->
+    <!-- Top browser / PWA chrome: default chrome grey (never brand) -->
     <meta
       name="theme-color"
-      content="#ffffff"
+      content="#e8eaed"
       media="(prefers-color-scheme: light)"
       id="meta-theme-color-light"
     />
     <meta
       name="theme-color"
-      content="#000000"
+      content="#202124"
       media="(prefers-color-scheme: dark)"
       id="meta-theme-color-dark"
     />
-    <meta name="theme-color" content="#ffffff" id="meta-theme-color" />
+    <meta name="theme-color" content="#e8eaed" id="meta-theme-color" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon" />
@@ -69,24 +69,26 @@
         document.documentElement.dataset.themePref = pref;
         document.documentElement.dataset.theme = resolved;
         document.documentElement.style.colorScheme = resolved;
-        /* Neutral top chrome ASAP (before brand JS) */
+        /* Default chrome grey ASAP (before brand JS) */
+        var greyL = "#e8eaed";
+        var greyD = "#202124";
         var tc = document.getElementById("meta-theme-color");
-        if (tc) tc.content = resolved === "dark" ? "#000000" : "#ffffff";
+        if (tc) tc.content = resolved === "dark" ? greyD : greyL;
         var tcl = document.getElementById("meta-theme-color-light");
         var tcd = document.getElementById("meta-theme-color-dark");
         if (pref === "light") {
-          if (tcl) tcl.content = "#ffffff";
-          if (tcd) tcd.content = "#ffffff";
+          if (tcl) tcl.content = greyL;
+          if (tcd) tcd.content = greyL;
         } else if (pref === "dark") {
-          if (tcl) tcl.content = "#000000";
-          if (tcd) tcd.content = "#000000";
+          if (tcl) tcl.content = greyD;
+          if (tcd) tcd.content = greyD;
         } else {
-          if (tcl) tcl.content = "#ffffff";
-          if (tcd) tcd.content = "#000000";
+          if (tcl) tcl.content = greyL;
+          if (tcd) tcd.content = greyD;
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DbDcAm7-.js"></script>
+    <script type="module" crossorigin src="/assets/index-BHOm1o9l.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-krUaCqez.css">
   </head>
 
