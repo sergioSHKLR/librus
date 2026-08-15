@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "CENTRO",
+  "short_name": "CENTRO",
+  "description": "comunidade em estudo",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#da2f2f",
+  "lang": "pt-BR",
+  "categories": ["books", "education"],
+  "icons": [
+    {
+      "src": "/pwa/centro-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa/centro-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa/centro-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa/centro-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 # librus-shell (LIBRUS)
 
-> L∙I∙B∙R∙U∙S — Loosely Integrated Book Reading Universal System.
-> Multi-flavor study reader: library, multi-pane reading, Hypothesis notes, optional JaaS.
+> LIBRUS — multi-flavor study reader: library, multi-pane reading, Hypothesis notes, optional JaaS.
 
 ## Product hosts
 
