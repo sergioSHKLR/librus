@@ -26,7 +26,6 @@
         "icon": "columns-4",
         "favicon": "/brand/librus-favicon.svg",
         "faviconDark": "/brand/librus-favicon-dark.svg",
-        "themeColor": "#008b00",
         "accent": "#008b00"
       },
       "catalog": "/books/catalog.json",
