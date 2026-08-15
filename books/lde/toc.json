@@ -1,0 +1,10682 @@
+[
+  {
+    "level": 1,
+    "text": "✨ *O Livro dos Espíritos*",
+    "id": "s0001"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 0. Pré-textual",
+    "id": "s0002"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Folha de rosto",
+    "id": "s0003"
+  },
+  {
+    "level": 3,
+    "text": "⚖️ Avisos Legais",
+    "id": "s0004"
+  },
+  {
+    "level": 3,
+    "text": "📋 Sumário",
+    "id": "s0005"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Prefácio",
+    "id": "s0006"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Introdução",
+    "id": "s0007"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 01",
+    "id": "s0008"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 02",
+    "id": "s0009"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 03",
+    "id": "s0010"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 04",
+    "id": "s0011"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 05",
+    "id": "s0012"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 06",
+    "id": "s0013"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 07",
+    "id": "s0014"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 08",
+    "id": "s0015"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 09",
+    "id": "s0016"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 10",
+    "id": "s0017"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 11",
+    "id": "s0018"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 12",
+    "id": "s0019"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 13",
+    "id": "s0020"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 14",
+    "id": "s0021"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 15",
+    "id": "s0022"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 16",
+    "id": "s0023"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intro 17",
+    "id": "s0024"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 1. Causas primárias",
+    "id": "s0025"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Deus",
+    "id": "s0026"
+  },
+  {
+    "level": 4,
+    "text": "📑 Deus e o infinito",
+    "id": "s0027"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1",
+    "id": "s0028"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 2",
+    "id": "s0029"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 3",
+    "id": "s0030"
+  },
+  {
+    "level": 4,
+    "text": "📑 Provas da existência de Deus",
+    "id": "s0031"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 4",
+    "id": "s0032"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 5",
+    "id": "s0033"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 6",
+    "id": "s0034"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 7",
+    "id": "s0035"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 8",
+    "id": "s0036"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 9",
+    "id": "s0037"
+  },
+  {
+    "level": 4,
+    "text": "📑 Atributos da Divindade",
+    "id": "s0038"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 10",
+    "id": "s0039"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 11",
+    "id": "s0040"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 12",
+    "id": "s0041"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 13",
+    "id": "s0042"
+  },
+  {
+    "level": 4,
+    "text": "📑 Panteísmo",
+    "id": "s0043"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 14",
+    "id": "s0044"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 15",
+    "id": "s0045"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 16",
+    "id": "s0046"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Elementos gerais do Universo",
+    "id": "s0047"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conhecimento do princípio das coisas",
+    "id": "s0048"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 17",
+    "id": "s0049"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 18",
+    "id": "s0050"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 19",
+    "id": "s0051"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 20",
+    "id": "s0052"
+  },
+  {
+    "level": 4,
+    "text": "📑 Espírito e Matéria",
+    "id": "s0053"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 21",
+    "id": "s0054"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 22",
+    "id": "s0055"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 22.a",
+    "id": "s0056"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 23",
+    "id": "s0057"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 23.a",
+    "id": "s0058"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 24",
+    "id": "s0059"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 25",
+    "id": "s0060"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 25.a",
+    "id": "s0061"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 26",
+    "id": "s0062"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 27",
+    "id": "s0063"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 27.a",
+    "id": "s0064"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 28",
+    "id": "s0065"
+  },
+  {
+    "level": 4,
+    "text": "📑 Propriedades da Matéria",
+    "id": "s0066"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 29",
+    "id": "s0067"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 30",
+    "id": "s0068"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 31",
+    "id": "s0069"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 32",
+    "id": "s0070"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 33",
+    "id": "s0071"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 33.a",
+    "id": "s0072"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 34",
+    "id": "s0073"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 34.a",
+    "id": "s0074"
+  },
+  {
+    "level": 4,
+    "text": "📑 Espaço universal",
+    "id": "s0075"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 35",
+    "id": "s0076"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 36",
+    "id": "s0077"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Criação",
+    "id": "s0078"
+  },
+  {
+    "level": 4,
+    "text": "📑 Formação dos mundos",
+    "id": "s0079"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 37",
+    "id": "s0080"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 38",
+    "id": "s0081"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 39",
+    "id": "s0082"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 40",
+    "id": "s0083"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 41",
+    "id": "s0084"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 42",
+    "id": "s0085"
+  },
+  {
+    "level": 4,
+    "text": "📑 Formação dos seres vivos",
+    "id": "s0086"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 43",
+    "id": "s0087"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 44",
+    "id": "s0088"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 45",
+    "id": "s0089"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 46",
+    "id": "s0090"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 47",
+    "id": "s0091"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 48",
+    "id": "s0092"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 49",
+    "id": "s0093"
+  },
+  {
+    "level": 4,
+    "text": "📑 Povoamento da Terra. Adão",
+    "id": "s0094"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 50",
+    "id": "s0095"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 51",
+    "id": "s0096"
+  },
+  {
+    "level": 4,
+    "text": "📑 Diversidade das raças humanas",
+    "id": "s0097"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 52",
+    "id": "s0098"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 53",
+    "id": "s0099"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 53.a",
+    "id": "s0100"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 54",
+    "id": "s0101"
+  },
+  {
+    "level": 4,
+    "text": "📑 Pluralidade dos mundos",
+    "id": "s0102"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 55",
+    "id": "s0103"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 56",
+    "id": "s0104"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 57",
+    "id": "s0105"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 58",
+    "id": "s0106"
+  },
+  {
+    "level": 4,
+    "text": "📑 Considerações e concordâncias bíblicas concernentes à Criação",
+    "id": "s0107"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 59",
+    "id": "s0108"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Princípio Vital",
+    "id": "s0109"
+  },
+  {
+    "level": 4,
+    "text": "📑 Seres orgânicos e inorgânicos",
+    "id": "s0110"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 60",
+    "id": "s0111"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 61",
+    "id": "s0112"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 62",
+    "id": "s0113"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 63",
+    "id": "s0114"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 64",
+    "id": "s0115"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 64.a",
+    "id": "s0116"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 65",
+    "id": "s0117"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 66",
+    "id": "s0118"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 67",
+    "id": "s0119"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 67.a",
+    "id": "s0120"
+  },
+  {
+    "level": 4,
+    "text": "📑 A vida e a morte",
+    "id": "s0121"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 68",
+    "id": "s0122"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 68.a",
+    "id": "s0123"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 69",
+    "id": "s0124"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 70",
+    "id": "s0125"
+  },
+  {
+    "level": 4,
+    "text": "📑 Inteligência e instinto",
+    "id": "s0126"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 71",
+    "id": "s0127"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 72",
+    "id": "s0128"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 72.a",
+    "id": "s0129"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 73",
+    "id": "s0130"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 74",
+    "id": "s0131"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 75",
+    "id": "s0132"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 75.a",
+    "id": "s0133"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 2. Mundo espiritual",
+    "id": "s0134"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Espíritos",
+    "id": "s0135"
+  },
+  {
+    "level": 4,
+    "text": "📑 Origem e natureza dos Espíritos",
+    "id": "s0136"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 76",
+    "id": "s0137"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 77",
+    "id": "s0138"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 78",
+    "id": "s0139"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 79",
+    "id": "s0140"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 80",
+    "id": "s0141"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 81",
+    "id": "s0142"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 82",
+    "id": "s0143"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 83",
+    "id": "s0144"
+  },
+  {
+    "level": 4,
+    "text": "📑 Mundo normal primitivo",
+    "id": "s0145"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 84",
+    "id": "s0146"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 85",
+    "id": "s0147"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 86",
+    "id": "s0148"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 87",
+    "id": "s0149"
+  },
+  {
+    "level": 4,
+    "text": "📑 Forma e ubiquidade dos Espíritos",
+    "id": "s0150"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 88",
+    "id": "s0151"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 88.a",
+    "id": "s0152"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 89",
+    "id": "s0153"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 89.a",
+    "id": "s0154"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 90",
+    "id": "s0155"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 91",
+    "id": "s0156"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 92",
+    "id": "s0157"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 92.a",
+    "id": "s0158"
+  },
+  {
+    "level": 4,
+    "text": "📑 Perispírito",
+    "id": "s0159"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 93",
+    "id": "s0160"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 94",
+    "id": "s0161"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 94.a",
+    "id": "s0162"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 95",
+    "id": "s0163"
+  },
+  {
+    "level": 4,
+    "text": "📑 Diferentes ordens de Espíritos",
+    "id": "s0164"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 96",
+    "id": "s0165"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 97",
+    "id": "s0166"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 98",
+    "id": "s0167"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 99",
+    "id": "s0168"
+  },
+  {
+    "level": 4,
+    "text": "📑 Escala espírita",
+    "id": "s0169"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 100",
+    "id": "s0170"
+  },
+  {
+    "level": 4,
+    "text": "📑 3ª ordem – Espíritos imperfeitos",
+    "id": "s0171"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 101",
+    "id": "s0172"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 102",
+    "id": "s0173"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 103",
+    "id": "s0174"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 104",
+    "id": "s0175"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 105",
+    "id": "s0176"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 106",
+    "id": "s0177"
+  },
+  {
+    "level": 4,
+    "text": "📑 2ª ordem – Bons Espíritos",
+    "id": "s0178"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 107",
+    "id": "s0179"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 108",
+    "id": "s0180"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 109",
+    "id": "s0181"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 110",
+    "id": "s0182"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 111",
+    "id": "s0183"
+  },
+  {
+    "level": 4,
+    "text": "📑 1ª ordem – Espíritos puros",
+    "id": "s0184"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 112",
+    "id": "s0185"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 113",
+    "id": "s0186"
+  },
+  {
+    "level": 4,
+    "text": "📑 Progressão dos Espíritos",
+    "id": "s0187"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 114",
+    "id": "s0188"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 115",
+    "id": "s0189"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 115.a",
+    "id": "s0190"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 116",
+    "id": "s0191"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 117",
+    "id": "s0192"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 118",
+    "id": "s0193"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 119",
+    "id": "s0194"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 120",
+    "id": "s0195"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 121",
+    "id": "s0196"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 122",
+    "id": "s0197"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 122.a",
+    "id": "s0198"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 122.b",
+    "id": "s0199"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 123",
+    "id": "s0200"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 124",
+    "id": "s0201"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 125",
+    "id": "s0202"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 126",
+    "id": "s0203"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 127",
+    "id": "s0204"
+  },
+  {
+    "level": 4,
+    "text": "📑 Anjos e demônios",
+    "id": "s0205"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 128",
+    "id": "s0206"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 129",
+    "id": "s0207"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 130",
+    "id": "s0208"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 131",
+    "id": "s0209"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Encarnação",
+    "id": "s0210"
+  },
+  {
+    "level": 4,
+    "text": "📑 Objetivo da encarnação",
+    "id": "s0211"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 132",
+    "id": "s0212"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 133",
+    "id": "s0213"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 133.a",
+    "id": "s0214"
+  },
+  {
+    "level": 4,
+    "text": "📑 A alma",
+    "id": "s0215"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 134",
+    "id": "s0216"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 134.a",
+    "id": "s0217"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 134.b",
+    "id": "s0218"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 135",
+    "id": "s0219"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 135.a",
+    "id": "s0220"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 136",
+    "id": "s0221"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 136.a",
+    "id": "s0222"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 136.b",
+    "id": "s0223"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 137",
+    "id": "s0224"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 138",
+    "id": "s0225"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 139",
+    "id": "s0226"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 140",
+    "id": "s0227"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 140.a",
+    "id": "s0228"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 141",
+    "id": "s0229"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 142",
+    "id": "s0230"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 143",
+    "id": "s0231"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 144",
+    "id": "s0232"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 145",
+    "id": "s0233"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 146",
+    "id": "s0234"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 146.a",
+    "id": "s0235"
+  },
+  {
+    "level": 4,
+    "text": "📑 Materialismo",
+    "id": "s0236"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 147",
+    "id": "s0237"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 148",
+    "id": "s0238"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Retorno à vida espiritual",
+    "id": "s0239"
+  },
+  {
+    "level": 4,
+    "text": "📑 A alma após a morte. Vida eterna",
+    "id": "s0240"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 149",
+    "id": "s0241"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 150",
+    "id": "s0242"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 150.a",
+    "id": "s0243"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 150.b",
+    "id": "s0244"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 151",
+    "id": "s0245"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 152",
+    "id": "s0246"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 153",
+    "id": "s0247"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 153.a",
+    "id": "s0248"
+  },
+  {
+    "level": 4,
+    "text": "📑 Separação da alma e do corpo",
+    "id": "s0249"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 154",
+    "id": "s0250"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 155",
+    "id": "s0251"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 155.a",
+    "id": "s0252"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 156",
+    "id": "s0253"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 157",
+    "id": "s0254"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 158",
+    "id": "s0255"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 159",
+    "id": "s0256"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 160",
+    "id": "s0257"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 161",
+    "id": "s0258"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 162",
+    "id": "s0259"
+  },
+  {
+    "level": 4,
+    "text": "📑 Perturbação espiritual",
+    "id": "s0260"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 163",
+    "id": "s0261"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 164",
+    "id": "s0262"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 165",
+    "id": "s0263"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Pluralidade das existências",
+    "id": "s0264"
+  },
+  {
+    "level": 4,
+    "text": "📑 A reencarnação",
+    "id": "s0265"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 166",
+    "id": "s0266"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 166.a",
+    "id": "s0267"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 166.b",
+    "id": "s0268"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 166.c",
+    "id": "s0269"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 167",
+    "id": "s0270"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 168",
+    "id": "s0271"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 169",
+    "id": "s0272"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 170",
+    "id": "s0273"
+  },
+  {
+    "level": 4,
+    "text": "📑 Justiça da reencarnação",
+    "id": "s0274"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 171",
+    "id": "s0275"
+  },
+  {
+    "level": 4,
+    "text": "📑 Encarnação nos diferentes mundos",
+    "id": "s0276"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 172",
+    "id": "s0277"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 173",
+    "id": "s0278"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 173.a",
+    "id": "s0279"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 173.b",
+    "id": "s0280"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 174",
+    "id": "s0281"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 175",
+    "id": "s0282"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 175.a",
+    "id": "s0283"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 176",
+    "id": "s0284"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 176.a",
+    "id": "s0285"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 176.b",
+    "id": "s0286"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 177",
+    "id": "s0287"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 177.a",
+    "id": "s0288"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 178",
+    "id": "s0289"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 178.a",
+    "id": "s0290"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 178.b",
+    "id": "s0291"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 179",
+    "id": "s0292"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 180",
+    "id": "s0293"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 181",
+    "id": "s0294"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 182",
+    "id": "s0295"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 183",
+    "id": "s0296"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 184",
+    "id": "s0297"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 184.a",
+    "id": "s0298"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 185",
+    "id": "s0299"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 186",
+    "id": "s0300"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 186.a",
+    "id": "s0301"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 187",
+    "id": "s0302"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 188",
+    "id": "s0303"
+  },
+  {
+    "level": 4,
+    "text": "📑 Transmigrações progressivas",
+    "id": "s0304"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 189",
+    "id": "s0305"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 190",
+    "id": "s0306"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 191",
+    "id": "s0307"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 191.a",
+    "id": "s0308"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 192",
+    "id": "s0309"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 192.a",
+    "id": "s0310"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 193",
+    "id": "s0311"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 194",
+    "id": "s0312"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 194.a",
+    "id": "s0313"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 195",
+    "id": "s0314"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 196",
+    "id": "s0315"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 196.a",
+    "id": "s0316"
+  },
+  {
+    "level": 4,
+    "text": "📑 Sorte das crianças depois da morte",
+    "id": "s0317"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 197",
+    "id": "s0318"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 197.a",
+    "id": "s0319"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 198",
+    "id": "s0320"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 199",
+    "id": "s0321"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 199.a",
+    "id": "s0322"
+  },
+  {
+    "level": 4,
+    "text": "📑 Sexos nos Espíritos",
+    "id": "s0323"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 200",
+    "id": "s0324"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 201",
+    "id": "s0325"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 202",
+    "id": "s0326"
+  },
+  {
+    "level": 4,
+    "text": "📑 Parentesco, filiação",
+    "id": "s0327"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 203",
+    "id": "s0328"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 204",
+    "id": "s0329"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 205",
+    "id": "s0330"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 205.a",
+    "id": "s0331"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 206",
+    "id": "s0332"
+  },
+  {
+    "level": 4,
+    "text": "📑 Parecenças físicas e morais",
+    "id": "s0333"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 207",
+    "id": "s0334"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 207.a",
+    "id": "s0335"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 208",
+    "id": "s0336"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 209",
+    "id": "s0337"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 210",
+    "id": "s0338"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 211",
+    "id": "s0339"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 212",
+    "id": "s0340"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 213",
+    "id": "s0341"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 214",
+    "id": "s0342"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 215",
+    "id": "s0343"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 216",
+    "id": "s0344"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 217",
+    "id": "s0345"
+  },
+  {
+    "level": 4,
+    "text": "📑 Ideias inatas",
+    "id": "s0346"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 218",
+    "id": "s0347"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 218.a",
+    "id": "s0348"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 218.b",
+    "id": "s0349"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 219",
+    "id": "s0350"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 220",
+    "id": "s0351"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 221",
+    "id": "s0352"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 221.a",
+    "id": "s0353"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Considerações sobre as existências",
+    "id": "s0354"
+  },
+  {
+    "level": 4,
+    "text": "📑 Filler heading",
+    "id": "s0355"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 222",
+    "id": "s0356"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Vida espírita",
+    "id": "s0357"
+  },
+  {
+    "level": 4,
+    "text": "📑 Espíritos errantes",
+    "id": "s0358"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 223",
+    "id": "s0359"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 224",
+    "id": "s0360"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 224.a",
+    "id": "s0361"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 224.b",
+    "id": "s0362"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 225",
+    "id": "s0363"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 226",
+    "id": "s0364"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 227",
+    "id": "s0365"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 228",
+    "id": "s0366"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 229",
+    "id": "s0367"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 230",
+    "id": "s0368"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 231",
+    "id": "s0369"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 232",
+    "id": "s0370"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 233",
+    "id": "s0371"
+  },
+  {
+    "level": 4,
+    "text": "📑 Mundos transitórios",
+    "id": "s0372"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 234",
+    "id": "s0373"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 234.a",
+    "id": "s0374"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 235",
+    "id": "s0375"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236",
+    "id": "s0376"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236.a",
+    "id": "s0377"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236.b",
+    "id": "s0378"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236.c",
+    "id": "s0379"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236.d",
+    "id": "s0380"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 236.e",
+    "id": "s0381"
+  },
+  {
+    "level": 4,
+    "text": "📑 Percepções, sensações e sofrimentos dos Espíritos",
+    "id": "s0382"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 237",
+    "id": "s0383"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 238",
+    "id": "s0384"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 239",
+    "id": "s0385"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 240",
+    "id": "s0386"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 241",
+    "id": "s0387"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 242",
+    "id": "s0388"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 243",
+    "id": "s0389"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 243.a",
+    "id": "s0390"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 244",
+    "id": "s0391"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 244.a",
+    "id": "s0392"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 244.b",
+    "id": "s0393"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 245",
+    "id": "s0394"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 246",
+    "id": "s0395"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 247",
+    "id": "s0396"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 248",
+    "id": "s0397"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 249",
+    "id": "s0398"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 249.a",
+    "id": "s0399"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 250",
+    "id": "s0400"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 251",
+    "id": "s0401"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 252",
+    "id": "s0402"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 253",
+    "id": "s0403"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 254",
+    "id": "s0404"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 255",
+    "id": "s0405"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 256",
+    "id": "s0406"
+  },
+  {
+    "level": 4,
+    "text": "📑 Ensaio teórico da sensação nos Espíritos",
+    "id": "s0407"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 257",
+    "id": "s0408"
+  },
+  {
+    "level": 4,
+    "text": "📑 Escolha das provas",
+    "id": "s0409"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 258",
+    "id": "s0410"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 258.a",
+    "id": "s0411"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 259",
+    "id": "s0412"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 260",
+    "id": "s0413"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 260.a",
+    "id": "s0414"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 261",
+    "id": "s0415"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 262",
+    "id": "s0416"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 262.a",
+    "id": "s0417"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 263",
+    "id": "s0418"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 264",
+    "id": "s0419"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 265",
+    "id": "s0420"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 266",
+    "id": "s0421"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 267",
+    "id": "s0422"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 267.a",
+    "id": "s0423"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 268",
+    "id": "s0424"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 269",
+    "id": "s0425"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 270",
+    "id": "s0426"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 271",
+    "id": "s0427"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 272",
+    "id": "s0428"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 273",
+    "id": "s0429"
+  },
+  {
+    "level": 4,
+    "text": "📑 As relações no além-túmulo",
+    "id": "s0430"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 274",
+    "id": "s0431"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 274.a",
+    "id": "s0432"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 275",
+    "id": "s0433"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 275.a",
+    "id": "s0434"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 276",
+    "id": "s0435"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 277",
+    "id": "s0436"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 278",
+    "id": "s0437"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 279",
+    "id": "s0438"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 280",
+    "id": "s0439"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 281",
+    "id": "s0440"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 282",
+    "id": "s0441"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 283",
+    "id": "s0442"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 284",
+    "id": "s0443"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 285",
+    "id": "s0444"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 285.a",
+    "id": "s0445"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 286",
+    "id": "s0446"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 287",
+    "id": "s0447"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 288",
+    "id": "s0448"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 289",
+    "id": "s0449"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 290",
+    "id": "s0450"
+  },
+  {
+    "level": 4,
+    "text": "📑 Relações de simpatia e de antipatia entre os Espíritos. Metades eternas",
+    "id": "s0451"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 291",
+    "id": "s0452"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 292",
+    "id": "s0453"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 293",
+    "id": "s0454"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 294",
+    "id": "s0455"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 295",
+    "id": "s0456"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 296",
+    "id": "s0457"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 297",
+    "id": "s0458"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 298",
+    "id": "s0459"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 299",
+    "id": "s0460"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 300",
+    "id": "s0461"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 301",
+    "id": "s0462"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 302",
+    "id": "s0463"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 303",
+    "id": "s0464"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 303.a",
+    "id": "s0465"
+  },
+  {
+    "level": 4,
+    "text": "📑 Recordação da existência corpórea",
+    "id": "s0466"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 304",
+    "id": "s0467"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 305",
+    "id": "s0468"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 306",
+    "id": "s0469"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 306.a",
+    "id": "s0470"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 306.b",
+    "id": "s0471"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 307",
+    "id": "s0472"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 308",
+    "id": "s0473"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 309",
+    "id": "s0474"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 309.a",
+    "id": "s0475"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 310",
+    "id": "s0476"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 311",
+    "id": "s0477"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 312",
+    "id": "s0478"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 313",
+    "id": "s0479"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 314",
+    "id": "s0480"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 315",
+    "id": "s0481"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 316",
+    "id": "s0482"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 317",
+    "id": "s0483"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 318",
+    "id": "s0484"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 319",
+    "id": "s0485"
+  },
+  {
+    "level": 4,
+    "text": "📑 Comemoração dos mortos. Funerais",
+    "id": "s0486"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 320",
+    "id": "s0487"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 321",
+    "id": "s0488"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 321.a",
+    "id": "s0489"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 321.b",
+    "id": "s0490"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 322",
+    "id": "s0491"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 323",
+    "id": "s0492"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 324",
+    "id": "s0493"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 325",
+    "id": "s0494"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 325.a",
+    "id": "s0495"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 326",
+    "id": "s0496"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 327",
+    "id": "s0497"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 327.a",
+    "id": "s0498"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 328",
+    "id": "s0499"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 329",
+    "id": "s0500"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Volta à vida material",
+    "id": "s0501"
+  },
+  {
+    "level": 4,
+    "text": "📑 Prelúdio da volta",
+    "id": "s0502"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 330",
+    "id": "s0503"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 330.a",
+    "id": "s0504"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 331",
+    "id": "s0505"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 332",
+    "id": "s0506"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 333",
+    "id": "s0507"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 334",
+    "id": "s0508"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 335",
+    "id": "s0509"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 335.a",
+    "id": "s0510"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 336",
+    "id": "s0511"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 337",
+    "id": "s0512"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 338",
+    "id": "s0513"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 339",
+    "id": "s0514"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 340",
+    "id": "s0515"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 341",
+    "id": "s0516"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 342",
+    "id": "s0517"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 343",
+    "id": "s0518"
+  },
+  {
+    "level": 4,
+    "text": "📑 União do espírito e do corpo",
+    "id": "s0519"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 344",
+    "id": "s0520"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 345",
+    "id": "s0521"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 346",
+    "id": "s0522"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 346.a",
+    "id": "s0523"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 347",
+    "id": "s0524"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 348",
+    "id": "s0525"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 349",
+    "id": "s0526"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 350",
+    "id": "s0527"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 351",
+    "id": "s0528"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 352",
+    "id": "s0529"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 353",
+    "id": "s0530"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 354",
+    "id": "s0531"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 355",
+    "id": "s0532"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 356",
+    "id": "s0533"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 356.a",
+    "id": "s0534"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 356.b",
+    "id": "s0535"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 357",
+    "id": "s0536"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 358",
+    "id": "s0537"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 359",
+    "id": "s0538"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 360",
+    "id": "s0539"
+  },
+  {
+    "level": 4,
+    "text": "📑 Faculdades morais e intelectuais do homem",
+    "id": "s0540"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 361",
+    "id": "s0541"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 361.a",
+    "id": "s0542"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 362",
+    "id": "s0543"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 363",
+    "id": "s0544"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 364",
+    "id": "s0545"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 365",
+    "id": "s0546"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 366",
+    "id": "s0547"
+  },
+  {
+    "level": 4,
+    "text": "📑 Influência do corpo",
+    "id": "s0548"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 367",
+    "id": "s0549"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 368",
+    "id": "s0550"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 368.a",
+    "id": "s0551"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 369",
+    "id": "s0552"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 370",
+    "id": "s0553"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 370.a",
+    "id": "s0554"
+  },
+  {
+    "level": 4,
+    "text": "📑 Idiotismo, loucura",
+    "id": "s0555"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 371",
+    "id": "s0556"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 372",
+    "id": "s0557"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 372.a",
+    "id": "s0558"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 373",
+    "id": "s0559"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 373.a",
+    "id": "s0560"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 374",
+    "id": "s0561"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 375",
+    "id": "s0562"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 375.a",
+    "id": "s0563"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 376",
+    "id": "s0564"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 377",
+    "id": "s0565"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 378",
+    "id": "s0566"
+  },
+  {
+    "level": 4,
+    "text": "📑 A infância",
+    "id": "s0567"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 379",
+    "id": "s0568"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 380",
+    "id": "s0569"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 381",
+    "id": "s0570"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 382",
+    "id": "s0571"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 383",
+    "id": "s0572"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 384",
+    "id": "s0573"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 385",
+    "id": "s0574"
+  },
+  {
+    "level": 4,
+    "text": "📑 Simpatia e antipatia materiais",
+    "id": "s0575"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 386",
+    "id": "s0576"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 386.a",
+    "id": "s0577"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 387",
+    "id": "s0578"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 388",
+    "id": "s0579"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 389",
+    "id": "s0580"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 390",
+    "id": "s0581"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 391",
+    "id": "s0582"
+  },
+  {
+    "level": 4,
+    "text": "📑 Esquecimento do passado",
+    "id": "s0583"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 392",
+    "id": "s0584"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 393",
+    "id": "s0585"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 394",
+    "id": "s0586"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 395",
+    "id": "s0587"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 396",
+    "id": "s0588"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 397",
+    "id": "s0589"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 398",
+    "id": "s0590"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 398.a",
+    "id": "s0591"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 399",
+    "id": "s0592"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Emancipação da alma",
+    "id": "s0593"
+  },
+  {
+    "level": 4,
+    "text": "📑 O sono e os sonhos",
+    "id": "s0594"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 400",
+    "id": "s0595"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 401",
+    "id": "s0596"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 402",
+    "id": "s0597"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 403",
+    "id": "s0598"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 404",
+    "id": "s0599"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 405",
+    "id": "s0600"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 406",
+    "id": "s0601"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 407",
+    "id": "s0602"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 408",
+    "id": "s0603"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 409",
+    "id": "s0604"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 410",
+    "id": "s0605"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 410.a",
+    "id": "s0606"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 411",
+    "id": "s0607"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 412",
+    "id": "s0608"
+  },
+  {
+    "level": 4,
+    "text": "📑 Visitas espíritas entre pessoas vivas",
+    "id": "s0609"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 413",
+    "id": "s0610"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 414",
+    "id": "s0611"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 415",
+    "id": "s0612"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 416",
+    "id": "s0613"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 417",
+    "id": "s0614"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 418",
+    "id": "s0615"
+  },
+  {
+    "level": 4,
+    "text": "📑 Transmissão oculta do pensamento",
+    "id": "s0616"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 419",
+    "id": "s0617"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 420",
+    "id": "s0618"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 421",
+    "id": "s0619"
+  },
+  {
+    "level": 4,
+    "text": "📑 Letargia, catalepsia, mortes aparentes",
+    "id": "s0620"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 422",
+    "id": "s0621"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 422.a",
+    "id": "s0622"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 423",
+    "id": "s0623"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 424",
+    "id": "s0624"
+  },
+  {
+    "level": 4,
+    "text": "📑 Sonambulismo",
+    "id": "s0625"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 425",
+    "id": "s0626"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 426",
+    "id": "s0627"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 427",
+    "id": "s0628"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 428",
+    "id": "s0629"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 429",
+    "id": "s0630"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 430",
+    "id": "s0631"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 431",
+    "id": "s0632"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 432",
+    "id": "s0633"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 433",
+    "id": "s0634"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 434",
+    "id": "s0635"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 435",
+    "id": "s0636"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 436",
+    "id": "s0637"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 437",
+    "id": "s0638"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 438",
+    "id": "s0639"
+  },
+  {
+    "level": 4,
+    "text": "📑 Êxtase",
+    "id": "s0640"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 439",
+    "id": "s0641"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 440",
+    "id": "s0642"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 441",
+    "id": "s0643"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 442",
+    "id": "s0644"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 443",
+    "id": "s0645"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 444",
+    "id": "s0646"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 445",
+    "id": "s0647"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 446",
+    "id": "s0648"
+  },
+  {
+    "level": 4,
+    "text": "📑 Dupla vista",
+    "id": "s0649"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 447",
+    "id": "s0650"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 448",
+    "id": "s0651"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 449",
+    "id": "s0652"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 450",
+    "id": "s0653"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 450.a",
+    "id": "s0654"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 451",
+    "id": "s0655"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 452",
+    "id": "s0656"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 453",
+    "id": "s0657"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 454",
+    "id": "s0658"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 454.a",
+    "id": "s0659"
+  },
+  {
+    "level": 4,
+    "text": "📑 Resumo teórico do sonambulismo, do êxtase e da dupla vista",
+    "id": "s0660"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 455",
+    "id": "s0661"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Intervenção no mundo material",
+    "id": "s0662"
+  },
+  {
+    "level": 4,
+    "text": "📑 Faculdade que têm os Espíritos de penetrar os nossos pensamentos",
+    "id": "s0663"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 456",
+    "id": "s0664"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 457",
+    "id": "s0665"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 457.a",
+    "id": "s0666"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 458",
+    "id": "s0667"
+  },
+  {
+    "level": 4,
+    "text": "📑 Influência oculta dos Espíritos em nossos pensamentos e atos",
+    "id": "s0668"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 459",
+    "id": "s0669"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 460",
+    "id": "s0670"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 461",
+    "id": "s0671"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 462",
+    "id": "s0672"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 463",
+    "id": "s0673"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 464",
+    "id": "s0674"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 465",
+    "id": "s0675"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 465.a",
+    "id": "s0676"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 465.b",
+    "id": "s0677"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 466",
+    "id": "s0678"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 467",
+    "id": "s0679"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 468",
+    "id": "s0680"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 469",
+    "id": "s0681"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 470",
+    "id": "s0682"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 471",
+    "id": "s0683"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 472",
+    "id": "s0684"
+  },
+  {
+    "level": 4,
+    "text": "📑 Possessos",
+    "id": "s0685"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 473",
+    "id": "s0686"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 474",
+    "id": "s0687"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 475",
+    "id": "s0688"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 476",
+    "id": "s0689"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 477",
+    "id": "s0690"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 478",
+    "id": "s0691"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 479",
+    "id": "s0692"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 480",
+    "id": "s0693"
+  },
+  {
+    "level": 4,
+    "text": "📑 Convulsionários",
+    "id": "s0694"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 481",
+    "id": "s0695"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 481.a",
+    "id": "s0696"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 482",
+    "id": "s0697"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 483",
+    "id": "s0698"
+  },
+  {
+    "level": 4,
+    "text": "📑 Afeição que os Espíritos votam a certas pessoas",
+    "id": "s0699"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 484",
+    "id": "s0700"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 485",
+    "id": "s0701"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 486",
+    "id": "s0702"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 487",
+    "id": "s0703"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 488",
+    "id": "s0704"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 488.a",
+    "id": "s0705"
+  },
+  {
+    "level": 4,
+    "text": "📑 Anjos da guarda. Espíritos protetores, familiares ou simpáticos",
+    "id": "s0706"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 489",
+    "id": "s0707"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 490",
+    "id": "s0708"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 491",
+    "id": "s0709"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 492",
+    "id": "s0710"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 493",
+    "id": "s0711"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 493.a",
+    "id": "s0712"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 494",
+    "id": "s0713"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 495",
+    "id": "s0714"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 496",
+    "id": "s0715"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 497",
+    "id": "s0716"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 498",
+    "id": "s0717"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 499",
+    "id": "s0718"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 500",
+    "id": "s0719"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 501",
+    "id": "s0720"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 502",
+    "id": "s0721"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 502.a",
+    "id": "s0722"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 503",
+    "id": "s0723"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 504",
+    "id": "s0724"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 504.a",
+    "id": "s0725"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 505",
+    "id": "s0726"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 506",
+    "id": "s0727"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 507",
+    "id": "s0728"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 508",
+    "id": "s0729"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 509",
+    "id": "s0730"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 510",
+    "id": "s0731"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 511",
+    "id": "s0732"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 512",
+    "id": "s0733"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 513",
+    "id": "s0734"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 513.a",
+    "id": "s0735"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 514",
+    "id": "s0736"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 515",
+    "id": "s0737"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 516",
+    "id": "s0738"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 517",
+    "id": "s0739"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 518",
+    "id": "s0740"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 519",
+    "id": "s0741"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 520",
+    "id": "s0742"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 521",
+    "id": "s0743"
+  },
+  {
+    "level": 4,
+    "text": "📑 Pressentimentos",
+    "id": "s0744"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 522",
+    "id": "s0745"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 523",
+    "id": "s0746"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 524",
+    "id": "s0747"
+  },
+  {
+    "level": 4,
+    "text": "📑 Influência dos Espíritos nos acontecimentos da vida",
+    "id": "s0748"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 525",
+    "id": "s0749"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 525.a",
+    "id": "s0750"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 526",
+    "id": "s0751"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 527",
+    "id": "s0752"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 528",
+    "id": "s0753"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 529",
+    "id": "s0754"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 529.a",
+    "id": "s0755"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 530",
+    "id": "s0756"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 530.a",
+    "id": "s0757"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 531",
+    "id": "s0758"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 531.a",
+    "id": "s0759"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 532",
+    "id": "s0760"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 533",
+    "id": "s0761"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 533.a",
+    "id": "s0762"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 534",
+    "id": "s0763"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 535",
+    "id": "s0764"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 535.a",
+    "id": "s0765"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 535.b",
+    "id": "s0766"
+  },
+  {
+    "level": 4,
+    "text": "📑 Ação dos Espíritos nos fenômenos da Natureza",
+    "id": "s0767"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 536",
+    "id": "s0768"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 536.a",
+    "id": "s0769"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 536.b",
+    "id": "s0770"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 537",
+    "id": "s0771"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 537.a",
+    "id": "s0772"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 538",
+    "id": "s0773"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 538.a",
+    "id": "s0774"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 539",
+    "id": "s0775"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 540",
+    "id": "s0776"
+  },
+  {
+    "level": 4,
+    "text": "📑 Os Espíritos durante os combates",
+    "id": "s0777"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 541",
+    "id": "s0778"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 542",
+    "id": "s0779"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 543",
+    "id": "s0780"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 544",
+    "id": "s0781"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 545",
+    "id": "s0782"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 546",
+    "id": "s0783"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 547",
+    "id": "s0784"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 547.a",
+    "id": "s0785"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 548",
+    "id": "s0786"
+  },
+  {
+    "level": 4,
+    "text": "📑 Pactos",
+    "id": "s0787"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 549",
+    "id": "s0788"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 550",
+    "id": "s0789"
+  },
+  {
+    "level": 4,
+    "text": "📑 Poder oculto. Talismãs. Feiticeiros",
+    "id": "s0790"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 551",
+    "id": "s0791"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 552",
+    "id": "s0792"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 553",
+    "id": "s0793"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 553.a",
+    "id": "s0794"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 554",
+    "id": "s0795"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 555",
+    "id": "s0796"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 556",
+    "id": "s0797"
+  },
+  {
+    "level": 4,
+    "text": "📑 Bênçãos e maldições",
+    "id": "s0798"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 557",
+    "id": "s0799"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Ocupações e missões",
+    "id": "s0800"
+  },
+  {
+    "level": 4,
+    "text": "📑 Subcapítulo",
+    "id": "s0801"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 558",
+    "id": "s0802"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 559",
+    "id": "s0803"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 560",
+    "id": "s0804"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 561",
+    "id": "s0805"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 562",
+    "id": "s0806"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 562.a",
+    "id": "s0807"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 563",
+    "id": "s0808"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 563.a",
+    "id": "s0809"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 564",
+    "id": "s0810"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 565",
+    "id": "s0811"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 566",
+    "id": "s0812"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 566.a",
+    "id": "s0813"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 567",
+    "id": "s0814"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 568",
+    "id": "s0815"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 569",
+    "id": "s0816"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 570",
+    "id": "s0817"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 571",
+    "id": "s0818"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 572",
+    "id": "s0819"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 572.a",
+    "id": "s0820"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 573",
+    "id": "s0821"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 574",
+    "id": "s0822"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 574.a",
+    "id": "s0823"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 575",
+    "id": "s0824"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 576",
+    "id": "s0825"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 577",
+    "id": "s0826"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 578",
+    "id": "s0827"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 578.a",
+    "id": "s0828"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 579",
+    "id": "s0829"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 580",
+    "id": "s0830"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 581",
+    "id": "s0831"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 582",
+    "id": "s0832"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 583",
+    "id": "s0833"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 583.a",
+    "id": "s0834"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 584",
+    "id": "s0835"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 584.a",
+    "id": "s0836"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Os três reinos",
+    "id": "s0837"
+  },
+  {
+    "level": 4,
+    "text": "📑 Os minerais e as plantas",
+    "id": "s0838"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 585",
+    "id": "s0839"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 586",
+    "id": "s0840"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 587",
+    "id": "s0841"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 588",
+    "id": "s0842"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 589",
+    "id": "s0843"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 590",
+    "id": "s0844"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 591",
+    "id": "s0845"
+  },
+  {
+    "level": 4,
+    "text": "📑 Os animais e o homem",
+    "id": "s0846"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 592",
+    "id": "s0847"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 593",
+    "id": "s0848"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 594",
+    "id": "s0849"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 594.a",
+    "id": "s0850"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 595",
+    "id": "s0851"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 596",
+    "id": "s0852"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 597",
+    "id": "s0853"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 597.a",
+    "id": "s0854"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 598",
+    "id": "s0855"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 599",
+    "id": "s0856"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 600",
+    "id": "s0857"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 601",
+    "id": "s0858"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 602",
+    "id": "s0859"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 603",
+    "id": "s0860"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 604",
+    "id": "s0861"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 604.a",
+    "id": "s0862"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 605",
+    "id": "s0863"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 605.a",
+    "id": "s0864"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 606",
+    "id": "s0865"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 606.a",
+    "id": "s0866"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 607",
+    "id": "s0867"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 607.a",
+    "id": "s0868"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 607.b",
+    "id": "s0869"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 608",
+    "id": "s0870"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 609",
+    "id": "s0871"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 610",
+    "id": "s0872"
+  },
+  {
+    "level": 4,
+    "text": "📑 Metempsicose",
+    "id": "s0873"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 611",
+    "id": "s0874"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 612",
+    "id": "s0875"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 613",
+    "id": "s0876"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 3. Leis morais",
+    "id": "s0877"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei divina",
+    "id": "s0878"
+  },
+  {
+    "level": 4,
+    "text": "📑 Caracteres da lei natural",
+    "id": "s0879"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 614",
+    "id": "s0880"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 615",
+    "id": "s0881"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 616",
+    "id": "s0882"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 617",
+    "id": "s0883"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 617.a",
+    "id": "s0884"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 618",
+    "id": "s0885"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conhecimento da lei natural",
+    "id": "s0886"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 619",
+    "id": "s0887"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 620",
+    "id": "s0888"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 621",
+    "id": "s0889"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 621.a",
+    "id": "s0890"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 622",
+    "id": "s0891"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 623",
+    "id": "s0892"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 624",
+    "id": "s0893"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 625",
+    "id": "s0894"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 626",
+    "id": "s0895"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 627",
+    "id": "s0896"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 628",
+    "id": "s0897"
+  },
+  {
+    "level": 4,
+    "text": "📑 O bem e o mal",
+    "id": "s0898"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 629",
+    "id": "s0899"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 630",
+    "id": "s0900"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 631",
+    "id": "s0901"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 632",
+    "id": "s0902"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 633",
+    "id": "s0903"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 634",
+    "id": "s0904"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 635",
+    "id": "s0905"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 636",
+    "id": "s0906"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 637",
+    "id": "s0907"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 638",
+    "id": "s0908"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 639",
+    "id": "s0909"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 640",
+    "id": "s0910"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 641",
+    "id": "s0911"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 642",
+    "id": "s0912"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 643",
+    "id": "s0913"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 644",
+    "id": "s0914"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 645",
+    "id": "s0915"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 646",
+    "id": "s0916"
+  },
+  {
+    "level": 4,
+    "text": "📑 Divisão da lei natural",
+    "id": "s0917"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 647",
+    "id": "s0918"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 648",
+    "id": "s0919"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de adoração",
+    "id": "s0920"
+  },
+  {
+    "level": 4,
+    "text": "📑 Objetivo da adoração",
+    "id": "s0921"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 649",
+    "id": "s0922"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 650",
+    "id": "s0923"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 651",
+    "id": "s0924"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 652",
+    "id": "s0925"
+  },
+  {
+    "level": 4,
+    "text": "📑 Adoração exterior",
+    "id": "s0926"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 653",
+    "id": "s0927"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 653.a",
+    "id": "s0928"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 654",
+    "id": "s0929"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 655",
+    "id": "s0930"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 656",
+    "id": "s0931"
+  },
+  {
+    "level": 4,
+    "text": "📑 Vida contemplativa",
+    "id": "s0932"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 657",
+    "id": "s0933"
+  },
+  {
+    "level": 4,
+    "text": "📑 A prece",
+    "id": "s0934"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 658",
+    "id": "s0935"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 659",
+    "id": "s0936"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 660",
+    "id": "s0937"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 660.a",
+    "id": "s0938"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 661",
+    "id": "s0939"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 662",
+    "id": "s0940"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 663",
+    "id": "s0941"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 664",
+    "id": "s0942"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 665",
+    "id": "s0943"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 666",
+    "id": "s0944"
+  },
+  {
+    "level": 4,
+    "text": "📑 Politeísmo",
+    "id": "s0945"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 667",
+    "id": "s0946"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 668",
+    "id": "s0947"
+  },
+  {
+    "level": 4,
+    "text": "📑 Sacrifícios",
+    "id": "s0948"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 669",
+    "id": "s0949"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 669.a",
+    "id": "s0950"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 669.b",
+    "id": "s0951"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 670",
+    "id": "s0952"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 671",
+    "id": "s0953"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 672",
+    "id": "s0954"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 673",
+    "id": "s0955"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei do trabalho",
+    "id": "s0956"
+  },
+  {
+    "level": 4,
+    "text": "📑 Necessidade do trabalho",
+    "id": "s0957"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 674",
+    "id": "s0958"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 675",
+    "id": "s0959"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 676",
+    "id": "s0960"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 677",
+    "id": "s0961"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 678",
+    "id": "s0962"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 679",
+    "id": "s0963"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 680",
+    "id": "s0964"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 681",
+    "id": "s0965"
+  },
+  {
+    "level": 4,
+    "text": "📑 Limite do trabalho. Repouso",
+    "id": "s0966"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 682",
+    "id": "s0967"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 683",
+    "id": "s0968"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 684",
+    "id": "s0969"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 685",
+    "id": "s0970"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 685.a",
+    "id": "s0971"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de reprodução",
+    "id": "s0972"
+  },
+  {
+    "level": 4,
+    "text": "📑 População do globo",
+    "id": "s0973"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 686",
+    "id": "s0974"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 687",
+    "id": "s0975"
+  },
+  {
+    "level": 4,
+    "text": "📑 Sucessão e aperfeiçoamento das raças",
+    "id": "s0976"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 688",
+    "id": "s0977"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 689",
+    "id": "s0978"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 690",
+    "id": "s0979"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 691",
+    "id": "s0980"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 692",
+    "id": "s0981"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 692.a",
+    "id": "s0982"
+  },
+  {
+    "level": 4,
+    "text": "📑 Obstáculos à reprodução",
+    "id": "s0983"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 693",
+    "id": "s0984"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 693.a",
+    "id": "s0985"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 694",
+    "id": "s0986"
+  },
+  {
+    "level": 4,
+    "text": "📑 Casamento e celibato",
+    "id": "s0987"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 695",
+    "id": "s0988"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 696",
+    "id": "s0989"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 697",
+    "id": "s0990"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 698",
+    "id": "s0991"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 699",
+    "id": "s0992"
+  },
+  {
+    "level": 4,
+    "text": "📑 Poligamia",
+    "id": "s0993"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 700",
+    "id": "s0994"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 701",
+    "id": "s0995"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de conservação",
+    "id": "s0996"
+  },
+  {
+    "level": 4,
+    "text": "📑 Instinto de conservação",
+    "id": "s0997"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 702",
+    "id": "s0998"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 703",
+    "id": "s0999"
+  },
+  {
+    "level": 4,
+    "text": "📑 Meios de conservação",
+    "id": "s1000"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 704",
+    "id": "s1001"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 705",
+    "id": "s1002"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 706",
+    "id": "s1003"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 707",
+    "id": "s1004"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 708",
+    "id": "s1005"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 709",
+    "id": "s1006"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 710",
+    "id": "s1007"
+  },
+  {
+    "level": 4,
+    "text": "📑 Gozo dos bens terrenos",
+    "id": "s1008"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 711",
+    "id": "s1009"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 712",
+    "id": "s1010"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 712.a",
+    "id": "s1011"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 713",
+    "id": "s1012"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 714",
+    "id": "s1013"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 714.a",
+    "id": "s1014"
+  },
+  {
+    "level": 4,
+    "text": "📑 Necessário e supérfluo",
+    "id": "s1015"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 715",
+    "id": "s1016"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 716",
+    "id": "s1017"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 717",
+    "id": "s1018"
+  },
+  {
+    "level": 4,
+    "text": "📑 Privações voluntárias. Mortificações",
+    "id": "s1019"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 718",
+    "id": "s1020"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 719",
+    "id": "s1021"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 720",
+    "id": "s1022"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 720.a",
+    "id": "s1023"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 721",
+    "id": "s1024"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 722",
+    "id": "s1025"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 723",
+    "id": "s1026"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 724",
+    "id": "s1027"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 725",
+    "id": "s1028"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 726",
+    "id": "s1029"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 727",
+    "id": "s1030"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de destruição",
+    "id": "s1031"
+  },
+  {
+    "level": 4,
+    "text": "📑 Destruição necessária e destruição abusiva",
+    "id": "s1032"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 728",
+    "id": "s1033"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 728.a",
+    "id": "s1034"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 729",
+    "id": "s1035"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 730",
+    "id": "s1036"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 731",
+    "id": "s1037"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 732",
+    "id": "s1038"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 733",
+    "id": "s1039"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 734",
+    "id": "s1040"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 735",
+    "id": "s1041"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 736",
+    "id": "s1042"
+  },
+  {
+    "level": 4,
+    "text": "📑 Flagelos destruidores",
+    "id": "s1043"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 737",
+    "id": "s1044"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 738",
+    "id": "s1045"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 738.a",
+    "id": "s1046"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 738.b",
+    "id": "s1047"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 739",
+    "id": "s1048"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 740",
+    "id": "s1049"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 741",
+    "id": "s1050"
+  },
+  {
+    "level": 4,
+    "text": "📑 Guerras",
+    "id": "s1051"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 742",
+    "id": "s1052"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 743",
+    "id": "s1053"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 744",
+    "id": "s1054"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 744.a",
+    "id": "s1055"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 745",
+    "id": "s1056"
+  },
+  {
+    "level": 4,
+    "text": "📑 Assassínio",
+    "id": "s1057"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 746",
+    "id": "s1058"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 747",
+    "id": "s1059"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 748",
+    "id": "s1060"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 749",
+    "id": "s1061"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 750",
+    "id": "s1062"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 751",
+    "id": "s1063"
+  },
+  {
+    "level": 4,
+    "text": "📑 Crueldade",
+    "id": "s1064"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 752",
+    "id": "s1065"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 753",
+    "id": "s1066"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 754",
+    "id": "s1067"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 755",
+    "id": "s1068"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 756",
+    "id": "s1069"
+  },
+  {
+    "level": 4,
+    "text": "📑 Duelo",
+    "id": "s1070"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 757",
+    "id": "s1071"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 758",
+    "id": "s1072"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 758.a",
+    "id": "s1073"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 759",
+    "id": "s1074"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 759.a",
+    "id": "s1075"
+  },
+  {
+    "level": 4,
+    "text": "📑 Pena de morte",
+    "id": "s1076"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 760",
+    "id": "s1077"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 761",
+    "id": "s1078"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 762",
+    "id": "s1079"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 763",
+    "id": "s1080"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 764",
+    "id": "s1081"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 765",
+    "id": "s1082"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de sociedade",
+    "id": "s1083"
+  },
+  {
+    "level": 4,
+    "text": "📑 Necessidade da vida social",
+    "id": "s1084"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 766",
+    "id": "s1085"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 767",
+    "id": "s1086"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 768",
+    "id": "s1087"
+  },
+  {
+    "level": 4,
+    "text": "📑 Vida de insulamento. Voto de silêncio",
+    "id": "s1088"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 769",
+    "id": "s1089"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 770",
+    "id": "s1090"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 770.a",
+    "id": "s1091"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 771",
+    "id": "s1092"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 771.a",
+    "id": "s1093"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 772",
+    "id": "s1094"
+  },
+  {
+    "level": 4,
+    "text": "📑 Laços de família",
+    "id": "s1095"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 773",
+    "id": "s1096"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 774",
+    "id": "s1097"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 775",
+    "id": "s1098"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei do progresso",
+    "id": "s1099"
+  },
+  {
+    "level": 4,
+    "text": "📑 Estado de natureza",
+    "id": "s1100"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 776",
+    "id": "s1101"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 777",
+    "id": "s1102"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 778",
+    "id": "s1103"
+  },
+  {
+    "level": 4,
+    "text": "📑 Marcha do progresso",
+    "id": "s1104"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 779",
+    "id": "s1105"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 780",
+    "id": "s1106"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 780.a",
+    "id": "s1107"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 780.b",
+    "id": "s1108"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 781",
+    "id": "s1109"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 781.a",
+    "id": "s1110"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 782",
+    "id": "s1111"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 783",
+    "id": "s1112"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 784",
+    "id": "s1113"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 785",
+    "id": "s1114"
+  },
+  {
+    "level": 4,
+    "text": "📑 Povos degenerados",
+    "id": "s1115"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 786",
+    "id": "s1116"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 787",
+    "id": "s1117"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 787.a",
+    "id": "s1118"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 787.b",
+    "id": "s1119"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 788",
+    "id": "s1120"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 789",
+    "id": "s1121"
+  },
+  {
+    "level": 4,
+    "text": "📑 Civilização",
+    "id": "s1122"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 790",
+    "id": "s1123"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 790.a",
+    "id": "s1124"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 791",
+    "id": "s1125"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 792",
+    "id": "s1126"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 792.a",
+    "id": "s1127"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 793",
+    "id": "s1128"
+  },
+  {
+    "level": 4,
+    "text": "📑 Progresso da legislação humana",
+    "id": "s1129"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 794",
+    "id": "s1130"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 795",
+    "id": "s1131"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 796",
+    "id": "s1132"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 797",
+    "id": "s1133"
+  },
+  {
+    "level": 4,
+    "text": "📑 Influência do Espiritismo no progresso",
+    "id": "s1134"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 798",
+    "id": "s1135"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 799",
+    "id": "s1136"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 800",
+    "id": "s1137"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 801",
+    "id": "s1138"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 802",
+    "id": "s1139"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de igualdade",
+    "id": "s1140"
+  },
+  {
+    "level": 4,
+    "text": "📑 Igualdade natural",
+    "id": "s1141"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 803",
+    "id": "s1142"
+  },
+  {
+    "level": 4,
+    "text": "📑 Desigualdade das aptidões",
+    "id": "s1143"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 804",
+    "id": "s1144"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 805",
+    "id": "s1145"
+  },
+  {
+    "level": 4,
+    "text": "📑 Desigualdades sociais",
+    "id": "s1146"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 806",
+    "id": "s1147"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 806.a",
+    "id": "s1148"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 807",
+    "id": "s1149"
+  },
+  {
+    "level": 4,
+    "text": "📑 Desigualdade das riquezas",
+    "id": "s1150"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 808",
+    "id": "s1151"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 808.a",
+    "id": "s1152"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 809",
+    "id": "s1153"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 810",
+    "id": "s1154"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 811",
+    "id": "s1155"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 811.a",
+    "id": "s1156"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 812",
+    "id": "s1157"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 812.a",
+    "id": "s1158"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 813",
+    "id": "s1159"
+  },
+  {
+    "level": 4,
+    "text": "📑 As provas de riqueza e de miséria",
+    "id": "s1160"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 814",
+    "id": "s1161"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 815",
+    "id": "s1162"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 816",
+    "id": "s1163"
+  },
+  {
+    "level": 4,
+    "text": "📑 Igualdade dos direitos do homem e da mulher",
+    "id": "s1164"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 817",
+    "id": "s1165"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 818",
+    "id": "s1166"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 819",
+    "id": "s1167"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 820",
+    "id": "s1168"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 821",
+    "id": "s1169"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 822",
+    "id": "s1170"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 822.a",
+    "id": "s1171"
+  },
+  {
+    "level": 4,
+    "text": "📑 Igualdade perante o túmulo",
+    "id": "s1172"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 823",
+    "id": "s1173"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 823.a",
+    "id": "s1174"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 824",
+    "id": "s1175"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de liberdade",
+    "id": "s1176"
+  },
+  {
+    "level": 4,
+    "text": "📑 Liberdade natural",
+    "id": "s1177"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 825",
+    "id": "s1178"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 826",
+    "id": "s1179"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 827",
+    "id": "s1180"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 828",
+    "id": "s1181"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 828.a",
+    "id": "s1182"
+  },
+  {
+    "level": 4,
+    "text": "📑 Escravidão",
+    "id": "s1183"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 829",
+    "id": "s1184"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 830",
+    "id": "s1185"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 831",
+    "id": "s1186"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 832",
+    "id": "s1187"
+  },
+  {
+    "level": 4,
+    "text": "📑 Liberdade de pensar",
+    "id": "s1188"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 833",
+    "id": "s1189"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 834",
+    "id": "s1190"
+  },
+  {
+    "level": 4,
+    "text": "📑 Liberdade de consciência",
+    "id": "s1191"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 835",
+    "id": "s1192"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 836",
+    "id": "s1193"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 837",
+    "id": "s1194"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 838",
+    "id": "s1195"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 839",
+    "id": "s1196"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 840",
+    "id": "s1197"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 841",
+    "id": "s1198"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 842",
+    "id": "s1199"
+  },
+  {
+    "level": 4,
+    "text": "📑 Livre-arbítrio",
+    "id": "s1200"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 843",
+    "id": "s1201"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 844",
+    "id": "s1202"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 845",
+    "id": "s1203"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 846",
+    "id": "s1204"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 847",
+    "id": "s1205"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 848",
+    "id": "s1206"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 849",
+    "id": "s1207"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 850",
+    "id": "s1208"
+  },
+  {
+    "level": 4,
+    "text": "📑 Fatalidade",
+    "id": "s1209"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 851",
+    "id": "s1210"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 852",
+    "id": "s1211"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 853",
+    "id": "s1212"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 853.a",
+    "id": "s1213"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 854",
+    "id": "s1214"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 855",
+    "id": "s1215"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 856",
+    "id": "s1216"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 857",
+    "id": "s1217"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 858",
+    "id": "s1218"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 859",
+    "id": "s1219"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 859.a",
+    "id": "s1220"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 860",
+    "id": "s1221"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 861",
+    "id": "s1222"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 862",
+    "id": "s1223"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 863",
+    "id": "s1224"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 864",
+    "id": "s1225"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 865",
+    "id": "s1226"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 866",
+    "id": "s1227"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 867",
+    "id": "s1228"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conhecimento do futuro",
+    "id": "s1229"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 868",
+    "id": "s1230"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 869",
+    "id": "s1231"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 870",
+    "id": "s1232"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 871",
+    "id": "s1233"
+  },
+  {
+    "level": 4,
+    "text": "📑 Resumo teórico do móvel das ações humanas",
+    "id": "s1234"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 872",
+    "id": "s1235"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Lei de justiça, amor, e caridade",
+    "id": "s1236"
+  },
+  {
+    "level": 4,
+    "text": "📑 Justiça e direitos naturais",
+    "id": "s1237"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 873",
+    "id": "s1238"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 874",
+    "id": "s1239"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 875",
+    "id": "s1240"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 875.a",
+    "id": "s1241"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 876",
+    "id": "s1242"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 877",
+    "id": "s1243"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 878",
+    "id": "s1244"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 878.a",
+    "id": "s1245"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 879",
+    "id": "s1246"
+  },
+  {
+    "level": 4,
+    "text": "📑 Direito de propriedade. Roubo",
+    "id": "s1247"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 880",
+    "id": "s1248"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 881",
+    "id": "s1249"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 882",
+    "id": "s1250"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 883",
+    "id": "s1251"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 883.a",
+    "id": "s1252"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 884",
+    "id": "s1253"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 885",
+    "id": "s1254"
+  },
+  {
+    "level": 4,
+    "text": "📑 Caridade e amor do próximo",
+    "id": "s1255"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 886",
+    "id": "s1256"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 887",
+    "id": "s1257"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 888",
+    "id": "s1258"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 888.a",
+    "id": "s1259"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 889",
+    "id": "s1260"
+  },
+  {
+    "level": 4,
+    "text": "📑 Amor materno e filial",
+    "id": "s1261"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 890",
+    "id": "s1262"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 891",
+    "id": "s1263"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 892",
+    "id": "s1264"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Perfeição moral",
+    "id": "s1265"
+  },
+  {
+    "level": 4,
+    "text": "📑 As virtudes e os vícios",
+    "id": "s1266"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 893",
+    "id": "s1267"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 894",
+    "id": "s1268"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 895",
+    "id": "s1269"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 896",
+    "id": "s1270"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 897",
+    "id": "s1271"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 897.a",
+    "id": "s1272"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 897.b",
+    "id": "s1273"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 898",
+    "id": "s1274"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 899",
+    "id": "s1275"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 900",
+    "id": "s1276"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 901",
+    "id": "s1277"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 902",
+    "id": "s1278"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 903",
+    "id": "s1279"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 904",
+    "id": "s1280"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 904.a",
+    "id": "s1281"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 905",
+    "id": "s1282"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 906",
+    "id": "s1283"
+  },
+  {
+    "level": 4,
+    "text": "📑 Paixões",
+    "id": "s1284"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 907",
+    "id": "s1285"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 908",
+    "id": "s1286"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 909",
+    "id": "s1287"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 910",
+    "id": "s1288"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 911",
+    "id": "s1289"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 912",
+    "id": "s1290"
+  },
+  {
+    "level": 4,
+    "text": "📑 O egoísmo",
+    "id": "s1291"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 913",
+    "id": "s1292"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 914",
+    "id": "s1293"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 915",
+    "id": "s1294"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 916",
+    "id": "s1295"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 917",
+    "id": "s1296"
+  },
+  {
+    "level": 4,
+    "text": "📑 Caracteres do homem de bem",
+    "id": "s1297"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 918",
+    "id": "s1298"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conhecimento de si mesmo",
+    "id": "s1299"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 919",
+    "id": "s1300"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 919.a",
+    "id": "s1301"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 4. Esperanças e Consolações",
+    "id": "s1302"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Penas e felicidades materiais",
+    "id": "s1303"
+  },
+  {
+    "level": 4,
+    "text": "📑 Felicidade e infelicidade relativas",
+    "id": "s1304"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 920",
+    "id": "s1305"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 921",
+    "id": "s1306"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 922",
+    "id": "s1307"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 923",
+    "id": "s1308"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 924",
+    "id": "s1309"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 925",
+    "id": "s1310"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 926",
+    "id": "s1311"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 927",
+    "id": "s1312"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 928",
+    "id": "s1313"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 928.a",
+    "id": "s1314"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 929",
+    "id": "s1315"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 930",
+    "id": "s1316"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 931",
+    "id": "s1317"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 932",
+    "id": "s1318"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 933",
+    "id": "s1319"
+  },
+  {
+    "level": 4,
+    "text": "📑 Perda dos entes queridos",
+    "id": "s1320"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 934",
+    "id": "s1321"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 935",
+    "id": "s1322"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 936",
+    "id": "s1323"
+  },
+  {
+    "level": 4,
+    "text": "📑 Decepções. Ingratidão. Afeições destruídas",
+    "id": "s1324"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 937",
+    "id": "s1325"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 938",
+    "id": "s1326"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 938.a",
+    "id": "s1327"
+  },
+  {
+    "level": 4,
+    "text": "📑 Uniões antipáticas",
+    "id": "s1328"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 939",
+    "id": "s1329"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 940",
+    "id": "s1330"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 940.a",
+    "id": "s1331"
+  },
+  {
+    "level": 4,
+    "text": "📑 Temor da morte",
+    "id": "s1332"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 941",
+    "id": "s1333"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 942",
+    "id": "s1334"
+  },
+  {
+    "level": 4,
+    "text": "📑 Desgosto da vida. Suicídio",
+    "id": "s1335"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 943",
+    "id": "s1336"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 944",
+    "id": "s1337"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 944.a",
+    "id": "s1338"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 945",
+    "id": "s1339"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 946",
+    "id": "s1340"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 946.a",
+    "id": "s1341"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 947",
+    "id": "s1342"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 948",
+    "id": "s1343"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 949",
+    "id": "s1344"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 950",
+    "id": "s1345"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 951",
+    "id": "s1346"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 952",
+    "id": "s1347"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 952.a",
+    "id": "s1348"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 953",
+    "id": "s1349"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 953.a",
+    "id": "s1350"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 953.b",
+    "id": "s1351"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 954",
+    "id": "s1352"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 955",
+    "id": "s1353"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 956",
+    "id": "s1354"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 957",
+    "id": "s1355"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Penas e felicidades futuras",
+    "id": "s1356"
+  },
+  {
+    "level": 4,
+    "text": "📑 O nada. Vida futura",
+    "id": "s1357"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 958",
+    "id": "s1358"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 959",
+    "id": "s1359"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intuição das penas e gozos futuros",
+    "id": "s1360"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 960",
+    "id": "s1361"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 961",
+    "id": "s1362"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 962",
+    "id": "s1363"
+  },
+  {
+    "level": 4,
+    "text": "📑 Intervenção de Deus nas penas e recompensas",
+    "id": "s1364"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 963",
+    "id": "s1365"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 964",
+    "id": "s1366"
+  },
+  {
+    "level": 4,
+    "text": "📑 Natureza das penas e gozos futuros",
+    "id": "s1367"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 965",
+    "id": "s1368"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 966",
+    "id": "s1369"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 967",
+    "id": "s1370"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 968",
+    "id": "s1371"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 969",
+    "id": "s1372"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 970",
+    "id": "s1373"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 971",
+    "id": "s1374"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 971.a",
+    "id": "s1375"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 972",
+    "id": "s1376"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 972.a",
+    "id": "s1377"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 973",
+    "id": "s1378"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 974",
+    "id": "s1379"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 974.a",
+    "id": "s1380"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 975",
+    "id": "s1381"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 976",
+    "id": "s1382"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 976.a",
+    "id": "s1383"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 977",
+    "id": "s1384"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 977.a",
+    "id": "s1385"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 978",
+    "id": "s1386"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 979",
+    "id": "s1387"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 980",
+    "id": "s1388"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 981",
+    "id": "s1389"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 982",
+    "id": "s1390"
+  },
+  {
+    "level": 4,
+    "text": "📑 Penas temporais",
+    "id": "s1391"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 983",
+    "id": "s1392"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 984",
+    "id": "s1393"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 985",
+    "id": "s1394"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 986",
+    "id": "s1395"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 987",
+    "id": "s1396"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 988",
+    "id": "s1397"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 989",
+    "id": "s1398"
+  },
+  {
+    "level": 4,
+    "text": "📑 Expiação e arrependimento",
+    "id": "s1399"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 990",
+    "id": "s1400"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 991",
+    "id": "s1401"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 992",
+    "id": "s1402"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 993",
+    "id": "s1403"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 994",
+    "id": "s1404"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 995",
+    "id": "s1405"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 995.a",
+    "id": "s1406"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 996",
+    "id": "s1407"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 997",
+    "id": "s1408"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 998",
+    "id": "s1409"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 999",
+    "id": "s1410"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 999.a",
+    "id": "s1411"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1000",
+    "id": "s1412"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1001",
+    "id": "s1413"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1002",
+    "id": "s1414"
+  },
+  {
+    "level": 4,
+    "text": "📑 Duração das penas futuras",
+    "id": "s1415"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1003",
+    "id": "s1416"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1004",
+    "id": "s1417"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1005",
+    "id": "s1418"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1006",
+    "id": "s1419"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1007",
+    "id": "s1420"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1008",
+    "id": "s1421"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1009",
+    "id": "s1422"
+  },
+  {
+    "level": 4,
+    "text": "📑 Ressurreição da carne",
+    "id": "s1423"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1010",
+    "id": "s1424"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1011",
+    "id": "s1425"
+  },
+  {
+    "level": 4,
+    "text": "📑 Paraíso, inferno e purgatório",
+    "id": "s1426"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1012",
+    "id": "s1427"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1012.a",
+    "id": "s1428"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1013",
+    "id": "s1429"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1014",
+    "id": "s1430"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1014.a",
+    "id": "s1431"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1015",
+    "id": "s1432"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1016",
+    "id": "s1433"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1017",
+    "id": "s1434"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1018",
+    "id": "s1435"
+  },
+  {
+    "level": 5,
+    "text": "#️⃣ 1019",
+    "id": "s1436"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 5. Conclusão",
+    "id": "s1437"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Conclusão",
+    "id": "s1438"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 01",
+    "id": "s1439"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 02",
+    "id": "s1440"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 03",
+    "id": "s1441"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 04",
+    "id": "s1442"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 05",
+    "id": "s1443"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 06",
+    "id": "s1444"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 07",
+    "id": "s1445"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 08",
+    "id": "s1446"
+  },
+  {
+    "level": 4,
+    "text": "📑 Conclusão 09",
+    "id": "s1447"
+  },
+  {
+    "level": 2,
+    "text": "🗃️ 6. Pós-textual",
+    "id": "s1448"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Nota explicativa",
+    "id": "s1449"
+  },
+  {
+    "level": 3,
+    "text": "🗂️ Índice geral",
+    "id": "s1450"
+  },
+  {
+    "level": 4,
+    "text": "📑 Termos relacionados",
+    "id": "s1451"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aberração",
+    "id": "s1452"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aborto",
+    "id": "s1453"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Abuso",
+    "id": "s1454"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Acaso",
+    "id": "s1455"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ação",
+    "id": "s1456"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aceitação",
+    "id": "s1457"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Acerto",
+    "id": "s1458"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Adão",
+    "id": "s1459"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Adolescência",
+    "id": "s1460"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Adoração",
+    "id": "s1461"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Afeição",
+    "id": "s1462"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Afinidade",
+    "id": "s1463"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aflição",
+    "id": "s1464"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Agostinho, Santo",
+    "id": "s1465"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Agradecimento",
+    "id": "s1466"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Alcorão",
+    "id": "s1467"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Além-túmulo",
+    "id": "s1468"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Alimentação",
+    "id": "s1469"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Alimento",
+    "id": "s1470"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Allan Kardec",
+    "id": "s1471"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Alma",
+    "id": "s1472"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ambição",
+    "id": "s1473"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ambiente",
+    "id": "s1474"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Amizade",
+    "id": "s1475"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Amor",
+    "id": "s1476"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ancianidade",
+    "id": "s1477"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Animais",
+    "id": "s1478"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Anjo",
+    "id": "s1479"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Anjo da guarda",
+    "id": "s1480"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Antepassados",
+    "id": "s1481"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Antiguidade",
+    "id": "s1482"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Antipatia",
+    "id": "s1483"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Antropofagia",
+    "id": "s1484"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Apego",
+    "id": "s1485"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aperfeiçoamento",
+    "id": "s1486"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aposentadoria",
+    "id": "s1487"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Aptidão",
+    "id": "s1488"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Arrependimento",
+    "id": "s1489"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Arte",
+    "id": "s1490"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Assassinato",
+    "id": "s1491"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Assembleia",
+    "id": "s1492"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Assistência espiritual",
+    "id": "s1493"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Assistência social",
+    "id": "s1494"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ateísmo",
+    "id": "s1495"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Atração",
+    "id": "s1496"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Autenticidade",
+    "id": "s1497"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Automatismo",
+    "id": "s1498"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Autor",
+    "id": "s1499"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Autoridade",
+    "id": "s1500"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Avaliação",
+    "id": "s1501"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Avareza",
+    "id": "s1502"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Batista, João",
+    "id": "s1503"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bem",
+    "id": "s1504"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bem-estar",
+    "id": "s1505"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bênção",
+    "id": "s1506"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Beneficência",
+    "id": "s1507"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Benevolência",
+    "id": "s1508"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bens",
+    "id": "s1509"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bens terrenos",
+    "id": "s1510"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Bíblia",
+    "id": "s1511"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Calamidades",
+    "id": "s1512"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Caligrafia",
+    "id": "s1513"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Calma",
+    "id": "s1514"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Canibais",
+    "id": "s1515"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Caráter",
+    "id": "s1516"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Caridade",
+    "id": "s1517"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Carne",
+    "id": "s1518"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Casamento",
+    "id": "s1519"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Castigo",
+    "id": "s1520"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cataclismo",
+    "id": "s1521"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Catalepsia",
+    "id": "s1522"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Causa primária",
+    "id": "s1523"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Celibato",
+    "id": "s1524"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Censura",
+    "id": "s1525"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Centros de força",
+    "id": "s1526"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cepa",
+    "id": "s1527"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cérebro",
+    "id": "s1528"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ceticismo",
+    "id": "s1529"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Céu",
+    "id": "s1530"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Charlatanismo",
+    "id": "s1531"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Choro",
+    "id": "s1532"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ciência",
+    "id": "s1533"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ciência espírita",
+    "id": "s1534"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ciúme",
+    "id": "s1535"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Civilização",
+    "id": "s1536"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Clarividência",
+    "id": "s1537"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Classificação",
+    "id": "s1538"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Clausura",
+    "id": "s1539"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Colônia",
+    "id": "s1540"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Combate",
+    "id": "s1541"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Combates",
+    "id": "s1542"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Começo dos tempos",
+    "id": "s1543"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cometa",
+    "id": "s1544"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Comportamento",
+    "id": "s1545"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Compreensão",
+    "id": "s1546"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Comunhão",
+    "id": "s1547"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Comunicabilidade dos espíritos",
+    "id": "s1548"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Comunicação",
+    "id": "s1549"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Concepção",
+    "id": "s1550"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Condenação",
+    "id": "s1551"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Conduta",
+    "id": "s1552"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Confiança",
+    "id": "s1553"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Conhecimento",
+    "id": "s1554"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Consciência",
+    "id": "s1555"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Conselho",
+    "id": "s1556"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Conservação",
+    "id": "s1557"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Consolação",
+    "id": "s1558"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Contradição",
+    "id": "s1559"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Convenção",
+    "id": "s1560"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Convivência",
+    "id": "s1561"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Convulsionários",
+    "id": "s1562"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Coração",
+    "id": "s1563"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cordão fluídico",
+    "id": "s1564"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Corpo",
+    "id": "s1565"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Corpo físico",
+    "id": "s1566"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Costume",
+    "id": "s1567"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cotidiano",
+    "id": "s1568"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cremação",
+    "id": "s1569"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Crença",
+    "id": "s1570"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Criação",
+    "id": "s1571"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Criança",
+    "id": "s1572"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Criatura",
+    "id": "s1573"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Crime",
+    "id": "s1574"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Criminalidade",
+    "id": "s1575"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Criminoso",
+    "id": "s1576"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cristianismo",
+    "id": "s1577"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cristo",
+    "id": "s1578"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Crítica",
+    "id": "s1579"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Crueldade",
+    "id": "s1580"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Culpa",
+    "id": "s1581"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Culpado",
+    "id": "s1582"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Cura",
+    "id": "s1583"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Decálogo",
+    "id": "s1584"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Decapitação",
+    "id": "s1585"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Decepção",
+    "id": "s1586"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Decisão",
+    "id": "s1587"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Demônio",
+    "id": "s1588"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desânimo",
+    "id": "s1589"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Descanso",
+    "id": "s1590"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Descobrimentos",
+    "id": "s1591"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desejo",
+    "id": "s1592"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desencarnação",
+    "id": "s1593"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desencarnado",
+    "id": "s1594"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desencarnado *ver também* Morto",
+    "id": "s1595"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desenvolvimento",
+    "id": "s1596"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desequilíbrio",
+    "id": "s1597"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desespero",
+    "id": "s1598"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desigualdades",
+    "id": "s1599"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desigualdades sociais",
+    "id": "s1600"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desmaterialização",
+    "id": "s1601"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Despertamento",
+    "id": "s1602"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desprendimento",
+    "id": "s1603"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Desprezo",
+    "id": "s1604"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Destino",
+    "id": "s1605"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Destruição",
+    "id": "s1606"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Destruição *ver também* Lei de destruição",
+    "id": "s1607"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Deturpação",
+    "id": "s1608"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Deus",
+    "id": "s1609"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dever",
+    "id": "s1610"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Diabrete",
+    "id": "s1611"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dificuldade",
+    "id": "s1612"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dignidade",
+    "id": "s1613"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dilúvio",
+    "id": "s1614"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dinheiro",
+    "id": "s1615"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Direito",
+    "id": "s1616"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Direitos humanos",
+    "id": "s1617"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dirigente",
+    "id": "s1618"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Discórdia",
+    "id": "s1619"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Discriminação",
+    "id": "s1620"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Divergências",
+    "id": "s1621"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Diversidade",
+    "id": "s1622"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Divindade",
+    "id": "s1623"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Divórcio",
+    "id": "s1624"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Divulgação",
+    "id": "s1625"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Doação",
+    "id": "s1626"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Doença *ver* Enfermidade",
+    "id": "s1627"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Doença mental",
+    "id": "s1628"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Doutrina",
+    "id": "s1629"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Duelo",
+    "id": "s1630"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Duende",
+    "id": "s1631"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Dupla vista",
+    "id": "s1632"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Eclesiastes",
+    "id": "s1633"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Economia",
+    "id": "s1634"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Educação",
+    "id": "s1635"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Efeitos inteligentes",
+    "id": "s1636"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Egoísmo",
+    "id": "s1637"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Elementos orgânicos",
+    "id": "s1638"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Eletricidade",
+    "id": "s1639"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Elias",
+    "id": "s1640"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Emancipação",
+    "id": "s1641"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Emancipação da alma",
+    "id": "s1642"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Encarnação",
+    "id": "s1643"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito bom e",
+    "id": "s1644"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Encarnado",
+    "id": "s1645"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito errante e",
+    "id": "s1646"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Encontro",
+    "id": "s1647"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Enfermidade",
+    "id": "s1648"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Engano",
+    "id": "s1649"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ensino",
+    "id": "s1650"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Entendimento",
+    "id": "s1651"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Entes queridos",
+    "id": "s1652"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Epilepsia",
+    "id": "s1653"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Época",
+    "id": "s1654"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Equilíbrio",
+    "id": "s1655"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Errante",
+    "id": "s1656"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Erraticidade",
+    "id": "s1657"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Erro",
+    "id": "s1658"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escala",
+    "id": "s1659"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escândalo",
+    "id": "s1660"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Esclarecimento",
+    "id": "s1661"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escolha",
+    "id": "s1662"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escravidão",
+    "id": "s1663"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escrita",
+    "id": "s1664"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Escritor",
+    "id": "s1665"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Esforço",
+    "id": "s1666"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Esmola",
+    "id": "s1667"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espaço",
+    "id": "s1668"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espiritismo",
+    "id": "s1669"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito",
+    "id": "s1670"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito bom",
+    "id": "s1671"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito de Verdade",
+    "id": "s1672"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito desencarnado",
+    "id": "s1673"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito encarnado",
+    "id": "s1674"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito endurecido",
+    "id": "s1675"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito errante",
+    "id": "s1676"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito familiar",
+    "id": "s1677"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito imperfeito",
+    "id": "s1678"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito impuro",
+    "id": "s1679"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito inferior",
+    "id": "s1680"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito leviano",
+    "id": "s1681"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito mau",
+    "id": "s1682"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito protetor",
+    "id": "s1683"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito puro",
+    "id": "s1684"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito simpático",
+    "id": "s1685"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito sofredor",
+    "id": "s1686"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito superior",
+    "id": "s1687"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito(s)",
+    "id": "s1688"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos batedores e perturbadores",
+    "id": "s1689"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos benévolos",
+    "id": "s1690"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos encarnados",
+    "id": "s1691"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos imperfeitos",
+    "id": "s1692"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos impuros",
+    "id": "s1693"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos inferiores",
+    "id": "s1694"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos levianos",
+    "id": "s1695"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos neutros",
+    "id": "s1696"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos protetores",
+    "id": "s1697"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos pseudossábios",
+    "id": "s1698"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos puros",
+    "id": "s1699"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos sábios",
+    "id": "s1700"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos simpáticos",
+    "id": "s1701"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritos superiores",
+    "id": "s1702"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espiritualismo",
+    "id": "s1703"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espíritismo e",
+    "id": "s1704"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Esquecimento",
+    "id": "s1705"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Estado de natureza",
+    "id": "s1706"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Esterilidade",
+    "id": "s1707"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Estudo",
+    "id": "s1708"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Estudo Sistematizado da Doutrina Espírita",
+    "id": "s1709"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Eternidade",
+    "id": "s1710"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Eutanásia",
+    "id": "s1711"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Evangelho",
+    "id": "s1712"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Evocação",
+    "id": "s1713"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Evolução",
+    "id": "s1714"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Espírito e",
+    "id": "s1715"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Excessos",
+    "id": "s1716"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Exemplo",
+    "id": "s1717"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Exílio",
+    "id": "s1718"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Existência",
+    "id": "s1719"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Exorcismo",
+    "id": "s1720"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Experiência",
+    "id": "s1721"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Experimentação",
+    "id": "s1722"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Expiação",
+    "id": "s1723"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Êxtase",
+    "id": "s1724"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Falibilidade",
+    "id": "s1725"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Falsidade",
+    "id": "s1726"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Falta",
+    "id": "s1727"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Família",
+    "id": "s1728"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fanatismo",
+    "id": "s1729"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fascinação",
+    "id": "s1730"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fatalidade",
+    "id": "s1731"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fato",
+    "id": "s1732"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fé",
+    "id": "s1733"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Feitiçaria",
+    "id": "s1734"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Feiticeiro",
+    "id": "s1735"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Felicidade",
+    "id": "s1736"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fenômeno",
+    "id": "s1737"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fenômeno espírita",
+    "id": "s1738"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fenômeno mediúnico",
+    "id": "s1739"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fenomenologia",
+    "id": "s1740"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fenômenos",
+    "id": "s1741"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Feto",
+    "id": "s1742"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Filantropia",
+    "id": "s1743"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Filho",
+    "id": "s1744"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Filosofia",
+    "id": "s1745"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Finados",
+    "id": "s1746"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Flagelos",
+    "id": "s1747"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fluido universal",
+    "id": "s1748"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fluido vital",
+    "id": "s1749"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fogo",
+    "id": "s1750"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fome",
+    "id": "s1751"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Força",
+    "id": "s1752"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fortalecimento",
+    "id": "s1753"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fracasso",
+    "id": "s1754"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fraqueza",
+    "id": "s1755"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fraude",
+    "id": "s1756"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Fuga",
+    "id": "s1757"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Funeral",
+    "id": "s1758"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Futuro",
+    "id": "s1759"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gêmeos",
+    "id": "s1760"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Genealogia",
+    "id": "s1761"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gênio",
+    "id": "s1762"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Geração espontânea",
+    "id": "s1763"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gerações",
+    "id": "s1764"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gestação",
+    "id": "s1765"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gnomo",
+    "id": "s1766"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Gozo",
+    "id": "s1767"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Guerra",
+    "id": "s1768"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Harmonia",
+    "id": "s1769"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Herança",
+    "id": "s1770"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Hereditariedade",
+    "id": "s1771"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Hierarquia",
+    "id": "s1772"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Hipocrisia",
+    "id": "s1773"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Homem",
+    "id": "s1774"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Homenagem",
+    "id": "s1775"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Humanidade",
+    "id": "s1776"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Humanização",
+    "id": "s1777"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Humildade",
+    "id": "s1778"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ideia",
+    "id": "s1779"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ideia religiosa",
+    "id": "s1780"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ideias inatas",
+    "id": "s1781"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Identidade",
+    "id": "s1782"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Identificação",
+    "id": "s1783"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Idiota",
+    "id": "s1784"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Idiotia",
+    "id": "s1785"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Idiotismo",
+    "id": "s1786"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ignorância",
+    "id": "s1787"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Igualdade",
+    "id": "s1788"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ilusão",
+    "id": "s1789"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Imaginação",
+    "id": "s1790"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Imortalidade",
+    "id": "s1791"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Impedimento",
+    "id": "s1792"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Imperfeição",
+    "id": "s1793"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Individualidade",
+    "id": "s1794"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Indivíduo",
+    "id": "s1795"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Indução",
+    "id": "s1796"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Indulgência",
+    "id": "s1797"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Infância",
+    "id": "s1798"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Infanticídio",
+    "id": "s1799"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Infelicidade",
+    "id": "s1800"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inferior",
+    "id": "s1801"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inferioridade",
+    "id": "s1802"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inferno",
+    "id": "s1803"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Infinito",
+    "id": "s1804"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Influência",
+    "id": "s1805"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Influenciação",
+    "id": "s1806"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ingratidão",
+    "id": "s1807"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inimigo",
+    "id": "s1808"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inimizade",
+    "id": "s1809"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inocência",
+    "id": "s1810"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inspiração",
+    "id": "s1811"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Instinto",
+    "id": "s1812"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Instrução",
+    "id": "s1813"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inteligência",
+    "id": "s1814"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Intercessão",
+    "id": "s1815"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Interesse",
+    "id": "s1816"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Intuição",
+    "id": "s1817"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inutilidade",
+    "id": "s1818"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Inveja",
+    "id": "s1819"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Investigação",
+    "id": "s1820"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Irmãos",
+    "id": "s1821"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Irradiação",
+    "id": "s1822"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Isolamento",
+    "id": "s1823"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Jesus",
+    "id": "s1824"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Juízo",
+    "id": "s1825"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Juízo final",
+    "id": "s1826"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Julgamento",
+    "id": "s1827"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Júpiter",
+    "id": "s1828"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Justiça",
+    "id": "s1829"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Justiça divina",
+    "id": "s1830"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Justo",
+    "id": "s1831"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Laços de família",
+    "id": "s1832"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lamennais",
+    "id": "s1833"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Legislação",
+    "id": "s1834"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Legítima defesa",
+    "id": "s1835"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei de atração",
+    "id": "s1836"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei de causa e efeito",
+    "id": "s1837"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei de destruição",
+    "id": "s1838"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei de destruição *ver também* Destruição",
+    "id": "s1839"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei de progresso",
+    "id": "s1840"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei divina",
+    "id": "s1841"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei humana",
+    "id": "s1842"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lei natural",
+    "id": "s1843"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lembrança",
+    "id": "s1844"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Letargia",
+    "id": "s1845"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Leviandade",
+    "id": "s1846"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Liberdade",
+    "id": "s1847"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Liberdade de consciência",
+    "id": "s1848"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Libertação",
+    "id": "s1849"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Linguagem",
+    "id": "s1850"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Livre-arbítrio",
+    "id": "s1851"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Livro dos Espíritos",
+    "id": "s1852"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Locomoção",
+    "id": "s1853"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lógica",
+    "id": "s1854"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Loucura",
+    "id": "s1855"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Lucidez sonambúlica",
+    "id": "s1856"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Luís (São)",
+    "id": "s1857"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Luís (São) e Agostinho (Santo)",
+    "id": "s1858"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Luta",
+    "id": "s1859"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mãe",
+    "id": "s1860"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Magnetismo",
+    "id": "s1861"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mal",
+    "id": "s1862"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Maldição",
+    "id": "s1863"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mandamento",
+    "id": "s1864"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Manifestação",
+    "id": "s1865"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Marte",
+    "id": "s1866"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Matéria",
+    "id": "s1867"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Materialismo",
+    "id": "s1868"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Maternidade",
+    "id": "s1869"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mau",
+    "id": "s1870"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Médium",
+    "id": "s1871"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mediunidade",
+    "id": "s1872"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Medo",
+    "id": "s1873"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Memória",
+    "id": "s1874"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mendicância",
+    "id": "s1875"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Merecimento *ver* Mérito",
+    "id": "s1876"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mérito",
+    "id": "s1877"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mesas girantes",
+    "id": "s1878"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Metempsicose",
+    "id": "s1879"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Milagre",
+    "id": "s1880"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Minerais",
+    "id": "s1881"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Miséria",
+    "id": "s1882"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Missão",
+    "id": "s1883"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mistério",
+    "id": "s1884"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mistificação",
+    "id": "s1885"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mitologia",
+    "id": "s1886"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Moisés",
+    "id": "s1887"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Molécula",
+    "id": "s1888"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Monogamia",
+    "id": "s1889"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Moradia",
+    "id": "s1890"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Moral",
+    "id": "s1891"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Morte",
+    "id": "s1892"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Morte *ver também* Desencarnação",
+    "id": "s1893"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mortificação",
+    "id": "s1894"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Morto",
+    "id": "s1895"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mulher",
+    "id": "s1896"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundo",
+    "id": "s1897"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundo de expiação e provas",
+    "id": "s1898"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundo espiritual",
+    "id": "s1899"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundo físico *ver* Plano físico",
+    "id": "s1900"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundos",
+    "id": "s1901"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundos evoluídos",
+    "id": "s1902"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundos habitados",
+    "id": "s1903"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Mundos transitórios",
+    "id": "s1904"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Música",
+    "id": "s1905"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Nação",
+    "id": "s1906"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Nada",
+    "id": "s1907"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Namoro",
+    "id": "s1908"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Nascimento",
+    "id": "s1909"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Natimorto",
+    "id": "s1910"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Natureza",
+    "id": "s1911"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Necessário",
+    "id": "s1912"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Necessidade",
+    "id": "s1913"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Negação",
+    "id": "s1914"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Nome",
+    "id": "s1915"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Obsessão",
+    "id": "s1916"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Obstáculos",
+    "id": "s1917"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ociosidade",
+    "id": "s1918"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ocupação",
+    "id": "s1919"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ódio",
+    "id": "s1920"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ofensa",
+    "id": "s1921"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Oferenda",
+    "id": "s1922"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Opinião",
+    "id": "s1923"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Oposição",
+    "id": "s1924"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Oração",
+    "id": "s1925"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Organismo",
+    "id": "s1926"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Orgulho",
+    "id": "s1927"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Orientação",
+    "id": "s1928"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Oriente",
+    "id": "s1929"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ostentação",
+    "id": "s1930"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pactos",
+    "id": "s1931"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pais",
+    "id": "s1932"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Paixão",
+    "id": "s1933"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Palavra",
+    "id": "s1934"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Panteísmo",
+    "id": "s1935"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Paraíso",
+    "id": "s1936"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Parasitose espiritual",
+    "id": "s1937"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Parentela",
+    "id": "s1938"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Parricídio",
+    "id": "s1939"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Passado",
+    "id": "s1940"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Paternidade",
+    "id": "s1941"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Paulo (apóstolo)",
+    "id": "s1942"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pecado",
+    "id": "s1943"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pena de morte",
+    "id": "s1944"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pena de talião",
+    "id": "s1945"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Penas eternas",
+    "id": "s1946"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Penas futuras",
+    "id": "s1947"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pensamento",
+    "id": "s1948"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Percepção",
+    "id": "s1949"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perdão",
+    "id": "s1950"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perfeição",
+    "id": "s1951"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perfeição moral",
+    "id": "s1952"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perguntas",
+    "id": "s1953"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perispírito",
+    "id": "s1954"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perseverança",
+    "id": "s1955"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Personalidade",
+    "id": "s1956"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Perturbação",
+    "id": "s1957"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Planetas {}",
+    "id": "s1958"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Plano espiritual *ver* mundo espiritual",
+    "id": "s1959"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Plano físico",
+    "id": "s1960"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Platão",
+    "id": "s1961"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pluralidade dos mundos habitados",
+    "id": "s1962"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pluralidade dos mundos habitados *ver também* Mundos habitados",
+    "id": "s1963"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pobreza",
+    "id": "s1964"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Poder",
+    "id": "s1965"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Poesia",
+    "id": "s1966"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Poligamia",
+    "id": "s1967"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Politeísmo",
+    "id": "s1968"
+  },
+  {
+    "level": 6,
+    "text": "🔖 População",
+    "id": "s1969"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Posse",
+    "id": "s1970"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Possesso",
+    "id": "s1971"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Povoamento",
+    "id": "s1972"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Povos",
+    "id": "s1973"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Prece *ver* Oração",
+    "id": "s1974"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Preconceito",
+    "id": "s1975"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Precursor",
+    "id": "s1976"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Predestinação",
+    "id": "s1977"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Predição",
+    "id": "s1978"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pregação",
+    "id": "s1979"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Preguiça",
+    "id": "s1980"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Presciência",
+    "id": "s1981"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Presença",
+    "id": "s1982"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Presente",
+    "id": "s1983"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Pressentimento",
+    "id": "s1984"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Prevenção",
+    "id": "s1985"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Previdência",
+    "id": "s1986"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Princípio espiritual",
+    "id": "s1987"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Princípio inteligente",
+    "id": "s1988"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Princípio vital",
+    "id": "s1989"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Princípios básicos",
+    "id": "s1990"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Privação",
+    "id": "s1991"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Prodigalidade",
+    "id": "s1992"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Prodígio",
+    "id": "s1993"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Profeta",
+    "id": "s1994"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Profissão",
+    "id": "s1995"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Progresso",
+    "id": "s1996"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Proibição",
+    "id": "s1997"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Propriedade",
+    "id": "s1998"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Prosperidade",
+    "id": "s1999"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Provação",
+    "id": "s2000"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Provas",
+    "id": "s2001"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Provas e expiações",
+    "id": "s2002"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Providência divina",
+    "id": "s2003"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Próximo",
+    "id": "s2004"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Psicologia",
+    "id": "s2005"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Punição",
+    "id": "s2006"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Purgatório",
+    "id": "s2007"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Purificação",
+    "id": "s2008"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Queda",
+    "id": "s2009"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Raças",
+    "id": "s2010"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Raciocínio",
+    "id": "s2011"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Racismo",
+    "id": "s2012"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Razão",
+    "id": "s2013"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reabilitação",
+    "id": "s2014"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Realidade",
+    "id": "s2015"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Realização",
+    "id": "s2016"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Rebeldia",
+    "id": "s2017"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Receituário",
+    "id": "s2018"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reconhecimento",
+    "id": "s2019"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Recordação *ver* Lembrança",
+    "id": "s2020"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reencarnação",
+    "id": "s2021"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reencontro",
+    "id": "s2022"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reforma",
+    "id": "s2023"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reforma íntima",
+    "id": "s2024"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Regeneração {}",
+    "id": "s2025"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Regulamento",
+    "id": "s2026"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reinos",
+    "id": "s2027"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Relacionamento",
+    "id": "s2028"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Relações",
+    "id": "s2029"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Religião",
+    "id": "s2030"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Religiosidade",
+    "id": "s2031"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Remorso",
+    "id": "s2032"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reparação",
+    "id": "s2033"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Repouso",
+    "id": "s2034"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reprodução",
+    "id": "s2035"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Resgate",
+    "id": "s2036"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Resignação",
+    "id": "s2037"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Respeito",
+    "id": "s2038"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Responsabilidade",
+    "id": "s2039"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Resposta",
+    "id": "s2040"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ressurreição",
+    "id": "s2041"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Reunião",
+    "id": "s2042"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Revelação",
+    "id": "s2043"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Riqueza",
+    "id": "s2044"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ritual",
+    "id": "s2045"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sabedoria",
+    "id": "s2046"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sacrifício",
+    "id": "s2047"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Satanás",
+    "id": "s2048"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Saúde",
+    "id": "s2049"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Selvagem",
+    "id": "s2050"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Semelhança",
+    "id": "s2051"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sensação",
+    "id": "s2052"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sensibilidade",
+    "id": "s2053"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sensualidade",
+    "id": "s2054"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sentido",
+    "id": "s2055"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sentimento",
+    "id": "s2056"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Separação",
+    "id": "s2057"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sepultamento",
+    "id": "s2058"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ser humano *ver* Homem",
+    "id": "s2059"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Seres inorgânicos",
+    "id": "s2060"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Seres vivos",
+    "id": "s2061"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Seriedade {}",
+    "id": "s2062"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sexo {}",
+    "id": "s2063"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sexos {}",
+    "id": "s2064"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Silêncio {}",
+    "id": "s2065"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Símbolo {}",
+    "id": "s2066"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Simpatia {}",
+    "id": "s2067"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Simplicidade {}",
+    "id": "s2068"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sinceridade {}",
+    "id": "s2069"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sintonia {}",
+    "id": "s2070"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sistema {}",
+    "id": "s2071"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sobrenatural {}",
+    "id": "s2072"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sobrevivência {}",
+    "id": "s2073"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sociedade",
+    "id": "s2074"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sofrimento",
+    "id": "s2075"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sol",
+    "id": "s2076"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Solidariedade {}",
+    "id": "s2077"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Som",
+    "id": "s2078"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sonambulismo",
+    "id": "s2079"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sonâmbulo",
+    "id": "s2080"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sonho",
+    "id": "s2081"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sono",
+    "id": "s2082"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sorte {}",
+    "id": "s2083"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Submissão {}",
+    "id": "s2084"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Substância {}",
+    "id": "s2085"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Sugestão {}",
+    "id": "s2086"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Suicídio {}",
+    "id": "s2087"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Supérfluo {}",
+    "id": "s2088"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Superior {}",
+    "id": "s2089"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Superioridade {}",
+    "id": "s2090"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Superstição {}",
+    "id": "s2091"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Talismã",
+    "id": "s2092"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Temor *ver* Medo",
+    "id": "s2093"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Tempo",
+    "id": "s2094"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Tentação",
+    "id": "s2095"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Teologia",
+    "id": "s2096"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Teoria",
+    "id": "s2097"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Terra",
+    "id": "s2098"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Timidez",
+    "id": "s2099"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Tiptologia",
+    "id": "s2100"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Trabalho",
+    "id": "s2101"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Transformação",
+    "id": "s2102"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Transição",
+    "id": "s2103"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Transmigração",
+    "id": "s2104"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Trasgo",
+    "id": "s2105"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Túmulo",
+    "id": "s2106"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Ubiquidade",
+    "id": "s2107"
+  },
+  {
+    "level": 6,
+    "text": "🔖 União",
+    "id": "s2108"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Universalidade",
+    "id": "s2109"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Universo",
+    "id": "s2110"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vácuo",
+    "id": "s2111"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Valor",
+    "id": "s2112"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vegetal",
+    "id": "s2113"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Velhice",
+    "id": "s2114"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Velocidade",
+    "id": "s2115"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Verdade",
+    "id": "s2116"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vergonha",
+    "id": "s2117"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vicente de Paulo (São)",
+    "id": "s2118"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vício",
+    "id": "s2119"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida",
+    "id": "s2120"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida corpórea",
+    "id": "s2121"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida espiritual",
+    "id": "s2122"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida futura",
+    "id": "s2123"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida social",
+    "id": "s2124"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vida terrena",
+    "id": "s2125"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vidas passadas",
+    "id": "s2126"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vingança",
+    "id": "s2127"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Virtude",
+    "id": "s2128"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Visão",
+    "id": "s2129"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Visita",
+    "id": "s2130"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vista",
+    "id": "s2131"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vocação",
+    "id": "s2132"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Vontade",
+    "id": "s2133"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Voto de silêncio",
+    "id": "s2134"
+  },
+  {
+    "level": 6,
+    "text": "🔖 Zelo",
+    "id": "s2135"
+  },
+  {
+    "level": 3,
+    "text": "📝 Notas de rodapé",
+    "id": "s2136"
+  }
+]

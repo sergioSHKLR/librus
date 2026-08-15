@@ -1,0 +1,4 @@
+Pulled from doutrina public build
+Source: /home/user/dev/doutrina/public/books/lde/
+Date: 2026-08-02
+Files: body.html, toc.json, pages.json, images/

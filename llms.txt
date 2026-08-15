@@ -1,0 +1,24 @@
+# librus-shell (LIBRUS)
+
+> L∙I∙B∙R∙U∙S — Loosely Integrated Book Reading Universal System.
+> Multi-flavor study reader: library, multi-pane reading, Hypothesis notes, optional JaaS.
+
+## Product hosts
+
+- librus.app — LIBRUS shelf
+- doutrina.org — shared Doutrina shelf
+- *.doutrina.org — adhered Centers (opt-in)
+
+## Code repos
+
+- librus-shell — this SPA
+- librus-linker — provider link injection
+- doutrina-content — editorial source (Kardec MD / QA)
+- librus / doutrina — published site hosts (dist only)
+- center-* — Center manual + flavor.json
+
+## App surfaces
+
+- [Library](/): Book shelf
+- Reader: multi-pane study layout
+- [Hypothesis](https://web.hypothes.is/): Annotation provider (external, BYO account)

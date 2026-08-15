@@ -1,0 +1,97 @@
+{
+  "default": "librus",
+  "hosts": {
+    "librus.app": "librus",
+    "www.librus.app": "librus",
+    "doutrina.org": "doutrina",
+    "www.doutrina.org": "doutrina",
+    "centro.doutrina.org": "centro",
+    "www.centro.doutrina.org": "centro"
+  },
+  "flavors": {
+    "librus": {
+      "id": "librus",
+      "brand": {
+        "name": "LIBRUS",
+        "title": "LIBRUS",
+        "description": "L∙I∙B∙R∙U∙S — annotate to assimilate",
+        "cta": {
+          "pt": "Ache · Leia · Consulte · Anote",
+          "en": "Find · Read · Consult · Annotate"
+        },
+        "tagline": {
+          "pt": "annotate to assimilate",
+          "en": "annotate to assimilate"
+        },
+        "icon": "columns-4",
+        "favicon": "/brand/librus-favicon.svg",
+        "faviconDark": "/brand/librus-favicon-dark.svg",
+        "themeColor": "#008b00",
+        "accent": "#008b00"
+      },
+      "catalog": "/books/catalog.json",
+      "profile": "librus",
+      "features": {
+        "providers": ["encyc", "dict", "map"],
+        "jaasRoom": "librus-estudo"
+      }
+    },
+    "doutrina": {
+      "id": "doutrina",
+      "brand": {
+        "name": "DOUTRINA",
+        "title": "DOUTRINA",
+        "description": "DOUTRINA — estudo, consulta e anotação",
+        "cta": {
+          "pt": "Hidrate seu espírito",
+          "en": "Hydrate your spirit"
+        },
+        "tagline": {
+          "pt": "estudo para assimilar",
+          "en": "study to assimilate"
+        },
+        "icon": "droplet",
+        "mark": "/brand/doutrina-favicon.svg",
+        "favicon": "/brand/doutrina-favicon.svg",
+        "faviconDark": "/brand/doutrina-favicon-dark.svg",
+        "themeColor": "#1e90ff",
+        "accent": "#1e90ff"
+      },
+      "catalog": "/books/catalog.json",
+      "profile": "doutrina",
+      "features": {
+        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
+        "jaasRoom": "doutrina-estudo"
+      }
+    },
+    "centro": {
+      "id": "centro",
+      "brand": {
+        "name": "CENTRO",
+        "title": "CENTRO",
+        "description": "CENTRO — reuniões, consulta e anotação",
+        "cta": {
+          "pt": "Aprenda · Assimile · Pratique · Instrua",
+          "en": "Learn · Assimilate · Practice · Instruct"
+        },
+        "tagline": {
+          "pt": "comunidade em estudo",
+          "en": "community in study"
+        },
+        "icon": "house-heart",
+        "mark": "/brand/centro-favicon.svg",
+        "favicon": "/brand/centro-favicon.svg",
+        "faviconDark": "/brand/centro-favicon-dark.svg",
+        "themeColor": "#da2f2f",
+        "accent": "#da2f2f"
+      },
+      "catalog": "/books/catalog.json",
+      "profile": "centro",
+      "features": {
+        "providers": ["luz", "encyc", "dict", "bible", "kardec"],
+        "jaasRoom": "centro-reuniao",
+        "pinFirst": ["centro"]
+      }
+    }
+  }
+}

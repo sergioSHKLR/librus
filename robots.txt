@@ -1,0 +1,6 @@
+# LIBRUS shell — allow public crawl of the app shell
+User-agent: *
+Allow: /
+
+# Optional: point at a sitemap when you have a stable production host
+# Sitemap: https://librus.app/sitemap.xml

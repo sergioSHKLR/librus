@@ -1,0 +1,253 @@
+[
+  {
+    "id": "study-scarlet",
+    "title": "A Study in Scarlet",
+    "titlePt": "Um Estudo em Vermelho",
+    "author": "Arthur Conan Doyle",
+    "year": 1887,
+    "meta": "Novel · 1887",
+    "lang": "en",
+    "path": "/books/study-scarlet/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🔎",
+    "color": "#9b2c2c",
+    "isbn": "",
+    "pages": null,
+    "metaPt": "Romance · 1887",
+    "pairId": "study-scarlet"
+  },
+  {
+    "id": "sign-four",
+    "title": "The Sign of the Four",
+    "titlePt": "O Sinal dos Quatro",
+    "author": "Arthur Conan Doyle",
+    "year": 1890,
+    "meta": "Novel · 1890",
+    "lang": "en",
+    "path": "/books/sign-four/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🧭",
+    "color": "#2b6cb0",
+    "isbn": "",
+    "pages": null,
+    "metaPt": "Romance · 1890",
+    "pairId": "sign-four"
+  },
+  {
+    "id": "hound",
+    "title": "The Hound of the Baskervilles",
+    "titlePt": "O Cão dos Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "meta": "Novel · 1902",
+    "lang": "en",
+    "path": "/books/hound/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🐺",
+    "color": "#744210",
+    "isbn": "",
+    "pages": null,
+    "metaPt": "Romance · 1902",
+    "pairId": "hound"
+  },
+  {
+    "id": "valley-fear",
+    "title": "The Valley of Fear",
+    "titlePt": "O Vale do Medo",
+    "author": "Arthur Conan Doyle",
+    "year": 1915,
+    "meta": "Novel · 1915",
+    "lang": "en",
+    "path": "/books/valley-fear/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "⛰️",
+    "color": "#553c9a",
+    "isbn": "",
+    "pages": null,
+    "metaPt": "Romance · 1915",
+    "pairId": "valley-fear"
+  },
+  {
+    "id": "lde",
+    "title": "The Spirits’ Book",
+    "titlePt": "O Livro dos Espíritos",
+    "author": "Allan Kardec",
+    "year": 1857,
+    "meta": "Codificação · 1857",
+    "lang": "pt",
+    "path": "/books/lde/book.json",
+    "profiles": [
+      "doutrina",
+      "centro"
+    ],
+    "emoji": "✨",
+    "color": "#00008b",
+    "isbn": "978-85-7328-728-8",
+    "pages": 529
+  },
+  {
+    "id": "ldm",
+    "title": "The Mediums’ Book",
+    "titlePt": "O Livro dos Médiuns",
+    "author": "Allan Kardec",
+    "year": 1861,
+    "meta": "Codificação · 1861",
+    "lang": "pt",
+    "path": "/books/ldm/book.json",
+    "profiles": [
+      "doutrina",
+      "centro"
+    ],
+    "emoji": "✒️",
+    "color": "#800080",
+    "isbn": "978-85-7328-729-5",
+    "pages": 449
+  },
+  {
+    "id": "ese",
+    "title": "The Gospel According to Spiritism",
+    "titlePt": "O Evangelho segundo o Espiritismo",
+    "author": "Allan Kardec",
+    "year": 1864,
+    "meta": "Codificação · 1864",
+    "lang": "pt",
+    "path": "/books/ese/book.json",
+    "profiles": [
+      "doutrina",
+      "centro"
+    ],
+    "emoji": "🕊️",
+    "color": "#008080",
+    "isbn": "978-85-7328-730-1",
+    "pages": 417
+  },
+  {
+    "id": "ceu",
+    "title": "Heaven and Hell",
+    "titlePt": "O Céu e o Inferno",
+    "author": "Allan Kardec",
+    "year": 1865,
+    "meta": "Codificação · 1865",
+    "lang": "pt",
+    "path": "/books/ceu/book.json",
+    "profiles": [
+      "doutrina",
+      "centro"
+    ],
+    "emoji": "🔥",
+    "color": "#8b4513",
+    "isbn": "978-85-7328-731-8",
+    "pages": 409
+  },
+  {
+    "id": "gen",
+    "title": "Genesis",
+    "titlePt": "A Gênese",
+    "author": "Allan Kardec",
+    "year": 1868,
+    "meta": "Codificação · 1868",
+    "lang": "pt",
+    "path": "/books/gen/book.json",
+    "profiles": [
+      "doutrina",
+      "centro"
+    ],
+    "emoji": "🌱",
+    "color": "#006400",
+    "isbn": "978-85-7328-732-5",
+    "pages": 417
+  },
+  {
+    "id": "centro",
+    "title": "Centro Student Manual",
+    "titlePt": "Manual do Estudante do Centro",
+    "author": "Centro",
+    "year": 2024,
+    "meta": "Manual · Centro",
+    "lang": "pt",
+    "path": "/books/centro/book.json",
+    "profiles": [
+      "centro"
+    ],
+    "emoji": "🏠",
+    "color": "#dc143c",
+    "isbn": "",
+    "pages": null
+  },
+  {
+    "id": "estudo-vermelho",
+    "title": "A Study in Scarlet",
+    "titlePt": "Um Estudo em Vermelho",
+    "author": "Arthur Conan Doyle",
+    "year": 1887,
+    "meta": "Novel · 1887",
+    "metaPt": "Romance · 1887",
+    "lang": "pt",
+    "pairId": "study-scarlet",
+    "path": "/books/estudo-vermelho/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🔎",
+    "color": "#9b2c2c"
+  },
+  {
+    "id": "sinal-quatro",
+    "title": "The Sign of the Four",
+    "titlePt": "O Signo dos Quatro",
+    "author": "Arthur Conan Doyle",
+    "year": 1890,
+    "meta": "Novel · 1890",
+    "metaPt": "Romance · 1890",
+    "lang": "pt",
+    "pairId": "sign-four",
+    "path": "/books/sinal-quatro/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🧭",
+    "color": "#2b6cb0"
+  },
+  {
+    "id": "cao-baskervilles",
+    "title": "The Hound of the Baskervilles",
+    "titlePt": "O Cão dos Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "meta": "Novel · 1902",
+    "metaPt": "Romance · 1902",
+    "lang": "pt",
+    "pairId": "hound",
+    "path": "/books/cao-baskervilles/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "🐺",
+    "color": "#744210"
+  },
+  {
+    "id": "vale-medo",
+    "title": "The Valley of Fear",
+    "titlePt": "O Vale do Terror",
+    "author": "Arthur Conan Doyle",
+    "year": 1915,
+    "meta": "Novel · 1915",
+    "metaPt": "Romance · 1915",
+    "lang": "pt",
+    "pairId": "valley-fear",
+    "path": "/books/vale-medo/book.json",
+    "profiles": [
+      "librus"
+    ],
+    "emoji": "⛰️",
+    "color": "#553c9a"
+  }
+]

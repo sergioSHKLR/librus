@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>LIBRUS</title>
+    <meta name="description" content="L∙I∙B∙R∙U∙S" />
+    <meta name="theme-color" content="#ffffff" id="meta-theme-color" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      href="/pwa/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var k = "librus-theme";
+        var pref = null;
+        try {
+          pref = localStorage.getItem(k);
+        } catch (e) {}
+        if (pref !== "light" && pref !== "dark" && pref !== "system")
+          pref = "system";
+        var resolved =
+          pref === "dark" || pref === "light"
+            ? pref
+            : window.matchMedia &&
+                matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        document.documentElement.dataset.themePref = pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.style.colorScheme = resolved;
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BK4mlF6Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BAwKQeE9.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+
+  <body data-view="library" data-lang="pt">
+    <!-- Portrait notice — fullscreen, dismissable; auto-hides in landscape -->
+    <div
+      id="orient"
+      hidden
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="orient-title"
+      aria-describedby="orient-msg"
+      aria-hidden="true"
+    >
+      <div>
+        <div id="orient-anim" aria-hidden="true">
+          <div id="orient-phone">
+            <span id="orient-notch"></span>
+            <span id="orient-screen"></span>
+          </div>
+          <div id="orient-arc"></div>
+        </div>
+        <h2 id="orient-title" data-i18n="orient.title">Gire o dispositivo</h2>
+        <p id="orient-msg" data-i18n="orient.body">
+          A experiência em modo retrato é limitada. Gire o aparelho para
+          paisagem (sentido anti-horário).
+        </p>
+        <button type="button" id="orient-dismiss" data-i18n="orient.dismiss">
+          Continuar mesmo assim
+        </button>
+      </div>
+    </div>
+
+    <!-- Library -->
+    <div id="library" data-screen>
+      <header>
+        <div
+          class="library-mark"
+          data-icon="columns-4"
+          data-icon-size="56"
+          aria-hidden="true"
+        ></div>
+        <h1 data-i18n="library.title">LIBRUS</h1>
+        <p class="library-cta" data-i18n="library.cta">
+          Ache · Leia · Consulte · Anote
+        </p>
+        <p id="build">v0.9.0 · poc</p>
+      </header>
+      <main>
+        <h2 data-i18n="library.heading">Biblioteca</h2>
+        <ul id="grid" role="list"></ul>
+      </main>
+    </div>
+
+    <!-- 4 · Reader -->
+    <div id="reader" data-screen hidden>
+      <div id="workspace">
+        <aside id="p1" data-pane="find">
+          <div data-tabs>
+            <button type="button" data-mode="find:toc" class="on">
+              <i data-icon="list"></i><span data-i18n="tab.toc">Sumário</span>
+            </button>
+            <button type="button" data-mode="find:search">
+              <i data-icon="search"></i
+              ><span data-i18n="tab.search">Busca</span>
+            </button>
+            <span data-i18n="pane.find">1. Ache</span>
+          </div>
+          <div data-tool="find:toc" class="on">
+            <input
+              type="search"
+              id="toc-q"
+              data-i18n-ph="ph.filter"
+              placeholder="Filtrar…"
+            />
+          </div>
+          <div data-tool="find:search" hidden>
+            <input
+              type="search"
+              id="search-q"
+              data-i18n-ph="ph.search"
+              placeholder="Buscar…"
+            />
+          </div>
+          <div data-body>
+            <nav id="toc" data-panel="find:toc" class="on"></nav>
+            <div id="hits" data-panel="find:search" hidden></div>
+          </div>
+        </aside>
+
+        <main id="p2" data-pane="read">
+          <div data-tabs id="main-tabs">
+            <button
+              type="button"
+              data-mode="read:typo"
+              data-feat="typo"
+              class="on"
+            >
+              <i data-icon="type"></i><span data-i18n="tab.typo">Tipo</span>
+            </button>
+            <button type="button" data-mode="read:book">
+              <i data-icon="layers"></i
+              ><span data-i18n="tab.book">Páginas</span>
+            </button>
+            <span data-i18n="pane.read">2. Leia</span>
+          </div>
+          <div data-tool="read:typo" data-feat="typo" class="on">
+            <button type="button" data-typo="size" title="Size">
+              <i data-icon="a-arrow-up"></i><span data-typo-label>100%</span>
+            </button>
+            <button type="button" data-typo="line" title="Line height">
+              <i data-icon="unfold-vertical"></i
+              ><span data-typo-label>1.65</span>
+            </button>
+            <button type="button" data-typo="measure" title="Measure">
+              <i data-icon="chevrons-left-right"></i
+              ><span data-typo-label data-i18n="typo.medium">Média</span>
+            </button>
+            <button type="button" data-typo="align" title="Align">
+              <i data-icon="align-left"></i
+              ><span data-typo-label data-i18n="typo.alignStart">Alinhar</span>
+            </button>
+            <button type="button" data-typo="font" title="Font">
+              <i data-icon="case-upper"></i
+              ><span data-typo-label data-i18n="typo.sans">Sans</span>
+            </button>
+          </div>
+          <div data-tool="read:book" hidden>
+            <button type="button" data-page="prev">
+              <i data-icon="chevron-left"></i
+              ><span data-i18n="btn.prev">Ant.</span>
+            </button>
+            <label>
+              <input
+                type="number"
+                id="page-n"
+                min="1"
+                value="1"
+                inputmode="numeric"
+              />
+              <span id="page-total">/ 1</span>
+            </label>
+            <button type="button" data-page="next">
+              <i data-icon="chevron-right"></i
+              ><span data-i18n="btn.next">Próx.</span>
+            </button>
+          </div>
+          <div
+            id="book"
+            data-body
+            data-font="sans"
+            data-measure="medium"
+            data-align="start"
+          ></div>
+        </main>
+
+        <section id="p3" data-pane="consult">
+          <div data-tabs>
+            <button type="button" data-mode="consult:web" class="on">
+              <i data-icon="globe"></i
+              ><span data-i18n="tab.context">Contexto</span>
+            </button>
+            <button type="button" data-mode="consult:pdf">
+              <i data-icon="file-up"></i><span data-i18n="tab.pdf">PDF</span>
+            </button>
+            <button type="button" data-mode="consult:video">
+              <i data-icon="video"></i><span data-i18n="tab.video">Vídeo</span>
+            </button>
+            <span data-i18n="pane.consult">3. Consulte</span>
+          </div>
+          <div data-tool="consult:web" class="on" data-feat="providers">
+            <button type="button" data-ctx="back">
+              <i data-icon="arrow-left"></i
+              ><span data-i18n="btn.back">Voltar</span>
+            </button>
+            <button type="button" data-ctx="reload">
+              <i data-icon="rotate-cw"></i
+              ><span data-i18n="btn.reload">Recarregar</span>
+            </button>
+            <button type="button" data-provider="luz">
+              <i data-icon="gem"></i><span data-i18n="prov.luz">Luz</span>
+            </button>
+            <button type="button" data-provider="encyc">
+              <i data-icon="globe"></i><span data-i18n="prov.encyc">Encic</span>
+            </button>
+            <button type="button" data-provider="dict">
+              <i data-icon="book-a"></i><span data-i18n="prov.dict">Dict</span>
+            </button>
+            <button type="button" data-provider="map">
+              <i data-icon="map"></i><span data-i18n="prov.map">Maps</span>
+            </button>
+            <button type="button" data-provider="bible">
+              <i data-icon="book-plus"></i
+              ><span data-i18n="prov.bible">Bíblia</span>
+            </button>
+            <button type="button" data-provider="kardec">
+              <i data-icon="graduation-cap"></i
+              ><span data-i18n="prov.kardec">Kardec</span>
+            </button>
+          </div>
+          <div data-tool="consult:pdf" hidden>
+            <button type="button" data-pdf="upload">
+              <i data-icon="file-up"></i
+              ><span data-i18n="pdf.upload">Upload</span>
+            </button>
+            <button type="button" data-pdf="unload">
+              <i data-icon="file-x"></i
+              ><span data-i18n="pdf.unload">Unload</span>
+            </button>
+            <button type="button" data-pdf="prev">
+              <i data-icon="chevron-left"></i
+              ><span data-i18n="btn.prev">Ant.</span>
+            </button>
+            <label>
+              <input
+                type="number"
+                id="pdf-page-input"
+                min="1"
+                value="1"
+                inputmode="numeric"
+              />
+              <span id="pdf-page-total">/ 12</span>
+            </label>
+            <button type="button" data-pdf="next">
+              <i data-icon="chevron-right"></i
+              ><span data-i18n="btn.next">Próx.</span>
+            </button>
+            <button type="button" data-pdf="in">
+              <i data-icon="zoom-in"></i
+              ><span data-i18n="btn.zoomIn">Mais</span>
+            </button>
+            <button type="button" data-pdf="out">
+              <i data-icon="zoom-out"></i
+              ><span data-i18n="btn.zoomOut">Menos</span>
+            </button>
+          </div>
+          <div data-tool="consult:video" hidden>
+            <button type="button" data-jitsi="join-video">
+              <i data-icon="video"></i
+              ><span data-i18n="btn.joinVideo">Vídeo</span>
+            </button>
+            <button type="button" data-jitsi="join-voice">
+              <i data-icon="mic"></i><span data-i18n="btn.joinVoice">Voz</span>
+            </button>
+            <button type="button" data-jitsi="leave">
+              <i data-icon="phone-off"></i
+              ><span data-i18n="btn.leave">Sair</span>
+            </button>
+          </div>
+          <div data-body>
+            <div data-panel="consult:web" class="on" id="ctx-host">
+              <iframe
+                id="ctx"
+                title="Context"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+              ></iframe>
+            </div>
+            <div data-panel="consult:pdf" id="pdf-panel" hidden>
+              <div id="pdf-mock">
+                <div id="pdf-sheet">
+                  <p id="pdf-mock-title" data-i18n="pdf.mockTitle">
+                    Documento de exemplo
+                  </p>
+                  <p id="pdf-mock-page" data-i18n="pdf.mockPage">
+                    Página 1 de 12
+                  </p>
+                  <div id="pdf-lines" aria-hidden="true"></div>
+                </div>
+                <p id="pdf-mock-hint" data-i18n="pdf.mockHint">
+                  Mock PDF — use a barra para navegar e ampliar.
+                </p>
+              </div>
+              <canvas id="pdf-canvas" hidden></canvas>
+            </div>
+            <div data-panel="consult:video" id="video-panel" hidden>
+              <div id="video-mock">
+                <div id="video-stage">
+                  <i data-icon="video" data-icon-size="40"></i>
+                  <p id="meet-status" data-i18n="meet.mockIdle">
+                    Sala de vídeo (mock)
+                  </p>
+                </div>
+                <p id="video-mock-hint" data-i18n="meet.mockHint">
+                  Vídeo / voz simulados — JaaS real sob flag de build.
+                </p>
+              </div>
+              <div id="meet-jaas-host" hidden></div>
+            </div>
+          </div>
+        </section>
+
+        <aside id="p4" data-pane="annotate">
+          <div data-tabs>
+            <button type="button" data-mode="annotate:notes" class="on">
+              <i data-icon="sticky-note"></i
+              ><span data-i18n="tab.notes">Notas</span>
+            </button>
+            <span data-i18n="pane.annotate">4. Anote</span>
+          </div>
+          <div data-tool="annotate:notes" class="on"></div>
+          <div data-body>
+            <p data-feat="hypo" data-i18n="notes.hint">
+              Notas abrem na barra lateral do Hypothesis.
+            </p>
+            <p data-feat="hypo" data-feat-invert hidden data-i18n="notes.off">
+              Hypothesis desligado neste build.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div id="scrim" hidden></div>
+    <!-- Help modal -->
+    <div
+      id="help"
+      class="modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="help-title"
+    >
+      <header>
+        <span id="help-title" data-i18n="help.title">Ajuda</span>
+        <button type="button" data-close="help" aria-label="Close">
+          <i data-icon="x"></i>
+        </button>
+      </header>
+      <div>
+        <h2 data-i18n="help.heading">Começar</h2>
+        <ol>
+          <li data-i18n="help.s1">Abra um livro na biblioteca.</li>
+          <li data-i18n="help.s2">Leia no centro; anote com o Hypothesis.</li>
+          <li data-i18n="help.s3">Em tela larga, consulte fontes à direita.</li>
+          <li data-i18n="help.s4">
+            Sumário e busca no painel esquerdo (ou abas dobradas na faixa
+            principal).
+          </li>
+        </ol>
+        <p data-i18n="help.tagline">annotate to assimilate</p>
+        <p data-i18n="help.pwa">PWA · Hypothesis · Vite</p>
+        <p id="info-version">LIBRUS 0.9.0 · poc</p>
+      </div>
+    </div>
+
+    <!-- Settings modal (rare options only; lang/theme live on the bar) -->
+    <div
+      id="settings"
+      class="modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="settings-title"
+    >
+      <header>
+        <span id="settings-title" data-i18n="set.title">Ajustes</span>
+        <button type="button" data-close="settings" aria-label="Close">
+          <i data-icon="x"></i>
+        </button>
+      </header>
+      <div>
+        <p data-i18n="set.hint" class="modal-hint">
+          Idioma e tema: botões na barra inferior.
+        </p>
+        <fieldset data-feat="jaas">
+          <legend data-i18n="set.jitsi">Videoconferência (JaaS)</legend>
+          <label class="stack"
+            ><span data-i18n="set.jitsiAppId">App ID</span>
+            <input
+              type="text"
+              id="jitsi-app-id"
+              placeholder="vpaas-magic-cookie-…"
+          /></label>
+          <label class="stack"
+            ><span data-i18n="set.jitsiRoom">Sala</span>
+            <input type="text" id="jitsi-room" value="librus-estudo"
+          /></label>
+          <label class="stack"
+            ><span data-i18n="set.jitsiName">Nome</span>
+            <input type="text" id="jitsi-name"
+          /></label>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer id="bar">
+      <button type="button" data-go="library" title="Home" aria-label="Home">
+        <i data-icon="home" data-icon-size="22"></i>
+      </button>
+      <span id="app-title">LIBRUS</span>
+      <div id="bar-end">
+        <button
+          type="button"
+          id="bar-lang"
+          data-cycle="lang"
+          title="Language"
+          aria-label="Language"
+        >
+          <i
+            id="bar-lang-icon"
+            data-icon="lang-pt"
+            data-icon-size="22"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button
+          type="button"
+          id="bar-theme"
+          data-cycle="theme"
+          title="Theme"
+          aria-label="Theme"
+        >
+          <i id="bar-theme-icon" data-icon="monitor" data-icon-size="22"></i>
+        </button>
+        <button type="button" data-open="help" title="Help" aria-label="Help">
+          <i data-icon="info" data-icon-size="22"></i>
+        </button>
+        <button
+          type="button"
+          data-open="settings"
+          title="Settings"
+          aria-label="Settings"
+        >
+          <i data-icon="settings" data-icon-size="22"></i>
+        </button>
+      </div>
+    </footer>
+
+    <input
+      type="file"
+      id="pdf-file-input"
+      accept="application/pdf,.pdf"
+      hidden
+    />
+
+  </body>
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "lde",
+    "title": "The Spirits’ Book",
+    "titlePt": "O Livro dos Espíritos",
+    "author": "Allan Kardec",
+    "year": 1857,
+    "meta": "Codificação · 1857",
+    "lang": "pt",
+    "path": "/books/lde/book.json",
+    "emoji": "✨",
+    "color": "#00008b",
+    "isbn": "978-85-7328-728-8",
+    "pages": 529
+  },
+  {
+    "id": "ldm",
+    "title": "The Mediums’ Book",
+    "titlePt": "O Livro dos Médiuns",
+    "author": "Allan Kardec",
+    "year": 1861,
+    "meta": "Codificação · 1861",
+    "lang": "pt",
+    "path": "/books/ldm/book.json",
+    "emoji": "✒️",
+    "color": "#800080",
+    "isbn": "978-85-7328-729-5",
+    "pages": 449
+  },
+  {
+    "id": "ese",
+    "title": "The Gospel According to Spiritism",
+    "titlePt": "O Evangelho segundo o Espiritismo",
+    "author": "Allan Kardec",
+    "year": 1864,
+    "meta": "Codificação · 1864",
+    "lang": "pt",
+    "path": "/books/ese/book.json",
+    "emoji": "🕊️",
+    "color": "#008080",
+    "isbn": "978-85-7328-730-1",
+    "pages": 417
+  },
+  {
+    "id": "ceu",
+    "title": "Heaven and Hell",
+    "titlePt": "O Céu e o Inferno",
+    "author": "Allan Kardec",
+    "year": 1865,
+    "meta": "Codificação · 1865",
+    "lang": "pt",
+    "path": "/books/ceu/book.json",
+    "emoji": "🔥",
+    "color": "#8b4513",
+    "isbn": "978-85-7328-731-8",
+    "pages": 409
+  },
+  {
+    "id": "gen",
+    "title": "Genesis",
+    "titlePt": "A Gênese",
+    "author": "Allan Kardec",
+    "year": 1868,
+    "meta": "Codificação · 1868",
+    "lang": "pt",
+    "path": "/books/gen/book.json",
+    "emoji": "🌱",
+    "color": "#006400",
+    "isbn": "978-85-7328-732-5",
+    "pages": 417
+  }
+]
