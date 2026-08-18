@@ -1,13 +1,13 @@
-- 🇺🇸 [English](#english)
-  - ⚙️ [1. The Entry Point: Librus Core (librus-shell)](#1-the-entry-point-librus-core-librus-shell)
-  - 📖 [2. The Specialized Flavor: Doutrina (doutrina / doutrina-content)](#2-the-specialized-flavor-doutrina-doutrina--doutrina-content)
-  - 🏛️ [3. The Hyper-Specialized Sub-Flavor: Centro (centro)](#3-the-hyper-specialized-sub-flavor-centro-centro)
-  - 🤝 [How to Contribute](#how-to-contribute)
-- 🇧🇷 [Português](#português)
-  - ⚙️ [1. O Ponto de Entrada: Núcleo Librus (librus-shell)](#1-o-ponto-de-entrada-núcleo-librus-librus-shell)
-  - 📖 [2. O Sabor Especializado: Doutrina (doutrina / doutrina-content)](#2-o-sabor-especializado-doutrina-doutrina--doutrina-content)
-  - 🏛️ [3. A Subvariante Hiperespecializada: Centro (centro)](#3-a-subvariante-hiperespecializada-centro-centro)
-  - 🤝 [Como Contribuir](#como-contribuir)
+- 🇺🇸 [English](#-librus-ecosystem-repository-guide--contribution-hub)
+  - ⚙️ [1. The Entry Point: Librus Core (librus-shell)](#️-1-the-entry-point-librus-core-librus-shell)
+  - 📖 [2. The Specialized Flavor: Doutrina (doutrina / doutrina-content)](#-2-the-specialized-flavor-doutrina-doutrina--doutrina-content)
+  - 🏛️ [3. The Hyper-Specialized Sub-Flavor: Centro (centro)](#️-3-the-hyper-specialized-sub-flavor-centro-centro)
+  - 🤝 [How to Contribute](#-how-to-contribute)
+- 🇧🇷 [Português](#-ecossistema-librus-guia-de-repositórios-e-central-de-contribuição)
+  - ⚙️ [1. O Ponto de Entrada: Núcleo Librus (librus-shell)](#️-1-o-ponto-de-entrada-núcleo-librus-librus-shell)
+  - 📖 [2. O Sabor Especializado: Doutrina (doutrina / doutrina-content)](#-2-o-sabor-especializado-doutrina-doutrina--doutrina-content)
+  - 🏛️ [3. A Subvariante Hiperespecializada: Centro (centro)](#️-3-a-subvariante-hiperespecializada-centro-centro)
+  - 🤝 [Como Contribuir](#-como-contribuir)
 
 # 🌐 Librus Ecosystem: Repository Guide & Contribution Hub
 
