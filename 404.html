@@ -88,40 +88,11 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-BHOm1o9l.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-krUaCqez.css">
+    <script type="module" crossorigin src="/assets/index-CqZC5eOZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CwrMQJTq.css">
   </head>
 
   <body data-view="library" data-lang="pt">
-    <!-- Portrait notice — fullscreen, dismissable; auto-hides in landscape -->
-    <div
-      id="orient"
-      hidden
-      role="alertdialog"
-      aria-modal="true"
-      aria-labelledby="orient-title"
-      aria-describedby="orient-msg"
-      aria-hidden="true"
-    >
-      <div>
-        <div id="orient-anim" aria-hidden="true">
-          <div id="orient-phone">
-            <span id="orient-notch"></span>
-            <span id="orient-screen"></span>
-          </div>
-          <div id="orient-arc"></div>
-        </div>
-        <h2 id="orient-title" data-i18n="orient.title">Gire o dispositivo</h2>
-        <p id="orient-msg" data-i18n="orient.body">
-          A experiência em modo retrato é limitada. Gire o aparelho para
-          paisagem (sentido anti-horário).
-        </p>
-        <button type="button" id="orient-dismiss" data-i18n="orient.dismiss">
-          Continuar mesmo assim
-        </button>
-      </div>
-    </div>
-
     <!-- Library -->
     <div id="library" data-screen>
       <header>
@@ -131,11 +102,13 @@
           data-icon-size="56"
           aria-hidden="true"
         ></div>
-        <h1 data-i18n="library.title">LIBRUS</h1>
+        <h1>
+          <span data-i18n="library.title">LIBRUS</span
+          ><sup id="app-version" class="app-version">v.0.9.0</sup>
+        </h1>
         <p class="library-cta" data-i18n="library.cta">
           Ache · Leia · Consulte · Anote
         </p>
-        <p id="build">v0.9.0 · poc</p>
       </header>
       <main>
         <h2 data-i18n="library.heading">Biblioteca</h2>
@@ -158,20 +131,43 @@
             <span data-i18n="pane.find">1. Ache</span>
           </div>
           <div data-tool="find:toc" class="on">
-            <input
-              type="search"
-              id="toc-q"
-              data-i18n-ph="ph.filter"
-              placeholder="Filtrar…"
-            />
+            <div class="tool-search">
+              <input
+                type="search"
+                id="toc-q"
+                data-i18n-ph="ph.filter"
+                placeholder="Filtrar…"
+              />
+              <button
+                type="button"
+                class="input-clear"
+                data-clear="toc-q"
+                hidden
+                aria-label="Clear"
+              >
+                ×
+              </button>
+            </div>
           </div>
           <div data-tool="find:search" hidden>
-            <input
-              type="search"
-              id="search-q"
-              data-i18n-ph="ph.search"
-              placeholder="Buscar…"
-            />
+            <div class="tool-search">
+              <input
+                type="search"
+                id="search-q"
+                data-i18n-ph="ph.search"
+                placeholder="Buscar… (Enter)"
+                enterkeyhint="search"
+              />
+              <button
+                type="button"
+                class="input-clear"
+                data-clear="search-q"
+                hidden
+                aria-label="Clear"
+              >
+                ×
+              </button>
+            </div>
           </div>
           <div data-body>
             <nav id="toc" data-panel="find:toc" class="on"></nav>
@@ -217,23 +213,81 @@
             </button>
           </div>
           <div data-tool="read:book" hidden>
-            <button type="button" data-page="prev">
-              <i data-icon="chevron-left"></i
-              ><span data-i18n="btn.prev">Ant.</span>
+            <div class="page-nav" data-page-nav>
+              <button
+                type="button"
+                data-page="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <input
+                  type="number"
+                  id="page-n"
+                  min="1"
+                  value="1"
+                  inputmode="numeric"
+                  aria-label="Page"
+                />
+                <span id="page-total">/ 1</span>
+                <span class="page-nav-unit" data-i18n="page.unit">páginas</span>
+              </label>
+              <button
+                type="button"
+                data-page="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
+            </div>
+            <!-- Link density + provider filters (wide only; hidden in reduced) -->
+            <span class="tool-sep" data-link-controls aria-hidden="true"></span>
+            <button
+              type="button"
+              id="link-density"
+              data-density-knob
+              data-step="md"
+              data-link-controls
+              title="Densidade de ligações"
+            >
+              <i data-icon="circle-gauge" style="rotate: 315deg"></i
+              ><span data-i18n="density.md">Médio</span>
             </button>
-            <label>
-              <input
-                type="number"
-                id="page-n"
-                min="1"
-                value="1"
-                inputmode="numeric"
-              />
-              <span id="page-total">/ 1</span>
-            </label>
-            <button type="button" data-page="next">
-              <i data-icon="chevron-right"></i
-              ><span data-i18n="btn.next">Próx.</span>
+            <button
+              type="button"
+              class="link-toggle"
+              data-link="luz"
+              data-link-controls
+              aria-pressed="true"
+              title="Luz Espírita"
+            >
+              <i data-icon="gem"></i><span data-i18n="prov.luz">Luz</span>
+            </button>
+            <button
+              type="button"
+              class="link-toggle"
+              data-link="encyc"
+              data-link-controls
+              aria-pressed="true"
+              title="Enciclopédia"
+            >
+              <i data-icon="globe"></i
+              ><span data-i18n="prov.encyc">Encic</span>
+            </button>
+            <button
+              type="button"
+              class="link-toggle"
+              data-link="dict"
+              data-link-controls
+              aria-pressed="true"
+              title="Dicionário"
+            >
+              <i data-icon="book-a"></i><span data-i18n="prov.dict">Dict</span>
             </button>
           </div>
           <div
@@ -340,6 +394,10 @@
           </div>
           <div data-body>
             <div data-panel="consult:web" class="on" id="ctx-host">
+              <div id="ctx-loading" class="pane-spinner" hidden aria-hidden="true">
+                <span class="pane-spinner-ring" aria-hidden="true"></span>
+                <p id="ctx-loading-msg" class="pane-spinner-msg"></p>
+              </div>
               <iframe
                 id="ctx"
                 title="Context"
@@ -402,6 +460,37 @@
     </div>
 
     <div id="scrim" hidden></div>
+
+    <!-- Study gate — same modal shell as Help/Settings, no close (X); CTA only -->
+    <div
+      id="orient"
+      class="modal study-gate"
+      hidden
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="orient-title"
+      aria-describedby="orient-msg"
+      aria-hidden="true"
+    >
+      <header>
+        <span id="orient-title" data-i18n="orient.title"
+          >Estudo reduzido neste espaço</span
+        >
+      </header>
+      <div>
+        <div id="orient-emoji" aria-hidden="true">⚠️</div>
+        <p id="orient-msg" data-i18n="orient.body">
+          Neste espaço a leitura ativa completa (texto + consulta ao mesmo
+          tempo + anotações) não é possível. O painel de consulta foi removido.
+          Continue apenas se aceitar uma experiência reduzida, ou gire / use
+          uma tela maior para o estudo completo.
+        </p>
+        <button type="button" id="orient-dismiss" data-i18n="orient.dismiss">
+          Continuar em modo reduzido
+        </button>
+      </div>
+    </div>
+
     <!-- Help modal -->
     <div
       id="help"
@@ -430,7 +519,6 @@
         </ol>
         <p data-i18n="help.tagline">annotate to assimilate</p>
         <p data-i18n="help.pwa">PWA · Hypothesis · Vite</p>
-        <p id="info-version">LIBRUS 0.9.0 · poc</p>
       </div>
     </div>
 
@@ -453,7 +541,7 @@
         <p data-i18n="set.hint" class="modal-hint">
           Idioma e tema: botões na barra inferior.
         </p>
-        <fieldset>
+        <fieldset data-reader-only>
           <legend data-i18n="set.guide">Guia de cor</legend>
           <p data-i18n="set.guideHint" class="modal-hint">
             Cores do chrome do leitor (abas e barras). O tema claro/escuro fica
@@ -498,6 +586,7 @@
         <i data-icon="home" data-icon-size="22"></i>
       </button>
       <span id="app-title">LIBRUS</span>
+      <span id="bar-beta" aria-label="Beta">BETA</span>
       <div id="bar-end">
         <button
           type="button"
