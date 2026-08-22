@@ -1,92 +1,120 @@
-- 🇺🇸 [English](#-librus-ecosystem-repository-guide--contribution-hub)
-  - ⚙️ [1. The Entry Point: Librus Core (librus-shell)](#️-1-the-entry-point-librus-core-librus-shell)
-  - 📖 [2. The Specialized Flavor: Doutrina (doutrina / doutrina-content)](#-2-the-specialized-flavor-doutrina-doutrina--doutrina-content)
-  - 🏛️ [3. The Hyper-Specialized Sub-Flavor: Centro (centro)](#️-3-the-hyper-specialized-sub-flavor-centro-centro)
-  - 🤝 [How to Contribute](#-how-to-contribute)
-- 🇧🇷 [Português](#-ecossistema-librus-guia-de-repositórios-e-central-de-contribuição)
-  - ⚙️ [1. O Ponto de Entrada: Núcleo Librus (librus-shell)](#️-1-o-ponto-de-entrada-núcleo-librus-librus-shell)
-  - 📖 [2. O Sabor Especializado: Doutrina (doutrina / doutrina-content)](#-2-o-sabor-especializado-doutrina-doutrina--doutrina-content)
-  - 🏛️ [3. A Subvariante Hiperespecializada: Centro (centro)](#️-3-a-subvariante-hiperespecializada-centro-centro)
-  - 🤝 [Como Contribuir](#-como-contribuir)
+# librus
 
-# 🌐 Librus Ecosystem: Repository Guide & Contribution Hub
-
-Welcome to the **Librus** project family! 🚀 Librus is a zero-framework, vanilla web platform designed for high-performance, accessible digital text repositories.
-
-Because the project is modular, it spans multiple repositories ranging from the foundational core engine down to specialized downstream implementations. Choose the repository that matches your area of interest to get started.
+**Build step 4 of 4** · Publish host for **librus.app** (+ ecosystem map)
 
 ---
 
-## ⚙️ 1. The Entry Point: Librus Core (`librus-shell`)
+## 📑 Table of contents
 
-- **Repository:** [sergioSHKLR/librus-shell](https://github.com/sergioSHKLR/librus-shell)
-- **What it is:** The foundational, agnostic web application engine. It handles the core single-page reader interface (SPA), UI components, navigation, and zero-framework performance optimization using vanilla HTML, CSS, and JavaScript.
-- **Who it's for:** Frontend developers, UI/UX contributors, and performance enthusiasts working on the core engine.
-
-## 📖 2. The Specialized Flavor: Doutrina (`doutrina` / `doutrina-content`)
-
-- **Web:** [doutrina.org](https://doutrina.org)
-- **Repositories:**
-  - [sergioSHKLR/doutrina-content](https://github.com/sergioSHKLR/doutrina-content) (Raw Markdown content repository)
-  - [sergioSHKLR/librus-linker](https://github.com/sergioSHKLR/librus-linker) (Automated cross-reference linker tool)
-  - [sergioSHKLR/doutrina](https://github.com/sergioSHKLR/doutrina) (Main site wrapper)
-
-- **What it is:** The primary specialized implementation built on top of Librus, tailored specifically for Spiritist literature, classical book transcriptions, and structured study repositories. Content passes from `doutrina-content` through `librus-linker` before being built by the shell.
-- **Who it's for:** Content curators, researchers, proofreaders, and text editors managing Markdown libraries and historical literature.
-
-## 🏛️ 3. The Hyper-Specialized Sub-Flavor: Centro (`centro`)
-
-- **Web:** [centro.doutrina.org](https://centro.doutrina.org)
-- **Repository:** [sergioSHKLR/centro](https://github.com/sergioSHKLR/centro)
-- **What it is:** A further specialized sub-flavor branching directly off of Doutrina. It provides tailored layouts, focused modules, and configuration adjustments specifically designed for study center applications and operational reference use.
-- **Who it's for:** Contributors looking to refine specialized presentation layers, specific study aids, or localized center toolsets.
+1. 🇺🇸 [English](#-english--build-step-4-of-4)
+   1. 🎯 [Audience](#-audience)
+   2. 🗺️ [Pipeline position](#-pipeline-position)
+   3. 🌐 [This host](#-this-host)
+   4. ⚠️ [Do not hand-edit the app](#️-do-not-hand-edit-the-app)
+   5. 📚 [Ecosystem map](#-ecosystem-map)
+   6. 🤝 [How to help](#-how-to-help)
+2. 🇧🇷 [Português](#-português--etapa-4-de-4)
+   1. 🎯 [Público](#-público)
+   2. 🗺️ [Posição no pipeline](#-posição-no-pipeline)
+   3. 🌐 [Este host](#-este-host)
+   4. ⚠️ [Não edite o app à mão](#️-não-edite-o-app-à-mão)
+   5. 📚 [Mapa do ecossistema](#-mapa-do-ecossistema)
+   6. 🤝 [Como ajudar](#-como-ajudar)
 
 ---
 
-## 🤝 How to Contribute
+# 🇺🇸 English — Build step 4 of 4
 
-1. **Explore the Repos:** Pick the layer you want to impact (Core Engine, Content Pipeline, Main Doutrina flavor, or Centro sub-flavor).
-2. **Fork & Clone:** Set up your workspace locally.
-3. **Submit a PR:** Push your improvements, proofreads, or code fixes via a Pull Request.
+GitHub Pages **deployment mirror** of `librus-shell` `dist/` for **https://librus.app**.
+
+This README is also the **volunteer entry map** for the whole Librus family.
+
+## 🎯 Audience
+
+1. Maintainers who verify Pages / DNS / CNAME  
+2. Collaborators oriented to the right upstream repo  
+3. Reviewers assessing the project (not end readers)  
+
+## 🗺️ Pipeline position
+
+1. [`doutrina-content`](https://github.com/sergioSHKLR/doutrina-content) — content  
+2. [`librus-linker`](https://github.com/sergioSHKLR/librus-linker) — links  
+3. [`librus-shell`](https://github.com/sergioSHKLR/librus-shell) — SPA build  
+4. **This repo** (and sibling hosts) — live publish  
+
+## 🌐 This host
+
+1. **Site:** [librus.app](https://librus.app)  
+2. **Flavor:** `librus`  
+3. **Source of truth for UI:** always [`librus-shell`](https://github.com/sergioSHKLR/librus-shell)  
+4. **Deploy:** Actions on shell push `dist/` here (`main`)  
+
+## ⚠️ Do not hand-edit the app
+
+1. Do **not** patch JS/CSS in this repo for features — change **librus-shell**, then deploy.  
+2. Treat committed `assets/` / `index.html` here as **generated**.  
+3. CNAME / Pages settings are host concerns; app behavior is shell concerns.  
+
+## 📚 Ecosystem map
+
+1. ⚙️ [librus-shell](https://github.com/sergioSHKLR/librus-shell) — step 3 · engine  
+2. 📖 [doutrina-content](https://github.com/sergioSHKLR/doutrina-content) — step 1 · Markdown  
+3. 🔗 [librus-linker](https://github.com/sergioSHKLR/librus-linker) — step 2 · injection  
+4. 🌐 [doutrina](https://github.com/sergioSHKLR/doutrina) — step 4 · doutrina.org  
+5. 🏛️ [centro](https://github.com/sergioSHKLR/centro) — step 4 · centro.doutrina.org  
+
+## 🤝 How to help
+
+1. Open issues on the **upstream** repo that owns the layer (content vs shell vs linker).  
+2. For UI bugs: shell + flavor + viewport.  
+3. For text/anchors: doutrina-content.  
+4. For live DNS/Pages only: this host.  
 
 ---
 
-# 🌐 Ecossistema Librus: Guia de Repositórios e Central de Contribuição
+# 🇧🇷 Português — Etapa 4 de 4
 
-Bem-vindo à família de projetos **Librus**! 🚀 O Librus é uma plataforma web em _vanilla_ (sem frameworks), projetada para criar repositórios de textos digitais de alta performance e acessibilidade.
+Espelho de publicação (GitHub Pages) do `dist/` de `librus-shell` em **https://librus.app**.
 
-Como o projeto é modular, ele se divide em vários repositórios, desde o motor central base até implementações especializadas. Escolha o repositório que melhor corresponde ao seu interesse para começar.
+Este README também é o **mapa de entrada** para voluntários da família Librus.
 
----
+## 🎯 Público
 
-## ⚙️ 1. O Ponto de Entrada: Núcleo Librus (`librus-shell`)
+1. Mantenedores de Pages / DNS / CNAME  
+2. Colaboradores que precisam achar o repo certo  
+3. Avaliadores do projeto (não leitores finais)  
 
-- **Repositório:** [sergioSHKLR/librus-shell](https://github.com/sergioSHKLR/librus-shell)
-- **O que é:** O motor de aplicação web fundamental e agnóstico. Ele gerencia a interface principal de leitura em página única (SPA), componentes de IU, navegação e otimização de desempenho utilizando HTML, CSS e JavaScript puros.
-- **Para quem é:** Desenvolvedores frontend, contribuidores de IU/UX e entusiastas de performance que desejam aprimorar o motor principal.
+## 🗺️ Posição no pipeline
 
-## 📖 2. O Sabor Especializado: Doutrina (`doutrina` / `doutrina-content`)
+1. [`doutrina-content`](https://github.com/sergioSHKLR/doutrina-content) — conteúdo  
+2. [`librus-linker`](https://github.com/sergioSHKLR/librus-linker) — ligações  
+3. [`librus-shell`](https://github.com/sergioSHKLR/librus-shell) — build da SPA  
+4. **Este repo** (e hosts irmãos) — publicação  
 
-- **Web:** [doutrina.org](https://doutrina.org)
-- **Repositórios:**
-  - [sergioSHKLR/doutrina-content](https://github.com/sergioSHKLR/doutrina-content) (Repositório de conteúdo em Markdown bruto)
-  - [sergioSHKLR/librus-linker](https://github.com/sergioSHKLR/librus-linker) (Ferramenta automatizada de links cruzados)
-  - [sergioSHKLR/doutrina](https://github.com/sergioSHKLR/doutrina) (Repositório principal do site)
+## 🌐 Este host
 
-- **O que é:** A principal implementação especializada construída sobre o Librus, focada na literatura espírita, transcrições de livros clássicos e repositórios de estudo estruturados. O conteúdo passa de `doutrina-content` pelo `librus-linker` antes de ser compilado pelo _shell_.
-- **Para quem é:** Curadores de conteúdo, pesquisadores, revisores e editores de texto que gerenciam bibliotecas em Markdown e literatura histórica.
+1. **Site:** [librus.app](https://librus.app)  
+2. **Sabor:** `librus`  
+3. **Fonte da UI:** sempre [`librus-shell`](https://github.com/sergioSHKLR/librus-shell)  
+4. **Deploy:** Actions do shell enviam `dist/` para cá  
 
-## 🏛️ 3. A Subvariante Hiperespecializada: Centro (`centro`)
+## ⚠️ Não edite o app à mão
 
-- **Web:** [centro.doutrina.org](https://centro.doutrina.org)
-- **Repositório:** [sergioSHKLR/centro](https://github.com/sergioSHKLR/centro)
-- **O que é:** Um sub-sabor ainda mais especializado, derivado diretamente da Doutrina. Ele fornece layouts adaptados, módulos focados e ajustes de configuração projetados especificamente para aplicações voltadas a centros de estudo e referência operacional.
-- **Para quem é:** Contribuidores focados em refinar camadas de apresentação especializadas, ferramentas de estudo específicas ou recursos direcionados.
+1. Não corrija JS/CSS de produto aqui — altere **librus-shell** e publique.  
+2. `assets/` / `index.html` aqui são **gerados**.  
+3. CNAME/Pages = host; comportamento do app = shell.  
 
----
+## 📚 Mapa do ecossistema
 
-## 🤝 Como Contribuir
+1. ⚙️ [librus-shell](https://github.com/sergioSHKLR/librus-shell) — etapa 3  
+2. 📖 [doutrina-content](https://github.com/sergioSHKLR/doutrina-content) — etapa 1  
+3. 🔗 [librus-linker](https://github.com/sergioSHKLR/librus-linker) — etapa 2  
+4. 🌐 [doutrina](https://github.com/sergioSHKLR/doutrina) — etapa 4 · doutrina.org  
+5. 🏛️ [centro](https://github.com/sergioSHKLR/centro) — etapa 4 · centro.doutrina.org  
 
-1. **Escolha o Repositório:** Identifique a camada que deseja impactar (Motor Central, Pipeline de Conteúdo, Sabor Doutrina ou Sub-sabor Centro).
-2. **Faça um Fork & Clone:** Configure seu ambiente de desenvolvimento local.
-3. **Envie um PR:** Submeta suas melhorias, correções textuais ou alterações de código através de um _Pull Request_.
+## 🤝 Como ajudar
+
+1. Abra issues no repo **upstream** da camada certa.  
+2. Bugs de UI: shell + sabor + viewport.  
+3. Texto/âncoras: doutrina-content.  
+4. Só DNS/Pages: este host.  
