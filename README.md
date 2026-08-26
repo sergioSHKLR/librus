@@ -48,6 +48,7 @@ This README is also the **volunteer entry map** for the whole Librus family.
 2. **Flavor:** `librus`  
 3. **Source of truth for UI:** always [`librus-shell`](https://github.com/sergioSHKLR/librus-shell)  
 4. **Deploy:** Actions on shell push `dist/` here (`main`)  
+5. **Live beta UX** (owned by shell): narrow screens blocked; first-visit Device/How to onboard — see [`librus-shell` README](https://github.com/sergioSHKLR/librus-shell).  
 
 ## ⚠️ Do not hand-edit the app
 
@@ -101,6 +102,7 @@ Este README também é o **mapa de entrada** para voluntários da família Libru
 2. **Sabor:** `librus`  
 3. **Fonte da UI:** sempre [`librus-shell`](https://github.com/sergioSHKLR/librus-shell)  
 4. **Deploy:** Actions do shell enviam `dist/` para cá  
+5. **UX beta ao vivo** (no shell): telas estreitas bloqueadas; onboard Dispositivo/Como usar na 1ª visita — ver [README do librus-shell](https://github.com/sergioSHKLR/librus-shell).  
 
 ## ⚠️ Não edite o app à mão
 
