@@ -88,8 +88,8 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-5Q4VN3vy.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CrlI013Z.css">
+    <script type="module" crossorigin src="/assets/index-CNvE88hx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Pjzv6W-W.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -461,7 +461,7 @@
 
     <div id="scrim" hidden></div>
 
-    <!-- Study gate — same modal shell as Help/Settings, no close (X); CTA only -->
+    <!-- Study gate — blocking; no dismiss (rotate / wider screen only) -->
     <div
       id="orient"
       class="modal study-gate"
@@ -474,20 +474,16 @@
     >
       <header>
         <span id="orient-title" data-i18n="orient.title"
-          >Estudo reduzido neste espaço</span
+          >Tela pequena demais para estudar</span
         >
       </header>
       <div>
         <div id="orient-emoji" aria-hidden="true">⚠️</div>
         <p id="orient-msg" data-i18n="orient.body">
-          Neste espaço a leitura ativa completa (texto + consulta ao mesmo
-          tempo + anotações) não é possível. O painel de consulta foi removido.
-          Continue apenas se aceitar uma experiência reduzida, ou gire / use
-          uma tela maior para o estudo completo.
+          O estudo ativo completo (ler e consultar ao mesmo tempo, com
+          anotações) precisa de mais espaço. Gire o aparelho para paisagem ou
+          use uma tela maior — não há modo reduzido neste beta.
         </p>
-        <button type="button" id="orient-dismiss" data-i18n="orient.dismiss">
-          Continuar em modo reduzido
-        </button>
       </div>
     </div>
 
@@ -748,7 +744,7 @@
       </div>
     </div>
 
-    <!-- Settings modal (rare options only; lang/theme live on the bar) -->
+    <!-- Settings modal (theme stays on the bar; language lives here) -->
     <div
       id="settings"
       class="modal"
@@ -765,8 +761,19 @@
       </header>
       <div>
         <p data-i18n="set.hint" class="modal-hint">
-          Idioma e tema: botões na barra inferior.
+          Tema claro/escuro: botão na barra inferior.
         </p>
+        <fieldset>
+          <legend data-i18n="set.lang">Idioma</legend>
+          <label
+            ><input type="radio" name="ui-lang" value="pt" checked />
+            <span>Português</span></label
+          >
+          <label
+            ><input type="radio" name="ui-lang" value="en" />
+            <span>English</span></label
+          >
+        </fieldset>
         <fieldset data-reader-only>
           <legend data-i18n="set.guide">Guia de cor</legend>
           <p data-i18n="set.guideHint" class="modal-hint">
@@ -814,20 +821,6 @@
       <span id="app-title">LIBRUS</span>
       <span id="bar-beta" aria-label="Beta">BETA</span>
       <div id="bar-end">
-        <button
-          type="button"
-          id="bar-lang"
-          data-cycle="lang"
-          title="Language"
-          aria-label="Language"
-        >
-          <i
-            id="bar-lang-icon"
-            data-icon="lang-pt"
-            data-icon-size="22"
-            aria-hidden="true"
-          ></i>
-        </button>
         <button
           type="button"
           id="bar-theme"
