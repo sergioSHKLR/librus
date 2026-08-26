@@ -88,8 +88,8 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-CqZC5eOZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CwrMQJTq.css">
+    <script type="module" crossorigin src="/assets/index-5Q4VN3vy.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CrlI013Z.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -488,6 +488,232 @@
         <button type="button" id="orient-dismiss" data-i18n="orient.dismiss">
           Continuar em modo reduzido
         </button>
+      </div>
+    </div>
+
+    <!-- First-visit onboard — one card stage; Viewport | How to -->
+    <div
+      id="onboard"
+      class="modal onboard-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="onboard-title"
+      data-step="where"
+    >
+      <header>
+        <span id="onboard-title" data-i18n="onboard.title"
+          >Onde você estuda</span
+        >
+        <button
+          type="button"
+          data-close="onboard"
+          data-i18n-aria="tip.close"
+          aria-label="Close"
+        >
+          <i data-icon="x"></i>
+        </button>
+      </header>
+      <div>
+        <div id="cards-stage">
+          <div id="cards">
+            <article data-card="1">
+              <div class="onboard-card-head">
+                <i data-icon="list" aria-hidden="true"></i>
+                <strong data-i18n="pane.find">1. Ache</strong>
+                <span data-i18n="onboard.find">Sumário e busca no livro.</span>
+
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <p class="onboard-filler-label">TOC</p>
+                <ul class="onboard-toc">
+                  <li>Lorem</li>
+                  <li>
+                    <span class="onboard-mock-hit" data-how-hit="toc"
+                      >Ipsum</span
+                    >
+                  </li>
+                  <li>Dolor</li>
+                </ul>
+              </div>
+            </article>
+            <article data-card="2">
+              <div class="onboard-card-head">
+                <i data-icon="type" aria-hidden="true"></i>
+                <strong data-i18n="pane.read">2. Leia</strong>
+                <span data-i18n="onboard.read">Texto, páginas e tipografia.</span>
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <p class="onboard-lorem">
+                  Lorem
+                  <a
+                    class="onboard-mock-hit onboard-mock-link"
+                    data-how-hit="link"
+                    href="#"
+                    tabindex="-1"
+                    >ipsum</a
+                  >
+                  dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                  tempor
+                  <span
+                    class="onboard-mock-hit onboard-mock-select"
+                    data-how-hit="select"
+                    >ipsum</span
+                  >
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </article>
+            <article data-card="3">
+              <div class="onboard-card-head">
+                <i data-icon="globe" aria-hidden="true"></i>
+                <strong data-i18n="pane.consult">3. Consulte</strong>
+                <span data-i18n="onboard.consult"
+                  >Fontes ao lado da leitura.</span
+                >
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <article
+                  class="onboard-ipsum-article onboard-mock-hit"
+                  data-how-hit="article"
+                >
+                  <h4>Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                    diam.
+                  </p>
+                </article>
+              </div>
+            </article>
+            <article data-card="4">
+              <div class="onboard-card-head">
+                <i data-icon="sticky-note" aria-hidden="true"></i>
+                <strong data-i18n="pane.annotate">4. Anote</strong>
+                <span data-i18n="onboard.annotate"
+                  >Grifos, notas e destaques.</span
+                >
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <aside
+                  class="onboard-note onboard-mock-hit"
+                  data-how-hit="note"
+                >
+                  <strong>Note</strong>
+                  <p>
+                    Lorem ipsum — sit amet, consectetur; margined note on the
+                    selected phrase.
+                  </p>
+                </aside>
+              </div>
+            </article>
+          </div>
+          <div id="viewport-frame" aria-hidden="true">
+            <span id="viewport-label-top" data-i18n="onboard.deviceTag"
+              >Device</span
+            >
+            <span id="viewport-label-device" data-i18n="onboard.desktop"
+              >Desktop</span
+            >
+          </div>
+          <div
+            id="how-cursor"
+            class="how-cursor"
+            data-mode="pointer"
+            aria-hidden="true"
+            hidden
+          >
+            <svg
+              class="how-cursor-glyph how-cursor-pointer"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1.25"
+                stroke-linejoin="round"
+                d="M5.5 3.2 5.5 19.5c0 .55.66.84 1.06.47l3.7-3.5h.01l.9-.01 5.4-.01c.55 0 .82-.66.45-1.06L6.8 2.75a.75.75 0 0 0-1.3.45Z"
+              />
+            </svg>
+            <svg
+              class="how-cursor-glyph how-cursor-link"
+              viewBox="0 0 24 24"
+              width="30"
+              height="30"
+              hidden
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1.1"
+                stroke-linejoin="round"
+                d="M11 2.5c.8 0 1.5.7 1.5 1.5v6.2h.3c.4-1 1.2-1.5 2.1-1.5.7 0 1.3.3 1.7.8.4-.4.9-.7 1.5-.7 1.1 0 2 .9 2 2.1V14c0 3.4-2.2 5.5-5.4 5.5H12c-2.8 0-4.6-1.5-5.5-3.4L4.2 11.6c-.4-.7-.1-1.5.6-1.9.7-.4 1.5-.1 1.9.5l1.8 3.1V4c0-.8.7-1.5 1.5-1.5Z"
+              />
+            </svg>
+            <svg
+              class="how-cursor-glyph how-cursor-text"
+              viewBox="0 0 24 24"
+              width="20"
+              height="28"
+              hidden
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1"
+                d="M7 2h10v2.2h-3.4V19.8H17V22H7v-2.2h3.4V4.2H7V2Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <footer class="onboard-footer">
+          <label class="onboard-persist">
+            <input type="checkbox" id="onboard-persist" />
+            <span data-i18n="onboard.persist">Não mostrar de novo</span>
+          </label>
+          <div class="onboard-footer-center">
+            <div
+              class="onboard-mode-pill"
+              role="tablist"
+              aria-label="Onboard mode"
+            >
+              <button
+                type="button"
+                role="tab"
+                id="onboard-mode-viewport"
+                data-onboard-mode="where"
+                aria-selected="true"
+                data-i18n="onboard.mode.device"
+              >
+                Device
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="onboard-mode-how"
+                data-onboard-mode="how"
+                aria-selected="false"
+                data-i18n="onboard.mode.how"
+              >
+                How to
+              </button>
+            </div>
+            <button
+              type="button"
+              id="onboard-play"
+              class="onboard-play is-playing"
+              data-i18n-aria="onboard.pause"
+              aria-label="Pause"
+            >
+              <i data-icon="pause" class="onboard-ico-pause"></i>
+              <i data-icon="play" class="onboard-ico-play"></i>
+            </button>
+          </div>
+        </footer>
       </div>
     </div>
 
