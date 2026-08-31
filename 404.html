@@ -88,8 +88,8 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DZhoMwe9.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D3pvQBYU.css">
+    <script type="module" crossorigin src="/assets/index-Brnvq5TL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BXWER9oq.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -399,9 +399,9 @@
                   Como consultar
                 </p>
                 <p data-i18n="ctx.hintBody">
-                  Selecione um trecho no painel Leia e toque num provedor acima
-                  (Luz, Enciclopédia, Dicionário…). Também pode seguir um link
-                  no texto — a consulta abre aqui ao lado.
+                  Selecione um termo no painel Leia e clique num provedor acima
+                  (Luz Espírita, Enciclopédia, Dicionário, etc). Também pode
+                  usar um link existente — a consulta abre neste painel.
                 </p>
               </div>
               <div id="ctx-loading" class="pane-spinner" hidden aria-hidden="true">
@@ -505,11 +505,11 @@
       role="dialog"
       aria-modal="true"
       aria-labelledby="onboard-title"
-      data-step="where"
+      data-step="how"
     >
       <header>
-        <span id="onboard-title" data-i18n="onboard.title"
-          >Onde você estuda</span
+        <span id="onboard-title" data-i18n="onboard.titleHow"
+          >Como estudar</span
         >
         <button
           type="button"
@@ -563,11 +563,16 @@
                   tempor
                   <span
                     class="onboard-mock-hit onboard-mock-select"
-                    data-how-hit="select"
-                    >ipsum</span
+                    data-how-hit="select-search"
+                    >termo</span
                   >
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco.
+                  ut labore et
+                  <span
+                    class="onboard-mock-hit onboard-mock-select"
+                    data-how-hit="select-annotate"
+                    >trecho</span
+                  >
+                  dolore magna aliqua.
                 </p>
               </div>
             </article>
@@ -580,9 +585,40 @@
                 >
               </div>
               <div class="onboard-filler" aria-hidden="true">
+                <div class="onboard-mock-prov-row" aria-hidden="true">
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Luz</span
+                  >
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Encic</span
+                  >
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Dict</span
+                  >
+                </div>
                 <article
-                  class="onboard-ipsum-article onboard-mock-hit"
+                  class="onboard-ipsum-article onboard-mock-hit how-consult-result"
                   data-how-hit="article"
+                  data-how-result="termo"
+                  hidden
+                >
+                  <h4>Termo</h4>
+                  <p>
+                    Resultado da consulta para «termo» — fontes ao lado da
+                    leitura, qualquer provedor.
+                  </p>
+                </article>
+                <article
+                  class="onboard-ipsum-article onboard-mock-hit how-consult-result"
+                  data-how-hit="article"
+                  data-how-result="ipsum"
+                  hidden
                 >
                   <h4>Ipsum</h4>
                   <p>
@@ -606,7 +642,7 @@
                   class="onboard-note onboard-mock-hit"
                   data-how-hit="note"
                 >
-                  <strong>Note</strong>
+                  <strong>Trecho</strong>
                   <p>
                     Lorem ipsum — sit amet, consectetur; margined note on the
                     selected phrase.
@@ -622,6 +658,14 @@
             <span id="viewport-label-device" data-i18n="onboard.desktop"
               >Desktop</span
             >
+          </div>
+          <div
+            id="viewport-blocked"
+            class="viewport-blocked"
+            aria-hidden="true"
+          >
+            <span aria-hidden="true">⚠️</span>
+            <strong data-i18n="onboard.blocked">Bloqueado</strong>
           </div>
           <div
             id="how-cursor"
@@ -676,23 +720,34 @@
           </div>
         </div>
 
+        <p
+          id="onboard-caption"
+          class="onboard-caption"
+          data-i18n="onboard.cap.howStart"
+          aria-live="polite"
+        >
+          Ache o capítulo no sumário à esquerda.
+        </p>
+
         <footer class="onboard-footer">
           <label class="onboard-persist">
             <input type="checkbox" id="onboard-persist" />
             <span data-i18n="onboard.persist">Não mostrar de novo</span>
           </label>
           <div class="onboard-footer-center">
+            <!-- Kept in DOM; hidden for now — first-visit is How to only -->
             <div
               class="onboard-mode-pill"
               role="tablist"
               aria-label="Onboard mode"
+              hidden
             >
               <button
                 type="button"
                 role="tab"
                 id="onboard-mode-viewport"
                 data-onboard-mode="where"
-                aria-selected="true"
+                aria-selected="false"
                 data-i18n="onboard.mode.device"
               >
                 Dispositivo
@@ -702,7 +757,7 @@
                 role="tab"
                 id="onboard-mode-how"
                 data-onboard-mode="how"
-                aria-selected="false"
+                aria-selected="true"
                 data-i18n="onboard.mode.how"
               >
                 Como usar
@@ -713,12 +768,21 @@
               id="onboard-play"
               class="onboard-play is-playing"
               data-i18n-aria="onboard.pause"
-              aria-label="Pause"
+              aria-label="Pausar"
             >
               <i data-icon="pause" class="onboard-ico-pause"></i>
               <i data-icon="play" class="onboard-ico-play"></i>
+              <i data-icon="rotate-cw" class="onboard-ico-reload"></i>
             </button>
           </div>
+          <button
+            type="button"
+            id="onboard-enter"
+            class="onboard-enter"
+            data-i18n="onboard.enter"
+          >
+            Entrar
+          </button>
         </footer>
       </div>
     </div>
