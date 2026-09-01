@@ -88,8 +88,8 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-Brnvq5TL.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BXWER9oq.css">
+    <script type="module" crossorigin src="/assets/index-B9Q8nTtA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CsJbXEn9.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -509,7 +509,7 @@
     >
       <header>
         <span id="onboard-title" data-i18n="onboard.titleHow"
-          >Como estudar</span
+          >Como utilizar</span
         >
         <button
           type="button"
@@ -723,11 +723,12 @@
         <p
           id="onboard-caption"
           class="onboard-caption"
-          data-i18n="onboard.cap.howStart"
+          data-i18n="onboard.cap.howControls"
           aria-live="polite"
         >
-          Ache o capítulo no sumário à esquerda.
+          Use os botões abaixo para controlar a exibição
         </p>
+        <!-- Live captions cycle from howStart after play -->
 
         <footer class="onboard-footer">
           <label class="onboard-persist">
@@ -765,10 +766,21 @@
             </div>
             <button
               type="button"
+              id="onboard-mute"
+              class="onboard-mute is-muted"
+              data-i18n-aria="onboard.unmute"
+              aria-label="Ativar som"
+              aria-pressed="true"
+            >
+              <i data-icon="volume-x" class="onboard-ico-muted"></i>
+              <i data-icon="volume-2" class="onboard-ico-unmuted"></i>
+            </button>
+            <button
+              type="button"
               id="onboard-play"
-              class="onboard-play is-playing"
-              data-i18n-aria="onboard.pause"
-              aria-label="Pausar"
+              class="onboard-play is-paused"
+              data-i18n-aria="onboard.play"
+              aria-label="Reproduzir"
             >
               <i data-icon="pause" class="onboard-ico-pause"></i>
               <i data-icon="play" class="onboard-ico-play"></i>
