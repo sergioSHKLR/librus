@@ -89,7 +89,7 @@
       })();
     </script>
     <script>
-      /* Umami — production hosts only (skip localhost / LAN / ChromeOS) */
+      /* Umami — production hosts only (skip localhost / LAN / ChromeOS / owner opt-out) */
       (function () {
         var h = location.hostname || "";
         if (
@@ -104,6 +104,28 @@
         }
         /* Owner is likely the only CrOS visitor in BR — don't skew invite metrics */
         if (/CrOS/i.test(navigator.userAgent || "")) return;
+
+        /*
+         * Owner opt-out that survives clearing localStorage:
+         *   document.cookie = 'umami_disabled=1; path=/; max-age=315360000; SameSite=Lax; Secure';
+         * Optional: also set localStorage umami.disabled = 1 (Umami's own flag).
+         * Clearing only Application → Local Storage keeps the cookie.
+         */
+        function hasDisabledCookie() {
+          return ("; " + document.cookie).indexOf("; umami_disabled=1") !== -1;
+        }
+        try {
+          if (localStorage.getItem("umami.disabled")) {
+            if (!hasDisabledCookie()) {
+              document.cookie =
+                "umami_disabled=1; path=/; max-age=315360000; SameSite=Lax" +
+                (location.protocol === "https:" ? "; Secure" : "");
+            }
+            return;
+          }
+        } catch (e) {}
+        if (hasDisabledCookie()) return;
+
         var s = document.createElement("script");
         s.defer = true;
         s.src = "https://cloud.umami.is/script.js";
