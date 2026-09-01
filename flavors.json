@@ -58,7 +58,7 @@
       "catalog": "/books/catalog.json",
       "profile": "doutrina",
       "features": {
-        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
+        "providers": ["encyc", "dict", "luz", "map", "bible", "kardec"],
         "jaas": false
       }
     },
@@ -85,7 +85,7 @@
       "catalog": "/books/catalog.json",
       "profile": "centro",
       "features": {
-        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
+        "providers": ["encyc", "dict", "luz", "map", "bible", "kardec"],
         "jaas": true,
         "jaasRoom": "centro-reuniao",
         "pinFirst": ["centro"]
