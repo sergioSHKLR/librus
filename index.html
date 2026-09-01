@@ -88,6 +88,30 @@
         }
       })();
     </script>
+    <script>
+      /* Umami — production hosts only (skip localhost / LAN preview) */
+      (function () {
+        var h = location.hostname || "";
+        if (
+          !h ||
+          h === "localhost" ||
+          h === "127.0.0.1" ||
+          h === "[::1]" ||
+          /\.local$/i.test(h) ||
+          /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[0-1])\.)/.test(h)
+        ) {
+          return;
+        }
+        var s = document.createElement("script");
+        s.defer = true;
+        s.src = "https://cloud.umami.is/script.js";
+        s.setAttribute(
+          "data-website-id",
+          "f42944bb-c2a2-4160-b9ac-9a96a8baeec0",
+        );
+        document.head.appendChild(s);
+      })();
+    </script>
     <script type="module" crossorigin src="/assets/index-B4mb4w8A.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CAZb1m9X.css">
   </head>
