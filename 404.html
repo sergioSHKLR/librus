@@ -89,7 +89,7 @@
       })();
     </script>
     <script>
-      /* Umami — production hosts only (skip localhost / LAN preview) */
+      /* Umami — production hosts only (skip localhost / LAN / ChromeOS) */
       (function () {
         var h = location.hostname || "";
         if (
@@ -102,6 +102,8 @@
         ) {
           return;
         }
+        /* Owner is likely the only CrOS visitor in BR — don't skew invite metrics */
+        if (/CrOS/i.test(navigator.userAgent || "")) return;
         var s = document.createElement("script");
         s.defer = true;
         s.src = "https://cloud.umami.is/script.js";
