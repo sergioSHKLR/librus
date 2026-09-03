@@ -136,8 +136,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-BYRVlA67.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CAZb1m9X.css">
+    <script type="module" crossorigin src="/assets/index-DpCx4saB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cd-rUGT8.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -847,38 +847,173 @@
       </div>
     </div>
 
-    <!-- Help modal -->
+    <!-- Help modal — static 4-pane guide (bar info button) -->
     <div
       id="help"
-      class="modal"
+      class="modal help-guide"
       hidden
       role="dialog"
       aria-modal="true"
       aria-labelledby="help-title"
     >
-      <header>
+      <header class="help-guide-head">
         <span id="help-title" data-i18n="help.title">Ajuda</span>
         <button type="button" data-close="help" aria-label="Close">
           <i data-icon="x"></i>
         </button>
       </header>
-      <div>
-        <h2 data-i18n="help.heading">Começar</h2>
-        <ol>
-          <li data-i18n="help.s1">Abra um livro na biblioteca.</li>
-          <li data-i18n="help.s2">Leia no centro; anote com o Hypothesis.</li>
-          <li data-i18n="help.s3">
-            Em tela larga, selecione um trecho e consulte fontes à direita.
-          </li>
-          <li data-i18n="help.s4">
-            Sumário e busca no painel esquerdo (ou abas dobradas na faixa
-            principal).
-          </li>
-        </ol>
-        <p data-i18n="help.tagline">annotate to assimilate</p>
-        <p data-i18n="help.pwa">PWA · Hypothesis · Vite</p>
+      <div class="help-guide-body">
+        <div class="help-cols" id="help-cols">
+          <article class="help-col" data-card="1">
+            <div class="help-tab">
+              <i data-icon="list" aria-hidden="true"></i>
+              <span class="help-tab-title" data-i18n="help.tab.find"
+                >1. Ache</span
+              >
+            </div>
+            <div class="help-pane">
+              <ul class="help-feats">
+                <li data-i18n="help.feat.toc">Sumário</li>
+                <li data-i18n="help.feat.search">Busca de texto</li>
+              </ul>
+            </div>
+          </article>
+          <article class="help-col" data-card="2">
+            <div class="help-tab">
+              <span
+                class="help-fold-chips help-fold-chips-start"
+                aria-hidden="true"
+              ></span>
+              <i data-icon="type" aria-hidden="true"></i>
+              <span class="help-tab-title" data-i18n="help.tab.read"
+                >2. Leia</span
+              >
+              <span
+                class="help-fold-chips help-fold-chips-end"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="help-pane">
+              <ul class="help-feats">
+                <li data-i18n="help.feat.typo">Ajustes tipográficos</li>
+                <li data-i18n="help.feat.pages">Controle de paginação</li>
+              </ul>
+            </div>
+          </article>
+          <article class="help-col" data-card="3">
+            <div class="help-tab">
+              <i data-icon="globe" aria-hidden="true"></i>
+              <span class="help-tab-title" data-i18n="help.tab.consult"
+                >3. Consulte</span
+              >
+            </div>
+            <div class="help-pane">
+              <ul class="help-feats">
+                <li data-i18n="help.feat.portals">Consultas de portais</li>
+                <li data-i18n="help.feat.pdf">Comparação de PDF</li>
+                <li id="help-feat-jaas" data-feat="jaas" data-i18n="help.feat.jaas">
+                  Videoconferência
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="help-col" data-card="4">
+            <div class="help-tab">
+              <i data-icon="sticky-note" aria-hidden="true"></i>
+              <span class="help-tab-title" data-i18n="help.tab.annotate"
+                >4. Anote</span
+              >
+            </div>
+            <div class="help-pane">
+              <ul class="help-feats">
+                <li data-i18n="help.feat.notes">
+                  Grifos e notas podem ser públicas, privadas ou de grupo.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="help-devices" role="group" aria-label="Viewport">
+          <button
+            type="button"
+            class="help-dev"
+            data-vp="desktop"
+            aria-pressed="false"
+          >
+            <svg width="36" height="20" viewBox="0 0 36 20" aria-hidden="true">
+              <rect x="1" y="1" width="34" height="14" rx="1.5" />
+              <path d="M12 18h12M18 15v3" />
+            </svg>
+            <span data-i18n="help.dev.desktop">Desktop</span>
+          </button>
+          <button
+            type="button"
+            class="help-dev"
+            data-vp="laptop"
+            aria-pressed="false"
+          >
+            <svg width="30" height="18" viewBox="0 0 30 18" aria-hidden="true">
+              <rect x="3" y="1" width="24" height="12" rx="1.5" />
+              <path d="M1 16h28" />
+            </svg>
+            <span data-i18n="help.dev.laptop">Notebook</span>
+          </button>
+          <button
+            type="button"
+            class="help-dev"
+            data-vp="tablet"
+            aria-pressed="false"
+          >
+            <svg width="16" height="22" viewBox="0 0 16 22" aria-hidden="true">
+              <rect x="1" y="1" width="14" height="20" rx="2" />
+              <path d="M6 18h4" />
+            </svg>
+            <span data-i18n="help.dev.tablet">Tablet</span>
+          </button>
+          <button
+            type="button"
+            class="help-dev"
+            data-vp="phone"
+            aria-pressed="false"
+          >
+            <svg width="11" height="22" viewBox="0 0 11 22" aria-hidden="true">
+              <rect x="1" y="1" width="9" height="20" rx="2" />
+              <path d="M4 18h3" />
+            </svg>
+            <span data-i18n="help.dev.phone">Celular</span>
+          </button>
+        </div>
       </div>
     </div>
+
+    <!-- Fold-chip icon templates for Help viewport -->
+    <template id="help-ico-1">
+      <svg viewBox="0 0 24 24">
+        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+      </svg>
+    </template>
+    <template id="help-ico-2">
+      <svg viewBox="0 0 24 24">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+        <path
+          d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+        />
+      </svg>
+    </template>
+    <template id="help-ico-3">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path
+          d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+        />
+      </svg>
+    </template>
+    <template id="help-ico-4">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+      </svg>
+    </template>
 
     <!-- Settings modal (theme stays on the bar; language lives here) -->
     <div
