@@ -24,6 +24,24 @@
     <meta name="theme-color" content="#e8eaed" id="meta-theme-color" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 800;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background: #f5f5f5;
+        color: #111;
+      }
+      html[data-theme="dark"] #boot-splash {
+        background: #1a1a1a;
+        color: #f0f0f0;
+      }
+    </style>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon" />
     <link
       rel="apple-touch-icon"
@@ -136,11 +154,15 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DYs97c1g.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C5y0yvMW.css">
+    <script type="module" crossorigin src="/assets/index-BhmkVQ-q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-KxKBOWHk.css">
   </head>
 
   <body data-view="library" data-lang="pt">
+    <div id="boot-splash" aria-busy="true" aria-live="polite">
+      <span class="boot-splash-spin" aria-hidden="true"></span>
+      <p data-i18n="boot.loading">Carregando…</p>
+    </div>
     <!-- Library -->
     <div id="library" data-screen>
       <header>
@@ -169,7 +191,7 @@
         <aside id="p1" data-pane="find">
           <div data-tabs>
             <button type="button" data-mode="find:toc" class="on">
-              <i data-icon="list"></i><span data-i18n="tab.toc">Sumário</span>
+              <i data-icon="toc"></i><span data-i18n="tab.toc">Sumário</span>
             </button>
             <button type="button" data-mode="find:search">
               <i data-icon="search"></i
@@ -224,42 +246,20 @@
 
         <main id="p2" data-pane="read">
           <div data-tabs id="main-tabs">
+            <button type="button" data-mode="read:book" class="on">
+              <i data-icon="layers"></i
+              ><span data-i18n="tab.book">Páginas</span>
+            </button>
             <button
               type="button"
               data-mode="read:typo"
               data-feat="typo"
-              class="on"
             >
               <i data-icon="type"></i><span data-i18n="tab.typo">Tipo</span>
             </button>
-            <button type="button" data-mode="read:book">
-              <i data-icon="layers"></i
-              ><span data-i18n="tab.book">Páginas</span>
-            </button>
             <span data-i18n="pane.read">2. Leia</span>
           </div>
-          <div data-tool="read:typo" data-feat="typo" class="on">
-            <button type="button" data-typo="size" title="Size">
-              <i data-icon="a-arrow-up"></i><span data-typo-label>100%</span>
-            </button>
-            <button type="button" data-typo="line" title="Line height">
-              <i data-icon="unfold-vertical"></i
-              ><span data-typo-label>1.65</span>
-            </button>
-            <button type="button" data-typo="measure" title="Measure">
-              <i data-icon="chevrons-left-right"></i
-              ><span data-typo-label data-i18n="typo.medium">Média</span>
-            </button>
-            <button type="button" data-typo="align" title="Align">
-              <i data-icon="align-left"></i
-              ><span data-typo-label data-i18n="typo.alignStart">Alinhar</span>
-            </button>
-            <button type="button" data-typo="font" title="Font">
-              <i data-icon="case-upper"></i
-              ><span data-typo-label data-i18n="typo.sans">Sans</span>
-            </button>
-          </div>
-          <div data-tool="read:book" hidden>
+          <div data-tool="read:book" class="on">
             <div class="page-nav" data-page-nav>
               <button
                 type="button"
@@ -292,30 +292,40 @@
                 <i data-icon="chevron-right"></i>
               </button>
             </div>
-            <!-- Provider filters (all link interests on by default; no density knob) -->
+            <!-- In-book inject links: one on/off (phone forced off; does not open Consulte) -->
             <span class="tool-sep" data-link-controls aria-hidden="true"></span>
             <button
               type="button"
+              id="book-links"
               class="link-toggle"
-              data-link="luz"
               data-link-controls
               aria-pressed="true"
-              title="Luz Espírita"
+              title="Links no texto"
             >
-              <i data-icon="gem"></i><span data-i18n="prov.luz">Luz</span>
+              <i data-icon="link"></i
+              ><span data-i18n="tab.links">Links</span>
             </button>
-            <button
-              type="button"
-              class="link-toggle"
-              data-link="encyc"
-              data-link-controls
-              aria-pressed="true"
-              title="Enciclopédia"
-            >
-              <i data-icon="globe"></i
-              ><span data-i18n="prov.encyc">Encic</span>
+          </div>
+          <div data-tool="read:typo" data-feat="typo" hidden>
+            <button type="button" data-typo="size" title="Size">
+              <i data-icon="a-arrow-up"></i><span data-typo-label>100%</span>
             </button>
-            <!-- Dict inject: no toggle — on by default except phone (auto-off) -->
+            <button type="button" data-typo="line" title="Line height">
+              <i data-icon="unfold-vertical"></i
+              ><span data-typo-label>1.65</span>
+            </button>
+            <button type="button" data-typo="measure" title="Measure">
+              <i data-icon="chevrons-left-right"></i
+              ><span data-typo-label data-i18n="typo.medium">Média</span>
+            </button>
+            <button type="button" data-typo="align" title="Align">
+              <i data-icon="align-left"></i
+              ><span data-typo-label data-i18n="typo.alignStart">Alinhar</span>
+            </button>
+            <button type="button" data-typo="font" title="Font">
+              <i data-icon="case-upper"></i
+              ><span data-typo-label data-i18n="typo.sans">Sans</span>
+            </button>
           </div>
           <div
             id="book"
@@ -373,30 +383,43 @@
           <div data-tool="consult:pdf" hidden>
             <button type="button" data-pdf="upload">
               <i data-icon="file-up"></i
-              ><span data-i18n="pdf.upload">Enviar</span>
+              ><span data-i18n="pdf.upload">Carregar</span>
             </button>
             <button type="button" data-pdf="unload">
               <i data-icon="file-x"></i
               ><span data-i18n="pdf.unload">Remover</span>
             </button>
-            <button type="button" data-pdf="prev">
-              <i data-icon="chevron-left"></i
-              ><span data-i18n="btn.prev">Ant.</span>
-            </button>
-            <label>
-              <input
-                type="number"
-                id="pdf-page-input"
-                min="1"
-                value="1"
-                inputmode="numeric"
-              />
-              <span id="pdf-page-total">/ 12</span>
-            </label>
-            <button type="button" data-pdf="next">
-              <i data-icon="chevron-right"></i
-              ><span data-i18n="btn.next">Próx.</span>
-            </button>
+            <div class="page-nav" data-pdf-nav>
+              <button
+                type="button"
+                data-pdf="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <input
+                  type="number"
+                  id="pdf-page-input"
+                  min="1"
+                  value="1"
+                  inputmode="numeric"
+                  aria-label="Page"
+                />
+                <span id="pdf-page-total">/ 12</span>
+              </label>
+              <button
+                type="button"
+                data-pdf="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
+            </div>
             <button type="button" data-pdf="in">
               <i data-icon="zoom-in"></i
               ><span data-i18n="btn.zoomIn">Mais</span>
@@ -486,8 +509,10 @@
             </button>
             <span data-i18n="pane.annotate">4. Anote</span>
           </div>
-          <div data-tool="annotate:notes" class="on"></div>
+          <div data-tool="annotate:notes" class="on" hidden></div>
           <div data-body>
+            <div id="p4-gap" aria-hidden="true"></div>
+            <div id="hypo-slot"></div>
             <p data-feat="hypo" data-i18n="notes.hint">
               Notas abrem na barra lateral do Hypothesis.
             </p>
@@ -552,7 +577,7 @@
           <div id="cards">
             <article data-card="1">
               <div class="onboard-card-head">
-                <i data-icon="list" aria-hidden="true"></i>
+                <i data-icon="toc" aria-hidden="true"></i>
                 <strong data-i18n="pane.find">1. Ache</strong>
                 <span data-i18n="onboard.find">Sumário e busca no livro.</span>
 
@@ -605,7 +630,7 @@
             </article>
             <article data-card="3">
               <div class="onboard-card-head">
-                <i data-icon="globe" aria-hidden="true"></i>
+                <i data-icon="search-slash" aria-hidden="true"></i>
                 <strong data-i18n="pane.consult">3. Consulte</strong>
                 <span data-i18n="onboard.consult"
                   >Fontes ao lado da leitura.</span
@@ -841,11 +866,16 @@
           <i data-icon="x"></i>
         </button>
       </header>
+      <div id="help-rotate" class="help-rotate" hidden>
+        <p data-i18n="help.rotate">
+          Gire o aparelho para a horizontal para ver a ajuda.
+        </p>
+      </div>
       <div class="help-guide-body">
         <div class="help-cols" id="help-cols">
           <article class="help-col" data-card="1">
             <div class="help-tab">
-              <i data-icon="list" aria-hidden="true"></i>
+              <i data-icon="toc" aria-hidden="true"></i>
               <span class="help-tab-title" data-i18n="help.tab.find"
                 >1. Ache</span
               >
@@ -863,7 +893,7 @@
                 class="help-fold-chips help-fold-chips-start"
                 aria-hidden="true"
               ></span>
-              <i data-icon="type" aria-hidden="true"></i>
+              <i data-icon="layers" aria-hidden="true"></i>
               <span class="help-tab-title" data-i18n="help.tab.read"
                 >2. Leia</span
               >
@@ -876,39 +906,96 @@
               <ul class="help-feats">
                 <li data-i18n="help.feat.typo">Ajustes tipográficos</li>
                 <li data-i18n="help.feat.pages">Controle de paginação</li>
+                <li data-i18n="help.feat.links" data-help-size="links">
+                  Links no texto
+                </li>
               </ul>
+              <div class="help-feat-notes">
+                <p
+                  class="help-feat-note"
+                  data-help-note="fold-find"
+                  hidden
+                  data-i18n="help.note.foldFind"
+                >
+                  Aba 1 abre na esquerda
+                </p>
+                <p
+                  class="help-feat-note"
+                  data-help-note="consult-gone"
+                  hidden
+                  data-i18n="help.note.consultGone"
+                >
+                  Aba 3 removida
+                </p>
+                <p
+                  class="help-feat-note"
+                  data-help-note="fold-notes-phone"
+                  hidden
+                  data-i18n="help.note.foldNotesRight"
+                >
+                  Aba 4 abre na direita
+                </p>
+              </div>
             </div>
           </article>
           <article class="help-col" data-card="3">
             <div class="help-tab">
-              <i data-icon="globe" aria-hidden="true"></i>
+              <i data-icon="search-slash" aria-hidden="true"></i>
               <span class="help-tab-title" data-i18n="help.tab.consult"
                 >3. Consulte</span
               >
+              <span
+                class="help-fold-chips help-fold-chips-end"
+                aria-hidden="true"
+              ></span>
             </div>
             <div class="help-pane">
               <ul class="help-feats">
-                <li data-i18n="help.feat.portals" data-help-size="providers">
-                  Consultas de portais *
+                <li data-i18n="help.feat.luz" data-help-size="luz">
+                  Consulta no Luz Espírita
                 </li>
-                <li data-i18n="help.feat.pdf" data-help-size="pdf">
-                  Comparação de PDF *
+                <li data-i18n="help.feat.encyc" data-help-size="encyc">
+                  Consulta de Enciclopédia
                 </li>
-                <li
-                  id="help-feat-jaas"
-                  data-feat="jaas"
-                  data-help-size="jaas"
-                  data-i18n="help.feat.jaas"
-                >
-                  Videoconferência *
+                <li data-i18n="help.feat.dict" data-help-size="dict">
+                  Consulta de Dicionário
+                </li>
+                <li data-i18n="help.feat.map" data-help-size="map">
+                  Consulta de Mapas
+                </li>
+                <li data-i18n="help.feat.bible" data-help-size="bible">
+                  Consulta na Bíblia
+                </li>
+                <li data-i18n="help.feat.kardec" data-help-size="kardec">
+                  Consulta no Kardecpedia
                 </li>
               </ul>
-              <p class="help-feat-note" data-i18n="help.feat.footnote">
-                * Consulte completo (vários portais, PDF, vídeo) é para teclado
-                — notebook ou desktop. Em tablet mantemos Enciclopédia e
-                Dicionário. No celular: só retrato; Leia + Ache por cima; sem
-                Consulte e sem ligações no texto.
-              </p>
+              <div class="help-feat-notes">
+                <p
+                  class="help-feat-note"
+                  data-help-note="fold-notes"
+                  hidden
+                  data-i18n="help.note.foldNotes"
+                >
+                  Aba 4 abre na direita
+                </p>
+                <p
+                  class="help-feat-note"
+                  data-help-note="pdf"
+                  hidden
+                  data-i18n="help.note.pdf"
+                >
+                  Comparação de PDF
+                </p>
+                <p
+                  class="help-feat-note"
+                  data-help-note="jaas"
+                  hidden
+                  data-i18n="help.note.conf"
+                >
+                  Videoconferência
+                </p>
+              </div>
             </div>
           </article>
           <article class="help-col" data-card="4">
@@ -921,12 +1008,16 @@
             <div class="help-pane">
               <ul class="help-feats">
                 <li data-i18n="help.feat.notes">
-                  Grifos e notas podem ser públicas, privadas ou de grupo.
+                  Grifos e notas (públicas, privadas ou de grupo)
                 </li>
               </ul>
             </div>
           </article>
         </div>
+        <label class="help-persist">
+          <input type="checkbox" id="help-dismiss" />
+          <span data-i18n="help.dismiss">Não mostrar novamente</span>
+        </label>
         <div class="help-devices" role="group" aria-label="Viewport">
           <button
             type="button"
