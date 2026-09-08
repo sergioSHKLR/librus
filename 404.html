@@ -136,8 +136,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-CNFC7cKv.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-EfxKLjy1.css">
+    <script type="module" crossorigin src="/assets/index-DYs97c1g.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C5y0yvMW.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -336,7 +336,7 @@
               <i data-icon="file-up"></i><span data-i18n="tab.pdf">PDF</span>
             </button>
             <button type="button" data-mode="consult:video">
-              <i data-icon="video"></i><span data-i18n="tab.video">Vídeo</span>
+              <i data-icon="video"></i><span data-i18n="tab.video">Conf</span>
             </button>
             <span data-i18n="pane.consult">3. Consulte</span>
           </div>
@@ -373,11 +373,11 @@
           <div data-tool="consult:pdf" hidden>
             <button type="button" data-pdf="upload">
               <i data-icon="file-up"></i
-              ><span data-i18n="pdf.upload">Upload</span>
+              ><span data-i18n="pdf.upload">Enviar</span>
             </button>
             <button type="button" data-pdf="unload">
               <i data-icon="file-x"></i
-              ><span data-i18n="pdf.unload">Unload</span>
+              ><span data-i18n="pdf.unload">Remover</span>
             </button>
             <button type="button" data-pdf="prev">
               <i data-icon="chevron-left"></i
@@ -442,7 +442,12 @@
               ></iframe>
             </div>
             <div data-panel="consult:pdf" id="pdf-panel" hidden>
-              <div id="pdf-mock">
+              <div id="pdf-placeholder" data-feat="pdf">
+                <p id="pdf-status" data-i18n="pdf.uploadTitle">
+                  Envie um PDF pela barra acima.
+                </p>
+              </div>
+              <div id="pdf-mock" data-feat="pdf" data-feat-invert>
                 <div id="pdf-sheet">
                   <p id="pdf-mock-title" data-i18n="pdf.mockTitle">
                     Documento de exemplo
@@ -462,12 +467,10 @@
               <div id="video-mock">
                 <div id="video-stage">
                   <i data-icon="video" data-icon-size="40"></i>
-                  <p id="meet-status" data-i18n="meet.mockIdle">
-                    Sala de vídeo (mock)
-                  </p>
+                  <p id="meet-status">Configure o App ID JaaS em Ajustes.</p>
                 </div>
-                <p id="video-mock-hint" data-i18n="meet.mockHint">
-                  Vídeo / voz simulados — JaaS real sob flag de build.
+                <p id="video-mock-hint" data-i18n="meet.idleHint">
+                  Vídeo e voz via 8x8 JaaS. Defina o App ID em Ajustes.
                 </p>
               </div>
               <div id="meet-jaas-host" hidden></div>
@@ -510,16 +513,13 @@
       aria-hidden="true"
     >
       <header>
-        <span id="orient-title" data-i18n="orient.title"
-          >Tela pequena demais para estudar</span
-        >
+        <span id="orient-title" data-i18n="orient.title">Gire o aparelho</span>
       </header>
       <div>
         <div id="orient-emoji" aria-hidden="true">⚠️</div>
         <p id="orient-msg" data-i18n="orient.body">
-          O estudo ativo completo (ler e consultar ao mesmo tempo, com
-          anotações) precisa de mais espaço. Gire o aparelho para paisagem ou
-          use uma tela maior — não há modo reduzido neste beta.
+          No celular, o estudo é só em retrato: Leia e Ache. Sem Consulte e
+          sem ligações no texto. Gire para retrato (ou use uma tela maior).
         </p>
       </div>
     </div>
@@ -904,10 +904,10 @@
                 </li>
               </ul>
               <p class="help-feat-note" data-i18n="help.feat.footnote">
-                * Consulte completo (vários portais, PDF, vídeo) é para estudo
-                com teclado — notebook ou desktop. Em tablet/celular mantemos
-                Enciclopédia e Dicionário de propósito: dá para estudar no
-                toque, sem sobrecarregar.
+                * Consulte completo (vários portais, PDF, vídeo) é para teclado
+                — notebook ou desktop. Em tablet mantemos Enciclopédia e
+                Dicionário. No celular: só retrato; Leia + Ache por cima; sem
+                Consulte e sem ligações no texto.
               </p>
             </div>
           </article>
@@ -934,10 +934,7 @@
             data-vp="desktop"
             aria-pressed="false"
           >
-            <svg width="36" height="20" viewBox="0 0 36 20" aria-hidden="true">
-              <rect x="1" y="1" width="34" height="14" rx="1.5" />
-              <path d="M12 18h12M18 15v3" />
-            </svg>
+            <i data-icon="monitor" aria-hidden="true"></i>
             <span data-i18n="help.dev.desktop">Desktop</span>
           </button>
           <button
@@ -946,10 +943,7 @@
             data-vp="laptop"
             aria-pressed="false"
           >
-            <svg width="30" height="18" viewBox="0 0 30 18" aria-hidden="true">
-              <rect x="3" y="1" width="24" height="12" rx="1.5" />
-              <path d="M1 16h28" />
-            </svg>
+            <i data-icon="laptop" aria-hidden="true"></i>
             <span data-i18n="help.dev.laptop">Notebook</span>
           </button>
           <button
@@ -958,10 +952,7 @@
             data-vp="tablet"
             aria-pressed="false"
           >
-            <svg width="16" height="22" viewBox="0 0 16 22" aria-hidden="true">
-              <rect x="1" y="1" width="14" height="20" rx="2" />
-              <path d="M6 18h4" />
-            </svg>
+            <i data-icon="tablet" aria-hidden="true"></i>
             <span data-i18n="help.dev.tablet">Tablet</span>
           </button>
           <button
@@ -970,44 +961,12 @@
             data-vp="phone"
             aria-pressed="false"
           >
-            <svg width="11" height="22" viewBox="0 0 11 22" aria-hidden="true">
-              <rect x="1" y="1" width="9" height="20" rx="2" />
-              <path d="M4 18h3" />
-            </svg>
+            <i data-icon="smartphone" aria-hidden="true"></i>
             <span data-i18n="help.dev.phone">Celular</span>
           </button>
         </div>
       </div>
     </div>
-
-    <!-- Fold-chip icon templates for Help viewport -->
-    <template id="help-ico-1">
-      <svg viewBox="0 0 24 24">
-        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
-      </svg>
-    </template>
-    <template id="help-ico-2">
-      <svg viewBox="0 0 24 24">
-        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-        <path
-          d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-        />
-      </svg>
-    </template>
-    <template id="help-ico-3">
-      <svg viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" />
-        <path
-          d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-        />
-      </svg>
-    </template>
-    <template id="help-ico-4">
-      <svg viewBox="0 0 24 24">
-        <path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8Z" />
-        <path d="M15 3v4a2 2 0 0 0 2 2h4" />
-      </svg>
-    </template>
 
     <!-- Settings: language, theme, color guide (+ JaaS when enabled) -->
     <div
