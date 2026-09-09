@@ -154,8 +154,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-BhmkVQ-q.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-KxKBOWHk.css">
+    <script type="module" crossorigin src="/assets/index-CMy10-Fd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BnNihKDd.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -444,15 +444,97 @@
           </div>
           <div data-body>
             <div data-panel="consult:web" class="on" id="ctx-host">
-              <div id="ctx-hint" class="ctx-hint">
-                <p class="ctx-hint-title" data-i18n="ctx.hintTitle">
-                  Como consultar
-                </p>
-                <p data-i18n="ctx.hintBody">
-                  Selecione um termo no painel Leia e clique num provedor acima
-                  (Luz Espírita, Enciclopédia, Dicionário, etc). Também pode
-                  usar um link existente — a consulta abre neste painel.
-                </p>
+              <div id="ctx-hint" class="ctx-providers">
+                <ul class="ctx-providers-list">
+                  <li data-provider-row="luz">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="gem"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-luz">
+                        <img src="/providers/luz.png" alt="Luz Espírita" />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="encyc">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="globe"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-encyc">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/wikipedia.png"
+                          alt=""
+                        />
+                        <img
+                          class="ctx-providers-wordmark"
+                          src="/providers/wikipedia-wordmark.svg"
+                          alt="Wikipedia"
+                        />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="dict">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="book-a"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-dict">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/wiktionary.svg"
+                          alt=""
+                        />
+                        <img
+                          class="ctx-providers-wordmark"
+                          src="/providers/wiktionary-wordmark.svg"
+                          alt="Wikcionário"
+                        />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="map">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="map"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-map">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/osm.svg"
+                          alt=""
+                        />
+                        <span class="ctx-providers-name">OpenStreetMap</span>
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="bible">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="book-plus"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-bible">
+                        <img
+                          class="ctx-providers-mark is-round"
+                          src="/providers/bible.png"
+                          alt=""
+                        />
+                        <span class="ctx-providers-name">Bible.com</span>
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="kardec">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="graduation-cap"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-kardec">
+                        <img src="/providers/kardecpedia.svg" alt="Kardecpedia" />
+                      </span>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <div id="ctx-loading" class="pane-spinner" hidden aria-hidden="true">
                 <span class="pane-spinner-ring" aria-hidden="true"></span>
@@ -851,212 +933,96 @@
       </div>
     </div>
 
-    <!-- Help modal — static 4-pane guide (bar info button) -->
+    <!-- Help overlay — 1×4 map (bar info). Leaves #bar visible. -->
     <div
       id="help"
-      class="modal help-guide"
+      class="modal help-map"
       hidden
       role="dialog"
       aria-modal="true"
       aria-labelledby="help-title"
     >
-      <header class="help-guide-head">
+      <header class="help-map-head">
         <span id="help-title" data-i18n="help.title">Ajuda</span>
-        <button type="button" data-close="help" aria-label="Close">
-          <i data-icon="x"></i>
-        </button>
+        <div class="help-map-head-actions">
+          <label class="help-persist">
+            <input type="checkbox" id="help-dismiss" />
+            <span data-i18n="help.dismiss">Não mostrar novamente</span>
+          </label>
+          <button
+            type="button"
+            data-close="help"
+            data-i18n-aria="tip.close"
+            aria-label="Close"
+          >
+            <i data-icon="x"></i>
+          </button>
+        </div>
       </header>
-      <div id="help-rotate" class="help-rotate" hidden>
-        <p data-i18n="help.rotate">
-          Gire o aparelho para a horizontal para ver a ajuda.
-        </p>
-      </div>
-      <div class="help-guide-body">
-        <div class="help-cols" id="help-cols">
-          <article class="help-col" data-card="1">
-            <div class="help-tab">
-              <i data-icon="toc" aria-hidden="true"></i>
-              <span class="help-tab-title" data-i18n="help.tab.find"
-                >1. Ache</span
-              >
+      <div class="help-map-stage" id="help-map" data-step="1">
+        <div class="help-map-cols">
+          <section class="help-map-col" data-col="1">
+            <h2 data-i18n="help.tab.find">1. Ache</h2>
+            <div class="help-map-card" data-show="2">
+              <p data-i18n="help.map.ache.a">Sumário</p>
+              <p data-i18n="help.map.ache.b">Busca</p>
             </div>
-            <div class="help-pane">
-              <ul class="help-feats">
-                <li data-i18n="help.feat.toc">Sumário</li>
-                <li data-i18n="help.feat.search">Busca de texto</li>
-              </ul>
+          </section>
+          <section class="help-map-col" data-col="2">
+            <h2 data-i18n="help.tab.read">2. Leia</h2>
+            <div class="help-map-card" data-show="3">
+              <p data-i18n="help.map.read.a">Escolha página</p>
+              <p data-i18n="help.map.read.b">Ajustes de tipo</p>
             </div>
-          </article>
-          <article class="help-col" data-card="2">
-            <div class="help-tab">
-              <span
-                class="help-fold-chips help-fold-chips-start"
-                aria-hidden="true"
-              ></span>
-              <i data-icon="layers" aria-hidden="true"></i>
-              <span class="help-tab-title" data-i18n="help.tab.read"
-                >2. Leia</span
-              >
-              <span
-                class="help-fold-chips help-fold-chips-end"
-                aria-hidden="true"
-              ></span>
-            </div>
-            <div class="help-pane">
-              <ul class="help-feats">
-                <li data-i18n="help.feat.typo">Ajustes tipográficos</li>
-                <li data-i18n="help.feat.pages">Controle de paginação</li>
-                <li data-i18n="help.feat.links" data-help-size="links">
-                  Links no texto
-                </li>
-              </ul>
-              <div class="help-feat-notes">
-                <p
-                  class="help-feat-note"
-                  data-help-note="fold-find"
-                  hidden
-                  data-i18n="help.note.foldFind"
-                >
-                  Aba 1 abre na esquerda
-                </p>
-                <p
-                  class="help-feat-note"
-                  data-help-note="consult-gone"
-                  hidden
-                  data-i18n="help.note.consultGone"
-                >
-                  Aba 3 removida
-                </p>
-                <p
-                  class="help-feat-note"
-                  data-help-note="fold-notes-phone"
-                  hidden
-                  data-i18n="help.note.foldNotesRight"
-                >
-                  Aba 4 abre na direita
-                </p>
+          </section>
+          <section class="help-map-col" data-col="3">
+            <h2 data-i18n="help.tab.consult">3. Consulte</h2>
+            <div class="help-map-callout" data-show="4">
+              <span class="help-map-arrow" aria-hidden="true"></span>
+              <div class="help-map-card">
+                <p data-i18n="help.map.consult.a">Selecione ali</p>
+                <p data-i18n="help.map.consult.b">Escolha buscador</p>
+                <p data-i18n="help.map.consult.c">Abre aqui</p>
               </div>
             </div>
-          </article>
-          <article class="help-col" data-card="3">
-            <div class="help-tab">
-              <i data-icon="search-slash" aria-hidden="true"></i>
-              <span class="help-tab-title" data-i18n="help.tab.consult"
-                >3. Consulte</span
-              >
-              <span
-                class="help-fold-chips help-fold-chips-end"
-                aria-hidden="true"
-              ></span>
-            </div>
-            <div class="help-pane">
-              <ul class="help-feats">
-                <li data-i18n="help.feat.luz" data-help-size="luz">
-                  Consulta no Luz Espírita
-                </li>
-                <li data-i18n="help.feat.encyc" data-help-size="encyc">
-                  Consulta de Enciclopédia
-                </li>
-                <li data-i18n="help.feat.dict" data-help-size="dict">
-                  Consulta de Dicionário
-                </li>
-                <li data-i18n="help.feat.map" data-help-size="map">
-                  Consulta de Mapas
-                </li>
-                <li data-i18n="help.feat.bible" data-help-size="bible">
-                  Consulta na Bíblia
-                </li>
-                <li data-i18n="help.feat.kardec" data-help-size="kardec">
-                  Consulta no Kardecpedia
-                </li>
-              </ul>
-              <div class="help-feat-notes">
-                <p
-                  class="help-feat-note"
-                  data-help-note="fold-notes"
-                  hidden
-                  data-i18n="help.note.foldNotes"
-                >
-                  Aba 4 abre na direita
-                </p>
-                <p
-                  class="help-feat-note"
-                  data-help-note="pdf"
-                  hidden
-                  data-i18n="help.note.pdf"
-                >
-                  Comparação de PDF
-                </p>
-                <p
-                  class="help-feat-note"
-                  data-help-note="jaas"
-                  hidden
-                  data-i18n="help.note.conf"
-                >
-                  Videoconferência
-                </p>
+          </section>
+          <section class="help-map-col" data-col="4">
+            <h2 data-i18n="help.tab.annotate">4. Anote</h2>
+            <div class="help-map-callout" data-show="5">
+              <span class="help-map-arrow help-map-arrow-long" aria-hidden="true"></span>
+              <div class="help-map-card">
+                <p data-i18n="help.map.annotate.a">Selecione ali</p>
+                <p data-i18n="help.map.annotate.b">Grifo e notas aqui</p>
               </div>
             </div>
-          </article>
-          <article class="help-col" data-card="4">
-            <div class="help-tab">
-              <i data-icon="sticky-note" aria-hidden="true"></i>
-              <span class="help-tab-title" data-i18n="help.tab.annotate"
-                >4. Anote</span
-              >
-            </div>
-            <div class="help-pane">
-              <ul class="help-feats">
-                <li data-i18n="help.feat.notes">
-                  Grifos e notas (públicas, privadas ou de grupo)
-                </li>
-              </ul>
-            </div>
-          </article>
-        </div>
-        <label class="help-persist">
-          <input type="checkbox" id="help-dismiss" />
-          <span data-i18n="help.dismiss">Não mostrar novamente</span>
-        </label>
-        <div class="help-devices" role="group" aria-label="Viewport">
-          <button
-            type="button"
-            class="help-dev"
-            data-vp="desktop"
-            aria-pressed="false"
-          >
-            <i data-icon="monitor" aria-hidden="true"></i>
-            <span data-i18n="help.dev.desktop">Desktop</span>
-          </button>
-          <button
-            type="button"
-            class="help-dev"
-            data-vp="laptop"
-            aria-pressed="false"
-          >
-            <i data-icon="laptop" aria-hidden="true"></i>
-            <span data-i18n="help.dev.laptop">Notebook</span>
-          </button>
-          <button
-            type="button"
-            class="help-dev"
-            data-vp="tablet"
-            aria-pressed="false"
-          >
-            <i data-icon="tablet" aria-hidden="true"></i>
-            <span data-i18n="help.dev.tablet">Tablet</span>
-          </button>
-          <button
-            type="button"
-            class="help-dev"
-            data-vp="phone"
-            aria-pressed="false"
-          >
-            <i data-icon="smartphone" aria-hidden="true"></i>
-            <span data-i18n="help.dev.phone">Celular</span>
-          </button>
+          </section>
         </div>
       </div>
+      <nav class="help-map-pager" id="help-map-pager" aria-label="Passos">
+        <button
+          type="button"
+          data-help-dir="-1"
+          data-i18n-aria="help.map.prev"
+          aria-label="Anterior"
+        >
+          <i data-icon="chevron-left"></i>
+        </button>
+        <div class="help-map-dots">
+          <button type="button" class="help-map-dot" data-help-step="1" aria-label="1" aria-current="step"></button>
+          <button type="button" class="help-map-dot" data-help-step="2" aria-label="2"></button>
+          <button type="button" class="help-map-dot" data-help-step="3" aria-label="3"></button>
+          <button type="button" class="help-map-dot" data-help-step="4" aria-label="4"></button>
+          <button type="button" class="help-map-dot" data-help-step="5" aria-label="5"></button>
+        </div>
+        <button
+          type="button"
+          data-help-dir="1"
+          data-i18n-aria="help.map.next"
+          aria-label="Próximo"
+        >
+          <i data-icon="chevron-right"></i>
+        </button>
+      </nav>
     </div>
 
     <!-- Settings: language, theme, color guide (+ JaaS when enabled) -->
@@ -1070,7 +1036,12 @@
     >
       <header>
         <span id="settings-title" data-i18n="set.title">Ajustes</span>
-        <button type="button" data-close="settings" aria-label="Close">
+        <button
+          type="button"
+          data-close="settings"
+          data-i18n-aria="tip.close"
+          aria-label="Close"
+        >
           <i data-icon="x"></i>
         </button>
       </header>
@@ -1170,7 +1141,7 @@
       <span id="bar-beta" aria-label="Beta">BETA</span>
       <div id="bar-end">
         <button type="button" data-open="help" title="Help" aria-label="Help">
-          <i data-icon="info" data-icon-size="22"></i>
+          <i data-icon="help" data-icon-size="22"></i>
         </button>
         <button
           type="button"
