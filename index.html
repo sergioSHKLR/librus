@@ -4,26 +4,27 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1,viewport-fit=cover"
+      content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content"
     />
     <title>LIBRUS</title>
     <meta name="description" content="LIBRUS" />
-    <!-- Top browser / PWA chrome: default chrome grey (never brand) -->
+    <!-- Match app --bg so system bars blend when not fully hidden -->
     <meta
       name="theme-color"
-      content="#e8eaed"
+      content="#f5f5f5"
       media="(prefers-color-scheme: light)"
       id="meta-theme-color-light"
     />
     <meta
       name="theme-color"
-      content="#202124"
+      content="#1a1a1a"
       media="(prefers-color-scheme: dark)"
       id="meta-theme-color-dark"
     />
-    <meta name="theme-color" content="#e8eaed" id="meta-theme-color" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#f5f5f5" id="meta-theme-color" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <style>
       #boot-splash {
         position: fixed;
@@ -87,22 +88,22 @@
         document.documentElement.dataset.themePref = pref;
         document.documentElement.dataset.theme = resolved;
         document.documentElement.style.colorScheme = resolved;
-        /* Default chrome grey ASAP (before brand JS) */
-        var greyL = "#e8eaed";
-        var greyD = "#202124";
+        /* Match --bg so PWA / Android bars blend with the app surface */
+        var bgL = "#f5f5f5";
+        var bgD = "#1a1a1a";
         var tc = document.getElementById("meta-theme-color");
-        if (tc) tc.content = resolved === "dark" ? greyD : greyL;
+        if (tc) tc.content = resolved === "dark" ? bgD : bgL;
         var tcl = document.getElementById("meta-theme-color-light");
         var tcd = document.getElementById("meta-theme-color-dark");
         if (pref === "light") {
-          if (tcl) tcl.content = greyL;
-          if (tcd) tcd.content = greyL;
+          if (tcl) tcl.content = bgL;
+          if (tcd) tcd.content = bgL;
         } else if (pref === "dark") {
-          if (tcl) tcl.content = greyD;
-          if (tcd) tcd.content = greyD;
+          if (tcl) tcl.content = bgD;
+          if (tcd) tcd.content = bgD;
         } else {
-          if (tcl) tcl.content = greyL;
-          if (tcd) tcd.content = greyD;
+          if (tcl) tcl.content = bgL;
+          if (tcd) tcd.content = bgD;
         }
       })();
     </script>
@@ -154,8 +155,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-B4F9RvNm.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DzZNhn2q.css">
+    <script type="module" crossorigin src="/assets/index-DEz56oHR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DkSFNHKH.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -1138,19 +1139,20 @@
     </div>
 
     <footer id="bar">
-      <button type="button" data-go="library" title="Home" aria-label="Home">
+      <button type="button" data-go="library" data-i18n-aria="tip.home" title="Biblioteca" aria-label="Biblioteca">
         <i data-icon="home" data-icon-size="22"></i>
       </button>
       <span id="app-title" hidden></span>
       <div id="bar-end">
-        <button type="button" data-open="help" title="Help" aria-label="Help">
+        <button type="button" data-open="help" data-i18n-aria="bar.help" title="Ajuda" aria-label="Ajuda">
           <i data-icon="help" data-icon-size="22"></i>
         </button>
         <button
           type="button"
           data-open="settings"
-          title="Settings"
-          aria-label="Settings"
+          data-i18n-aria="bar.settings"
+          title="Ajustes"
+          aria-label="Ajustes"
         >
           <i data-icon="settings" data-icon-size="22"></i>
         </button>
