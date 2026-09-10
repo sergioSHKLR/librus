@@ -1,6 +1,9 @@
 # librus-shell (LIBRUS)
 
-> LIBRUS — multi-flavor study reader: library, multi-pane reading, Hypothesis notes, optional JaaS.
+> Interface freeze **v0.9.9** · **2026-09-10** · see docs/INTERFACE.md
+> Multi-flavor study reader: library, four-pane desk, Hypothesis notes, optional JaaS.
+
+Chrome is frozen. Next work is book HTML/CSS and editorial (doutrina-content), not new panes or bar chrome.
 
 ## Product hosts
 
@@ -10,14 +13,14 @@
 
 ## Code repos
 
-- librus-shell — this SPA
+- librus-shell — this SPA (step 3/4)
 - librus-linker — provider link injection
 - doutrina-content — editorial source (Kardec MD / QA)
-- librus / doutrina — published site hosts (dist only)
-- center-* — Center manual + flavor.json
+- librus / doutrina / centro — published site hosts (dist only)
 
 ## App surfaces
 
-- [Library](/): Book shelf
-- Reader: multi-pane study layout
+- Library: shelf; CTA Ache · Leia · Consulte · Anote / Find · Read · Lookup · Note
+- Reader: 1. Ache · 2. Leia · 3. Consulte · 4. Anote
+- Help: 1×4 map, 5 steps; steps 4–5 arrow to Leia
 - [Hypothesis](https://web.hypothes.is/): Annotation provider (external, BYO account)
