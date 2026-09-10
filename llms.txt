@@ -1,9 +1,9 @@
 # librus-shell (LIBRUS)
 
-> Interface freeze **v0.9.9** · **2026-09-10** · see docs/INTERFACE.md
+> Interface freeze **v0.9.9** · polish **v0.9.10** · **2026-09-10** · see docs/INTERFACE.md
 > Multi-flavor study reader: library, four-pane desk, Hypothesis notes, optional JaaS.
 
-Chrome is frozen. Next work is book HTML/CSS and editorial (doutrina-content), not new panes or bar chrome.
+Chrome is frozen. v0.9.10 is handheld/toolbar polish (Páginas %, fullscreen, tablet PDF, wide+justify). Next work is book HTML/CSS and editorial (doutrina-content), not new panes.
 
 ## Product hosts
 
@@ -22,5 +22,6 @@ Chrome is frozen. Next work is book HTML/CSS and editorial (doutrina-content), n
 
 - Library: shelf; CTA Ache · Leia · Consulte · Anote / Find · Read · Lookup · Note
 - Reader: 1. Ache · 2. Leia · 3. Consulte · 4. Anote
+- Páginas: folio pager or scroll %; fullscreen right-aligned; Links on/off
 - Help: 1×4 map, 5 steps; steps 4–5 arrow to Leia
 - [Hypothesis](https://web.hypothes.is/): Annotation provider (external, BYO account)
