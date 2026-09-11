@@ -155,8 +155,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-xjCZrU0h.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BvZj91YT.css">
+    <script type="module" crossorigin src="/assets/index-CWsbN1jR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DKgh-2lX.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -306,12 +306,33 @@
               </button>
             </div>
             <div
-              class="scroll-pct"
+              class="page-nav"
               data-scroll-pct
               hidden
               id="scroll-pct-wrap"
             >
-              <span id="scroll-pct">0%</span>
+              <button
+                type="button"
+                data-scroll="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <span id="scroll-pct">0%</span>
+                <span class="page-nav-unit" data-i18n="scroll.unit">leitura</span>
+              </label>
+              <button
+                type="button"
+                data-scroll="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
             </div>
             <button
               type="button"
