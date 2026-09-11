@@ -155,8 +155,8 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-g5-JImkh.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C3QS4xY8.css">
+    <script type="module" crossorigin src="/assets/index-xjCZrU0h.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BvZj91YT.css">
   </head>
 
   <body data-view="library" data-lang="pt">
@@ -261,6 +261,18 @@
             <span data-i18n="pane.read">2. Leia</span>
           </div>
           <div data-tool="read:book" class="on">
+            <!-- In-book inject links: one on/off (phone forced off; does not open Consulte) -->
+            <button
+              type="button"
+              id="book-links"
+              class="link-toggle"
+              data-link-controls
+              aria-pressed="true"
+              title="Links no texto"
+            >
+              <i data-icon="link"></i
+              ><span data-i18n="tab.links">Links</span>
+            </button>
             <div class="page-nav" data-page-nav>
               <button
                 type="button"
@@ -301,26 +313,14 @@
             >
               <span id="scroll-pct">0%</span>
             </div>
-            <!-- In-book inject links: one on/off (phone forced off; does not open Consulte) -->
-            <span class="tool-sep" data-link-controls aria-hidden="true"></span>
-            <button
-              type="button"
-              id="book-links"
-              class="link-toggle"
-              data-link-controls
-              aria-pressed="true"
-              title="Links no texto"
-            >
-              <i data-icon="link"></i
-              ><span data-i18n="tab.links">Links</span>
-            </button>
             <button
               type="button"
               id="book-fs"
               aria-pressed="false"
               title="Tela cheia"
             >
-              <i data-icon="maximize"></i>
+              <i data-icon="maximize"></i
+              ><span data-i18n="tab.fs">Tela Cheia</span>
             </button>
           </div>
           <div data-tool="read:typo" data-feat="typo" hidden>
@@ -592,9 +592,6 @@
                   <i data-icon="video" data-icon-size="40"></i>
                   <p id="meet-status">Configure o App ID JaaS em Ajustes.</p>
                 </div>
-                <p id="video-mock-hint" data-i18n="meet.idleHint">
-                  Vídeo e voz via 8x8 JaaS. Defina o App ID em Ajustes.
-                </p>
               </div>
               <div id="meet-jaas-host" hidden></div>
             </div>
