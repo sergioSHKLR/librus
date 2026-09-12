@@ -109,7 +109,8 @@
     "emoji": "✒️",
     "color": "#800080",
     "isbn": "978-85-7328-729-5",
-    "pages": 449
+    "pages": 449,
+    "beta": true
   },
   {
     "id": "ese",
@@ -127,7 +128,8 @@
     "emoji": "🕊️",
     "color": "#008080",
     "isbn": "978-85-7328-730-1",
-    "pages": 417
+    "pages": 417,
+    "beta": true
   },
   {
     "id": "ceu",
@@ -145,7 +147,8 @@
     "emoji": "🔥",
     "color": "#8b4513",
     "isbn": "978-85-7328-731-8",
-    "pages": 409
+    "pages": 409,
+    "beta": true
   },
   {
     "id": "gen",
@@ -163,7 +166,8 @@
     "emoji": "🌱",
     "color": "#006400",
     "isbn": "978-85-7328-732-5",
-    "pages": 417
+    "pages": 417,
+    "beta": true
   },
   {
     "id": "centro",
