@@ -20,13 +20,13 @@
           "en": "Find · Read · Lookup · Note"
         },
         "tagline": {
-          "pt": "annotate to assimilate",
+          "pt": "anotar para assimilar",
           "en": "annotate to assimilate"
         },
         "icon": "columns-4",
         "favicon": "/brand/librus-favicon.svg",
         "faviconDark": "/brand/librus-favicon-dark.svg",
-        "accent": "#008b00"
+        "accent": "#6aa84f"
       },
       "catalog": "/books/catalog.json",
       "profile": "librus",
@@ -80,7 +80,7 @@
         "mark": "/brand/centro-favicon.svg",
         "favicon": "/brand/centro-favicon.svg",
         "faviconDark": "/brand/centro-favicon-dark.svg",
-        "accent": "#da2f2f"
+        "accent": "#cc0000"
       },
       "catalog": "/books/catalog.json",
       "profile": "centro",
