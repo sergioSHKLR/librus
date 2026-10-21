@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light" data-guide="full">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content"
+    />
+    <title>O Livro dos Médiuns — Allan Kardec · DOUTRINA</title>
+    <meta name="description" content="Leia O Livro dos Médiuns (Allan Kardec, 1861) online — DOUTRINA: estudo, consulta e anotação." />
+    <link rel="canonical" id="link-canonical" href="https://doutrina.org/books/ldm" />
+    <!-- Match app --bg so system bars blend when not fully hidden -->
+    <meta
+      name="theme-color"
+      content="#f5f5f5"
+      media="(prefers-color-scheme: light)"
+      id="meta-theme-color-light"
+    />
+    <meta
+      name="theme-color"
+      content="#1a1a1a"
+      media="(prefers-color-scheme: dark)"
+      id="meta-theme-color-dark"
+    />
+    <meta name="theme-color" content="#f5f5f5" id="meta-theme-color" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <style>
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 800;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background: #f5f5f5;
+        color: #111;
+      }
+      html[data-theme="dark"] #boot-splash {
+        background: #1a1a1a;
+        color: #f0f0f0;
+      }
+    </style>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      id="apple-touch-icon"
+      href="/pwa/librus-apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <!-- Swapped at runtime per flavor (librus / doutrina / centro) -->
+    <link rel="manifest" id="web-manifest" href="/manifest-librus.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        /* Color guide FOUC: full | soft | min */
+        try {
+          var g = localStorage.getItem("librus-color-guide");
+          if (g === "soft" || g === "min" || g === "full") {
+            document.documentElement.dataset.guide = g;
+          } else {
+            document.documentElement.dataset.guide = "full";
+          }
+        } catch (e) {
+          document.documentElement.dataset.guide = "full";
+        }
+        var k = "librus-theme";
+        var pref = null;
+        try {
+          pref = localStorage.getItem(k);
+        } catch (e) {}
+        if (pref !== "light" && pref !== "dark" && pref !== "system")
+          pref = "system";
+        var resolved =
+          pref === "dark" || pref === "light"
+            ? pref
+            : window.matchMedia &&
+                matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        document.documentElement.dataset.themePref = pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.style.colorScheme = resolved;
+        /* Match --bg so PWA / Android bars blend with the app surface */
+        var bgL = "#f5f5f5";
+        var bgD = "#1a1a1a";
+        var tc = document.getElementById("meta-theme-color");
+        if (tc) tc.content = resolved === "dark" ? bgD : bgL;
+        var tcl = document.getElementById("meta-theme-color-light");
+        var tcd = document.getElementById("meta-theme-color-dark");
+        if (pref === "light") {
+          if (tcl) tcl.content = bgL;
+          if (tcd) tcd.content = bgL;
+        } else if (pref === "dark") {
+          if (tcl) tcl.content = bgD;
+          if (tcd) tcd.content = bgD;
+        } else {
+          if (tcl) tcl.content = bgL;
+          if (tcd) tcd.content = bgD;
+        }
+      })();
+    </script>
+    <script>
+      /* Canonical URL before analytics: legacy redirects + "/" -> "/library"
+         (runs before Umami loads so one visit = one pageview). */
+      (function () {
+        try {
+          var p = location.pathname;
+          var m = p.match(/^\/(?:old\/)?[0-9]?(lde|ldm|ese|ceu|gen)(?:\/|\.html$|$)/i);
+          var to = null;
+          if (m) to = "/books/" + m[1].toLowerCase();
+          else if (/^\/assets\/video\/samaritano(\.html)?$/i.test(p)) to = "/books/ese";
+          else if (/^\/assets\/video\//i.test(p)) to = "/library";
+          if (to) {
+            location.replace(to);
+            return;
+          }
+          if (p === "/" || p === "/index.html" || p === "/onboard" || p === "/splash") {
+            history.replaceState({ path: "/library" }, "", "/library" + location.search + location.hash);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
+      /* Umami — production hosts only (skip localhost / LAN / ChromeOS / owner opt-out) */
+      (function () {
+        var h = location.hostname || "";
+        if (
+          !h ||
+          h === "localhost" ||
+          h === "127.0.0.1" ||
+          h === "[::1]" ||
+          /\.local$/i.test(h) ||
+          /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[0-1])\.)/.test(h)
+        ) {
+          return;
+        }
+        /* Owner is likely the only CrOS visitor in BR — don't skew invite metrics */
+        if (/CrOS/i.test(navigator.userAgent || "")) return;
+
+        /*
+         * Owner opt-out that survives clearing localStorage:
+         *   document.cookie = 'umami_disabled=1; path=/; max-age=315360000; SameSite=Lax; Secure';
+         * Optional: also set localStorage umami.disabled = 1 (Umami's own flag).
+         * Clearing only Application → Local Storage keeps the cookie.
+         */
+        function hasDisabledCookie() {
+          return ("; " + document.cookie).indexOf("; umami_disabled=1") !== -1;
+        }
+        try {
+          if (localStorage.getItem("umami.disabled")) {
+            if (!hasDisabledCookie()) {
+              document.cookie =
+                "umami_disabled=1; path=/; max-age=315360000; SameSite=Lax" +
+                (location.protocol === "https:" ? "; Secure" : "");
+            }
+            return;
+          }
+        } catch (e) {}
+        if (hasDisabledCookie()) return;
+
+        var s = document.createElement("script");
+        s.defer = true;
+        s.src = "https://cloud.umami.is/script.js";
+        s.setAttribute(
+          "data-website-id",
+          "f42944bb-c2a2-4160-b9ac-9a96a8baeec0",
+        );
+        document.head.appendChild(s);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DGNU7SAv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-uQRW7X0e.css">
+      <meta property="og:title" content="O Livro dos Médiuns — Allan Kardec · DOUTRINA" />
+      <meta property="og:description" content="Leia O Livro dos Médiuns (Allan Kardec, 1861) online — DOUTRINA: estudo, consulta e anotação." />
+      <meta property="og:url" content="https://doutrina.org/books/ldm" />
+      <meta property="og:type" content="book" />
+  </head>
+
+  <body data-view="library" data-lang="pt">
+    <div id="boot-splash" aria-busy="true" aria-live="polite">
+      <span class="boot-splash-spin" aria-hidden="true"></span>
+      <p data-i18n="boot.loading">Carregando…</p>
+    </div>
+    <!-- Library -->
+    <div id="library" data-screen>
+      <header>
+        <div
+          class="library-mark"
+          data-icon="columns-4"
+          data-icon-size="56"
+          aria-hidden="true"
+        ></div>
+        <h1>
+          <span data-i18n="library.title">LIBRUS</span>
+        </h1>
+        <p class="library-cta" data-i18n="library.cta">
+          Ache · Leia · Consulte · Anote
+        </p>
+      </header>
+      <main>
+        <h2 data-i18n="library.heading">Biblioteca</h2>
+        <ul id="grid" role="list"></ul>
+      </main>
+    </div>
+
+    <!-- 4 · Reader -->
+    <div id="reader" data-screen hidden>
+      <div id="workspace">
+        <aside id="p1" data-pane="find">
+          <div data-tabs>
+            <button type="button" data-mode="find:toc" class="on">
+              <i data-icon="toc"></i><span data-i18n="tab.toc">Sumário</span>
+            </button>
+            <button type="button" data-mode="find:search">
+              <i data-icon="search"></i
+              ><span data-i18n="tab.search">Busca</span>
+            </button>
+            <span data-i18n="pane.find">1. Ache</span>
+          </div>
+          <div data-tool="find:toc" class="on">
+            <div class="tool-search">
+              <input
+                type="search"
+                id="toc-q"
+                data-i18n-ph="ph.filter"
+                placeholder="Filtrar…"
+              />
+              <button
+                type="button"
+                class="input-clear"
+                data-clear="toc-q"
+                hidden
+                aria-label="Clear"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+          <div data-tool="find:search" hidden>
+            <div class="tool-search">
+              <input
+                type="search"
+                id="search-q"
+                data-i18n-ph="ph.search"
+                placeholder="Buscar… (Enter)"
+                enterkeyhint="search"
+              />
+              <button
+                type="button"
+                class="input-clear"
+                data-clear="search-q"
+                hidden
+                aria-label="Clear"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+          <div data-body>
+            <nav id="toc" data-panel="find:toc" class="on"></nav>
+            <div id="hits" data-panel="find:search" hidden></div>
+          </div>
+        </aside>
+
+        <main id="p2" data-pane="read">
+          <div data-tabs id="main-tabs">
+            <button type="button" data-mode="read:book" class="on">
+              <i data-icon="layers"></i
+              ><span data-i18n="tab.book">Páginas</span>
+            </button>
+            <button
+              type="button"
+              data-mode="read:typo"
+              data-feat="typo"
+            >
+              <i data-icon="type"></i><span data-i18n="tab.typo">Tipo</span>
+            </button>
+            <span data-i18n="pane.read">2. Leia</span>
+          </div>
+          <div data-tool="read:book" class="on">
+            <!-- In-book inject links: one on/off (phone forced off; does not open Consulte) -->
+            <button
+              type="button"
+              id="book-links"
+              class="link-toggle"
+              data-link-controls
+              aria-pressed="true"
+              title="Links no texto"
+            >
+              <i data-icon="link"></i
+              ><span data-i18n="tab.links">Links</span>
+            </button>
+            <div class="page-nav" data-page-nav>
+              <button
+                type="button"
+                data-page="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <input
+                  type="number"
+                  id="page-n"
+                  min="1"
+                  value="1"
+                  inputmode="numeric"
+                  aria-label="Page"
+                />
+                <span id="page-total">/ 1</span>
+                <span class="page-nav-unit" data-i18n="page.unit">páginas</span>
+              </label>
+              <button
+                type="button"
+                data-page="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
+            </div>
+            <div
+              class="page-nav"
+              data-scroll-pct
+              hidden
+              id="scroll-pct-wrap"
+            >
+              <button
+                type="button"
+                data-scroll="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <span id="scroll-pct">0%</span>
+                <span class="page-nav-unit" data-i18n="scroll.unit">leitura</span>
+              </label>
+              <button
+                type="button"
+                data-scroll="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
+            </div>
+            <button
+              type="button"
+              id="book-fs"
+              aria-pressed="false"
+              title="Tela cheia"
+            >
+              <i data-icon="maximize"></i
+              ><span data-i18n="tab.fs">Tela Cheia</span>
+            </button>
+          </div>
+          <div data-tool="read:typo" data-feat="typo" hidden>
+            <button type="button" data-typo="size" title="Size">
+              <i data-icon="a-arrow-up"></i><span data-typo-label>100%</span>
+            </button>
+            <button type="button" data-typo="line" title="Line height">
+              <i data-icon="unfold-vertical"></i
+              ><span data-typo-label>1.65</span>
+            </button>
+            <button type="button" data-typo="measure" title="Measure">
+              <i data-icon="chevrons-left-right"></i
+              ><span data-typo-label data-i18n="typo.medium">Média</span>
+            </button>
+            <button type="button" data-typo="align" title="Align">
+              <i data-icon="align-left"></i
+              ><span data-typo-label data-i18n="typo.alignStart">Alinhar</span>
+            </button>
+            <button type="button" data-typo="font" title="Font">
+              <i data-icon="case-upper"></i
+              ><span data-typo-label data-i18n="typo.sans">Sans</span>
+            </button>
+          </div>
+          <div
+            id="book"
+            data-body
+            data-font="sans"
+            data-measure="medium"
+            data-align="start"
+          ></div>
+        </main>
+
+        <section id="p3" data-pane="consult">
+          <div data-tabs>
+            <button type="button" data-mode="consult:web" class="on">
+              <i data-icon="search-slash"></i
+              ><span data-i18n="tab.consult">Consulte</span>
+            </button>
+            <button type="button" data-mode="consult:pdf">
+              <i data-icon="file-up"></i><span data-i18n="tab.pdf">PDF</span>
+            </button>
+            <button type="button" data-mode="consult:video">
+              <i data-icon="video"></i><span data-i18n="tab.video">Conf</span>
+            </button>
+            <span data-i18n="pane.consult">3. Consulte</span>
+          </div>
+          <div data-tool="consult:web" class="on" data-feat="providers">
+            <button type="button" data-ctx="back">
+              <i data-icon="arrow-left"></i
+              ><span data-i18n="btn.back">Voltar</span>
+            </button>
+            <button type="button" data-ctx="reload">
+              <i data-icon="rotate-cw"></i
+              ><span data-i18n="btn.reload">Recarregar</span>
+            </button>
+            <button type="button" data-provider="luz">
+              <i data-icon="gem"></i><span data-i18n="prov.luz">Luz</span>
+            </button>
+            <button type="button" data-provider="encyc">
+              <i data-icon="globe"></i><span data-i18n="prov.encyc">Encic</span>
+            </button>
+            <button type="button" data-provider="dict">
+              <i data-icon="book-a"></i><span data-i18n="prov.dict">Dict</span>
+            </button>
+            <button type="button" data-provider="map">
+              <i data-icon="map"></i><span data-i18n="prov.map">Maps</span>
+            </button>
+            <button type="button" data-provider="bible">
+              <i data-icon="book-plus"></i
+              ><span data-i18n="prov.bible">Bíblia</span>
+            </button>
+            <button type="button" data-provider="kardec">
+              <i data-icon="graduation-cap"></i
+              ><span data-i18n="prov.kardec">Kardec</span>
+            </button>
+          </div>
+          <div data-tool="consult:pdf" hidden>
+            <button type="button" data-pdf="upload">
+              <i data-icon="file-up"></i
+              ><span data-i18n="pdf.upload">Carregar</span>
+            </button>
+            <button type="button" data-pdf="unload">
+              <i data-icon="file-x"></i
+              ><span data-i18n="pdf.unload">Remover</span>
+            </button>
+            <div class="page-nav" data-pdf-nav>
+              <button
+                type="button"
+                data-pdf="prev"
+                data-i18n-aria="btn.prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                <i data-icon="chevron-left"></i>
+              </button>
+              <label class="page-nav-readout">
+                <input
+                  type="number"
+                  id="pdf-page-input"
+                  min="1"
+                  value="1"
+                  inputmode="numeric"
+                  aria-label="Page"
+                />
+                <span id="pdf-page-total">/ 12</span>
+              </label>
+              <button
+                type="button"
+                data-pdf="next"
+                data-i18n-aria="btn.next"
+                aria-label="Próxima"
+                title="Próxima"
+              >
+                <i data-icon="chevron-right"></i>
+              </button>
+            </div>
+            <button type="button" data-pdf="in">
+              <i data-icon="zoom-in"></i
+              ><span data-i18n="btn.zoomIn">Mais</span>
+            </button>
+            <button type="button" data-pdf="out">
+              <i data-icon="zoom-out"></i
+              ><span data-i18n="btn.zoomOut">Menos</span>
+            </button>
+          </div>
+          <div data-tool="consult:video" hidden>
+            <button type="button" data-jitsi="join-video">
+              <i data-icon="video"></i
+              ><span data-i18n="btn.joinVideo">Vídeo</span>
+            </button>
+            <button type="button" data-jitsi="join-voice">
+              <i data-icon="mic"></i><span data-i18n="btn.joinVoice">Voz</span>
+            </button>
+            <button type="button" data-jitsi="leave">
+              <i data-icon="phone-off"></i
+              ><span data-i18n="btn.leave">Sair</span>
+            </button>
+          </div>
+          <div data-body>
+            <div data-panel="consult:web" class="on" id="ctx-host">
+              <div id="ctx-hint" class="ctx-providers">
+                <ul class="ctx-providers-list">
+                  <li data-provider-row="luz">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="gem"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-luz">
+                        <img src="/providers/luz.svg" alt="Luz Espírita" />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="encyc">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="globe"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-encyc">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/wikipedia.png"
+                          alt=""
+                        />
+                        <img
+                          class="ctx-providers-wordmark"
+                          src="/providers/wikipedia-wordmark.svg"
+                          alt="Wikipedia"
+                        />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="dict">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="book-a"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-dict">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/wiktionary.svg"
+                          alt=""
+                        />
+                        <img
+                          class="ctx-providers-wordmark"
+                          src="/providers/wiktionary-wordmark.svg"
+                          alt="Wikcionário"
+                        />
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="map">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="map"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-map">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/osm.svg"
+                          alt=""
+                        />
+                        <span class="ctx-providers-name">OpenStreetMap</span>
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="bible">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="book-plus"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-bible">
+                        <img
+                          class="ctx-providers-mark"
+                          src="/providers/bible.svg"
+                          alt=""
+                        />
+                        <span class="ctx-providers-name">Bible.com</span>
+                      </span>
+                    </div>
+                  </li>
+                  <li data-provider-row="kardec">
+                    <div class="ctx-providers-row">
+                      <span class="ctx-providers-icon" aria-hidden="true">
+                        <i data-icon="graduation-cap"></i>
+                      </span>
+                      <span class="ctx-providers-banner is-kardec">
+                        <img src="/providers/kardecpedia.svg" alt="Kardecpedia" />
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="ctx-loading" class="pane-spinner" hidden aria-hidden="true">
+                <span class="pane-spinner-ring" aria-hidden="true"></span>
+                <p id="ctx-loading-msg" class="pane-spinner-msg"></p>
+              </div>
+              <iframe
+                id="ctx"
+                title="Consulte"
+                data-i18n-aria="tab.consult"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+              ></iframe>
+            </div>
+            <div data-panel="consult:pdf" id="pdf-panel" hidden>
+              <div id="pdf-placeholder" data-feat="pdf">
+                <p id="pdf-status" data-i18n="pdf.uploadTitle">
+                  Envie um PDF pela barra acima.
+                </p>
+              </div>
+              <div id="pdf-mock" data-feat="pdf" data-feat-invert>
+                <div id="pdf-sheet">
+                  <p id="pdf-mock-title" data-i18n="pdf.mockTitle">
+                    Documento de exemplo
+                  </p>
+                  <p id="pdf-mock-page" data-i18n="pdf.mockPage">
+                    Página 1 de 12
+                  </p>
+                  <div id="pdf-lines" aria-hidden="true"></div>
+                </div>
+                <p id="pdf-mock-hint" data-i18n="pdf.mockHint">
+                  Mock PDF — use a barra para navegar e ampliar.
+                </p>
+              </div>
+              <canvas id="pdf-canvas" hidden></canvas>
+            </div>
+            <div data-panel="consult:video" id="video-panel" hidden>
+              <div id="video-mock">
+                <div id="video-stage">
+                  <i data-icon="video" data-icon-size="40"></i>
+                  <p id="meet-status">Configure o App ID JaaS em Ajustes.</p>
+                </div>
+              </div>
+              <div id="meet-jaas-host" hidden></div>
+            </div>
+          </div>
+        </section>
+
+        <aside id="p4" data-pane="annotate">
+          <div data-tabs>
+            <button type="button" data-mode="annotate:notes" class="on">
+              <i data-icon="sticky-note"></i
+              ><span data-i18n="tab.notes">Notas</span>
+            </button>
+            <span data-i18n="pane.annotate">4. Anote</span>
+          </div>
+          <div data-tool="annotate:notes" class="on" hidden></div>
+          <div data-body>
+            <div id="p4-gap" aria-hidden="true"></div>
+            <div id="hypo-slot"></div>
+            <p data-feat="hypo" data-i18n="notes.hint">
+              Notas abrem na barra lateral do Hypothesis.
+            </p>
+            <p data-feat="hypo" data-feat-invert hidden data-i18n="notes.off">
+              Hypothesis desligado neste build.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div id="scrim" hidden></div>
+
+    <!-- Study gate — blocking; no dismiss (rotate / wider screen only) -->
+    <div
+      id="orient"
+      class="modal study-gate"
+      hidden
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="orient-title"
+      aria-describedby="orient-msg"
+      aria-hidden="true"
+    >
+      <header>
+        <span id="orient-title" data-i18n="orient.title">Gire o aparelho</span>
+      </header>
+      <div>
+        <div id="orient-emoji" aria-hidden="true">⚠️</div>
+        <p id="orient-msg" data-i18n="orient.body">
+          No celular, o estudo é só em retrato: Leia e Ache. Sem Consulte e
+          sem ligações no texto. Gire para retrato (ou use uma tela maior).
+        </p>
+      </div>
+    </div>
+
+    <!-- First-visit onboard — one card stage; Dispositivo | Como usar -->
+    <div
+      id="onboard"
+      class="modal onboard-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="onboard-title"
+      data-step="how"
+    >
+      <header>
+        <span id="onboard-title" data-i18n="onboard.titleHow"
+          >Como utilizar</span
+        >
+        <button
+          type="button"
+          data-close="onboard"
+          data-i18n-aria="tip.close"
+          aria-label="Close"
+        >
+          <i data-icon="x"></i>
+        </button>
+      </header>
+      <div>
+        <div id="cards-stage">
+          <div id="cards">
+            <article data-card="1">
+              <div class="onboard-card-head">
+                <i data-icon="toc" aria-hidden="true"></i>
+                <strong data-i18n="pane.find">1. Ache</strong>
+                <span data-i18n="onboard.find">Sumário e busca no livro.</span>
+
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <p class="onboard-filler-label">TOC</p>
+                <ul class="onboard-toc">
+                  <li>Lorem</li>
+                  <li>
+                    <span class="onboard-mock-hit" data-how-hit="toc"
+                      >Ipsum</span
+                    >
+                  </li>
+                  <li>Dolor</li>
+                </ul>
+              </div>
+            </article>
+            <article data-card="2">
+              <div class="onboard-card-head">
+                <i data-icon="type" aria-hidden="true"></i>
+                <strong data-i18n="pane.read">2. Leia</strong>
+                <span data-i18n="onboard.read">Texto, páginas e tipografia.</span>
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <p class="onboard-lorem">
+                  Lorem
+                  <a
+                    class="onboard-mock-hit onboard-mock-link"
+                    data-how-hit="link"
+                    href="#"
+                    tabindex="-1"
+                    >ipsum</a
+                  >
+                  dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                  tempor
+                  <span
+                    class="onboard-mock-hit onboard-mock-select"
+                    data-how-hit="select-search"
+                    >termo</span
+                  >
+                  ut labore et
+                  <span
+                    class="onboard-mock-hit onboard-mock-select"
+                    data-how-hit="select-annotate"
+                    >trecho</span
+                  >
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </article>
+            <article data-card="3">
+              <div class="onboard-card-head">
+                <i data-icon="search-slash" aria-hidden="true"></i>
+                <strong data-i18n="pane.consult">3. Consulte</strong>
+                <span data-i18n="onboard.consult"
+                  >Fontes ao lado da leitura.</span
+                >
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <div class="onboard-mock-prov-row" aria-hidden="true">
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Encic</span
+                  >
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Dict</span
+                  >
+                  <span
+                    class="onboard-mock-hit onboard-mock-provider"
+                    data-how-hit="provider"
+                    >Outro</span
+                  >
+                </div>
+                <article
+                  class="onboard-ipsum-article onboard-mock-hit how-consult-result"
+                  data-how-hit="article"
+                  data-how-result="termo"
+                  hidden
+                >
+                  <h4>Termo</h4>
+                  <p>
+                    Resultado da consulta para «termo» — fontes ao lado da
+                    leitura, qualquer provedor.
+                  </p>
+                </article>
+                <article
+                  class="onboard-ipsum-article onboard-mock-hit how-consult-result"
+                  data-how-hit="article"
+                  data-how-result="ipsum"
+                  hidden
+                >
+                  <h4>Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                    diam.
+                  </p>
+                </article>
+              </div>
+            </article>
+            <article data-card="4">
+              <div class="onboard-card-head">
+                <i data-icon="sticky-note" aria-hidden="true"></i>
+                <strong data-i18n="pane.annotate">4. Anote</strong>
+                <span data-i18n="onboard.annotate"
+                  >Grifos, notas e destaques.</span
+                >
+              </div>
+              <div class="onboard-filler" aria-hidden="true">
+                <aside
+                  class="onboard-note onboard-mock-hit"
+                  data-how-hit="note"
+                >
+                  <strong>Trecho</strong>
+                  <p>
+                    Lorem ipsum — sit amet, consectetur; margined note on the
+                    selected phrase.
+                  </p>
+                </aside>
+              </div>
+            </article>
+          </div>
+          <div id="viewport-frame" aria-hidden="true">
+            <span id="viewport-label-top" data-i18n="onboard.deviceTag"
+              >Dispositivo</span
+            >
+            <span id="viewport-label-device" data-i18n="onboard.desktop"
+              >Desktop</span
+            >
+          </div>
+          <div
+            id="viewport-blocked"
+            class="viewport-blocked"
+            aria-hidden="true"
+          >
+            <span aria-hidden="true">⚠️</span>
+            <strong data-i18n="onboard.blocked">Bloqueado</strong>
+          </div>
+          <div
+            id="how-cursor"
+            class="how-cursor"
+            data-mode="pointer"
+            aria-hidden="true"
+            hidden
+          >
+            <svg
+              class="how-cursor-glyph how-cursor-pointer"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1.25"
+                stroke-linejoin="round"
+                d="M5.5 3.2 5.5 19.5c0 .55.66.84 1.06.47l3.7-3.5h.01l.9-.01 5.4-.01c.55 0 .82-.66.45-1.06L6.8 2.75a.75.75 0 0 0-1.3.45Z"
+              />
+            </svg>
+            <svg
+              class="how-cursor-glyph how-cursor-link"
+              viewBox="0 0 24 24"
+              width="30"
+              height="30"
+              hidden
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1.1"
+                stroke-linejoin="round"
+                d="M11 2.5c.8 0 1.5.7 1.5 1.5v6.2h.3c.4-1 1.2-1.5 2.1-1.5.7 0 1.3.3 1.7.8.4-.4.9-.7 1.5-.7 1.1 0 2 .9 2 2.1V14c0 3.4-2.2 5.5-5.4 5.5H12c-2.8 0-4.6-1.5-5.5-3.4L4.2 11.6c-.4-.7-.1-1.5.6-1.9.7-.4 1.5-.1 1.9.5l1.8 3.1V4c0-.8.7-1.5 1.5-1.5Z"
+              />
+            </svg>
+            <svg
+              class="how-cursor-glyph how-cursor-text"
+              viewBox="0 0 24 24"
+              width="20"
+              height="28"
+              hidden
+            >
+              <path
+                fill="currentColor"
+                stroke="#fff"
+                stroke-width="1"
+                d="M7 2h10v2.2h-3.4V19.8H17V22H7v-2.2h3.4V4.2H7V2Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <p
+          id="onboard-caption"
+          class="onboard-caption"
+          data-i18n="onboard.cap.howControls"
+          aria-live="polite"
+        >
+          Use os botões abaixo para controlar a exibição
+        </p>
+        <!-- Live captions cycle from howStart after play -->
+
+        <footer class="onboard-footer">
+          <label class="onboard-persist">
+            <input type="checkbox" id="onboard-persist" />
+            <span data-i18n="onboard.persist">Não mostrar de novo</span>
+          </label>
+          <div class="onboard-footer-center">
+            <!-- Kept in DOM; hidden for now — first-visit is How to only -->
+            <div
+              class="onboard-mode-pill"
+              role="tablist"
+              aria-label="Onboard mode"
+              hidden
+            >
+              <button
+                type="button"
+                role="tab"
+                id="onboard-mode-viewport"
+                data-onboard-mode="where"
+                aria-selected="false"
+                data-i18n="onboard.mode.device"
+              >
+                Dispositivo
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="onboard-mode-how"
+                data-onboard-mode="how"
+                aria-selected="true"
+                data-i18n="onboard.mode.how"
+              >
+                Como usar
+              </button>
+            </div>
+            <button
+              type="button"
+              id="onboard-mute"
+              class="onboard-mute is-muted"
+              data-i18n-aria="onboard.unmute"
+              aria-label="Ativar som"
+              aria-pressed="true"
+            >
+              <i data-icon="volume-x" class="onboard-ico-muted"></i>
+              <i data-icon="volume-2" class="onboard-ico-unmuted"></i>
+            </button>
+            <button
+              type="button"
+              id="onboard-play"
+              class="onboard-play is-paused"
+              data-i18n-aria="onboard.play"
+              aria-label="Reproduzir"
+            >
+              <i data-icon="pause" class="onboard-ico-pause"></i>
+              <i data-icon="play" class="onboard-ico-play"></i>
+              <i data-icon="rotate-cw" class="onboard-ico-reload"></i>
+            </button>
+          </div>
+          <button
+            type="button"
+            id="onboard-enter"
+            class="onboard-enter"
+            data-i18n="onboard.enter"
+          >
+            Entrar
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Help overlay — 1×4 map (bar info). Leaves #bar visible. -->
+    <div
+      id="help"
+      class="modal help-map"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="help-title"
+    >
+      <header class="help-map-head">
+        <span id="help-title" data-i18n="help.title">Ajuda</span>
+        <div class="help-map-head-actions">
+          <label class="help-persist">
+            <input type="checkbox" id="help-dismiss" />
+            <span data-i18n="help.dismiss">Não mostrar novamente</span>
+          </label>
+          <button
+            type="button"
+            data-close="help"
+            data-i18n-aria="tip.close"
+            aria-label="Close"
+          >
+            <i data-icon="x"></i>
+          </button>
+        </div>
+      </header>
+      <div class="help-map-stage" id="help-map" data-step="1">
+        <div class="help-map-cols">
+          <section class="help-map-col" data-col="1">
+            <h2 data-i18n="help.tab.find">1. Ache</h2>
+            <div class="help-map-card" data-show="2">
+              <p data-i18n="help.map.ache.a">Sumário</p>
+              <p data-i18n="help.map.ache.b">Busca</p>
+            </div>
+          </section>
+          <section class="help-map-col" data-col="2">
+            <h2 data-i18n="help.tab.read">2. Leia</h2>
+            <div class="help-map-card" data-show="3">
+              <p data-i18n="help.map.read.a">Escolha página</p>
+              <p data-i18n="help.map.read.b">Ajustes de tipo</p>
+            </div>
+          </section>
+          <section class="help-map-col" data-col="3">
+            <h2 data-i18n="help.tab.consult">3. Consulte</h2>
+            <div class="help-map-callout" data-show="4">
+              <span class="help-map-arrow" aria-hidden="true"></span>
+              <div class="help-map-card">
+                <p data-i18n="help.map.consult.a">Selecione ali</p>
+                <p data-i18n="help.map.consult.b">Escolha buscador</p>
+                <p data-i18n="help.map.consult.c">Abre aqui</p>
+              </div>
+            </div>
+          </section>
+          <section class="help-map-col" data-col="4">
+            <h2 data-i18n="help.tab.annotate">4. Anote</h2>
+            <div class="help-map-callout" data-show="5">
+              <span class="help-map-arrow help-map-arrow-long" aria-hidden="true"></span>
+              <div class="help-map-card">
+                <p data-i18n="help.map.annotate.a">Selecione ali</p>
+                <p data-i18n="help.map.annotate.b">Grifo e notas aqui</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <nav class="help-map-pager" id="help-map-pager" aria-label="Passos">
+        <button
+          type="button"
+          data-help-dir="-1"
+          data-i18n-aria="help.map.prev"
+          aria-label="Anterior"
+        >
+          <i data-icon="chevron-left"></i>
+        </button>
+        <div class="help-map-dots">
+          <button type="button" class="help-map-dot" data-help-step="1" aria-label="1" aria-current="step"></button>
+          <button type="button" class="help-map-dot" data-help-step="2" aria-label="2"></button>
+          <button type="button" class="help-map-dot" data-help-step="3" aria-label="3"></button>
+          <button type="button" class="help-map-dot" data-help-step="4" aria-label="4"></button>
+          <button type="button" class="help-map-dot" data-help-step="5" aria-label="5"></button>
+        </div>
+        <button
+          type="button"
+          data-help-dir="1"
+          data-i18n-aria="help.map.next"
+          aria-label="Próximo"
+        >
+          <i data-icon="chevron-right"></i>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Settings: language, theme, color guide (+ JaaS when enabled) -->
+    <div
+      id="settings"
+      class="modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="settings-title"
+    >
+      <header>
+        <span id="settings-title" data-i18n="set.title">Ajustes</span>
+        <button
+          type="button"
+          data-close="settings"
+          data-i18n-aria="tip.close"
+          aria-label="Close"
+        >
+          <i data-icon="x"></i>
+        </button>
+      </header>
+      <div>
+        <fieldset>
+          <legend data-i18n="set.lang">Idioma</legend>
+          <label
+            ><input type="radio" name="ui-lang" value="pt" checked />
+            <span>Português</span></label
+          >
+          <label
+            ><input type="radio" name="ui-lang" value="en" />
+            <span>English</span></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="set.theme">Tema</legend>
+          <label
+            ><input type="radio" name="ui-theme" value="system" checked />
+            <span data-i18n="set.system">Sistema</span></label
+          >
+          <label
+            ><input type="radio" name="ui-theme" value="light" />
+            <span data-i18n="set.light">Claro</span></label
+          >
+          <label
+            ><input type="radio" name="ui-theme" value="dark" />
+            <span data-i18n="set.dark">Escuro</span></label
+          >
+        </fieldset>
+        <fieldset data-reader-only>
+          <legend data-i18n="set.guide">Guia de cor</legend>
+          <label
+            ><input type="radio" name="color-guide" value="full" checked />
+            <span data-i18n="set.guideFull">Completo</span></label
+          >
+          <label
+            ><input type="radio" name="color-guide" value="soft" />
+            <span data-i18n="set.guideSoft">Suave</span></label
+          >
+          <label
+            ><input type="radio" name="color-guide" value="min" />
+            <span data-i18n="set.guideMin">Mínimo</span></label
+          >
+        </fieldset>
+        <fieldset data-feat="jaas">
+          <legend data-i18n="set.jitsi">Videoconferência (JaaS)</legend>
+          <label class="stack"
+            ><span data-i18n="set.jitsiAppId">App ID</span>
+            <input
+              type="text"
+              id="jitsi-app-id"
+              placeholder="vpaas-magic-cookie-…"
+          /></label>
+          <label class="stack"
+            ><span data-i18n="set.jitsiRoom">Sala</span>
+            <input type="text" id="jitsi-room" value="librus-estudo"
+          /></label>
+          <label class="stack"
+            ><span data-i18n="set.jitsiName">Nome</span>
+            <input type="text" id="jitsi-name"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="set.about">Sobre</legend>
+          <p class="settings-meta">
+            <span data-i18n="set.version">Versão</span>
+            <span class="settings-ver">
+              <span id="app-version">v0.9.14</span>
+              <span class="settings-beta" aria-label="Beta">BETA</span>
+            </span>
+          </p>
+          <p class="settings-meta">
+            <span data-i18n="set.repo">Repositório</span>
+            <a
+              id="app-repo"
+              href="https://github.com/sergioSHKLR/librus-shell"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="set.repoOpen"
+              >sergioSHKLR/librus-shell</a
+            >
+          </p>
+          <p class="settings-meta">
+            <a id="set-legal" href="https://shklr.org/legal" target="_blank" rel="noopener noreferrer" data-i18n="set.legal">Aviso legal</a>
+          </p>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer id="bar">
+      <button type="button" data-go="library" data-i18n-aria="tip.home" title="Biblioteca" aria-label="Biblioteca">
+        <i data-icon="home" data-icon-size="22"></i>
+      </button>
+      <span id="app-title" hidden></span>
+      <div id="bar-end">
+        <button type="button" data-open="help" data-i18n-aria="bar.help" title="Ajuda" aria-label="Ajuda">
+          <i data-icon="help" data-icon-size="22"></i>
+        </button>
+        <button
+          type="button"
+          data-open="settings"
+          data-i18n-aria="bar.settings"
+          title="Ajustes"
+          aria-label="Ajustes"
+        >
+          <i data-icon="settings" data-icon-size="22"></i>
+        </button>
+      </div>
+    </footer>
+
+    <input
+      type="file"
+      id="pdf-file-input"
+      accept="application/pdf,.pdf"
+      hidden
+    />
+
+      <script src="/upd.js"></script>
+  </body>
+</html>

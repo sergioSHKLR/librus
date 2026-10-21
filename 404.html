@@ -8,6 +8,7 @@
     />
     <title>LIBRUS</title>
     <meta name="description" content="LIBRUS" />
+    <link rel="canonical" id="link-canonical" href="https://doutrina.org/library" />
     <!-- Match app --bg so system bars blend when not fully hidden -->
     <meta
       name="theme-color"
@@ -108,6 +109,27 @@
       })();
     </script>
     <script>
+      /* Canonical URL before analytics: legacy redirects + "/" -> "/library"
+         (runs before Umami loads so one visit = one pageview). */
+      (function () {
+        try {
+          var p = location.pathname;
+          var m = p.match(/^\/(?:old\/)?[0-9]?(lde|ldm|ese|ceu|gen)(?:\/|\.html$|$)/i);
+          var to = null;
+          if (m) to = "/books/" + m[1].toLowerCase();
+          else if (/^\/assets\/video\/samaritano(\.html)?$/i.test(p)) to = "/books/ese";
+          else if (/^\/assets\/video\//i.test(p)) to = "/library";
+          if (to) {
+            location.replace(to);
+            return;
+          }
+          if (p === "/" || p === "/index.html" || p === "/onboard" || p === "/splash") {
+            history.replaceState({ path: "/library" }, "", "/library" + location.search + location.hash);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
       /* Umami — production hosts only (skip localhost / LAN / ChromeOS / owner opt-out) */
       (function () {
         var h = location.hostname || "";
@@ -155,7 +177,7 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-Dhj6cJMI.js"></script>
+    <script type="module" crossorigin src="/assets/index-DGNU7SAv.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-uQRW7X0e.css">
   </head>
 
@@ -1196,6 +1218,6 @@
       hidden
     />
 
-      <script src="upd.js"></script>
+      <script src="/upd.js"></script>
   </body>
 </html>
