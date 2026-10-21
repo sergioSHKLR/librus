@@ -50,10 +50,10 @@
         el.appendChild(btn);
       }
       var span = btn.querySelector("span");
-      if (span) span.textContent = label();
+      if (span && span.textContent !== label()) span.textContent = label();
     });
     document.querySelectorAll("#set-legal").forEach(function (a) {
-      a.textContent = legalLabel();
+      if (a.textContent !== legalLabel()) a.textContent = legalLabel();
     });
   }
   var style = document.createElement("style");
