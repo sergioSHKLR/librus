@@ -109,20 +109,12 @@
       })();
     </script>
     <script>
-      /* Canonical URL before analytics: legacy redirects + "/" -> "/library"
-         (runs before Umami loads so one visit = one pageview). */
+      /* Before analytics: keep native replaceState for in-book page turns,
+         and "/" -> "/library" so one visit = one pageview. */
       (function () {
         try {
+          window.__librusNativeReplaceState = history.replaceState;
           var p = location.pathname;
-          var m = p.match(/^\/(?:old\/)?[0-9]?(lde|ldm|ese|ceu|gen)(?:\/|\.html$|$)/i);
-          var to = null;
-          if (m) to = "/books/" + m[1].toLowerCase();
-          else if (/^\/assets\/video\/samaritano(\.html)?$/i.test(p)) to = "/books/ese";
-          else if (/^\/assets\/video\//i.test(p)) to = "/library";
-          if (to) {
-            location.replace(to);
-            return;
-          }
           if (p === "/" || p === "/index.html" || p === "/onboard" || p === "/splash") {
             history.replaceState({ path: "/library" }, "", "/library" + location.search + location.hash);
           }
@@ -177,7 +169,7 @@
         document.head.appendChild(s);
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DGNU7SAv.js"></script>
+    <script type="module" crossorigin src="/assets/index-YLfagp3L.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-uQRW7X0e.css">
       <meta property="og:title" content="The Valley of Fear — Arthur Conan Doyle · LIBRUS" />
       <meta property="og:description" content="Read The Valley of Fear by Arthur Conan Doyle (1915) online — LIBRUS: annotate to assimilate." />
