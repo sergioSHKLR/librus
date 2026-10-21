@@ -11,7 +11,8 @@
     "emoji": "✨",
     "color": "#00008b",
     "isbn": "978-85-7328-728-8",
-    "pages": 529
+    "pages": 529,
+    "folio": true
   },
   {
     "id": "ldm",
