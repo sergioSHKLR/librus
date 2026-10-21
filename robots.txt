@@ -1,7 +1,7 @@
 # LIBRUS shell — open to real search engines; block aggressive AI/scrapers (advisory only)
 User-agent: *
 Allow: /
-Sitemap: https://doutrina.org/sitemap.xml
+Sitemap: https://librus.app/sitemap.xml
 
 # Aggressive crawlers — do not use for training
 User-agent: GPTBot

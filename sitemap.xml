@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://doutrina.org/library</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://doutrina.org/books/lde</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://doutrina.org/books/ldm</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://doutrina.org/books/ese</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://doutrina.org/books/ceu</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://doutrina.org/books/gen</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/library</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/study-scarlet</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/sign-four</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/hound</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/valley-fear</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/estudo-vermelho</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/sinal-quatro</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/cao-baskervilles</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://librus.app/books/vale-medo</loc><lastmod>2026-10-21</lastmod></url>
 </urlset>

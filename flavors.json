@@ -14,7 +14,7 @@
       "brand": {
         "name": "LIBRUS",
         "title": "LIBRUS",
-        "description": "LIBRUS — annotate to assimilate",
+        "description": "LIBRUS — read, look up and annotate classic books online. Sherlock Holmes in English and Portuguese · leia, consulte e anote clássicos.",
         "cta": {
           "pt": "Ache · Leia · Consulte · Anote",
           "en": "Find · Read · Lookup · Note"
@@ -31,7 +31,11 @@
       "catalog": "/books/catalog.json",
       "profile": "librus",
       "features": {
-        "providers": ["encyc", "dict", "map"],
+        "providers": [
+          "encyc",
+          "dict",
+          "map"
+        ],
         "jaas": false
       }
     },
@@ -40,7 +44,7 @@
       "brand": {
         "name": "DOUTRINA",
         "title": "DOUTRINA",
-        "description": "DOUTRINA — estudo, consulta e anotação",
+        "description": "DOUTRINA — leia, consulte e anote online as obras básicas de Allan Kardec: O Livro dos Espíritos, O Livro dos Médiuns, O Evangelho segundo o Espiritismo, O Céu e o Inferno e A Gênese.",
         "cta": {
           "pt": "Ache · Leia · Consulte · Anote",
           "en": "Find · Read · Lookup · Note"
@@ -58,7 +62,14 @@
       "catalog": "/books/catalog.json",
       "profile": "doutrina",
       "features": {
-        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
+        "providers": [
+          "luz",
+          "encyc",
+          "dict",
+          "map",
+          "bible",
+          "kardec"
+        ],
         "jaas": false
       }
     },
@@ -67,7 +78,7 @@
       "brand": {
         "name": "CENTRO",
         "title": "CENTRO",
-        "description": "CENTRO — reuniões, consulta e anotação",
+        "description": "CENTRO — manual do estudante e obras básicas de Allan Kardec para reuniões de estudo: leia, consulte e anote em grupo.",
         "cta": {
           "pt": "Ache · Leia · Consulte · Anote",
           "en": "Find · Read · Lookup · Note"
@@ -85,10 +96,19 @@
       "catalog": "/books/catalog.json",
       "profile": "centro",
       "features": {
-        "providers": ["luz", "encyc", "dict", "map", "bible", "kardec"],
+        "providers": [
+          "luz",
+          "encyc",
+          "dict",
+          "map",
+          "bible",
+          "kardec"
+        ],
         "jaas": true,
         "jaasRoom": "centro-reuniao",
-        "pinFirst": ["centro"]
+        "pinFirst": [
+          "centro"
+        ]
       }
     }
   }
