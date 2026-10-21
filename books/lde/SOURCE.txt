@@ -3,3 +3,4 @@ Source: /home/user/dev/doutrina/public/books/lde/
 Date: 2026-08-02
 Files: body.html, toc.json, pages.json, images/
 Presentation restamp: 2026-09-12 (partials → HTML patches; bible cites; spirit authors; vine.webp)
+Question catalog: questions.json from doutrina-content books/md/1-lde/work/1-lde-questions.md (2026-09-24)

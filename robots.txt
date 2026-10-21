@@ -1,6 +1,23 @@
-# LIBRUS shell — allow public crawl of the app shell
+# LIBRUS shell — open to real search engines; block aggressive AI/scrapers (advisory only)
 User-agent: *
 Allow: /
+Sitemap: https://doutrina.org/sitemap.xml
 
-# Optional: point at a sitemap when you have a stable production host
-# Sitemap: https://librus.app/sitemap.xml
+# Aggressive crawlers — do not use for training
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
