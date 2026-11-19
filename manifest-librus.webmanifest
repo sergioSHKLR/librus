@@ -5,13 +5,19 @@
   "description": "annotate to assimilate",
   "start_url": "/",
   "scope": "/",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#f5f5f5",
-  "theme_color": "#f5f5f5",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "lang": "pt-BR",
-  "categories": ["books", "education"],
+  "categories": [
+    "books",
+    "education"
+  ],
   "icons": [
     {
       "src": "/pwa/librus-192.png",
@@ -36,6 +42,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/pwa/librus-512-monochrome.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "monochrome"
     }
   ]
 }
